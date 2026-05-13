@@ -1,0 +1,36 @@
+{
+  "model": "qwen25-1.5b-instruct",
+  "rep": 5,
+  "mode": "auto",
+  "run_mode": "raw",
+  "categories": {
+    "multi_turn_base": {
+      "n_problems": 100,
+      "n_with_calls": 100,
+      "n_errors": 0,
+      "wall_s": 277.237329296011,
+      "completion_tokens": 20783
+    },
+    "multi_turn_long_context": {
+      "n_problems": 100,
+      "n_with_calls": 89,
+      "n_errors": 11,
+      "wall_s": 485.88578678970225,
+      "completion_tokens": 24127
+    },
+    "multi_turn_miss_func": {
+      "n_problems": 100,
+      "n_with_calls": 100,
+      "n_errors": 0,
+      "wall_s": 394.04369699623203,
+      "completion_tokens": 20929
+    },
+    "multi_turn_miss_param": {
+      "n_problems": 100,
+      "n_with_calls": 99,
+      "n_errors": 0,
+      "wall_s": 478.75998308113776,
+      "completion_tokens": 26196
+    }
+  }
+}

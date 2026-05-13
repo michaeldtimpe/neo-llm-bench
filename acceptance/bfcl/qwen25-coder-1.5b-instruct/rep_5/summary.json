@@ -1,0 +1,36 @@
+{
+  "model": "qwen25-coder-1.5b-instruct",
+  "rep": 5,
+  "mode": "auto",
+  "run_mode": "raw",
+  "categories": {
+    "multi_turn_base": {
+      "n_problems": 100,
+      "n_with_calls": 98,
+      "n_errors": 1,
+      "wall_s": 1208.3884241203777,
+      "completion_tokens": 72099
+    },
+    "multi_turn_long_context": {
+      "n_problems": 100,
+      "n_with_calls": 50,
+      "n_errors": 49,
+      "wall_s": 725.4962726628291,
+      "completion_tokens": 46076
+    },
+    "multi_turn_miss_func": {
+      "n_problems": 100,
+      "n_with_calls": 97,
+      "n_errors": 2,
+      "wall_s": 1133.2955722906627,
+      "completion_tokens": 92549
+    },
+    "multi_turn_miss_param": {
+      "n_problems": 100,
+      "n_with_calls": 97,
+      "n_errors": 2,
+      "wall_s": 909.3305914591765,
+      "completion_tokens": 90568
+    }
+  }
+}
