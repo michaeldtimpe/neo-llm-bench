@@ -1,0 +1,1 @@
+{"id": "live_multiple_20-4-12", "actual_calls": [["ControlAppliance.execute", {"command": "\ub2e4\uc6a9\ub3c4\uc2e4, \ud1b5\ub3cc\uc774, \uc911\uc9c0"}]], "wall_s": 0.5933043329860084, "prompt_tokens": 2818, "completion_tokens": 43, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

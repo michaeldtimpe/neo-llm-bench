@@ -181,6 +181,12 @@ class BfclInvocationResult:
     prompt_tokens: int = 0
     completion_tokens: int = 0
     error: str = ""
+    # Agent-mode-only fields (left at 0 for raw mode). Used for the
+    # raw-vs-agent overhead comparison — pass rate alone is misleading
+    # without these.
+    n_turns: int = 0
+    n_tool_calls_total: int = 0   # incl. duplicates/errors emitted by the loop
+    n_schema_rejects: int = 0
 
 
 def _format_tool_prompt(tool_defs: list[ToolDef]) -> str:
@@ -359,4 +365,7 @@ def run_problem_agent(
         wall_s=result.wall_s or (time.monotonic() - t0),
         prompt_tokens=result.prompt_tokens,
         completion_tokens=result.completion_tokens,
+        n_turns=result.steps,
+        n_tool_calls_total=result.tool_calls_total,
+        n_schema_rejects=result.schema_rejects,
     )

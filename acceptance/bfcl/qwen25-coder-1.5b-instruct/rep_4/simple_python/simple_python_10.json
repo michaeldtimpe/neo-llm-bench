@@ -1,0 +1,1 @@
+{"id": "simple_python_10", "actual_calls": [["calculate_area", {"base": 6, "height": 10, "unit": "cm"}]], "wall_s": 1.6240764579852112, "prompt_tokens": 1304, "completion_tokens": 132, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

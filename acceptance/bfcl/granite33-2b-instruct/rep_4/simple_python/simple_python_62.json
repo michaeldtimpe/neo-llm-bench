@@ -1,0 +1,1 @@
+{"id": "simple_python_62", "actual_calls": [["analyze_dna_sequence", {"sequence": "AGTCGATCGAACGTACGTACG", "reference_sequence": "AGTCCATCGAACGTACGTACG"}]], "wall_s": 1.307368666981347, "prompt_tokens": 817, "completion_tokens": 74, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

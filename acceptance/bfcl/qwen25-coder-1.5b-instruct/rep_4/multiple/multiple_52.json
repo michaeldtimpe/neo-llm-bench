@@ -1,0 +1,1 @@
+{"id": "multiple_52", "actual_calls": [["currency_conversion", {"amount": 100, "from_currency": "EUR", "to_currency": "USD"}]], "wall_s": 1.8483663339866325, "prompt_tokens": 1589, "completion_tokens": 141, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

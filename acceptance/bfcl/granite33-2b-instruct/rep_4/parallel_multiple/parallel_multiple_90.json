@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_90", "actual_calls": [["calculate_final_temperature", {"quantity1": 5, "temperature1": 300, "quantity2": 3, "temperature2": 500}]], "wall_s": 3.053858000028413, "prompt_tokens": 1401, "completion_tokens": 189, "error": "", "n_turns": 2, "n_tool_calls_total": 3, "n_schema_rejects": 2, "passed": false, "reason": "emitted_1_calls_expected_2"}

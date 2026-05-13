@@ -1,0 +1,1 @@
+{"id": "simple_python_59", "actual_calls": [["calculate_molecular_weight", {"compound": "C6H12O6", "to_unit": "grams/mole"}]], "wall_s": 0.8329596249968745, "prompt_tokens": 698, "completion_tokens": 62, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_43-16-2", "actual_calls": [["get_services", {"namespace": "cascade-sandbox"}]], "wall_s": 0.5240797919686884, "prompt_tokens": 1019, "completion_tokens": 39, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

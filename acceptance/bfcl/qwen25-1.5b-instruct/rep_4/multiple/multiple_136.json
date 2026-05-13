@@ -1,0 +1,1 @@
+{"id": "multiple_136", "actual_calls": [["get_crime_rate", {"city": "San Francisco", "state": "California", "type": "violent crime", "year": 2020}]], "wall_s": 0.9266015000175685, "prompt_tokens": 1099, "completion_tokens": 70, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "call_get_crime_rate_did_not_match_any_gt"}

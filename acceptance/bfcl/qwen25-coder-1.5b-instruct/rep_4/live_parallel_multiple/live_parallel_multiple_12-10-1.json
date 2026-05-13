@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_12-10-1", "actual_calls": [], "wall_s": 3.3145858750212938, "prompt_tokens": 16392, "completion_tokens": 540, "error": "", "n_turns": 12, "n_tool_calls_total": 12, "n_schema_rejects": 12, "passed": false, "reason": "emitted_0_calls_expected_2"}

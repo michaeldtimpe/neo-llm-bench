@@ -1,0 +1,1 @@
+{"id": "live_simple_76-37-0", "actual_calls": [["language_translator.translate", {"source_language": "en", "target_language": "fr", "text": "What is your name?"}]], "wall_s": 0.8674665410071611, "prompt_tokens": 888, "completion_tokens": 62, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

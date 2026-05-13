@@ -1,0 +1,1 @@
+{"id": "simple_python_135", "actual_calls": [["calculate_return_on_investment", {"purchase_price": 20, "sale_price": 25, "dividend": 2}]], "wall_s": 2.02317658404354, "prompt_tokens": 1366, "completion_tokens": 153, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

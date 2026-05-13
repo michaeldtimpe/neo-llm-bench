@@ -1,0 +1,1 @@
+{"id": "multiple_121", "actual_calls": [["geometry.area_triangle", {"base": 6, "height": 10}]], "wall_s": 0.7271103330422193, "prompt_tokens": 1244, "completion_tokens": 50, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

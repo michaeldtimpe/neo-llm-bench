@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_17", "actual_calls": [["steps_calorie_calculation", {"calorie": 500}], ["hydration_calculator", {"exercise_time": 2}]], "wall_s": 1.305094665964134, "prompt_tokens": 1119, "completion_tokens": 97, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

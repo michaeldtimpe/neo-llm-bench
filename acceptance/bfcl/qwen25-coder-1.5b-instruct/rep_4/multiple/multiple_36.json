@@ -1,0 +1,1 @@
+{"id": "multiple_36", "actual_calls": [["kinematics.calculate_speed_from_rest", {"distance": 20, "time": 4, "initial_speed": 0}]], "wall_s": 2.013202000001911, "prompt_tokens": 1852, "completion_tokens": 147, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

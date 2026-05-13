@@ -1,0 +1,1 @@
+{"id": "irrelevance_59", "actual_calls": [["linear_equation_solver", {"equation": "2**5", "variable": "x"}]], "wall_s": 1.1270876249764115, "prompt_tokens": 1116, "completion_tokens": 123, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: linear_equation_solver"}

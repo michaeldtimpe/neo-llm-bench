@@ -1,0 +1,1 @@
+{"id": "live_multiple_79-36-0", "actual_calls": [["dartfx_help", {"topic": "installation", "section": "general"}]], "wall_s": 0.7227459590067156, "prompt_tokens": 2943, "completion_tokens": 111, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

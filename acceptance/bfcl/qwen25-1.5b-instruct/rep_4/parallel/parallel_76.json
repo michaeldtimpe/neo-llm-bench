@@ -1,0 +1,1 @@
+{"id": "parallel_76", "actual_calls": [["math.gcd", {"num1": 45, "num2": 60}], ["math.gcd", {"num1": 81, "num2": 27}]], "wall_s": 1.2006146250059828, "prompt_tokens": 755, "completion_tokens": 98, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

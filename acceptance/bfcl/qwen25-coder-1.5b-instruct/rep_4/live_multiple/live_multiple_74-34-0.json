@@ -1,0 +1,1 @@
+{"id": "live_multiple_74-34-0", "actual_calls": [["dartfx_help", {"topic": "trading", "subtopic": "", "include_examples": true}]], "wall_s": 0.8334431660478003, "prompt_tokens": 2733, "completion_tokens": 132, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

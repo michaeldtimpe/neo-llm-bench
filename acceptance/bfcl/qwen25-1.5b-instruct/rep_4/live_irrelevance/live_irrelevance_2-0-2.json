@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_2-0-2", "actual_calls": [["requests.get", {"url": "https://date.nager.at/Api"}]], "wall_s": 1.074698709009681, "prompt_tokens": 1976, "completion_tokens": 81, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

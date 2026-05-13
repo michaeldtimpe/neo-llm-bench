@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_7-6-0", "actual_calls": [["get_aws_pricing", {"memory": 4, "cpu": 2}], ["get_gcp_pricing", {"memory_gb": 4, "cpu_count": 2}]], "wall_s": 1.4770832089707255, "prompt_tokens": 1315, "completion_tokens": 113, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

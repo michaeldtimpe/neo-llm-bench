@@ -1,0 +1,1 @@
+{"id": "live_simple_61-29-1", "actual_calls": [["todo", {"type": "add", "content": "go to gym tomorrow."}]], "wall_s": 0.9963107910007238, "prompt_tokens": 1280, "completion_tokens": 114, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

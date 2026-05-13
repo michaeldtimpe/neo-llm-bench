@@ -1,0 +1,1 @@
+{"id": "irrelevance_33", "actual_calls": [["identify_species", {"sequence": "ATCG", "database": "GenBank"}]], "wall_s": 0.9782306249835528, "prompt_tokens": 1129, "completion_tokens": 114, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: identify_species"}

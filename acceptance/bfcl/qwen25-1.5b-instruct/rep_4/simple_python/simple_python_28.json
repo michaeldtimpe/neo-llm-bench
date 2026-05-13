@@ -1,0 +1,1 @@
+{"id": "simple_python_28", "actual_calls": [["calculate_displacement", {"initial_velocity": 10, "time": 5, "acceleration": 9.8}]], "wall_s": 0.6486420420114882, "prompt_tokens": 798, "completion_tokens": 50, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

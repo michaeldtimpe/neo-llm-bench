@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_16", "actual_calls": [["calculate_factorial", {"number": 8}], ["generate_prime", {"start": 1, "end": 50}]], "wall_s": 1.636047874984797, "prompt_tokens": 1037, "completion_tokens": 130, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

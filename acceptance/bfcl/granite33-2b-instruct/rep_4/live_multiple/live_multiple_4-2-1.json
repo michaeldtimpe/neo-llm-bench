@@ -1,0 +1,1 @@
+{"id": "live_multiple_4-2-1", "actual_calls": [["uber.ride", {"loc": "123 Hanoi Street, Hanoi, Vietnam", "type": "plus", "time": 600}]], "wall_s": 1.0471486669848673, "prompt_tokens": 1169, "completion_tokens": 92, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "call_uber.ride_did_not_match_any_gt"}

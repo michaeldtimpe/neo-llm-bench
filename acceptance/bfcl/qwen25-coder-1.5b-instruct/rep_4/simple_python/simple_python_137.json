@@ -1,0 +1,1 @@
+{"id": "simple_python_137", "actual_calls": [["calculate_stock_return", {"investment_amount": 5000, "annual_growth_rate": 0.06, "holding_period": 5, "dividends": false}]], "wall_s": 2.342797250021249, "prompt_tokens": 1555, "completion_tokens": 186, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

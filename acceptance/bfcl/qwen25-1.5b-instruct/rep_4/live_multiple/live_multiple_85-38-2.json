@@ -1,0 +1,1 @@
+{"id": "live_multiple_85-38-2", "actual_calls": [["add_mtnards_server", {"api_key": "1234123", "nickname": "primary_db_server", "host": "192.168.0.5"}]], "wall_s": 1.1045474169659428, "prompt_tokens": 2409, "completion_tokens": 88, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

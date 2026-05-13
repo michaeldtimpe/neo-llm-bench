@@ -1,0 +1,1 @@
+{"id": "live_simple_60-29-0", "actual_calls": [["todo", {"type": "complete", "content": "Submit monthly financial report"}]], "wall_s": 0.6200125000323169, "prompt_tokens": 784, "completion_tokens": 48, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

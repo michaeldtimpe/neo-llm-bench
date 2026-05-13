@@ -1,0 +1,1 @@
+{"id": "simple_python_49", "actual_calls": [["calc_absolute_pressure", {"gauge_pressure": 2}]], "wall_s": 0.7499142499873415, "prompt_tokens": 671, "completion_tokens": 40, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "call_calc_absolute_pressure_did_not_match_any_gt"}

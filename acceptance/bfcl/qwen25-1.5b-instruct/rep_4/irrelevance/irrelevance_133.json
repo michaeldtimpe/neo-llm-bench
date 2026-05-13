@@ -1,0 +1,1 @@
+{"id": "irrelevance_133", "actual_calls": [["get_battle_details", {"battle_name": "NBA Finals 2023", "year": 2023}]], "wall_s": 0.7437780420295894, "prompt_tokens": 749, "completion_tokens": 56, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: get_battle_details"}

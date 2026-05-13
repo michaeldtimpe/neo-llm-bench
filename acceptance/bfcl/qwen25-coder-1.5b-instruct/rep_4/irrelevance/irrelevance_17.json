@@ -1,0 +1,1 @@
+{"id": "irrelevance_17", "actual_calls": [["calculate_time", {"distance": 0, "speed": 0, "round_to_nearest_second": true}]], "wall_s": 1.3793275830103084, "prompt_tokens": 1260, "completion_tokens": 138, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: calculate_time"}

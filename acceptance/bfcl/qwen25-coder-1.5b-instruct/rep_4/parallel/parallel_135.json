@@ -1,0 +1,1 @@
+{"id": "parallel_135", "actual_calls": [["geo_distance.calculate", {"start_location": "New York", "end_location": "Los Angeles", "units": "kilometers"}]], "wall_s": 1.9543939580325969, "prompt_tokens": 861, "completion_tokens": 160, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "emitted_1_calls_expected_3"}

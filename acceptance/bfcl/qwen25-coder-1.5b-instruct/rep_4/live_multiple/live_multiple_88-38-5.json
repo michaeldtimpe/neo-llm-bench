@@ -1,0 +1,1 @@
+{"id": "live_multiple_88-38-5", "actual_calls": [["list_servers", {"type": "all"}]], "wall_s": 0.5554808339802548, "prompt_tokens": 3529, "completion_tokens": 87, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

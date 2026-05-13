@@ -1,0 +1,1 @@
+{"id": "multiple_5", "actual_calls": [["weather.get_forecast_by_coordinates", {"coordinates": [46.603354, 1.888334], "days_ahead": 7}]], "wall_s": 2.3871764169889502, "prompt_tokens": 2235, "completion_tokens": 181, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "call_weather.get_forecast_by_coordinates_did_not_match_any_gt"}

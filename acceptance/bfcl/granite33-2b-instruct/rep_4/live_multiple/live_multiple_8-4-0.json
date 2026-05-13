@@ -1,0 +1,1 @@
+{"id": "live_multiple_8-4-0", "actual_calls": [["cookbook.search_recipe", {"keyword": "steak Indian style", "cuisine": "Indian"}]], "wall_s": 5.577357625006698, "prompt_tokens": 3399, "completion_tokens": 473, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "call_cookbook.search_recipe_did_not_match_any_gt"}

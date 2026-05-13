@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_6", "actual_calls": [["find_prime_numbers", {"start": 50, "end": 150}], ["get_fibonacci_sequence", {"count": 150}]], "wall_s": 1.9346536659868434, "prompt_tokens": 2306, "completion_tokens": 148, "error": "", "n_turns": 4, "n_tool_calls_total": 4, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

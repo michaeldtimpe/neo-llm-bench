@@ -130,6 +130,69 @@ instruction is followed 100% of the time. The normalizer's fence-strip
 executable Python without dropping any (`n_extract_ok = 427/427` for
 all three models).
 
+## BFCL agent mode (rep_4) — orchestration effects per finalist
+
+Companion to the agent-mode section of `graded_report.md`. Per-finalist
+per-category notes on *what the loop did* to each model's behavior.
+
+### qwen25-coder-1.5b — the most agent-loop-sensitive model
+
+- **Parallel rescue**: 74% of curated `parallel` rows fail in raw mode
+  with `under_called_1_of_N`. Agent mode lets the model emit additional
+  calls across turns; +51 problems each on `parallel` and
+  `parallel_multiple`. Mean 5.5 turns on parallel (vs 2.0 elsewhere) —
+  the loop is actively iterating until the model exhausts its call set.
+- **Multi-call over-shoot**: −31 on curated `multiple` and −18 on
+  `live_multiple`. These categories require *exactly one* call. Agent
+  mode pushes the model to chain: stub results come back, the model
+  reads them as "OK, what else?" and calls a second tool. The
+  `over_called_2_of_1` pattern moves from 2 cases in raw to dozens in
+  agent.
+- **Live_parallel_multiple regression**: +2 raw→agent but mean turns
+  hits **7.4** (i.e. close to `max_steps=12`). The model is iterating
+  hard and rarely succeeding. Worst token efficiency in the matrix
+  (7.92× over raw).
+- Net: +52 problems aggregate, but at 3.1× token cost. Per-token
+  efficiency drops 65%.
+
+### qwen25-1.5b-instruct — agent mode is a no-op
+
+- Pass counts unchanged on every curated category. ±1 on live (one
+  problem moved between `live_simple`/`live_multiple` and `live_par_mul`/
+  `live_irrelevance`/`live_relevance`).
+- Mean turns 1.2–2.5 depending on category. Model wraps quickly.
+- Token cost 1.3–2.5× across categories — pure overhead, zero pass-rate
+  benefit. This model is already at its first-pass ceiling.
+
+### granite33-2b — small consistent lift, efficient loop
+
+- +8 problems aggregate, distributed: +2 on `parallel`, +2 on
+  `parallel_multiple`, +1 on `multiple`, +1 on `live_parallel`, +2 on
+  `live_irrelevance`.
+- Mean turns 1.0–1.9 — shortest of the three. Granite's instinct to
+  decline-when-unsure shows up here too: it doesn't iterate as
+  aggressively as coder, so the loop's "extra emit" effect is mild.
+- Token cost 1.0–1.95× — most efficient agent-mode token-multiplier
+  of the three.
+- `live_irrelevance` 97/100 → 99/100 in agent mode (the loop's stub
+  results don't push granite to over-call on irrelevance — its decline-
+  discipline survives the loop).
+
+### Cross-model: turn-count distribution tells the story
+
+Sorted by raw→agent pass delta:
+
+```
+delta=+52  qwen-coder    mean turns 4.0  ←  loop is rescuing & breaking
+delta= +8  granite33     mean turns 1.6  ←  efficient short turns
+delta= +1  qwen25-1.5b   mean turns 1.9  ←  already at ceiling
+```
+
+The model whose agent-loop turn count is *highest* is also the one
+whose raw mode underperforms most relative to its sibling. The loop
+extracts more value when the model has more first-pass mistakes to
+recover — but pays more tokens to do it.
+
 ## HumanEval — failure modes & temperature behavior
 
 All three are 100% extraction-clean on rep_0/rep_2; rep_3 has 1

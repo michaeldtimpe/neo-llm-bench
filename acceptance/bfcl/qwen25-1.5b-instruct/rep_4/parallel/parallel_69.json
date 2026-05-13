@@ -1,0 +1,1 @@
+{"id": "parallel_69", "actual_calls": [["calculate_triangle_area", {"base": 10, "height": 5}], ["calculate_triangle_area", {"base": 8, "height": 6}]], "wall_s": 1.9523190839681774, "prompt_tokens": 1487, "completion_tokens": 144, "error": "", "n_turns": 3, "n_tool_calls_total": 4, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

@@ -1,0 +1,1 @@
+{"id": "multiple_66", "actual_calls": [["traffic_estimate", {"start_location": "Las Vegas", "end_location": "Los Angeles", "time_period": "weekend"}]], "wall_s": 0.8577976250089705, "prompt_tokens": 1162, "completion_tokens": 60, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

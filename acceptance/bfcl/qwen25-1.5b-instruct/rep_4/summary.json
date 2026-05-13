@@ -1,0 +1,68 @@
+{
+  "model": "qwen25-1.5b-instruct",
+  "rep": 4,
+  "mode": "auto",
+  "run_mode": "agent",
+  "categories": {
+    "live_simple": {
+      "n_problems": 100,
+      "n_with_calls": 100,
+      "n_errors": 0,
+      "wall_s": 89.47861529170768,
+      "completion_tokens": 6880,
+      "n_turns_total": 201,
+      "n_tool_calls_total": 104,
+      "n_schema_rejects_total": 0
+    },
+    "live_multiple": {
+      "n_problems": 100,
+      "n_with_calls": 97,
+      "n_errors": 0,
+      "wall_s": 131.69274662219686,
+      "completion_tokens": 9873,
+      "n_turns_total": 198,
+      "n_tool_calls_total": 99,
+      "n_schema_rejects_total": 0
+    },
+    "live_parallel": {
+      "n_problems": 16,
+      "n_with_calls": 16,
+      "n_errors": 0,
+      "wall_s": 26.833737542969175,
+      "completion_tokens": 2121,
+      "n_turns_total": 32,
+      "n_tool_calls_total": 39,
+      "n_schema_rejects_total": 0
+    },
+    "live_parallel_multiple": {
+      "n_problems": 24,
+      "n_with_calls": 24,
+      "n_errors": 0,
+      "wall_s": 49.57884637400275,
+      "completion_tokens": 3663,
+      "n_turns_total": 59,
+      "n_tool_calls_total": 64,
+      "n_schema_rejects_total": 1
+    },
+    "live_irrelevance": {
+      "n_problems": 100,
+      "n_with_calls": 23,
+      "n_errors": 0,
+      "wall_s": 49.32182550278958,
+      "completion_tokens": 3757,
+      "n_turns_total": 123,
+      "n_tool_calls_total": 23,
+      "n_schema_rejects_total": 0
+    },
+    "live_relevance": {
+      "n_problems": 16,
+      "n_with_calls": 16,
+      "n_errors": 0,
+      "wall_s": 22.295165957009885,
+      "completion_tokens": 1650,
+      "n_turns_total": 32,
+      "n_tool_calls_total": 16,
+      "n_schema_rejects_total": 0
+    }
+  }
+}

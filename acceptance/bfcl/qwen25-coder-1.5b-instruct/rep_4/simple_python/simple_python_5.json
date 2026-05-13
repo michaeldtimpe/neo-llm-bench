@@ -1,0 +1,1 @@
+{"id": "simple_python_5", "actual_calls": [["solve_quadratic", {"a": 3, "b": -11, "c": -4, "root_type": "real"}]], "wall_s": 1.9550550419953652, "prompt_tokens": 1561, "completion_tokens": 159, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "call_solve_quadratic_did_not_match_any_gt"}

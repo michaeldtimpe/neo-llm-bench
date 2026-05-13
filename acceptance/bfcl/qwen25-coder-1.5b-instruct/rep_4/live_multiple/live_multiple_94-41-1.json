@@ -1,0 +1,1 @@
+{"id": "live_multiple_94-41-1", "actual_calls": [["list_servers", {"type": "all"}], ["default_function", {}]], "wall_s": 0.7742244590190239, "prompt_tokens": 6734, "completion_tokens": 118, "error": "", "n_turns": 5, "n_tool_calls_total": 5, "n_schema_rejects": 0, "passed": false, "reason": "emitted_2_calls_expected_1"}

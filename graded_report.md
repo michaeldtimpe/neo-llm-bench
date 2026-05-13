@@ -157,6 +157,91 @@ that didn't happen in this draw, but if it ever does — it would not
 be a signal contradiction. Coder models tend to over-fit short-form
 coding priors. Read each number for the skill it measures.
 
+## BFCL agent mode — closed-loop orchestration (rep_4)
+
+**Different benchmark from raw BFCL.** Raw measures the model's first-
+pass capability (single forward pass under no feedback). Agent measures
+the *model + tool-call loop + stub world* — does the orchestration
+layer recover (or break) what the model started? When an agent number
+exceeds the raw number, the orchestrator recovered some mistakes;
+when it falls below, the loop added new ones. Compare paired numbers
+on identical inputs, never the two columns separately.
+
+Stub realism ablation (10 problems × 3 stub variants on qwen25-1.5b,
+"current"/"opaque-JSON"/"empty-ack") showed **no measurable behavior
+shift** (mean tool calls per problem = 1.90 across raw and all three
+agent variants). Stuck with the current `[stub:name] called with args=…`
+format for parity with the existing scaffold.
+
+### Agent overall — small lift on average, dominated by coder
+
+| model | raw pass | agent pass | Δ | wall raw→agent | tokens raw→agent |
+|---|---|---|---|---|---|
+| qwen25-1.5b-instruct | 853/1106 (77.0%) | 854/1106 (77.2%) | **+1** | 846s → 1527s (1.8×) | 65k → 119k (1.8×) |
+| granite33-2b-instruct | 768/1106 (69.4%) | 776/1106 (70.2%) | **+8** | 1339s → 2316s (1.7×) | 102k → 162k (1.6×) |
+| qwen25-coder-1.5b-instruct | 649/1106 (58.6%) | 701/1106 (63.4%) | **+52** | 1029s → 2660s (2.6×) | 87k → 270k (**3.1×**) |
+
+The aggregate disguises a much sharper per-category story.
+
+### Where agent mode helps / hurts (qwen25-coder is the standout)
+
+| model · category | raw → agent | Δ | mean turns | token mult |
+|---|---|---|---|---|
+| **qwen-coder · parallel** | 32/150 → 83/150 | **+51** | 5.51 | 4.83× |
+| **qwen-coder · parallel_multiple** | 42/150 → 93/150 | **+51** | 4.83 | 4.19× |
+| qwen-coder · multiple | 132/150 → 101/150 | **−31** | 3.84 | 3.75× |
+| qwen-coder · live_multiple | 62/100 → 44/100 | **−18** | 4.22 | 4.50× |
+| qwen-coder · live_simple | 70/100 → 65/100 | −5 | 3.46 | 2.93× |
+| qwen-coder · live_parallel_multiple | 2/24 → 4/24 | +2 | 7.38 | **7.92×** |
+| granite · parallel | 93/150 → 95/150 | +2 | 1.79 | 1.92× |
+| granite · parallel_multiple | 82/150 → 84/150 | +2 | 1.79 | 1.90× |
+| granite · live_irrelevance | 97/100 → 99/100 | +2 | 1.01 | 1.00× |
+| qwen-1.5b · most categories | (flat) | 0 to ±1 | 1.2 – 2.5 | 1.3 – 2.5× |
+
+What the pattern shows:
+
+1. **qwen-coder's parallel collapse is partially recovered by the loop.**
+   The raw mode's `under_called_1_of_N` failure (74% of parallel rows)
+   is rescued when the loop gives the model another turn to emit the
+   missing calls. +51 problems on `parallel` and `parallel_multiple` —
+   essentially doubling its raw count.
+2. **qwen-coder loses on multiple / live_multiple.** Agent mode pushes
+   the model to over-call: when stub results come back, it interprets
+   "thanks, here's stub output" as encouragement to try another tool.
+   −31 on curated `multiple` (a category that requires *exactly one*
+   call) and −18 on `live_multiple`. The orchestrator broke as much as
+   it fixed.
+3. **qwen25-1.5b doesn't move.** Its first-pass behavior is already
+   close to ceiling on most categories, so there's nothing to recover.
+   Agent mode pays 1.8× tokens for ±1 problem.
+4. **granite33 moves a little, efficiently.** Mean turns 1.0–1.9 — it
+   ends conversations quickly. +8 problems for 1.6× tokens. Of the
+   three, the most cost-effective in agent mode.
+
+### Overhead is real and asymmetric
+
+If you read pass rate alone, agent looks like a free upgrade for
+qwen-coder. With overhead beside it, the picture is different:
+
+| model | raw `passes/M_tokens` | agent `passes/M_tokens` | efficiency Δ |
+|---|---|---|---|
+| qwen25-1.5b-instruct | 13.1k | 7.2k | **-45%** |
+| granite33-2b-instruct | 7.5k | 4.8k | **-36%** |
+| qwen25-coder-1.5b-instruct | 7.5k | 2.6k | **-65%** |
+
+Read as: per-million-tokens-of-compute, agent mode is **less efficient**
+for every model. Coder pays the steepest price for the biggest absolute
+gain. Whether the trade is worth it is a deployment choice — agent mode
+is the right model for a deployment with retry budget and latency
+tolerance; raw is the right baseline if you're cost-sensitive.
+
+### Why we measure both
+
+Raw BFCL is the public-leaderboard-comparable number — it measures the
+**model's** tool-selection capability. Agent BFCL measures the
+**system's** capability (model + loop + stub feedback). Both matter
+for different deployment patterns. Don't conflate them.
+
 ## Stochastic notes (vs the prior edition's published numbers)
 
 - All non-deterministic runs (BFCL with `seed: 42` but model sampling

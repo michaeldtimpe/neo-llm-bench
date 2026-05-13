@@ -1,0 +1,1 @@
+{"id": "live_multiple_54-22-1", "actual_calls": [["inventory_management", {"product_id": "12345XYZ", "sizes": ["M"], "color": "red"}]], "wall_s": 0.8192780829849653, "prompt_tokens": 1918, "completion_tokens": 64, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "call_inventory_management_did_not_match_any_gt"}

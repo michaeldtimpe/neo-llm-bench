@@ -1,0 +1,1 @@
+{"id": "multiple_81", "actual_calls": [["concert.book_ticket", {"artist": "Eminem", "location": "New York City", "add_ons": ["Backstage Pass"]}]], "wall_s": 2.0025595420156606, "prompt_tokens": 1885, "completion_tokens": 156, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

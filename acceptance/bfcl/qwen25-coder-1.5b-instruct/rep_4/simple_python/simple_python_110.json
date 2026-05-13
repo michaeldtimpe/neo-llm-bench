@@ -1,0 +1,1 @@
+{"id": "simple_python_110", "actual_calls": [["predict_house_price", {"bedrooms": 3, "bathrooms": 2, "area": 1800, "location": "San Francisco"}]], "wall_s": 2.2490765420370735, "prompt_tokens": 1475, "completion_tokens": 174, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

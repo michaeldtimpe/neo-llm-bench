@@ -1,0 +1,1 @@
+{"id": "live_multiple_6-3-1", "actual_calls": [["create_workspace", {"name": "DevelopmentEnv", "base_branch": "feature-branch"}]], "wall_s": 0.7083221249631606, "prompt_tokens": 2676, "completion_tokens": 120, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

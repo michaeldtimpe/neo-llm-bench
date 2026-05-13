@@ -1,0 +1,1 @@
+{"id": "multiple_31", "actual_calls": [["geometry_rectangle.calculate", {"width": 7, "length": 10}]], "wall_s": 1.5064264999818988, "prompt_tokens": 1610, "completion_tokens": 114, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

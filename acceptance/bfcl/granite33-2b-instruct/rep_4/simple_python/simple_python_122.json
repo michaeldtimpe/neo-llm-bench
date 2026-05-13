@@ -1,0 +1,1 @@
+{"id": "simple_python_122", "actual_calls": [["chi_squared_test", {"table": [[10, 20], [30, 40]], "alpha": 0.05}]], "wall_s": 1.7286799580324441, "prompt_tokens": 781, "completion_tokens": 102, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

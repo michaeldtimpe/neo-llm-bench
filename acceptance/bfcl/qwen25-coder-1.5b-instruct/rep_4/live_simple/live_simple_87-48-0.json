@@ -1,0 +1,1 @@
+{"id": "live_simple_87-48-0", "actual_calls": [["get_current_loc", {"coordinate_format": "DMS", "include_altitude": true, "timeout": 30}]], "wall_s": 1.4361996669904329, "prompt_tokens": 1422, "completion_tokens": 144, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_31-10-1", "actual_calls": [["duck_duck_go.search", {"query": "trending items", "format": "json", "no_redirect": false, "no_html": false}]], "wall_s": 0.9878235000069253, "prompt_tokens": 3007, "completion_tokens": 165, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

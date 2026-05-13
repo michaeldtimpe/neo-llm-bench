@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_52", "actual_calls": [["game_of_life.play", {"rounds": 3, "start_board": []}], ["chess.play", {"moves": ["e4", "e5"]}]], "wall_s": 1.7668886249884963, "prompt_tokens": 1676, "completion_tokens": 204, "error": "", "n_turns": 3, "n_tool_calls_total": 6, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

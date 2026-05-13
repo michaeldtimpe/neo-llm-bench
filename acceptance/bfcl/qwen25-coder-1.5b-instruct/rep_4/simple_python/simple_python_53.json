@@ -1,0 +1,1 @@
+{"id": "simple_python_53", "actual_calls": [["fetch_DNA_sequence", {"DNA_id": "DNA123", "format": "fasta", "upstream": 0}]], "wall_s": 1.8722549169906415, "prompt_tokens": 1330, "completion_tokens": 150, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_87-38-4", "actual_calls": [["list_servers", {"type": "openapi"}]], "wall_s": 0.9640685410122387, "prompt_tokens": 2576, "completion_tokens": 82, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "call_list_servers_did_not_match_any_gt"}

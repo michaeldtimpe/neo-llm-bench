@@ -1,0 +1,1 @@
+{"id": "multiple_23", "actual_calls": [["basketball.player_stats.get", {"player_name": "LeBron James", "stats_fields": ["points_per_game", "assists", "minutes_per_game"]}]], "wall_s": 2.1065732919960283, "prompt_tokens": 2201, "completion_tokens": 162, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

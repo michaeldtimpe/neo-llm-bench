@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_116", "actual_calls": [["exhibition_info", {"museum_name": "Louvre", "month": 3}], ["restaurant_info", {"location": "Paris"}]], "wall_s": 1.8583886250271462, "prompt_tokens": 1009, "completion_tokens": 146, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": false, "reason": "emitted_2_calls_expected_3"}

@@ -1,0 +1,1 @@
+{"id": "simple_python_69", "actual_calls": [["ecology.get_turtle_population", {"location": "Mississippi river", "year": 2020, "species": true}]], "wall_s": 1.9208698750007898, "prompt_tokens": 1294, "completion_tokens": 153, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

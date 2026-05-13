@@ -1,0 +1,1 @@
+{"id": "live_multiple_89-39-0", "actual_calls": [["render_ui_date_picker_widget", {"default_date": "20-09-2023"}]], "wall_s": 0.797529959003441, "prompt_tokens": 2621, "completion_tokens": 126, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

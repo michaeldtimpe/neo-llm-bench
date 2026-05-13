@@ -1,0 +1,1 @@
+{"id": "multiple_142", "actual_calls": [["weather.humidity_forecast", {"location": "Miami, Florida", "days": 7, "min_humidity": 0}]], "wall_s": 1.9240038330317475, "prompt_tokens": 1766, "completion_tokens": 150, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

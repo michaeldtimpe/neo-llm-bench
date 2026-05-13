@@ -1,0 +1,1 @@
+{"id": "parallel_74", "actual_calls": [["get_prime_factors", {"number": 4567, "formatted": true}], ["get_prime_factors", {"number": 7890, "formatted": true}]], "wall_s": 1.4492443340132013, "prompt_tokens": 763, "completion_tokens": 109, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": false, "reason": "emitted_2_calls_expected_4"}

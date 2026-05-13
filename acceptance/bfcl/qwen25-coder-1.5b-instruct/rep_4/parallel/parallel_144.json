@@ -1,0 +1,1 @@
+{"id": "parallel_144", "actual_calls": [["math.factorial", {"number": 5}], ["math.factorial", {"number": 3}], ["math.factorial", {"number": 4}], ["math.factorial", {"number": 2}]], "wall_s": 3.031109749979805, "prompt_tokens": 1467, "completion_tokens": 237, "error": "", "n_turns": 3, "n_tool_calls_total": 12, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

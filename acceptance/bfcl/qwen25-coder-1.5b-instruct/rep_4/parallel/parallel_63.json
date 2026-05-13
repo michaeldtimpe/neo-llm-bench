@@ -1,0 +1,1 @@
+{"id": "parallel_63", "actual_calls": [["solve_quadratic_equation", {"a": 5, "b": 6, "c": 1}], ["solve_quadratic_equation", {"a": 3, "b": 2, "c": 1}]], "wall_s": 2.931805749947671, "prompt_tokens": 2842, "completion_tokens": 230, "error": "", "n_turns": 5, "n_tool_calls_total": 5, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

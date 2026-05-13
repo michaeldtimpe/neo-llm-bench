@@ -1,0 +1,1 @@
+{"id": "live_simple_11-3-7", "actual_calls": [["get_current_weather", {"location": "Naples, FL", "unit": "fahrenheit"}]], "wall_s": 0.7290022499510087, "prompt_tokens": 777, "completion_tokens": 60, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

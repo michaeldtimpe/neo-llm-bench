@@ -1,0 +1,1 @@
+{"id": "multiple_133", "actual_calls": [["calculate_mutual_fund_balance", {"investment_amount": 50000, "annual_yield": 0.05, "years": 3}]], "wall_s": 2.0762854159693234, "prompt_tokens": 1716, "completion_tokens": 168, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_51-21-0", "actual_calls": [["order_status_check", {"order_id": "#123", "product": "sneakers"}]], "wall_s": 0.8914586250321008, "prompt_tokens": 2193, "completion_tokens": 62, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

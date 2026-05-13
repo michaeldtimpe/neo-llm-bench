@@ -1,0 +1,1 @@
+{"id": "irrelevance_36", "actual_calls": [["get_dominant_trait", {"allele1": "A", "allele2": "T", "inheritance_pattern": "dominant"}]], "wall_s": 1.319094332982786, "prompt_tokens": 1346, "completion_tokens": 153, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: get_dominant_trait"}

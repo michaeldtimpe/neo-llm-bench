@@ -1,0 +1,1 @@
+{"id": "simple_python_51", "actual_calls": [["calculate_entropy_change", {"initial_temp": 300, "final_temp": 400, "heat_capacity": 5, "isothermal": true}]], "wall_s": 2.1849145829910412, "prompt_tokens": 1457, "completion_tokens": 174, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

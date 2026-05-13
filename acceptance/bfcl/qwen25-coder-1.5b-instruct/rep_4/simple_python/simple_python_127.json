@@ -1,0 +1,1 @@
+{"id": "simple_python_127", "actual_calls": [["calculate_NPV", {"cash_flows": [200, 300, 400, 500], "discount_rate": 0.1, "initial_investment": 2000}]], "wall_s": 2.831504000001587, "prompt_tokens": 1578, "completion_tokens": 213, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

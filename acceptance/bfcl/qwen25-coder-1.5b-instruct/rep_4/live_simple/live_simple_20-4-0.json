@@ -1,0 +1,1 @@
+{"id": "live_simple_20-4-0", "actual_calls": [["change_food", {"food_item": "burger", "modification_request": "no onions, extra cheese"}]], "wall_s": 1.1032230000128038, "prompt_tokens": 1293, "completion_tokens": 126, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

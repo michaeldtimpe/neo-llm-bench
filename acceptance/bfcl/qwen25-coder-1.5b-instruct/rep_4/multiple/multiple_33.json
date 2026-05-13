@@ -1,0 +1,1 @@
+{"id": "multiple_33", "actual_calls": [["calculate_integral", {"func": "3*x**2", "a": 1, "b": 2}]], "wall_s": 1.7693255830090493, "prompt_tokens": 1644, "completion_tokens": 138, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "irrelevance_64", "actual_calls": [["probability.coin_toss_heads", {"coin_tosses": 1, "heads_needed": 1, "coin_type": "fair"}]], "wall_s": 0.8588461659965105, "prompt_tokens": 854, "completion_tokens": 62, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: probability.coin_toss_heads"}

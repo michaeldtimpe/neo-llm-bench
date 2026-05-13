@@ -1,0 +1,1 @@
+{"id": "live_relevance_2-2-0", "actual_calls": [["search_web", {"query": "capital of the United States", "results_limit": 5, "language": "fr", "safe_search": true}]], "wall_s": 2.2599718339624815, "prompt_tokens": 865, "completion_tokens": 194, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "correctly_called_a_tool"}

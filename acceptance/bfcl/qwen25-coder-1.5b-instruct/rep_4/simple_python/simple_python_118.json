@@ -1,0 +1,1 @@
+{"id": "simple_python_118", "actual_calls": [["stats.t_test", {"array_1": [10, 15, 12, 14, 11], "array_2": [18, 16, 17, 20, 22], "alpha": 0.05}]], "wall_s": 3.255993833008688, "prompt_tokens": 1645, "completion_tokens": 255, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

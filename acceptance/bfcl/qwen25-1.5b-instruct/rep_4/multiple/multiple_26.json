@@ -1,0 +1,1 @@
+{"id": "multiple_26", "actual_calls": [["game_rewards.get", {"game": "Fortnite", "platform": "Playstation", "mission": "default", "trophy": "default"}]], "wall_s": 1.03552595799556, "prompt_tokens": 1314, "completion_tokens": 75, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "call_game_rewards.get_did_not_match_any_gt"}

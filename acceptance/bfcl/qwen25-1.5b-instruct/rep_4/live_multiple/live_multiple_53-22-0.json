@@ -1,0 +1,1 @@
+{"id": "live_multiple_53-22-0", "actual_calls": [["inventory_management", {"product_id": "V-neck sweate", "sizes": ["M", "L"], "color": "maroon"}]], "wall_s": 0.88800162501866, "prompt_tokens": 1960, "completion_tokens": 61, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

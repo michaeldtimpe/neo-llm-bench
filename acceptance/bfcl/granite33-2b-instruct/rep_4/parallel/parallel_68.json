@@ -1,0 +1,1 @@
+{"id": "parallel_68", "actual_calls": [["calculate_area", {"base": 12, "height": 15}], ["calculate_area", {"base": 18, "height": 24}]], "wall_s": 1.9692366250092164, "prompt_tokens": 875, "completion_tokens": 121, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": false, "reason": "call_calculate_area_unmatched_in_gt"}

@@ -1,0 +1,1 @@
+{"id": "irrelevance_38", "actual_calls": [["retrieve_scientific_paper", {"topic": "global warming", "year": "most recent"}]], "wall_s": 0.7760018749977462, "prompt_tokens": 750, "completion_tokens": 58, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: retrieve_scientific_paper"}

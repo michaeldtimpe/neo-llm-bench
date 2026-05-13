@@ -1,0 +1,1 @@
+{"id": "live_simple_77-38-0", "actual_calls": [["weather.get", {"city": "London", "country": "UK", "units": "metric", "include_forecast": false}]], "wall_s": 1.3133514170185663, "prompt_tokens": 1562, "completion_tokens": 153, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "call_weather.get_did_not_match_any_gt"}

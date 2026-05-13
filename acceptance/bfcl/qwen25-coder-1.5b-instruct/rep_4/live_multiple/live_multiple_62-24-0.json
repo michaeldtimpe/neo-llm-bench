@@ -1,0 +1,1 @@
+{"id": "live_multiple_62-24-0", "actual_calls": [["todoIdx", {"type": "delete", "index": 1}], ["todo.list_action", {"type": "delete", "content": "Second item"}]], "wall_s": 1.1185710839927197, "prompt_tokens": 3387, "completion_tokens": 186, "error": "", "n_turns": 5, "n_tool_calls_total": 5, "n_schema_rejects": 0, "passed": false, "reason": "emitted_2_calls_expected_1"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_16-3-12", "actual_calls": [["get_current_weather", {"location": "Lang Son", "unit": "fahrenheit"}]], "wall_s": 0.6073536250041798, "prompt_tokens": 747, "completion_tokens": 50, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

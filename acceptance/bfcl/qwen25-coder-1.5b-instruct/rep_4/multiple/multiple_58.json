@@ -1,0 +1,1 @@
+{"id": "multiple_58", "actual_calls": [["lawyer.search", {"location": "Los Angeles, CA", "expertise": "Criminal"}]], "wall_s": 1.6740595410228707, "prompt_tokens": 1539, "completion_tokens": 126, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "call_lawyer.search_did_not_match_any_gt"}

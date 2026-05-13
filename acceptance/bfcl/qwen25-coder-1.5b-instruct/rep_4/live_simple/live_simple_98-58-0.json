@@ -1,0 +1,1 @@
+{"id": "live_simple_98-58-0", "actual_calls": [["get_weather_by_coordinates", {"city": "Chennai", "lat": 13.0827, "lon": 80.2707}]], "wall_s": 1.020984040980693, "prompt_tokens": 1413, "completion_tokens": 174, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

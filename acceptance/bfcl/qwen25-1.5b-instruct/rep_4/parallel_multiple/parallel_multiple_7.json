@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_7", "actual_calls": [["kinematics.calculate_time", {"velocity": 50, "distance": 600}], ["kinematics.calculate_time", {"velocity": 400, "distance": 1000}]], "wall_s": 1.5273005839553662, "prompt_tokens": 1047, "completion_tokens": 118, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

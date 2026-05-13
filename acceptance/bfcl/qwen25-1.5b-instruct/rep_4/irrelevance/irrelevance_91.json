@@ -1,0 +1,1 @@
+{"id": "irrelevance_91", "actual_calls": [["get_law_categories", {"law_type": "noise", "country": "Atlanta", "specific_category": "business"}]], "wall_s": 0.9798355840030126, "prompt_tokens": 747, "completion_tokens": 80, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: get_law_categories"}

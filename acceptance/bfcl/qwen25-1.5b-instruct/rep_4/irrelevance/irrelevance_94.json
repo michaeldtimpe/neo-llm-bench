@@ -1,0 +1,1 @@
+{"id": "irrelevance_94", "actual_calls": [["case_info.get", {"case_id": "ABC-2020-01", "case_year": "2020"}]], "wall_s": 0.9937949589802884, "prompt_tokens": 758, "completion_tokens": 78, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: case_info.get"}

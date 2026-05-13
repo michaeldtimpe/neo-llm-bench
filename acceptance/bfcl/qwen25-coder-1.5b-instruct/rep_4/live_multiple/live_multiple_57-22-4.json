@@ -1,0 +1,1 @@
+{"id": "live_multiple_57-22-4", "actual_calls": [["order_status_check", {"order_id": "282828", "product": "Pants"}]], "wall_s": 0.7863005410181358, "prompt_tokens": 3170, "completion_tokens": 132, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "call_order_status_check_did_not_match_any_gt"}

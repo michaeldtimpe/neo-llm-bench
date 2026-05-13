@@ -1,0 +1,1 @@
+{"id": "irrelevance_101", "actual_calls": [["get_average_monthly_temperature", {"location": "Hawaii", "month": "June"}]], "wall_s": 1.2793189579970203, "prompt_tokens": 1206, "completion_tokens": 150, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: get_average_monthly_temperature"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_33-10-0", "actual_calls": [["answer.string", {"answer": "answer not found"}]], "wall_s": 0.8317337079788558, "prompt_tokens": 1192, "completion_tokens": 93, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "call_answer.string_did_not_match_any_gt"}

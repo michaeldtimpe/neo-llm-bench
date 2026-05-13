@@ -1,0 +1,1 @@
+{"id": "multiple_76", "actual_calls": [["sculpture.create_custom", {"item": "horse", "material": "Bronze"}]], "wall_s": 0.6198900419985875, "prompt_tokens": 1080, "completion_tokens": 41, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

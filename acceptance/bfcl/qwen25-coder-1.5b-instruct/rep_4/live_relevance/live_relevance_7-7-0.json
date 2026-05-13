@@ -1,0 +1,1 @@
+{"id": "live_relevance_7-7-0", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "London, UK", "number_of_adults": 4, "rating": 0}]], "wall_s": 0.9704770420212299, "prompt_tokens": 2335, "completion_tokens": 162, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "correctly_called_a_tool"}

@@ -1,0 +1,1 @@
+{"id": "multiple_113", "actual_calls": [["calculate_fitness", {"trait_values": [0.8, 0.7], "trait_contributions": [0.4, 0.6]}]], "wall_s": 1.4274448749492876, "prompt_tokens": 2087, "completion_tokens": 78, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

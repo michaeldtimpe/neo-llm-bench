@@ -1,0 +1,1 @@
+{"id": "live_multiple_46-18-1", "actual_calls": [["inventory_management", {"product_id": "12345-67890", "sizes": ["40"], "color": "any", "quantity": 1}]], "wall_s": 1.0735488749924116, "prompt_tokens": 1696, "completion_tokens": 76, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

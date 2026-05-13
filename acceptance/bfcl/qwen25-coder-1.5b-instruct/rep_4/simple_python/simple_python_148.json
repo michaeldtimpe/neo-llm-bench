@@ -1,0 +1,1 @@
+{"id": "simple_python_148", "actual_calls": [["finance.calculate_future_value", {"initial_investment": 20000, "rate_of_return": 0.08, "years": 5, "contribution": 0}]], "wall_s": 2.4055529160541482, "prompt_tokens": 1524, "completion_tokens": 192, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

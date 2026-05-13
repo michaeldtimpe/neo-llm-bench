@@ -1,0 +1,1 @@
+{"id": "multiple_71", "actual_calls": [["get_population", {"year": 1954, "category": "veterans"}]], "wall_s": 1.6044903330039233, "prompt_tokens": 1808, "completion_tokens": 123, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

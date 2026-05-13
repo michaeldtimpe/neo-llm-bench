@@ -1,0 +1,1 @@
+{"id": "multiple_139", "actual_calls": [["lawsuit_details.find", {"company_name": "Apple Inc.", "year": 2010, "case_type": "Patent"}]], "wall_s": 1.000241208996158, "prompt_tokens": 1678, "completion_tokens": 71, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

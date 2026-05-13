@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_12-10-1", "actual_calls": [["get_class_info", {"class_name": "Weather"}]], "wall_s": 0.7506892499513924, "prompt_tokens": 1929, "completion_tokens": 52, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "emitted_1_calls_expected_2"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_22-4-14", "actual_calls": [["HNA_WQA.search", {"keyword": "\uc784\uc9c4\uc65c\ub780", "result_format": "text", "language": "EN", "max_results": 10}]], "wall_s": 3.5845219169859774, "prompt_tokens": 3564, "completion_tokens": 314, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

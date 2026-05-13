@@ -1,0 +1,1 @@
+{"id": "multiple_145", "actual_calls": [["calculate_emissions", {"distance": 12000, "fuel_type": "gas", "fuel_efficiency": 20}]], "wall_s": 1.2380043329903856, "prompt_tokens": 1424, "completion_tokens": 88, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

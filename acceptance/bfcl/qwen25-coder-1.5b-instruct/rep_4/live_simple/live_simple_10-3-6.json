@@ -1,0 +1,1 @@
+{"id": "live_simple_10-3-6", "actual_calls": [["get_current_weather", {"location": "Mariposa, CA", "unit": "celsius"}]], "wall_s": 1.0935669579776004, "prompt_tokens": 1421, "completion_tokens": 126, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

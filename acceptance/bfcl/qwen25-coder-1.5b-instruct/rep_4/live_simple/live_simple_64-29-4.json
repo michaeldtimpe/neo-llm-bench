@@ -1,0 +1,1 @@
+{"id": "live_simple_64-29-4", "actual_calls": [["todo", {"type": "add", "content": "go to Goa"}]], "wall_s": 0.9681666670367122, "prompt_tokens": 1276, "completion_tokens": 111, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

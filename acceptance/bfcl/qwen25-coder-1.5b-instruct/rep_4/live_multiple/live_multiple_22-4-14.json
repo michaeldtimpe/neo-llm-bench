@@ -1,0 +1,1 @@
+{"id": "live_multiple_22-4-14", "actual_calls": [["HNA_NEWS.search", {"keyword": "\uc784\uc9c4\uc65c\ub780", "category": "General", "max_results": 10}]], "wall_s": 0.9347652919823304, "prompt_tokens": 4568, "completion_tokens": 153, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "call_HNA_NEWS.search_did_not_match_any_gt"}

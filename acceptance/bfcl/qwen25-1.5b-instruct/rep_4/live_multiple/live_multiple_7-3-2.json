@@ -1,0 +1,1 @@
+{"id": "live_multiple_7-3-2", "actual_calls": [["create_workspace", {"name": "DevelopersHub", "base_branch": "master"}]], "wall_s": 0.5739493750152178, "prompt_tokens": 1709, "completion_tokens": 42, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

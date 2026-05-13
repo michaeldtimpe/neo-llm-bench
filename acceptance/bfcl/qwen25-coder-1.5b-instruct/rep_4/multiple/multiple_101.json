@@ -1,0 +1,1 @@
+{"id": "multiple_101", "actual_calls": [["math.gcd", {"num1": 12, "num2": 18}], ["get_top_cases", {"field_of_law": "constitutional law", "top_number": 5, "country": "US"}]], "wall_s": 2.75696174998302, "prompt_tokens": 3096, "completion_tokens": 221, "error": "", "n_turns": 5, "n_tool_calls_total": 5, "n_schema_rejects": 0, "passed": false, "reason": "emitted_2_calls_expected_1"}

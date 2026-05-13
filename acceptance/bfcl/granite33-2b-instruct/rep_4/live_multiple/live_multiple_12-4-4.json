@@ -1,0 +1,1 @@
+{"id": "live_multiple_12-4-4", "actual_calls": [["HNA_WQA.search", {"keyword": "park ji sung", "result_format": "text", "language": "EN"}]], "wall_s": 1.35680341697298, "prompt_tokens": 3406, "completion_tokens": 117, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "call_HNA_WQA.search_did_not_match_any_gt"}

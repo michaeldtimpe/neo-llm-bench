@@ -1,0 +1,1 @@
+{"id": "multiple_109", "actual_calls": [["cellbio.get_proteins", {"cell_compartment": "plasma membrane", "include_description": false}]], "wall_s": 1.7113574169925414, "prompt_tokens": 2156, "completion_tokens": 132, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

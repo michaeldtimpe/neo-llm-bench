@@ -1,0 +1,1 @@
+{"id": "live_simple_75-36-3", "actual_calls": [["detect_beats_and_filter", {"capture_percentage": 93, "confidence_window_size": 0.5}]], "wall_s": 1.0891056659747846, "prompt_tokens": 837, "completion_tokens": 95, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_35-11-1", "actual_calls": [["get_tesco_locations", {"location": "Letterkenny, Ireland", "radius": 10, "limit": 5}]], "wall_s": 2.414721417007968, "prompt_tokens": 1089, "completion_tokens": 215, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_38", "actual_calls": [["us_history.life_expectancy", {"year": 1900}], ["us_history.life_expectancy", {"year": 1950}]], "wall_s": 3.178918124991469, "prompt_tokens": 893, "completion_tokens": 198, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": false, "reason": "emitted_2_calls_expected_4"}

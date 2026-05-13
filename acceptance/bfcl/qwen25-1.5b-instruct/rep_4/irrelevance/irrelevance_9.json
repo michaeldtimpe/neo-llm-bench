@@ -1,0 +1,1 @@
+{"id": "irrelevance_9", "actual_calls": [["CalculateTax", {"annual_income": 100000, "tax_rate": 0.2, "other_deductions": 0}]], "wall_s": 1.3658452079980634, "prompt_tokens": 796, "completion_tokens": 104, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: CalculateTax"}

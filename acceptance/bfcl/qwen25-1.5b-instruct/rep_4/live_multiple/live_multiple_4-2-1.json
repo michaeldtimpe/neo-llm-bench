@@ -1,0 +1,1 @@
+{"id": "live_multiple_4-2-1", "actual_calls": [["uber.ride", {"loc": "123 Hanoi Street, H\u00e0 N\u1ed9i, VN", "type": "plus", "time": 10}]], "wall_s": 0.9858629579539411, "prompt_tokens": 1092, "completion_tokens": 77, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "call_uber.ride_did_not_match_any_gt"}

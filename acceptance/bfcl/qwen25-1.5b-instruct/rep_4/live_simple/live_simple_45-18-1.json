@@ -1,0 +1,1 @@
+{"id": "live_simple_45-18-1", "actual_calls": [["ThinQ_Connect", {"body": {"currentJobMode": "COOL", "targetTemperature": 20}}]], "wall_s": 0.8869529999792576, "prompt_tokens": 1331, "completion_tokens": 69, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "call_ThinQ_Connect_did_not_match_any_gt"}

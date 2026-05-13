@@ -1,0 +1,1 @@
+{"id": "live_multiple_81-36-2", "actual_calls": [["add_mtnards_server", {"host": "http://plga.ca", "api_key": "1234324"}]], "wall_s": 1.0797684169956483, "prompt_tokens": 1933, "completion_tokens": 75, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

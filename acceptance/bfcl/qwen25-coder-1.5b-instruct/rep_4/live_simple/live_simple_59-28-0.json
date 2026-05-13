@@ -1,0 +1,1 @@
+{"id": "live_simple_59-28-0", "actual_calls": [["get_movies", {"city": "Mumbai", "movie_date": "2023-04-01"}]], "wall_s": 1.2405421659932472, "prompt_tokens": 1688, "completion_tokens": 141, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "call_get_movies_did_not_match_any_gt"}

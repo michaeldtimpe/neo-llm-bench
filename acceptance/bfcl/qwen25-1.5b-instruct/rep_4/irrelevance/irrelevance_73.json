@@ -1,0 +1,1 @@
+{"id": "irrelevance_73", "actual_calls": [["finance.predict_revenue", {"company_name": "XYZ", "period": "next year"}]], "wall_s": 0.6395615839865059, "prompt_tokens": 746, "completion_tokens": 47, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: finance.predict_revenue"}

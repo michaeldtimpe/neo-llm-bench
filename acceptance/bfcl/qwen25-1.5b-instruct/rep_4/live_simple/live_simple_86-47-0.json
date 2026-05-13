@@ -1,0 +1,1 @@
+{"id": "live_simple_86-47-0", "actual_calls": [["sort_array", {"array": [1, 54, 3, 1, 76, 2343, 21], "reverse": false}]], "wall_s": 1.392931625014171, "prompt_tokens": 788, "completion_tokens": 114, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "multiple_13", "actual_calls": [["corporate_finance.revenue_forecast", {"company": "XYZ", "product": "A", "sales_units_increase_percentage": 10}]], "wall_s": 2.0460165830445476, "prompt_tokens": 1702, "completion_tokens": 159, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

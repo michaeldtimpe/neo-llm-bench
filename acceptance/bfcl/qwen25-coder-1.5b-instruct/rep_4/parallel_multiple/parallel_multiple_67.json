@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_67", "actual_calls": [["math_roots.quadratic", {"a": 3, "b": 4, "c": -7}]], "wall_s": 1.2939186670118943, "prompt_tokens": 2619, "completion_tokens": 145, "error": "", "n_turns": 3, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": false, "reason": "emitted_1_calls_expected_3"}
