@@ -260,6 +260,84 @@ def _run_humaneval(backend: Backend, req: RunRequest) -> dict:
     return summary
 
 
+def _run_mbpp(backend: Backend, req: RunRequest) -> dict:
+    from benchmarks.mbpp.adapter import load_problems, run_problem
+
+    out_dir = req.output_dir / "mbpp" / req.model.id / f"rep_{req.rep}"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    problems = load_problems(limit=req.limit)
+    results_path = out_dir / "results.jsonl"
+
+    # Per-problem resume — same shape as HumanEval; task_ids are
+    # `Mbpp/<int>` strings (the adapter prefixes them).
+    done: dict[str, dict] = {}
+    torn = False
+    if results_path.exists():
+        for line in results_path.read_text().splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError:
+                torn = True
+                continue
+            tid = row.get("task_id")
+            if tid:
+                done[tid] = row
+        if torn:
+            results_path.write_text("".join(json.dumps(r) + "\n" for r in done.values()))
+
+    summary = {
+        "model": req.model.id, "rep": req.rep,
+        "n_problems": len(problems), "n_passed": 0, "n_extract_ok": 0,
+        "wall_s": 0.0, "completion_tokens": 0,
+    }
+    wanted = {f"Mbpp/{p['task_id']}" for p in problems}
+    for tid, r in done.items():
+        if tid not in wanted:
+            continue
+        summary["wall_s"] += float(r.get("wall_s", 0.0))
+        summary["completion_tokens"] += int(r.get("completion_tokens", 0))
+        if r.get("passed"):
+            summary["n_passed"] += 1
+        if r.get("extract_ok"):
+            summary["n_extract_ok"] += 1
+
+    temp = (req.temperature_override
+            if req.temperature_override is not None
+            else req.model.sampling.temperature)
+    with results_path.open("a") as fp:
+        for p in problems:
+            tid = f"Mbpp/{p['task_id']}"
+            if tid in done:
+                continue
+            r = run_problem(
+                backend, p,
+                max_tokens=req.model.sampling.max_tokens,
+                temperature=temp,
+            )
+            fp.write(json.dumps({
+                "task_id": r.task_id, "passed": r.passed,
+                "extract_ok": r.extract_ok, "wall_s": r.wall_s,
+                "prompt_tokens": r.prompt_tokens,
+                "completion_tokens": r.completion_tokens,
+                "error": r.error[:500] if r.error else "",
+                "raw_text": r.raw_text,
+                "completion": r.completion,  # post-normalization, for audit
+            }) + "\n")
+            fp.flush()
+            summary["wall_s"] += r.wall_s
+            summary["completion_tokens"] += r.completion_tokens
+            if r.passed:
+                summary["n_passed"] += 1
+            if r.extract_ok:
+                summary["n_extract_ok"] += 1
+    summary["pass_at_1"] = summary["n_passed"] / max(1, summary["n_problems"])
+    (out_dir / "summary.json").write_text(json.dumps(summary, indent=2))
+    return summary
+
+
 @dataclass(frozen=True)
 class BenchmarkSpec:
     """Static facts about one registered benchmark.
@@ -288,6 +366,12 @@ _BENCH_RUNNERS: dict[str, BenchmarkSpec] = {
     "humaneval": BenchmarkSpec(
         name="humaneval",
         runner=_run_humaneval,
+        supports_per_problem_resume=True,
+        force_clean_filenames=frozenset({"summary.json", "results.jsonl"}),
+    ),
+    "mbpp": BenchmarkSpec(
+        name="mbpp",
+        runner=_run_mbpp,
         supports_per_problem_resume=True,
         force_clean_filenames=frozenset({"summary.json", "results.jsonl"}),
     ),

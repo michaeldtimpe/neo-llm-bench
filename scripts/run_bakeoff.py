@@ -116,6 +116,8 @@ def main() -> int:
                    help="Per-category problem cap for BFCL.")
     p.add_argument("--humaneval-limit", type=int, default=None,
                    help="Total problem cap for HumanEval (max 164).")
+    p.add_argument("--mbpp-limit", type=int, default=None,
+                   help="Total problem cap for MBPP (max 427, sanitized split).")
     p.add_argument("--bfcl-categories", nargs="+", default=None)
     p.add_argument("--bfcl-mode", choices=("auto", "structured", "inject"), default="auto",
                    help="auto: structured-tools first, prompt-inject on 500 (default). "
@@ -264,7 +266,11 @@ def main() -> int:
                     bench_spec.force_clean_filenames,
                 )
 
-        limit = args.bfcl_limit if bench == "bfcl" else args.humaneval_limit
+        limit = {
+            "bfcl": args.bfcl_limit,
+            "humaneval": args.humaneval_limit,
+            "mbpp": args.mbpp_limit,
+        }.get(bench)
         req = RunRequest(
             model=mc, benchmarks=[bench], output_dir=args.output,
             rep=args.rep, limit=limit,
