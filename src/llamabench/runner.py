@@ -152,6 +152,8 @@ def _run_bfcl(backend: Backend, req: RunRequest) -> dict:
     from benchmarks.bfcl.adapter import (
         SUPPORTED_CATEGORIES, load_problems, run_problem_agent, run_problem_raw,
     )
+    from benchmarks.bfcl.multi_turn import is_multi_turn, run_problem_multi_turn
+    from dataclasses import asdict
 
     out_dir = req.output_dir / "bfcl" / req.model.id / f"rep_{req.rep}"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -198,6 +200,36 @@ def _run_bfcl(backend: Backend, req: RunRequest) -> dict:
                 if req.temperature_override is not None
                 else req.model.sampling.temperature)
         for p in problems:
+            if is_multi_turn(cat):
+                # Multi-turn problems use their own driver + grader path.
+                # The runner here just persists the per-turn-per-step call
+                # strings; grade_bakeoff.py loads them later and dispatches
+                # to grade_multi_turn against the bfcl_eval state checker.
+                mt = run_problem_multi_turn(
+                    backend, p,
+                    max_tokens=req.model.sampling.max_tokens,
+                    temperature=temp,
+                    category=cat,
+                )
+                row = {
+                    "id": mt.problem_id,
+                    "per_turn_steps": mt.per_turn_steps,
+                    "wall_s": mt.wall_s,
+                    "prompt_tokens": mt.prompt_tokens,
+                    "completion_tokens": mt.completion_tokens,
+                    "error": mt.error,
+                    "n_turns": len(mt.per_turn_steps),
+                    "trace": [asdict(t) for t in mt.per_turn_trace],
+                }
+                (cat_dir / f"{mt.problem_id}.json").write_text(json.dumps(row))
+                cat_summary["wall_s"] += mt.wall_s
+                cat_summary["completion_tokens"] += mt.completion_tokens
+                if mt.error:
+                    cat_summary["n_errors"] += 1
+                elif any(mt.per_turn_steps):
+                    cat_summary["n_with_calls"] += 1
+                continue
+
             if run_mode == "agent":
                 r = run_problem_agent(backend, role_cfg, p)
             else:
