@@ -15,6 +15,7 @@ from typing import Callable
 
 from llamabench.backend import Backend
 from llamabench.config import BenchProfile, ModelConfig, ServerConfig as _ServerCfg
+from llamabench.metadata import build_run_metadata, write_run_metadata
 from llamabench.server import DEFAULT_BIN, LlamaServer, ServerSpec
 
 
@@ -87,12 +88,25 @@ def run(req: RunRequest, profile: BenchProfile) -> RunResult:
         server.start()
         backend = Backend(base_url=server.base_url, model=spec.alias or req.model.id)
         for bench in req.benchmarks:
-            runner_fn = _BENCH_RUNNERS.get(bench)
-            if runner_fn is None:
+            spec_entry = _BENCH_RUNNERS.get(bench)
+            if spec_entry is None:
                 ran[bench] = {"error": f"unknown benchmark: {bench}"}
                 continue
+            # Persist provenance before the bench writes its own outputs.
+            # Best-effort; metadata failures must not block the run.
             try:
-                ran[bench] = runner_fn(backend, req)
+                step_dir = req.output_dir / bench / req.model.id / f"rep_{req.rep}"
+                meta = build_run_metadata(
+                    model=req.model, benchmark=bench, rep=req.rep,
+                    profile=profile, server_bin=bin_path,
+                    mode={"bfcl_mode": req.bfcl_mode} if bench == "bfcl" else None,
+                    temperature_override=req.temperature_override,
+                )
+                write_run_metadata(step_dir, meta)
+            except Exception:  # noqa: BLE001
+                logger.exception("metadata write failed for %s/%s", req.model.id, bench)
+            try:
+                ran[bench] = spec_entry.runner(backend, req)
             except Exception as e:  # noqa: BLE001
                 logger.exception("bench %s crashed for %s", bench, req.model.id)
                 ran[bench] = {"error": f"{type(e).__name__}: {e}"}
@@ -246,7 +260,35 @@ def _run_humaneval(backend: Backend, req: RunRequest) -> dict:
     return summary
 
 
-_BENCH_RUNNERS: dict[str, Callable[[Backend, RunRequest], dict]] = {
-    "bfcl": _run_bfcl,
-    "humaneval": _run_humaneval,
+@dataclass(frozen=True)
+class BenchmarkSpec:
+    """Static facts about one registered benchmark.
+
+    `force_clean_filenames` enumerates the artifacts that `--force` must
+    delete before the step re-runs (so per-problem resume paths can't
+    silently reuse stale data). New benchmarks extend the registry; the
+    cleanup helper in `run_bakeoff.py` consults this set, not a global
+    constant — which means MBPP / multi-turn / agent-mode can each
+    declare their own cleanup surface without cross-bench coupling.
+    """
+
+    name: str
+    runner: Callable[[Backend, RunRequest], dict]
+    supports_per_problem_resume: bool = False
+    force_clean_filenames: frozenset[str] = frozenset({"summary.json"})
+
+
+_BENCH_RUNNERS: dict[str, BenchmarkSpec] = {
+    "bfcl": BenchmarkSpec(
+        name="bfcl",
+        runner=_run_bfcl,
+        supports_per_problem_resume=False,
+        force_clean_filenames=frozenset({"summary.json"}),
+    ),
+    "humaneval": BenchmarkSpec(
+        name="humaneval",
+        runner=_run_humaneval,
+        supports_per_problem_resume=True,
+        force_clean_filenames=frozenset({"summary.json", "results.jsonl"}),
+    ),
 }

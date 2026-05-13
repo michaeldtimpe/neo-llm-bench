@@ -167,54 +167,74 @@ def test_torn_last_line_is_dropped_and_rerun(run_request, patched_humaneval):
     assert summary["n_problems"] == 5
 
 
-def test_clear_stale_for_force_removes_summary(tmp_path: Path) -> None:
+_HE_CLEAN = frozenset({"summary.json", "results.jsonl"})
+_BFCL_CLEAN = frozenset({"summary.json"})
+
+
+def test_clear_stale_for_force_removes_humaneval_artifacts(tmp_path: Path) -> None:
     out_dir = tmp_path / "humaneval" / "fake-model" / "rep_0"
     out_dir.mkdir(parents=True)
     (out_dir / "summary.json").write_text('{"stale": true}')
     (out_dir / "results.jsonl").write_text('{"task_id": "HumanEval/0"}\n')
 
-    run_bakeoff._clear_stale_for_force(out_dir)
+    run_bakeoff._clear_stale_for_force(out_dir, _HE_CLEAN)
 
     assert not (out_dir / "summary.json").exists()
     assert not (out_dir / "results.jsonl").exists()
 
 
-def test_clear_stale_for_force_leaves_unrelated_files(tmp_path: Path) -> None:
+def test_clear_stale_for_force_respects_per_spec_filenames(tmp_path: Path) -> None:
+    """BFCL only declares summary.json — results.jsonl (if present
+    somehow) must survive when the BFCL spec is used."""
     out_dir = tmp_path / "bfcl" / "fake-model" / "rep_1"
     out_dir.mkdir(parents=True)
     (out_dir / "summary.json").write_text('{}')
+    (out_dir / "results.jsonl").write_text('{"task_id": "stray"}\n')
     # Per-category subdir + per-problem JSON (BFCL's shape) — must survive.
     cat = out_dir / "simple_python"
     cat.mkdir()
     (cat / "simple_python_0.json").write_text('{"id": "simple_python_0"}')
 
-    run_bakeoff._clear_stale_for_force(out_dir)
+    run_bakeoff._clear_stale_for_force(out_dir, _BFCL_CLEAN)
 
     assert not (out_dir / "summary.json").exists()
+    assert (out_dir / "results.jsonl").is_file()   # NOT in BFCL's clean set
     assert cat.is_dir()
     assert (cat / "simple_python_0.json").is_file()
 
 
 def test_clear_stale_for_force_is_idempotent(tmp_path: Path) -> None:
     # Missing dir
-    run_bakeoff._clear_stale_for_force(tmp_path / "does" / "not" / "exist")
+    run_bakeoff._clear_stale_for_force(tmp_path / "does" / "not" / "exist", _HE_CLEAN)
     # Empty dir
     empty = tmp_path / "empty"
     empty.mkdir()
-    run_bakeoff._clear_stale_for_force(empty)
+    run_bakeoff._clear_stale_for_force(empty, _HE_CLEAN)
     # Dir with only unrelated files
     odd = tmp_path / "odd"
     odd.mkdir()
     (odd / "notes.txt").write_text("hi")
-    run_bakeoff._clear_stale_for_force(odd)
+    run_bakeoff._clear_stale_for_force(odd, _HE_CLEAN)
     assert (odd / "notes.txt").is_file()
     # Double-call on a populated dir leaves no residue and doesn't raise.
     pop = tmp_path / "pop"
     pop.mkdir()
     (pop / "summary.json").write_text('{}')
-    run_bakeoff._clear_stale_for_force(pop)
-    run_bakeoff._clear_stale_for_force(pop)
+    run_bakeoff._clear_stale_for_force(pop, _HE_CLEAN)
+    run_bakeoff._clear_stale_for_force(pop, _HE_CLEAN)
     assert not (pop / "summary.json").exists()
+
+
+def test_registered_specs_have_expected_clean_sets() -> None:
+    """Smoke-test that the registry matches the test expectations above —
+    if someone changes a spec's force_clean_filenames the test rationale
+    above stays correct only as long as this stays true."""
+    from llamabench.runner import _BENCH_RUNNERS
+
+    assert _BENCH_RUNNERS["humaneval"].force_clean_filenames == _HE_CLEAN
+    assert _BENCH_RUNNERS["bfcl"].force_clean_filenames == _BFCL_CLEAN
+    assert _BENCH_RUNNERS["humaneval"].supports_per_problem_resume is True
+    assert _BENCH_RUNNERS["bfcl"].supports_per_problem_resume is False
 
 
 def test_resume_with_smaller_limit_ignores_extra_rows(tmp_path, model_cfg, patched_humaneval):
