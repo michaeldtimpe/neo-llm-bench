@@ -391,6 +391,23 @@ done
 
 Failure-mode detail is in `graded_failure_modes.md`.
 
+## What comes next — round 3
+
+Round-2 work is complete. Forward-looking docs added at repo root:
+
+- **[`BENCHMARKS.md`](BENCHMARKS.md)** — what each of the five
+  benchmark signals in this report actually measures, and the four
+  orthogonal evaluation dimensions they span. Read this first if
+  you're new to the project.
+- **[`round_3_planning.md`](round_3_planning.md)** — the decision
+  matrix that informed the round-3 scope, preserved as paper trail.
+  Comparison cells cite their source rep + grading artifact.
+- **[`round_3_design.md`](round_3_design.md)** — round-3 scope:
+  prompt-engineering experiments on all three finalists (branches A,
+  B, C) probing whether the prompt-mediated capability layer can
+  move each model on its individual weakest axis. Executable
+  commands + falsifiable gates per branch.
+
 ## Appendix: round-1 cut models
 
 Not eligible for round 2. BFCL numbers below are 30-problem rep_0
