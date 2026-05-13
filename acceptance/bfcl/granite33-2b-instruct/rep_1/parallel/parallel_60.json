@@ -1,1 +1,1 @@
-{"id": "parallel_60", "actual_calls": [["math.factorial", {"number": 5}], ["math.factorial", {"number": 7}], ["math.factorial", {"number": 9}]], "wall_s": 5.512625000003027, "prompt_tokens": 248, "completion_tokens": 56, "error": "", "passed": true, "reason": "all_calls_matched"}
+{"id": "parallel_60", "actual_calls": [["math.factorial", {"number": 5}], ["math.factorial", {"number": 7}], ["math.factorial", {"number": 9}]], "wall_s": 0.913466707977932, "prompt_tokens": 248, "completion_tokens": 56, "error": "", "passed": true, "reason": "all_calls_matched"}

@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_87", "actual_calls": [["kinematics.final_velocity", {"initial_velocity": 0, "time": 5, "acceleration": 3}]], "wall_s": 3.2509780839973246, "prompt_tokens": 672, "completion_tokens": 47, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}
+{"id": "parallel_multiple_87", "actual_calls": [["kinematics.final_velocity", {"initial_velocity": 0, "time": 5, "acceleration": 3}]], "wall_s": 0.6966587910428643, "prompt_tokens": 674, "completion_tokens": 47, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

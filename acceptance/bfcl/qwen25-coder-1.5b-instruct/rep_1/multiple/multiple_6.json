@@ -1,1 +1,1 @@
-{"id": "multiple_6", "actual_calls": [["capacitance_calculator.calculate", {"A": 10, "d": 0.01, "K": 1.0}]], "wall_s": 3.329091874998994, "prompt_tokens": 593, "completion_tokens": 54, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_6", "actual_calls": [["capacitance_calculator.calculate", {"A": 10, "d": 0.01, "K": 1.0}]], "wall_s": 0.7404218330048025, "prompt_tokens": 595, "completion_tokens": 54, "error": "", "passed": true, "reason": "matched_gt_entry"}

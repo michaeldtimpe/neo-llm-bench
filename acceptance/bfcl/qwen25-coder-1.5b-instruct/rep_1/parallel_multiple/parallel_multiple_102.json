@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_102", "actual_calls": [["financial.compound_interest", {"principle": 5000, "rate": 0.04, "time": 5, "n": 4}]], "wall_s": 2.963410250005836, "prompt_tokens": 601, "completion_tokens": 59, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_multiple_102", "actual_calls": [["financial.compound_interest", {"principle": 5000, "rate": 0.04, "time": 5, "n": 4}]], "wall_s": 0.778739332978148, "prompt_tokens": 603, "completion_tokens": 59, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

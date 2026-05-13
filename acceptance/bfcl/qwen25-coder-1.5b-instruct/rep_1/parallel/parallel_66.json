@@ -1,1 +1,1 @@
-{"id": "parallel_66", "actual_calls": [], "wall_s": 11.633857041000738, "prompt_tokens": 337, "completion_tokens": 291, "error": "", "passed": false, "reason": "emitted_0_calls_expected_3"}
+{"id": "parallel_66", "actual_calls": [["geometry.area_circle", {"radius": 5, "units": "meters"}]], "wall_s": 0.5238456670194864, "prompt_tokens": 339, "completion_tokens": 38, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

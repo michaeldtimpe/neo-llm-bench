@@ -1,1 +1,1 @@
-{"id": "irrelevance_58", "actual_calls": [["solar_panel.calculate_need", {"square_footage": 2000, "average_sunlight_hours": 5}]], "wall_s": 1.9661846249946393, "prompt_tokens": 355, "completion_tokens": 37, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: solar_panel.calculate_need"}
+{"id": "irrelevance_58", "actual_calls": [], "wall_s": 0.47129254101309925, "prompt_tokens": 357, "completion_tokens": 34, "error": "", "passed": true, "reason": "correctly_no_tool_call"}

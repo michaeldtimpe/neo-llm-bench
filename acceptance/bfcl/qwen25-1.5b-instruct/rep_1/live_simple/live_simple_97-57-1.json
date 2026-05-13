@@ -1,1 +1,1 @@
-{"id": "live_simple_97-57-1", "actual_calls": [["get_current_weather", {"location": "El Gastor, Andalusia"}]], "wall_s": 1.4228535000002012, "prompt_tokens": 354, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_97-57-1", "actual_calls": [["get_current_weather", {"location": "El Gastor, Andalusia", "unit": "fahrenheit"}]], "wall_s": 0.45822483400115743, "prompt_tokens": 356, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

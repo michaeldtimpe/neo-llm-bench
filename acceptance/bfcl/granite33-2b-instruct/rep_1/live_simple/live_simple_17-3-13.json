@@ -1,1 +1,1 @@
-{"id": "live_simple_17-3-13", "actual_calls": [["get_current_weather", {"location": "Boston", "unit": "fahrenheit"}]], "wall_s": 2.245194832998095, "prompt_tokens": 338, "completion_tokens": 29, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}
+{"id": "live_simple_17-3-13", "actual_calls": [["get_current_weather", {"location": "Boston", "unit": "fahrenheit"}]], "wall_s": 0.2597915419610217, "prompt_tokens": 338, "completion_tokens": 29, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

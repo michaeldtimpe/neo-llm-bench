@@ -1,1 +1,1 @@
-{"id": "multiple_49", "actual_calls": [["calc_Compound_Interest", {"principle_amount": 1500, "duration": 2, "annual_rate": 2.5}]], "wall_s": 5.560362584001268, "prompt_tokens": 752, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_49", "actual_calls": [["calc_Compound_Interest", {"principle_amount": 1500, "duration": 2, "annual_rate": 2.5}]], "wall_s": 0.8885199169744737, "prompt_tokens": 752, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

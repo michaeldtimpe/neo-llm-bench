@@ -1,1 +1,1 @@
-{"id": "live_multiple_29-9-0", "actual_calls": [["multiply", {"a": 3, "b": 10}]], "wall_s": 4.772078750000219, "prompt_tokens": 684, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_29-9-0", "actual_calls": [["multiply", {"a": 3, "b": 10}]], "wall_s": 0.3060397499939427, "prompt_tokens": 684, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}

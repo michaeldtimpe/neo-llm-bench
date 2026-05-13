@@ -1,1 +1,1 @@
-{"id": "simple_python_55", "actual_calls": [["biology.get_cell_info", {"cell_type": "human cell", "detailed": true}]], "wall_s": 2.4152888340031495, "prompt_tokens": 280, "completion_tokens": 32, "error": "", "passed": false, "reason": "call_biology.get_cell_info_did_not_match_any_gt"}
+{"id": "simple_python_55", "actual_calls": [["biology.get_cell_info", {"cell_type": "human cell", "detailed": true}]], "wall_s": 0.5402758339769207, "prompt_tokens": 280, "completion_tokens": 32, "error": "", "passed": false, "reason": "call_biology.get_cell_info_did_not_match_any_gt"}

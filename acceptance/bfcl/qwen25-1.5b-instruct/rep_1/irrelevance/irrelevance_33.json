@@ -1,1 +1,1 @@
-{"id": "irrelevance_33", "actual_calls": [["identify_species", {"sequence": "ATCG"}]], "wall_s": 1.2472889580021729, "prompt_tokens": 294, "completion_tokens": 21, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: identify_species"}
+{"id": "irrelevance_33", "actual_calls": [["identify_species", {"sequence": "ATCG"}]], "wall_s": 0.2979950840235688, "prompt_tokens": 296, "completion_tokens": 21, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: identify_species"}

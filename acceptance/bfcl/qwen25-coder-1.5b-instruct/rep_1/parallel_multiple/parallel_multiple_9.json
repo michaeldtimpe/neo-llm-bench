@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_9", "actual_calls": [["flight_book", {"_from": "Seattle", "to": "Boston", "airlines": "American Airlines"}]], "wall_s": 2.481859416999214, "prompt_tokens": 423, "completion_tokens": 45, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_multiple_9", "actual_calls": [["flight_book", {"_from": "Seattle", "to": "Boston", "airlines": "American Airlines"}]], "wall_s": 0.5607132090372033, "prompt_tokens": 425, "completion_tokens": 45, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

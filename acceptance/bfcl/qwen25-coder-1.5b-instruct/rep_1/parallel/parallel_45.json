@@ -1,1 +1,1 @@
-{"id": "parallel_45", "actual_calls": [["musicCharts.getMostPlayed", {"genre": "Pop", "region": "Australia", "duration": 0}]], "wall_s": 2.320137374998012, "prompt_tokens": 347, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_45", "actual_calls": [["musicCharts.getMostPlayed", {"genre": "Pop", "region": "Australia", "duration": 0}]], "wall_s": 0.6653058750089258, "prompt_tokens": 349, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

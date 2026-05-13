@@ -1,1 +1,1 @@
-{"id": "simple_python_127", "actual_calls": [["calculate_NPV", {"cash_flows": [200, 300, 400, 500], "discount_rate": 0.1, "initial_investment": 2000}]], "wall_s": 2.938458625001658, "prompt_tokens": 389, "completion_tokens": 60, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_127", "actual_calls": [["calculate_NPV", {"cash_flows": [200, 300, 400, 500], "discount_rate": 0.1, "initial_investment": 2000}]], "wall_s": 0.7541959160007536, "prompt_tokens": 391, "completion_tokens": 57, "error": "", "passed": true, "reason": "matched_gt_entry"}

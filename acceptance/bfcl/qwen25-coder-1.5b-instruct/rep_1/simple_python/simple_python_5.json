@@ -1,1 +1,1 @@
-{"id": "simple_python_5", "actual_calls": [["solve_quadratic", {"a": 3, "b": -11, "c": -4, "root_type": "real"}]], "wall_s": 2.7884896250034217, "prompt_tokens": 414, "completion_tokens": 53, "error": "", "passed": false, "reason": "call_solve_quadratic_did_not_match_any_gt"}
+{"id": "simple_python_5", "actual_calls": [["solve_quadratic", {"a": 3, "b": -11, "c": -4, "root_type": "real"}]], "wall_s": 0.43286887503927574, "prompt_tokens": 416, "completion_tokens": 53, "error": "", "passed": false, "reason": "call_solve_quadratic_did_not_match_any_gt"}

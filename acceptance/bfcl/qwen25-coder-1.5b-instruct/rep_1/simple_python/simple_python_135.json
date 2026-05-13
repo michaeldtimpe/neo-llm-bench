@@ -1,1 +1,1 @@
-{"id": "simple_python_135", "actual_calls": [["calculate_return_on_investment", {"purchase_price": 20, "sale_price": 25, "dividend": 2}]], "wall_s": 2.5179723339970224, "prompt_tokens": 351, "completion_tokens": 51, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_135", "actual_calls": [["calculate_return_on_investment", {"purchase_price": 20, "sale_price": 25, "dividend": 2}]], "wall_s": 0.6601677499711514, "prompt_tokens": 353, "completion_tokens": 51, "error": "", "passed": true, "reason": "matched_gt_entry"}

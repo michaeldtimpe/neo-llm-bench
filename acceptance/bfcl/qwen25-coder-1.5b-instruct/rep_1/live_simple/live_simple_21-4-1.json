@@ -1,1 +1,1 @@
-{"id": "live_simple_21-4-1", "actual_calls": [["change_food", {"food_item": "chicken dish", "modification_request": "extra spicy"}]], "wall_s": 1.6656596250031726, "prompt_tokens": 351, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_21-4-1", "actual_calls": [["change_food", {"food_item": "chicken dish", "modification_request": "extra spicy"}]], "wall_s": 0.5363877919735387, "prompt_tokens": 353, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

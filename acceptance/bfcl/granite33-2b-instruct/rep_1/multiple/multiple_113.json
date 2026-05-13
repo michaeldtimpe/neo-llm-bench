@@ -1,1 +1,1 @@
-{"id": "multiple_113", "actual_calls": [["calculate_fitness", {"trait_values": [0.8, 0.7], "trait_contributions": [0.4, 0.6]}]], "wall_s": 8.580795499998203, "prompt_tokens": 997, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_113", "actual_calls": [["calculate_fitness", {"trait_values": [0.8, 0.7], "trait_contributions": [0.4, 0.6]}]], "wall_s": 0.9304763750405982, "prompt_tokens": 997, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

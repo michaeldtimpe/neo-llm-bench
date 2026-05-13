@@ -1,1 +1,1 @@
-{"id": "live_simple_8-3-4", "actual_calls": [["get_current_weather", {"location": "London, UK", "unit": "fahrenheit"}]], "wall_s": 1.6094082919953507, "prompt_tokens": 365, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_8-3-4", "actual_calls": [["get_current_weather", {"location": "London, UK", "unit": "fahrenheit"}]], "wall_s": 0.48764366703107953, "prompt_tokens": 367, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

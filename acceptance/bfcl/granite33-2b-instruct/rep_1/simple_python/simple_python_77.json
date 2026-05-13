@@ -1,1 +1,1 @@
-{"id": "simple_python_77", "actual_calls": [["restaurant.find_nearby", {"location": "Los Angeles, CA", "dietary_preference": ["Vegan"]}]], "wall_s": 3.0346978750021663, "prompt_tokens": 331, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_77", "actual_calls": [["restaurant.find_nearby", {"location": "Los Angeles, CA", "dietary_preference": ["Vegan"]}]], "wall_s": 0.6692216669907793, "prompt_tokens": 331, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

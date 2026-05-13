@@ -1,1 +1,1 @@
-{"id": "live_simple_1-1-0", "actual_calls": [["github_star", {"repos": "ShishirPatil/gorilla,gorilla-llm/gorilla-cli", "aligned": true}]], "wall_s": 2.246481833004509, "prompt_tokens": 393, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_1-1-0", "actual_calls": [["github_star", {"repos": "ShishirPatil/gorilla,gorilla-llm/gorilla-cli", "aligned": true}]], "wall_s": 0.5818641250371002, "prompt_tokens": 395, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

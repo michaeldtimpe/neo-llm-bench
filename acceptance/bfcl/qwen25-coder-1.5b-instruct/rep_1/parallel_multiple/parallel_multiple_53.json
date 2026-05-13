@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_53", "actual_calls": [["board_game_search", {"complexity": 2.5, "player_count": 6}]], "wall_s": 2.470727583997359, "prompt_tokens": 475, "completion_tokens": 41, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_multiple_53", "actual_calls": [["board_game_search", {"complexity": 2.5, "player_count": 6}]], "wall_s": 0.5457469999673776, "prompt_tokens": 477, "completion_tokens": 41, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

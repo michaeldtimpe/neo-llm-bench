@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_49", "actual_calls": [["beat_generator", {"genre": "Hip Hop", "bpm": 95, "scale": "Major"}]], "wall_s": 2.638797125000565, "prompt_tokens": 465, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_multiple_49", "actual_calls": [["beat_generator", {"genre": "Hip Hop", "bpm": 95, "scale": "Major"}]], "wall_s": 0.5861727079609409, "prompt_tokens": 467, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

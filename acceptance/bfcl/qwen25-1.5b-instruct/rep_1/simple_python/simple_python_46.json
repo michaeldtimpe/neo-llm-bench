@@ -1,1 +1,1 @@
-{"id": "simple_python_46", "actual_calls": [["calculate_final_temperature", {"mass1": 20, "temperature1": 30, "mass2": 15, "temperature2": 60}]], "wall_s": 2.61356999999407, "prompt_tokens": 437, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_46", "actual_calls": [["calculate_final_temperature", {"mass1": 20, "temperature1": 30, "mass2": 15, "temperature2": 60}]], "wall_s": 0.38460724998731166, "prompt_tokens": 439, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

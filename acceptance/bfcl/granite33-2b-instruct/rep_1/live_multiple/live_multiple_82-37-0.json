@@ -1,1 +1,1 @@
-{"id": "live_multiple_82-37-0", "actual_calls": [["add_postgres_server", {"host": "192.168.0.5"}]], "wall_s": 6.911484083000687, "prompt_tokens": 1011, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_82-37-0", "actual_calls": [["add_postgres_server", {"nickname": "pg", "host": "192.168.0.5", "port": 5432, "database": "postgres", "username": "postgres", "password": "postgres"}]], "wall_s": 0.6696373329614289, "prompt_tokens": 1011, "completion_tokens": 64, "error": "", "passed": true, "reason": "matched_gt_entry"}

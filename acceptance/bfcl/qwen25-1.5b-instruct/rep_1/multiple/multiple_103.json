@@ -1,1 +1,1 @@
-{"id": "multiple_103", "actual_calls": [["calculate_final_speed", {"initial_velocity": 0, "height": 100}]], "wall_s": 2.618617332998838, "prompt_tokens": 707, "completion_tokens": 30, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_103", "actual_calls": [["calculate_final_speed", {"initial_velocity": 0, "height": 100}]], "wall_s": 0.5046600839705206, "prompt_tokens": 709, "completion_tokens": 30, "error": "", "passed": true, "reason": "matched_gt_entry"}

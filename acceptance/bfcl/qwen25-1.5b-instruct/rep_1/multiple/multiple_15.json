@@ -1,1 +1,1 @@
-{"id": "multiple_15", "actual_calls": [["solarFarm.potential", {"coordinates": [43.653225, -79.383186], "panelArea": 80000, "month": "December"}]], "wall_s": 3.442577874993731, "prompt_tokens": 562, "completion_tokens": 60, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_15", "actual_calls": [["solarFarm.potential", {"coordinates": [43.653225, -79.383186], "panelArea": 80000, "month": "December"}]], "wall_s": 0.8247269580024295, "prompt_tokens": 564, "completion_tokens": 60, "error": "", "passed": true, "reason": "matched_gt_entry"}

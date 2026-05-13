@@ -1,1 +1,1 @@
-{"id": "simple_python_71", "actual_calls": [["generate_DNA_sequence", {"length": 100, "preferences": ["G", "C"]}]], "wall_s": 2.1974612079939106, "prompt_tokens": 341, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_71", "actual_calls": [["generate_DNA_sequence", {"length": 100, "preferences": ["G", "C"]}]], "wall_s": 0.5539785419823602, "prompt_tokens": 343, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

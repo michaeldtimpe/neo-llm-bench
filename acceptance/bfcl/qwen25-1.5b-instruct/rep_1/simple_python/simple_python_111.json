@@ -1,1 +1,1 @@
-{"id": "simple_python_111", "actual_calls": [["random.normalvariate", {"mu": 0, "sigma": 1}]], "wall_s": 1.4373934579998604, "prompt_tokens": 300, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_111", "actual_calls": [["random.normalvariate", {"mu": 0, "sigma": 1}]], "wall_s": 0.37089041603030637, "prompt_tokens": 302, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -7,43 +7,43 @@
       "n_problems": 100,
       "n_with_calls": 100,
       "n_errors": 0,
-      "wall_s": 213.05924745304947,
-      "completion_tokens": 4088
+      "wall_s": 53.588141625514254,
+      "completion_tokens": 4065
     },
     "live_multiple": {
       "n_problems": 100,
       "n_with_calls": 96,
       "n_errors": 0,
-      "wall_s": 272.1119576580313,
-      "completion_tokens": 3835
+      "wall_s": 56.83687437401386,
+      "completion_tokens": 3971
     },
     "live_parallel": {
       "n_problems": 16,
       "n_with_calls": 16,
       "n_errors": 0,
-      "wall_s": 63.652792248009064,
-      "completion_tokens": 1373
+      "wall_s": 19.16817524994258,
+      "completion_tokens": 1544
     },
     "live_parallel_multiple": {
       "n_problems": 24,
       "n_with_calls": 24,
       "n_errors": 0,
-      "wall_s": 128.68571762697684,
-      "completion_tokens": 1990
+      "wall_s": 25.663480624032672,
+      "completion_tokens": 1915
     },
     "live_irrelevance": {
       "n_problems": 100,
-      "n_with_calls": 19,
+      "n_with_calls": 22,
       "n_errors": 0,
-      "wall_s": 205.74952087896963,
-      "completion_tokens": 4466
+      "wall_s": 38.075731718796305,
+      "completion_tokens": 2886
     },
     "live_relevance": {
       "n_problems": 16,
       "n_with_calls": 15,
       "n_errors": 0,
-      "wall_s": 66.9373982489924,
-      "completion_tokens": 1068
+      "wall_s": 15.78673866711324,
+      "completion_tokens": 1112
     }
   }
 }

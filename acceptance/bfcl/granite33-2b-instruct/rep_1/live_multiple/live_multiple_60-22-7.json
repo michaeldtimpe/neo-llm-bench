@@ -1,1 +1,1 @@
-{"id": "live_multiple_60-22-7", "actual_calls": [["inventory_management", {"product_id": "ABC123", "sizes": ["L"]}]], "wall_s": 2.2327589580017957, "prompt_tokens": 1077, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_60-22-7", "actual_calls": [["inventory_management", {"product_id": "ABC123", "sizes": ["L"]}]], "wall_s": 0.28907995799090713, "prompt_tokens": 1077, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

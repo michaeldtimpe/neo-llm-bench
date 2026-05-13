@@ -1,1 +1,1 @@
-{"id": "live_simple_73-36-1", "actual_calls": [["detect_beats_and_filter", {"capture_percentage": 90, "confidence_window_size": 0.25}]], "wall_s": 1.96203712499846, "prompt_tokens": 390, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_73-36-1", "actual_calls": [["detect_beats_and_filter", {"capture_percentage": 90, "confidence_window_size": 0.25}]], "wall_s": 0.41099333396414295, "prompt_tokens": 392, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

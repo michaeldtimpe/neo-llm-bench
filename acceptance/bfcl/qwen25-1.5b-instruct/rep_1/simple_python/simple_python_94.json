@@ -1,1 +1,1 @@
-{"id": "simple_python_94", "actual_calls": [["update_user_info", {"user_id": 43523, "update_info": {"name": "John Doe", "email": "johndoe@email.com"}}]], "wall_s": 2.5379797500063432, "prompt_tokens": 383, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_94", "actual_calls": [["update_user_info", {"user_id": 43523, "update_info": {"name": "John Doe", "email": "johndoe@email.com"}}]], "wall_s": 0.6433654580032453, "prompt_tokens": 385, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

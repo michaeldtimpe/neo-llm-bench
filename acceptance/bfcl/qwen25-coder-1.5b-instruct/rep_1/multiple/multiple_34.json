@@ -1,1 +1,1 @@
-{"id": "multiple_34", "actual_calls": [["math.lcm", {"num1": 18, "num2": 12}]], "wall_s": 2.4656344169998192, "prompt_tokens": 484, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_34", "actual_calls": [["math.lcm", {"num1": 18, "num2": 12}]], "wall_s": 0.5545895419782028, "prompt_tokens": 486, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "simple_python_66", "actual_calls": [["ecology_data.precipitation_stats", {"location": "Amazon rainforest", "time_frame": "six_months"}]], "wall_s": 1.8484779999998864, "prompt_tokens": 325, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_66", "actual_calls": [["ecology_data.precipitation_stats", {"location": "Amazon rainforest", "time_frame": "six_months"}]], "wall_s": 0.4707435420132242, "prompt_tokens": 327, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

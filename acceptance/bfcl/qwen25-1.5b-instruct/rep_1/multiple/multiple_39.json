@@ -1,1 +1,1 @@
-{"id": "multiple_39", "actual_calls": [["ride_hailing.get_rides", {"source": "New York", "destination": "Philadelphia", "max_cost": 50}]], "wall_s": 2.379779625000083, "prompt_tokens": 471, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_39", "actual_calls": [["ride_hailing.get_rides", {"source": "New York", "destination": "Philadelphia", "max_cost": 50}]], "wall_s": 0.5622307909652591, "prompt_tokens": 473, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

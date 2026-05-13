@@ -1,1 +1,1 @@
-{"id": "multiple_38", "actual_calls": [["library.search_book", {"book_name": "The Alchemist", "city": "New York", "availability": false}]], "wall_s": 2.7880497080041096, "prompt_tokens": 500, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_38", "actual_calls": [["library.search_book", {"book_name": "The Alchemist", "city": "New York", "availability": false}]], "wall_s": 0.6006318330182694, "prompt_tokens": 502, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

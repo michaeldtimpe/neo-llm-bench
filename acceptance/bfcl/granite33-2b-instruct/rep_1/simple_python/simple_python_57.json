@@ -1,1 +1,1 @@
-{"id": "simple_python_57", "actual_calls": [["calculate_cell_density", {"optical_density": 0.6, "dilution": 5}]], "wall_s": 2.881413542003429, "prompt_tokens": 353, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_57", "actual_calls": [["calculate_cell_density", {"optical_density": 0.6, "dilution": 5}]], "wall_s": 0.5728229159722105, "prompt_tokens": 353, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

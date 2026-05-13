@@ -1,0 +1,14 @@
+{
+  "model": "qwen25-1.5b-instruct",
+  "rep": 99,
+  "mode": "auto",
+  "categories": {
+    "simple_python": {
+      "n_problems": 3,
+      "n_with_calls": 3,
+      "n_errors": 0,
+      "wall_s": 0.6840246249339543,
+      "completion_tokens": 77
+    }
+  }
+}

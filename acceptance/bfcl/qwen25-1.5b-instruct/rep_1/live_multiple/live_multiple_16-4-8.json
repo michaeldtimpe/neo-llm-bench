@@ -1,1 +1,1 @@
-{"id": "live_multiple_16-4-8", "actual_calls": [["HNA_NEWS.search", {"keyword": "\ubc15\uc9c0\uc131", "category": "Politics"}]], "wall_s": 1.3249828749976587, "prompt_tokens": 1375, "completion_tokens": 31, "error": "", "passed": false, "reason": "call_HNA_NEWS.search_did_not_match_any_gt"}
+{"id": "live_multiple_16-4-8", "actual_calls": [["HNA_NEWS.search", {"keyword": "\ubc15\uc9c0\uc131", "category": "General"}]], "wall_s": 0.42285050003556535, "prompt_tokens": 1377, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

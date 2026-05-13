@@ -1,1 +1,1 @@
-{"id": "simple_python_88", "actual_calls": [["calculate_BMI", {"weight_kg": 70, "height_m": 1.75}]], "wall_s": 1.7625975830014795, "prompt_tokens": 317, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_88", "actual_calls": [["calculate_BMI", {"weight_kg": 70, "height_m": 1.75}]], "wall_s": 0.45711649995064363, "prompt_tokens": 319, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

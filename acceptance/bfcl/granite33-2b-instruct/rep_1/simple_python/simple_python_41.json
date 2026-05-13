@@ -1,1 +1,1 @@
-{"id": "simple_python_41", "actual_calls": [["electromagnetic_force", {"charge1": 5, "charge2": 7, "distance": 3}]], "wall_s": 3.1971502080050413, "prompt_tokens": 385, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_41", "actual_calls": [["electromagnetic_force", {"charge1": 5, "charge2": 7, "distance": 3}]], "wall_s": 0.6891085000243038, "prompt_tokens": 385, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

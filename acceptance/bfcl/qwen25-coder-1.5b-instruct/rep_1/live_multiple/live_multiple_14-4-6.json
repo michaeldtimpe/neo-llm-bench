@@ -1,1 +1,1 @@
-{"id": "live_multiple_14-4-6", "actual_calls": [["ControlAppliance.execute", {"command": "\ub2e4\uc6a9\ub3c4\uc2e4, \ud1b5\ub3cc\uc774, \uc911\uc9c0"}]], "wall_s": 1.857417125000211, "prompt_tokens": 1392, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_14-4-6", "actual_calls": [["ControlAppliance.execute", {"command": "\ub2e4\uc6a9\ub3c4\uc2e4, \ud1b5\ub3cc\uc774, \uc911\uc9c0"}]], "wall_s": 0.4093300829990767, "prompt_tokens": 1394, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

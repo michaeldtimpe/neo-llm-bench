@@ -1,1 +1,1 @@
-{"id": "multiple_65", "actual_calls": [["geodistance.find", {"origin": "New York City", "destination": "Los Angeles"}]], "wall_s": 2.2183846670013736, "prompt_tokens": 533, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_65", "actual_calls": [["geodistance.find", {"origin": "New York City", "destination": "Los Angeles", "unit": "miles"}]], "wall_s": 0.5622436249977909, "prompt_tokens": 535, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

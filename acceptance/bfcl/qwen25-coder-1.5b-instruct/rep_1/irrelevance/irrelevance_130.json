@@ -1,1 +1,1 @@
-{"id": "irrelevance_130", "actual_calls": [], "wall_s": 3.9112773749948246, "prompt_tokens": 353, "completion_tokens": 87, "error": "", "passed": true, "reason": "correctly_no_tool_call"}
+{"id": "irrelevance_130", "actual_calls": [["calculate_big_five_traits", {"answers": [4, 3, 5, 2, 4], "calculate_percentile": true, "average_answers": true}]], "wall_s": 0.7314007919630967, "prompt_tokens": 355, "completion_tokens": 58, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_big_five_traits"}

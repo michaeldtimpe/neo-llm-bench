@@ -1,1 +1,1 @@
-{"id": "live_simple_87-48-0", "actual_calls": [["get_current_loc", {"coordinate_format": "DMS", "include_altitude": true}]], "wall_s": 2.974331624995102, "prompt_tokens": 363, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_87-48-0", "actual_calls": [["get_current_loc", {"coordinate_format": "DMS", "include_altitude": true}]], "wall_s": 0.29084874998079613, "prompt_tokens": 363, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

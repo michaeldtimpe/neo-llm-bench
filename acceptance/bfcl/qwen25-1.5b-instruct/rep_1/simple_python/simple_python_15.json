@@ -1,1 +1,1 @@
-{"id": "simple_python_15", "actual_calls": [["integrate", {"function": "x**3", "start_x": -2, "end_x": 3, "method": "simpson"}]], "wall_s": 2.374025666998932, "prompt_tokens": 394, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_15", "actual_calls": [["integrate", {"function": "x^3", "start_x": -2, "end_x": 3, "method": "simpson"}]], "wall_s": 0.2597082920256071, "prompt_tokens": 396, "completion_tokens": 43, "error": "", "passed": false, "reason": "call_integrate_did_not_match_any_gt"}

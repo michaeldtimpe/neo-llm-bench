@@ -1,1 +1,1 @@
-{"id": "irrelevance_19", "actual_calls": [], "wall_s": 10.985628125003132, "prompt_tokens": 312, "completion_tokens": 175, "error": "", "passed": true, "reason": "correctly_no_tool_call"}
+{"id": "irrelevance_19", "actual_calls": [], "wall_s": 2.061253209016286, "prompt_tokens": 312, "completion_tokens": 175, "error": "", "passed": true, "reason": "correctly_no_tool_call"}

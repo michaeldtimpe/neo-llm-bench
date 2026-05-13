@@ -1,1 +1,1 @@
-{"id": "live_parallel_3-0-3", "actual_calls": [["get_current_weather", {"location": "Canc\u00fan, QR", "unit": "celsius"}]], "wall_s": 2.4641988330040476, "prompt_tokens": 326, "completion_tokens": 42, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}
+{"id": "live_parallel_3-0-3", "actual_calls": [["get_current_weather", {"location": "Canc\u00fan, QR", "unit": "celsius"}]], "wall_s": 0.4191861660219729, "prompt_tokens": 328, "completion_tokens": 42, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

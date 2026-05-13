@@ -1,1 +1,1 @@
-{"id": "live_multiple_49-19-0", "actual_calls": [["interviewer_review.get", {"name": "Charlie Ji"}]], "wall_s": 1.7193556250058464, "prompt_tokens": 554, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_49-19-0", "actual_calls": [["interviewer_review.get", {"name": "Charlie Ji"}]], "wall_s": 0.34609558299416676, "prompt_tokens": 556, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}

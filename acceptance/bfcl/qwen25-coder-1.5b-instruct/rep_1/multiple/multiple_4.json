@@ -1,1 +1,1 @@
-{"id": "multiple_4", "actual_calls": [["kinematics.calculate_displacement", {"initial_speed": 20, "acceleration": 10, "time": 5, "rounding": 2}]], "wall_s": 3.4710643750004238, "prompt_tokens": 593, "completion_tokens": 58, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_4", "actual_calls": [["kinematics.calculate_displacement", {"initial_speed": 20, "acceleration": 10, "time": 5, "rounding": 2}]], "wall_s": 0.7572678339784034, "prompt_tokens": 595, "completion_tokens": 58, "error": "", "passed": true, "reason": "matched_gt_entry"}

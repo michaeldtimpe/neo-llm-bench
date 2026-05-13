@@ -1,1 +1,1 @@
-{"id": "live_simple_16-3-12", "actual_calls": [["get_current_weather", {"location": "Lang Son", "unit": "fahrenheit"}]], "wall_s": 1.7969587920015329, "prompt_tokens": 342, "completion_tokens": 29, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}
+{"id": "live_simple_16-3-12", "actual_calls": [["get_current_weather", {"location": "Lang Son", "unit": "fahrenheit"}]], "wall_s": 0.25374987500254065, "prompt_tokens": 342, "completion_tokens": 29, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

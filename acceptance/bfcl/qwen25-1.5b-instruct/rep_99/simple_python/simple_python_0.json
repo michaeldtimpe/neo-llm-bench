@@ -1,0 +1,1 @@
+{"id": "simple_python_0", "actual_calls": [["calculate_triangle_area", {"base": 10, "height": 5}]], "wall_s": 0.3321872499655001, "prompt_tokens": 328, "completion_tokens": 28, "error": ""}

@@ -1,1 +1,1 @@
-{"id": "live_simple_85-46-0", "actual_calls": [["open_meteo_api.fetch_weather_data", {"coordinates": [37.8715, -122.273], "units": "Celsius"}]], "wall_s": 2.9693201249974663, "prompt_tokens": 375, "completion_tokens": 59, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_85-46-0", "actual_calls": [["open_meteo_api.fetch_weather_data", {"coordinates": [37.8715, -122.273], "units": "Celsius"}]], "wall_s": 0.5494271249626763, "prompt_tokens": 377, "completion_tokens": 59, "error": "", "passed": true, "reason": "matched_gt_entry"}

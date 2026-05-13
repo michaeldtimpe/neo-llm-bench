@@ -1,1 +1,1 @@
-{"id": "live_simple_98-58-0", "actual_calls": [["get_weather_by_coordinates", {"city": "Chennai", "lat": 13.0827, "lon": 80.2707}]], "wall_s": 2.8342376250002417, "prompt_tokens": 356, "completion_tokens": 58, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_98-58-0", "actual_calls": [["get_weather_by_coordinates", {"city": "Chennai", "lat": 13.0827, "lon": 80.2707}]], "wall_s": 0.544632958015427, "prompt_tokens": 358, "completion_tokens": 58, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "simple_python_63", "actual_calls": [["genetics.calculate_similarity", {"species1": "human", "species2": "chimp"}]], "wall_s": 2.5190606249962, "prompt_tokens": 307, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_63", "actual_calls": [["genetics.calculate_similarity", {"species1": "human", "species2": "chimp"}]], "wall_s": 0.5261647079605609, "prompt_tokens": 307, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

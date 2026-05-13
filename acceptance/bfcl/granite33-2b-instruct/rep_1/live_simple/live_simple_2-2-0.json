@@ -1,1 +1,1 @@
-{"id": "live_simple_2-2-0", "actual_calls": [["uber.ride", {"loc": "2020 Addison Street, Berkeley, CA, USA", "type": "comfort", "time": 600}]], "wall_s": 4.143324959004531, "prompt_tokens": 390, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_2-2-0", "actual_calls": [["uber.ride", {"loc": "2020 Addison Street, Berkeley, CA, USA", "type": "comfort", "time": 600}]], "wall_s": 0.4259265829459764, "prompt_tokens": 390, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

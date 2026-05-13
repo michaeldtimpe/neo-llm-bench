@@ -1,1 +1,1 @@
-{"id": "live_simple_20-4-0", "actual_calls": [["change_food", {"food_item": "burger", "modification_request": "no onions, extra cheese"}]], "wall_s": 2.169183582998812, "prompt_tokens": 342, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_20-4-0", "actual_calls": [["change_food", {"food_item": "burger", "modification_request": "no onions, extra cheese"}]], "wall_s": 0.5250125000020489, "prompt_tokens": 344, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

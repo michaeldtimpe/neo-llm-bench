@@ -1,1 +1,1 @@
-{"id": "parallel_80", "actual_calls": [["math.gcd", {"num1": 36, "num2": 48}]], "wall_s": 2.047124333999818, "prompt_tokens": 339, "completion_tokens": 41, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_80", "actual_calls": [["math.gcd", {"num1": 36, "num2": 48}]], "wall_s": 0.5269435830414295, "prompt_tokens": 341, "completion_tokens": 41, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

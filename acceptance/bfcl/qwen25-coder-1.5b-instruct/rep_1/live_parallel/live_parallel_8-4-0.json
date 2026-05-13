@@ -1,1 +1,1 @@
-{"id": "live_parallel_8-4-0", "actual_calls": [["todo", {"type": "add", "content": "Machine Learning Study Session"}], ["todo", {"type": "delete", "content": "todo random"}]], "wall_s": 3.223651416999928, "prompt_tokens": 352, "completion_tokens": 69, "error": "", "passed": true, "reason": "all_calls_matched"}
+{"id": "live_parallel_8-4-0", "actual_calls": [["todo", {"type": "add", "content": "Machine Learning Study Session"}]], "wall_s": 0.3684269579825923, "prompt_tokens": 354, "completion_tokens": 38, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

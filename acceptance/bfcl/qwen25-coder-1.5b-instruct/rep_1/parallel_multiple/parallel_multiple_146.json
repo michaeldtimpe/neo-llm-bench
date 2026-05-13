@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_146", "actual_calls": [["modify_painting", {"size": "30x40 inches", "medium": "oil", "dominant_color": "red"}]], "wall_s": 3.4570195409978624, "prompt_tokens": 792, "completion_tokens": 51, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}
+{"id": "parallel_multiple_146", "actual_calls": [["modify_painting", {"size": "30x40 inches", "medium": "oil", "dominant_color": "red"}]], "wall_s": 0.690842000010889, "prompt_tokens": 794, "completion_tokens": 51, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

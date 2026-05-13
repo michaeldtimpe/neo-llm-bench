@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_39", "actual_calls": [["scientist_info.get_birthdate", {"name": "Nikola Tesla"}]], "wall_s": 2.0161812499936786, "prompt_tokens": 395, "completion_tokens": 36, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_multiple_39", "actual_calls": [["scientist_info.get_birthdate", {"name": "Nikola Tesla"}]], "wall_s": 0.45675104099791497, "prompt_tokens": 397, "completion_tokens": 36, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

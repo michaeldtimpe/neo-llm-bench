@@ -1,1 +1,1 @@
-{"id": "irrelevance_11", "actual_calls": [["get_closest_prime", {"number": 30, "skip": 0}]], "wall_s": 2.347287917000358, "prompt_tokens": 276, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_closest_prime"}
+{"id": "irrelevance_11", "actual_calls": [["get_closest_prime", {"number": 30, "skip": 0}]], "wall_s": 0.3502016250276938, "prompt_tokens": 276, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_closest_prime"}

@@ -1,1 +1,1 @@
-{"id": "live_simple_89-50-0", "actual_calls": [], "wall_s": 14.15554633300053, "prompt_tokens": 587, "completion_tokens": 202, "error": "", "passed": false, "reason": "no_tool_call_emitted"}
+{"id": "live_simple_89-50-0", "actual_calls": [], "wall_s": 1.6799042079946958, "prompt_tokens": 587, "completion_tokens": 202, "error": "", "passed": false, "reason": "no_tool_call_emitted"}

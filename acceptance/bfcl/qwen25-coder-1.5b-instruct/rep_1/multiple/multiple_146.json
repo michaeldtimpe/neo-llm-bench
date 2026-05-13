@@ -1,1 +1,1 @@
-{"id": "multiple_146", "actual_calls": [["restaurant.find_nearby", {"location": "Seattle, WA", "cuisine": "Chinese", "max_distance": 10}]], "wall_s": 2.8438155420008115, "prompt_tokens": 462, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_146", "actual_calls": [["restaurant.find_nearby", {"location": "Seattle, WA", "cuisine": "Chinese", "max_distance": 10}]], "wall_s": 0.6517097909818403, "prompt_tokens": 464, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

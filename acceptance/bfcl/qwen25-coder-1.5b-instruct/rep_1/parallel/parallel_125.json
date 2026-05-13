@@ -1,1 +1,1 @@
-{"id": "parallel_125", "actual_calls": [["elephant_population_estimate", {"current_population": 500, "growth_rate": 0.02, "years": 10}]], "wall_s": 2.371664457998122, "prompt_tokens": 430, "completion_tokens": 53, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}
+{"id": "parallel_125", "actual_calls": [["elephant_population_estimate", {"current_population": 500, "growth_rate": 2, "years": 10}]], "wall_s": 0.6328995829680935, "prompt_tokens": 432, "completion_tokens": 50, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

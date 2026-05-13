@@ -1,1 +1,1 @@
-{"id": "live_simple_84-45-0", "actual_calls": [["get_coordinates_from_city", {"city_name": "Seattle"}]], "wall_s": 2.3759870840003714, "prompt_tokens": 308, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_84-45-0", "actual_calls": [["get_coordinates_from_city", {"city_name": "Seattle"}]], "wall_s": 0.24859262502286583, "prompt_tokens": 308, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "live_simple_44-18-0", "actual_calls": [["ThinQ_Connect", {"body": {"airConOperationMode": "POWER_ON", "currentJobMode": "COOL"}}]], "wall_s": 2.6758903340014513, "prompt_tokens": 599, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_44-18-0", "actual_calls": [["ThinQ_Connect", {"body": {"airConOperationMode": "POWER_ON", "currentJobMode": "COOL"}}]], "wall_s": 0.7337623750208877, "prompt_tokens": 601, "completion_tokens": 52, "error": "", "passed": true, "reason": "matched_gt_entry"}

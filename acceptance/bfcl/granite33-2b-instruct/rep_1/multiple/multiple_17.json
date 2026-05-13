@@ -1,1 +1,1 @@
-{"id": "multiple_17", "actual_calls": [["currency_conversion.get_rate", {"from_currency": "Euro", "to_currency": "Dollar", "date": "2022-01-01"}]], "wall_s": 5.348623625002801, "prompt_tokens": 663, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_17", "actual_calls": [["currency_conversion.get_rate", {"from_currency": "Euro", "to_currency": "Dollar", "date": "2022-01-01"}]], "wall_s": 0.9561488339677453, "prompt_tokens": 663, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

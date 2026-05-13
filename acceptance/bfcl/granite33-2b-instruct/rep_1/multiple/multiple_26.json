@@ -1,1 +1,1 @@
-{"id": "multiple_26", "actual_calls": [["game_rewards.get", {"game": "Fortnite", "platform": "Playstation"}]], "wall_s": 4.368954917001247, "prompt_tokens": 689, "completion_tokens": 30, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_26", "actual_calls": [["game_rewards.get", {"game": "Fortnite", "platform": "Playstation"}]], "wall_s": 0.6647948329919018, "prompt_tokens": 689, "completion_tokens": 30, "error": "", "passed": true, "reason": "matched_gt_entry"}

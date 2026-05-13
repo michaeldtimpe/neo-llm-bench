@@ -1,1 +1,1 @@
-{"id": "live_simple_18-3-14", "actual_calls": [["get_current_weather", {"location": "Moscow", "unit": "celsius"}]], "wall_s": 1.916573583999707, "prompt_tokens": 349, "completion_tokens": 31, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}
+{"id": "live_simple_18-3-14", "actual_calls": [["get_current_weather", {"location": "Moscow", "unit": "celsius"}]], "wall_s": 0.27775004104478285, "prompt_tokens": 349, "completion_tokens": 31, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

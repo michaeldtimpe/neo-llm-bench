@@ -1,1 +1,1 @@
-{"id": "simple_python_22", "actual_calls": [["math.gcd", {"num1": 12, "num2": 15}]], "wall_s": 1.9616950419949717, "prompt_tokens": 297, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_22", "actual_calls": [["math.gcd", {"num1": 12, "num2": 15}]], "wall_s": 0.3317421249812469, "prompt_tokens": 299, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

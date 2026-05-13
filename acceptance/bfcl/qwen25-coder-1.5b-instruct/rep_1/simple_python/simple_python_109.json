@@ -1,1 +1,1 @@
-{"id": "simple_python_109", "actual_calls": [["random_forest.train", {"n_estimators": 100, "max_depth": 5, "data": "my_data"}]], "wall_s": 2.3952568340027938, "prompt_tokens": 329, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_109", "actual_calls": [["random_forest.train", {"n_estimators": 100, "max_depth": 5, "data": "my_data"}]], "wall_s": 0.6377777910092846, "prompt_tokens": 331, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "live_irrelevance_20-2-8", "actual_calls": [], "wall_s": 20.36127454200323, "prompt_tokens": 370, "completion_tokens": 344, "error": "", "passed": true, "reason": "correctly_no_tool_call"}
+{"id": "live_irrelevance_20-2-8", "actual_calls": [["get_current_weather", {"location": "San Francisco, CA", "unit": "fahrenheit"}]], "wall_s": 1.8521957919583656, "prompt_tokens": 370, "completion_tokens": 230, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_current_weather"}

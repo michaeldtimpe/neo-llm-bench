@@ -1,1 +1,1 @@
-{"id": "simple_python_4", "actual_calls": [["solve_quadratic_equation", {"a": 2, "b": 6, "c": 5}]], "wall_s": 2.5240840000042226, "prompt_tokens": 295, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_4", "actual_calls": [["solve_quadratic_equation", {"a": 2, "b": 6, "c": 5}]], "wall_s": 0.6130612500128336, "prompt_tokens": 295, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

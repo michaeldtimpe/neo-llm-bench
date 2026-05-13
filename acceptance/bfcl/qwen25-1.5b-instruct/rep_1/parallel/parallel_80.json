@@ -1,1 +1,1 @@
-{"id": "parallel_80", "actual_calls": [["math.gcd", {"num1": 36, "num2": 48}], ["math.gcd", {"num1": 60, "num2": 96}]], "wall_s": 2.847758584000985, "prompt_tokens": 339, "completion_tokens": 62, "error": "", "passed": true, "reason": "all_calls_matched"}
+{"id": "parallel_80", "actual_calls": [["math.gcd", {"num1": 36, "num2": 48}], ["math.gcd", {"num1": 60, "num2": 96}]], "wall_s": 0.8402040830114856, "prompt_tokens": 341, "completion_tokens": 62, "error": "", "passed": true, "reason": "all_calls_matched"}

@@ -1,1 +1,1 @@
-{"id": "multiple_148", "actual_calls": [["get_stock_info", {"company_name": "Apple Inc.", "detail_level": "detailed"}]], "wall_s": 4.817025167001702, "prompt_tokens": 473, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_148", "actual_calls": [["get_stock_info", {"company_name": "Apple Inc.", "detail_level": "detailed"}]], "wall_s": 0.5714335829834454, "prompt_tokens": 473, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "live_relevance_6-6-0", "actual_calls": [["GET_PARCEL_STATE", {"parcelTrackingId": "your_parcel_tracking_number"}]], "wall_s": 4.458721249997325, "prompt_tokens": 1292, "completion_tokens": 25, "error": "", "passed": true, "reason": "correctly_called_a_tool"}
+{"id": "live_relevance_6-6-0", "actual_calls": [], "wall_s": 0.8319486249820329, "prompt_tokens": 1294, "completion_tokens": 85, "error": "", "passed": false, "reason": "no_tool_call_when_relevant"}

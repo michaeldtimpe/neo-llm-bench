@@ -1,1 +1,1 @@
-{"id": "multiple_89", "actual_calls": [["recipe_search", {"ingredients": ["chicken", "mushrooms"], "calories": 500, "meal": "lunch"}]], "wall_s": 3.0270624999975553, "prompt_tokens": 666, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_89", "actual_calls": [["recipe_search", {"ingredients": ["chicken", "mushrooms"], "calories": 500, "meal": "lunch"}]], "wall_s": 0.6195697080111131, "prompt_tokens": 668, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

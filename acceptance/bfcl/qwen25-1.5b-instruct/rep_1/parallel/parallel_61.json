@@ -1,1 +1,1 @@
-{"id": "parallel_61", "actual_calls": [["math.hypot", {"x": 3, "y": 4}], ["math.hypot", {"x": 6, "y": 8}], ["math.hypot", {"x": 9, "y": 12, "z": 15}]], "wall_s": 4.261742959002731, "prompt_tokens": 419, "completion_tokens": 92, "error": "", "passed": true, "reason": "all_calls_matched"}
+{"id": "parallel_61", "actual_calls": [["math.hypot", {"x": 3, "y": 4}], ["math.hypot", {"x": 6, "y": 8}], ["math.hypot", {"x": 9, "y": 12, "z": 15}]], "wall_s": 1.2103564590215683, "prompt_tokens": 421, "completion_tokens": 92, "error": "", "passed": true, "reason": "all_calls_matched"}

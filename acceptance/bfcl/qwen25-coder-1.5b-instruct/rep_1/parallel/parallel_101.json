@@ -1,1 +1,1 @@
-{"id": "parallel_101", "actual_calls": [["calculate_density", {"mass": 10, "volume": 2, "unit": "kg/m\u00b3"}]], "wall_s": 2.4180558750013006, "prompt_tokens": 395, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_101", "actual_calls": [["calculate_density", {"mass": 10, "volume": 2, "unit": "kg/m\u00b3"}]], "wall_s": 0.5774596669944003, "prompt_tokens": 397, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

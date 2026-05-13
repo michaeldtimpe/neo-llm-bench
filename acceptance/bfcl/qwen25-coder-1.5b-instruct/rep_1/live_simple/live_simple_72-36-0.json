@@ -1,1 +1,1 @@
-{"id": "live_simple_72-36-0", "actual_calls": [], "wall_s": 2.932215291999455, "prompt_tokens": 407, "completion_tokens": 55, "error": "", "passed": false, "reason": "no_tool_call_emitted"}
+{"id": "live_simple_72-36-0", "actual_calls": [["detect_beats_and_filter", {"capture_percentage": 50, "confidence_window_size": 0.5}]], "wall_s": 0.4093303750269115, "prompt_tokens": 409, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

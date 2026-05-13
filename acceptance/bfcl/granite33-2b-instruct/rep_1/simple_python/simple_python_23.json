@@ -1,1 +1,1 @@
-{"id": "simple_python_23", "actual_calls": [["prime_factorize", {"number": 60, "return_type": "dictionary"}]], "wall_s": 2.349412040995958, "prompt_tokens": 304, "completion_tokens": 29, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_23", "actual_calls": [["prime_factorize", {"number": 60, "return_type": "dictionary"}]], "wall_s": 0.5205346249858849, "prompt_tokens": 304, "completion_tokens": 29, "error": "", "passed": true, "reason": "matched_gt_entry"}

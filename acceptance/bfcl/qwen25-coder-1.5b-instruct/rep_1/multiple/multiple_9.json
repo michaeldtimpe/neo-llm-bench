@@ -1,1 +1,1 @@
-{"id": "multiple_9", "actual_calls": [["calculate_average", {"gradeDict": {"math": 90, "science": 75, "history": 82, "music": 89}}]], "wall_s": 3.2691002499996102, "prompt_tokens": 463, "completion_tokens": 62, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_9", "actual_calls": [["calculate_average", {"gradeDict": {"math": 90, "science": 75, "history": 82, "music": 89}}]], "wall_s": 0.784434582979884, "prompt_tokens": 465, "completion_tokens": 62, "error": "", "passed": true, "reason": "matched_gt_entry"}

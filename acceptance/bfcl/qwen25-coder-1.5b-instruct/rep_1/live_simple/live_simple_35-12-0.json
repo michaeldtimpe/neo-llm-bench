@@ -1,1 +1,1 @@
-{"id": "live_simple_35-12-0", "actual_calls": [["answer.string", {"answer": ""}]], "wall_s": 1.3667415829986567, "prompt_tokens": 343, "completion_tokens": 16, "error": "", "passed": false, "reason": "call_answer.string_did_not_match_any_gt"}
+{"id": "live_simple_35-12-0", "actual_calls": [["answer.string", {"answer": ""}]], "wall_s": 0.35489370801951736, "prompt_tokens": 345, "completion_tokens": 27, "error": "", "passed": false, "reason": "call_answer.string_did_not_match_any_gt"}

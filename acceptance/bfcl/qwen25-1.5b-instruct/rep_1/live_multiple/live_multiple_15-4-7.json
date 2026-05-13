@@ -1,1 +1,1 @@
-{"id": "live_multiple_15-4-7", "actual_calls": [["HNA_NEWS.search", {"keyword": "Son's latest goal", "category": "Sports"}]], "wall_s": 1.38376162500208, "prompt_tokens": 1379, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_15-4-7", "actual_calls": [["HNA_NEWS.search", {"keyword": "Son's latest goal", "category": "Sports"}]], "wall_s": 0.4473701669485308, "prompt_tokens": 1381, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

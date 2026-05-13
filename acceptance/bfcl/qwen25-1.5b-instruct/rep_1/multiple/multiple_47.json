@@ -1,1 +1,1 @@
-{"id": "multiple_47", "actual_calls": [["cosine_similarity.calculate", {"vector1": [3, 2, 1], "vector2": [1, 2, 3]}]], "wall_s": 2.6253364160002093, "prompt_tokens": 517, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_47", "actual_calls": [["cosine_similarity.calculate", {"vector1": [3, 2, 1], "vector2": [1, 2, 3]}]], "wall_s": 0.5980993749690242, "prompt_tokens": 519, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

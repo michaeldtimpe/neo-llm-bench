@@ -1,1 +1,1 @@
-{"id": "live_multiple_34-11-0", "actual_calls": [["get_news_report", {"location": "Letterkenny, Ireland"}]], "wall_s": 1.9483358330035117, "prompt_tokens": 503, "completion_tokens": 25, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_34-11-0", "actual_calls": [["get_news_report", {"location": "Letterkenny, Ireland"}]], "wall_s": 0.38192454195814207, "prompt_tokens": 505, "completion_tokens": 25, "error": "", "passed": true, "reason": "matched_gt_entry"}

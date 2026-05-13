@@ -1,1 +1,1 @@
-{"id": "simple_python_137", "actual_calls": [["calculate_stock_return", {"investment_amount": 5000, "annual_growth_rate": 0.06, "holding_period": 5}]], "wall_s": 2.281751583002915, "prompt_tokens": 397, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_137", "actual_calls": [["calculate_stock_return", {"investment_amount": 5000, "annual_growth_rate": 0.06, "holding_period": 5}]], "wall_s": 0.5840856250142679, "prompt_tokens": 399, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

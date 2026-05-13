@@ -1,1 +1,1 @@
-{"id": "multiple_31", "actual_calls": [["geometry_rectangle.calculate", {"width": 7, "length": 10}]], "wall_s": 1.8694221250043483, "prompt_tokens": 454, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_31", "actual_calls": [["geometry_rectangle.calculate", {"width": 7, "length": 10}]], "wall_s": 0.3918383330455981, "prompt_tokens": 456, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

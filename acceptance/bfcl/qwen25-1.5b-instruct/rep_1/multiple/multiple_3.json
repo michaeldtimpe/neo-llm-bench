@@ -1,1 +1,1 @@
-{"id": "multiple_3", "actual_calls": [["EuclideanDistance.calculate", {"pointA": [3, 4], "pointB": [1, 2]}]], "wall_s": 2.3883909579963074, "prompt_tokens": 495, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_3", "actual_calls": [["EuclideanDistance.calculate", {"pointA": [3, 4], "pointB": [1, 2]}]], "wall_s": 0.5480992500088178, "prompt_tokens": 497, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

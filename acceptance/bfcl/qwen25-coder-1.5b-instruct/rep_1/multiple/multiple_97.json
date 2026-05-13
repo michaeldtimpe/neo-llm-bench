@@ -1,1 +1,1 @@
-{"id": "multiple_97", "actual_calls": [["geometry.area_circle", {"radius": 10, "units": "meters"}]], "wall_s": 2.3826877920000697, "prompt_tokens": 486, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_97", "actual_calls": [["geometry.area_circle", {"radius": 10, "units": "meters"}]], "wall_s": 0.5700710829696618, "prompt_tokens": 488, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

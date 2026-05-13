@@ -1,1 +1,1 @@
-{"id": "live_multiple_17-4-9", "actual_calls": [], "wall_s": 13.37579416600056, "prompt_tokens": 1365, "completion_tokens": 330, "error": "", "passed": false, "reason": "no_tool_call_emitted"}
+{"id": "live_multiple_17-4-9", "actual_calls": [["cookbook.search_recipe", {"keyword": "sikhae", "cuisine": "Korean", "max_results": 10}]], "wall_s": 0.471776916005183, "prompt_tokens": 1367, "completion_tokens": 52, "error": "", "passed": false, "reason": "call_cookbook.search_recipe_did_not_match_any_gt"}

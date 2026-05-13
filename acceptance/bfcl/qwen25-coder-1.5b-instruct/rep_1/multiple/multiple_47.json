@@ -1,1 +1,1 @@
-{"id": "multiple_47", "actual_calls": [["cosine_similarity.calculate", {"vector1": [3, 2, 1], "vector2": [1, 2, 3], "rounding": 2}]], "wall_s": 3.297475207997195, "prompt_tokens": 517, "completion_tokens": 60, "error": "", "passed": false, "reason": "call_cosine_similarity.calculate_did_not_match_any_gt"}
+{"id": "multiple_47", "actual_calls": [["cosine_similarity.calculate", {"vector1": [3, 2, 1], "vector2": [1, 2, 3], "rounding": 0}]], "wall_s": 0.7797039580182172, "prompt_tokens": 519, "completion_tokens": 60, "error": "", "passed": true, "reason": "matched_gt_entry"}

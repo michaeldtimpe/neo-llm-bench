@@ -1,1 +1,1 @@
-{"id": "live_multiple_62-24-0", "actual_calls": [["todoIdx", {"type": "delete", "index": 1}]], "wall_s": 1.984927040997718, "prompt_tokens": 518, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_62-24-0", "actual_calls": [["todoIdx", {"type": "delete", "index": 1}]], "wall_s": 0.37652629101648927, "prompt_tokens": 520, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}

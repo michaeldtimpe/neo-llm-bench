@@ -1,1 +1,1 @@
-{"id": "multiple_68", "actual_calls": [["library.search_books", {"location": "New York", "genre": "historical fiction", "title": ""}]], "wall_s": 2.6995785830004024, "prompt_tokens": 497, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_68", "actual_calls": [["library.search_books", {"location": "New York", "genre": "historical fiction", "title": ""}]], "wall_s": 0.5959338329848833, "prompt_tokens": 499, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "multiple_48", "actual_calls": [["library.find_nearby", {"location": "New York City, NY", "preferences": ["Pet-friendly", "Disabled Access"]}]], "wall_s": 2.6986195419958676, "prompt_tokens": 476, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_48", "actual_calls": [["library.find_nearby", {"location": "New York City, NY", "preferences": ["Pet-friendly", "Disabled Access"]}]], "wall_s": 0.6535122499917634, "prompt_tokens": 478, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

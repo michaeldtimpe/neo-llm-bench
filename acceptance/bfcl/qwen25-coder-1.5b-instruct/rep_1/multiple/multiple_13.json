@@ -1,1 +1,1 @@
-{"id": "multiple_13", "actual_calls": [["corporate_finance.revenue_forecast", {"company": "XYZ", "product": "A", "sales_units_increase_percentage": 10}]], "wall_s": 2.8459445830012555, "prompt_tokens": 459, "completion_tokens": 53, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_13", "actual_calls": [["corporate_finance.revenue_forecast", {"company": "XYZ", "product": "A", "sales_units_increase_percentage": 10}]], "wall_s": 0.684469917032402, "prompt_tokens": 461, "completion_tokens": 53, "error": "", "passed": true, "reason": "matched_gt_entry"}

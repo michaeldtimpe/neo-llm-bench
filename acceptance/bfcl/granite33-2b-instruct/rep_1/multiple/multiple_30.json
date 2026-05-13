@@ -1,1 +1,1 @@
-{"id": "multiple_30", "actual_calls": [["rectangle.area", {"length": 12, "width": 5}]], "wall_s": 3.301402707998932, "prompt_tokens": 531, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_30", "actual_calls": [["rectangle.area", {"length": 12, "width": 5}]], "wall_s": 0.5619232919998467, "prompt_tokens": 531, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}

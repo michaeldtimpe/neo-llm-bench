@@ -1,1 +1,1 @@
-{"id": "multiple_2", "actual_calls": [["country_info.capital", {"country": "Brazil"}]], "wall_s": 1.4723755000013625, "prompt_tokens": 397, "completion_tokens": 22, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_2", "actual_calls": [["country_info.capital", {"country": "Brazil"}]], "wall_s": 0.3698655000189319, "prompt_tokens": 399, "completion_tokens": 22, "error": "", "passed": true, "reason": "matched_gt_entry"}

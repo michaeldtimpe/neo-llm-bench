@@ -1,1 +1,1 @@
-{"id": "multiple_118", "actual_calls": [["imdb.find_movies_by_actor", {"actor_name": "Leonardo DiCaprio", "year": 2010, "category": "all"}]], "wall_s": 3.7070893329946557, "prompt_tokens": 731, "completion_tokens": 55, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_118", "actual_calls": [["imdb.find_movies_by_actor", {"actor_name": "Leonardo DiCaprio", "year": 2010, "category": "all"}]], "wall_s": 0.8235047920024954, "prompt_tokens": 733, "completion_tokens": 55, "error": "", "passed": true, "reason": "matched_gt_entry"}

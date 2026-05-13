@@ -1,1 +1,1 @@
-{"id": "irrelevance_80", "actual_calls": [["stock_ticker", {"company_name": "FIFA", "ticker_symbol": "WCH", "exchange": "WCH"}]], "wall_s": 3.624269333005941, "prompt_tokens": 351, "completion_tokens": 79, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: stock_ticker"}
+{"id": "irrelevance_80", "actual_calls": [], "wall_s": 0.5145283750025555, "prompt_tokens": 353, "completion_tokens": 41, "error": "", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,1 +1,1 @@
-{"id": "live_relevance_6-6-0", "actual_calls": [], "wall_s": 5.322101833000488, "prompt_tokens": 1292, "completion_tokens": 46, "error": "", "passed": false, "reason": "no_tool_call_when_relevant"}
+{"id": "live_relevance_6-6-0", "actual_calls": [], "wall_s": 0.8026934579829685, "prompt_tokens": 1294, "completion_tokens": 45, "error": "", "passed": false, "reason": "no_tool_call_when_relevant"}

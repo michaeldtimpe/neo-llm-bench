@@ -1,1 +1,1 @@
-{"id": "simple_python_44", "actual_calls": [["calculate_electric_field_strength", {"charge": 0.01, "distance": 4, "medium": "vacuum"}]], "wall_s": 2.470251292004832, "prompt_tokens": 338, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_44", "actual_calls": [["calculate_electric_field_strength", {"charge": 0.01, "distance": 4, "medium": "vacuum"}]], "wall_s": 0.642610082984902, "prompt_tokens": 340, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

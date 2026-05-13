@@ -1,1 +1,1 @@
-{"id": "parallel_24", "actual_calls": [["law_case.get_details", {"case_number": "28473", "include_history": true, "include_litigants": true}]], "wall_s": 2.5561180419972516, "prompt_tokens": 356, "completion_tokens": 52, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_24", "actual_calls": [["law_case.get_details", {"case_number": "28473", "include_history": true, "include_litigants": true}]], "wall_s": 0.6526845000335015, "prompt_tokens": 358, "completion_tokens": 52, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

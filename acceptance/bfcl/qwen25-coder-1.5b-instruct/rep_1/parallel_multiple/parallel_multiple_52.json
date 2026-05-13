@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_52", "actual_calls": [["game_of_life.play", {"rounds": 3, "start_board": []}], ["chess.play", {"moves": ["e4", "e5"]}]], "wall_s": 3.36984625000332, "prompt_tokens": 413, "completion_tokens": 68, "error": "", "passed": true, "reason": "all_calls_matched"}
+{"id": "parallel_multiple_52", "actual_calls": [["game_of_life.play", {"rounds": 3, "start_board": []}], ["chess.play", {"moves": ["e4", "e5"]}]], "wall_s": 0.909509250021074, "prompt_tokens": 415, "completion_tokens": 68, "error": "", "passed": true, "reason": "all_calls_matched"}

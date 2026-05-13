@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_45", "actual_calls": [["calcVolume.cuboid", {"height": 10, "width": 5, "depth": 8}], ["calcVolume.sphere", {"radius": 4}]], "wall_s": 2.9959705830042367, "prompt_tokens": 418, "completion_tokens": 58, "error": "", "passed": true, "reason": "all_calls_matched"}
+{"id": "parallel_multiple_45", "actual_calls": [["calcVolume.cuboid", {"height": 10, "width": 5, "depth": 8}], ["calcVolume.sphere", {"radius": 4}]], "wall_s": 0.7510890410048887, "prompt_tokens": 420, "completion_tokens": 58, "error": "", "passed": true, "reason": "all_calls_matched"}

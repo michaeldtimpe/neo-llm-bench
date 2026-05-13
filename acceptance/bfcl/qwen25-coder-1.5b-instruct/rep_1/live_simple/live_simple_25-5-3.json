@@ -1,1 +1,1 @@
-{"id": "live_simple_25-5-3", "actual_calls": [["ChaFod", {"TheFod": "GREENS"}]], "wall_s": 0.8591541670029983, "prompt_tokens": 335, "completion_tokens": 21, "error": "", "passed": false, "reason": "call_ChaFod_did_not_match_any_gt"}
+{"id": "live_simple_25-5-3", "actual_calls": [["ChaFod", {"TheFod": "GREENS"}]], "wall_s": 0.3057160419994034, "prompt_tokens": 337, "completion_tokens": 23, "error": "", "passed": false, "reason": "call_ChaFod_did_not_match_any_gt"}

@@ -1,1 +1,1 @@
-{"id": "simple_python_118", "actual_calls": [["stats.t_test", {"array_1": [10, 15, 12, 14, 11], "array_2": [18, 16, 17, 20, 22], "alpha": 0.05}]], "wall_s": 3.9269189999977243, "prompt_tokens": 388, "completion_tokens": 85, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_118", "actual_calls": [["stats.t_test", {"array_1": [10, 15, 12, 14, 11], "array_2": [18, 16, 17, 20, 22], "alpha": 0.05}]], "wall_s": 1.0398242499795742, "prompt_tokens": 390, "completion_tokens": 85, "error": "", "passed": true, "reason": "matched_gt_entry"}

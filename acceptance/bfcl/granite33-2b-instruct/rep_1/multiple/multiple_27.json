@@ -1,1 +1,1 @@
-{"id": "multiple_27", "actual_calls": [["maps.shortest_path", {"start_location": "Paris, France", "end_location": "Rome, Italy", "mode": "transit"}]], "wall_s": 4.30392070900416, "prompt_tokens": 492, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_27", "actual_calls": [["maps.shortest_path", {"start_location": "Paris, France", "end_location": "Rome, Italy", "mode": "transit"}]], "wall_s": 0.8063491249922663, "prompt_tokens": 492, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

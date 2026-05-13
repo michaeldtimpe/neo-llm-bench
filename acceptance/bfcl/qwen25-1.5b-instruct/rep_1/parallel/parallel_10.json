@@ -1,1 +1,1 @@
-{"id": "parallel_10", "actual_calls": [["math.pythagoras", {"a": 3, "b": 4}], ["math.pythagoras", {"a": 5, "b": 12}]], "wall_s": 2.6383331660035765, "prompt_tokens": 319, "completion_tokens": 57, "error": "", "passed": true, "reason": "all_calls_matched"}
+{"id": "parallel_10", "actual_calls": [["math.pythagoras", {"a": 3, "b": 4}], ["math.pythagoras", {"a": 5, "b": 12}]], "wall_s": 0.8050919590168633, "prompt_tokens": 321, "completion_tokens": 57, "error": "", "passed": true, "reason": "all_calls_matched"}

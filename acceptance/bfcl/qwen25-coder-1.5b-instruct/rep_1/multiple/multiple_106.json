@@ -1,1 +1,1 @@
-{"id": "multiple_106", "actual_calls": [["calculate_electric_field_strength", {"charge": 0.01, "distance": 4, "medium": "vacuum"}]], "wall_s": 3.6009647079990827, "prompt_tokens": 768, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_106", "actual_calls": [["calculate_electric_field_strength", {"charge": 0.01, "distance": 4, "medium": "vacuum"}]], "wall_s": 0.7747875420027412, "prompt_tokens": 770, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

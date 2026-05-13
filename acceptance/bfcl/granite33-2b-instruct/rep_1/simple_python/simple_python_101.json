@@ -1,1 +1,1 @@
-{"id": "simple_python_101", "actual_calls": [["calculate_speed", {"distance": 450, "time": 20}]], "wall_s": 2.484342416995787, "prompt_tokens": 324, "completion_tokens": 28, "error": "", "passed": false, "reason": "call_calculate_speed_did_not_match_any_gt"}
+{"id": "simple_python_101", "actual_calls": [["calculate_speed", {"distance": 450, "time": 20}]], "wall_s": 0.5448973749880679, "prompt_tokens": 324, "completion_tokens": 28, "error": "", "passed": false, "reason": "call_calculate_speed_did_not_match_any_gt"}

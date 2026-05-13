@@ -1,1 +1,1 @@
-{"id": "multiple_19", "actual_calls": [["religion_history.get_schisms", {"religion": "Christianity", "count": 3}]], "wall_s": 2.717977542000881, "prompt_tokens": 534, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_19", "actual_calls": [["religion_history.get_schisms", {"religion": "Christianity", "count": 3}]], "wall_s": 0.599159333971329, "prompt_tokens": 536, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

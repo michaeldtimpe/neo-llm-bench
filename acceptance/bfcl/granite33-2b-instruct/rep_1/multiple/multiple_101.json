@@ -1,1 +1,1 @@
-{"id": "multiple_101", "actual_calls": [], "wall_s": 5.555821957997978, "prompt_tokens": 461, "completion_tokens": 70, "error": "", "passed": false, "reason": "no_tool_call_emitted"}
+{"id": "multiple_101", "actual_calls": [], "wall_s": 1.1745645830524154, "prompt_tokens": 461, "completion_tokens": 70, "error": "", "passed": false, "reason": "no_tool_call_emitted"}
