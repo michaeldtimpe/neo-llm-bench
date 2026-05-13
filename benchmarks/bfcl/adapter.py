@@ -61,7 +61,7 @@ SUPPORTED_LIVE_CATEGORIES = (
 ALL_CATEGORIES = SUPPORTED_CATEGORIES + SUPPORTED_LIVE_CATEGORIES
 
 
-# System prompt prepended to every BFCL problem in raw mode. Three rules:
+# System prompt prepended to every BFCL problem in raw mode. v2 has three rules:
 #   (1) targets the "single-call collapse" failure mode (qwen25-coder packed
 #       parallel problems into one call with array args; BFCL expects N calls).
 #   (2) targets irrelevance over-calling (instruct-tuned models call the tool
@@ -69,16 +69,92 @@ ALL_CATEGORIES = SUPPORTED_CATEGORIES + SUPPORTED_LIVE_CATEGORIES
 #   (3) targets math-notation: BFCL ground truth uses Python operator syntax
 #       (`x**2`, `3*x`); models that emit `x^2` are scored wrong even though
 #       a human reader would consider it equivalent.
-BFCL_SYSTEM_PROMPT = (
-    "You are a function-calling assistant.\n"
+#
+# Round-3 variants (see `round_3_design.md`) swap rule 2 to probe whether
+# prompt engineering alone can move each finalist on its weakest axis.
+# Rules 1 and 3 are kept intact across all variants so we isolate the
+# decline-boundary effect.
+
+_RULE_PARALLEL = (
     "- To invoke a function on N inputs, emit N separate tool calls. "
     "Do not pack multiple inputs into array arguments unless the function "
-    "spec explicitly accepts arrays.\n"
-    "- If the available tools cannot satisfy the user's request, do not "
-    "call any tool — answer in plain text.\n"
+    "spec explicitly accepts arrays."
+)
+_RULE_MATH = (
     "- Use Python operator syntax for math expressions: `x**2`, `3*x`. "
     "Do not use `^` for exponentiation."
 )
+_RULE_DECLINE_V2 = (
+    "- If the available tools cannot satisfy the user's request, do not "
+    "call any tool — answer in plain text."
+)
+_RULE_DECLINE_V3A = (  # branch A — stronger imperative
+    "- You MUST NOT call any tool unless at least one available tool "
+    "fully satisfies the user's request. If unsure, do not call. "
+    "Answer in plain text."
+)
+_RULE_DECLINE_V3B = (  # branch A — decision tree
+    "- Before any tool call, ask yourself: does any single available "
+    "tool fully satisfy the user's request? If yes, call it. If no, "
+    "do not call any tool. Answer in plain text."
+)
+_RULE_DECLINE_V3C = (  # branch C — granite "use best available"
+    "- If at least one available tool reasonably satisfies the user's "
+    "request, call it — prefer the best-matching tool even if no tool "
+    "is a perfect fit. Only decline if the user's request is "
+    "fundamentally outside the available tool surface (no tool "
+    "approaches the right shape)."
+)
+_FEWSHOT_PARALLEL = """\
+
+Example 1 — parallel:
+User: Get the weather in Paris, Tokyo, and New York.
+Correct: Three separate tool calls:
+  get_weather(city="Paris")
+  get_weather(city="Tokyo")
+  get_weather(city="New York")
+NOT a single call with city=["Paris","Tokyo","New York"].
+
+Example 2 — parallel_multiple:
+User: Convert 100 USD to EUR and find me a hotel in Berlin.
+Correct: Two separate tool calls, one per intent:
+  currency_convert(amount=100, from="USD", to="EUR")
+  hotel_search(city="Berlin")"""
+
+
+def _compose_prompt(decline_rule: str, *, suffix: str = "") -> str:
+    return (
+        "You are a function-calling assistant.\n"
+        + _RULE_PARALLEL + "\n"
+        + decline_rule + "\n"
+        + _RULE_MATH
+        + suffix
+    )
+
+
+BFCL_SYSTEM_PROMPTS: dict[str, str] = {
+    "v2": _compose_prompt(_RULE_DECLINE_V2),
+    "v3a": _compose_prompt(_RULE_DECLINE_V3A),
+    "v3b": _compose_prompt(_RULE_DECLINE_V3B),
+    "v3c": _compose_prompt(_RULE_DECLINE_V3C),
+    "v2_fewshot_parallel": _compose_prompt(_RULE_DECLINE_V2, suffix=_FEWSHOT_PARALLEL),
+}
+
+# Back-compat alias for code and tests written before the variant registry.
+BFCL_SYSTEM_PROMPT = BFCL_SYSTEM_PROMPTS["v2"]
+
+
+def get_bfcl_system_prompt(name: str) -> str:
+    """Look up a named system-prompt variant. Raises KeyError with a
+    listing of valid names so misconfiguration fails loudly at run start
+    rather than silently using the default."""
+    try:
+        return BFCL_SYSTEM_PROMPTS[name]
+    except KeyError as e:
+        valid = ", ".join(sorted(BFCL_SYSTEM_PROMPTS))
+        raise KeyError(
+            f"unknown bfcl_system_prompt variant: {name!r} (valid: {valid})"
+        ) from e
 
 
 def _bfcl_data_dir() -> Path:
@@ -237,6 +313,7 @@ def run_problem_raw(
     max_tokens: int = 1024,
     temperature: float = 0.0,
     mode: str = "auto",
+    system_prompt: str | None = BFCL_SYSTEM_PROMPT,
 ) -> BfclInvocationResult:
     """Raw mode: single chat call, capture emitted tool calls.
 
@@ -247,7 +324,7 @@ def run_problem_raw(
       - "inject": only prompt-injected (no `tools` body param).
     """
     pid = problem.get("id", "unknown")
-    messages = _problem_messages(problem)
+    messages = _problem_messages(problem, system_prompt=system_prompt)
     tools = _problem_tools(problem)
 
     t0 = time.monotonic()

@@ -13,9 +13,11 @@ import pytest
 
 from benchmarks.bfcl.adapter import (
     BFCL_SYSTEM_PROMPT,
+    BFCL_SYSTEM_PROMPTS,
     SUPPORTED_CATEGORIES,
     _problem_messages,
     _problem_tools,
+    get_bfcl_system_prompt,
     load_ground_truth,
     load_problems,
     run_problem_raw,
@@ -179,3 +181,76 @@ def test_run_problem_raw_captures_backend_errors():
     result = run_problem_raw(_FailingBackend(), problem)
     assert result.actual_calls == []
     assert "oMLX is down" in result.error
+
+
+# ---- System-prompt variant registry (round 3 prereq) ---------------------
+
+
+def test_system_prompt_registry_contains_round3_variants():
+    """All five named variants are registered."""
+    assert set(BFCL_SYSTEM_PROMPTS) == {
+        "v2", "v3a", "v3b", "v3c", "v2_fewshot_parallel",
+    }
+
+
+def test_system_prompt_v2_alias_matches_constant():
+    """BFCL_SYSTEM_PROMPT must equal the v2 entry — back-compat with rounds 1/2."""
+    assert BFCL_SYSTEM_PROMPT == BFCL_SYSTEM_PROMPTS["v2"]
+
+
+def test_system_prompt_variants_share_rules_1_and_3():
+    """Rules 1 (parallel) and 3 (math syntax) are kept intact across all
+    variants — only rule 2 (decline boundary) is the experimental knob."""
+    parallel_marker = "emit N separate tool calls"
+    math_marker = "Python operator syntax"
+    for name, text in BFCL_SYSTEM_PROMPTS.items():
+        assert parallel_marker in text, f"{name} lost rule 1"
+        assert math_marker in text, f"{name} lost rule 3"
+
+
+def test_system_prompt_v3a_uses_imperative():
+    """v3a is the stronger-imperative variant for branch A."""
+    assert "MUST NOT call any tool" in BFCL_SYSTEM_PROMPTS["v3a"]
+
+
+def test_system_prompt_v3b_uses_decision_tree():
+    """v3b is the decision-tree variant for branch A."""
+    assert "ask yourself" in BFCL_SYSTEM_PROMPTS["v3b"]
+
+
+def test_system_prompt_v3c_loosens_decline():
+    """v3c is the looser decline rule for branch C — use-best-available."""
+    txt = BFCL_SYSTEM_PROMPTS["v3c"]
+    assert "reasonably satisfies" in txt
+    assert "best-matching" in txt
+
+
+def test_system_prompt_v2_fewshot_parallel_appends_examples():
+    """v2_fewshot_parallel keeps v2 wholesale and appends two examples."""
+    txt = BFCL_SYSTEM_PROMPTS["v2_fewshot_parallel"]
+    assert BFCL_SYSTEM_PROMPTS["v2"] in txt  # v2 is a prefix
+    assert "Example 1 — parallel:" in txt
+    assert "Example 2 — parallel_multiple:" in txt
+
+
+def test_get_bfcl_system_prompt_unknown_name_raises():
+    """Misconfigured variant fails loudly at startup, not silently."""
+    with pytest.raises(KeyError, match="unknown bfcl_system_prompt variant"):
+        get_bfcl_system_prompt("v99_does_not_exist")
+
+
+def test_run_problem_raw_uses_supplied_system_prompt():
+    """The variant text reaches the backend's system message."""
+    problem = load_problems("simple_python", limit=1)[0]
+    custom = "SENTINEL-PROMPT-FOR-TEST"
+    fake_resp = ChatResponse(
+        text="",
+        tool_calls=[],
+        finish_reason="stop",
+        timing=GenerationTiming(prompt_tokens=10, completion_tokens=1),
+    )
+    backend = _MockBackend(fake_resp)
+    run_problem_raw(backend, problem, system_prompt=custom)
+    assert backend.last_messages is not None
+    sys_msgs = [m for m in backend.last_messages if m.get("role") == "system"]
+    assert any(custom in m["content"] for m in sys_msgs)
