@@ -42,6 +42,28 @@ def _bench_already_done(out: Path, bench: str, model_id: str, rep: int) -> bool:
     return (out / bench / model_id / f"rep_{rep}" / "summary.json").is_file()
 
 
+# Files a --force step needs to delete so that benchmark internal resume logic
+# (e.g. HumanEval's per-problem `results.jsonl` reader) doesn't silently reuse
+# stale data. Bench-agnostic on purpose: when MBPP / multi-turn arrive they
+# extend this set, not add a new dispatch.
+_FORCE_CLEAN_FILENAMES = frozenset({"summary.json", "results.jsonl"})
+
+
+def _clear_stale_for_force(out_dir: Path) -> None:
+    """Idempotent cleanup before a `--force` step runs.
+
+    Missing dir, missing files, and unrelated files are all OK — only files
+    in `_FORCE_CLEAN_FILENAMES` get unlinked. Anything else in the dir
+    (per-category subdirs, per-problem JSONs) is left alone.
+    """
+    if not out_dir.is_dir():
+        return
+    for name in _FORCE_CLEAN_FILENAMES:
+        p = out_dir / name
+        if p.is_file():
+            p.unlink()
+
+
 def _summary_completion_tokens(out: Path, bench: str, model_id: str, rep: int) -> int:
     """Read completion_tokens from a previously-written summary.json (for resume mode)."""
     sf = out / bench / model_id / f"rep_{rep}" / "summary.json"
@@ -240,11 +262,7 @@ def main() -> int:
         # resume (always-on inside _run_humaneval) silently reuses an old
         # results.jsonl and the step "completes" in <1s with stale numbers.
         if args.force:
-            bench_dir = args.output / bench / mc.id / f"rep_{args.rep}"
-            for stale in ("summary.json", "results.jsonl"):
-                p = bench_dir / stale
-                if p.is_file():
-                    p.unlink()
+            _clear_stale_for_force(args.output / bench / mc.id / f"rep_{args.rep}")
 
         limit = args.bfcl_limit if bench == "bfcl" else args.humaneval_limit
         req = RunRequest(

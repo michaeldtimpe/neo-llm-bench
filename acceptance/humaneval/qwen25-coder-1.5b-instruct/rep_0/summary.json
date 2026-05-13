@@ -2,9 +2,9 @@
   "model": "qwen25-coder-1.5b-instruct",
   "rep": 0,
   "n_problems": 164,
-  "n_passed": 115,
+  "n_passed": 114,
   "n_extract_ok": 164,
-  "wall_s": 1202.608205170971,
-  "completion_tokens": 29147,
-  "pass_at_1": 0.7012195121951219
+  "wall_s": 343.66983846219955,
+  "completion_tokens": 30187,
+  "pass_at_1": 0.6951219512195121
 }

@@ -53,7 +53,9 @@ class ServerSpec:
     extra_args: list[str] = dataclasses.field(default_factory=list)
 
 
-def _build_argv(spec: ServerSpec, host: str, port: int, bin_path: Path) -> list[str]:
+def _build_argv(
+    spec: ServerSpec, host: str, port: int, bin_path: Path, n_parallel: int = 1,
+) -> list[str]:
     argv: list[str] = [str(bin_path), "--host", host, "--port", str(port)]
     argv += ["-m", str(spec.model_path)]
     argv += ["-c", str(spec.n_ctx)]
@@ -61,6 +63,8 @@ def _build_argv(spec: ServerSpec, host: str, port: int, bin_path: Path) -> list[
     argv += ["-t", str(spec.n_threads)]
     argv += ["-b", str(spec.n_batch)]
     argv += ["-ub", str(spec.n_ubatch)]
+    if n_parallel > 1:
+        argv += ["--parallel", str(n_parallel)]
     argv += ["-fa", spec.flash_attn]
     argv += ["-ctk", spec.cache_type_k, "-ctv", spec.cache_type_v]
     if not spec.mmap:
@@ -115,11 +119,13 @@ class LlamaServer:
         port: int = DEFAULT_PORT,
         bin_path: Path = DEFAULT_BIN,
         log_dir: Path | None = None,
+        n_parallel: int = 1,
     ) -> None:
         self.spec = spec
         self.host = host
         self.port = port
         self.bin_path = bin_path
+        self.n_parallel = n_parallel
         self.log_dir = log_dir or Path.home() / ".llamabench" / "server-logs"
         self._proc: subprocess.Popen[bytes] | None = None
         self._log_fp = None
@@ -141,7 +147,7 @@ class LlamaServer:
         alias = self.spec.alias or self.spec.model_path.stem
         log_path = self.log_dir / f"{ts}-{alias}.log"
         self._log_fp = open(log_path, "wb")
-        argv = _build_argv(self.spec, self.host, self.port, self.bin_path)
+        argv = _build_argv(self.spec, self.host, self.port, self.bin_path, self.n_parallel)
         self._proc = subprocess.Popen(
             argv,
             stdout=self._log_fp,

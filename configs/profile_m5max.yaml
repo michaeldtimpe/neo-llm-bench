@@ -1,0 +1,14 @@
+memory_budget_gb: 96            # leave headroom for OS/Claude on a 128 GB box
+peak_model_gb: 8.0
+benchmarks:
+  - bfcl
+  - humaneval
+parallel_models: 3              # documents the supported runner-side parallelism
+max_parallel_requests: 1        # one decode in flight per server; documents the
+                                # contention assumption — agent/multi-turn phases
+                                # stress this and need a stable baseline
+work_dir: ~/.llamabench/bench-workspace
+keep_loaded: false
+server_host: 127.0.0.1
+server_port: 8080
+server_bin: ~/code/llama.cpp/build/bin/llama-server

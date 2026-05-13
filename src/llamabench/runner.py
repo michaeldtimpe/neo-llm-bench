@@ -78,6 +78,7 @@ def run(req: RunRequest, profile: BenchProfile) -> RunResult:
     bin_path = Path(profile.server_bin).expanduser() if profile.server_bin else DEFAULT_BIN
     server = LlamaServer(
         spec=spec, host=profile.server_host, port=profile.server_port, bin_path=bin_path,
+        n_parallel=profile.max_parallel_requests,
     )
     t0 = time.monotonic()
     ran: dict[str, dict] = {}

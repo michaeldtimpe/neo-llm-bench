@@ -9,19 +9,18 @@ Finalists from round 1:
 All BFCL data uses the v2 `BFCL_SYSTEM_PROMPT` (see
 `benchmarks/bfcl/adapter.py`). Five round-1 models are cut; see appendix.
 
-**Hardware note.** `rep_1` BFCL and `rep_2`/`rep_3` HumanEval in this
-edition were re-run on a 128 GB M5 Max (the original 8 GB-Mac numbers
-were superseded). `rep_0` HumanEval (t=0.0) is preserved from the
-original 8 GB-Mac run. Wall times are therefore not comparable across
-reps and are not reported here.
+**Hardware note.** All `rep_*` data in this edition was re-run on a
+128 GB M5 Max — the original 8 GB-Mac numbers are superseded. Wall
+times are therefore not comparable across editions and are not
+reported here.
 
 ## TL;DR
 
 | model | BFCL deep (n=1106) | HumanEval pass@1 (t=0.0) | HumanEval pass@3 (any temp) |
 |---|---|---|---|
-| qwen25-1.5b-instruct | **77.0% (853/1106) ±2.5pp** | 56.1% (92/164) | 64.6% (106/164) |
-| granite33-2b-instruct | 69.4% (768/1106) ±2.7pp | 51.8% (85/164) | 63.4% (104/164) |
-| qwen25-coder-1.5b-instruct | 58.6% (649/1106) ±2.9pp | **70.1% (115/164)** | **77.4% (127/164)** |
+| qwen25-1.5b-instruct | **77.0% (853/1106) ±2.5pp** | 58.5% (96/164) | 64.0% (105/164) |
+| granite33-2b-instruct | 69.4% (768/1106) ±2.7pp | 53.0% (87/164) | 64.6% (106/164) |
+| qwen25-coder-1.5b-instruct | 58.6% (649/1106) ±2.9pp | **69.5% (114/164)** | **78.0% (128/164)** |
 
 The three are in a non-dominated triangle: qwen25-1.5b wins tool-use,
 qwen25-coder wins coding, granite33 wins irrelevance discipline. The
@@ -78,30 +77,28 @@ Interpretation:
 
 | model | t=0.0 | t=0.3 | t=0.7 | pass-all-3 | pass-any |
 |---|---|---|---|---|---|
-| qwen25-coder-1.5b | **70.1%** (115) | 66.5% (109) | 65.2% (107) | **55.5%** (91) | **77.4%** (127) |
-| qwen25-1.5b | 56.1% (92) | **56.7%** (93) | 48.8% (80) | 41.5% (68) | 64.6% (106) |
-| granite33-2b | 51.8% (85) | **53.7%** (88) | 51.8% (85) | 41.5% (68) | 63.4% (104) |
+| qwen25-coder-1.5b | **69.5%** (114) | 66.5% (109) | 65.2% (107) | **56.1%** (92) | **78.0%** (128) |
+| qwen25-1.5b | 58.5% (96) | 56.7% (93) | 48.8% (80) | 42.7% (70) | 64.0% (105) |
+| granite33-2b | 53.0% (87) | **53.7%** (88) | 51.8% (85) | 41.5% (68) | 64.6% (106) |
 
 CI half-width at n=164, p~0.6 is about ±7.5pp. So:
 - The qwen25-coder lead over the other two on HumanEval is real
   (>10pp at every temperature). Outside CI overlap.
 - qwen25-1.5b vs granite33 is within CI at every temperature — they're
-  statistically tied on coding.
+  statistically tied on coding (the t=0.0 gap narrowed to 5.5pp in this
+  edition, well inside the CI overlap).
 
 Temperature shape:
-- **qwen25-coder degrades monotonically** in this edition too
-  (70.1 → 66.5 → 65.2), though the t=0.3 → t=0.7 drop is much milder
-  than the prior edition (68.9 → 61.0). Coder's sampling resilience
-  varies between draws — interpret the absolute number with care.
-- **qwen25-1.5b** and **granite33** show the same faint inverted-V
-  peaking at t=0.3 (+0.6pp and +1.9pp). Slight under-confidence at
-  t=0.0 → some first-token traps are escaped with a little entropy.
-- **qwen25-1.5b** falls 8pp at t=0.7 (sampling noise overwhelms);
-  granite33 holds (50→52→52).
-- **pass-all-3 vs pass-any** spread is the model's coding uncertainty
-  window: qwen25-coder = 36, qwen25-1.5b = 38, granite33 = 36. All
-  similar at this draw — best-of-3 is worth ~22pp / ~23pp / ~22pp over
-  pass@1, the bulk of which is t=0.0 → t=0.3 alone.
+- **qwen25-coder degrades monotonically** (69.5 → 66.5 → 65.2). Loses
+  7 problems going t=0.0 → t=0.7 — most temperature-stable model in
+  absolute terms.
+- **qwen25-1.5b** peaks at t=0.0 (58.5%) in this edition rather than
+  the inverted-V the prior edition showed. Still falls 10pp at t=0.7.
+- **granite33** shows a tiny inverted-V (53.0 → 53.7 → 51.8), but it's
+  effectively flat within noise. The most t=0.7-stable model.
+- **pass-all-3 vs pass-any** spread (the model's coding uncertainty
+  window): qwen25-coder = 36, qwen25-1.5b = 35, granite33 = 38. All
+  similar at this draw — best-of-3 is worth ~22pp over pass@1 for each.
 
 ## Stochastic notes (vs the prior edition's published numbers)
 
@@ -122,8 +119,11 @@ Temperature shape:
   3 misses (`live_irrelevance_{16,20,32}-*`) are subtle: tools were
   available that *could* technically apply, just not what the user
   asked for. Borderline cases by construction.
-- **rep_0 (t=0.0 HumanEval)** is preserved from the prior edition;
-  the head-to-head table below is byte-for-byte the same.
+- **rep_0 (t=0.0 HumanEval)** is now also re-run on M5 (was preserved
+  from the 8 GB-Mac in the prior edition). Per-model deltas are modest:
+  qwen25-1.5b 92 → 96 (+4), qwen25-coder 115 → 114 (−1), granite33
+  85 → 87 (+2). The head-to-head shape stays the same; PPP/FFF the
+  largest buckets at 70/35.
 
 ## Champion-decision framework
 
