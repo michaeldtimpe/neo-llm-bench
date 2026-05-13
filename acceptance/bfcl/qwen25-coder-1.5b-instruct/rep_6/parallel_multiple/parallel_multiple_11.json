@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_11", "actual_calls": [["physics.electric_field", {"charge": 4, "distance": 3}]], "wall_s": 0.5134633340057917, "prompt_tokens": 600, "completion_tokens": 38, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

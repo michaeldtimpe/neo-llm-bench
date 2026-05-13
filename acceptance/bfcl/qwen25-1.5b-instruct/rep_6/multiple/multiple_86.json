@@ -1,0 +1,1 @@
+{"id": "multiple_86", "actual_calls": [["BoardGameGeek.recommend", {"numPlayers": 2, "category": "strategy"}]], "wall_s": 0.21144579199608415, "prompt_tokens": 547, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

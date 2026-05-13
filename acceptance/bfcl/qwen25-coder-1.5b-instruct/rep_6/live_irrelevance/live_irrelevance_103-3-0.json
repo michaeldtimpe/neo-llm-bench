@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_103-3-0", "actual_calls": [["ChaScr", {"TheKey": "exampleKey", "TheScr": "local function exampleFunction() print('Hello, World!') end", "TheKey2": "anotherExampleKey"}]], "wall_s": 0.9568048339569941, "prompt_tokens": 1815, "completion_tokens": 62, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: ChaScr"}

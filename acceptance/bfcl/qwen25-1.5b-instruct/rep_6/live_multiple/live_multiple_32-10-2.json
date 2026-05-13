@@ -1,0 +1,1 @@
+{"id": "live_multiple_32-10-2", "actual_calls": [["sub", {"a": 100, "b": 40}]], "wall_s": 0.3766384999617003, "prompt_tokens": 819, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

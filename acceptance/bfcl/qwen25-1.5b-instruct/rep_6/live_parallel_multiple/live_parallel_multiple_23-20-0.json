@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_23-20-0", "actual_calls": [["partner.mandates", {"status": "pending"}], ["partner.mandates", {"status": "active"}]], "wall_s": 0.6207342090201564, "prompt_tokens": 471, "completion_tokens": 44, "error": "", "passed": false, "reason": "emitted_2_calls_expected_4"}

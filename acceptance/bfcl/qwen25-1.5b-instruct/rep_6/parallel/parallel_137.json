@@ -1,0 +1,1 @@
+{"id": "parallel_137", "actual_calls": [["array_sort", {"list": [45, 12, 67, 21, 89], "order": "ascending"}], ["array_sort", {"list": [45, 12, 67, 21, 89], "order": "descending"}]], "wall_s": 1.2124265839811414, "prompt_tokens": 421, "completion_tokens": 86, "error": "", "passed": false, "reason": "emitted_2_calls_expected_8"}

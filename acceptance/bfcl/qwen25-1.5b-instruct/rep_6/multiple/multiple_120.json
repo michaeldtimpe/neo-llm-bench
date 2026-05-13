@@ -1,0 +1,1 @@
+{"id": "multiple_120", "actual_calls": [["light_travel_time", {"distance_in_light_years": 4}]], "wall_s": 0.20873062498867512, "prompt_tokens": 853, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}

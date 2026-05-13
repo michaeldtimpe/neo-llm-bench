@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_138-13-4", "actual_calls": [["OpenWeatherMap.get_current_weather", {"location": "San Francisco, USA", "units": "imperial", "api_key": "YOUR_API_KEY_HERE"}]], "wall_s": 0.5450332919717766, "prompt_tokens": 1561, "completion_tokens": 55, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: OpenWeatherMap.get_current_weather"}

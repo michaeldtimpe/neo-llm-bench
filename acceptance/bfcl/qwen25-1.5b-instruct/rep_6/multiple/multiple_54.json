@@ -1,0 +1,1 @@
+{"id": "multiple_54", "actual_calls": [["corporate_finance.dividend_data", {"company": "Apple Inc", "years": 5, "frequency": "annually"}]], "wall_s": 0.2504648750182241, "prompt_tokens": 460, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

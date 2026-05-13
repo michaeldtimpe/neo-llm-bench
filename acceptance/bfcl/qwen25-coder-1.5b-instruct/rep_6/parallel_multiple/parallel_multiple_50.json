@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_50", "actual_calls": [["sport_analysis.last_game_performance", {"team": "L.A. Lakers", "details": ["field goal %", "free throw %"]}]], "wall_s": 0.6640054999734275, "prompt_tokens": 618, "completion_tokens": 49, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

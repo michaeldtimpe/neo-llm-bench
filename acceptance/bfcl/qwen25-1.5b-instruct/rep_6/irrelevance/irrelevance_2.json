@@ -1,0 +1,1 @@
+{"id": "irrelevance_2", "actual_calls": [["distance_calculator.calculate", {"coordinate_1": [0, 0], "coordinate_2": [1, 1]}]], "wall_s": 0.5290589159703813, "prompt_tokens": 341, "completion_tokens": 39, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: distance_calculator.calculate"}

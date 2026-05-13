@@ -1,0 +1,1 @@
+{"id": "parallel_121", "actual_calls": [["ecology.get_turtle_population", {"location": "Galapagos Islands", "year": 2015, "species": true}], ["ecology.get_turtle_population", {"location": "Galapagos Islands", "year": 2020, "species": true}]], "wall_s": 1.1147991250036284, "prompt_tokens": 379, "completion_tokens": 82, "error": "", "passed": true, "reason": "all_calls_matched"}

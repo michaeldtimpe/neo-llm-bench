@@ -1,0 +1,23 @@
+{
+  "model": "granite33-2b-instruct",
+  "rep": 6,
+  "mode": "auto",
+  "run_mode": "raw",
+  "system_prompt": "v3c",
+  "categories": {
+    "multi_turn_base": {
+      "n_problems": 100,
+      "n_with_calls": 86,
+      "n_errors": 0,
+      "wall_s": 471.8618536709996,
+      "completion_tokens": 37954
+    },
+    "multi_turn_miss_param": {
+      "n_problems": 100,
+      "n_with_calls": 79,
+      "n_errors": 1,
+      "wall_s": 604.0812920000017,
+      "completion_tokens": 51339
+    }
+  }
+}

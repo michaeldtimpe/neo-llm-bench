@@ -1,0 +1,1 @@
+{"id": "live_multiple_55-22-2", "actual_calls": [["inventory_management", {"product_id": "iPhone 12", "color": "white", "sizes": []}]], "wall_s": 1.4420933340443298, "prompt_tokens": 1037, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

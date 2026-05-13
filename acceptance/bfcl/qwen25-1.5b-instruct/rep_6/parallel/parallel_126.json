@@ -1,0 +1,1 @@
+{"id": "parallel_126", "actual_calls": [["prediction.evolution", {"species": "African Elephant", "years": 5000, "model": "Darwin"}], ["prediction.evolution", {"species": "African Elephant", "years": 5000, "model": "Lamarck"}]], "wall_s": 1.0546331250225194, "prompt_tokens": 376, "completion_tokens": 79, "error": "", "passed": true, "reason": "all_calls_matched"}

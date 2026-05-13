@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_131", "actual_calls": [["geometry.area_circle", {"radius": 5.6}], ["plot_sine_wave", {"start_range": 0, "end_range": 3.14, "frequency": 2, "amplitude": 1.5, "phase_shift": 0.5}]], "wall_s": 1.0421849999693222, "prompt_tokens": 603, "completion_tokens": 80, "error": "", "passed": false, "reason": "call_geometry.area_circle_unmatched_in_gt"}

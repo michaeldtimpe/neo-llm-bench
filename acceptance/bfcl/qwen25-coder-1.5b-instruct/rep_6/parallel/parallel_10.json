@@ -1,0 +1,1 @@
+{"id": "parallel_10", "actual_calls": [["math.pythagoras", {"a": 3, "b": 4}]], "wall_s": 0.5145804170169868, "prompt_tokens": 447, "completion_tokens": 38, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

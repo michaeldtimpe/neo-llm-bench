@@ -1,0 +1,1 @@
+{"id": "irrelevance_30", "actual_calls": [["bloodcell_classification", {"cell_shape": "round", "cell_size": "large", "cell_function": "carry oxygen"}]], "wall_s": 1.2191129579441622, "prompt_tokens": 482, "completion_tokens": 86, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: bloodcell_classification"}

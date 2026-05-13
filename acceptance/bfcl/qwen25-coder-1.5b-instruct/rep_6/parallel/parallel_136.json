@@ -1,0 +1,1 @@
+{"id": "parallel_136", "actual_calls": [["city_distance.find_shortest", {"start_city": "New York", "end_city": "Los Angeles", "transportation": "bus", "allow_transfer": true}]], "wall_s": 0.7699047499918379, "prompt_tokens": 506, "completion_tokens": 58, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

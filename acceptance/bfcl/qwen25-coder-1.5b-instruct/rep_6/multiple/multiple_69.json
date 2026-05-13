@@ -1,0 +1,1 @@
+{"id": "multiple_69", "actual_calls": [["five_factor_model.analyse", {"talkative": true, "nervous": true, "artistic_interests": false, "lazy": true, "forgiving": true}]], "wall_s": 0.8422130409744568, "prompt_tokens": 775, "completion_tokens": 63, "error": "", "passed": true, "reason": "matched_gt_entry"}

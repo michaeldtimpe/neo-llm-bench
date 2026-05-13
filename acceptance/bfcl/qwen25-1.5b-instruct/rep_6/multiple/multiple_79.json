@@ -1,0 +1,1 @@
+{"id": "multiple_79", "actual_calls": [["exhibition_info", {"museum_name": "Museum of Modern Art", "month": 1}]], "wall_s": 0.22357370797544718, "prompt_tokens": 427, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

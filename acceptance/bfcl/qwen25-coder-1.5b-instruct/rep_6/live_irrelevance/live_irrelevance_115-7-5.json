@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_115-7-5", "actual_calls": [["uber.eat.order", {"restaurant": "Wheat Hot Chicken", "items": ["hot chicken legs", "coca-cola", "fried chicken wings", "fries"], "quantities": [10, 50, 30, 90]}]], "wall_s": 0.6812843749648891, "prompt_tokens": 513, "completion_tokens": 79, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: uber.eat.order"}

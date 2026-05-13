@@ -1,0 +1,1 @@
+{"id": "parallel_128", "actual_calls": [["average_temperature", {"location": "New York", "days": 7, "temp_unit": "Fahrenheit"}], ["average_temperature", {"location": "Los Angeles", "days": 7, "temp_unit": "Celsius"}]], "wall_s": 0.9189170420286246, "prompt_tokens": 366, "completion_tokens": 70, "error": "", "passed": true, "reason": "all_calls_matched"}

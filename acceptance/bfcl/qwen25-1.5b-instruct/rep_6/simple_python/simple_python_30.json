@@ -1,0 +1,1 @@
+{"id": "simple_python_30", "actual_calls": [["kinematics.final_velocity_from_distance", {"acceleration": 4, "distance": 300}]], "wall_s": 0.205010499979835, "prompt_tokens": 367, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

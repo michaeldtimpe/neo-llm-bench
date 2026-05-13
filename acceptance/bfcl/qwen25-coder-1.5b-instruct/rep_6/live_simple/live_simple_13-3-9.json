@@ -1,0 +1,1 @@
+{"id": "live_simple_13-3-9", "actual_calls": [["get_current_weather", {"location": "\u4e0a\u6d77, \u4e2d\u56fd", "unit": "celsius"}]], "wall_s": 1.0782293329830281, "prompt_tokens": 499, "completion_tokens": 41, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

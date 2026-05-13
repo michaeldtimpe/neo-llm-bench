@@ -1,0 +1,86 @@
+{
+  "model": "qwen25-1.5b-instruct",
+  "rep": 6,
+  "mode": "auto",
+  "run_mode": "raw",
+  "system_prompt": "v3a",
+  "categories": {
+    "simple_python": {
+      "n_problems": 150,
+      "n_with_calls": 150,
+      "n_errors": 0,
+      "wall_s": 36.57304225617554,
+      "completion_tokens": 5850
+    },
+    "multiple": {
+      "n_problems": 150,
+      "n_with_calls": 150,
+      "n_errors": 0,
+      "wall_s": 41.719328499922995,
+      "completion_tokens": 5861
+    },
+    "parallel": {
+      "n_problems": 150,
+      "n_with_calls": 150,
+      "n_errors": 0,
+      "wall_s": 151.82480658928398,
+      "completion_tokens": 14253
+    },
+    "parallel_multiple": {
+      "n_problems": 150,
+      "n_with_calls": 150,
+      "n_errors": 0,
+      "wall_s": 205.24348382890457,
+      "completion_tokens": 15807
+    },
+    "irrelevance": {
+      "n_problems": 150,
+      "n_with_calls": 73,
+      "n_errors": 0,
+      "wall_s": 133.05088471143972,
+      "completion_tokens": 9666
+    },
+    "live_simple": {
+      "n_problems": 150,
+      "n_with_calls": 149,
+      "n_errors": 0,
+      "wall_s": 100.49163599935127,
+      "completion_tokens": 6961
+    },
+    "live_multiple": {
+      "n_problems": 150,
+      "n_with_calls": 147,
+      "n_errors": 0,
+      "wall_s": 93.5166851702379,
+      "completion_tokens": 5827
+    },
+    "live_parallel": {
+      "n_problems": 16,
+      "n_with_calls": 16,
+      "n_errors": 0,
+      "wall_s": 21.407240955799352,
+      "completion_tokens": 1513
+    },
+    "live_parallel_multiple": {
+      "n_problems": 24,
+      "n_with_calls": 24,
+      "n_errors": 0,
+      "wall_s": 29.6655958739575,
+      "completion_tokens": 1909
+    },
+    "live_irrelevance": {
+      "n_problems": 150,
+      "n_with_calls": 59,
+      "n_errors": 0,
+      "wall_s": 81.42121683555888,
+      "completion_tokens": 5673
+    },
+    "live_relevance": {
+      "n_problems": 16,
+      "n_with_calls": 15,
+      "n_errors": 0,
+      "wall_s": 16.037646416167263,
+      "completion_tokens": 1118
+    }
+  }
+}

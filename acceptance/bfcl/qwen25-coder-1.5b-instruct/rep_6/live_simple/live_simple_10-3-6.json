@@ -1,0 +1,1 @@
+{"id": "live_simple_10-3-6", "actual_calls": [["get_current_weather", {"location": "Yosemite National Park, CA", "unit": "celsius"}]], "wall_s": 0.42234649998135865, "prompt_tokens": 513, "completion_tokens": 43, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

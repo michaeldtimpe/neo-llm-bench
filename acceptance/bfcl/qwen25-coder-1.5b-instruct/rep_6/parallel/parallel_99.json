@@ -1,0 +1,1 @@
+{"id": "parallel_99", "actual_calls": [["thermo.calculate_energy", {"mass": 500, "phase_transition": "melting", "substance": "water"}]], "wall_s": 0.6289753750315867, "prompt_tokens": 567, "completion_tokens": 50, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

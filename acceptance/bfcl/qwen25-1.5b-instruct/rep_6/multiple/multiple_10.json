@@ -1,0 +1,1 @@
+{"id": "multiple_10", "actual_calls": [["database.modify_columns", {"db_name": "personal_data", "table": "employees", "operation": "delete", "columns": ["email", "social_security_number"]}]], "wall_s": 0.2954501670319587, "prompt_tokens": 536, "completion_tokens": 47, "error": "", "passed": false, "reason": "call_database.modify_columns_did_not_match_any_gt"}

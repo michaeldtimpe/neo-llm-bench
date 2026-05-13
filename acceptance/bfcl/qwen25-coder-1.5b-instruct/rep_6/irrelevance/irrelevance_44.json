@@ -1,0 +1,1 @@
+{"id": "irrelevance_44", "actual_calls": [["gene_sequencer", {"species": "whales", "mutation_rate": 0.01, "evolution_duration": 100, "mutation_factors": ["genetic_drift", "gene_flow"]}]], "wall_s": 0.794609208998736, "prompt_tokens": 529, "completion_tokens": 56, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: gene_sequencer"}

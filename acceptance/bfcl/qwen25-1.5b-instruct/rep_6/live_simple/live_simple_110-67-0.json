@@ -1,0 +1,1 @@
+{"id": "live_simple_110-67-0", "actual_calls": [["record", {"atm_finder_start": ["Need ATM location"]}]], "wall_s": 0.4097910830168985, "prompt_tokens": 541, "completion_tokens": 25, "error": "", "passed": true, "reason": "matched_gt_entry"}

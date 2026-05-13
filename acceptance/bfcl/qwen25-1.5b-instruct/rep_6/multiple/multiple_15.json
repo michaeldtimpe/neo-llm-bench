@@ -1,0 +1,1 @@
+{"id": "multiple_15", "actual_calls": [["solarFarm.potential", {"coordinates": [43.653225, -79.383186], "panelArea": 80000, "month": "December"}]], "wall_s": 0.38163170899497345, "prompt_tokens": 573, "completion_tokens": 60, "error": "", "passed": true, "reason": "matched_gt_entry"}

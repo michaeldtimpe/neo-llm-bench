@@ -1,0 +1,1 @@
+{"id": "parallel_53", "actual_calls": [["get_cooking_recipe", {"dish_name": "Lasagne Bolognese", "serving_size": 4}]], "wall_s": 0.6246663750498556, "prompt_tokens": 453, "completion_tokens": 47, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

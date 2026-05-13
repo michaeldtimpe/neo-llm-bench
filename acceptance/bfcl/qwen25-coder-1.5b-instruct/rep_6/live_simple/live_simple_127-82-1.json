@@ -1,0 +1,1 @@
+{"id": "live_simple_127-82-1", "actual_calls": [["telemetry.flowrules.interfaceInfo.get", {"fabricName": "test-de", "nodeId": 5, "podId": 1, "interfaceType": "ethernet", "infoType": "status"}]], "wall_s": 0.6091908749658614, "prompt_tokens": 608, "completion_tokens": 69, "error": "", "passed": true, "reason": "matched_gt_entry"}

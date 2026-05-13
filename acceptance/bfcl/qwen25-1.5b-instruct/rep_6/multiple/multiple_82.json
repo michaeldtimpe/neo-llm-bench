@@ -1,0 +1,1 @@
+{"id": "multiple_82", "actual_calls": [["music.generate", {"key": "C Major", "tempo": 120}]], "wall_s": 0.2072809159872122, "prompt_tokens": 486, "completion_tokens": 30, "error": "", "passed": true, "reason": "matched_gt_entry"}

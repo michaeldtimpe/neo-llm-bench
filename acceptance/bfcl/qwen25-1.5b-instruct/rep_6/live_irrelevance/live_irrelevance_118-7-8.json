@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_118-7-8", "actual_calls": [["uber.eat.order", {"restaurant": "McDonald's", "items": ["pizza"], "quantities": [1]}]], "wall_s": 0.5196630830178037, "prompt_tokens": 374, "completion_tokens": 38, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: uber.eat.order"}

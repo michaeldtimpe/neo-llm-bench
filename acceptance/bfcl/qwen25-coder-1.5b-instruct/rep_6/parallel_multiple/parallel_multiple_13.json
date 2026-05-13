@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_13", "actual_calls": [["energy_calculator.calculate", {"substance": "water", "mass": 100, "initial_temperature": 25, "final_temperature": 100, "unit": "joules"}]], "wall_s": 0.9024171250057407, "prompt_tokens": 713, "completion_tokens": 69, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

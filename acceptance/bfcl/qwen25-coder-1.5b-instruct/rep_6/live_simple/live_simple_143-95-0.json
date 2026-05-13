@@ -1,0 +1,1 @@
+{"id": "live_simple_143-95-0", "actual_calls": [["cmd_controller.execute", {"command": "docker ps", "unit": "seconds"}]], "wall_s": 0.3683899169554934, "prompt_tokens": 478, "completion_tokens": 38, "error": "", "passed": false, "reason": "call_cmd_controller.execute_did_not_match_any_gt"}

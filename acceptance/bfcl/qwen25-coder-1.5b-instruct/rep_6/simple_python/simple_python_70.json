@@ -1,0 +1,1 @@
+{"id": "simple_python_70", "actual_calls": [["calculate_vehicle_emission", {"vehicle_type": "gas", "miles_driven": 1500, "emission_factor": 355.48}]], "wall_s": 0.4947632910334505, "prompt_tokens": 507, "completion_tokens": 59, "error": "", "passed": true, "reason": "matched_gt_entry"}

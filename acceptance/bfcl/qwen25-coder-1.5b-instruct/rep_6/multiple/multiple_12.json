@@ -1,0 +1,1 @@
+{"id": "multiple_12", "actual_calls": [["corporate_finance.calculate_YOY_growth_rate", {"company_name": "Tech Inc", "year1": 2019, "year1_revenue": 1000000, "year2": 2020, "year2_revenue": 1200000}]], "wall_s": 1.17554691596888, "prompt_tokens": 762, "completion_tokens": 93, "error": "", "passed": true, "reason": "matched_gt_entry"}

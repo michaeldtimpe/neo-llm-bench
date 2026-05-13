@@ -1,0 +1,1 @@
+{"id": "parallel_24", "actual_calls": [["law_case.get_details", {"case_number": "28473", "include_history": true, "include_litigants": true}]], "wall_s": 0.7066568339942023, "prompt_tokens": 484, "completion_tokens": 52, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

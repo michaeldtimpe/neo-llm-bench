@@ -1,0 +1,1 @@
+{"id": "parallel_33", "actual_calls": [["get_president_and_vp", {"year": [1980, 2016, 1975, 2011], "position": ["president", "president", "vice president", "vice president"]}]], "wall_s": 0.9255556660355069, "prompt_tokens": 461, "completion_tokens": 73, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

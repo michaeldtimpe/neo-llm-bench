@@ -1,0 +1,1 @@
+{"id": "live_multiple_60-22-7", "actual_calls": [["inventory_management", {"product_id": "ABC123", "sizes": ["L"], "color": "any"}]], "wall_s": 0.47200195799814537, "prompt_tokens": 1048, "completion_tokens": 47, "error": "", "passed": false, "reason": "call_inventory_management_did_not_match_any_gt"}

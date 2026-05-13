@@ -1,0 +1,1 @@
+{"id": "live_simple_1-1-0", "actual_calls": [["github_star", {"repos": "ShishirPatil/gorilla,gorilla-llm/gorilla-cli", "aligned": true}]], "wall_s": 0.5223291669972241, "prompt_tokens": 521, "completion_tokens": 52, "error": "", "passed": true, "reason": "matched_gt_entry"}

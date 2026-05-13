@@ -1,0 +1,1 @@
+{"id": "simple_python_52", "actual_calls": [["calc_heat_capacity", {"temp": 298, "volume": 10}]], "wall_s": 0.1923459169920534, "prompt_tokens": 350, "completion_tokens": 30, "error": "", "passed": true, "reason": "matched_gt_entry"}

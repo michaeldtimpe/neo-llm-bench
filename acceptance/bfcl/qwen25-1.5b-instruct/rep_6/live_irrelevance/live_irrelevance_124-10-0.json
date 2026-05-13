@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_124-10-0", "actual_calls": [["answer.string", {"answer": "Logistic regression is a statistical method for predicting a binary outcome from a set of predictor variables."}]], "wall_s": 0.521061000006739, "prompt_tokens": 348, "completion_tokens": 38, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: answer.string"}

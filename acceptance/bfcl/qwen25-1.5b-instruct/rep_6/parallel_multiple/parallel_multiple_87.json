@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_87", "actual_calls": [["kinematics.final_velocity", {"initial_velocity": 0, "time": 5, "acceleration": 3}], ["physics.wave_velocity", {"frequency": 50, "wavelength": 3}]], "wall_s": 0.9303064169944264, "prompt_tokens": 683, "completion_tokens": 66, "error": "", "passed": false, "reason": "emitted_2_calls_expected_3"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_88-49-0", "actual_calls": [["log_food", {"food_name": "chai tea", "portion_amount": 16, "portion_unit": "ounces", "meal_name": "snack"}]], "wall_s": 0.5285692920442671, "prompt_tokens": 585, "completion_tokens": 57, "error": "", "passed": true, "reason": "matched_gt_entry"}

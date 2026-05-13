@@ -1,0 +1,1 @@
+{"id": "multiple_141", "actual_calls": [["lawsuit.check_case", {"case_id": 1234, "closed_status": true}]], "wall_s": 0.571494875010103, "prompt_tokens": 694, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

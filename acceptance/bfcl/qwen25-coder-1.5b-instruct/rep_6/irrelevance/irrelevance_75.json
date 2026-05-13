@@ -1,0 +1,1 @@
+{"id": "irrelevance_75", "actual_calls": [["portfolio.returns", {"initial_investment": 10000, "ending_value": 15000, "period": 3}]], "wall_s": 1.4088018749607727, "prompt_tokens": 459, "completion_tokens": 107, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: portfolio.returns"}

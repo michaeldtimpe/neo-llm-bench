@@ -1,0 +1,1 @@
+{"id": "multiple_50", "actual_calls": [["house_price_forecast", {"location": "New York", "months": 1, "features": []}]], "wall_s": 0.22343337500933558, "prompt_tokens": 578, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_107", "actual_calls": [["library.search_books", {"location": "New York City", "genre": "mystery novel", "title": ""}]], "wall_s": 0.6354465000331402, "prompt_tokens": 688, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

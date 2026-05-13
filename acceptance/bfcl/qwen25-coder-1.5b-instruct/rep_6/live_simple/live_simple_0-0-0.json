@@ -1,0 +1,1 @@
+{"id": "live_simple_0-0-0", "actual_calls": [["get_user_info", {"user_id": 7890, "special": "black"}]], "wall_s": 0.46867487498093396, "prompt_tokens": 455, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

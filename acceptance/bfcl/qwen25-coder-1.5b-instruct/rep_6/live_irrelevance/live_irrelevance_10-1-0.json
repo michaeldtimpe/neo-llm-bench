@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_10-1-0", "actual_calls": [["uber.ride", {"loc": "123 Main St, Anytown, CA, USA", "type": "comfort", "time": 3600}]], "wall_s": 0.5167242920142598, "prompt_tokens": 505, "completion_tokens": 58, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: uber.ride"}

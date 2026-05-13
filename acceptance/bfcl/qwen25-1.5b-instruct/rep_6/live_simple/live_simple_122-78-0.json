@@ -1,0 +1,1 @@
+{"id": "live_simple_122-78-0", "actual_calls": [["process_data", {"image_path": "image.png", "question": "generate with technically complex attention to detail a description of what you see", "model": "vikhyatk/moondream2"}]], "wall_s": 0.7232911249739118, "prompt_tokens": 428, "completion_tokens": 53, "error": "", "passed": true, "reason": "matched_gt_entry"}

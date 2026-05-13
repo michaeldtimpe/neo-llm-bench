@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_65", "actual_calls": [["realestate.find_properties", {"location": "San Francisco, CA", "propertyType": "condo", "bedrooms": 2, "budget": {"min": 500000, "max": 800000}}]], "wall_s": 1.09105287498096, "prompt_tokens": 790, "completion_tokens": 83, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

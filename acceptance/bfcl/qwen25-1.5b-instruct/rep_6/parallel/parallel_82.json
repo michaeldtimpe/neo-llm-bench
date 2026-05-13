@@ -1,0 +1,1 @@
+{"id": "parallel_82", "actual_calls": [["calculate_velocity", {"distance": 120, "duration": 5}], ["calculate_velocity", {"distance": 150, "duration": 6}]], "wall_s": 0.7074056249693967, "prompt_tokens": 417, "completion_tokens": 56, "error": "", "passed": true, "reason": "all_calls_matched"}

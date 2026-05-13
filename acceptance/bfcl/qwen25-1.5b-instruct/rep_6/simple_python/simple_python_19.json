@@ -1,0 +1,1 @@
+{"id": "simple_python_19", "actual_calls": [["math.gcd", {"num1": 40, "num2": 50}]], "wall_s": 0.18903324997518212, "prompt_tokens": 300, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_15-4-7", "actual_calls": [["HNA_NEWS.search", {"keyword": "Son's latest goal", "category": "Sports", "language": "EN"}]], "wall_s": 0.47746004204964265, "prompt_tokens": 1507, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "irrelevance_102", "actual_calls": [["calculate_sunrise_and_sunset", {"location": "New York City", "date": "2023-04-01", "output_format": "24-hour"}]], "wall_s": 0.7119621669990011, "prompt_tokens": 358, "completion_tokens": 50, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_sunrise_and_sunset"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_132-11-7", "actual_calls": [["start_oncall", {"question": "\u5982\u4f55\u5b89\u88c5mbox?", "oncall_type": "swift"}]], "wall_s": 0.40677929198136553, "prompt_tokens": 1404, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: start_oncall"}

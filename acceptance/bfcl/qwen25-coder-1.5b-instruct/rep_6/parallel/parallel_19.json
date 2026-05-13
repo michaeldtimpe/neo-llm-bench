@@ -1,0 +1,1 @@
+{"id": "parallel_19", "actual_calls": [["calculate_mortgage_payment", {"loan_amount": 400000, "interest_rate": 0.04, "loan_term": 15}]], "wall_s": 0.7646091250353493, "prompt_tokens": 484, "completion_tokens": 58, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_122", "actual_calls": [["games.update.find", {"game": "Call of Duty", "platform": "Playstation", "region": "European"}]], "wall_s": 0.8697841670364141, "prompt_tokens": 716, "completion_tokens": 47, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

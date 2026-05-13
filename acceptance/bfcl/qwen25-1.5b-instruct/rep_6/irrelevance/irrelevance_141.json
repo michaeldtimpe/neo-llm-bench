@@ -1,0 +1,1 @@
+{"id": "irrelevance_141", "actual_calls": [["look_up_scientific_contributions", {"scientist_name": "Hydrogen", "contributions": 3}]], "wall_s": 0.47826745902420953, "prompt_tokens": 318, "completion_tokens": 36, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: look_up_scientific_contributions"}

@@ -1,0 +1,1 @@
+{"id": "irrelevance_136", "actual_calls": [["us_president_in_year", {"year": 2023, "state": "DC"}]], "wall_s": 0.5693886250373907, "prompt_tokens": 421, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: us_president_in_year"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_115", "actual_calls": [["artwork_search.find", {"type": "modern", "location": "New York", "era": "modern"}]], "wall_s": 0.6682914160192013, "prompt_tokens": 724, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

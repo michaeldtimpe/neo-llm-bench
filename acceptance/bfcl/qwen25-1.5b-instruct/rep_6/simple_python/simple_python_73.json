@@ -1,0 +1,1 @@
+{"id": "simple_python_73", "actual_calls": [["population_projections", {"country": "United States", "years": 20}]], "wall_s": 0.18655129201943055, "prompt_tokens": 343, "completion_tokens": 29, "error": "", "passed": true, "reason": "matched_gt_entry"}

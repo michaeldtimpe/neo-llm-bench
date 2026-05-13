@@ -1,0 +1,1 @@
+{"id": "irrelevance_104", "actual_calls": [["calculate_park_area", {"radius": 3, "units": "units", "shape": "sphere"}]], "wall_s": 0.5908630409976467, "prompt_tokens": 451, "completion_tokens": 45, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_park_area"}

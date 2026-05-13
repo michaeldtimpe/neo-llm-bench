@@ -1,0 +1,1 @@
+{"id": "live_simple_2-2-0", "actual_calls": [["uber.ride", {"loc": "2020 Addison Street, Berkeley, CA, USA", "type": "comfort", "time": 600}]], "wall_s": 0.6503001669771038, "prompt_tokens": 403, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

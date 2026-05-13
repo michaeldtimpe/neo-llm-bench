@@ -1,0 +1,1 @@
+{"id": "live_simple_15-3-11", "actual_calls": [["get_current_weather", {"location": "Chennai, Tamil Nadu", "unit": "fahrenheit"}]], "wall_s": 0.4450389170087874, "prompt_tokens": 379, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

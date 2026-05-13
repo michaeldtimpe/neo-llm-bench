@@ -1,0 +1,1 @@
+{"id": "irrelevance_126", "actual_calls": [["get_happiness_index", {"country": "United States", "year": 2020, "demographic_group": "total"}]], "wall_s": 1.0334204999962822, "prompt_tokens": 378, "completion_tokens": 70, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_happiness_index"}

@@ -1,0 +1,86 @@
+{
+  "model": "qwen25-coder-1.5b-instruct",
+  "rep": 6,
+  "mode": "auto",
+  "run_mode": "raw",
+  "system_prompt": "v2_fewshot_parallel",
+  "categories": {
+    "simple_python": {
+      "n_problems": 150,
+      "n_with_calls": 148,
+      "n_errors": 0,
+      "wall_s": 67.15660538244992,
+      "completion_tokens": 7977
+    },
+    "multiple": {
+      "n_problems": 150,
+      "n_with_calls": 148,
+      "n_errors": 0,
+      "wall_s": 108.06845923943911,
+      "completion_tokens": 7968
+    },
+    "parallel": {
+      "n_problems": 150,
+      "n_with_calls": 130,
+      "n_errors": 0,
+      "wall_s": 168.77572175022215,
+      "completion_tokens": 13095
+    },
+    "parallel_multiple": {
+      "n_problems": 150,
+      "n_with_calls": 149,
+      "n_errors": 0,
+      "wall_s": 184.67059667163994,
+      "completion_tokens": 13499
+    },
+    "irrelevance": {
+      "n_problems": 150,
+      "n_with_calls": 65,
+      "n_errors": 0,
+      "wall_s": 314.71088566462277,
+      "completion_tokens": 22470
+    },
+    "live_simple": {
+      "n_problems": 150,
+      "n_with_calls": 142,
+      "n_errors": 0,
+      "wall_s": 144.29245653311955,
+      "completion_tokens": 13177
+    },
+    "live_multiple": {
+      "n_problems": 150,
+      "n_with_calls": 147,
+      "n_errors": 0,
+      "wall_s": 94.87065591925057,
+      "completion_tokens": 8675
+    },
+    "live_parallel": {
+      "n_problems": 16,
+      "n_with_calls": 11,
+      "n_errors": 0,
+      "wall_s": 11.897242372913752,
+      "completion_tokens": 1130
+    },
+    "live_parallel_multiple": {
+      "n_problems": 24,
+      "n_with_calls": 22,
+      "n_errors": 0,
+      "wall_s": 18.858447040896863,
+      "completion_tokens": 1562
+    },
+    "live_irrelevance": {
+      "n_problems": 150,
+      "n_with_calls": 33,
+      "n_errors": 0,
+      "wall_s": 167.81640492292354,
+      "completion_tokens": 16685
+    },
+    "live_relevance": {
+      "n_problems": 16,
+      "n_with_calls": 15,
+      "n_errors": 0,
+      "wall_s": 15.231632748967968,
+      "completion_tokens": 1411
+    }
+  }
+}

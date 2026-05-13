@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_17-15-0", "actual_calls": [["rotateImageAction", {"degrees": 20}], ["flipImageAction", {"flip_direction": "horizontal"}]], "wall_s": 1.0238997080014087, "prompt_tokens": 1212, "completion_tokens": 44, "error": "", "passed": true, "reason": "all_calls_matched"}

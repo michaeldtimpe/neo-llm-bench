@@ -1,0 +1,1 @@
+{"id": "live_simple_58-27-0", "actual_calls": [["get_movies", {"city": "Mumbai", "cinema_hall": "All", "movie_date": null, "movie_language": "All", "movie_format": "2D"}]], "wall_s": 0.6626014579669572, "prompt_tokens": 525, "completion_tokens": 64, "error": "", "passed": true, "reason": "matched_gt_entry"}

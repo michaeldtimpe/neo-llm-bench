@@ -1,0 +1,1 @@
+{"id": "multiple_131", "actual_calls": [["market_performance.get_data", {"indexes": ["S&P 500", "Dow Jones"], "days": 5, "detailed": false}]], "wall_s": 0.41082579200156033, "prompt_tokens": 681, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_52", "actual_calls": [["game_of_life.play", {"rounds": 3, "start_board": []}]], "wall_s": 0.5242627909756266, "prompt_tokens": 541, "completion_tokens": 38, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

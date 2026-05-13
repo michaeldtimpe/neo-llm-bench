@@ -1,0 +1,1 @@
+{"id": "simple_python_94", "actual_calls": [["update_user_info", {"user_id": 43523, "update_info": {"name": "John Doe", "email": "johndoe@email.com"}}]], "wall_s": 0.29874845896847546, "prompt_tokens": 394, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

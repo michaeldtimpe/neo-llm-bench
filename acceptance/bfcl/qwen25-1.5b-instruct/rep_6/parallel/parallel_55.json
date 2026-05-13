@@ -1,0 +1,1 @@
+{"id": "parallel_55", "actual_calls": [["grocery_store.find_by_criteria", {"location": "New York City", "criteria": ["24 hours"]}], ["grocery_store.find_by_criteria", {"location": "San Diego", "criteria": ["Home Delivery"]}]], "wall_s": 0.5623687910265289, "prompt_tokens": 361, "completion_tokens": 68, "error": "", "passed": true, "reason": "all_calls_matched"}

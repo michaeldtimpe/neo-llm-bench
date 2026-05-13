@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_29", "actual_calls": [["court_records.search_cases", {"location": "New York", "query": "Theft", "year": 2021, "limit": 5}]], "wall_s": 0.7329576250049286, "prompt_tokens": 578, "completion_tokens": 57, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

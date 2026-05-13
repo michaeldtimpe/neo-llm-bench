@@ -1,0 +1,1 @@
+{"id": "simple_python_67", "actual_calls": [["identify_bird", {"color": "green", "habitat": "forest", "size": "small"}]], "wall_s": 0.2180557080428116, "prompt_tokens": 333, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

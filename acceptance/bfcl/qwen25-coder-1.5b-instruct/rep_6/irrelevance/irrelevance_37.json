@@ -1,0 +1,1 @@
+{"id": "irrelevance_37", "actual_calls": [["local_fauna", {"location": "Miami", "species_type": "birds", "migration_season": "spring"}]], "wall_s": 0.49745445797452703, "prompt_tokens": 452, "completion_tokens": 34, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: local_fauna"}

@@ -1,0 +1,1 @@
+{"id": "multiple_77", "actual_calls": [["artwork_search.find", {"type": "sculpture", "location": "New York", "era": "contemporary"}]], "wall_s": 0.24983529199380428, "prompt_tokens": 567, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

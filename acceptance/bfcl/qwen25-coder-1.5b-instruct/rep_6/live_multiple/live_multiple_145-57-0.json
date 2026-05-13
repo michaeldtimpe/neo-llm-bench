@@ -1,0 +1,1 @@
+{"id": "live_multiple_145-57-0", "actual_calls": [["get_shopping", {"item_name": "winter jacket", "location": "Berkeley, CA", "currency": "USD"}]], "wall_s": 0.5134445000439882, "prompt_tokens": 803, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "simple_python_13", "actual_calls": [["calculate_area_under_curve", {"function": "x**2", "interval": [1, 3]}]], "wall_s": 0.21620699996128678, "prompt_tokens": 368, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

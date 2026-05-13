@@ -1,0 +1,1 @@
+{"id": "live_parallel_5-2-0", "actual_calls": [["get_current_weather", {"url": "https://api.open-meteo.com/v1/forecast", "location": "Boston, MA", "unit": "celsius"}]], "wall_s": 0.5385405829874799, "prompt_tokens": 527, "completion_tokens": 58, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

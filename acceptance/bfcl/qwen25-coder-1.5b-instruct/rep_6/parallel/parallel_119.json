@@ -1,0 +1,1 @@
+{"id": "parallel_119", "actual_calls": [["identify_bird", {"color": "blue", "habitat": "forest", "size": "small"}]], "wall_s": 0.5866621250170283, "prompt_tokens": 543, "completion_tokens": 45, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

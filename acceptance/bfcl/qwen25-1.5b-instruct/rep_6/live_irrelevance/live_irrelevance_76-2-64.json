@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_76-2-64", "actual_calls": [["get_current_weather", {"location": "theta_key, Country", "unit": "fahrenheit"}]], "wall_s": 0.5680241250083782, "prompt_tokens": 369, "completion_tokens": 31, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_current_weather"}

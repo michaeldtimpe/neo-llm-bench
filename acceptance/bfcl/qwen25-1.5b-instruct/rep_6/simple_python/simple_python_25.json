@@ -1,0 +1,1 @@
+{"id": "simple_python_25", "actual_calls": [["calculate_final_velocity", {"height": 150}]], "wall_s": 0.15228095900965855, "prompt_tokens": 375, "completion_tokens": 23, "error": "", "passed": true, "reason": "matched_gt_entry"}

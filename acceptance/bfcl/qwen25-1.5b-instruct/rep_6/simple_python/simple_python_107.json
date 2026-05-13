@@ -1,0 +1,1 @@
+{"id": "simple_python_107", "actual_calls": [["calculate_bmi", {"weight": 70, "height": 175, "system": "metric"}]], "wall_s": 0.21907587500754744, "prompt_tokens": 360, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

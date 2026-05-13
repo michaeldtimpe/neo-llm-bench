@@ -1,0 +1,1 @@
+{"id": "live_multiple_65-26-1", "actual_calls": [["get_current_weather", {"location": "Boston, MA", "unit": "fahrenheit"}]], "wall_s": 0.43847891699988395, "prompt_tokens": 761, "completion_tokens": 30, "error": "", "passed": true, "reason": "matched_gt_entry"}

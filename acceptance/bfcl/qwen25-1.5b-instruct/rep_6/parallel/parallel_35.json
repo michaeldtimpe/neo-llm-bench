@@ -1,0 +1,1 @@
+{"id": "parallel_35", "actual_calls": [["ancient_empires.get_religion_info", {"empire_name": "Persian Empire", "include_influences": true}], ["ancient_empires.get_religion_info", {"empire_name": "Mauryan Empire", "include_influences": true}]], "wall_s": 0.6394865000038408, "prompt_tokens": 332, "completion_tokens": 79, "error": "", "passed": true, "reason": "all_calls_matched"}

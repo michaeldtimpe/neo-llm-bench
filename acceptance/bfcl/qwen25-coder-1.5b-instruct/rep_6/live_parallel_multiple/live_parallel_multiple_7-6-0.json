@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_7-6-0", "actual_calls": [["get_aws_pricing", {"memory": 4, "cpu": 2}]], "wall_s": 0.3661978340242058, "prompt_tokens": 717, "completion_tokens": 39, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

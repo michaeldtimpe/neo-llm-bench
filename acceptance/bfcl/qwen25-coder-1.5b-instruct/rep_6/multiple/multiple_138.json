@@ -1,0 +1,1 @@
+{"id": "multiple_138", "actual_calls": [["legal_case.fetch", {"case_id": "R_vs_Adams", "details": true}]], "wall_s": 0.5774085000157356, "prompt_tokens": 736, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

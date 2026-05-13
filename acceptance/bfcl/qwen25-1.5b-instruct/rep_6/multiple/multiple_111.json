@@ -1,0 +1,1 @@
+{"id": "multiple_111", "actual_calls": [["calculate_genotype_frequency", {"allele_frequency": 0.3, "genotype": "AA"}]], "wall_s": 0.22207625000737607, "prompt_tokens": 553, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

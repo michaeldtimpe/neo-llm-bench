@@ -1,0 +1,1 @@
+{"id": "live_multiple_122-46-1", "actual_calls": [["get_time_to_collision", {"ego_velocity": 50, "ego_acceleration": -2, "leading_object_velocity": 30, "leading_object_acceleration": -1, "initial_distance": 100}]], "wall_s": 1.1026047919876873, "prompt_tokens": 1313, "completion_tokens": 59, "error": "", "passed": true, "reason": "matched_gt_entry"}

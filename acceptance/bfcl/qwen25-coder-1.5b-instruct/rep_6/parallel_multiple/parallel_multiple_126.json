@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_126", "actual_calls": [["recipe.find", {"mainIngredient": "chicken", "ingredientLimit": 5}]], "wall_s": 0.5366337920422666, "prompt_tokens": 609, "completion_tokens": 39, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

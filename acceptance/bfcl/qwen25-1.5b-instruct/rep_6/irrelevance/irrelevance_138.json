@@ -1,0 +1,1 @@
+{"id": "irrelevance_138", "actual_calls": [["calculate_age", {"birthdate": "1776-07-04", "current_date": "2023-07-04"}]], "wall_s": 0.6096737089683302, "prompt_tokens": 311, "completion_tokens": 45, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_age"}

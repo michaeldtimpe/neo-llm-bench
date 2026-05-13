@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_145-13-11", "actual_calls": [["HNA_NEWS.search", {"keyword": "\uc784\uc9c4", "category": "Politics", "date_range": "null", "sort_by": "date", "language": "EN"}]], "wall_s": 0.41865437501110137, "prompt_tokens": 1269, "completion_tokens": 47, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: HNA_NEWS.search"}

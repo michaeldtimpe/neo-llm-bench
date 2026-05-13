@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_25", "actual_calls": [["stock_invest.calculate_investment_cost", {"company": "Apple", "shares": 50}]], "wall_s": 0.5871821250184439, "prompt_tokens": 565, "completion_tokens": 42, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

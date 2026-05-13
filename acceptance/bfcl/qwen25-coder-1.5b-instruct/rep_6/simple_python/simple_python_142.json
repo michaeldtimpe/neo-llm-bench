@@ -1,0 +1,1 @@
+{"id": "simple_python_142", "actual_calls": [["get_stock_price", {"company_name": "Amazon", "date": "2022-03-11", "exchange": "NASDAQ"}]], "wall_s": 0.44079650001367554, "prompt_tokens": 473, "completion_tokens": 54, "error": "", "passed": true, "reason": "matched_gt_entry"}

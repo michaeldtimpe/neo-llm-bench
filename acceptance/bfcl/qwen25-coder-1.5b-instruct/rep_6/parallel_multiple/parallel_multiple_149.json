@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_149", "actual_calls": [["hotel_booking", {"location": "Paris", "room_type": "deluxe", "duration": 5, "start_date": "2023-06-20", "preferences": ["gym", "free_breakfast"]}]], "wall_s": 1.1158523749909364, "prompt_tokens": 894, "completion_tokens": 75, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_141-13-7", "actual_calls": [["OpenWeatherMap.get_current_weather", {"location": "Seoul, South Korea", "units": "metric", "api_key": "YOUR_API_KEY_HERE"}]], "wall_s": 0.9596153750317171, "prompt_tokens": 1097, "completion_tokens": 44, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: OpenWeatherMap.get_current_weather"}

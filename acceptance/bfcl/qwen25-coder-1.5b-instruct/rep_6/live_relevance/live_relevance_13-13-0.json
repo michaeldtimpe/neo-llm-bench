@@ -1,0 +1,1 @@
+{"id": "live_relevance_13-13-0", "actual_calls": [["Movies_1_BuyMovieTickets", {"movie_name": "IMAX", "number_of_tickets": 1, "show_date": "2023-10-1", "location": "3rd Street Cinema", "show_time": "20:00", "show_type": "IMAX"}]], "wall_s": 1.0349311250029132, "prompt_tokens": 1883, "completion_tokens": 92, "error": "", "passed": true, "reason": "correctly_called_a_tool"}

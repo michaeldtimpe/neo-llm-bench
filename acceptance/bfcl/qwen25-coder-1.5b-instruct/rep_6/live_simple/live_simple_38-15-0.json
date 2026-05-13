@@ -1,0 +1,1 @@
+{"id": "live_simple_38-15-0", "actual_calls": [["get_current_weather", {"url": "https://api.open-meteo.com/v1/forecast", "location": "Yosemite National Park, CA", "unit": "fahrenheit"}]], "wall_s": 0.5598205419955775, "prompt_tokens": 582, "completion_tokens": 61, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

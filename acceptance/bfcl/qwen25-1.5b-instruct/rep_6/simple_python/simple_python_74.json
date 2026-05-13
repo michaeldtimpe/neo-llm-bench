@@ -1,0 +1,1 @@
+{"id": "simple_python_74", "actual_calls": [["calculate_bacteria_evolution_rate", {"start_population": 5000, "duplication_frequency": 1, "duration": 6, "generation_time": 20}]], "wall_s": 0.29488750000018626, "prompt_tokens": 385, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

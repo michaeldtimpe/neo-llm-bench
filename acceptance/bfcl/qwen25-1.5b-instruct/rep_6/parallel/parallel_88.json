@@ -1,0 +1,1 @@
+{"id": "parallel_88", "actual_calls": [["calculate_final_speed", {"initial_velocity": 0, "height": 10}], ["calculate_final_speed", {"initial_velocity": 5, "height": 20}]], "wall_s": 0.7711209580302238, "prompt_tokens": 416, "completion_tokens": 58, "error": "", "passed": true, "reason": "all_calls_matched"}

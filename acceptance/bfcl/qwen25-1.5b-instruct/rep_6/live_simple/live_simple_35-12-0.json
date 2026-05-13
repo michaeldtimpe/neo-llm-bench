@@ -1,0 +1,1 @@
+{"id": "live_simple_35-12-0", "actual_calls": [["answer.string", {"answer": "Logistic regression is a statistical method for predicting a binary outcome from a set of predictor variables."}]], "wall_s": 0.5275990000227466, "prompt_tokens": 354, "completion_tokens": 38, "error": "", "passed": false, "reason": "call_answer.string_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "simple_python_46", "actual_calls": [["calculate_final_temperature", {"mass1": 20, "temperature1": 30, "mass2": 15, "temperature2": 60}]], "wall_s": 0.3037611250183545, "prompt_tokens": 448, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

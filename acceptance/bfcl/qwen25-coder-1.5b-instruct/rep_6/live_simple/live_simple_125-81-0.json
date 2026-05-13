@@ -1,0 +1,1 @@
+{"id": "live_simple_125-81-0", "actual_calls": [["concat_strings", {"strings": ["John", "Doe"], "separator": " "}]], "wall_s": 0.39077300002099946, "prompt_tokens": 443, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_133-86-0", "actual_calls": [["requests.get", {"url": "https://api.example.com/recommendations", "params": {"advisoryId": "dac", "ip": "192.168.1.1"}}]], "wall_s": 1.2200999589986168, "prompt_tokens": 567, "completion_tokens": 70, "error": "", "passed": true, "reason": "matched_gt_entry"}

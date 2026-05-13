@@ -1,0 +1,1 @@
+{"id": "multiple_61", "actual_calls": [["landscape_architect.find_specialty", {"location": "Portland, OR", "specialization": "small space garden design", "years_experience": 5}]], "wall_s": 0.2817666250048205, "prompt_tokens": 526, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_124-80-0", "actual_calls": [["get_tickets", {"customer": "\u7ea2\u661f\u79d1\u6280", "status": "resolved", "limit": 10}]], "wall_s": 0.4466549580101855, "prompt_tokens": 367, "completion_tokens": 34, "error": "", "passed": false, "reason": "call_get_tickets_did_not_match_any_gt"}

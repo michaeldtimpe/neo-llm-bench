@@ -1,0 +1,1 @@
+{"id": "live_parallel_15-11-0", "actual_calls": [["cmd_controller.execute", {"command": "dir C:\\ | findstr /c:\"testing.txt\""}]], "wall_s": 0.44992033299058676, "prompt_tokens": 344, "completion_tokens": 32, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
