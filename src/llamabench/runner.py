@@ -57,6 +57,11 @@ class RunRequest:
     # stub-tool feedback. Different benchmarks; see graded_report.md
     # framing note.
     bfcl_run_mode: str = "raw"
+    # Named system-prompt variant for BFCL (raw, agent, and multi-turn).
+    # See `benchmarks/bfcl/adapter.BFCL_SYSTEM_PROMPTS` for the registry.
+    # Round-3 experiments swap this per-branch; default "v2" reproduces
+    # all rounds 1/2 numbers bit-for-bit.
+    bfcl_system_prompt: str = "v2"
     # Override the model's configured sampling temperature for this run.
     # Used by the multi-temperature HumanEval sweep — leaves the YAML alone.
     temperature_override: float | None = None
@@ -109,7 +114,8 @@ def run(req: RunRequest, profile: BenchProfile) -> RunResult:
                     profile=profile, server_bin=bin_path,
                     profile_path=req.profile_path,
                     mode=({"bfcl_mode": req.bfcl_mode,
-                           "bfcl_run_mode": req.bfcl_run_mode}
+                           "bfcl_run_mode": req.bfcl_run_mode,
+                           "bfcl_system_prompt": req.bfcl_system_prompt}
                           if bench == "bfcl" else None),
                     temperature_override=req.temperature_override,
                 )
@@ -150,7 +156,8 @@ def _run_bfcl(backend: Backend, req: RunRequest) -> dict:
       mode uses the existing run_agent loop with stub executors.
     """
     from benchmarks.bfcl.adapter import (
-        SUPPORTED_CATEGORIES, load_problems, run_problem_agent, run_problem_raw,
+        SUPPORTED_CATEGORIES, get_bfcl_system_prompt,
+        load_problems, run_problem_agent, run_problem_raw,
     )
     from benchmarks.bfcl.multi_turn import is_multi_turn, run_problem_multi_turn
     from dataclasses import asdict
@@ -161,6 +168,8 @@ def _run_bfcl(backend: Backend, req: RunRequest) -> dict:
 
     effective_mode = req.model.bfcl_mode or req.bfcl_mode
     run_mode = req.bfcl_run_mode or "raw"
+    # Fail fast on a bad variant name — KeyError surfaces valid names.
+    system_prompt_text = get_bfcl_system_prompt(req.bfcl_system_prompt)
 
     # Agent mode builds one RoleConfig from the per-model sampling/server
     # so temperature + n_ctx match raw mode. max_steps hardcoded so the
@@ -182,6 +191,7 @@ def _run_bfcl(backend: Backend, req: RunRequest) -> dict:
     summary: dict[str, Any] = {
         "model": req.model.id, "rep": req.rep,
         "mode": effective_mode, "run_mode": run_mode,
+        "system_prompt": req.bfcl_system_prompt,
         "categories": {},
     }
     for cat in cats:
@@ -210,6 +220,7 @@ def _run_bfcl(backend: Backend, req: RunRequest) -> dict:
                     max_tokens=req.model.sampling.max_tokens,
                     temperature=temp,
                     category=cat,
+                    system_prompt=system_prompt_text,
                 )
                 row = {
                     "id": mt.problem_id,
@@ -231,13 +242,17 @@ def _run_bfcl(backend: Backend, req: RunRequest) -> dict:
                 continue
 
             if run_mode == "agent":
-                r = run_problem_agent(backend, role_cfg, p)
+                r = run_problem_agent(
+                    backend, role_cfg, p,
+                    system_prompt=system_prompt_text,
+                )
             else:
                 r = run_problem_raw(
                     backend, p,
                     max_tokens=req.model.sampling.max_tokens,
                     temperature=temp,
                     mode=effective_mode,
+                    system_prompt=system_prompt_text,
                 )
             row: dict[str, Any] = {
                 "id": r.problem_id, "actual_calls": r.actual_calls,

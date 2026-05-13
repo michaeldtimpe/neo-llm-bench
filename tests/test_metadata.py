@@ -164,6 +164,20 @@ def test_build_metadata_temperature_override_recorded(
     assert meta["sampling"]["temperature_effective"] == 0.3
 
 
+def test_build_metadata_records_bfcl_system_prompt_variant(
+    fake_model, profile, isolated_cache, monkeypatch
+):
+    """Round-3 prereq: the prompt-variant name must land in metadata.mode."""
+    _stub_git_and_sysctl(monkeypatch)
+    meta = md.build_run_metadata(
+        model=fake_model, benchmark="bfcl", rep=6, profile=profile,
+        server_bin=Path("/bin/true"),
+        mode={"bfcl_mode": "auto", "bfcl_run_mode": "raw",
+              "bfcl_system_prompt": "v3a"},
+    )
+    assert meta["mode"]["bfcl_system_prompt"] == "v3a"
+
+
 def test_build_metadata_no_override_no_effective_key(
     fake_model, profile, isolated_cache, monkeypatch
 ):

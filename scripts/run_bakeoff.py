@@ -126,6 +126,14 @@ def main() -> int:
                    help="raw: single-pass capability measurement (default). "
                         "agent: closed-loop run_agent dispatch with stub tools "
                         "(different benchmark — measures orchestration + recovery).")
+    p.add_argument("--bfcl-system-prompt", default="v2",
+                   choices=("v2", "v3a", "v3b", "v3c", "v2_fewshot_parallel"),
+                   help="Named BFCL system-prompt variant. "
+                        "v2 (default) = the rounds 1/2 baseline. v3a/v3b probe "
+                        "stricter decline rules (branch A). v3c probes a "
+                        "looser decline rule (branch C). v2_fewshot_parallel "
+                        "appends parallel/parallel_multiple few-shot examples "
+                        "(branch B).")
     p.add_argument("--temperature", type=float, default=None,
                    help="Override the per-model sampling.temperature for this run. "
                         "Useful for the multi-temp HumanEval sweep without touching "
@@ -189,7 +197,9 @@ def main() -> int:
           file=sys.stderr)
     print(f"  models   : {[c.stem for c in cfgs]}", file=sys.stderr)
     print(f"  benches  : {args.benchmarks}", file=sys.stderr)
-    print(f"  bfcl mode: {args.bfcl_mode}  rep: {args.rep}", file=sys.stderr)
+    print(f"  bfcl mode: {args.bfcl_mode}  run_mode: {args.bfcl_run_mode}  "
+          f"sys_prompt: {args.bfcl_system_prompt}  rep: {args.rep}",
+          file=sys.stderr)
     print(f"  output   : {args.output}", file=sys.stderr)
     print(f"  server   : {profile.server_host}:{profile.server_port}", file=sys.stderr)
     print("", file=sys.stderr)
@@ -281,6 +291,7 @@ def main() -> int:
             bfcl_categories=tuple(args.bfcl_categories) if args.bfcl_categories else None,
             bfcl_mode=args.bfcl_mode,
             bfcl_run_mode=args.bfcl_run_mode,
+            bfcl_system_prompt=args.bfcl_system_prompt,
             temperature_override=args.temperature,
             profile_path=args.profile,
         )
