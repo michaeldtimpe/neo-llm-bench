@@ -1,0 +1,1 @@
+{"id": "multi_turn_long_context_86", "per_turn_steps": [], "wall_s": 3.0761474579921924, "prompt_tokens": 5611, "completion_tokens": 92, "error": "AttributeError: 'list' object has no attribute 'items'", "n_turns": 0, "trace": [], "passed": false, "reason": "grader_crash:IndexError:list index out of range"}

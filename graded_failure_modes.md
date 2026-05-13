@@ -193,6 +193,124 @@ whose raw mode underperforms most relative to its sibling. The loop
 extracts more value when the model has more first-pass mistakes to
 recover — but pays more tokens to do it.
 
+## Multi-turn BFCL (rep_5) — state-based failure-mode breakdown
+
+n=100 per category × 4 categories per model. All cells <3% pass rate
+(see `graded_report.md` for the headline table). The interesting
+structure is in *why* models fail and *which kind* of failure dominates.
+
+### 3-way failure-type split (per model, summed across all 4 cats, n=400)
+
+Categorizes each non-passing problem by *whether the failure is the
+model's fault or the infrastructure's*:
+
+| failure type | qwen25-1.5b | qwen25-coder | granite33-2b |
+|---|---|---|---|
+| **pass** | 0 (0%) | 2 (1%) | 4 (1%) |
+| **model_behavior** (wrong call/state, no clarification) | **389 (97%)** | 344 (86%) | 362 (91%) |
+| **infrastructure** (grader IndexError on empty steps, backend 400) | 11 (3%) | **54 (14%)** | 34 (9%) |
+| **execution** (mock-API runtime crash) | 0 | 0 | 0 |
+
+The `infrastructure` bucket here is dominated by a single underlying
+cause: **context overruns**. When the model emits enough verbose calls
+that the cumulative prompt exceeds `n_ctx=8192`, llama-server rejects
+with HTTP 400. The driver records `n_turns=0, per_turn_steps=[]` for
+that problem; bfcl_eval's `multi_turn_checker` then IndexErrors on the
+empty list (`grader_crash:IndexError:list index out of range`). Both
+the 400 and the downstream IndexError trace back to the same root.
+**Don't read the model-behavior pass rates as if these problems were
+attempted** — they weren't.
+
+Discounting infrastructure failures, the *attempted* pass rates are:
+- granite33: 4/366 = **1.1%**
+- qwen25-coder: 2/346 = **0.6%**
+- qwen25-1.5b: 0/389 = **0%**
+
+### Failure-reason distribution per category (top 3 per cell)
+
+bfcl_eval's checker tags each failure with one of:
+- `multi_turn:instance_state_mismatch` — at some turn, the model's mock-API state diverged from GT's
+- `multi_turn:execution_response_mismatch` — same call shape but different return values (mock API responded differently)
+- `multi_turn:empty_turn_model_response` — model emitted no calls when GT expected ≥1
+- `grader_crash:IndexError:*` — checker errored on our empty/partial output (infrastructure, see above)
+
+Dominant reason per (model, category) cell:
+
+| model | mt_base | mt_long_context | mt_miss_func | mt_miss_param |
+|---|---|---|---|---|
+| qwen25-1.5b | state_mismatch 59 / response_mismatch 35 | state_mismatch 58 / response_mismatch 29 / **crash 7** | **empty_response 59** / state 23 | state 57 / response 35 |
+| qwen25-coder | state 61 / response 35 | state 46 / **crash 30** / response 20 | state 59 / response 32 | state 59 / response 36 |
+| granite33-2b | state 50 / empty 25 / response 23 | state 42 / empty 25 / **crash 17** | **empty_response 74** / state 14 | state 46 / empty 32 |
+
+Key reads:
+
+1. **`multi_turn_miss_func` brings out each model's structural personality**:
+   - granite33: **74/100 `empty_turn_model_response`** — the decline-
+     discipline we saw on single-turn `live_irrelevance` (97/100) is
+     here too. When the right tool is excluded, granite says nothing
+     rather than improvise with the wrong tool. *But miss_func sometimes
+     requires the model to use an alternative — abstention isn't always
+     correct here*, and that's exactly where granite leaves points on
+     the table.
+   - qwen25-1.5b: **59/100 empty_response** — same pattern, less
+     extreme.
+   - qwen25-coder: only 7/100 empty — coder *tries* something with
+     whatever tool is available, which produces `state_mismatch`
+     (59/100) rather than empty. Different failure mode, same outcome
+     (both fail), but qualitatively a different model behavior.
+
+2. **`multi_turn_long_context` is half-infrastructure for coder**: 30
+   `grader_crash:IndexError` + 49 backend 400s out of 100 problems means
+   roughly half of qwen25-coder's long_context problems never got fairly
+   attempted on this n_ctx. Same root cause: coder's verbose
+   tool-call style + cumulative conversation history quickly exceeds
+   8k tokens.
+
+3. **state_mismatch is the dominant model_behavior failure across the
+   board** — for the problems that *do* execute, the model emits a
+   plausible-looking call sequence whose end-state simply doesn't
+   match GT. This is the "right area, wrong specifics" failure: the
+   model picks the right filesystem method but with the wrong path,
+   or grep's the wrong file. The qualitative right answer at this
+   model size, but state-grading is unforgiving.
+
+### Mean turns per problem (how far conversations get)
+
+| category | qwen25-1.5b | qwen25-coder | granite33-2b |
+|---|---|---|---|
+| multi_turn_base (4 turns) | 3.30 | 3.29 | 3.27 |
+| multi_turn_long_context (4 turns) | 2.98 | **1.92** | 2.47 |
+| multi_turn_miss_func (5 turns) | 4.30 | 4.27 | 4.23 |
+| multi_turn_miss_param (5 turns) | 4.30 | 4.27 | 4.26 |
+
+Models complete most of the conversation on `_base`, `miss_func`, and
+`miss_param`. **`long_context` is short for coder (1.92 mean turns)**
+because backend 400s abort conversations partway through — the same
+context-overrun pattern again. The conversation literally doesn't reach
+turn 3 or 4 for half of coder's long_context problems.
+
+### What this means for the deployment decision
+
+On this hardware (`n_ctx=8192`), multi-turn agent-loop deployment is
+*not viable* for any of the three models at the pass-rate ceiling
+state-tracking demands. **None of them are within striking distance
+of usable multi-turn performance.** That isn't a model-comparison
+signal — it's a *capability-ceiling* signal at this size class.
+
+Three secondary signals that *do* matter for picking among the three:
+
+- **granite33 is the most disciplined** (highest pass rate, lowest
+  infra-failure rate) but its decline-instinct over-fires on
+  `miss_func` (74/100 empty responses). If your deployment surfaces
+  partial-tool-coverage scenarios, granite under-emits.
+- **qwen25-coder is verbose to a fault**: 49 backend overruns and
+  context utilization at p95=134k tokens means coder fills up `n_ctx`
+  faster than it solves problems. Avoid for any deployment with
+  conversation-history accumulation unless `n_ctx` is at least 32k.
+- **qwen25-1.5b is the cleanest infrastructure profile** (11 errors,
+  lowest tokens) but solves zero — its first-pass strength on
+  single-turn doesn't transfer to multi-turn at this size.
+
 ## HumanEval — failure modes & temperature behavior
 
 All three are 100% extraction-clean on rep_0/rep_2; rep_3 has 1

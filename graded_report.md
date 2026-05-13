@@ -242,6 +242,77 @@ Raw BFCL is the public-leaderboard-comparable number — it measures the
 **system's** capability (model + loop + stub feedback). Both matter
 for different deployment patterns. Don't conflate them.
 
+## Multi-turn BFCL — state-based grading (rep_5)
+
+**Different benchmark from raw and agent BFCL.** Multi-turn problems are
+4–5 turns of user-driven conversation; each turn the model emits tool
+calls, the bfcl_eval mock APIs (stateful Python classes — filesystem,
+trading, messaging, etc.) execute them, results feed back, and the
+model decides what to do next. **The grader is end-state comparison**:
+bfcl_eval runs the model's call sequence and the ground-truth sequence
+against fresh mock-API instances and checks whether the resulting state
+matches turn-by-turn. Strict aggregation — any turn mismatching fails
+the whole problem. No partial credit.
+
+n=100 / category × 4 categories = 400 problems per finalist.
+
+### Overall (rep_5, n=400 each)
+
+| model | passed | overall | model_behavior failures | infrastructure failures |
+|---|---|---|---|---|
+| granite33-2b-instruct | **4/400** | 1.5% ±1.1pp (Wilson 95%) | 362 | 34 |
+| qwen25-coder-1.5b-instruct | 2/400 | 1.0% ±0.8pp | 344 | 54 |
+| qwen25-1.5b-instruct | 0/400 | 0.5% ±0.5pp | 389 | 11 |
+
+For context: the public BFCL multi-turn leaderboard caps around 30–50%
+for GPT-4-class models. Open-weight 1.5B–2B models reliably land near 0–
+2%. **These numbers are consistent with the leaderboard pattern**:
+state-tracking across 4–5 conversational turns demands capability that
+emerges at scales an order of magnitude above what we're testing.
+
+The headline rate (≤1.5%) is mostly meaningful as a *bottom-of-curve*
+measurement: it tells you which model marginally edges the others, and
+where the infrastructure failure modes concentrate.
+
+### Per-category — n=100 each, Wilson 95%
+
+| category | qwen25-1.5b | qwen25-coder | granite33 |
+|---|---|---|---|
+| multi_turn_base | 0/100 (1.8% ±1.8) | 0/100 (1.8% ±1.8) | **1/100** (2.8% ±2.6) |
+| multi_turn_long_context | 0/100 | 0/100 | **1/100** (2.8% ±2.6) |
+| multi_turn_miss_func | 0/100 | **1/100** (2.8% ±2.6) | 0/100 |
+| multi_turn_miss_param | 0/100 | 1/100 | **2/100** (3.8% ±3.2) |
+
+All cells overlap within CI. There is no statistically significant
+separation between the three models on multi-turn at this sample size.
+
+### Context utilization on multi_turn_long_context (n_ctx=8192)
+
+`prompt_tokens_at_turn_end` in the persisted trace is **cumulative
+across all chat calls in the conversation**, not per-call peak. (A
+follow-up runner change to record per-step prompt sizes would give
+direct per-call truncation visibility; today we infer from cumulative
+deltas + the explicit backend 400 logs.)
+
+| model | cumulative tokens at final turn — p50 / p95 / max | backend 400s (context overruns) |
+|---|---|---|
+| qwen25-1.5b-instruct | 25,305 / 58,841 / 66,418 | 11 / 100 |
+| granite33-2b-instruct | 22,845 / 64,254 / 117,520 | 30 / 100 |
+| qwen25-coder-1.5b-instruct | **62,868 / 134,811 / 186,876** | **49 / 100** |
+
+qwen25-coder is dramatically more verbose in multi-turn — its cumulative
+prompt budget at p95 is 2×–3× what the other two models consume on the
+same conversations. That verbosity is what generates 49 backend-rejected
+calls on the long_context category — half of coder's long_context
+problems hit 400 errors at least once during their conversations. Those
+problems land in the `infrastructure` bucket of the failure breakdown,
+not in the model-capability budget.
+
+**Practical implication**: if you want multi-turn agent-loop deployment
+on this hardware (n_ctx=8192), qwen25-coder is the worst pick of the
+three. Its per-turn verbosity blows past the context window the fastest
+even when the underlying behavior is on the right track.
+
 ## Stochastic notes (vs the prior edition's published numbers)
 
 - All non-deterministic runs (BFCL with `seed: 42` but model sampling
