@@ -2,69 +2,176 @@
 
 This file is loaded into Claude Code's context automatically when the working directory is this repo. Keep it concise and current.
 
+## First read for a new session
+
+If you're new to the project, read `BENCHMARKS.md` first. It defines
+the five benchmark signals + their orthogonal evaluation dimensions so
+you don't conflate `rep_1` (BFCL raw) with `rep_4` (BFCL agent) with
+`rep_5` (BFCL multi-turn) — they probe different layers.
+
 ## Project shape
 
-This is a llama.cpp-based bake-off harness for small (≤2B) GGUF models on an 8 GB Mac. Round 1 narrowed an 8-model roster to 3 finalists (qwen25-1.5b-instruct, qwen25-coder-1.5b-instruct, granite33-2b-instruct). Round 2 is the multi-spectrum capability test — the data is in `acceptance/`, reports in `graded_report.md` and `graded_failure_modes.md`.
+llama.cpp-based bake-off harness for small (≤2B) GGUF models. Round 1
+narrowed an 8-model roster to 3 finalists (qwen25-1.5b-instruct,
+qwen25-coder-1.5b-instruct, granite33-2b-instruct). **Round 2 is
+complete**: BFCL raw + agent + multi-turn, HumanEval × 3 temperatures,
+MBPP sanitized. The data describes a non-dominated triangle — see
+`graded_report.md` for the leaderboard, `graded_failure_modes.md` for
+the per-model failure shape.
 
-**The user picks the champion from the data.** Do not recommend a winner unprompted.
+**Round 3 is scoped** in `round_3_design.md` (branches A+B+C —
+prompt-engineering experiments on each finalist's weakest axis).
+Awaiting execution; requires a small prereq (`--bfcl-system-prompt`
+CLI flag + variant registry, ~30 LOC) before launch.
+
+**The user picks the champion from the data.** Do not recommend a
+winner unprompted.
+
+## Hardware envelope (changed during round 2)
+
+The project was originally designed for 8 GB Macs (see `profile_8gb.yaml`).
+Round 2 BFCL `rep_1` / HumanEval `rep_0` data was generated on that
+hardware. Round-2 reruns + Phase A–E work was done on a 128 GB M5 Max
+(see `profile_m5max.yaml`). Practical implications:
+
+- The "2B models swap-thrash on this box" warning is **only true with
+  `profile_8gb.yaml`** — not with `profile_m5max.yaml`. Pick the right
+  profile via `--profile configs/profile_<name>.yaml`.
+- Wall times across these two hardware environments are **not
+  comparable**. Pass rates are comparable (modulo small stochastic
+  variance from non-bit-identical Metal kernels).
+- Multi-turn `long_context` regularly busts `n_ctx=8192` (49/100
+  problems for qwen25-coder hit HTTP 400). Not a model bug; an
+  infrastructure ceiling. Document if the report cell is affected.
 
 ## Operating principles
 
-1. **Confirm scope before launching long runs.** The bake-off has cost real time before due to scope mistakes — always restate the intended set of (models × benchmarks × reps × temperatures) and the expected wall time before kicking off anything multi-hour. See `lessons.md` for the precedent.
-2. **Round-2 finalists are the only models worth re-running.** The 5 round-1 cut models (smollm2, llama32, deepseek-coder, deepseek-r1-distill, phi-1.5) are appendix-only. Do not re-run them for new comparisons unless the user explicitly asks.
-3. **Use `time.monotonic()`-derived wall times, not wall-clock.** macOS sleep pauses monotonic. The runner's reported wall (`summary.json:wall_s`) is compute time. The wall clock can be 4–10× longer due to sleep gaps. Don't interpret wall-clock as runtime degradation.
-4. **2B models swap on this machine.** Granite33-2b-instruct degrades per-problem wall by ~2.5× vs the 1.5B siblings due to swap pressure (~6 GB swap used at steady state). Budget accordingly.
-5. **The HumanEval results.jsonl now persists `raw_text`** (since 2026-05-13). Earlier runs do not. If you need to re-execute, check that field exists; if not, you can only trust the recorded `passed` value.
+1. **Confirm scope before launching long runs.** The bake-off has
+   cost real time before. Always restate the intended set of (models
+   × benchmarks × reps × temperatures × prompt variants) and the
+   expected wall time before kicking off anything multi-hour. See
+   `lessons.md` for the precedent.
+2. **Round-2 finalists are the only models worth re-running.** The 5
+   round-1 cut models (smollm2, llama32, deepseek-coder,
+   deepseek-r1-distill, phi-1.5) are appendix-only.
+3. **Use `time.monotonic()`-derived wall times, not wall-clock.**
+   macOS sleep pauses monotonic; the runner's reported wall is
+   compute time.
+4. **`raw_text` is persisted on all reps from 2026-05-13 forward.**
+   Earlier `rep_0` HumanEval data was missing it. Currently `rep_0`
+   HumanEval was re-run on M5, so `raw_text` is present everywhere.
+5. **Provenance discipline.** When citing numbers across rounds, link
+   to the source rep + grading artifact. `round_3_planning.md`'s
+   matrix is the pattern.
+6. **`audit_one_multi_turn.py` for multi-turn regrading.** bfcl_eval's
+   `globals()` instance cache pollutes re-grade calls in the same
+   process. Use subprocess isolation for any multi-turn audit.
 
 ## Code conventions
 
 - `uv` for env management; `uv run python ...` to invoke scripts.
-- Python 3.11 (pinned in `.python-version` and `pyproject.toml`).
-- Use `Path.expanduser()` on any user-facing path that might contain `~`. The runner and DEFAULT_BIN do this; new code should too.
-- Per-problem JSON file naming: `<problem_id>.json` (BFCL IDs use dashes; live IDs like `live_simple_0-0-0` are fine on Mac).
-- summary.json gets *overwritten* each time a step runs (it reflects only the categories run in that invocation). For per-category aggregates across multiple invocations, walk per-problem files directly — `scripts/grade_bakeoff.py` does this.
+- Python 3.11 (pinned via `.python-version`).
+- Use `Path.expanduser()` on user-facing paths containing `~`.
+- Per-problem JSON file naming: `<problem_id>.json`. BFCL IDs use
+  dashes; live IDs like `live_simple_0-0-0` are fine on Mac.
+- `summary.json` gets **overwritten** each time a step runs. For
+  per-category aggregates across multiple invocations, walk per-
+  problem files directly — `scripts/grade_bakeoff.py` does this.
+- `metadata.json` (since Phase A½) lands next to each `summary.json`
+  with GGUF SHA, llama.cpp commit, host info, and run mode.
+- New benchmarks register a `BenchmarkSpec` in
+  `src/llamabench/runner.py:_BENCH_RUNNERS` with their own
+  `force_clean_filenames` set.
 
 ## Common task patterns
 
 ### "Run the bake-off"
 
-Use `scripts/run_bakeoff.py`. Always pass `--rep N` explicitly. For temperature sweeps, use `--temperature` (CLI override, doesn't modify per-model YAMLs). For category subsets, use `--bfcl-categories`. Use `--force` to overwrite an existing rep's summary.
+`scripts/run_bakeoff.py` — key flags:
+- `--rep N` (always pass explicitly)
+- `--auto-port` (mandatory for parallel multi-model runs)
+- `--port N` (explicit override)
+- `--force` (overwrite — also deletes per-bench resume files via the
+  registered `BenchmarkSpec.force_clean_filenames`)
+- `--profile configs/profile_m5max.yaml` (or `profile_8gb.yaml`)
+- `--bfcl-mode {auto,structured,inject}` (raw-mode tool delivery)
+- `--bfcl-run-mode {raw,agent}` (raw vs closed-loop agent dispatch)
+- `--bfcl-categories <...>` (subset; `multi_turn_*` cats use the
+  multi-turn driver automatically via `is_multi_turn(cat)`)
+- `--bfcl-limit N` / `--humaneval-limit N` / `--mbpp-limit N`
+- `--temperature F` (CLI override; doesn't modify per-model YAMLs)
 
-Resume semantics: by default, steps with an existing `summary.json` are skipped. HumanEval per-problem resume reads existing `results.jsonl` and only re-runs missing task_ids.
+Resume: steps with existing `summary.json` are skipped by default.
+`--force` clears the per-bench resume files (currently `summary.json`
++ for HumanEval/MBPP `results.jsonl`) before re-running.
+
+For multi-model parallel runs, **stagger launches ~60s apart** to
+avoid synchronized tokenizer/model-load contention. Each pipeline gets
+its own port via `--auto-port`.
 
 ### "Grade the data" / "Regenerate reports"
 
 ```bash
-uv run python scripts/grade_bakeoff.py --rep N             # markdown leaderboard
+uv run python scripts/grade_bakeoff.py --rep N             # markdown leaderboard (includes mt_* cats)
 uv run python scripts/grade_bakeoff.py --rep N --json      # machine-readable
 uv run python scripts/grade_bakeoff.py --rep N --write-back  # stamp passed/reason into per-problem JSON
 uv run python scripts/failure_modes.py --rep N             # per-model failure buckets
 ```
 
-`graded_report.md` and `graded_failure_modes.md` are hand-written narrative; regenerate from the script outputs above.
+For multi-turn (`rep_5` shape) the grader calls bfcl_eval's
+`multi_turn_checker` — see `benchmarks/bfcl/grade.py:grade_multi_turn`.
 
-### "Verify the numbers"
+`graded_report.md` and `graded_failure_modes.md` are hand-written
+narrative; regenerate from the script outputs above.
 
-Audit pattern from session log: re-grade per-problem files from scratch (don't trust stamped `passed`), compare to summary.json, sample-execute HumanEval rows, compute Wilson CIs independently. Be alert to confusing "fail rate" with "specific-failure-mode rate" — they're different denominators.
+### "Verify the numbers" (audit pattern)
+
+Mirror the Phase A–D audit shape:
+1. Walk per-problem files independently and re-count `passed` totals;
+   compare to the grader's printed table.
+2. Sample 5 rows per (model, cat); re-grade independently.
+3. For multi-turn, use `scripts/audit_one_multi_turn.py` invoked in
+   fresh subprocesses (not just unique model_name — bfcl_eval has
+   `globals()` cache + other module-level state that subprocess
+   isolation cleanly defeats).
+4. Re-compute Wilson 95% CIs from raw pass counts.
+5. **Mismatch = halt, not auto-restamp.** Mismatches mean either
+   grader non-determinism or audit isolation gaps; both require
+   diagnosis before the report ships.
 
 ### "Background runs"
 
-Use `Bash` with `run_in_background: true` for runs that take >5 min. Always:
-- Tee output to `acceptance/bench-*.log`
-- Arm a `Monitor` filtering for step-completion markers (`\[OK  \]`, `bake-off complete`, `=== ALL DONE`, error patterns)
-- Pre-warn the user of the time estimate before kicking off
-- Don't poll — the monitor notifies on each event; just wait
+For runs >5 min, use `Bash` with `run_in_background: true`. Always:
+- Tee output to `acceptance/_logs/<run-name>.log`
+- Arm a `Monitor` filtering for `\[OK  \]` / `bake-off complete` /
+  `=== ALL-DONE` + error patterns (`Traceback|FAILED|Error:|Killed|
+  OOM|crashed|exited with code`)
+- Pre-warn the user of the wall estimate before kicking off
+- Stagger parallel launches by 60s — see "Run the bake-off"
 
 ## Things that have bitten us
 
 See `lessons.md` for the canonical list. Highlights:
 
-- **Scope mistakes**: don't extrapolate "X needs doing" without confirming with the user. The 4-models-overnight re-run from 2026-05-11 was wasted because round-2 framing wasn't captured.
-- **Stale data**: the on-disk reports were stale (10/cat) when the new data was already 30/cat. Always check report file mtime vs raw data mtime.
-- **summary.json is overwritten**: don't rely on it for aggregate wall/token totals across multi-step runs. Walk per-problem files.
-- **2000-char raw_text truncation**: HumanEval `raw_text` was truncated to 2000 chars and not persisted. Both fixed 2026-05-13.
-- **System sleep distorts wall**: described above. Document the discrepancy in any report that uses wall numbers.
+- **Scope mistakes**: don't extrapolate "X needs doing" without
+  confirming with the user.
+- **`summary.json` is overwritten**: walk per-problem files for
+  aggregates.
+- **`--force` used to not honor HumanEval/MBPP per-problem resume**
+  → silent stale results. Fixed Phase A; `_clear_stale_for_force`
+  helper + per-`BenchmarkSpec.force_clean_filenames` registry.
+- **bfcl_eval's `globals()` instance cache** can replay multi-turn
+  conversations against dirty state if you re-grade in the same
+  process. Use `scripts/audit_one_multi_turn.py` subprocess.
+- **Multi-turn `long_context` busts `n_ctx=8192`** for verbose models
+  (qwen25-coder: 49/100 HTTP 400s). Per-step prompt-token capture is
+  the cleanest fix; current trace is cumulative-across-steps.
+- **System sleep distorts wall**: `time.monotonic()` pauses; report
+  compute time, not wall-clock.
 
 ## Memory
 
-User-level memory lives in `~/.claude/projects/-Users-mtimpe-Documents-llama-bench/memory/`. Project context, round-2 framing, feedback patterns are all there. Read those at session start.
+User-level memory for THIS project lives in
+`~/.claude/projects/-Users-mtimpe-Downloads-neo-llm-bench/memory/`.
+(Older project location was `Documents/llama-bench`; not used for this
+repo.) Read those at session start.

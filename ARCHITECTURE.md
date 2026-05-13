@@ -6,37 +6,57 @@
 neo-llm-bench/
 ├── src/llamabench/                  # core package
 │   ├── backend.py                   # OpenAI-compatible HTTP client → llama-server
-│   ├── server.py                    # LlamaServer subprocess lifecycle
+│   ├── server.py                    # LlamaServer subprocess lifecycle (n_parallel-aware)
 │   ├── runner.py                    # bench orchestrator: start server, run benches, stop
+│   ├── metadata.py                  # metadata.json builder (GGUF SHA, llama.cpp commit, host)
 │   ├── config.py                    # Pydantic ModelConfig + BenchProfile loaders
 │   ├── agents/                      # 5-shape text-channel tool-call parser (lifted from deluxe)
 │   └── tools/                       # filesystem/git/shell tool implementations
 ├── benchmarks/
-│   ├── bfcl/                        # BFCL v4 adapter + grader (curated + live categories)
-│   └── humaneval/                   # HumanEval pass@1 — fenced extraction + subprocess sandbox
+│   ├── bfcl/
+│   │   ├── adapter.py               # raw + agent mode (single-turn)
+│   │   ├── multi_turn.py            # multi-turn driver — wraps bfcl_eval mock APIs
+│   │   ├── grade.py                 # call-shape graders + grade_multi_turn (via bfcl_eval)
+│   │   └── schemas.py               # ToolDef ↔ BFCL func-spec; make_stub_executor
+│   ├── humaneval/                   # HumanEval pass@1 — fenced extraction + subprocess sandbox
+│   └── mbpp/                        # MBPP sanitized — adapter + vendored MBPP.jsonl (n=427)
 ├── scripts/
 │   ├── run_bakeoff.py               # CLI: orchestrate models × benches
-│   ├── grade_bakeoff.py             # post-hoc BFCL leaderboard from per-problem JSONs
+│   ├── grade_bakeoff.py             # post-hoc BFCL leaderboard (handles multi-turn dispatch)
 │   ├── failure_modes.py             # per-model failure-bucket breakdown
-│   ├── bench.sh / graded_bench.sh   # convenience wrappers
-│   └── sample_resources.sh          # background CPU/mem sampler (CSV output)
+│   ├── audit_one_multi_turn.py      # subprocess-isolated multi-turn regrade
+│   └── stub_ablation.py             # one-off Phase C0 stub-realism experiment
 ├── configs/
-│   ├── profile_8gb.yaml             # bench profile (memory budget, server binary path)
+│   ├── profile_8gb.yaml             # original 8 GB-Mac profile
+│   ├── profile_m5max.yaml           # 128 GB M5 Max profile (parallel_models=3)
 │   └── models/*.yaml                # per-model config (GGUF path, sampling, tool template)
-├── tests/                           # pytest; 46 tests cover BFCL grader + adapter + others
-└── acceptance/                      # benchmark outputs (excluded from VCS except finalist data)
+├── tests/                           # pytest; ~689 tests across the suite
+└── acceptance/                      # benchmark outputs (mostly committed for finalist data)
     ├── bfcl/<model>/rep_N/<category>/<problem_id>.json
-    └── humaneval/<model>/rep_N/results.jsonl + summary.json
+    ├── humaneval/<model>/rep_N/results.jsonl + summary.json + metadata.json
+    ├── mbpp/<model>/rep_0/results.jsonl + summary.json + metadata.json
+    └── _logs/                       # run logs (gitignored)
 ```
+
+### Rep conventions
+
+- `rep_0` = deterministic baseline (HumanEval t=0.0, MBPP t=0.0)
+- `rep_1` = round-2 deep BFCL (curated 150/cat + live 100/cat, raw mode)
+- `rep_2`, `rep_3` = HumanEval temperature sweep (t=0.3, t=0.7)
+- `rep_4` = BFCL agent mode (same problems as rep_1, closed-loop dispatch)
+- `rep_5` = BFCL multi-turn (the 4 `multi_turn_*` categories)
+- `rep_6`+ reserved for round 3 (prompt-engineering experiments)
 
 ## Runtime flow
 
-1. **`scripts/run_bakeoff.py`** parses CLI args, loads `configs/profile_8gb.yaml` and `configs/models/<model>.yaml` for each requested model.
+1. **`scripts/run_bakeoff.py`** parses CLI args, loads the profile (`--profile` flag; defaults to `profile_8gb.yaml`) and per-model YAMLs. Picks a port (`--auto-port` for parallel runs, `--port` for explicit override).
 2. For each `(model, bench)` step:
-   - **`src/llamabench/runner.py:run()`** spawns a `llama-server` subprocess via `LlamaServer.start()` with model-specific flags (n_ctx, gpu_layers, KV cache types, jinja).
-   - The bench's runner function (`_run_bfcl` or `_run_humaneval`) iterates problems, calls `backend.chat()`, persists per-problem JSON.
+   - **`src/llamabench/runner.py:run()`** spawns a `llama-server` subprocess via `LlamaServer.start()` with model-specific flags (n_ctx, gpu_layers, KV cache types, jinja) and the profile's `max_parallel_requests`.
+   - Before the bench runs, `metadata.json` is written next to the eventual `summary.json` capturing GGUF SHA, llama.cpp commit, host info, and `mode` (bench-specific: `bfcl_mode`, `bfcl_run_mode`).
+   - The benchmark's runner function (looked up in `_BENCH_RUNNERS: dict[str, BenchmarkSpec]`) iterates problems, calls `backend.chat()`, persists per-problem JSON.
    - `LlamaServer.stop()` reaps the subprocess. Next model starts a fresh server (llama.cpp has no hot model swap).
-3. Resume semantics: each `(model, bench, rep)` checks for an existing `summary.json` at `acceptance/<bench>/<model>/rep_N/`. If present and `--force` not set, the step is skipped. HumanEval also resumes per-problem from `results.jsonl`.
+3. Resume semantics: each `(model, bench, rep)` checks for an existing `summary.json`. If present and `--force` not set, the step is skipped. `--force` calls `_clear_stale_for_force(out_dir, spec.force_clean_filenames)` to delete each registered bench's per-problem resume artifacts before re-running.
+4. **`BenchmarkSpec`** (in `runner.py`) is the registration unit: `{name, runner_fn, supports_per_problem_resume, force_clean_filenames}`. New benchmarks extend `_BENCH_RUNNERS` without touching cleanup branches.
 
 ## BFCL adapter
 
@@ -117,8 +137,47 @@ Historical snapshots are preserved (gitignored) for diffing:
 - `rep_0_pre_v2_*` — pre-system-prompt run, 30/cat
 - `rep_0_v2_partial_*` — partial v2 run that was interrupted
 
+## BFCL multi-turn adapter
+
+`benchmarks/bfcl/multi_turn.py` drives multi-turn conversations and hands the per-turn-per-step call lists to bfcl_eval's `multi_turn_checker` for end-state grading.
+
+- **Tool specs**: loaded from `bfcl_eval/data/multi_turn_func_doc/<file>.json` for each `involved_classes` entry. Excluded methods per problem (`excluded_function`) are filtered out at load time — the model literally doesn't see them.
+- **Conversation driver**: per turn, an inner step loop calls the model, parses tool calls, converts them to bfcl_eval-shaped call-strings via `repr()`, executes via `execute_multi_turn_func_call` against stateful mock APIs (GorillaFileSystem, MathAPI, TwitterAPI, etc.), appends tool-role messages with results, and repeats until the model stops calling tools or hits `max_steps_per_turn`.
+- **Mode selection**: structured-with-fallback to inject; mode locked after step 0 to keep message history coherent.
+- **Namespace isolation**: instance globals use `neollmbench_runtime_<problem_id>` prefix to avoid colliding with bfcl_eval's eval-time `_eval`-suffixed namespace.
+
+`grade_multi_turn` is a thin wrapper around bfcl_eval's checker. Crashes are caught and surfaced as `grader_crash:*` reason strings — see `graded_failure_modes.md` for the 3-way model/infrastructure/execution failure split.
+
+## MBPP adapter
+
+`benchmarks/mbpp/adapter.py` follows the HumanEval shape with two MBPP-specific guardrails:
+
+- **No `entry_point` field**: extracted from `test_list[0]` via `ast.parse`, skipping builtin wrappers (`set`, `len`, `list`, etc.).
+- **Aggressive completion normalization**: prefer fenced block containing the entry_point, anchor to first `def`/`import`/`from`/`class` line, drop trailing `if __name__ == "__main__":` guards. Both raw model output and normalized completion are persisted in `results.jsonl` for audit.
+- **Per-task subprocess isolation** (not just per-task try/except) — MBPP completions leak globals more aggressively than HumanEval.
+
+## Run metadata (`metadata.json`)
+
+`src/llamabench/metadata.py:build_run_metadata()` writes provenance per (model, bench, rep) step:
+
+```json
+{
+  "ts_started": "...",
+  "model_id": "...",
+  "benchmark": "bfcl",
+  "rep": 1,
+  "mode": {"bfcl_mode": "auto", "bfcl_run_mode": "raw"},
+  "model_config": {"gguf_path": "...", "gguf_sha256": "...", "quant": "Q8_0", ...},
+  "server": {"bin": "...", "llama_cpp_commit": "...", "n_ctx": 8192, "n_parallel": 1, ...},
+  "sampling": {"temperature": 0.0, ...},
+  "host": {"arch": "arm64", "cpu": "Apple M5 Max", "mem_gb": 128, "profile": "..."},
+  "tooling": {"python": "3.11.15", "neo_llm_bench_commit": "..."}
+}
+```
+
+GGUF SHA is cached by `(path, mtime, size)` at `~/.llamabench/gguf-sha-cache.json` so re-runs don't re-hash 2 GB. llama.cpp commit is best-effort (walks up from `server_bin` looking for `.git`).
+
 ## What's deferred
 
-- **BFCL multi-turn categories** (`multi_turn_base`, `multi_turn_miss_func`, etc.) — 800 problems in the BFCL v4 data, grader needs state tracking.
-- **Agent-mode BFCL** — raw mode is the comparable baseline; agent mode (full `run_agent()` loop with stub executor) is scaffolded but not wired into the bake-off.
-- **MBPP** — mentioned in the original plan, not yet implemented. HumanEval is the only coding bench currently.
+- **Per-step `prompt_tokens` capture** for direct per-call truncation visibility. Current `TurnTrace.prompt_tokens_at_turn_end` is cumulative across steps. Clean follow-up if Round-3 branch C or future multi-turn work needs sharper signals.
+- **n_ctx auto-bump** when `multi_turn_long_context` is selected. Currently uses the per-model YAML's `n_ctx=8192`, which busts for verbose models (qwen25-coder: 49/100 problems hit HTTP 400).
