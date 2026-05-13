@@ -20,6 +20,7 @@ import json
 import logging
 import os
 import signal
+import socket
 import subprocess
 import sys
 import time
@@ -66,6 +67,12 @@ def _ts() -> str:
     return time.strftime("%H:%M:%S")
 
 
+def _pick_free_port(host: str) -> int:
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.bind((host, 0))
+        return int(s.getsockname()[1])
+
+
 _INTERRUPTED = False
 
 
@@ -103,6 +110,14 @@ def main() -> int:
     p.add_argument("--profile", type=Path,
                    default=ROOT / "configs" / "profile_8gb.yaml")
     p.add_argument("--output", type=Path, default=ROOT / "acceptance")
+    p.add_argument("--port", type=int, default=None,
+                   help="Override the profile's server_port. Use this to "
+                        "run multiple bake-off invocations in parallel on "
+                        "the same host (one per model, different ports).")
+    p.add_argument("--auto-port", action="store_true",
+                   help="Pick a free ephemeral port at startup (overrides "
+                        "--port and the profile). Easiest knob for parallel "
+                        "runs: every invocation gets its own port.")
     p.add_argument("--force", action="store_true",
                    help="Re-run benches even if summary.json exists.")
     p.add_argument("--resource-log", type=Path, default=None,
@@ -128,6 +143,10 @@ def main() -> int:
             return 2
 
     profile = load_profile(args.profile)
+    if args.auto_port:
+        profile = profile.model_copy(update={"server_port": _pick_free_port(profile.server_host)})
+    elif args.port is not None:
+        profile = profile.model_copy(update={"server_port": args.port})
 
     # Plan: build the full list of (model, bench) steps, mark which are
     # already done, and use that to compute progress + ETA.
@@ -149,6 +168,7 @@ def main() -> int:
     print(f"  benches  : {args.benchmarks}", file=sys.stderr)
     print(f"  bfcl mode: {args.bfcl_mode}  rep: {args.rep}", file=sys.stderr)
     print(f"  output   : {args.output}", file=sys.stderr)
+    print(f"  server   : {profile.server_host}:{profile.server_port}", file=sys.stderr)
     print("", file=sys.stderr)
 
     overall_t0 = time.monotonic()
@@ -215,6 +235,16 @@ def main() -> int:
             print(f"{prefix} [{_ts()}] [skip] {mc.id}/{bench}  (cached, {tok} comp-tok)",
                   file=sys.stderr)
             continue
+
+        # --force must mean "start over" — without this, HumanEval's per-problem
+        # resume (always-on inside _run_humaneval) silently reuses an old
+        # results.jsonl and the step "completes" in <1s with stale numbers.
+        if args.force:
+            bench_dir = args.output / bench / mc.id / f"rep_{args.rep}"
+            for stale in ("summary.json", "results.jsonl"):
+                p = bench_dir / stale
+                if p.is_file():
+                    p.unlink()
 
         limit = args.bfcl_limit if bench == "bfcl" else args.humaneval_limit
         req = RunRequest(

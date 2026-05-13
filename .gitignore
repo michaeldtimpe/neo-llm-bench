@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 .pytest_cache/
 .venv/
-.python-version
 *.egg-info/
 .eggs/
 build/
@@ -24,6 +23,7 @@ dist/
 
 # Bench run logs (large; regenerated on each run)
 acceptance/bench-*.log
+acceptance/_logs/
 acceptance/_*.json
 acceptance/_*.md
 acceptance/resources-*.csv
