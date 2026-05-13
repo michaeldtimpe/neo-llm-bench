@@ -110,55 +110,54 @@ extraction miss for qwen25-1.5b (`n_extract_ok=163/164`). Across the
 1,476 attempts (164 × 3 temps × 3 models) total extraction-fail count
 is 1. Failures are correctness, not code-shaping.
 
-### Head-to-head at t=0.0 (the comparable baseline — preserved from rep_0)
+### Head-to-head at t=0.0 (the comparable baseline)
 
-This table is byte-for-byte the same as the prior edition; rep_0 was
-not re-run on the M5.
+Recomputed on fresh M5 rep_0 data. Shape essentially identical to the
+prior edition; bucket counts shift by 1–3 problems each due to
+stochastic re-draw (Metal kernel reductions aren't bit-identical even
+at fixed seed).
 
 | outcome | qwen25 / coder / granite | count |
 |---|---|---|
-| all pass | P P P | 68 (41%) |
+| all pass | P P P | 70 (43%) |
+| all fail | F F F | 35 (21%) |
 | only coder | F P F | 23 (14%) |
-| qwen25 + coder, not granite | P P F | 16 (10%) |
-| coder + granite, not qwen25 | F P P | 8 |
-| only granite | F F P | 5 |
-| qwen25 + granite, not coder | P F P | 4 |
+| qwen25 + coder, not granite | P P F | 15 (9%) |
+| qwen25 + granite, not coder | P F P | 7 |
+| coder + granite, not qwen25 | F P P | 6 |
+| only granite | F F P | 4 |
 | only qwen25 | P F F | 4 |
-| all fail | F F F | 36 (22%) |
 
 - **qwen25-coder uniquely solves 23 problems** the other two can't (14%
-  of the set). These are mostly algorithmic with edge-case handling.
+  of the set). Same count as the prior edition — these are mostly
+  algorithmic with edge-case handling.
 - **qwen25-coder uniquely misses 4** — simple list manipulation where
   it over-engineers. Real but small.
-- **36 problems all 3 fail** — these are the genuinely hard 22% of
+- **35 problems all 3 fail** — these are the genuinely hard 21% of
   HumanEval at this size class.
 
 ### Temperature stability
 
 | model | t=0.0 | t=0.3 | t=0.7 | pass-all-3 | pass-any | swing |
 |---|---|---|---|---|---|---|
-| qwen25-coder | 115 (70.1%) | 109 (66.5%) | 107 (65.2%) | 91 (55.5%) | 127 (77.4%) | 36 |
-| qwen25-1.5b | 92 (56.1%) | **93** (56.7%) | 80 (48.8%) | 68 (41.5%) | 106 (64.6%) | 38 |
-| granite33 | 85 (51.8%) | **88** (53.7%) | 85 (51.8%) | 68 (41.5%) | 104 (63.4%) | 36 |
+| qwen25-coder | **114** (69.5%) | 109 (66.5%) | 107 (65.2%) | 92 (56.1%) | 128 (78.0%) | 36 |
+| qwen25-1.5b | **96** (58.5%) | 93 (56.7%) | 80 (48.8%) | 70 (42.7%) | 105 (64.0%) | 35 |
+| granite33 | 87 (53.0%) | **88** (53.7%) | 85 (51.8%) | 68 (41.5%) | 106 (64.6%) | 38 |
 
 Shape:
-- **qwen25-coder degrades monotonically** (115 → 109 → 107). Still the
-  most temperature-stable in absolute terms (only 8 problems lost
-  going t=0.0 → t=0.7), though the prior edition's much steeper
-  t=0.3 → t=0.7 cliff (113 → 100) didn't reproduce here. Two
-  stochastic draws sampled different points on this model's
-  noise envelope.
-- **qwen25-1.5b and granite33** show inverted-V at t=0.3 (+0.6pp,
-  +1.9pp). Slightly under-confident at t=0.0; a little entropy
-  escapes some first-token traps.
-- **qwen25-1.5b** falls 8pp at t=0.7 (sampling noise overwhelms);
-  **granite33** holds within noise across all three temperatures
-  (51.8% → 53.7% → 51.8%). Granite is the most t=0.7-stable model
-  by a clear margin in this edition.
+- **qwen25-coder degrades monotonically** (114 → 109 → 107). Loses
+  only 7 problems going t=0.0 → t=0.7 — most temperature-stable model
+  in absolute terms (swing also tied lowest at 36).
+- **qwen25-1.5b** peaks at t=0.0 in this edition (no inverted-V).
+  Falls 16pp at t=0.7 — the most temperature-sensitive of the three.
+- **granite33** is effectively flat across all three temperatures
+  (53.0% → 53.7% → 51.8% is within noise). Most t=0.7-stable in
+  *relative* terms (only loses 1.2pp) even though its absolute pass
+  rate is lowest.
 
 The pass-any column is the model's effective ceiling with best-of-3
-sampling. qwen25-coder's pass-any (127/164 = 77.4%) is still solidly
-ahead of the others' pass@1 ceilings.
+sampling. qwen25-coder's pass-any (128/164 = 78.0%) is still solidly
+ahead of the others' pass@1 ceilings, by ~20pp.
 
 ## Cross-bench observations
 
@@ -209,12 +208,11 @@ ahead of the others' pass@1 ceilings.
 
 ## Runtime notes
 
-- **`rep_1` BFCL** and **`rep_2`/`rep_3` HumanEval** in this edition
-  were re-run on a 128 GB M5 Max using the parallel-3 `--auto-port`
-  runner path. Wall times are not directly comparable to the prior
-  edition's 8 GB-Mac runs.
-- **`rep_0` HumanEval (t=0.0)** is preserved from the original 8 GB
-  Mac run.
+- All `rep_*` data in this edition was re-run on a 128 GB M5 Max using
+  the parallel-3 `--auto-port` runner path (rep_0 was the final piece
+  refreshed — completed alongside the other reps in <6 min wall each).
+- Wall times are not directly comparable to the prior edition's 8 GB-Mac
+  runs.
 
 ## Reproducing
 

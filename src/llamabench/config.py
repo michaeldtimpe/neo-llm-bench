@@ -147,6 +147,10 @@ class BenchProfile(BaseModel):
     peak_model_gb: float = 2.0
     benchmarks: list[str] = Field(default_factory=lambda: ["bfcl"])
     parallel_models: int = 1
+    # Forwarded to llama-server --parallel. 1 = one decode in flight per
+    # server (default). >1 stress-tests concurrency; results become
+    # non-comparable across profiles when this differs.
+    max_parallel_requests: int = 1
     work_dir: str = "~/.llamabench/bench-workspace"
     keep_loaded: bool = False
     server_host: str = "127.0.0.1"

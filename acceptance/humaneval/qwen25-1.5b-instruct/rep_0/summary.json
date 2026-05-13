@@ -2,9 +2,9 @@
   "model": "qwen25-1.5b-instruct",
   "rep": 0,
   "n_problems": 164,
-  "n_passed": 92,
+  "n_passed": 96,
   "n_extract_ok": 164,
-  "wall_s": 957.0215447859919,
-  "completion_tokens": 22967,
-  "pass_at_1": 0.5609756097560976
+  "wall_s": 304.73356432665605,
+  "completion_tokens": 25394,
+  "pass_at_1": 0.5853658536585366
 }
