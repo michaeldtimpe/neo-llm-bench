@@ -1,44 +1,62 @@
 # neo-llm-bench
 
-A llama.cpp tool-use + coding bake-off harness for small models on a memory-constrained Mac (~8 GB unified RAM). Ports the evaluation methodology of [`michaeldtimpe/luxe`](https://github.com/michaeldtimpe/luxe) / [`michaeldtimpe/deluxe`](https://github.com/michaeldtimpe/deluxe) (MLX-only) to the llama.cpp ecosystem.
+A llama.cpp tool-use + coding bake-off harness for small models on Apple Silicon. Ports the evaluation methodology of [`michaeldtimpe/luxe`](https://github.com/michaeldtimpe/luxe) / [`michaeldtimpe/deluxe`](https://github.com/michaeldtimpe/deluxe) (MLX-only) to the llama.cpp ecosystem.
 
 ## What it measures
 
-- **BFCL v4** function-calling: 5 curated categories (simple_python, multiple, parallel, parallel_multiple, irrelevance) + 6 live (user-submitted) categories. Sample size adjustable per category.
-- **HumanEval** pass@1 across configurable temperatures (deterministic and nucleus sampling).
-- **Resource cost**: wall clock and completion tokens per model on the target hardware.
+Five orthogonal benchmark signals (see [`BENCHMARKS.md`](BENCHMARKS.md) for the evaluation-dimensions taxonomy):
 
-## Current results — round 2 (2026-05-13)
+- **BFCL raw** (single-turn tool-call accuracy): 5 curated + 6 live categories
+- **BFCL agent** (closed-loop orchestration): same problems, run-agent loop with stub feedback
+- **BFCL multi-turn** (stateful conversation): 4 categories, graded via `bfcl_eval`'s state checker
+- **HumanEval** pass@1 across t={0.0, 0.3, 0.7} + pass-any cross-product
+- **MBPP** sanitized split (n=427): short-form coding priors
 
-Finalists narrowed from 8 candidates after round 1. Multi-spectrum run at n=150/curated category, n≤100/live category, HumanEval × 3 temperatures.
+## Current results — round 2 complete (2026-05-13)
 
-| | BFCL (n=1106) | HumanEval pass@1 | HumanEval pass@3 (any temp) | live_irrelevance |
-|---|---|---|---|---|
-| **qwen25-1.5b-instruct** | **77% ±2.5pp** ⭐ | 56% | 66% | 81% |
-| **granite33-2b-instruct** | 69% ±2.7pp | 52% | 63% | **100%** ⭐ |
-| **qwen25-coder-1.5b-instruct** | 62% ±2.9pp | **70%** ⭐ | **75%** ⭐ | 82% |
+Finalists narrowed from 8 candidates after round 1. Round 2 is **a non-dominated triangle** — each finalist wins at least one axis:
 
-Non-dominated triangle: each finalist wins at least one axis. See [`graded_report.md`](graded_report.md) for the full leaderboard with CIs and [`graded_failure_modes.md`](graded_failure_modes.md) for the per-finalist failure breakdown.
+| | BFCL raw (n=1106) | HumanEval t=0.0 | HE pass-any | MBPP (n=427) | live_irrelevance |
+|---|---|---|---|---|---|
+| **qwen25-1.5b-instruct** | **77.0% ±2.5pp** ⭐ | 58.5% | 64.0% | 62.4% ±4.6pp | 77% |
+| **granite33-2b-instruct** | 69.4% ±2.7pp | 53.0% | 64.6% | 59.6% ±4.6pp | **97% ±3.7pp** ⭐ |
+| **qwen25-coder-1.5b-instruct** | 58.6% ±2.9pp | **69.5%** ⭐ | **78.0%** ⭐ | **64.0% ±4.5pp** | 74% |
+
+Multi-turn (rep_5) at this size class is floor-level for all three (0–1.5%) — see `graded_report.md` for the full breakdown including agent-mode lift, retry sensitivity, and infrastructure-failure analysis.
+
+## Round 3 — scoped, awaiting execution
+
+[`round_3_design.md`](round_3_design.md) defines three prompt-engineering experiments testing whether the prompt-mediated capability layer can move each finalist on its weakest axis. Combined wall ~30 min parallel. Prereq: ~30 LOC for a `--bfcl-system-prompt` CLI flag.
 
 ## Quick links
 
-- [`QUICKSTART.md`](QUICKSTART.md) — set up on a new machine and reproduce the round-2 leaderboard
+- [`BENCHMARKS.md`](BENCHMARKS.md) — taxonomy: what each signal measures (read first)
+- [`QUICKSTART.md`](QUICKSTART.md) — set up on a new machine + reproduce the leaderboard
 - [`ARCHITECTURE.md`](ARCHITECTURE.md) — repo layout, runner lifecycle, grader internals
 - [`CLAUDE.md`](CLAUDE.md) — guidance for AI agents working on this codebase
-- [`lessons.md`](lessons.md) — hard-won lessons (system sleep, swap thrashing, scope discipline, the v2 system prompt)
-- [`graded_report.md`](graded_report.md) — round-2 leaderboard
-- [`graded_failure_modes.md`](graded_failure_modes.md) — failure-mode breakdown
+- [`lessons.md`](lessons.md) — hard-won lessons (system sleep, scope discipline, the v2 system prompt)
+- [`graded_report.md`](graded_report.md) — round-2 leaderboard, all five benchmarks
+- [`graded_failure_modes.md`](graded_failure_modes.md) — failure-mode breakdown per (model, benchmark)
+- [`round_3_planning.md`](round_3_planning.md) — round-3 decision matrix (with provenance)
+- [`round_3_design.md`](round_3_design.md) — executable round-3 scope
 
 ## Status
 
-- ✅ BFCL v4: curated + live category support (adapter, grader, 34 unit tests)
+- ✅ BFCL v4 raw mode: curated + live categories, 34 grader unit tests
+- ✅ BFCL agent mode: closed-loop dispatch via `run_agent` + stub executors
+- ✅ BFCL multi-turn: state-based grading via bfcl_eval's `multi_turn_checker`
 - ✅ HumanEval pass@1: subprocess sandbox, fenced extraction, temperature CLI override
-- ✅ Multi-rep / multi-temp runs (per-rep dir under `acceptance/<bench>/<model>/rep_N/`)
-- ✅ Wilson CIs and head-to-head analysis in reports
-- ⏳ BFCL multi-turn categories (data present, grader deferred — needs state tracking)
-- ⏳ MBPP (mentioned in plan, not yet wired)
-- ⏳ Agent-mode BFCL (raw mode is the comparable baseline; agent mode planned)
+- ✅ MBPP sanitized: per-task subprocess isolation, aggressive completion normalization
+- ✅ Multi-rep / multi-temp runs, parallel multi-model runs (`--auto-port`)
+- ✅ Run metadata (`metadata.json`) per (model, bench, rep): GGUF SHA, llama.cpp commit, host info
+- ✅ Wilson CIs, head-to-head, retry sensitivity in reports
+- ⏳ Round 3 (prompt-engineering): scoped in `round_3_design.md`, awaiting execution
 
 ## Hardware envelope
 
-Designed for Apple Silicon Macs with **8 GB unified RAM**. Comfortably runs 0.5B–2B Q8_0 GGUFs. 2B models will swap-thrash under sustained load on this RAM tier; budget extra wall time. See `lessons.md` for the empirical degradation curve we observed.
+Two supported profiles via `--profile configs/profile_<name>.yaml`:
+
+- **`profile_8gb.yaml`** — original target. 8 GB Apple Silicon. 2B models swap-thrash under sustained load.
+- **`profile_m5max.yaml`** — current dev environment (128 GB M5 Max). Supports `parallel_models: 3` via `--auto-port`. Round-2 reruns + Phase A–E work was done here.
+
+`n_ctx=8192` is the current per-model default; multi-turn `long_context` problems can bust this for verbose models (see `graded_report.md` multi-turn section).
