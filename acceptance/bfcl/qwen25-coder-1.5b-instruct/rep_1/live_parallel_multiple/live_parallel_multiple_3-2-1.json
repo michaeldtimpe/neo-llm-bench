@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_3-2-1", "actual_calls": [["OpenWeatherMap.get_current_weather", {"location": "Seoul, South Korea", "units": "metric", "api_key": "YOUR_API_KEY_HERE"}]], "wall_s": 2.388750625003013, "prompt_tokens": 1402, "completion_tokens": 55, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

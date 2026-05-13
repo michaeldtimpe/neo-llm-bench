@@ -1,0 +1,1 @@
+{"id": "parallel_105", "actual_calls": [["calc_heat_capacity", {"temp": 300, "volume": 2.5, "gas": "air"}]], "wall_s": 2.4173414999968372, "prompt_tokens": 410, "completion_tokens": 48, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

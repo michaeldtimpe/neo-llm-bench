@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_113", "actual_calls": [["paint_color.trends", {"room": "Living room", "period": "Monthly"}]], "wall_s": 2.8139892499966663, "prompt_tokens": 629, "completion_tokens": 39, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

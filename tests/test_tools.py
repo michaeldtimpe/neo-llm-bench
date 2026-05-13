@@ -1,0 +1,442 @@
+"""Tests for tool implementations."""
+
+from pathlib import Path
+
+import pytest
+
+from llamabench.tools import fs
+from llamabench.tools.base import ToolCache, dispatch_tool, validate_args
+
+
+@pytest.fixture(autouse=True)
+def set_root(tmp_repo: Path):
+    fs.set_repo_root(tmp_repo)
+    yield
+    fs._REPO_ROOT = None
+
+
+class TestFsTools:
+    def test_read_file(self, tmp_repo: Path):
+        result, err = fs.READ_ONLY_FNS["read_file"]({"path": "src/main.py"})
+        assert err is None
+        assert "greet" in result
+        assert "1\t" in result  # line numbers
+
+    def test_read_file_not_found(self):
+        result, err = fs.READ_ONLY_FNS["read_file"]({"path": "nonexistent.py"})
+        assert err is not None
+        assert "not found" in err.lower()
+
+    def test_list_dir(self, tmp_repo: Path):
+        result, err = fs.READ_ONLY_FNS["list_dir"]({"path": "."})
+        assert err is None
+        assert "src/" in result
+        assert "README.md" in result
+
+    def test_glob(self, tmp_repo: Path):
+        result, err = fs.READ_ONLY_FNS["glob"]({"pattern": "**/*.py"})
+        assert err is None
+        assert "main.py" in result
+
+    def test_grep(self, tmp_repo: Path):
+        result, err = fs.READ_ONLY_FNS["grep"]({"pattern": "def greet"})
+        assert err is None
+        assert "greet" in result
+
+    def test_write_file(self, tmp_repo: Path):
+        result, err = fs.MUTATION_FNS["write_file"](
+            {"path": "new_file.py", "content": "print('hello')"}
+        )
+        assert err is None
+        assert (tmp_repo / "new_file.py").read_text() == "print('hello')"
+
+    def test_edit_file(self, tmp_repo: Path):
+        result, err = fs.MUTATION_FNS["edit_file"]({
+            "path": "src/main.py",
+            "old_string": "Hello",
+            "new_string": "Hi",
+        })
+        assert err is None
+        assert "Hi" in (tmp_repo / "src" / "main.py").read_text()
+
+    def test_path_escape(self, tmp_repo: Path):
+        with pytest.raises(PermissionError):
+            fs._safe("../../etc/passwd")
+
+    # --- Honesty guards (write-time defences against Phase 2 failure modes) ---
+
+    def test_write_rejects_placeholder_text(self, tmp_repo: Path):
+        result, err = fs.MUTATION_FNS["write_file"]({
+            "path": "stub.js",
+            "content": "<paste the modified content here>",
+        })
+        assert err is not None
+        assert "placeholder" in err.lower()
+        assert not (tmp_repo / "stub.js").exists()
+
+    def test_write_rejects_your_code_here(self, tmp_repo: Path):
+        result, err = fs.MUTATION_FNS["write_file"]({
+            "path": "handler.js",
+            "content": "function reset() {\n  // Your reset code here\n}",
+        })
+        assert err is not None
+        assert "placeholder" in err.lower()
+
+    def test_write_rejects_role_named_path(self, tmp_repo: Path):
+        result, err = fs.MUTATION_FNS["write_file"]({
+            "path": "src/worker_read.js",
+            "content": "console.log('ok');",
+        })
+        assert err is not None
+        assert "role" in err.lower() and "worker_read" in err
+
+    def test_write_rejects_role_named_in_subdir(self, tmp_repo: Path):
+        result, err = fs.MUTATION_FNS["write_file"]({
+            "path": "src/input/worker_analyze/reset.py",
+            "content": "def reset(): pass",
+        })
+        assert err is not None
+        assert "worker_analyze" in err
+
+    def test_write_rejects_mass_deletion(self, tmp_repo: Path):
+        # Create a 60-line file then try to overwrite with a 2-line stub.
+        (tmp_repo / "big.py").write_text("\n".join(f"line {i}" for i in range(60)))
+        result, err = fs.MUTATION_FNS["write_file"]({
+            "path": "big.py",
+            "content": "def reset(): pass\n",
+        })
+        assert err is not None
+        assert "mass-deletion" in err.lower() or "stub" in err.lower()
+        # Original file untouched.
+        assert (tmp_repo / "big.py").read_text().count("\n") >= 50
+
+    def test_write_allows_legit_short_file(self, tmp_repo: Path):
+        # A genuinely small new file should not trip the mass-deletion gate.
+        result, err = fs.MUTATION_FNS["write_file"]({
+            "path": "small_helper.py",
+            "content": "X = 1\n",
+        })
+        assert err is None
+
+    def test_write_allows_full_rewrite(self, tmp_repo: Path):
+        # A full rewrite (large → large) should pass.
+        (tmp_repo / "rewrite.py").write_text("\n".join(f"old{i}" for i in range(60)))
+        new = "\n".join(f"new{i}" for i in range(60))
+        result, err = fs.MUTATION_FNS["write_file"]({
+            "path": "rewrite.py",
+            "content": new,
+        })
+        assert err is None
+
+    def test_edit_rejects_placeholder_in_replacement(self, tmp_repo: Path):
+        result, err = fs.MUTATION_FNS["edit_file"]({
+            "path": "src/main.py",
+            "old_string": "Hello",
+            "new_string": "// TODO: implement greeting",
+        })
+        assert err is not None
+        assert "placeholder" in err.lower()
+
+    def test_edit_rejects_role_named_path(self, tmp_repo: Path):
+        result, err = fs.MUTATION_FNS["edit_file"]({
+            "path": "drafter.py",
+            "old_string": "x", "new_string": "y",
+        })
+        assert err is not None
+        assert "drafter" in err
+
+    def test_edit_rejects_mass_deletion(self, tmp_repo: Path):
+        big = "\n".join(f"line {i}" for i in range(60))
+        (tmp_repo / "shrink.py").write_text(big)
+        result, err = fs.MUTATION_FNS["edit_file"]({
+            "path": "shrink.py",
+            "old_string": big,
+            "new_string": "x = 1\n",
+        })
+        assert err is not None
+        assert "mass-deletion" in err.lower() or "stub" in err.lower()
+
+    # --- Evasion regressions: actual fail patterns from the Phase 2 re-test ---
+
+    def test_write_rejects_role_name_with_suffix(self, tmp_repo: Path):
+        # Model wrote `worker_read_r.py` to evade exact-stem matching.
+        result, err = fs.MUTATION_FNS["write_file"]({
+            "path": "src/worker_read_r.py",
+            "content": "x = 1\n",
+        })
+        assert err is not None
+        assert "worker_read" in err
+
+    def test_write_rejects_role_name_with_prefix(self, tmp_repo: Path):
+        result, err = fs.MUTATION_FNS["write_file"]({
+            "path": "src/my_drafter.py",
+            "content": "x = 1\n",
+        })
+        assert err is not None
+        assert "drafter" in err
+
+    def test_write_allows_encoder_decoder(self, tmp_repo: Path):
+        # "coder" intentionally excluded from single-token check so legit
+        # names like encoder.py / decoder.py / transcoder.py pass.
+        for name in ("encoder.py", "decoder.py", "transcoder.py"):
+            result, err = fs.MUTATION_FNS["write_file"]({
+                "path": f"src/{name}", "content": "x = 1\n",
+            })
+            assert err is None, f"{name}: unexpectedly rejected: {err}"
+
+    def test_write_rejects_multi_word_placeholder(self, tmp_repo: Path):
+        # Model wrote `# Your real listener code here` to evade single-word.
+        result, err = fs.MUTATION_FNS["write_file"]({
+            "path": "handler.js",
+            "content": "function reset() {\n  // Your real listener code here\n}",
+        })
+        assert err is not None
+        assert "placeholder" in err.lower()
+
+    def test_write_rejects_attach_listener_here(self, tmp_repo: Path):
+        result, err = fs.MUTATION_FNS["write_file"]({
+            "path": "h.js",
+            "content": "// Attach the keydown listener here\n",
+        })
+        assert err is not None
+        assert "placeholder" in err.lower()
+
+    def test_write_rejects_real_logic_belongs_here(self, tmp_repo: Path):
+        result, err = fs.MUTATION_FNS["write_file"]({
+            "path": "h.py",
+            "content": "# Real handler logic belongs here\n",
+        })
+        assert err is not None
+        assert "placeholder" in err.lower()
+
+    def test_write_allows_legitimate_todo_comment(self, tmp_repo: Path):
+        # Real-world TODO comments shouldn't trip the gate. The gate fires
+        # only on TODO followed by a trigger verb, not bare TODOs.
+        result, err = fs.MUTATION_FNS["write_file"]({
+            "path": "feature.py",
+            "content": "# TODO: deprecation tracker\nx = 1\n",
+        })
+        assert err is None
+
+
+class TestToolCache:
+    def test_cache_hit(self):
+        cache = ToolCache()
+        fn = lambda args: ("result", None)
+        r1, e1, cached1 = cache.get_or_run("test", {"a": 1}, fn)
+        r2, e2, cached2 = cache.get_or_run("test", {"a": 1}, fn)
+        assert not cached1
+        assert cached2
+        assert cache.hits == 1
+        assert cache.misses == 1
+
+    def test_cache_miss_different_args(self):
+        cache = ToolCache()
+        fn = lambda args: (str(args), None)
+        cache.get_or_run("test", {"a": 1}, fn)
+        _, _, cached = cache.get_or_run("test", {"a": 2}, fn)
+        assert not cached
+
+
+class TestDispatchToolErrorCapture:
+    """Regression: tools that raise must NOT escape dispatch_tool.
+
+    Before the fix, an unhandled PermissionError from fs._safe (raised
+    when the model passes an absolute path to read_file) escaped
+    run_agent and killed llamabench with wall=0s/tokens=0 — see the
+    neon-rain-document-modules failure in acceptance/v1_default.
+    Tools should now return the error string in ToolCall.error so the
+    model can self-correct on the next turn.
+    """
+
+    def test_tool_raising_permissionerror_returns_error_not_exception(self):
+        def raising_fn(args):
+            raise PermissionError("Path escapes repo root: /src/foo.js")
+        tc = dispatch_tool("read_file", {"path": "/src/foo.js"},
+                           {"read_file": raising_fn})
+        assert tc.error
+        assert "PermissionError" in tc.error
+        assert "Path escapes repo root" in tc.error
+        assert tc.result == ""
+
+    def test_tool_raising_filenotfound_returns_error_not_exception(self):
+        def raising_fn(args):
+            raise FileNotFoundError("missing config")
+        tc = dispatch_tool("read_file", {"path": "missing.yaml"},
+                           {"read_file": raising_fn})
+        assert tc.error
+        assert "FileNotFoundError" in tc.error
+        assert tc.result == ""
+
+    def test_normal_tool_return_path_unaffected(self):
+        """Tools that return (result, err) must keep working unchanged."""
+        def normal_fn(args):
+            return "hello", None
+        tc = dispatch_tool("read_file", {"path": "x"},
+                           {"read_file": normal_fn})
+        assert tc.error is None
+        assert tc.result == "hello"
+
+    def test_cached_tool_exception_not_poisoned_into_cache(self):
+        """An exception during the first call must not be cached as a
+        successful result — the cache stays empty so retries can succeed."""
+        call_count = {"n": 0}
+        def flaky_fn(args):
+            call_count["n"] += 1
+            if call_count["n"] == 1:
+                raise ValueError("transient")
+            return "ok", None
+        cache = ToolCache()
+        tc1 = dispatch_tool("read_file", {"path": "x"},
+                            {"read_file": flaky_fn},
+                            cache=cache, cacheable={"read_file"})
+        assert tc1.error and "ValueError" in tc1.error
+        # Retry should re-invoke fn (cache miss), now succeed.
+        tc2 = dispatch_tool("read_file", {"path": "x"},
+                            {"read_file": flaky_fn},
+                            cache=cache, cacheable={"read_file"})
+        assert tc2.error is None
+        assert tc2.result == "ok"
+        assert call_count["n"] == 2  # both calls hit fn, exception not cached
+
+
+class TestValidation:
+    def test_valid_args(self):
+        defn = fs.read_only_defs()[0]  # read_file
+        err = validate_args(defn, {"path": "test.py"})
+        assert err is None
+
+    def test_missing_required(self):
+        defn = fs.read_only_defs()[0]
+        err = validate_args(defn, {})
+        assert err is not None
+        assert "required" in err.lower()
+
+
+# --- read_file binary-rejection (2026-05-02 tool subphase) --
+
+class TestReadFileBinaryRejection:
+    """Reading a binary file with errors='replace' returns multi-MB of
+    garbage that pollutes the model's context. The tool detects binary
+    content (null bytes in first 8 KB) and returns a clean error."""
+
+    def test_rejects_file_with_null_bytes(self, tmp_repo: Path):
+        (tmp_repo / "blob.bin").write_bytes(b"PNG\x00\x01\x02header" + b"\xff" * 1000)
+        result, err = fs.READ_ONLY_FNS["read_file"]({"path": "blob.bin"})
+        assert result == ""
+        assert err is not None
+        assert "binary" in err.lower()
+
+    def test_accepts_utf8_source(self, tmp_repo: Path):
+        """UTF-8 source — no null bytes — must still read fine. Defends
+        against false positives that would block legitimate code files
+        (e.g. Python with unicode identifiers or accented strings)."""
+        (tmp_repo / "src" / "unicode.py").write_text(
+            "# encoding: utf-8\n"
+            "def greet(): return 'héllo wörld'\n"
+            "α = 'greek'\n",
+            encoding="utf-8",
+        )
+        result, err = fs.READ_ONLY_FNS["read_file"]({"path": "src/unicode.py"})
+        assert err is None
+        assert "héllo" in result
+        assert "α" in result
+
+    def test_accepts_empty_file(self, tmp_repo: Path):
+        """Empty file: no null bytes, no content, reads cleanly as ''."""
+        (tmp_repo / "empty.txt").write_text("")
+        result, err = fs.READ_ONLY_FNS["read_file"]({"path": "empty.txt"})
+        assert err is None
+        assert result == ""
+
+
+# --- bash chain-rejection (2026-05-02 tool subphase) --
+
+from llamabench.tools import shell  # noqa: E402
+
+
+class TestBashChainRejection:
+    """Pre-2026-05-02 the bash tool checked parts[0] against the allowlist
+    then ran the command via shell=True — so `cat foo && rm -rf /` passed
+    the check (parts[0] == 'cat') and then `rm` executed despite not being
+    in the allowlist. The hardened tool tokenizes via shlex and rejects
+    chain operators, redirects, and command substitution."""
+
+    def test_rejects_double_amp_chain(self, tmp_repo: Path):
+        result, err = shell._bash({"command": "cat foo && rm -rf /"})
+        assert result == ""
+        assert err is not None
+        assert "&&" in err  # message names the offending operator
+
+    def test_rejects_double_pipe_chain(self, tmp_repo: Path):
+        result, err = shell._bash({"command": "ls /missing || echo x"})
+        assert result == ""
+        assert err is not None
+        assert "||" in err
+
+    def test_rejects_semicolon_chain(self, tmp_repo: Path):
+        result, err = shell._bash({"command": "ls ; rm -rf /"})
+        assert result == ""
+        assert err is not None
+        assert ";" in err
+
+    def test_rejects_pipe(self, tmp_repo: Path):
+        """Pipes let the second binary bypass the allowlist. Model should
+        issue a single bash call with grep+regex, or use the dedicated
+        grep tool."""
+        result, err = shell._bash({"command": "cat foo | wc"})
+        assert result == ""
+        assert err is not None
+
+    def test_rejects_output_redirect(self, tmp_repo: Path):
+        """Redirects let an allowlisted binary write outside the repo
+        (`cat foo > /etc/passwd`). Reject; use write_file instead."""
+        result, err = shell._bash({"command": "cat foo > /tmp/leak"})
+        assert result == ""
+        assert err is not None
+        assert ">" in err
+
+    def test_rejects_backtick_command_substitution(self, tmp_repo: Path):
+        """Backticks run an inner command whose binary isn't allowlisted."""
+        result, err = shell._bash({"command": "cat `find / -name passwd`"})
+        assert result == ""
+        assert err is not None
+        assert "substitution" in err.lower()
+
+    def test_rejects_dollar_paren_substitution(self, tmp_repo: Path):
+        """$(...) is the modern form of command substitution."""
+        result, err = shell._bash({"command": "cat $(echo /etc/passwd)"})
+        assert result == ""
+        assert err is not None
+        assert "substitution" in err.lower()
+
+    def test_quoted_pipe_in_regex_is_allowed(self, tmp_repo: Path):
+        """`|` inside a quoted regex isn't a shell operator — shlex respects
+        quotes. Must NOT be rejected; the model needs alternation in regex
+        patterns. (The command may exit non-zero on no match; that's fine.)"""
+        result, err = shell._bash({"command": 'grep "foo|bar" src/main.py'})
+        if err:
+            assert "operator" not in err.lower()
+            assert "substitution" not in err.lower()
+
+    def test_unallowlisted_first_binary_still_rejected(self, tmp_repo: Path):
+        """Existing allowlist behavior preserved — `rm` alone is rejected
+        before any chain logic kicks in."""
+        result, err = shell._bash({"command": "rm -rf /"})
+        assert result == ""
+        assert err is not None
+        assert "allowlist" in err.lower()
+
+    def test_normal_allowlisted_command_still_works(self, tmp_repo: Path):
+        """Sanity: hardening didn't break the happy path."""
+        result, err = shell._bash({"command": "ls src/"})
+        assert err is None
+        assert "main.py" in result
+
+    def test_mismatched_quotes_returns_clean_error(self, tmp_repo: Path):
+        """shlex raises ValueError on mismatched quotes; we return a
+        structured error rather than letting the exception escape."""
+        result, err = shell._bash({"command": "echo 'unclosed"})
+        assert result == ""
+        assert err is not None
+        assert "parse" in err.lower() or "quote" in err.lower()

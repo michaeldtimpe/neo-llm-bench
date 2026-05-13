@@ -1,0 +1,1 @@
+{"id": "irrelevance_28", "actual_calls": [["calculate_boiling_point", {"substance": "hexagon", "pressure": 1}]], "wall_s": 2.6244486670002516, "prompt_tokens": 300, "completion_tokens": 58, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_boiling_point"}

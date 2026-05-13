@@ -1,0 +1,624 @@
+"""Tests for the acceptance-suite runner's resume / state logic.
+
+The runner has three layers: per-fixture status, per-stage checkpoint
+inspection (delegating to llamabench), and PR-step resume (delegated to llamabench pr).
+We test:
+  - state save/load round-trip
+  - decide() picks SKIP_DONE / SKIP_REQUIRED_ENV / RUN_FRESH / RUN_RESUME
+  - run_fixture honours --force, --retry-errors, --dry-run
+  - artefact reader pulls validator/citations/tokens correctly
+"""
+
+from __future__ import annotations
+
+import json
+import os
+from pathlib import Path
+
+import pytest
+
+from benchmarks.maintain_suite.grade import Fixture, FixtureResult
+import benchmarks.maintain_suite.run as br
+from benchmarks.maintain_suite.run import (
+    Decision,
+    Diagnostics,
+    FixtureState,
+    FixtureStatus,
+    _llamabench_run_dir,
+    _stderr_excerpt,
+    decide,
+    load_state,
+    run_fixture,
+    save_state,
+)
+
+
+@pytest.fixture(autouse=True)
+def _isolate_llamabench_runs(tmp_path, monkeypatch):
+    fake_runs = tmp_path / "fake-llamabench-runs"
+    fake_runs.mkdir(parents=True)
+    monkeypatch.setattr(br, "_llamabench_run_dir", lambda rid: fake_runs / rid)
+
+
+def _f(id_="f1", *, task_type="bugfix", required_env=()) -> Fixture:
+    return Fixture(
+        id=id_, goal="g", task_type=task_type,
+        expected_outcome={"kind": "regex_present", "pattern": "anything"},
+        repo_url="", repo_path="/tmp/nope",
+        required_env=list(required_env),
+    )
+
+
+def _seed_run_dir(tmp_path, run_id, *, stages=(),
+                  pr_steps_done=False) -> Path:
+    rd = tmp_path / "fake-llamabench-runs" / run_id
+    rd.mkdir(parents=True, exist_ok=True)
+    (rd / "run.json").write_text(json.dumps({"run_id": run_id}))
+    if stages:
+        sd = rd / "stages"
+        sd.mkdir(parents=True, exist_ok=True)
+        for s in stages:
+            (sd / f"{s}.json").write_text("{}")
+    if pr_steps_done:
+        (rd / "pr_state.json").write_text(json.dumps({
+            "branch_name": "llamabench/x", "pr_number": 1, "pr_url": "u",
+            "test_command": "", "test_passed": True, "is_draft": False,
+            "test_output_tail": "",
+            "steps": [
+                {"name": "commit", "done": True, "status": "done", "detail": "", "completed_at": 0.0},
+                {"name": "test", "done": True, "status": "done", "detail": "", "completed_at": 0.0},
+                {"name": "push", "done": True, "status": "done", "detail": "", "completed_at": 0.0},
+                {"name": "create", "done": True, "status": "done", "detail": "", "completed_at": 0.0},
+            ],
+        }))
+    return rd
+
+
+# --- state round-trip --
+
+def test_state_round_trip(tmp_path: Path):
+    out = tmp_path / "acc"
+    s = FixtureState(fixture_id="abc", status=FixtureStatus.RUNNING,
+                     llamabench_run_id="r123", attempts=2, last_error="boom")
+    save_state(out, s)
+    loaded = load_state(out, "abc")
+    assert loaded.status == FixtureStatus.RUNNING
+    assert loaded.llamabench_run_id == "r123"
+    assert loaded.attempts == 2
+    assert loaded.last_error == "boom"
+
+
+def test_state_default_when_missing(tmp_path: Path):
+    out = tmp_path / "acc"
+    out.mkdir()
+    s = load_state(out, "fresh")
+    assert s.status == FixtureStatus.PENDING
+    assert s.llamabench_run_id == ""
+
+
+# --- decide() --
+
+def test_decide_skip_done():
+    f = _f()
+    s = FixtureState(fixture_id="f1", status=FixtureStatus.DONE)
+    d, reason = decide(f, s, force=False, retry_errors=False, retry_skipped=False)
+    assert d == Decision.SKIP_DONE
+    assert "already done" in reason
+
+
+def test_decide_force_overrides_done():
+    f = _f()
+    s = FixtureState(fixture_id="f1", status=FixtureStatus.DONE,
+                     llamabench_run_id="cached")
+    d, _ = decide(f, s, force=True, retry_errors=False, retry_skipped=False)
+    assert d == Decision.RUN_FRESH
+
+
+def test_decide_skip_required_env_missing(monkeypatch):
+    monkeypatch.delenv("MY_SECRET", raising=False)
+    f = _f(required_env=["MY_SECRET"])
+    s = FixtureState(fixture_id="f1", status=FixtureStatus.PENDING)
+    d, reason = decide(f, s, force=False, retry_errors=False, retry_skipped=False)
+    assert d == Decision.SKIP_REQUIRED_ENV
+    assert "MY_SECRET" in reason
+
+
+def test_decide_skip_error_unless_retry():
+    f = _f()
+    s = FixtureState(fixture_id="f1", status=FixtureStatus.ERROR,
+                     last_error="boom")
+    d_no, _ = decide(f, s, force=False, retry_errors=False, retry_skipped=False)
+    assert d_no == Decision.SKIP_DONE
+    d_yes, _ = decide(f, s, force=False, retry_errors=True, retry_skipped=False)
+    assert d_yes == Decision.RUN_FRESH
+
+
+def test_decide_skip_skipped_unless_retry():
+    f = _f()
+    s = FixtureState(fixture_id="f1", status=FixtureStatus.SKIPPED)
+    d_no, _ = decide(f, s, force=False, retry_errors=False, retry_skipped=False)
+    assert d_no == Decision.SKIP_DONE
+    d_yes, _ = decide(f, s, force=False, retry_errors=False, retry_skipped=True)
+    assert d_yes == Decision.RUN_FRESH
+
+
+def test_decide_run_fresh_for_pending():
+    f = _f()
+    s = FixtureState(fixture_id="f1", status=FixtureStatus.PENDING)
+    d, reason = decide(f, s, force=False, retry_errors=False, retry_skipped=False)
+    assert d == Decision.RUN_FRESH
+    assert "new run" in reason
+
+
+def test_decide_force_runs_fresh(tmp_path):
+    f = _f()
+    s = FixtureState(fixture_id="f1", status=FixtureStatus.DONE,
+                     llamabench_run_id="rOLD")
+    d, _ = decide(f, s, force=True, retry_errors=False, retry_skipped=False)
+    assert d == Decision.RUN_FRESH
+
+
+# --- run_fixture (high level) --
+
+def test_run_fixture_skip_required_env_persists_state(tmp_path, monkeypatch):
+    monkeypatch.delenv("REQ_ENV_X", raising=False)
+    out = tmp_path / "acc"
+    f = _f(required_env=["REQ_ENV_X"])
+    fr, diag = run_fixture(f, out, tmp_path / "wd")
+    assert fr.skipped
+    assert "REQ_ENV_X" in fr.skipped_reason
+    state = load_state(out, "f1")
+    assert state.status == FixtureStatus.SKIPPED
+
+
+def test_run_fixture_dry_run_no_subprocess(tmp_path, monkeypatch):
+    """--dry-run should not invoke llamabench and should not write result.json."""
+    out = tmp_path / "acc"
+    f = _f()
+    monkeypatch.setattr(br, "_resolve_repo",
+                        lambda fix, wd: (Path("/tmp"), ""))
+    # If dry_run actually invoked llamabench, the test would hang/fail; this proves
+    # the code path is short-circuited.
+    fr, diag = run_fixture(f, out, tmp_path / "wd", dry_run=True)
+    assert fr.skipped
+    assert fr.skipped_reason == "dry_run"
+    # No result.json written for dry-run.
+    assert not (out / "f1" / "result.json").is_file()
+
+
+def test_run_fixture_already_done_returns_cached(tmp_path):
+    out = tmp_path / "acc"
+    fdir = out / "f1"
+    fdir.mkdir(parents=True)
+    save_state(out, FixtureState(fixture_id="f1", status=FixtureStatus.DONE,
+                                  llamabench_run_id="rXY"))
+    cached = FixtureResult(fixture_id="f1", score=5, pr_opened=True,
+                            pr_url="u", expected_outcome_passed=True)
+    (fdir / "result.json").write_text(json.dumps(cached.to_dict()))
+    fr, diag = run_fixture(_f(), out, tmp_path / "wd")
+    # Returned result reflects the cached score (5, passed)
+    assert fr.score == 5
+    assert fr.pr_opened
+
+
+def test_run_fixture_resolve_repo_failure_marks_error(tmp_path, monkeypatch):
+    out = tmp_path / "acc"
+    monkeypatch.setattr(br, "_resolve_repo",
+                        lambda fix, wd: (None, "no repo here"))
+    fr, diag = run_fixture(_f(), out, tmp_path / "wd")
+    assert fr.error
+    assert "no repo here" in fr.error
+    state = load_state(out, "f1")
+    assert state.status == FixtureStatus.ERROR
+
+
+# --- artefact reader --
+
+def test_read_run_artefacts_validator_done(tmp_path):
+    rid = "rA"
+    rd = _seed_run_dir(tmp_path, rid)
+    events = rd / "events.jsonl"
+    events.write_text("\n".join([
+        json.dumps({"kind": "validator_done", "status": "verified",
+                    "verified_count": 3, "removed_count": 1}),
+        json.dumps({"kind": "citation_lint_passed", "count": 5}),
+        json.dumps({"kind": "finish", "total_wall_s": 42.5}),
+    ]))
+    artefacts = br._read_run_artefacts(rid)
+    assert artefacts["validator_status"] == "verified"
+    assert artefacts["validator_verified"] == 3
+    assert artefacts["validator_removed"] == 1
+    assert artefacts["citations_total"] == 5
+    assert artefacts["citations_unresolved"] == 0
+    assert artefacts["wall_s_total"] == 42.5
+
+
+def test_read_run_artefacts_citation_blocked(tmp_path):
+    rid = "rB"
+    rd = _seed_run_dir(tmp_path, rid)
+    (rd / "events.jsonl").write_text(json.dumps({
+        "kind": "citation_lint_blocked", "unresolved": 3, "summary": "..."
+    }))
+    artefacts = br._read_run_artefacts(rid)
+    assert artefacts["citations_unresolved"] == 3
+
+
+def test_read_run_artefacts_pr_state(tmp_path):
+    rid = "rC"
+    rd = _seed_run_dir(tmp_path, rid)
+    (rd / "pr_state.json").write_text(json.dumps({
+        "pr_url": "https://gh/...", "is_draft": False,
+        "test_passed": True, "steps": [],
+    }))
+    artefacts = br._read_run_artefacts(rid)
+    assert artefacts["pr_opened"] is True
+    assert artefacts["pr_url"] == "https://gh/..."
+    assert artefacts["test_passed"] is True
+
+
+def test_read_run_artefacts_resumed_stages(tmp_path):
+    rid = "rD"
+    rd = _seed_run_dir(tmp_path, rid)
+    (rd / "events.jsonl").write_text("\n".join([
+        json.dumps({"kind": "architect_resumed", "objectives": 4}),
+        json.dumps({"kind": "worker_resumed", "index": 0}),
+        json.dumps({"kind": "validator_resumed", "status": "verified",
+                    "verified_count": 1}),
+    ]))
+    a = br._read_run_artefacts(rid)
+    assert "architect" in a["stages_resumed"]
+    assert "worker_0" in a["stages_resumed"]
+    assert "validator" in a["stages_resumed"]
+
+
+# --- aggregate diagnostics tuning hints --
+
+def test_tuning_hints_validator_ambiguous():
+    diags = [Diagnostics(fixture_id=f"f{i}", validator_status="ambiguous") for i in range(4)]
+    diags += [Diagnostics(fixture_id="g", validator_status="verified")]
+    hints = br._tuning_hints(diags, [])
+    assert any("ambiguous" in h for h in hints)
+
+
+def test_tuning_hints_citation_blocked():
+    diags = [Diagnostics(fixture_id=f"f{i}", citations_unresolved=2) for i in range(3)]
+    diags += [Diagnostics(fixture_id=f"g{i}") for i in range(7)]
+    hints = br._tuning_hints(diags, [])
+    assert any("citation_lint_blocked" in h for h in hints)
+
+
+def test_tuning_hints_long_runs():
+    diags = [Diagnostics(fixture_id="x", wall_s=2400)]  # 40 min
+    hints = br._tuning_hints(diags, [])
+    assert any("30 min" in h for h in hints)
+
+
+def test_tuning_hints_test_failures():
+    diags = [Diagnostics(fixture_id="x", test_passed=False)]
+    hints = br._tuning_hints(diags, [])
+    assert any("failing tests" in h for h in hints)
+
+
+# --- stderr excerpt --
+
+def test_stderr_excerpt_short_passthrough():
+    assert _stderr_excerpt("boom") == "boom"
+
+
+def test_stderr_excerpt_empty():
+    assert _stderr_excerpt("") == ""
+    assert _stderr_excerpt(None) == ""
+
+
+def test_stderr_excerpt_long_truncates_to_tail():
+    long = "header\n" + "x" * 1000 + "\nlast meaningful line"
+    out = _stderr_excerpt(long, max_chars=100)
+    assert out.startswith("...(truncated)")
+    assert "last meaningful line" in out
+    assert len(out) <= len("...(truncated) ") + 100
+
+
+def test_heal_stale_silent_failure_done_to_error(tmp_path):
+    """A DONE state with cached diagnostics showing wall<5s + tokens=0 must
+    be reclassified to ERROR so --retry-errors picks it up. AND the
+    llamabench_run_id must be cleared so next decide() picks RUN_FRESH instead
+    of RUN_RESUME on the cached BAD stage data."""
+    out = tmp_path / "acc"
+    fid = "stale-silent"
+    save_state(out, FixtureState(fixture_id=fid, status=FixtureStatus.DONE,
+                                  llamabench_run_id="r1"))
+    diag_path = out / fid / "diagnostics.json"
+    diag_path.write_text(json.dumps({
+        "fixture_id": fid, "run_id": "r1", "wall_s": 0.0, "tokens_total": 0,
+        "stages_completed": [], "stages_resumed": [],
+        "validator_status": "", "validator_verified": 0, "validator_removed": 0,
+        "citations_unresolved": 0, "citations_total": 0,
+        "pr_url": "", "pr_opened": False, "is_draft": False,
+        "test_passed": None, "events_kinds": {},
+    }))
+    state = load_state(out, fid)
+    assert state.status == FixtureStatus.DONE
+    healed = br._heal_stale_silent_failure(state, out)
+    assert healed
+    assert state.status == FixtureStatus.ERROR
+    assert state.llamabench_run_id == ""
+    assert "silent failure" in state.last_error
+    assert "retry runs fresh" in state.last_error
+    # Persisted to disk
+    reloaded = load_state(out, fid)
+    assert reloaded.status == FixtureStatus.ERROR
+    assert reloaded.llamabench_run_id == ""
+
+
+def test_heal_does_not_reclassify_real_done(tmp_path):
+    """A DONE state with cached diagnostics showing real work (tokens > 0)
+    must NOT be reclassified — it was a legitimate completed run."""
+    out = tmp_path / "acc"
+    fid = "real-done"
+    save_state(out, FixtureState(fixture_id=fid, status=FixtureStatus.DONE,
+                                  llamabench_run_id="r1"))
+    diag_path = out / fid / "diagnostics.json"
+    diag_path.write_text(json.dumps({
+        "fixture_id": fid, "run_id": "r1", "wall_s": 87.5, "tokens_total": 42810,
+        "stages_completed": ["architect", "worker_0"], "stages_resumed": [],
+        "validator_status": "verified", "validator_verified": 3,
+        "validator_removed": 0,
+        "citations_unresolved": 0, "citations_total": 3,
+        "pr_url": "https://...", "pr_opened": True, "is_draft": False,
+        "test_passed": True, "events_kinds": {},
+    }))
+    state = load_state(out, fid)
+    healed = br._heal_stale_silent_failure(state, out)
+    assert not healed
+    assert state.status == FixtureStatus.DONE
+
+
+def test_heal_no_op_without_cached_diag(tmp_path):
+    out = tmp_path / "acc"
+    fid = "no-diag"
+    save_state(out, FixtureState(fixture_id=fid, status=FixtureStatus.DONE))
+    state = load_state(out, fid)
+    assert not br._heal_stale_silent_failure(state, out)
+    assert state.status == FixtureStatus.DONE
+
+
+def test_heal_fires_on_error_with_stale_run_id(tmp_path):
+    """Idempotent heal: an already-ERROR state with llamabench_run_id set and
+    cached silent-failure diagnostics gets the run_id cleared so retry runs
+    fresh. Covers the case where a prior heal version reclassified DONE→
+    ERROR but forgot to clear llamabench_run_id."""
+    out = tmp_path / "acc"
+    fid = "stale-error"
+    save_state(out, FixtureState(fixture_id=fid, status=FixtureStatus.ERROR,
+                                  llamabench_run_id="orphan42",
+                                  last_error="prior heal"))
+    diag_path = out / fid / "diagnostics.json"
+    diag_path.write_text(json.dumps({
+        "fixture_id": fid, "run_id": "orphan42", "wall_s": 0.0,
+        "tokens_total": 0,
+        "stages_completed": [], "stages_resumed": [],
+        "validator_status": "", "validator_verified": 0, "validator_removed": 0,
+        "citations_unresolved": 0, "citations_total": 0,
+        "pr_url": "", "pr_opened": False, "is_draft": False,
+        "test_passed": None, "events_kinds": {},
+    }))
+    state = load_state(out, fid)
+    assert br._heal_stale_silent_failure(state, out)
+    assert state.llamabench_run_id == ""
+    reloaded = load_state(out, fid)
+    assert reloaded.llamabench_run_id == ""
+
+
+def test_heal_idempotent_when_run_id_already_cleared(tmp_path):
+    """Once heal has cleared llamabench_run_id, a second invocation is a no-op."""
+    out = tmp_path / "acc"
+    fid = "already-cleared"
+    save_state(out, FixtureState(fixture_id=fid, status=FixtureStatus.ERROR,
+                                  llamabench_run_id="",
+                                  last_error="cleared"))
+    # Without cached diag, no-op.
+    state = load_state(out, fid)
+    assert not br._heal_stale_silent_failure(state, out)
+
+
+def _write_diag(out: Path, fid: str, **overrides):
+    base = {
+        "fixture_id": fid, "run_id": "", "wall_s": 0.0, "tokens_total": 0,
+        "stages_completed": [], "stages_resumed": [],
+        "validator_status": "", "validator_verified": 0, "validator_removed": 0,
+        "citations_unresolved": 0, "citations_total": 0,
+        "pr_url": "", "pr_opened": False, "is_draft": False,
+        "test_passed": None, "events_kinds": {},
+    }
+    base.update(overrides)
+    p = (out / fid)
+    p.mkdir(parents=True, exist_ok=True)
+    (p / "diagnostics.json").write_text(json.dumps(base))
+
+
+def _write_result(out: Path, fid: str, **overrides):
+    base = {
+        "fixture_id": fid, "score": 0, "max_score": 5,
+        "pr_opened": False, "pr_url": "", "expected_outcome_passed": None,
+        "expected_outcome_detail": "", "citations_unresolved": 0,
+        "citations_total": 0, "diff_produced": False, "diff_files": 0,
+        "skipped": False, "skipped_reason": "", "error": "",
+        "criteria_breakdown": [],
+    }
+    base.update(overrides)
+    p = (out / fid)
+    p.mkdir(parents=True, exist_ok=True)
+    (p / "result.json").write_text(json.dumps(base))
+
+
+def test_heal_does_not_classify_real_pass_as_silent(tmp_path):
+    """The lpe-rope-calc bug: single-mode telemetry was missing so wall=0
+    + tokens=0, but the run produced a diff and opened a PR. That's a
+    PASS, not a silent failure — heal must NOT clear llamabench_run_id."""
+    out = tmp_path / "acc"
+    fid = "real-pass"
+    save_state(out, FixtureState(fixture_id=fid, status=FixtureStatus.DONE,
+                                  llamabench_run_id="real42"))
+    _write_diag(out, fid, wall_s=0.0, tokens_total=0)
+    # Result shows a real PR + diff → not a silent failure
+    _write_result(out, fid, score=5, pr_opened=True,
+                  pr_url="https://github.com/.../pull/1",
+                  diff_produced=True, diff_files=1)
+    state = load_state(out, fid)
+    assert not br._heal_stale_silent_failure(state, out)
+    assert state.status == FixtureStatus.DONE
+    assert state.llamabench_run_id == "real42"
+
+
+def test_heal_inverse_recovers_misclassified_pass(tmp_path):
+    """If a prior runner version (with worse heuristic) marked a real pass
+    as ERROR, the new heal must reclassify ERROR→DONE rather than clear
+    the run id."""
+    out = tmp_path / "acc"
+    fid = "misclassified"
+    save_state(out, FixtureState(fixture_id=fid, status=FixtureStatus.ERROR,
+                                  llamabench_run_id="real7",
+                                  last_error="silent failure (wrong)"))
+    _write_diag(out, fid, wall_s=0.0, tokens_total=0)
+    _write_result(out, fid, score=5, pr_opened=True,
+                  pr_url="https://github.com/.../pull/9",
+                  diff_produced=True, diff_files=2)
+    state = load_state(out, fid)
+    healed = br._heal_stale_silent_failure(state, out)
+    assert healed
+    assert state.status == FixtureStatus.DONE
+    assert state.llamabench_run_id == "real7"  # preserved
+    assert state.last_error == ""
+
+
+# --- _is_silent_failure with the result override --
+
+def test_is_silent_failure_diff_produced_overrides():
+    diag = Diagnostics(fixture_id="x", wall_s=0.0, tokens_total=0)
+    from benchmarks.maintain_suite.grade import FixtureResult
+    result = FixtureResult(fixture_id="x", diff_produced=True, diff_files=3)
+    assert not br._is_silent_failure(diag, result)
+
+
+def test_is_silent_failure_pr_opened_overrides():
+    diag = Diagnostics(fixture_id="x", wall_s=0.0, tokens_total=0)
+    from benchmarks.maintain_suite.grade import FixtureResult
+    result = FixtureResult(fixture_id="x", pr_opened=True, pr_url="...")
+    assert not br._is_silent_failure(diag, result)
+
+
+def test_is_silent_failure_with_result_truly_silent():
+    diag = Diagnostics(fixture_id="x", wall_s=0.0, tokens_total=0)
+    from benchmarks.maintain_suite.grade import FixtureResult
+    result = FixtureResult(fixture_id="x")  # no diff, no PR
+    assert br._is_silent_failure(diag, result)
+
+
+def test_is_silent_failure_back_compat_no_result():
+    diag = Diagnostics(fixture_id="x", wall_s=0.0, tokens_total=0)
+    assert br._is_silent_failure(diag)  # legacy single-arg call
+
+
+# --- _diagnose_no_tool_calls --
+
+def test_diagnose_no_tool_calls_single_mode_text_only(tmp_path):
+    diag = Diagnostics(
+        fixture_id="x", wall_s=120.0, tokens_total=15000,
+        single_mode={"tool_calls_total": 0, "schema_rejects": 0,
+                     "aborted": False, "abort_reason": "",
+                     "final_text_chars": 4500, "escalated": False},
+    )
+    from benchmarks.maintain_suite.grade import FixtureResult
+    result = FixtureResult(fixture_id="x", diff_produced=False, pr_opened=False)
+    notes = br._diagnose_no_tool_calls(diag, result, tmp_path)
+    assert any("ZERO tools" in n for n in notes)
+    assert any("MUST call edit_file" in n or "edit_file" in n for n in notes)
+
+
+def test_diagnose_no_tool_calls_single_mode_aborted(tmp_path):
+    diag = Diagnostics(
+        fixture_id="x", wall_s=10.0, tokens_total=5000,
+        single_mode={"tool_calls_total": 5, "schema_rejects": 4,
+                     "aborted": True, "abort_reason": "Max steps reached",
+                     "final_text_chars": 200, "escalated": False},
+    )
+    from benchmarks.maintain_suite.grade import FixtureResult
+    result = FixtureResult(fixture_id="x", diff_produced=False, pr_opened=False)
+    notes = br._diagnose_no_tool_calls(diag, result, tmp_path)
+    assert any("aborted" in n.lower() and "Max steps" in n for n in notes)
+
+
+def test_diagnose_no_tool_calls_swarm_workers_no_diff(tmp_path):
+    diag = Diagnostics(
+        fixture_id="x", wall_s=200.0, tokens_total=12000,
+        events_kinds={"worker_end": 3, "validator_done": 1},
+    )
+    from benchmarks.maintain_suite.grade import FixtureResult
+    result = FixtureResult(fixture_id="x", diff_produced=False, pr_opened=False)
+    notes = br._diagnose_no_tool_calls(diag, result, tmp_path)
+    assert any("workers ran but no edits committed" in n for n in notes)
+
+
+def test_diagnose_no_tool_calls_no_op_when_diff_produced(tmp_path):
+    diag = Diagnostics(fixture_id="x", wall_s=120.0, tokens_total=5000)
+    from benchmarks.maintain_suite.grade import FixtureResult
+    result = FixtureResult(fixture_id="x", diff_produced=True, pr_opened=True)
+    assert br._diagnose_no_tool_calls(diag, result, tmp_path) == []
+
+
+def test_run_fixture_silent_failure_marks_state_error(tmp_path, monkeypatch):
+    """Going forward, when run_fixture grades a silent-failed run, it must
+    save state as ERROR so subsequent --retry-errors picks it up."""
+    out = tmp_path / "acc"
+    monkeypatch.setattr(br, "_resolve_repo",
+                        lambda fix, wd: (Path("/tmp"), ""))
+    monkeypatch.setattr(br, "_head_sha", lambda repo: "abc" * 13 + "d")
+    monkeypatch.setattr(br, "_llamabench_maintain",
+                        lambda repo, fix, log_dir, **_: (0, "abcdef123456", ""))
+    # Read artefacts returns a silent-failure shape
+    monkeypatch.setattr(br, "_read_run_artefacts",
+                        lambda rid: {
+                            "pr_url": "", "pr_opened": False, "is_draft": False,
+                            "test_passed": None,
+                            "citations_unresolved": 0, "citations_total": 0,
+                            "validator_status": "", "validator_verified": 0,
+                            "validator_removed": 0,
+                            "stages_completed": [], "stages_resumed": [],
+                            "tokens_total": 0, "wall_s_total": 0.0,
+                            "events_kinds": {},
+                        })
+    # grade_fixture is real — uses the real repo (any directory works since
+    # diff is empty). Avoid the gh / git calls by patching _changed_files.
+    from benchmarks.maintain_suite import grade as grade_mod
+    monkeypatch.setattr(grade_mod, "_changed_files", lambda repo, sha: [])
+
+    fr, diag = run_fixture(_f(), out, tmp_path / "wd")
+    state = load_state(out, "f1")
+    assert state.status == FixtureStatus.ERROR
+    assert "silent failure" in state.last_error
+    # llamabench_run_id cleared so next --retry-errors picks RUN_FRESH (not
+    # RUN_RESUME on the empty stages)
+    assert state.llamabench_run_id == ""
+    # Result + diag artefacts ARE persisted (useful breadcrumbs)
+    assert (out / "f1" / "result.json").is_file()
+    assert (out / "f1" / "diagnostics.json").is_file()
+
+
+def test_run_fixture_surfaces_stderr_excerpt(tmp_path, monkeypatch):
+    """When llamabench.cli fails to start, the stderr should be captured into
+    state.last_error so the user sees what broke without grepping logs."""
+    out = tmp_path / "acc"
+    monkeypatch.setattr(br, "_resolve_repo",
+                        lambda fix, wd: (Path("/tmp"), ""))
+    monkeypatch.setattr(br, "_head_sha", lambda repo: "deadbeef" * 5)
+
+    def fake_maintain(repo, fixture, log_dir, **_):
+        return 1, "", "ModuleNotFoundError: No module named 'llamabench'"
+    monkeypatch.setattr(br, "_llamabench_maintain", fake_maintain)
+
+    fr, diag = run_fixture(_f(), out, tmp_path / "wd")
+    assert fr.error
+    assert "ModuleNotFoundError" in fr.error
+    state = load_state(out, "f1")
+    assert state.status == FixtureStatus.ERROR
+    assert "ModuleNotFoundError" in state.last_error

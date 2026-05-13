@@ -1,0 +1,1 @@
+{"id": "irrelevance_140", "actual_calls": [["calculate_electric_current", {"voltage": 120, "resistance": 10}]], "wall_s": 2.981562290995498, "prompt_tokens": 328, "completion_tokens": 64, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_electric_current"}

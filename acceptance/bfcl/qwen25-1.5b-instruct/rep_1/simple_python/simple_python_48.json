@@ -1,0 +1,1 @@
+{"id": "simple_python_48", "actual_calls": [["calculate_density", {"mass": 45, "volume": 15}]], "wall_s": 1.5380467919967487, "prompt_tokens": 331, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

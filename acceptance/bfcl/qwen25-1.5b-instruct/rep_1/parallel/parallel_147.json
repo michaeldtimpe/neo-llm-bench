@@ -1,0 +1,1 @@
+{"id": "parallel_147", "actual_calls": [["light_travel_time", {"distance_in_light_years": 4.22}], ["light_travel_time", {"distance_in_light_years": 6.1}], ["light_travel_time", {"distance_in_light_years": 5.88}]], "wall_s": 3.7835759579975274, "prompt_tokens": 404, "completion_tokens": 80, "error": "", "passed": true, "reason": "all_calls_matched"}

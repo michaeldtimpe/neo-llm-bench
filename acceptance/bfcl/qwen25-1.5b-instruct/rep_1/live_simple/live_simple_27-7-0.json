@@ -1,0 +1,1 @@
+{"id": "live_simple_27-7-0", "actual_calls": [["uber.eat.order", {"restaurant": "uber pitada", "items": ["burgers", "chicken wings"], "quantities": [5, 6]}]], "wall_s": 2.45457704099681, "prompt_tokens": 371, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

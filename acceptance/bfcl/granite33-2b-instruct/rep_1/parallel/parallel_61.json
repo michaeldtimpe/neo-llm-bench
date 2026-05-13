@@ -1,0 +1,1 @@
+{"id": "parallel_61", "actual_calls": [["math.hypot", {"x": 3, "y": 4}], ["math.hypot", {"x": 6, "y": 8}], ["math.hypot", {"x": 9, "y": 12, "z": 15}]], "wall_s": 8.495456499993452, "prompt_tokens": 400, "completion_tokens": 82, "error": "", "passed": true, "reason": "all_calls_matched"}

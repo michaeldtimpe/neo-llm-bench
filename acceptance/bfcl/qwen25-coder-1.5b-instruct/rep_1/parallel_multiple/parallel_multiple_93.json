@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_93", "actual_calls": [["geology.get_era", {"era_name": "Jurassic", "calculate_years_ago": true}], ["history.get_event_date", {"event_name": "Magna Carta", "calculate_years_ago": true}]], "wall_s": 3.3613325839978643, "prompt_tokens": 440, "completion_tokens": 82, "error": "", "passed": true, "reason": "all_calls_matched"}

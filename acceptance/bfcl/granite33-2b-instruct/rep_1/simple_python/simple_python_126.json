@@ -1,0 +1,1 @@
+{"id": "simple_python_126", "actual_calls": [["linear_regression.get_r_squared", {"dataset_path": "C:/data/cars.csv", "independent_variables": ["engine_size", "fuel_economy"], "dependent_variable": "car_price"}]], "wall_s": 4.36866670800373, "prompt_tokens": 357, "completion_tokens": 59, "error": "", "passed": true, "reason": "matched_gt_entry"}

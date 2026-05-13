@@ -1,0 +1,1 @@
+{"id": "multiple_44", "actual_calls": [["calculate.weight_in_space", {"weight_earth_kg": 70, "planet": "Mars"}]], "wall_s": 2.3361171249998733, "prompt_tokens": 548, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

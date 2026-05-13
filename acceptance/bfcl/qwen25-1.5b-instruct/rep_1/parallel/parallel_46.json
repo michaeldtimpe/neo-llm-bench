@@ -1,0 +1,1 @@
+{"id": "parallel_46", "actual_calls": [["calculate_winning_percentage", {"team": "Lakers", "season": 2018}], ["calculate_winning_percentage", {"team": "Bulls", "season": 2020}]], "wall_s": 2.908921250003914, "prompt_tokens": 310, "completion_tokens": 64, "error": "", "passed": false, "reason": "emitted_2_calls_expected_4"}

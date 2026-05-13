@@ -1,0 +1,1 @@
+{"id": "irrelevance_65", "actual_calls": [["probability.determine_population", {"probability": 0.3, "sample_size": 20, "round": true}]], "wall_s": 1.9744656249968102, "prompt_tokens": 336, "completion_tokens": 37, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: probability.determine_population"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_4-0-4", "actual_calls": [["requests.get", {"url": "https://date.nager.at/api/v2/public-holidays/2019", "headers": {"Content-Type": "application/json"}, "params": {"query": "2019", "page": 1}}]], "wall_s": 4.384418249996088, "prompt_tokens": 928, "completion_tokens": 66, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

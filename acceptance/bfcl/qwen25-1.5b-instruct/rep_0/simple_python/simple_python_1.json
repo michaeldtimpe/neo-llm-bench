@@ -1,0 +1,1 @@
+{"id": "simple_python_1", "actual_calls": [["math.factorial", {"number": 5}]], "wall_s": 1.050332916998741, "prompt_tokens": 263, "completion_tokens": 21, "error": "", "passed": true, "reason": "matched_gt_entry"}

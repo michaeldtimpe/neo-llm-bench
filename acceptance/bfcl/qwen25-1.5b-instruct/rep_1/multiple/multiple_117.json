@@ -1,0 +1,1 @@
+{"id": "multiple_117", "actual_calls": [["calculate_BMI", {"weight_kg": 70, "height_m": 1.75}]], "wall_s": 2.7012987499983865, "prompt_tokens": 669, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

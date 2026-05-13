@@ -1,0 +1,1 @@
+{"id": "parallel_38", "actual_calls": [["calc_distance", {"start_loc": "New York", "end_loc": "Washington DC", "shortest_route": true}], ["calc_distance", {"start_loc": "Los Angeles", "end_loc": "San Francisco", "shortest_route": true}]], "wall_s": 3.3556346670011408, "prompt_tokens": 326, "completion_tokens": 75, "error": "", "passed": true, "reason": "all_calls_matched"}

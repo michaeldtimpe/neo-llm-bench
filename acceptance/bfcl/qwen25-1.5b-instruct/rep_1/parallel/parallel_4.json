@@ -1,0 +1,1 @@
+{"id": "parallel_4", "actual_calls": [["calculate_bmi", {"height": 6, "weight": 80}], ["calculate_bmi", {"height": 5.6, "weight": 60}]], "wall_s": 2.6655498330001137, "prompt_tokens": 321, "completion_tokens": 58, "error": "", "passed": true, "reason": "all_calls_matched"}

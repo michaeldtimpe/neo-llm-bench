@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_45-2-33", "actual_calls": [["get_current_weather", {"location": "domain6.xyz"}]], "wall_s": 1.1260473750007804, "prompt_tokens": 375, "completion_tokens": 25, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_current_weather"}

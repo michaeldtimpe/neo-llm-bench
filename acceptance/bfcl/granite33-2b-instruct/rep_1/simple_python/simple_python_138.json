@@ -1,0 +1,1 @@
+{"id": "simple_python_138", "actual_calls": [["portfolio_future_value", {"stock": "X", "invested_amount": 5000, "expected_annual_return": 0.05, "years": 7}]], "wall_s": 4.206886874999327, "prompt_tokens": 396, "completion_tokens": 53, "error": "", "passed": true, "reason": "matched_gt_entry"}

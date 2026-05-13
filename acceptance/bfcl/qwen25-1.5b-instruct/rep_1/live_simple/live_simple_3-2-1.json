@@ -1,0 +1,1 @@
+{"id": "live_simple_3-2-1", "actual_calls": [["uber.ride", {"loc": "221B Baker Street, Berkeley, CA, USA", "type": "plus", "time": 600}]], "wall_s": 1.9508987499939394, "prompt_tokens": 395, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

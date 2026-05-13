@@ -1,0 +1,1 @@
+{"id": "live_relevance_14-14-0", "actual_calls": [["HNA_NEWS.search", {"keyword": "china", "category": "General", "date_range": "null", "sort_by": "date", "language": "EN"}]], "wall_s": 4.026951790998282, "prompt_tokens": 1364, "completion_tokens": 97, "error": "", "passed": true, "reason": "correctly_called_a_tool"}

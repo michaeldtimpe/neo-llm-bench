@@ -1,0 +1,1 @@
+{"id": "multiple_1", "actual_calls": [["math.triangle_area_heron", {"side1": 3, "side2": 4, "side3": 5}]], "wall_s": 4.316594125004485, "prompt_tokens": 576, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

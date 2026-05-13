@@ -1,0 +1,1 @@
+{"id": "simple_python_104", "actual_calls": [["geometry.area_triangle", {"base": 6, "height": 10}]], "wall_s": 1.5234232090006117, "prompt_tokens": 319, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

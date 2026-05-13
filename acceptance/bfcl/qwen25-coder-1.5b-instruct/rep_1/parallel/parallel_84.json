@@ -1,0 +1,1 @@
+{"id": "parallel_84", "actual_calls": [["calculate_displacement", {"initial_velocity": 15, "time": 7, "acceleration": 3.5}]], "wall_s": 2.3791125409989036, "prompt_tokens": 453, "completion_tokens": 49, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

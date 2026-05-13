@@ -1,0 +1,1 @@
+{"id": "multiple_70", "actual_calls": [["european_history.get_monarchs", {"country": "France", "century": 18}]], "wall_s": 2.9279753750015516, "prompt_tokens": 637, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

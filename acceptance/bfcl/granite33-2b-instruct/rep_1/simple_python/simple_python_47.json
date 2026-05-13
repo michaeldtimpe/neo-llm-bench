@@ -1,0 +1,1 @@
+{"id": "simple_python_47", "actual_calls": [["get_boiling_melting_points", {"substance": "water", "sea_level": 5000}]], "wall_s": 2.8198238750046585, "prompt_tokens": 293, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

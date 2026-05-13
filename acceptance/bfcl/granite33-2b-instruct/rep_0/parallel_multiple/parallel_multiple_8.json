@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_8", "actual_calls": [["kinematics.final_velocity", {"initial_velocity": 20, "acceleration": 5, "time": 6}], ["kinematics.distance_traveled", {"initial_velocity": 20, "acceleration": 5, "time": 6}]], "wall_s": 6.460209457996825, "prompt_tokens": 544, "completion_tokens": 76, "error": "", "passed": true, "reason": "all_calls_matched"}

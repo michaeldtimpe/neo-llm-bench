@@ -1,0 +1,1 @@
+{"id": "multiple_121", "actual_calls": [], "wall_s": 12.853299833004712, "prompt_tokens": 659, "completion_tokens": 98, "error": "", "passed": false, "reason": "no_tool_call_emitted"}

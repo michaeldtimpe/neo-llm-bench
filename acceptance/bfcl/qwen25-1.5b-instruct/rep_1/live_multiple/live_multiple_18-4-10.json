@@ -1,0 +1,1 @@
+{"id": "live_multiple_18-4-10", "actual_calls": [["HNA_WQA.search", {"keyword": "airtificial intelligence"}], ["HNA_NEWS.search", {"keyword": "2023.10.1 to 2023.10.7", "date_range": "2023-10-01 to 2023-10-07"}]], "wall_s": 3.9893593749948195, "prompt_tokens": 1391, "completion_tokens": 96, "error": "", "passed": false, "reason": "emitted_2_calls_expected_1"}

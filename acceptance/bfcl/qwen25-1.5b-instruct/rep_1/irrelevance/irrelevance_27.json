@@ -1,0 +1,1 @@
+{"id": "irrelevance_27", "actual_calls": [["calculate_heat", {"mass": 3, "specific_heat": 4.184, "change_in_temp": 4}]], "wall_s": 2.225415458000498, "prompt_tokens": 357, "completion_tokens": 39, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_heat"}

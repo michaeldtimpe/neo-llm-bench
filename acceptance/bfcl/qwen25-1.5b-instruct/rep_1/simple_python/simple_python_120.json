@@ -1,0 +1,1 @@
+{"id": "simple_python_120", "actual_calls": [["run_two_sample_ttest", {"group1": [3, 4, 5, 6, 4], "group2": [7, 8, 9, 8, 7], "equal_variance": true}]], "wall_s": 2.9628151670040097, "prompt_tokens": 380, "completion_tokens": 61, "error": "", "passed": true, "reason": "matched_gt_entry"}

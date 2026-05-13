@@ -1,0 +1,1 @@
+{"id": "multiple_25", "actual_calls": [["video_games.store_price", {"game_title": "Assassins Creed Valhalla", "platform": "PlayStation", "region": "United States"}]], "wall_s": 5.431563167003333, "prompt_tokens": 724, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

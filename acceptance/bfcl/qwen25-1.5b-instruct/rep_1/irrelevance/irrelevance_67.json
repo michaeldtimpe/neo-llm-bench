@@ -1,0 +1,1 @@
+{"id": "irrelevance_67", "actual_calls": [["hypothesis_testing.get_p_value", {"successes": 50, "n": 500, "prob_null": 0.1, "alternative": "less"}]], "wall_s": 2.7789544580009533, "prompt_tokens": 438, "completion_tokens": 50, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: hypothesis_testing.get_p_value"}

@@ -1,0 +1,12 @@
+# Round 3 — maintain_suite n=10, single-candidate validation.
+#
+# Champion: Qwen2.5-32B-Instruct-4bit (sole survivor of Rounds 0+1).
+# Gate: implement 100% (4/4), doc/manage >=50% (>=3/6).
+#
+# Run: python -m benchmarks.maintain_suite.run \
+#        --variants benchmarks/maintain_suite/variants_round3.yaml --all
+#
+# Estimated wall: ~6h.
+
+variants:
+  - {mode: mono, model_label: qwen25-32b-instruct, model_id: Qwen2.5-32B-Instruct-4bit}

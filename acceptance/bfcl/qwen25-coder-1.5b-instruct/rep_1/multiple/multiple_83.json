@@ -1,0 +1,1 @@
+{"id": "multiple_83", "actual_calls": [["player_stats.get_all_time_goals", {"player_name": "Lionel Messi", "team_name": "Barcelona", "competition": ""}]], "wall_s": 3.0141696669961675, "prompt_tokens": 540, "completion_tokens": 51, "error": "", "passed": true, "reason": "matched_gt_entry"}

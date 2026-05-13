@@ -1,0 +1,1 @@
+{"id": "irrelevance_131", "actual_calls": [["psychology.color_representation", {"color": "purple", "context": "computer vision"}]], "wall_s": 1.6012776249990566, "prompt_tokens": 333, "completion_tokens": 29, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: psychology.color_representation"}

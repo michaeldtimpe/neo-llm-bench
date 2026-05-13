@@ -1,0 +1,1 @@
+{"id": "simple_python_143", "actual_calls": [["get_stock_price", {"company": "AAPL", "days": 5, "exchange": "NASDAQ"}]], "wall_s": 2.196986791997915, "prompt_tokens": 327, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_parallel_1-0-1", "actual_calls": [["get_current_weather", {"location": "Boston, MA", "unit": "fahrenheit"}], ["get_current_weather", {"location": "San Francisco", "unit": "fahrenheit"}]], "wall_s": 2.5861814160016365, "prompt_tokens": 360, "completion_tokens": 59, "error": "", "passed": false, "reason": "call_get_current_weather_unmatched_in_gt"}

@@ -1,0 +1,1 @@
+{"id": "simple_python_2", "actual_calls": [["math.hypot", {"x": 4, "y": 5}]], "wall_s": 1.9662750420029624, "prompt_tokens": 350, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

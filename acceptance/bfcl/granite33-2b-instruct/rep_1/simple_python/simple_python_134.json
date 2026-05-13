@@ -1,0 +1,1 @@
+{"id": "simple_python_134", "actual_calls": [["investment.predictProfit", {"investment_amount": 5000, "annual_return": 0.07, "years": 5}]], "wall_s": 3.465427915994951, "prompt_tokens": 332, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

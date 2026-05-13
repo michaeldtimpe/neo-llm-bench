@@ -1,0 +1,1 @@
+{"id": "multiple_32", "actual_calls": [["geometry.calculate_cone_volume", {"radius": 4, "height": 7}]], "wall_s": 1.9049334169976646, "prompt_tokens": 448, "completion_tokens": 29, "error": "", "passed": true, "reason": "matched_gt_entry"}

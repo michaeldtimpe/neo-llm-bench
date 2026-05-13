@@ -1,0 +1,1 @@
+{"id": "irrelevance_19", "actual_calls": [["investment_calculator.calculate_return", {"initial_investment": 1000, "annual_rate": 0.05, "years": 10}]], "wall_s": 2.26482520799982, "prompt_tokens": 325, "completion_tokens": 46, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: investment_calculator.calculate_return"}

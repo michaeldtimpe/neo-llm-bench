@@ -1,0 +1,1 @@
+{"id": "multiple_135", "actual_calls": [["get_case_info", {"docket": "2022/AL2562", "court": "California", "info_type": "victim"}]], "wall_s": 3.010403166998003, "prompt_tokens": 472, "completion_tokens": 55, "error": "", "passed": true, "reason": "matched_gt_entry"}

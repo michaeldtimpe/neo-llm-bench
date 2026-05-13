@@ -1,0 +1,1 @@
+{"id": "multiple_146", "actual_calls": [["restaurant.find_nearby", {"location": "Seattle", "cuisine": "Chinese", "max_distance": 10}]], "wall_s": 5.822090458997991, "prompt_tokens": 508, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

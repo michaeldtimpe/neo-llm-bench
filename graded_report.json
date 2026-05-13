@@ -1,0 +1,272 @@
+{
+  "granite33-2b-instruct": {
+    "simple_python": {
+      "n": 150,
+      "passed": 126,
+      "n_with_calls": 136,
+      "wall_s": 512.2527553319815,
+      "completion_tokens": 6768,
+      "errors": 0
+    },
+    "multiple": {
+      "n": 150,
+      "passed": 102,
+      "n_with_calls": 113,
+      "wall_s": 923.7608157150389,
+      "completion_tokens": 8324,
+      "errors": 0
+    },
+    "parallel": {
+      "n": 150,
+      "passed": 92,
+      "n_with_calls": 117,
+      "wall_s": 1507.549866114954,
+      "completion_tokens": 15387,
+      "errors": 0
+    },
+    "parallel_multiple": {
+      "n": 150,
+      "passed": 79,
+      "n_with_calls": 117,
+      "wall_s": 1473.450051120024,
+      "completion_tokens": 19266,
+      "errors": 0
+    },
+    "irrelevance": {
+      "n": 150,
+      "passed": 129,
+      "n_with_calls": 21,
+      "wall_s": 1099.2880126660311,
+      "completion_tokens": 16545,
+      "errors": 0
+    },
+    "live_simple": {
+      "n": 100,
+      "passed": 68,
+      "n_with_calls": 83,
+      "wall_s": 395.6207899600122,
+      "completion_tokens": 5007,
+      "errors": 0
+    },
+    "live_multiple": {
+      "n": 100,
+      "passed": 48,
+      "n_with_calls": 65,
+      "wall_s": 775.4530577510523,
+      "completion_tokens": 8148,
+      "errors": 0
+    },
+    "live_parallel": {
+      "n": 16,
+      "passed": 4,
+      "n_with_calls": 9,
+      "wall_s": 148.46110575100465,
+      "completion_tokens": 2179,
+      "errors": 0
+    },
+    "live_parallel_multiple": {
+      "n": 24,
+      "passed": 9,
+      "n_with_calls": 16,
+      "wall_s": 326.7108327080059,
+      "completion_tokens": 3448,
+      "errors": 0
+    },
+    "live_irrelevance": {
+      "n": 100,
+      "passed": 100,
+      "n_with_calls": 0,
+      "wall_s": 1069.623902295978,
+      "completion_tokens": 17216,
+      "errors": 0
+    },
+    "live_relevance": {
+      "n": 16,
+      "passed": 10,
+      "n_with_calls": 10,
+      "wall_s": 141.5731330409908,
+      "completion_tokens": 1398,
+      "errors": 0
+    }
+  },
+  "qwen25-1.5b-instruct": {
+    "simple_python": {
+      "n": 150,
+      "passed": 138,
+      "n_with_calls": 150,
+      "wall_s": 305.4679862540215,
+      "completion_tokens": 5810,
+      "errors": 0
+    },
+    "multiple": {
+      "n": 150,
+      "passed": 132,
+      "n_with_calls": 150,
+      "wall_s": 386.1271191560154,
+      "completion_tokens": 5865,
+      "errors": 0
+    },
+    "parallel": {
+      "n": 150,
+      "passed": 116,
+      "n_with_calls": 150,
+      "wall_s": 704.8058271750633,
+      "completion_tokens": 16138,
+      "errors": 0
+    },
+    "parallel_multiple": {
+      "n": 150,
+      "passed": 115,
+      "n_with_calls": 150,
+      "wall_s": 773.5536908739814,
+      "completion_tokens": 15856,
+      "errors": 0
+    },
+    "irrelevance": {
+      "n": 150,
+      "passed": 87,
+      "n_with_calls": 63,
+      "wall_s": 495.6325930789899,
+      "completion_tokens": 10660,
+      "errors": 0
+    },
+    "live_simple": {
+      "n": 100,
+      "passed": 76,
+      "n_with_calls": 100,
+      "wall_s": 213.05924745304947,
+      "completion_tokens": 4088,
+      "errors": 0
+    },
+    "live_multiple": {
+      "n": 100,
+      "passed": 67,
+      "n_with_calls": 96,
+      "wall_s": 272.1119576580313,
+      "completion_tokens": 3835,
+      "errors": 0
+    },
+    "live_parallel": {
+      "n": 16,
+      "passed": 10,
+      "n_with_calls": 16,
+      "wall_s": 63.652792248009064,
+      "completion_tokens": 1373,
+      "errors": 0
+    },
+    "live_parallel_multiple": {
+      "n": 24,
+      "passed": 14,
+      "n_with_calls": 24,
+      "wall_s": 128.68571762697684,
+      "completion_tokens": 1990,
+      "errors": 0
+    },
+    "live_irrelevance": {
+      "n": 100,
+      "passed": 81,
+      "n_with_calls": 19,
+      "wall_s": 205.74952087896963,
+      "completion_tokens": 4466,
+      "errors": 0
+    },
+    "live_relevance": {
+      "n": 16,
+      "passed": 15,
+      "n_with_calls": 15,
+      "wall_s": 66.9373982489924,
+      "completion_tokens": 1068,
+      "errors": 0
+    }
+  },
+  "qwen25-coder-1.5b-instruct": {
+    "simple_python": {
+      "n": 150,
+      "passed": 135,
+      "n_with_calls": 146,
+      "wall_s": 395.0575265009902,
+      "completion_tokens": 8114,
+      "errors": 0
+    },
+    "multiple": {
+      "n": 150,
+      "passed": 132,
+      "n_with_calls": 149,
+      "wall_s": 467.44346641893935,
+      "completion_tokens": 7918,
+      "errors": 0
+    },
+    "parallel": {
+      "n": 150,
+      "passed": 58,
+      "n_with_calls": 146,
+      "wall_s": 632.8101735420059,
+      "completion_tokens": 14236,
+      "errors": 0
+    },
+    "parallel_multiple": {
+      "n": 150,
+      "passed": 44,
+      "n_with_calls": 149,
+      "wall_s": 647.2693290859897,
+      "completion_tokens": 12579,
+      "errors": 0
+    },
+    "irrelevance": {
+      "n": 150,
+      "passed": 78,
+      "n_with_calls": 72,
+      "wall_s": 930.4248313309363,
+      "completion_tokens": 21671,
+      "errors": 0
+    },
+    "live_simple": {
+      "n": 100,
+      "passed": 70,
+      "n_with_calls": 97,
+      "wall_s": 348.37557633600227,
+      "completion_tokens": 7295,
+      "errors": 0
+    },
+    "live_multiple": {
+      "n": 100,
+      "passed": 59,
+      "n_with_calls": 96,
+      "wall_s": 348.47933791502146,
+      "completion_tokens": 5728,
+      "errors": 0
+    },
+    "live_parallel": {
+      "n": 16,
+      "passed": 4,
+      "n_with_calls": 16,
+      "wall_s": 66.55161000101361,
+      "completion_tokens": 1446,
+      "errors": 0
+    },
+    "live_parallel_multiple": {
+      "n": 24,
+      "passed": 5,
+      "n_with_calls": 23,
+      "wall_s": 110.63846345499041,
+      "completion_tokens": 1546,
+      "errors": 0
+    },
+    "live_irrelevance": {
+      "n": 100,
+      "passed": 82,
+      "n_with_calls": 18,
+      "wall_s": 464.00153195299936,
+      "completion_tokens": 11050,
+      "errors": 0
+    },
+    "live_relevance": {
+      "n": 16,
+      "passed": 15,
+      "n_with_calls": 15,
+      "wall_s": 71.76666003998253,
+      "completion_tokens": 1197,
+      "errors": 0
+    }
+  }
+}

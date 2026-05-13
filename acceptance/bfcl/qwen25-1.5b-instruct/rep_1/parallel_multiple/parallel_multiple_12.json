@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_12", "actual_calls": [["calculate_magnetic_field", {"current": 4, "distance": 2}], ["calculate_voltage_difference", {"electric_field": 5, "distance": 3}]], "wall_s": 3.204951624997193, "prompt_tokens": 528, "completion_tokens": 56, "error": "", "passed": true, "reason": "all_calls_matched"}

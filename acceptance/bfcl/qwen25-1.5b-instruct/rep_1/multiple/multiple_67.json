@@ -1,0 +1,1 @@
+{"id": "multiple_67", "actual_calls": [["translate", {"text": "Hello, how are you?", "source_language": "English", "target_language": "French"}]], "wall_s": 2.2956843329957337, "prompt_tokens": 468, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

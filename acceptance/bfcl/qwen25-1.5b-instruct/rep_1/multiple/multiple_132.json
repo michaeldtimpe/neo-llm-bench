@@ -1,0 +1,1 @@
+{"id": "multiple_132", "actual_calls": [["finance.calculate_future_value", {"initial_investment": 20000, "rate_of_return": 0.08, "years": 5}]], "wall_s": 2.698333583997737, "prompt_tokens": 642, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

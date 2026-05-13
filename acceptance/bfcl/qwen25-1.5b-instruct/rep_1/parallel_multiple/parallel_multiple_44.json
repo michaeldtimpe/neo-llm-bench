@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_44", "actual_calls": [["house_designer.design", {"bedrooms": 3, "bathrooms": 2, "garden": true}], ["office_designer.design", {"rooms": 5, "meeting_room": "large"}]], "wall_s": 3.318271124997409, "prompt_tokens": 441, "completion_tokens": 66, "error": "", "passed": true, "reason": "all_calls_matched"}

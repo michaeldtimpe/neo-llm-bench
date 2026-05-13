@@ -1,0 +1,1 @@
+{"id": "multiple_56", "actual_calls": [["avg_closing_price", {"company": "Apple", "days": 60}]], "wall_s": 4.123138499999186, "prompt_tokens": 666, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

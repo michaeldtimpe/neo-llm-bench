@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_134", "actual_calls": [["get_top_cases", {"field_of_law": "constitutional law", "top_number": 5, "country": "UK"}]], "wall_s": 2.792614666002919, "prompt_tokens": 494, "completion_tokens": 49, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

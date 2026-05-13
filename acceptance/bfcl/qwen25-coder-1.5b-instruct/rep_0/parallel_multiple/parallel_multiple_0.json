@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_0", "actual_calls": [["math_toolkit.sum_of_multiples", {"lower_limit": 1, "upper_limit": 1000, "multiples": [3, 5]}]], "wall_s": 3.013049832999968, "prompt_tokens": 437, "completion_tokens": 57, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

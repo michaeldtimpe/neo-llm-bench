@@ -1,0 +1,1 @@
+{"id": "multiple_30", "actual_calls": [["rectangle.area", {"length": 12, "width": 5}]], "wall_s": 1.8987127080035862, "prompt_tokens": 486, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}

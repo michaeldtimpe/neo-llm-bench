@@ -1,0 +1,1 @@
+{"id": "irrelevance_136", "actual_calls": [["us_president_in_year", {"year": 2023}]], "wall_s": 1.717639375005092, "prompt_tokens": 293, "completion_tokens": 35, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: us_president_in_year"}

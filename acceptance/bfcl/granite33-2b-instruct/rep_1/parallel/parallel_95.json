@@ -1,0 +1,1 @@
+{"id": "parallel_95", "actual_calls": [["calculate_magnetic_field", {"current": 10, "radius": 0.5}], ["calculate_magnetic_field", {"current": 15, "radius": 1}]], "wall_s": 7.304064916002972, "prompt_tokens": 457, "completion_tokens": 58, "error": "", "passed": true, "reason": "all_calls_matched"}

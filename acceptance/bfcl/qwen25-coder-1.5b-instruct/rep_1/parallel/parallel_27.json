@@ -1,0 +1,1 @@
+{"id": "parallel_27", "actual_calls": [["nature_reserve.find_nearby", {"location": "Berkeley", "proximity": 10, "amenities": ["Picnic Tables", "Public Restrooms"]}]], "wall_s": 2.9178138339993893, "prompt_tokens": 401, "completion_tokens": 57, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

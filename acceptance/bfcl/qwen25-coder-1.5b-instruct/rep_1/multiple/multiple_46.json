@@ -1,0 +1,1 @@
+{"id": "multiple_46", "actual_calls": [["sort_list", {"elements": ["Sam", "Alice", "Jack"], "order": "asc"}]], "wall_s": 2.6099771250010235, "prompt_tokens": 512, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

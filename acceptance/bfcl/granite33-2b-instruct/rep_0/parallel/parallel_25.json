@@ -1,0 +1,1 @@
+{"id": "parallel_25", "actual_calls": [["lawsuit.lookup", {"company_name": "Dara Inc", "year": 2019}], ["lawsuit.lookup", {"company_name": "Dara Inc", "year": 2018}]], "wall_s": 4.5682045000030485, "prompt_tokens": 293, "completion_tokens": 66, "error": "", "passed": true, "reason": "all_calls_matched"}

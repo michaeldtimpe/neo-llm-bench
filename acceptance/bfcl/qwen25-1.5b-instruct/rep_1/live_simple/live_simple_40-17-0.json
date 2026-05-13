@@ -1,0 +1,1 @@
+{"id": "live_simple_40-17-0", "actual_calls": [["ThinQ_Connect", {"body": {"airConJobMode": "AIR_CLEAN", "windStrength": "HIGH", "monitoringEnabled": true}}]], "wall_s": 2.8604560829990078, "prompt_tokens": 586, "completion_tokens": 44, "error": "", "passed": false, "reason": "call_ThinQ_Connect_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "multiple_48", "actual_calls": [["library.find_nearby", {"location": "New York City, NY", "preferences": ["Pet-friendly", "Disabled Access", "24 hours", "Cafe Inside"]}]], "wall_s": 2.722276332999172, "prompt_tokens": 476, "completion_tokens": 48, "error": "", "passed": false, "reason": "call_library.find_nearby_did_not_match_any_gt"}

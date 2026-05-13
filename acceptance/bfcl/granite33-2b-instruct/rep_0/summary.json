@@ -1,0 +1,42 @@
+{
+  "model": "granite33-2b-instruct",
+  "rep": 0,
+  "mode": "auto",
+  "categories": {
+    "simple_python": {
+      "n_problems": 30,
+      "n_with_calls": 24,
+      "n_errors": 0,
+      "wall_s": 87.86419278999165,
+      "completion_tokens": 1203
+    },
+    "multiple": {
+      "n_problems": 30,
+      "n_with_calls": 19,
+      "n_errors": 0,
+      "wall_s": 209.79557775099966,
+      "completion_tokens": 2532
+    },
+    "parallel": {
+      "n_problems": 30,
+      "n_with_calls": 22,
+      "n_errors": 0,
+      "wall_s": 184.24016533299073,
+      "completion_tokens": 2728
+    },
+    "parallel_multiple": {
+      "n_problems": 30,
+      "n_with_calls": 21,
+      "n_errors": 0,
+      "wall_s": 239.73500958498698,
+      "completion_tokens": 3206
+    },
+    "irrelevance": {
+      "n_problems": 30,
+      "n_with_calls": 5,
+      "n_errors": 0,
+      "wall_s": 266.9243363739988,
+      "completion_tokens": 4164
+    }
+  }
+}

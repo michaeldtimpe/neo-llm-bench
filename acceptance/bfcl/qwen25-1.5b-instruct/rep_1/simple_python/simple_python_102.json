@@ -1,0 +1,1 @@
+{"id": "simple_python_102", "actual_calls": [["calculate_distance", {"body1": "Earth", "body2": "Moon", "unit": "mi"}]], "wall_s": 1.766650750003464, "prompt_tokens": 311, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

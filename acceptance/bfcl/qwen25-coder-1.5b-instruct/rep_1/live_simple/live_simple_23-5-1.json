@@ -1,0 +1,1 @@
+{"id": "live_simple_23-5-1", "actual_calls": [["ChaFod", {"TheFod": "PIZZA"}]], "wall_s": 1.4151202920038486, "prompt_tokens": 320, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

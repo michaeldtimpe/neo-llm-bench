@@ -1,0 +1,42 @@
+{
+  "model": "qwen25-coder-1.5b-instruct",
+  "rep": 0,
+  "mode": "auto",
+  "categories": {
+    "simple_python": {
+      "n_problems": 30,
+      "n_with_calls": 29,
+      "n_errors": 0,
+      "wall_s": 73.26214650201291,
+      "completion_tokens": 1524
+    },
+    "multiple": {
+      "n_problems": 30,
+      "n_with_calls": 29,
+      "n_errors": 0,
+      "wall_s": 104.50187878799261,
+      "completion_tokens": 1856
+    },
+    "parallel": {
+      "n_problems": 30,
+      "n_with_calls": 30,
+      "n_errors": 0,
+      "wall_s": 105.08723379100047,
+      "completion_tokens": 2272
+    },
+    "parallel_multiple": {
+      "n_problems": 30,
+      "n_with_calls": 30,
+      "n_errors": 0,
+      "wall_s": 98.35644379500081,
+      "completion_tokens": 1852
+    },
+    "irrelevance": {
+      "n_problems": 30,
+      "n_with_calls": 11,
+      "n_errors": 0,
+      "wall_s": 277.0015462070005,
+      "completion_tokens": 6593
+    }
+  }
+}

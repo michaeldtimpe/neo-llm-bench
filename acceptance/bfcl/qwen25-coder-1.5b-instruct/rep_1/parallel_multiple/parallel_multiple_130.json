@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_130", "actual_calls": [["portfolio_future_value", {"stock": "AAPL", "invested_amount": 5000, "expected_annual_return": 0.07, "years": 10}]], "wall_s": 3.869864749998669, "prompt_tokens": 757, "completion_tokens": 64, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

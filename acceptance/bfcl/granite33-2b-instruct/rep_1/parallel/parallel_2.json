@@ -1,0 +1,1 @@
+{"id": "parallel_2", "actual_calls": [["calculate_resistance", {"length": 5, "area": 0.01, "resistivity": "copper"}], ["calculate_resistance", {"length": 5, "area": 0.01, "resistivity": "aluminum"}]], "wall_s": 8.099874458006525, "prompt_tokens": 347, "completion_tokens": 75, "error": "", "passed": true, "reason": "all_calls_matched"}

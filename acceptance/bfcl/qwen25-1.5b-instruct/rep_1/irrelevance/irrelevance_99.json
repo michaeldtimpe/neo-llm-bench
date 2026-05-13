@@ -1,0 +1,1 @@
+{"id": "irrelevance_99", "actual_calls": [["lawsuit_search", {"location": "Texas", "subject": "traffic laws"}]], "wall_s": 1.543473208002979, "prompt_tokens": 322, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: lawsuit_search"}

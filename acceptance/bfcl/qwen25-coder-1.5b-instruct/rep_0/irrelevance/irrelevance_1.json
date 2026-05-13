@@ -1,0 +1,1 @@
+{"id": "irrelevance_1", "actual_calls": [["math.sum", {"numbers": [1, 2, 3], "decimal_places": 2}]], "wall_s": 2.132463458001439, "prompt_tokens": 314, "completion_tokens": 43, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: math.sum"}

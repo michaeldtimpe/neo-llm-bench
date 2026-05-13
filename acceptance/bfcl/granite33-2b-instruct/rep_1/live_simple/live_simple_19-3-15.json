@@ -1,0 +1,1 @@
+{"id": "live_simple_19-3-15", "actual_calls": [["get_current_weather", {"location": "Cancun, Quintana Roo", "unit": "celsius"}]], "wall_s": 2.8712655839990475, "prompt_tokens": 378, "completion_tokens": 37, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

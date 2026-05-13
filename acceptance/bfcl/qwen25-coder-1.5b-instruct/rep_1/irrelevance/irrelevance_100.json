@@ -1,0 +1,1 @@
+{"id": "irrelevance_100", "actual_calls": [["calculate_litigation_cost", {"length_in_days": 10, "complexity": "medium", "extra_expenses": true}]], "wall_s": 3.6579192909994163, "prompt_tokens": 344, "completion_tokens": 80, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_litigation_cost"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_31", "actual_calls": [["lawsuit.fetch_details", {"company_name": "Pacific Gas and Electric", "lawsuit_id": 123}]], "wall_s": 2.4277350830016076, "prompt_tokens": 389, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

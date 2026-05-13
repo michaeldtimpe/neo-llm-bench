@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_81", "actual_calls": [["geometry_rectangle.calculate", {"width": 50, "length": 30}], ["geometry_square.calculate", {"side": 5}], ["geometry_circle.calculate", {"radius": 3}]], "wall_s": 4.450100750000274, "prompt_tokens": 522, "completion_tokens": 89, "error": "", "passed": false, "reason": "call_geometry_rectangle.calculate_unmatched_in_gt"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_67-31-0", "actual_calls": [["obtener_cotizacion_de_creditos", {"monto_del_credito": 1000000, "plazo_del_credito_mensual": 12, "producto": "auto", "a\u00f1o_vehiculo": 2024, "enganche": 0.2}]], "wall_s": 5.030947583996749, "prompt_tokens": 660, "completion_tokens": 89, "error": "", "passed": true, "reason": "matched_gt_entry"}

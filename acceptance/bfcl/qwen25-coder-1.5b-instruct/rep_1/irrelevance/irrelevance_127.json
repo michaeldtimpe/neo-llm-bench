@@ -1,0 +1,1 @@
+{"id": "irrelevance_127", "actual_calls": [["sentiment_analysis.twitter", {"topic": "iPhone", "language": "English", "num_tweets": 100}]], "wall_s": 3.5157690420019208, "prompt_tokens": 320, "completion_tokens": 78, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: sentiment_analysis.twitter"}

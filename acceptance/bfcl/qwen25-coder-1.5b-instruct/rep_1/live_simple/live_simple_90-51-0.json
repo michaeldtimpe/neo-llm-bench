@@ -1,0 +1,1 @@
+{"id": "live_simple_90-51-0", "actual_calls": [["temperature", {"location": "Paris, France", "units": "Celsius", "time": null}]], "wall_s": 2.3697910830014735, "prompt_tokens": 392, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

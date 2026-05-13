@@ -1,0 +1,1 @@
+{"id": "parallel_106", "actual_calls": [["fetch_DNA_sequence", {"DNA_id": "XYZ123", "format": "fasta"}], ["fetch_DNA_sequence", {"DNA_id": "XYZ123", "format": "genbank", "upstream": 500}]], "wall_s": 3.0647582089950447, "prompt_tokens": 389, "completion_tokens": 74, "error": "", "passed": false, "reason": "emitted_2_calls_expected_3"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_39-16-0", "actual_calls": [["fetch_weather_data", {"latitude": 37.8651, "longitude": -119.5383, "units": "metric", "language": "en"}]], "wall_s": 2.9521244159986963, "prompt_tokens": 476, "completion_tokens": 52, "error": "", "passed": true, "reason": "matched_gt_entry"}

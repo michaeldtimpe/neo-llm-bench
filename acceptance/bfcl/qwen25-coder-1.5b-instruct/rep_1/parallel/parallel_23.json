@@ -1,0 +1,1 @@
+{"id": "parallel_23", "actual_calls": [["alimony_calculator.ca.calculate", {"payor_income": 10000, "recipient_income": 3000, "duration": 30}]], "wall_s": 2.8742580839971197, "prompt_tokens": 394, "completion_tokens": 58, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

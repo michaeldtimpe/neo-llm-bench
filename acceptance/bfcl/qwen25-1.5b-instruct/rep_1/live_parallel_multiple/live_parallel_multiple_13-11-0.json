@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_13-11-0", "actual_calls": [["math_gcd", {"a": 36, "b": 48}], ["estimate_derivative", {"function": "lambda x: x ** 2", "x": 5}]], "wall_s": 3.5467762089974713, "prompt_tokens": 563, "completion_tokens": 61, "error": "", "passed": false, "reason": "call_math_gcd_unmatched_in_gt"}

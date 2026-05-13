@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_133", "actual_calls": [["music_generator.generate_scale_progression", {"key": "D", "tempo": 120, "duration": 2, "scale_type": "minor"}], ["math.hcf", {"number1": 456, "number2": 123}]], "wall_s": 5.269321250001667, "prompt_tokens": 591, "completion_tokens": 79, "error": "", "passed": true, "reason": "all_calls_matched"}

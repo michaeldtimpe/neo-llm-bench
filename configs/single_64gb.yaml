@@ -1,0 +1,38 @@
+# Placeholder config in deluxe schema shape — exists so the lifted test_config.py
+# tests load a real YAML. Will be supplanted by per-model llama.cpp configs in Phase 2c
+# when config.py is extended (n_gpu_layers, n_ctx, n_threads, cache_type_k/v, etc.).
+omlx_base_url: "http://127.0.0.1:8080"
+profile:
+  name: "Single-model 8 GB (placeholder)"
+  description: "Schema placeholder — replaced by per-model configs in Phase 2c"
+  memory_budget_gb: 8
+  peak_model_gb: 2.0
+models:
+  monolith: "Qwen2.5-1.5B-Instruct-Q8_0"
+roles:
+  monolith:
+    model_key: monolith
+    num_ctx: 8192
+    max_steps: 30
+    max_tokens_per_turn: 2048
+    temperature: 0.0
+    tools:
+      - read_file
+      - list_dir
+      - glob
+      - grep
+      - bm25_search
+      - find_symbol
+      - write_file
+      - edit_file
+      - git_diff
+      - git_log
+      - git_show
+      - bash
+task_types:
+  review:    {description: "Code review", pipeline: [monolith]}
+  implement: {description: "Implement feature", pipeline: [monolith]}
+  bugfix:    {description: "Fix bug", pipeline: [monolith]}
+  document:  {description: "Add docs", pipeline: [monolith]}
+  summarize: {description: "Summarize repo", pipeline: [monolith]}
+  manage:    {description: "Manage tasks", pipeline: [monolith]}

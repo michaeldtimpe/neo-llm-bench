@@ -1,0 +1,1 @@
+{"id": "simple_python_72", "actual_calls": [["calculate_fitness", {"trait_values": [0.8, 0.7], "trait_contributions": [0.4, 0.6]}]], "wall_s": 3.526303040998755, "prompt_tokens": 381, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

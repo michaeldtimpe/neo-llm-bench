@@ -1,0 +1,1 @@
+{"id": "parallel_89", "actual_calls": [["get_directions", {"start_location": "San Francisco, CA", "end_location": "Palo Alto, CA", "route_type": "fastest"}]], "wall_s": 2.7688808329985477, "prompt_tokens": 373, "completion_tokens": 55, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

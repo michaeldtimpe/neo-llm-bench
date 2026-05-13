@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_43-2-31", "actual_calls": [["get_current_weather", {"location": "sister.com"}]], "wall_s": 1.1238865420018556, "prompt_tokens": 375, "completion_tokens": 25, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_current_weather"}

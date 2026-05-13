@@ -1,0 +1,1 @@
+{"id": "simple_python_121", "actual_calls": [["calc_binomial_prob", {"num_trials": 100, "num_success": 60, "prob_success": 0.5}]], "wall_s": 3.4393122919937014, "prompt_tokens": 330, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

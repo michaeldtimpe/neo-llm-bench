@@ -1,0 +1,1 @@
+{"id": "irrelevance_119", "actual_calls": [["sentiment_analysis", {"text": "A journey of a thousand miles begins with a single step.", "model": "simple_narrative", "language": "English"}]], "wall_s": 2.240493792000052, "prompt_tokens": 307, "completion_tokens": 46, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: sentiment_analysis"}

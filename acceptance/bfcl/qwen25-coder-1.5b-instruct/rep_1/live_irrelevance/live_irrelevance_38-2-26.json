@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_38-2-26", "actual_calls": [["get_current_weather", {"location": "Mount Vernon, VA", "unit": "celsius"}]], "wall_s": 2.9794074169985834, "prompt_tokens": 342, "completion_tokens": 75, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_current_weather"}

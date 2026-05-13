@@ -1,0 +1,1 @@
+{"id": "live_relevance_8-8-0", "actual_calls": [["Events_3_FindEvents", {"event_type": "Theater", "city": "Cape Town, South Africa", "date": "2023-05-06"}]], "wall_s": 4.04975629200635, "prompt_tokens": 862, "completion_tokens": 51, "error": "", "passed": true, "reason": "correctly_called_a_tool"}

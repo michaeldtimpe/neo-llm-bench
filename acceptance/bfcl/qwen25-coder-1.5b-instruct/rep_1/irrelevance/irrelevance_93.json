@@ -1,0 +1,1 @@
+{"id": "irrelevance_93", "actual_calls": [["law_firm.get_impactful_cases", {"firm_name": "XYZ Law Firm", "year": 2023, "top_n": 5}]], "wall_s": 2.089761458002613, "prompt_tokens": 322, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: law_firm.get_impactful_cases"}

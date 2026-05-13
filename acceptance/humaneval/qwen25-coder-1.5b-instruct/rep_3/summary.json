@@ -1,0 +1,10 @@
+{
+  "model": "qwen25-coder-1.5b-instruct",
+  "rep": 3,
+  "n_problems": 164,
+  "n_passed": 100,
+  "n_extract_ok": 164,
+  "wall_s": 1116.6771717859447,
+  "completion_tokens": 27643,
+  "pass_at_1": 0.6097560975609756
+}

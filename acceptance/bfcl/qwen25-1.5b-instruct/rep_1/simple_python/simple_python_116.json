@@ -1,0 +1,1 @@
+{"id": "simple_python_116", "actual_calls": [["probabilities.calculate_single", {"total_outcomes": 52, "event_outcomes": 4, "round": 2}]], "wall_s": 1.962692708002578, "prompt_tokens": 333, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

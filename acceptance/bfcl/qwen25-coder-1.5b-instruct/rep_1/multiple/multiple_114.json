@@ -1,0 +1,1 @@
+{"id": "multiple_114", "actual_calls": [["prediction.evolution", {"species": "Homo Sapiens", "years": 50, "model": "Darwin"}]], "wall_s": 3.174251374999585, "prompt_tokens": 617, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

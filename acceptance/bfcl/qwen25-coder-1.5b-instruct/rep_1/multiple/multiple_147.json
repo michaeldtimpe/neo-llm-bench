@@ -1,0 +1,1 @@
+{"id": "multiple_147", "actual_calls": [["map_service.get_directions", {"start": "New York", "end": "Los Angeles", "avoid": ["highways", "tolls"]}]], "wall_s": 2.9319228749955073, "prompt_tokens": 616, "completion_tokens": 53, "error": "", "passed": true, "reason": "matched_gt_entry"}

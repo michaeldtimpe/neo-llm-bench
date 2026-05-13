@@ -1,0 +1,1 @@
+{"id": "live_relevance_9-9-0", "actual_calls": [["Movies_1_FindMovies", {"location": "Santa Rosa, CA", "theater_name": "3rd Street Cinema", "show_type": "regular"}]], "wall_s": 4.66032974999689, "prompt_tokens": 1043, "completion_tokens": 55, "error": "", "passed": true, "reason": "correctly_called_a_tool"}
