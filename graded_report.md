@@ -18,9 +18,9 @@ reported here.
 
 | model | BFCL deep (n=1106) | HumanEval pass@1 (t=0.0) | HE pass@3 (any temp) | MBPP pass@1 (t=0.0, n=427) |
 |---|---|---|---|---|
-| qwen25-1.5b-instruct | **77.0% (853/1106) ±2.5pp** | 58.5% (96/164) | 64.0% (105/164) | 62.5% (267/427) ±4.6pp |
-| granite33-2b-instruct | 69.4% (768/1106) ±2.7pp | 53.0% (87/164) | 64.6% (106/164) | 59.7% (255/427) ±4.6pp |
-| qwen25-coder-1.5b-instruct | 58.6% (649/1106) ±2.9pp | **69.5% (114/164)** | **78.0% (128/164)** | **64.2% (274/427) ±4.5pp** |
+| qwen25-1.5b-instruct | **77.0% (853/1106) ±2.5pp** | 58.5% (96/164) | 64.0% (105/164) | 62.4% (267/427) ±4.6pp |
+| granite33-2b-instruct | 69.4% (768/1106) ±2.7pp | 53.0% (87/164) | 64.6% (106/164) | 59.6% (255/427) ±4.6pp |
+| qwen25-coder-1.5b-instruct | 58.6% (649/1106) ±2.9pp | **69.5% (114/164)** | **78.0% (128/164)** | **64.0% (274/427) ±4.5pp** |
 
 The three are in a non-dominated triangle: qwen25-1.5b wins tool-use,
 qwen25-coder wins coding, granite33 wins irrelevance discipline. The
@@ -109,9 +109,9 @@ def anchor + main-guard drop) before execution.
 
 | model | pass@1 | passed | 95% Wilson CI | wall | comp tokens |
 |---|---|---|---|---|---|
-| qwen25-coder-1.5b-instruct | **64.2%** | 274/427 | ±4.5pp | 4:01 | 18,985 |
-| qwen25-1.5b-instruct | 62.5% | 267/427 | ±4.6pp | 4:48 | 25,150 |
-| granite33-2b-instruct | 59.7% | 255/427 | ±4.6pp | 6:44 | 33,275 |
+| qwen25-coder-1.5b-instruct | **64.0%** | 274/427 | ±4.5pp | 4:01 | 18,985 |
+| qwen25-1.5b-instruct | 62.4% | 267/427 | ±4.6pp | 4:48 | 25,150 |
+| granite33-2b-instruct | 59.6% | 255/427 | ±4.6pp | 6:44 | 33,275 |
 
 ### MBPP head-to-head matrix (PPP / FPF / etc.)
 

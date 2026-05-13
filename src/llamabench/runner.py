@@ -60,6 +60,9 @@ class RunRequest:
     # Override the model's configured sampling temperature for this run.
     # Used by the multi-temperature HumanEval sweep — leaves the YAML alone.
     temperature_override: float | None = None
+    # Path of the loaded BenchProfile yaml — surfaced in metadata.json so
+    # cross-run comparisons can pin which profile was used. None if not set.
+    profile_path: Path | None = None
 
 
 @dataclass
@@ -104,6 +107,7 @@ def run(req: RunRequest, profile: BenchProfile) -> RunResult:
                 meta = build_run_metadata(
                     model=req.model, benchmark=bench, rep=req.rep,
                     profile=profile, server_bin=bin_path,
+                    profile_path=req.profile_path,
                     mode=({"bfcl_mode": req.bfcl_mode,
                            "bfcl_run_mode": req.bfcl_run_mode}
                           if bench == "bfcl" else None),
