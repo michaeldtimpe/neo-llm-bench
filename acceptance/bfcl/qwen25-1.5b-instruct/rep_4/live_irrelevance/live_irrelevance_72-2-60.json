@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_72-2-60", "actual_calls": [["get_current_weather", {"location": "San Francisco, CA", "unit": "fahrenheit"}]], "wall_s": 1.034155459026806, "prompt_tokens": 819, "completion_tokens": 83, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: get_current_weather"}

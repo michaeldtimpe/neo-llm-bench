@@ -1,0 +1,1 @@
+{"id": "parallel_108", "actual_calls": [["biology.get_cell_info", {"cell_type": "neuron", "detailed": true}], ["biology.get_cell_info", {"cell_type": "muscle", "detailed": false}]], "wall_s": 2.4924089580308646, "prompt_tokens": 789, "completion_tokens": 204, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

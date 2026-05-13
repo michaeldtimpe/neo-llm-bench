@@ -1,0 +1,1 @@
+{"id": "live_simple_24-5-2", "actual_calls": [["ChaFod", {"TheFod": "BURGER"}]], "wall_s": 0.4477349169901572, "prompt_tokens": 665, "completion_tokens": 36, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "parallel_67", "actual_calls": [["geometry.calculate_area_circle", {"radius": 5, "unit": "m"}], ["geometry.calculate_area_circle", {"radius": 10, "unit": "m"}]], "wall_s": 1.6272830829839222, "prompt_tokens": 791, "completion_tokens": 127, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

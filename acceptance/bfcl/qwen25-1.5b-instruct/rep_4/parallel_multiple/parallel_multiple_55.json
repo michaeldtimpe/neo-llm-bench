@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_55", "actual_calls": [["recipe_search", {"ingredient": "spaghetti", "dietary_requirements": ["gluten_free"], "isHomemade": true}]], "wall_s": 1.586670459015295, "prompt_tokens": 1875, "completion_tokens": 124, "error": "", "n_turns": 3, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": false, "reason": "emitted_1_calls_expected_3"}

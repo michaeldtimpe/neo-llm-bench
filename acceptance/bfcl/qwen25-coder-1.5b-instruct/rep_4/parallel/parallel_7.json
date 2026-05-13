@@ -1,0 +1,1 @@
+{"id": "parallel_7", "actual_calls": [["math.factorial", {"number": 510}], ["math.factorial", {"number": 15}], ["math.factorial", {"number": 5}]], "wall_s": 3.3141167500289157, "prompt_tokens": 1377, "completion_tokens": 273, "error": "", "n_turns": 3, "n_tool_calls_total": 9, "n_schema_rejects": 0, "passed": false, "reason": "call_math.factorial_unmatched_in_gt"}

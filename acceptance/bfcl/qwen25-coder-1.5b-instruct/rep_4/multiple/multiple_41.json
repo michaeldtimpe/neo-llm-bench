@@ -1,0 +1,1 @@
+{"id": "multiple_41", "actual_calls": [["magnetic_field.calculate", {"I": 10, "r": 0.01}]], "wall_s": 1.621344915998634, "prompt_tokens": 1958, "completion_tokens": 126, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

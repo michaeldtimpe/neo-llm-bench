@@ -1,0 +1,1 @@
+{"id": "irrelevance_120", "actual_calls": [["caffeine_effect", {"caffeine_content": 200, "drinking_frequency": "daily", "drinking_duration": 100}]], "wall_s": 1.462588666996453, "prompt_tokens": 1345, "completion_tokens": 162, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: caffeine_effect"}

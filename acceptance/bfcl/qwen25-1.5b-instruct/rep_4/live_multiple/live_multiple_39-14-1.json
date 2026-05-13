@@ -1,0 +1,1 @@
+{"id": "live_multiple_39-14-1", "actual_calls": [["review_of_interviewer", {"interviewer_name": "Charlie Brown", "include_comments": true}]], "wall_s": 0.7919979590224102, "prompt_tokens": 1064, "completion_tokens": 65, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

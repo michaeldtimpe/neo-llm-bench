@@ -1,0 +1,1 @@
+{"id": "simple_python_32", "actual_calls": [["calculate_final_speed", {"initial_velocity": 0, "height": 100}]], "wall_s": 0.9629190000123344, "prompt_tokens": 699, "completion_tokens": 56, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

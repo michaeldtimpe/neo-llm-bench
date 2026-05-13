@@ -1,0 +1,1 @@
+{"id": "simple_python_98", "actual_calls": [["calculate_clock_angle", {"hours": 18, "minutes": 30, "round_to": 2}]], "wall_s": 1.8515763750183396, "prompt_tokens": 1299, "completion_tokens": 141, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "call_calculate_clock_angle_did_not_match_any_gt"}

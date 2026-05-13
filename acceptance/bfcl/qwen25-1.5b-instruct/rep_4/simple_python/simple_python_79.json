@@ -1,0 +1,1 @@
+{"id": "simple_python_79", "actual_calls": [["create_histogram", {"data": [85, 90, 88, 92, 86, 89, 91], "bins": 5}]], "wall_s": 0.7885857499786653, "prompt_tokens": 797, "completion_tokens": 59, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

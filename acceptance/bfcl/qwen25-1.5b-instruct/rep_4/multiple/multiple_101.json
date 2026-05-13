@@ -1,0 +1,1 @@
+{"id": "multiple_101", "actual_calls": [["math.gcd", {"num1": 12, "num2": 18}]], "wall_s": 0.7459789160056971, "prompt_tokens": 954, "completion_tokens": 52, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

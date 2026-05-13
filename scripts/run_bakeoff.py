@@ -122,6 +122,10 @@ def main() -> int:
     p.add_argument("--bfcl-mode", choices=("auto", "structured", "inject"), default="auto",
                    help="auto: structured-tools first, prompt-inject on 500 (default). "
                         "structured: only structured. inject: always prompt-inject.")
+    p.add_argument("--bfcl-run-mode", choices=("raw", "agent"), default="raw",
+                   help="raw: single-pass capability measurement (default). "
+                        "agent: closed-loop run_agent dispatch with stub tools "
+                        "(different benchmark — measures orchestration + recovery).")
     p.add_argument("--temperature", type=float, default=None,
                    help="Override the per-model sampling.temperature for this run. "
                         "Useful for the multi-temp HumanEval sweep without touching "
@@ -276,6 +280,7 @@ def main() -> int:
             rep=args.rep, limit=limit,
             bfcl_categories=tuple(args.bfcl_categories) if args.bfcl_categories else None,
             bfcl_mode=args.bfcl_mode,
+            bfcl_run_mode=args.bfcl_run_mode,
             temperature_override=args.temperature,
         )
 

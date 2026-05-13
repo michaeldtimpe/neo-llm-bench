@@ -1,0 +1,1 @@
+{"id": "parallel_49", "actual_calls": [["player_status.check", {"team": "RocketLeague", "player_id": 3142}]], "wall_s": 2.354619416000787, "prompt_tokens": 1983, "completion_tokens": 190, "error": "", "n_turns": 4, "n_tool_calls_total": 4, "n_schema_rejects": 1, "passed": false, "reason": "emitted_1_calls_expected_3"}

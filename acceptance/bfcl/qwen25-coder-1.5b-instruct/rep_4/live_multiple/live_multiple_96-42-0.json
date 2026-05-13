@@ -1,0 +1,1 @@
+{"id": "live_multiple_96-42-0", "actual_calls": [["list_files", {"file_type": "data", "include_hidden": true, "recursive": true}]], "wall_s": 0.9635621249908581, "prompt_tokens": 5767, "completion_tokens": 129, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "call_list_files_did_not_match_any_gt"}

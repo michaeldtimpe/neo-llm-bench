@@ -1,0 +1,1 @@
+{"id": "parallel_68", "actual_calls": [["calculate_area", {"base": 12, "height": 15, "unit": "m"}], ["calculate_area", {"base": 18, "height": 24, "unit": "m"}]], "wall_s": 2.7854333329596557, "prompt_tokens": 2939, "completion_tokens": 225, "error": "", "n_turns": 5, "n_tool_calls_total": 5, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

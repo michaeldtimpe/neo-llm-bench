@@ -1,0 +1,1 @@
+{"id": "multiple_60", "actual_calls": [["humidity_temperature_forecast", {"location": "New York City", "days": 7}]], "wall_s": 1.2336800409830175, "prompt_tokens": 1211, "completion_tokens": 67, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

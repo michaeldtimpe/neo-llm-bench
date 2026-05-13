@@ -1,0 +1,1 @@
+{"id": "live_relevance_11-11-0", "actual_calls": [["Services_1_FindProvider", {"city": "Antioch", "is_unisex": "True"}]], "wall_s": 1.7226377080078237, "prompt_tokens": 2159, "completion_tokens": 137, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "correctly_called_a_tool"}

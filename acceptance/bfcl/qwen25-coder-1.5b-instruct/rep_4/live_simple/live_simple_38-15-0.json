@@ -1,0 +1,1 @@
+{"id": "live_simple_38-15-0", "actual_calls": [["get_current_weather", {"url": "https://api.open-meteo.com/v1/forecast", "location": "Mariposa, CA", "unit": "fahrenheit"}]], "wall_s": 2.1894908329704776, "prompt_tokens": 1755, "completion_tokens": 258, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

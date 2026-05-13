@@ -1,0 +1,1 @@
+{"id": "live_multiple_52-21-1", "actual_calls": [["inventory_management", {"product_id": "SK123", "color": "Red", "size": []}]], "wall_s": 3.1938371250289492, "prompt_tokens": 16637, "completion_tokens": 525, "error": "", "n_turns": 12, "n_tool_calls_total": 12, "n_schema_rejects": 5, "passed": true, "reason": "matched_gt_entry"}

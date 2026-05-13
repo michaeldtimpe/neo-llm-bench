@@ -1,0 +1,1 @@
+{"id": "live_simple_66-30-0", "actual_calls": [["inventory.restock_check", {"item_ids": [102, 103], "threshold": 20}]], "wall_s": 1.0205335830105469, "prompt_tokens": 835, "completion_tokens": 84, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

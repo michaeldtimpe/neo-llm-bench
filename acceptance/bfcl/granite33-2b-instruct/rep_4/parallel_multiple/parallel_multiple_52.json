@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_52", "actual_calls": [["chess.play", {"moves": ["e4", "e5"]}]], "wall_s": 1.4826108330162242, "prompt_tokens": 946, "completion_tokens": 86, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 1, "passed": false, "reason": "emitted_1_calls_expected_2"}

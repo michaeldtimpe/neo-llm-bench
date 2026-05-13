@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_5", "actual_calls": [["gcd", {"num1": 96, "num2": 128}], ["lcm", {"num1": 15, "num2": 25}]], "wall_s": 2.838401957997121, "prompt_tokens": 1956, "completion_tokens": 225, "error": "", "n_turns": 3, "n_tool_calls_total": 6, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

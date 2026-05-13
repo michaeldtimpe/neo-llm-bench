@@ -1,0 +1,1 @@
+{"id": "irrelevance_83", "actual_calls": [["calculate_mortgage_payment", {"loan_amount": 100000, "annual_rate": 5, "years": 30}]], "wall_s": 1.5249735419638455, "prompt_tokens": 1291, "completion_tokens": 162, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: calculate_mortgage_payment"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_26", "actual_calls": [["bank.get_transaction_history", {"account": "00125648", "days": 7}], ["bank.calculate_balance", {"account": "00125648"}]], "wall_s": 3.1558554590446874, "prompt_tokens": 1275, "completion_tokens": 196, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

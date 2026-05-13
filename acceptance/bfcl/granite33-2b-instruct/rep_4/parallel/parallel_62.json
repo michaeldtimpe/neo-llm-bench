@@ -1,0 +1,1 @@
+{"id": "parallel_62", "actual_calls": [["algebra.quadratic_roots", {"a": 3, "b": 4, "c": 2}], ["algebra.quadratic_roots", {"a": 5, "b": -7, "c": 3}]], "wall_s": 2.4070969999884255, "prompt_tokens": 931, "completion_tokens": 151, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

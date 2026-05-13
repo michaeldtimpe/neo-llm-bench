@@ -1,0 +1,1 @@
+{"id": "multiple_39", "actual_calls": [["ride_hailing.get_rides", {"source": "New York", "destination": "Philadelphia", "max_cost": 50}]], "wall_s": 1.1730632089893334, "prompt_tokens": 1117, "completion_tokens": 66, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

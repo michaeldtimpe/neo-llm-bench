@@ -1,0 +1,1 @@
+{"id": "simple_python_123", "actual_calls": [["hypothesis_testing.two_sample_t_test", {"group1": [12.4, 15.6, 11.2, 18.9], "group2": [10.5, 9.8, 15.2, 13.8], "alpha": 0.05}]], "wall_s": 2.4446458329912275, "prompt_tokens": 1041, "completion_tokens": 143, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

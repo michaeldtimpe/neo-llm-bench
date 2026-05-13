@@ -1,0 +1,1 @@
+{"id": "live_multiple_40-15-0", "actual_calls": [["oven_preheat", {"duration": 36, "temperature": 201}]], "wall_s": 0.7268070839927532, "prompt_tokens": 1725, "completion_tokens": 120, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

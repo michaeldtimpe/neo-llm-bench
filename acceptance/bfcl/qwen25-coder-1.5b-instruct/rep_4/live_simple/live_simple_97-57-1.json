@@ -1,0 +1,1 @@
+{"id": "live_simple_97-57-1", "actual_calls": [["get_current_weather", {"location": "El Gastor, Andalusia", "unit": "celsius"}]], "wall_s": 0.9103972919983789, "prompt_tokens": 1338, "completion_tokens": 132, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

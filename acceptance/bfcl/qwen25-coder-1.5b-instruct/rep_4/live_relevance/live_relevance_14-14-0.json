@@ -1,0 +1,1 @@
+{"id": "live_relevance_14-14-0", "actual_calls": [["HNA_NEWS.search", {"keyword": "\uc911\uad6d", "category": "Politics", "language": "EN"}]], "wall_s": 0.8548132079886273, "prompt_tokens": 4383, "completion_tokens": 141, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "correctly_called_a_tool"}

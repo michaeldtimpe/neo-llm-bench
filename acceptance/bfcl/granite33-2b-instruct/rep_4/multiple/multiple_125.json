@@ -1,0 +1,1 @@
+{"id": "multiple_125", "actual_calls": [["run_two_sample_ttest", {"group1": [3, 4, 5, 6, 4], "group2": [7, 8, 9, 8, 7], "equal_variance": true}]], "wall_s": 2.2795083330129273, "prompt_tokens": 1633, "completion_tokens": 135, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

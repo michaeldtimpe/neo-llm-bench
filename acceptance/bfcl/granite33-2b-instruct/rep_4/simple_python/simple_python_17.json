@@ -1,0 +1,1 @@
+{"id": "simple_python_17", "actual_calls": [["get_prime_factors", {"number": 450, "formatted": true}]], "wall_s": 0.9192219579708762, "prompt_tokens": 595, "completion_tokens": 53, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

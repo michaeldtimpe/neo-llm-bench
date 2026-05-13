@@ -1,0 +1,1 @@
+{"id": "simple_python_95", "actual_calls": [["calc_area_triangle", {"base": 5, "height": 3}]], "wall_s": 1.4714948330074549, "prompt_tokens": 1191, "completion_tokens": 111, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

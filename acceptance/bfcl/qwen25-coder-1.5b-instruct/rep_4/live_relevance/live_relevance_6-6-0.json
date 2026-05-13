@@ -1,0 +1,1 @@
+{"id": "live_relevance_6-6-0", "actual_calls": [["GET_COMPLAINT_STATE", {"userMobileNumber": "1234567890", "complaintTrackingId": "your_complaint_tracking_id"}]], "wall_s": 1.2696610419661738, "prompt_tokens": 3503, "completion_tokens": 205, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "correctly_called_a_tool"}

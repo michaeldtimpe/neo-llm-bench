@@ -1,0 +1,1 @@
+{"id": "live_simple_69-33-0", "actual_calls": [["analysis_api.AnalysisApi.retrieve_analysis", {"project": "SUPERFANCY", "component": "AB1010CD", "vulnerability": "ef903ac-893-f00"}]], "wall_s": 1.2304481670144014, "prompt_tokens": 859, "completion_tokens": 106, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

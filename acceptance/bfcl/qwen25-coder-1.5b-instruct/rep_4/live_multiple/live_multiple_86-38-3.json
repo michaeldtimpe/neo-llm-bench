@@ -1,0 +1,1 @@
+{"id": "live_multiple_86-38-3", "actual_calls": [["add_mtnards_server", {"nickname": "RSD1", "host": "http://rds.com", "api_key": "1234123"}]], "wall_s": 1.0527058329898864, "prompt_tokens": 3714, "completion_tokens": 177, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

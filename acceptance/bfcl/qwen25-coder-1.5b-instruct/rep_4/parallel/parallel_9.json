@@ -1,0 +1,1 @@
+{"id": "parallel_9", "actual_calls": [["find_movie_showing", {"location": "San Diego, CA", "movie": ["Tenet", "No Time To Die"], "time": ["5 pm", "7:30 pm"]}]], "wall_s": 2.372230291017331, "prompt_tokens": 1476, "completion_tokens": 189, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "emitted_1_calls_expected_2"}

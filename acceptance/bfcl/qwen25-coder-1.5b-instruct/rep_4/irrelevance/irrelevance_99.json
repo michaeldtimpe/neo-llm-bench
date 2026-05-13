@@ -1,0 +1,1 @@
+{"id": "irrelevance_99", "actual_calls": [["lawsuit_search", {"location": "Texas", "subject": "traffic", "year": 2024}]], "wall_s": 1.2513309170026332, "prompt_tokens": 1256, "completion_tokens": 141, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: lawsuit_search"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_94-55-0", "actual_calls": [["play_song", {"artist_name": "K\u00e4\u00e4rij\u00e4", "song_name": "Cha Cha Cha"}]], "wall_s": 0.6458947919891216, "prompt_tokens": 690, "completion_tokens": 49, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

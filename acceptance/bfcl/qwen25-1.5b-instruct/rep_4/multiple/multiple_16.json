@@ -1,0 +1,1 @@
+{"id": "multiple_16", "actual_calls": [["population_genetics.calculate_ne", {"species": "tiger", "generations": 100, "probability": 0.95}]], "wall_s": 1.2803011659998447, "prompt_tokens": 1386, "completion_tokens": 97, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

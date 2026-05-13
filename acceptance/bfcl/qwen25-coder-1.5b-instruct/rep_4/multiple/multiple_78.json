@@ -1,0 +1,1 @@
+{"id": "multiple_78", "actual_calls": [["museum_info", {"museum": "Natural History Museum", "city": "London", "features": ["timings", "exhibitions", "accessibility"]}]], "wall_s": 2.158187708002515, "prompt_tokens": 1973, "completion_tokens": 171, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

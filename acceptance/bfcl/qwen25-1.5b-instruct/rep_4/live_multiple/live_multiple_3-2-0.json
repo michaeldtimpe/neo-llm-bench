@@ -1,0 +1,1 @@
+{"id": "live_multiple_3-2-0", "actual_calls": [["api.weather", {"loc": "Ha Noi, Vietnam"}]], "wall_s": 0.7458412920241244, "prompt_tokens": 1014, "completion_tokens": 55, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

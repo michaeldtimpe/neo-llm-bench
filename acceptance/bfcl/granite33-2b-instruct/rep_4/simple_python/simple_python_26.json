@@ -1,0 +1,1 @@
+{"id": "simple_python_26", "actual_calls": [["calculate_velocity", {"distance": 50, "duration": 2}]], "wall_s": 0.7101259999908507, "prompt_tokens": 713, "completion_tokens": 40, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

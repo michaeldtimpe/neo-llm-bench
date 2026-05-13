@@ -1,0 +1,1 @@
+{"id": "simple_python_39", "actual_calls": [["calculate_electric_field", {"charge": 2, "distance": 3, "permitivity": 8.854e-12}]], "wall_s": 2.1098339580348693, "prompt_tokens": 1377, "completion_tokens": 162, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_9-3-5", "actual_calls": [["get_current_weather", {"location": "Hyderabad", "unit": "fahrenheit"}]], "wall_s": 0.6331857499899343, "prompt_tokens": 751, "completion_tokens": 52, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

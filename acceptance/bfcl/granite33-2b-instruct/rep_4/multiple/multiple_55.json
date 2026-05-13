@@ -1,0 +1,1 @@
+{"id": "multiple_55", "actual_calls": [["stock_forecast", {"company": "Google", "days": 3}]], "wall_s": 1.7016993750003166, "prompt_tokens": 935, "completion_tokens": 102, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

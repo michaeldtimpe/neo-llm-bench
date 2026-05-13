@@ -1,0 +1,1 @@
+{"id": "live_multiple_37-13-0", "actual_calls": [["todo_delete", {"content": "go for shopping at 9 pm"}]], "wall_s": 0.6578043749905191, "prompt_tokens": 2100, "completion_tokens": 105, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

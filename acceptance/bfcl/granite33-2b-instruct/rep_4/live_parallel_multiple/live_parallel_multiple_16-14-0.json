@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_16-14-0", "actual_calls": [["get_area_of_square", {"size": 5}], ["get_current_weather", {"location": "Queenstown, Singapore"}]], "wall_s": 1.3054353750194423, "prompt_tokens": 1033, "completion_tokens": 113, "error": "", "n_turns": 2, "n_tool_calls_total": 2, "n_schema_rejects": 0, "passed": true, "reason": "all_calls_matched"}

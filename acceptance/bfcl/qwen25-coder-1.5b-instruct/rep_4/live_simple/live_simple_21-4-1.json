@@ -1,0 +1,1 @@
+{"id": "live_simple_21-4-1", "actual_calls": [["change_food", {"food_item": "chicken dish", "modification_request": "extra spicy"}]], "wall_s": 1.0562595410156064, "prompt_tokens": 1315, "completion_tokens": 123, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

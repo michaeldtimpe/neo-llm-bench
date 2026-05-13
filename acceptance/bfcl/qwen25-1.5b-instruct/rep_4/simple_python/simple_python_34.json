@@ -1,0 +1,1 @@
+{"id": "simple_python_34", "actual_calls": [["travel_itinerary_generator", {"destination": "Tokyo", "days": 7, "daily_budget": 100, "exploration_type": "nature"}]], "wall_s": 2.4302020000177436, "prompt_tokens": 866, "completion_tokens": 200, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

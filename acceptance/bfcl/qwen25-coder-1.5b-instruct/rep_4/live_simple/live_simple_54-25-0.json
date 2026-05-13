@@ -1,0 +1,1 @@
+{"id": "live_simple_54-25-0", "actual_calls": [["todo", {"type": "string", "content": "delete"}]], "wall_s": 0.9281373330159113, "prompt_tokens": 1191, "completion_tokens": 105, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "call_todo_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "multiple_128", "actual_calls": [["calculate_return_on_equity", {"net_income": 2000000, "shareholder_equity": 10000000, "dividends_paid": 200000}]], "wall_s": 2.764957792009227, "prompt_tokens": 2945, "completion_tokens": 213, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

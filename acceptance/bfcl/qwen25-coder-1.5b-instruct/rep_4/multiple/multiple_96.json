@@ -1,0 +1,1 @@
+{"id": "multiple_96", "actual_calls": [["solve_quadratic_equation", {"a": 2, "b": 6, "c": 5}]], "wall_s": 1.7550853330176324, "prompt_tokens": 2208, "completion_tokens": 138, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

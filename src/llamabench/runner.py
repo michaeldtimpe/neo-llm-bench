@@ -52,6 +52,11 @@ class RunRequest:
     limit: int | None = None
     bfcl_categories: tuple[str, ...] | None = None  # None = use SUPPORTED_CATEGORIES
     bfcl_mode: str = "auto"  # auto | structured | inject — see bfcl/adapter.run_problem_raw
+    # Orthogonal to bfcl_mode: "raw" = single-pass capability measurement
+    # (the prior default); "agent" = closed-loop run_agent dispatch with
+    # stub-tool feedback. Different benchmarks; see graded_report.md
+    # framing note.
+    bfcl_run_mode: str = "raw"
     # Override the model's configured sampling temperature for this run.
     # Used by the multi-temperature HumanEval sweep — leaves the YAML alone.
     temperature_override: float | None = None
@@ -99,7 +104,9 @@ def run(req: RunRequest, profile: BenchProfile) -> RunResult:
                 meta = build_run_metadata(
                     model=req.model, benchmark=bench, rep=req.rep,
                     profile=profile, server_bin=bin_path,
-                    mode={"bfcl_mode": req.bfcl_mode} if bench == "bfcl" else None,
+                    mode=({"bfcl_mode": req.bfcl_mode,
+                           "bfcl_run_mode": req.bfcl_run_mode}
+                          if bench == "bfcl" else None),
                     temperature_override=req.temperature_override,
                 )
                 write_run_metadata(step_dir, meta)
@@ -129,54 +136,93 @@ def run(req: RunRequest, profile: BenchProfile) -> RunResult:
 
 
 def _run_bfcl(backend: Backend, req: RunRequest) -> dict:
-    """Run BFCL categories in raw mode against `backend`. Stores per-problem
-    JSON under <output>/bfcl/<model>/rep_<n>/<category>/<id>.json plus summary.json.
+    """Run BFCL categories against `backend`. Stores per-problem JSON
+    under <output>/bfcl/<model>/rep_<n>/<category>/<id>.json + summary.json.
+
+    Two orthogonal axes:
+    - `bfcl_mode` ("auto"/"structured"/"inject"): how raw mode delivers
+      tool specs to the model. Per-model `model.bfcl_mode` overrides.
+    - `bfcl_run_mode` ("raw"/"agent"): single-pass vs closed-loop. Agent
+      mode uses the existing run_agent loop with stub executors.
     """
     from benchmarks.bfcl.adapter import (
-        SUPPORTED_CATEGORIES, load_problems, run_problem_raw,
+        SUPPORTED_CATEGORIES, load_problems, run_problem_agent, run_problem_raw,
     )
 
     out_dir = req.output_dir / "bfcl" / req.model.id / f"rep_{req.rep}"
     out_dir.mkdir(parents=True, exist_ok=True)
     cats = req.bfcl_categories or SUPPORTED_CATEGORIES
 
-    # Per-model override beats the run-level mode. Models whose chat
-    # template lacks a tools branch (deepseek-coder-1.3b, smollm2,
-    # phi-1.5) must use "inject" or tools are silently dropped.
     effective_mode = req.model.bfcl_mode or req.bfcl_mode
+    run_mode = req.bfcl_run_mode or "raw"
 
-    summary: dict[str, dict] = {
-        "model": req.model.id, "rep": req.rep, "mode": effective_mode, "categories": {},
+    # Agent mode builds one RoleConfig from the per-model sampling/server
+    # so temperature + n_ctx match raw mode. max_steps hardcoded so the
+    # bake-off comparison isn't confounded by per-model agent tuning.
+    role_cfg = None
+    if run_mode == "agent":
+        from llamabench.config import RoleConfig
+        temp_for_role = (req.temperature_override
+                         if req.temperature_override is not None
+                         else req.model.sampling.temperature)
+        role_cfg = RoleConfig(
+            model_key=req.model.id,
+            num_ctx=req.model.server.n_ctx,
+            max_steps=12,
+            max_tokens_per_turn=req.model.sampling.max_tokens,
+            temperature=temp_for_role,
+        )
+
+    summary: dict[str, Any] = {
+        "model": req.model.id, "rep": req.rep,
+        "mode": effective_mode, "run_mode": run_mode,
+        "categories": {},
     }
     for cat in cats:
         cat_dir = out_dir / cat
         cat_dir.mkdir(exist_ok=True)
         problems = load_problems(cat, limit=req.limit)
-        cat_summary = {
+        cat_summary: dict[str, Any] = {
             "n_problems": len(problems), "n_with_calls": 0,
             "n_errors": 0, "wall_s": 0.0, "completion_tokens": 0,
         }
+        if run_mode == "agent":
+            cat_summary["n_turns_total"] = 0
+            cat_summary["n_tool_calls_total"] = 0
+            cat_summary["n_schema_rejects_total"] = 0
         temp = (req.temperature_override
                 if req.temperature_override is not None
                 else req.model.sampling.temperature)
         for p in problems:
-            r = run_problem_raw(
-                backend, p,
-                max_tokens=req.model.sampling.max_tokens,
-                temperature=temp,
-                mode=effective_mode,
-            )
-            (cat_dir / f"{r.problem_id}.json").write_text(json.dumps({
+            if run_mode == "agent":
+                r = run_problem_agent(backend, role_cfg, p)
+            else:
+                r = run_problem_raw(
+                    backend, p,
+                    max_tokens=req.model.sampling.max_tokens,
+                    temperature=temp,
+                    mode=effective_mode,
+                )
+            row: dict[str, Any] = {
                 "id": r.problem_id, "actual_calls": r.actual_calls,
                 "wall_s": r.wall_s, "prompt_tokens": r.prompt_tokens,
                 "completion_tokens": r.completion_tokens, "error": r.error,
-            }))
+            }
+            if run_mode == "agent":
+                row["n_turns"] = r.n_turns
+                row["n_tool_calls_total"] = r.n_tool_calls_total
+                row["n_schema_rejects"] = r.n_schema_rejects
+            (cat_dir / f"{r.problem_id}.json").write_text(json.dumps(row))
             cat_summary["wall_s"] += r.wall_s
             cat_summary["completion_tokens"] += r.completion_tokens
             if r.error:
                 cat_summary["n_errors"] += 1
             elif r.actual_calls:
                 cat_summary["n_with_calls"] += 1
+            if run_mode == "agent":
+                cat_summary["n_turns_total"] += r.n_turns
+                cat_summary["n_tool_calls_total"] += r.n_tool_calls_total
+                cat_summary["n_schema_rejects_total"] += r.n_schema_rejects
         summary["categories"][cat] = cat_summary
 
     (out_dir / "summary.json").write_text(json.dumps(summary, indent=2))

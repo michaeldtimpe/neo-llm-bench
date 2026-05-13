@@ -1,0 +1,1 @@
+{"id": "live_multiple_5-3-0", "actual_calls": [["get_current_weather", {"location": "Shanghai", "unit": "metric"}]], "wall_s": 1.1177576250047423, "prompt_tokens": 1903, "completion_tokens": 87, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

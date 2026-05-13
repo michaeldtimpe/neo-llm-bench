@@ -1,0 +1,1 @@
+{"id": "simple_python_85", "actual_calls": [["geo_distance.calculate", {"start_location": "Boston, MA", "end_location": "Washington, D.C.", "units": "miles"}]], "wall_s": 1.257218084007036, "prompt_tokens": 793, "completion_tokens": 72, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

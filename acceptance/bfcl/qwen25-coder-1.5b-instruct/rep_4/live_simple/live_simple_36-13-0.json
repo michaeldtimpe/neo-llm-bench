@@ -1,0 +1,1 @@
+{"id": "live_simple_36-13-0", "actual_calls": [["parseAnswer", {"answer": "The text does not define logistic regression, therefore I cannot answer this question."}]], "wall_s": 1.088886666984763, "prompt_tokens": 1246, "completion_tokens": 126, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

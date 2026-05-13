@@ -1,0 +1,1 @@
+{"id": "live_multiple_33-10-3", "actual_calls": [["add", {"a": 10, "b": 10}]], "wall_s": 0.7297701659845188, "prompt_tokens": 2984, "completion_tokens": 111, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "call_add_did_not_match_any_gt"}

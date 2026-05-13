@@ -1,0 +1,1 @@
+{"id": "irrelevance_8", "actual_calls": [["str_to_int", {"value": "x^3"}], ["str_to_int", {"value": "1"}], ["str_to_int", {"value": "5"}]], "wall_s": 14.083663083030842, "prompt_tokens": 3527, "completion_tokens": 1117, "error": "", "n_turns": 2, "n_tool_calls_total": 50, "n_schema_rejects": 0, "passed": false, "reason": "called_tool_when_irrelevant: str_to_int"}

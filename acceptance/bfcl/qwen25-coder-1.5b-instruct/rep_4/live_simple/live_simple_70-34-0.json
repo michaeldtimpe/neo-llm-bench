@@ -1,0 +1,1 @@
+{"id": "live_simple_70-34-0", "actual_calls": [["get_sensor_alerts", {"perPage": 10, "t0": "2023-04-01", "t1": "2023-04-01"}]], "wall_s": 1.7453174169640988, "prompt_tokens": 2548, "completion_tokens": 198, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "call_get_sensor_alerts_did_not_match_any_gt"}

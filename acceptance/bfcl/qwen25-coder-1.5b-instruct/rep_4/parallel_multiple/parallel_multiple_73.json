@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_73", "actual_calls": [["sports_data.basketball.most_points_single_game", {"league": "NBA"}]], "wall_s": 1.004710916953627, "prompt_tokens": 2099, "completion_tokens": 114, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": false, "reason": "emitted_1_calls_expected_3"}

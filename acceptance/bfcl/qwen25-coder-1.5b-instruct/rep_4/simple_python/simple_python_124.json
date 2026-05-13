@@ -1,0 +1,1 @@
+{"id": "simple_python_124", "actual_calls": [["t_test", {"dataset_A": [12, 24, 36], "dataset_B": [15, 30, 45], "alpha": 0.05}]], "wall_s": 2.4703894580015913, "prompt_tokens": 1505, "completion_tokens": 198, "error": "", "n_turns": 3, "n_tool_calls_total": 3, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

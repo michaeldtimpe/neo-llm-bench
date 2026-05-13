@@ -1,0 +1,1 @@
+{"id": "multiple_124", "actual_calls": [["probabilities.calculate_single", {"total_outcomes": 52, "event_outcomes": 4, "round": 2}]], "wall_s": 1.114733416994568, "prompt_tokens": 1298, "completion_tokens": 79, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "matched_gt_entry"}

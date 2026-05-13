@@ -1,0 +1,1 @@
+{"id": "live_relevance_14-14-0", "actual_calls": [["HNA_NEWS.search", {"keyword": "China", "category": "Politics"}]], "wall_s": 0.6207990840193816, "prompt_tokens": 2801, "completion_tokens": 48, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "passed": true, "reason": "correctly_called_a_tool"}
