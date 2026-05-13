@@ -1,1 +1,1 @@
-{"id": "multiple_123", "actual_calls": [["calculate_probability", {"total_outcomes": 52, "favorable_outcomes": 4, "round_to": 2}]], "wall_s": 2.8432778749993304, "prompt_tokens": 598, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_123", "actual_calls": [["calculate_probability", {"total_outcomes": 52, "favorable_outcomes": 4, "round_to": 2}]], "wall_s": 0.7447583749890327, "prompt_tokens": 600, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "multiple_35", "actual_calls": [["calculate_gcd", {"num1": 128, "num2": 256, "algorithm": "euclidean"}]], "wall_s": 2.4378736250000657, "prompt_tokens": 487, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_35", "actual_calls": [["calculate_gcd", {"num1": 128, "num2": 256, "algorithm": "euclidean"}]], "wall_s": 0.572592708049342, "prompt_tokens": 489, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

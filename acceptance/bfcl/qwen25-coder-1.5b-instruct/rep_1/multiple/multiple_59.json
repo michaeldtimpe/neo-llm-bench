@@ -1,1 +1,1 @@
-{"id": "multiple_59", "actual_calls": [["lawyer_finder", {"location": "New York", "specialization": ["criminal law"], "experience": 1}]], "wall_s": 2.6191703749937005, "prompt_tokens": 461, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_59", "actual_calls": [["lawyer_finder", {"location": "New York", "specialization": ["criminal law"], "experience": 1}]], "wall_s": 0.6127189170219935, "prompt_tokens": 463, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

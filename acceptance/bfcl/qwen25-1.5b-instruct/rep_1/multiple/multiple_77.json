@@ -1,1 +1,1 @@
-{"id": "multiple_77", "actual_calls": [["artwork_search.find", {"type": "sculpture", "location": "New York", "era": "contemporary"}]], "wall_s": 2.623308417001681, "prompt_tokens": 556, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_77", "actual_calls": [["artwork_search.find", {"type": "sculpture", "location": "New York", "era": "contemporary"}]], "wall_s": 0.5431147500057705, "prompt_tokens": 558, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_120", "actual_calls": [], "wall_s": 5.365860915997473, "prompt_tokens": 539, "completion_tokens": 87, "error": "", "passed": false, "reason": "emitted_0_calls_expected_2"}
+{"id": "parallel_multiple_120", "actual_calls": [], "wall_s": 1.379530625010375, "prompt_tokens": 539, "completion_tokens": 87, "error": "", "passed": false, "reason": "emitted_0_calls_expected_2"}

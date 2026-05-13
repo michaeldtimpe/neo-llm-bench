@@ -1,1 +1,1 @@
-{"id": "live_parallel_multiple_15-13-0", "actual_calls": [["sum", {"a": 1, "b": 2}]], "wall_s": 2.4112034579957253, "prompt_tokens": 555, "completion_tokens": 35, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "live_parallel_multiple_15-13-0", "actual_calls": [["sum", {"a": 1, "b": 2}]], "wall_s": 0.336218792013824, "prompt_tokens": 557, "completion_tokens": 35, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

@@ -1,1 +1,1 @@
-{"id": "irrelevance_63", "actual_calls": [], "wall_s": 6.174383999998099, "prompt_tokens": 332, "completion_tokens": 146, "error": "", "passed": true, "reason": "correctly_no_tool_call"}
+{"id": "irrelevance_63", "actual_calls": [["probability_calculator", {"total_outcomes": 8, "event_outcomes": 3, "return_decimal": false}]], "wall_s": 1.0290252920240164, "prompt_tokens": 334, "completion_tokens": 82, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: probability_calculator"}

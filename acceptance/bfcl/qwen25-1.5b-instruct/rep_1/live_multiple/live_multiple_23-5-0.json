@@ -1,1 +1,1 @@
-{"id": "live_multiple_23-5-0", "actual_calls": [["search_products", {"category": "shoes", "color": "red", "size": "8"}]], "wall_s": 2.9849849170059315, "prompt_tokens": 799, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_23-5-0", "actual_calls": [["search_products", {"category": "shoes", "color": "red", "size": "8"}]], "wall_s": 0.5450046670157462, "prompt_tokens": 801, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

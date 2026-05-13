@@ -1,1 +1,1 @@
-{"id": "multiple_63", "actual_calls": [["air_quality_forecast", {"location": "New York", "days": 7}]], "wall_s": 3.5825157500003115, "prompt_tokens": 543, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_63", "actual_calls": [["air_quality_forecast", {"location": "New York", "days": 7}]], "wall_s": 0.5749425410176627, "prompt_tokens": 543, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

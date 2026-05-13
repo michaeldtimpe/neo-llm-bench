@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_10", "actual_calls": [["musical_ticket.buy", {"show": "Mamma Mia", "date": "2023-06-30"}]], "wall_s": 2.96933170799457, "prompt_tokens": 530, "completion_tokens": 49, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_multiple_10", "actual_calls": [["musical_ticket.buy", {"show": "Mamma Mia", "date": "2023-06-30"}]], "wall_s": 0.6340907919802703, "prompt_tokens": 532, "completion_tokens": 49, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

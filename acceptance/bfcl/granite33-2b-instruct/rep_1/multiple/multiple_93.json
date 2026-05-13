@@ -1,1 +1,1 @@
-{"id": "multiple_93", "actual_calls": [["hotel.book", {"location": "New York", "roomType": "deluxe", "nights": 2, "additional_services": ["breakfast"]}]], "wall_s": 5.021211375002167, "prompt_tokens": 608, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_93", "actual_calls": [["hotel.book", {"location": "New York", "roomType": "deluxe", "nights": 2, "additional_services": ["breakfast"]}]], "wall_s": 0.8397622089833021, "prompt_tokens": 608, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "simple_python_131", "actual_calls": [["calculate_compound_interest", {"principal": 10000, "rate": 0.05, "time": 10, "n": 4}]], "wall_s": 3.867540333994839, "prompt_tokens": 393, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_131", "actual_calls": [["calculate_compound_interest", {"principal": 10000, "rate": 0.05, "time": 10, "n": 4}]], "wall_s": 0.8903949999948964, "prompt_tokens": 393, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

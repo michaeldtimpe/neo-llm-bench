@@ -1,1 +1,1 @@
-{"id": "simple_python_13", "actual_calls": [["calculate_area_under_curve", {"function": "x**2", "interval": [1, 3]}]], "wall_s": 1.906336417006969, "prompt_tokens": 357, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_13", "actual_calls": [["calculate_area_under_curve", {"function": "x**2", "interval": [1, 3]}]], "wall_s": 0.20724920800421387, "prompt_tokens": 359, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

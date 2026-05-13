@@ -1,1 +1,1 @@
-{"id": "simple_python_7", "actual_calls": [["calculate_circumference", {"radius": 4, "unit": "inches"}]], "wall_s": 2.155118750000838, "prompt_tokens": 275, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_7", "actual_calls": [["calculate_circumference", {"radius": 4, "unit": "inches"}]], "wall_s": 0.4716644589789212, "prompt_tokens": 275, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}

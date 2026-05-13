@@ -1,1 +1,1 @@
-{"id": "irrelevance_59", "actual_calls": [["linear_equation_solver", {"equation": "x**2", "variable": "x"}]], "wall_s": 1.578140124998754, "prompt_tokens": 284, "completion_tokens": 31, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: linear_equation_solver"}
+{"id": "irrelevance_59", "actual_calls": [], "wall_s": 0.07898233301239088, "prompt_tokens": 286, "completion_tokens": 4, "error": "", "passed": true, "reason": "correctly_no_tool_call"}

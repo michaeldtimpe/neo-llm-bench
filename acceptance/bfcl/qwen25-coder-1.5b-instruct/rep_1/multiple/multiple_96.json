@@ -1,1 +1,1 @@
-{"id": "multiple_96", "actual_calls": [["solve_quadratic_equation", {"a": 2, "b": 6, "c": 5}]], "wall_s": 3.0825875410009758, "prompt_tokens": 640, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_96", "actual_calls": [["solve_quadratic_equation", {"a": 2, "b": 6, "c": 5}]], "wall_s": 0.6945694999885745, "prompt_tokens": 642, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

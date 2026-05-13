@@ -1,1 +1,1 @@
-{"id": "multiple_43", "actual_calls": [["biological.calc_energy", {"mols": 5, "substance": "C6H12O6"}]], "wall_s": 4.395516832999419, "prompt_tokens": 619, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_43", "actual_calls": [["biological.calc_energy", {"mols": 5, "substance": "C6H12O6"}]], "wall_s": 0.7165993339731358, "prompt_tokens": 619, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

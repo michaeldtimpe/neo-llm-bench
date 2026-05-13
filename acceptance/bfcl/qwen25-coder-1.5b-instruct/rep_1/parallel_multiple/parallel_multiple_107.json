@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_107", "actual_calls": [["library.search_books", {"location": "New York City", "genre": "mystery novel", "title": ""}]], "wall_s": 2.9379214999935357, "prompt_tokens": 560, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}
+{"id": "parallel_multiple_107", "actual_calls": [["library.search_books", {"location": "New York City", "genre": "mystery", "title": ""}]], "wall_s": 0.6267128750332631, "prompt_tokens": 562, "completion_tokens": 45, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

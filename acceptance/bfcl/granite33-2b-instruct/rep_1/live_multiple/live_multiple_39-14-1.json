@@ -1,1 +1,1 @@
-{"id": "live_multiple_39-14-1", "actual_calls": [["review_of_interviewer", {"interviewer_name": "Charlie Brown", "include_comments": true}]], "wall_s": 3.986061042000074, "prompt_tokens": 529, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_39-14-1", "actual_calls": [["review_of_interviewer", {"interviewer_name": "Charlie Brown", "include_comments": true}]], "wall_s": 0.3436079169623554, "prompt_tokens": 529, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "simple_python_99", "actual_calls": [["plot_sine_wave", {"start_range": 0, "end_range": 2, "frequency": 5}]], "wall_s": 2.0339134160021786, "prompt_tokens": 392, "completion_tokens": 36, "error": "", "passed": false, "reason": "call_plot_sine_wave_did_not_match_any_gt"}
+{"id": "simple_python_99", "actual_calls": [["plot_sine_wave", {"start_range": 0, "end_range": 2, "frequency": 5}]], "wall_s": 0.5138735829968937, "prompt_tokens": 394, "completion_tokens": 36, "error": "", "passed": false, "reason": "call_plot_sine_wave_did_not_match_any_gt"}

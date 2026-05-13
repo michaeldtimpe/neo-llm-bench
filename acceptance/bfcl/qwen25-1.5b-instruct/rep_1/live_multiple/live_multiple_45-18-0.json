@@ -1,1 +1,1 @@
-{"id": "live_multiple_45-18-0", "actual_calls": [["product_search", {"category": "clothing", "color": "red", "size": "medium"}]], "wall_s": 2.96700258400233, "prompt_tokens": 767, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_45-18-0", "actual_calls": [["product_search", {"category": "clothing", "color": "red", "size": "medium"}]], "wall_s": 0.5119308750145137, "prompt_tokens": 769, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "multiple_144", "actual_calls": [["air_quality", {"location": "London", "date": "2022-08-16"}]], "wall_s": 2.124449499999173, "prompt_tokens": 434, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_144", "actual_calls": [["air_quality", {"location": "London", "date": "2022-08-16"}]], "wall_s": 0.4537206669920124, "prompt_tokens": 436, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

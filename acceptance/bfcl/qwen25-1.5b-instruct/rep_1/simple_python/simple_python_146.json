@@ -1,1 +1,1 @@
-{"id": "simple_python_146", "actual_calls": [["stock_price", {"company": "Amazon", "days": 3, "data_type": "Close"}]], "wall_s": 1.7970129169989377, "prompt_tokens": 338, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_146", "actual_calls": [["stock_price", {"company": "Amazon", "days": 3, "data_type": "Close"}]], "wall_s": 0.45666154200444, "prompt_tokens": 340, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

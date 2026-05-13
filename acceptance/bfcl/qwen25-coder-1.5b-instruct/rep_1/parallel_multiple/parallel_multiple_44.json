@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_44", "actual_calls": [["house_designer.design", {"bedrooms": 3, "bathrooms": 2, "garden": true}]], "wall_s": 2.6637710829963908, "prompt_tokens": 441, "completion_tokens": 48, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_multiple_44", "actual_calls": [["house_designer.design", {"bedrooms": 3, "bathrooms": 2, "garden": true}]], "wall_s": 0.6379584579844959, "prompt_tokens": 443, "completion_tokens": 48, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

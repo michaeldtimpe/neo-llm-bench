@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_139", "actual_calls": [["group_dynamics.pattern", {"total": 30, "extroverts": 15, "introverts": 15}]], "wall_s": 4.25223887500033, "prompt_tokens": 1006, "completion_tokens": 51, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}
+{"id": "parallel_multiple_139", "actual_calls": [["group_dynamics.pattern", {"total": 30, "extroverts": 15, "introverts": 15}]], "wall_s": 0.7458825419889763, "prompt_tokens": 1008, "completion_tokens": 51, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

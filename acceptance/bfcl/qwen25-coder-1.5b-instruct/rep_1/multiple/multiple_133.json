@@ -1,1 +1,1 @@
-{"id": "multiple_133", "actual_calls": [["calculate_mutual_fund_balance", {"investment_amount": 50000, "annual_yield": 0.05, "years": 3}]], "wall_s": 2.965935084001103, "prompt_tokens": 459, "completion_tokens": 56, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_133", "actual_calls": [["calculate_mutual_fund_balance", {"investment_amount": 50000, "annual_yield": 0.05, "years": 3}]], "wall_s": 0.7932766660233028, "prompt_tokens": 461, "completion_tokens": 56, "error": "", "passed": true, "reason": "matched_gt_entry"}

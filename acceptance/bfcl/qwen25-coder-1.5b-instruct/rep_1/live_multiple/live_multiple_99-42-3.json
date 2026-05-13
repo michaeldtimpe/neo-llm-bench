@@ -1,1 +1,1 @@
-{"id": "live_multiple_99-42-3", "actual_calls": [["connect_to_server", {"nickname": "pg1", "timeout": 30, "retry_attempts": 3, "use_ssl": true}]], "wall_s": 2.3102341249978053, "prompt_tokens": 1823, "completion_tokens": 54, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_99-42-3", "actual_calls": [["connect_to_server", {"nickname": "pg1", "timeout": 30, "retry_attempts": 3, "use_ssl": true}]], "wall_s": 0.49894287501228973, "prompt_tokens": 1825, "completion_tokens": 54, "error": "", "passed": true, "reason": "matched_gt_entry"}

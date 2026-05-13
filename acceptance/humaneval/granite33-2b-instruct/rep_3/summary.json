@@ -2,9 +2,9 @@
   "model": "granite33-2b-instruct",
   "rep": 3,
   "n_problems": 164,
-  "n_passed": 82,
+  "n_passed": 85,
   "n_extract_ok": 164,
-  "wall_s": 1296.7839334589953,
-  "completion_tokens": 20905,
-  "pass_at_1": 0.5
+  "wall_s": 239.85124532290502,
+  "completion_tokens": 22816,
+  "pass_at_1": 0.5182926829268293
 }

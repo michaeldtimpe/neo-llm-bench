@@ -1,1 +1,1 @@
-{"id": "multiple_129", "actual_calls": [["compound_interest", {"principal": 10000, "annual_rate": 5, "compounding_freq": "monthly", "time_in_years": 5}]], "wall_s": 3.420071291999193, "prompt_tokens": 572, "completion_tokens": 59, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_129", "actual_calls": [["compound_interest", {"principal": 10000, "annual_rate": 5, "compounding_freq": "monthly", "time_in_years": 5}]], "wall_s": 0.783181750040967, "prompt_tokens": 574, "completion_tokens": 59, "error": "", "passed": true, "reason": "matched_gt_entry"}

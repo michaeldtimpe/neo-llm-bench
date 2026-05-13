@@ -1,1 +1,1 @@
-{"id": "parallel_94", "actual_calls": [["calculate_electric_field", {"charge": 5, "distance": 2, "permitivity": 8.854187817e-12}]], "wall_s": 3.0406296250002924, "prompt_tokens": 420, "completion_tokens": 60, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_94", "actual_calls": [["calculate_electric_field", {"charge": 5, "distance": 2, "permitivity": 8.854187817e-12}]], "wall_s": 0.7618376670288853, "prompt_tokens": 422, "completion_tokens": 60, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

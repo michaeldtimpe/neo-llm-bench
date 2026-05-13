@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_20", "actual_calls": [["statistics.median", {"data": [3, 4, 5, 2, 8, 5]}]], "wall_s": 2.585638958000345, "prompt_tokens": 485, "completion_tokens": 44, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}
+{"id": "parallel_multiple_20", "actual_calls": [["statistics.median", {"data": [3, 4, 5, 2, 8, 5]}]], "wall_s": 0.5675736249540932, "prompt_tokens": 487, "completion_tokens": 44, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

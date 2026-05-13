@@ -1,1 +1,1 @@
-{"id": "multiple_35", "actual_calls": [["calculate_gcd", {"num1": 128, "num2": 256}]], "wall_s": 3.504381959006423, "prompt_tokens": 509, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_35", "actual_calls": [["calculate_gcd", {"num1": 128, "num2": 256}]], "wall_s": 0.5716849589953199, "prompt_tokens": 509, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

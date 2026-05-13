@@ -1,1 +1,1 @@
-{"id": "multiple_36", "actual_calls": [["kinematics.calculate_speed_from_rest", {"distance": 20, "time": 4}]], "wall_s": 2.134381875002873, "prompt_tokens": 516, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_36", "actual_calls": [["kinematics.calculate_speed_from_rest", {"distance": 20, "time": 4}]], "wall_s": 0.4364325419883244, "prompt_tokens": 518, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

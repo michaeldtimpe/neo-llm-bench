@@ -1,1 +1,1 @@
-{"id": "live_multiple_76-35-0", "actual_calls": [["dartfx_help", {"topic": "charts", "language": "Spanish"}]], "wall_s": 3.4874054579995573, "prompt_tokens": 935, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_76-35-0", "actual_calls": [["dartfx_help", {"topic": "charts", "language": "Spanish"}]], "wall_s": 0.45680562499910593, "prompt_tokens": 937, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}

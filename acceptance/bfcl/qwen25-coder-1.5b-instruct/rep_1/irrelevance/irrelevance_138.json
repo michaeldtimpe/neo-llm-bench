@@ -1,1 +1,1 @@
-{"id": "irrelevance_138", "actual_calls": [["calculate_age", {"birthdate": "1776-07-04", "current_date": "2023-04-01"}]], "wall_s": 3.566262457999983, "prompt_tokens": 300, "completion_tokens": 80, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_age"}
+{"id": "irrelevance_138", "actual_calls": [["calculate_age", {"birthdate": "1776-07-04", "current_date": "2023-04-01"}]], "wall_s": 1.0163444170029834, "prompt_tokens": 302, "completion_tokens": 80, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_age"}

@@ -1,1 +1,1 @@
-{"id": "live_multiple_31-10-1", "actual_calls": [["duck_duck_go.search", {"query": "trending items"}]], "wall_s": 1.7090096659958363, "prompt_tokens": 991, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_31-10-1", "actual_calls": [["duck_duck_go.search", {"query": "trending items"}]], "wall_s": 0.23673695902107283, "prompt_tokens": 991, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}

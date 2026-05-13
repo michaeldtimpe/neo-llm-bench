@@ -1,1 +1,1 @@
-{"id": "simple_python_9", "actual_calls": [["geometry.calculate_area_circle", {"radius": 5}]], "wall_s": 1.8493375410034787, "prompt_tokens": 269, "completion_tokens": 23, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_9", "actual_calls": [["geometry.calculate_area_circle", {"radius": 5}]], "wall_s": 0.41961204196559265, "prompt_tokens": 269, "completion_tokens": 23, "error": "", "passed": true, "reason": "matched_gt_entry"}

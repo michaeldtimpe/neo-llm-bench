@@ -1,1 +1,1 @@
-{"id": "simple_python_124", "actual_calls": [["t_test", {"dataset_A": [12, 24, 36], "dataset_B": [15, 30, 45]}]], "wall_s": 2.4292241660004947, "prompt_tokens": 374, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_124", "actual_calls": [["t_test", {"dataset_A": [12, 24, 36], "dataset_B": [15, 30, 45], "alpha": 0.05}]], "wall_s": 0.7453087909962051, "prompt_tokens": 376, "completion_tokens": 55, "error": "", "passed": true, "reason": "matched_gt_entry"}

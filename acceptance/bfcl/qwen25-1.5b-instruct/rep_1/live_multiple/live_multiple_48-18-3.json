@@ -1,1 +1,1 @@
-{"id": "live_multiple_48-18-3", "actual_calls": [["product_search", {"category": "clothing", "color": "blue", "size": "S"}]], "wall_s": 1.5282063330014353, "prompt_tokens": 826, "completion_tokens": 33, "error": "", "passed": false, "reason": "call_product_search_did_not_match_any_gt"}
+{"id": "live_multiple_48-18-3", "actual_calls": [["inventory_management", {"product_id": "123123", "quantity": 30}]], "wall_s": 0.43520612496649846, "prompt_tokens": 828, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

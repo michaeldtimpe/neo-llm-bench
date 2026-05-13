@@ -1,1 +1,1 @@
-{"id": "irrelevance_17", "actual_calls": [["calculate_time", {"distance": 0, "speed": 0, "round_to_nearest_second": false}]], "wall_s": 2.2723547909990884, "prompt_tokens": 325, "completion_tokens": 46, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_time"}
+{"id": "irrelevance_17", "actual_calls": [["calculate_time", {"distance": 0, "speed": 0, "round_to_nearest_second": true}]], "wall_s": 0.5914395410218276, "prompt_tokens": 327, "completion_tokens": 46, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_time"}

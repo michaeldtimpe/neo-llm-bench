@@ -1,1 +1,1 @@
-{"id": "multiple_110", "actual_calls": [["mutation_type.find", {"snp_id": "rs6034464"}]], "wall_s": 2.0391663330010488, "prompt_tokens": 494, "completion_tokens": 30, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_110", "actual_calls": [["mutation_type.find", {"snp_id": "rs6034464"}]], "wall_s": 0.4082105419947766, "prompt_tokens": 496, "completion_tokens": 30, "error": "", "passed": true, "reason": "matched_gt_entry"}

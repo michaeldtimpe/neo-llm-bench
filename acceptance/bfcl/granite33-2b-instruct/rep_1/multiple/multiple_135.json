@@ -1,1 +1,1 @@
-{"id": "multiple_135", "actual_calls": [["get_case_info", {"docket": "2022/AL2562", "court": "California", "info_type": "victim"}]], "wall_s": 6.423082417000842, "prompt_tokens": 502, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_135", "actual_calls": [["get_case_info", {"docket": "2022/AL2562", "court": "California", "info_type": "victim"}]], "wall_s": 0.8156882500043139, "prompt_tokens": 502, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

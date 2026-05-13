@@ -1,1 +1,1 @@
-{"id": "live_relevance_4-4-0", "actual_calls": [["tavily_search_results_json", {"query": "weather today"}]], "wall_s": 1.9038975829971605, "prompt_tokens": 497, "completion_tokens": 25, "error": "", "passed": true, "reason": "correctly_called_a_tool"}
+{"id": "live_relevance_4-4-0", "actual_calls": [["tavily_search_results_json", {"query": "weather today"}]], "wall_s": 0.36978254199493676, "prompt_tokens": 499, "completion_tokens": 25, "error": "", "passed": true, "reason": "correctly_called_a_tool"}

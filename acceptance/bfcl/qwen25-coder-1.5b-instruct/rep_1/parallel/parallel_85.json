@@ -1,1 +1,1 @@
-{"id": "parallel_85", "actual_calls": [["calculate_final_speed", {"initial_speed": 0, "time": 10, "gravity": -9.81}]], "wall_s": 2.7330269170051906, "prompt_tokens": 455, "completion_tokens": 49, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_85", "actual_calls": [["calculate_final_speed", {"initial_speed": 0, "time": 10, "gravity": -9.81}]], "wall_s": 0.661328958987724, "prompt_tokens": 457, "completion_tokens": 49, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

@@ -1,1 +1,1 @@
-{"id": "irrelevance_21", "actual_calls": [], "wall_s": 7.443415458998061, "prompt_tokens": 360, "completion_tokens": 177, "error": "", "passed": true, "reason": "correctly_no_tool_call"}
+{"id": "irrelevance_21", "actual_calls": [["calculate_wave_amplitude", {"max_electric_field_strength": 2, "c": 300000000, "wave_frequency": 1}]], "wall_s": 2.290576333994977, "prompt_tokens": 362, "completion_tokens": 191, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_wave_amplitude"}

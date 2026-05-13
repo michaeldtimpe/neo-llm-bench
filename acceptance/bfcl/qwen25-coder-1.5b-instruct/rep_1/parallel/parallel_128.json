@@ -1,1 +1,1 @@
-{"id": "parallel_128", "actual_calls": [["average_temperature", {"location": "New York", "days": 7, "temp_unit": "Fahrenheit"}]], "wall_s": 2.3298241249940475, "prompt_tokens": 355, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_128", "actual_calls": [["average_temperature", {"location": "New York", "days": 7, "temp_unit": "Fahrenheit"}]], "wall_s": 0.5470151249901392, "prompt_tokens": 357, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

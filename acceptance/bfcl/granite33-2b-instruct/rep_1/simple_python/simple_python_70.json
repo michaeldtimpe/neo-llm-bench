@@ -1,1 +1,1 @@
-{"id": "simple_python_70", "actual_calls": [["calculate_vehicle_emission", {"vehicle_type": "gas", "miles_driven": 1500}]], "wall_s": 3.0705315829982283, "prompt_tokens": 371, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_70", "actual_calls": [["calculate_vehicle_emission", {"vehicle_type": "gas", "miles_driven": 1500}]], "wall_s": 0.6290687919827178, "prompt_tokens": 371, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

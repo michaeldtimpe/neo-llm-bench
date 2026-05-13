@@ -1,1 +1,1 @@
-{"id": "live_simple_10-3-6", "actual_calls": [["get_current_weather", {"location": "Mariposa, CA", "unit": "celsius"}]], "wall_s": 2.6223144579998916, "prompt_tokens": 370, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_10-3-6", "actual_calls": [["get_current_weather", {"location": "Mariposa, CA", "unit": "celsius"}]], "wall_s": 0.3010349579853937, "prompt_tokens": 370, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

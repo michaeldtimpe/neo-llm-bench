@@ -1,1 +1,1 @@
-{"id": "irrelevance_113", "actual_calls": [["find_pois", {"location": "London", "category": ["Restaurants"]}]], "wall_s": 2.62967750000098, "prompt_tokens": 332, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: find_pois"}
+{"id": "irrelevance_113", "actual_calls": [["find_pois", {"location": "London", "category": ["Restaurants"]}]], "wall_s": 0.34448504098691046, "prompt_tokens": 332, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: find_pois"}

@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_4", "actual_calls": [["integral", {"function": "x**2", "a": 1, "b": 5}]], "wall_s": 2.1827285830004257, "prompt_tokens": 430, "completion_tokens": 44, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_multiple_4", "actual_calls": [["integral", {"function": "x**2", "a": 1, "b": 5}], ["derivative", {"function": "x**2", "x": 3}]], "wall_s": 0.9975542080355808, "prompt_tokens": 432, "completion_tokens": 77, "error": "", "passed": true, "reason": "all_calls_matched"}

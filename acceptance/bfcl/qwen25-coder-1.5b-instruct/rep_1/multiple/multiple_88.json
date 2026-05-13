@@ -1,1 +1,1 @@
-{"id": "multiple_88", "actual_calls": [["video_games.get_player_count", {"game_title": "World of Warcraft", "year": 2020}]], "wall_s": 2.618344750000688, "prompt_tokens": 487, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_88", "actual_calls": [["video_games.get_player_count", {"game_title": "World of Warcraft", "year": 2020}]], "wall_s": 0.696634957974311, "prompt_tokens": 489, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

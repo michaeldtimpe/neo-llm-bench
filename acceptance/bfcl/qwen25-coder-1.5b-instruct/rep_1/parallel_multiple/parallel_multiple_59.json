@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_59", "actual_calls": [["math.triangle_area_heron", {"side1": 7, "side2": 10, "side3": 5}]], "wall_s": 3.246540833999461, "prompt_tokens": 666, "completion_tokens": 51, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}
+{"id": "parallel_multiple_59", "actual_calls": [["math.triangle_area_heron", {"side1": 7, "side2": 10, "side3": 5}]], "wall_s": 0.7114562499918975, "prompt_tokens": 668, "completion_tokens": 51, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

@@ -1,1 +1,1 @@
-{"id": "live_multiple_98-42-2", "actual_calls": [["open_project", {"path": "/Foo/Bar", "create_if_missing": true, "access_mode": "readwrite"}]], "wall_s": 2.06240345799597, "prompt_tokens": 1829, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_98-42-2", "actual_calls": [["open_project", {"path": "/Foo/Bar", "create_if_missing": true, "access_mode": "readwrite"}]], "wall_s": 0.4601916670217179, "prompt_tokens": 1831, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

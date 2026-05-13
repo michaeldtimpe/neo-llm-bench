@@ -1,1 +1,1 @@
-{"id": "parallel_47", "actual_calls": [["get_team_ranking", {"team": "Barcelona", "league": "UEFA Champions League"}]], "wall_s": 2.0645974580038455, "prompt_tokens": 311, "completion_tokens": 42, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_47", "actual_calls": [["get_team_ranking", {"team": "Barcelona", "league": "UEFA Champions League"}]], "wall_s": 0.5051515419618227, "prompt_tokens": 313, "completion_tokens": 42, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

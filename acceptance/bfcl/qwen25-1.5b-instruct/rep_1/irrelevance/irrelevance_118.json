@@ -1,1 +1,1 @@
-{"id": "irrelevance_118", "actual_calls": [["playoff.brackets", {"year": 1996, "round": "Finals"}]], "wall_s": 3.1676118329996825, "prompt_tokens": 308, "completion_tokens": 69, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: playoff.brackets"}
+{"id": "irrelevance_118", "actual_calls": [["playoff.brackets", {"year": 1996, "round": "Finals"}]], "wall_s": 0.4077550829970278, "prompt_tokens": 310, "completion_tokens": 32, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: playoff.brackets"}

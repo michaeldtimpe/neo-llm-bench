@@ -1,1 +1,1 @@
-{"id": "live_simple_54-25-0", "actual_calls": [["todo", {"type": "delete", "content": "todo random"}]], "wall_s": 2.252312874996278, "prompt_tokens": 299, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_54-25-0", "actual_calls": [["todo", {"type": "delete", "content": "todo random"}]], "wall_s": 0.22867358301300555, "prompt_tokens": 299, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}

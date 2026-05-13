@@ -1,1 +1,1 @@
-{"id": "live_multiple_85-38-2", "actual_calls": [["add_mtnards_server", {"nickname": "primary_db_server", "host": "192.168.0.5", "api_key": "1234123"}]], "wall_s": 2.8238648749975255, "prompt_tokens": 1143, "completion_tokens": 65, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_85-38-2", "actual_calls": [["add_mtnards_server", {"nickname": "primary_db_server", "host": "192.168.0.5", "api_key": "1234123"}]], "wall_s": 0.6041620830073953, "prompt_tokens": 1145, "completion_tokens": 65, "error": "", "passed": true, "reason": "matched_gt_entry"}

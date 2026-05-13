@@ -1,1 +1,1 @@
-{"id": "multiple_99", "actual_calls": [["calculus.derivative", {"function": "2*x**2", "value": 1}]], "wall_s": 1.7649954160006018, "prompt_tokens": 466, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_99", "actual_calls": [["calculus.derivative", {"function": "2*x**2", "value": 1, "function_variable": "x"}]], "wall_s": 0.5098278340301476, "prompt_tokens": 468, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

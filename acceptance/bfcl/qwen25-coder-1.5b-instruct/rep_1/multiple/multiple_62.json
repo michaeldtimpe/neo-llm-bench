@@ -1,1 +1,1 @@
-{"id": "multiple_62", "actual_calls": [["nature_park.find_nearby", {"location": "Boston, MA", "features": ["Camping", "Scenic View"]}]], "wall_s": 2.7309954169977573, "prompt_tokens": 467, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_62", "actual_calls": [["nature_park.find_nearby", {"location": "Boston, MA", "features": ["Camping", "Scenic View"]}]], "wall_s": 0.6004824999836273, "prompt_tokens": 469, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

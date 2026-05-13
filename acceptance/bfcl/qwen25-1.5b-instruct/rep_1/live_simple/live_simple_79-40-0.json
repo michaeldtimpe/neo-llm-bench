@@ -1,1 +1,1 @@
-{"id": "live_simple_79-40-0", "actual_calls": [["search_hotels", {"location": "San Diego, CA"}]], "wall_s": 1.4700714589998825, "prompt_tokens": 353, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_79-40-0", "actual_calls": [["search_hotels", {"location": "San Diego, CA"}]], "wall_s": 0.35004033404402435, "prompt_tokens": 355, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}

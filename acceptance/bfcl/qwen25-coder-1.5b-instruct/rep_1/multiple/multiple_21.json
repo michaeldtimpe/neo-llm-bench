@@ -1,1 +1,1 @@
-{"id": "multiple_21", "actual_calls": [["generate_sound_wave", {"frequency": 440, "duration": 5}]], "wall_s": 3.7627948750014184, "prompt_tokens": 490, "completion_tokens": 74, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_21", "actual_calls": [["generate_sound_wave", {"frequency": 440, "duration": 5}]], "wall_s": 0.954470416996628, "prompt_tokens": 492, "completion_tokens": 74, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "simple_python_75", "actual_calls": [["elephant_population_estimate", {"current_population": 35000, "growth_rate": 0.015, "years": 5}]], "wall_s": 3.529200082994066, "prompt_tokens": 333, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_75", "actual_calls": [["elephant_population_estimate", {"current_population": 35000, "growth_rate": 0.015, "years": 5}]], "wall_s": 0.8199389579822309, "prompt_tokens": 333, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_105", "actual_calls": [["geodistance.find", {"origin": "New York", "destination": "London", "unit": "kilometers"}]], "wall_s": 3.136637083000096, "prompt_tokens": 632, "completion_tokens": 47, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}
+{"id": "parallel_multiple_105", "actual_calls": [["geodistance.find", {"origin": "New York", "destination": "London", "unit": "kilometers"}]], "wall_s": 0.6408557079848833, "prompt_tokens": 634, "completion_tokens": 47, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

@@ -1,1 +1,1 @@
-{"id": "live_simple_39-16-0", "actual_calls": [["fetch_weather_data", {"latitude": 37.8651, "longitude": -119.5383}]], "wall_s": 4.160270542000944, "prompt_tokens": 489, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_39-16-0", "actual_calls": [["fetch_weather_data", {"latitude": 37.8651, "longitude": -119.5383}]], "wall_s": 0.3757452919962816, "prompt_tokens": 489, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

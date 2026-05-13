@@ -1,1 +1,1 @@
-{"id": "multiple_75", "actual_calls": [["paint_color.trends", {"room": "Living room", "period": "Daily"}]], "wall_s": 2.543469249998452, "prompt_tokens": 546, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_75", "actual_calls": [["paint_color.trends", {"room": "Living room", "period": "Daily"}]], "wall_s": 0.5183707079850137, "prompt_tokens": 548, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "parallel_106", "actual_calls": [["fetch_DNA_sequence", {"DNA_id": "XYZ123", "format": "genbank", "upstream": 500}]], "wall_s": 2.282933458001935, "prompt_tokens": 389, "completion_tokens": 53, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}
+{"id": "parallel_106", "actual_calls": [["fetch_DNA_sequence", {"DNA_id": "XYZ123", "format": "genbank", "upstream": 500}]], "wall_s": 0.6433057080139406, "prompt_tokens": 391, "completion_tokens": 53, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

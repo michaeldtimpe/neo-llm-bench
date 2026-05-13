@@ -1,1 +1,1 @@
-{"id": "live_multiple_8-4-0", "actual_calls": [], "wall_s": 14.623293125005148, "prompt_tokens": 1367, "completion_tokens": 274, "error": "", "passed": false, "reason": "no_tool_call_emitted"}
+{"id": "live_multiple_8-4-0", "actual_calls": [["cookbook.search_recipe", {"keyword": "steak", "cuisine": "Indian", "max_results": 10}]], "wall_s": 0.5782330830115825, "prompt_tokens": 1369, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

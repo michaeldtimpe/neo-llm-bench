@@ -1,1 +1,1 @@
-{"id": "multiple_104", "actual_calls": [["get_shortest_driving_distance", {"origin": "New York City", "destination": "Washington D.C."}]], "wall_s": 5.368417416000739, "prompt_tokens": 773, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_104", "actual_calls": [["get_shortest_driving_distance", {"origin": "New York City", "destination": "Washington D.C."}]], "wall_s": 0.7885303749935701, "prompt_tokens": 773, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

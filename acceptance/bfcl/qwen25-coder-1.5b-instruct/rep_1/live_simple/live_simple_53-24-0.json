@@ -1,1 +1,1 @@
-{"id": "live_simple_53-24-0", "actual_calls": [["todo_add", {"content": "go for shopping at 9 pm"}]], "wall_s": 1.3030665420010337, "prompt_tokens": 276, "completion_tokens": 23, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_53-24-0", "actual_calls": [["todo_add", {"content": "go for shopping at 9 pm"}]], "wall_s": 0.3202677500084974, "prompt_tokens": 278, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

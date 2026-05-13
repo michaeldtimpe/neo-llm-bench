@@ -1,1 +1,1 @@
-{"id": "multiple_72", "actual_calls": [["us_history.population_by_state_year", {"state": "California", "year": 1970}]], "wall_s": 2.1390644580023945, "prompt_tokens": 464, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_72", "actual_calls": [["us_history.population_by_state_year", {"state": "California", "year": 1970}]], "wall_s": 0.4851412079879083, "prompt_tokens": 466, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

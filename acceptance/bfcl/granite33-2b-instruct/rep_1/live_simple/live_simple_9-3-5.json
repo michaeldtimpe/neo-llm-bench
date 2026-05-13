@@ -1,1 +1,1 @@
-{"id": "live_simple_9-3-5", "actual_calls": [["get_current_weather", {"location": "Hyderabad", "unit": "fahrenheit"}]], "wall_s": 1.911575999998604, "prompt_tokens": 342, "completion_tokens": 31, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}
+{"id": "live_simple_9-3-5", "actual_calls": [["get_current_weather", {"location": "Hyderabad", "unit": "fahrenheit"}]], "wall_s": 0.26864733296679333, "prompt_tokens": 342, "completion_tokens": 31, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

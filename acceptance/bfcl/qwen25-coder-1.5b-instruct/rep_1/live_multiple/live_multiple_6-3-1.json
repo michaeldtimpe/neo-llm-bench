@@ -1,1 +1,1 @@
-{"id": "live_multiple_6-3-1", "actual_calls": [["create_workspace", {"name": "DevelopmentEnv", "base_branch": "feature-branch"}]], "wall_s": 1.696900833005202, "prompt_tokens": 739, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_6-3-1", "actual_calls": [["create_workspace", {"name": "DevelopmentEnv", "base_branch": "feature-branch"}]], "wall_s": 0.3579685000004247, "prompt_tokens": 741, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

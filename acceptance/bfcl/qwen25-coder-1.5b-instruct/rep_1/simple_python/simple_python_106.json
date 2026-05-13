@@ -1,1 +1,1 @@
-{"id": "simple_python_106", "actual_calls": [["train_random_forest_classifier", {"dataset": "your_dataset_name", "max_depth": 5, "n_estimators": 100}]], "wall_s": 2.5527890829980606, "prompt_tokens": 341, "completion_tokens": 52, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_106", "actual_calls": [["train_random_forest_classifier", {"dataset": "your_dataset_name", "max_depth": 5, "n_estimators": 100}]], "wall_s": 0.6884656670154072, "prompt_tokens": 343, "completion_tokens": 52, "error": "", "passed": true, "reason": "matched_gt_entry"}

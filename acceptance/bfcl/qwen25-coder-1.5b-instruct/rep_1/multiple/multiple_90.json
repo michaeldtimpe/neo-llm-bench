@@ -1,1 +1,1 @@
-{"id": "multiple_90", "actual_calls": [["restaurant.find_group", {"location": "Seattle, WA", "cuisine": ["Seafood"], "group_size": 5}]], "wall_s": 2.8666872089961544, "prompt_tokens": 517, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_90", "actual_calls": [["restaurant.find_group", {"location": "Seattle, WA", "cuisine": ["Seafood"], "group_size": 5}]], "wall_s": 0.6370306250173599, "prompt_tokens": 519, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

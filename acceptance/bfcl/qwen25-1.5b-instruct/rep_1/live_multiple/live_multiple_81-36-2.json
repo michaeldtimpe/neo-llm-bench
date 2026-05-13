@@ -1,1 +1,1 @@
-{"id": "live_multiple_81-36-2", "actual_calls": [["add_mtnards_server", {"host": "http://plga.ca", "api_key": "1234324"}]], "wall_s": 3.70957729100337, "prompt_tokens": 919, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_81-36-2", "actual_calls": [["add_mtnards_server", {"host": "http://plga.ca", "api_key": "1234324"}]], "wall_s": 0.6786998750176281, "prompt_tokens": 921, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

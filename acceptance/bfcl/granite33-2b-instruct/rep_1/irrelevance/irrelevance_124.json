@@ -1,1 +1,1 @@
-{"id": "irrelevance_124", "actual_calls": [["get_social_trends", {"category": "technology", "region": "worldwide"}]], "wall_s": 2.4430675830008113, "prompt_tokens": 266, "completion_tokens": 29, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_social_trends"}
+{"id": "irrelevance_124", "actual_calls": [["get_social_trends", {"category": "technology", "region": "worldwide"}]], "wall_s": 0.3495008749887347, "prompt_tokens": 266, "completion_tokens": 29, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_social_trends"}

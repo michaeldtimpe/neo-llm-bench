@@ -1,1 +1,1 @@
-{"id": "simple_python_26", "actual_calls": [["calculate_velocity", {"distance": 50, "duration": 2}]], "wall_s": 1.614774708999903, "prompt_tokens": 343, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_26", "actual_calls": [["calculate_velocity", {"distance": 50, "duration": 2}]], "wall_s": 0.17608549998840317, "prompt_tokens": 345, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}

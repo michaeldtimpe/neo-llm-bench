@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_84", "actual_calls": [["math.sqrt", {"num": 18, "accuracy": 3}]], "wall_s": 2.6248226660027285, "prompt_tokens": 596, "completion_tokens": 37, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_multiple_84", "actual_calls": [["math.sqrt", {"num": 18, "accuracy": 3}]], "wall_s": 0.4851819999748841, "prompt_tokens": 598, "completion_tokens": 37, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

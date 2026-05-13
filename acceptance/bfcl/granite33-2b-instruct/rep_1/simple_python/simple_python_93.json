@@ -1,1 +1,1 @@
-{"id": "simple_python_93", "actual_calls": [["get_theater_movie_releases", {"location": "LA", "timeframe": 7, "format": "IMAX"}]], "wall_s": 3.064073208006448, "prompt_tokens": 343, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_93", "actual_calls": [["get_theater_movie_releases", {"location": "LA", "timeframe": 7, "format": "IMAX"}]], "wall_s": 0.6377276659477502, "prompt_tokens": 343, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "parallel_138", "actual_calls": [["calculate_BMI", {"weight_kg": 85, "height_m": 1.8}]], "wall_s": 2.059899209001742, "prompt_tokens": 395, "completion_tokens": 43, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}
+{"id": "parallel_138", "actual_calls": [["calculate_BMI", {"weight_kg": 85, "height_m": 1.8}]], "wall_s": 0.5503064580261707, "prompt_tokens": 397, "completion_tokens": 43, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

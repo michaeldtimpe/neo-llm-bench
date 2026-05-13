@@ -1,1 +1,1 @@
-{"id": "irrelevance_27", "actual_calls": [["calculate_heat", {"mass": 3, "specific_heat": 4.184, "change_in_temp": 4}]], "wall_s": 3.62942541600205, "prompt_tokens": 355, "completion_tokens": 41, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_heat"}
+{"id": "irrelevance_27", "actual_calls": [["calculate_heat", {"mass": 3, "specific_heat": 4.184, "change_in_temp": 4}]], "wall_s": 0.559084750013426, "prompt_tokens": 355, "completion_tokens": 41, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_heat"}

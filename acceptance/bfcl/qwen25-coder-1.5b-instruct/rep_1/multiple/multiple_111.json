@@ -1,1 +1,1 @@
-{"id": "multiple_111", "actual_calls": [["calculate_genotype_frequency", {"allele_frequency": 0.3, "genotype": "AA"}]], "wall_s": 2.65366237499984, "prompt_tokens": 542, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_111", "actual_calls": [["calculate_genotype_frequency", {"allele_frequency": 0.3, "genotype": "AA"}]], "wall_s": 0.6025549999903888, "prompt_tokens": 544, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

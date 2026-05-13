@@ -1,1 +1,1 @@
-{"id": "live_multiple_2-1-0", "actual_calls": [["uber.ride", {"loc": "2150 Shattuck Ave, Berkeley, CA", "type": "plus", "time": 10}]], "wall_s": 3.306842833997507, "prompt_tokens": 592, "completion_tokens": 56, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_2-1-0", "actual_calls": [["uber.ride", {"loc": "2150 Shattuck Ave, Berkeley, CA", "type": "plus", "time": 10}]], "wall_s": 0.5399113330058753, "prompt_tokens": 594, "completion_tokens": 56, "error": "", "passed": true, "reason": "matched_gt_entry"}

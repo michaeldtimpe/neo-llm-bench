@@ -1,1 +1,1 @@
-{"id": "irrelevance_99", "actual_calls": [["lawsuit_search", {"location": "Texas", "subject": "traffic laws"}]], "wall_s": 2.5262718749945634, "prompt_tokens": 304, "completion_tokens": 29, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: lawsuit_search"}
+{"id": "irrelevance_99", "actual_calls": [["lawsuit_search", {"location": "Texas", "subject": "traffic laws"}]], "wall_s": 0.34614537499146536, "prompt_tokens": 304, "completion_tokens": 29, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: lawsuit_search"}

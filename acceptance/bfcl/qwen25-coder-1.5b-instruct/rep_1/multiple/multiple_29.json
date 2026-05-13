@@ -1,1 +1,1 @@
-{"id": "multiple_29", "actual_calls": [["functions.intersect", {"function1": "3x+2", "function2": "2x+3"}]], "wall_s": 2.4374862080003368, "prompt_tokens": 409, "completion_tokens": 45, "error": "", "passed": false, "reason": "call_functions.intersect_did_not_match_any_gt"}
+{"id": "multiple_29", "actual_calls": [["functions.intersect", {"function1": "3x+2", "function2": "2x+3"}]], "wall_s": 0.5906399170053191, "prompt_tokens": 411, "completion_tokens": 45, "error": "", "passed": false, "reason": "call_functions.intersect_did_not_match_any_gt"}

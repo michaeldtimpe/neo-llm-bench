@@ -1,1 +1,1 @@
-{"id": "live_multiple_38-14-0", "actual_calls": [], "wall_s": 2.6145338749993243, "prompt_tokens": 590, "completion_tokens": 28, "error": "", "passed": false, "reason": "no_tool_call_emitted"}
+{"id": "live_multiple_38-14-0", "actual_calls": [["get_interviewer_list", {"skill": "Python", "experience_level": "Mid-Level", "availability": true}]], "wall_s": 0.5463577500195242, "prompt_tokens": 592, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

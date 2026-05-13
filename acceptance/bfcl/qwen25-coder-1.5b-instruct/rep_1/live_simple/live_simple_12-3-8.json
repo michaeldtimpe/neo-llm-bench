@@ -1,1 +1,1 @@
-{"id": "live_simple_12-3-8", "actual_calls": [["get_current_weather", {"location": "New York, NY", "unit": "celsius"}]], "wall_s": 2.045206041999336, "prompt_tokens": 384, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_simple_12-3-8", "actual_calls": [["get_current_weather", {"location": "New York, NY", "unit": "celsius"}]], "wall_s": 0.536624624975957, "prompt_tokens": 386, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "parallel_147", "actual_calls": [["light_travel_time", {"distance_in_light_years": [4.22, 6.1, 5.88], "speed_of_light": 299792458}]], "wall_s": 3.218138958000054, "prompt_tokens": 404, "completion_tokens": 64, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}
+{"id": "parallel_147", "actual_calls": [["light_travel_time", {"distance_in_light_years": [4.22, 6.1, 5.88], "speed_of_light": 299792458}]], "wall_s": 0.8090422910172492, "prompt_tokens": 406, "completion_tokens": 64, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

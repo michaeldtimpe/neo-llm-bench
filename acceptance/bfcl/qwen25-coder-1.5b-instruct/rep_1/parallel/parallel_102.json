@@ -1,1 +1,1 @@
-{"id": "parallel_102", "actual_calls": [["calc_absolute_pressure", {"atm_pressure": 1, "gauge_pressure": 2.5}]], "wall_s": 3.667650750001485, "prompt_tokens": 383, "completion_tokens": 78, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}
+{"id": "parallel_102", "actual_calls": [["calc_absolute_pressure", {"atm_pressure": 1, "gauge_pressure": 2.5}]], "wall_s": 0.5444044169853441, "prompt_tokens": 385, "completion_tokens": 43, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

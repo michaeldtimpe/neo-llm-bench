@@ -1,1 +1,1 @@
-{"id": "multiple_54", "actual_calls": [["corporate_finance.dividend_data", {"company": "Apple Inc", "years": 5, "frequency": "annually"}]], "wall_s": 2.731679249998706, "prompt_tokens": 449, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_54", "actual_calls": [["corporate_finance.dividend_data", {"company": "Apple Inc", "years": 5, "frequency": "annually"}]], "wall_s": 0.6566566249821335, "prompt_tokens": 451, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "simple_python_54", "actual_calls": [["get_protein_sequence", {"gene": "BRCA1"}]], "wall_s": 1.30817937500251, "prompt_tokens": 301, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_54", "actual_calls": [["get_protein_sequence", {"gene": "BRCA1"}]], "wall_s": 0.20895062503404915, "prompt_tokens": 303, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}

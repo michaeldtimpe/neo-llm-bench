@@ -1,1 +1,1 @@
-{"id": "live_relevance_11-11-0", "actual_calls": [["Services_1_FindProvider", {"city": "Antioch", "is_unisex": "True"}]], "wall_s": 6.722871540994674, "prompt_tokens": 1043, "completion_tokens": 34, "error": "", "passed": true, "reason": "correctly_called_a_tool"}
+{"id": "live_relevance_11-11-0", "actual_calls": [["Services_1_FindProvider", {"city": "Antioch", "is_unisex": "True"}]], "wall_s": 0.44437429204117507, "prompt_tokens": 1043, "completion_tokens": 34, "error": "", "passed": true, "reason": "correctly_called_a_tool"}

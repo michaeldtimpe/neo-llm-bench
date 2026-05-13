@@ -1,1 +1,1 @@
-{"id": "multiple_42", "actual_calls": [["calculate_final_temperature", {"quantity1": 2, "temperature1": 300, "quantity2": 3, "temperature2": 400}]], "wall_s": 2.7071469590009656, "prompt_tokens": 485, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_42", "actual_calls": [["calculate_final_temperature", {"quantity1": 2, "temperature1": 300, "quantity2": 3, "temperature2": 400}]], "wall_s": 0.6630188329727389, "prompt_tokens": 487, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

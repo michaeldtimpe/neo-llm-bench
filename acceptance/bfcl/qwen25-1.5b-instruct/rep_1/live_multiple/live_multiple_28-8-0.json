@@ -1,1 +1,1 @@
-{"id": "live_multiple_28-8-0", "actual_calls": [["my_core_function", {"name": "Balkrushn"}]], "wall_s": 1.6746502079986385, "prompt_tokens": 378, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_28-8-0", "actual_calls": [["my_core_function", {"name": "Balkrushn"}]], "wall_s": 0.33522137498948723, "prompt_tokens": 380, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}

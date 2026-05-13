@@ -1,1 +1,1 @@
-{"id": "live_multiple_86-38-3", "actual_calls": [["add_mtnards_server", {"nickname": "RSD1", "host": "http://rds.com", "api_key": "1234123"}]], "wall_s": 2.5715074999970966, "prompt_tokens": 1121, "completion_tokens": 59, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_86-38-3", "actual_calls": [["add_mtnards_server", {"nickname": "RSD1", "host": "http://rds.com", "api_key": "1234123"}]], "wall_s": 0.5457150830188766, "prompt_tokens": 1123, "completion_tokens": 59, "error": "", "passed": true, "reason": "matched_gt_entry"}

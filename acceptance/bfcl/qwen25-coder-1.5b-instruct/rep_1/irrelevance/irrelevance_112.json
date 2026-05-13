@@ -1,1 +1,1 @@
-{"id": "irrelevance_112", "actual_calls": [], "wall_s": 2.0395988329983084, "prompt_tokens": 317, "completion_tokens": 41, "error": "", "passed": true, "reason": "correctly_no_tool_call"}
+{"id": "irrelevance_112", "actual_calls": [["geocode_address", {"address": "New York", "locale": "en-US"}]], "wall_s": 1.516191832954064, "prompt_tokens": 319, "completion_tokens": 126, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: geocode_address"}

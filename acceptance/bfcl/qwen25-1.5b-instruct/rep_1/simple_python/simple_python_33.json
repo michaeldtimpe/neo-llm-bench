@@ -1,1 +1,1 @@
-{"id": "simple_python_33", "actual_calls": [["get_directions", {"start_location": "Sydney", "end_location": "Melbourne", "route_type": "fastest"}]], "wall_s": 2.0531045840034494, "prompt_tokens": 339, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "simple_python_33", "actual_calls": [["get_directions", {"start_location": "Sydney", "end_location": "Melbourne", "route_type": "fastest"}]], "wall_s": 0.32086029200581834, "prompt_tokens": 341, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

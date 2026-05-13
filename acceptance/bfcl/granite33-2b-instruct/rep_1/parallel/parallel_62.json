@@ -1,1 +1,1 @@
-{"id": "parallel_62", "actual_calls": [["algebra.quadratic_roots", {"a": 3, "b": 4, "c": 2}], ["algebra.quadratic_roots", {"a": 5, "b": -7, "c": 3}]], "wall_s": 6.295864082996559, "prompt_tokens": 395, "completion_tokens": 66, "error": "", "passed": true, "reason": "all_calls_matched"}
+{"id": "parallel_62", "actual_calls": [["algebra.quadratic_roots", {"a": 3, "b": 4, "c": 2}], ["algebra.quadratic_roots", {"a": 5, "b": -7, "c": 3}]], "wall_s": 1.0710416249930859, "prompt_tokens": 395, "completion_tokens": 66, "error": "", "passed": true, "reason": "all_calls_matched"}

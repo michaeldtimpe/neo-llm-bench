@@ -1,1 +1,1 @@
-{"id": "live_simple_13-3-9", "actual_calls": [["get_current_weather", {"location": "\u4e0a\u6d77, CA", "unit": "celsius"}]], "wall_s": 1.9307184999997844, "prompt_tokens": 371, "completion_tokens": 40, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}
+{"id": "live_simple_13-3-9", "actual_calls": [["get_current_weather", {"location": "\u4e0a\u6d77, CN", "unit": "celsius"}]], "wall_s": 0.5235202499898151, "prompt_tokens": 373, "completion_tokens": 40, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

@@ -1,1 +1,1 @@
-{"id": "live_multiple_83-38-0", "actual_calls": [["list_servers", {"type": "postgres"}]], "wall_s": 3.2871046670043143, "prompt_tokens": 1082, "completion_tokens": 20, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_83-38-0", "actual_calls": [["list_servers", {"type": "postgres"}]], "wall_s": 0.4037224159692414, "prompt_tokens": 1084, "completion_tokens": 20, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "live_multiple_5-3-0", "actual_calls": [["get_current_weather", {"location": "Shanghai", "unit": "metric"}]], "wall_s": 5.873400249998667, "prompt_tokens": 849, "completion_tokens": 29, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}
+{"id": "live_multiple_5-3-0", "actual_calls": [["get_current_weather", {"location": "Shanghai", "unit": "metric"}]], "wall_s": 0.3724221249576658, "prompt_tokens": 849, "completion_tokens": 29, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

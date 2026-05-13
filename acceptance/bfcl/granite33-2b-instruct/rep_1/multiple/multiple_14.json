@@ -1,1 +1,1 @@
-{"id": "multiple_14", "actual_calls": [["finance.property_depreciation", {"initial_cost": 200000, "depreciation_rate": 3, "years": 5}]], "wall_s": 5.843274625003687, "prompt_tokens": 769, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "multiple_14", "actual_calls": [["finance.property_depreciation", {"initial_cost": 200000, "depreciation_rate": 3, "years": 5}]], "wall_s": 0.9590397080173716, "prompt_tokens": 769, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

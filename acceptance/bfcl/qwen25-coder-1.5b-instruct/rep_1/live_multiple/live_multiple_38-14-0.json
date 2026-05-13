@@ -1,1 +1,1 @@
-{"id": "live_multiple_38-14-0", "actual_calls": [["get_interviewer_list", {"skill": "Python", "experience_level": "Mid-Level", "availability": true}]], "wall_s": 4.367501833003189, "prompt_tokens": 590, "completion_tokens": 72, "error": "", "passed": true, "reason": "matched_gt_entry"}
+{"id": "live_multiple_38-14-0", "actual_calls": [["get_interviewer_list", {"skill": "Python", "experience_level": "Mid-Level", "availability": true}]], "wall_s": 0.4777796670095995, "prompt_tokens": 592, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}
