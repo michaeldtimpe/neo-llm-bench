@@ -16,11 +16,11 @@ reported here.
 
 ## TL;DR
 
-| model | BFCL deep (n=1106) | HumanEval pass@1 (t=0.0) | HumanEval pass@3 (any temp) |
-|---|---|---|---|
-| qwen25-1.5b-instruct | **77.0% (853/1106) ±2.5pp** | 58.5% (96/164) | 64.0% (105/164) |
-| granite33-2b-instruct | 69.4% (768/1106) ±2.7pp | 53.0% (87/164) | 64.6% (106/164) |
-| qwen25-coder-1.5b-instruct | 58.6% (649/1106) ±2.9pp | **69.5% (114/164)** | **78.0% (128/164)** |
+| model | BFCL deep (n=1106) | HumanEval pass@1 (t=0.0) | HE pass@3 (any temp) | MBPP pass@1 (t=0.0, n=427) |
+|---|---|---|---|---|
+| qwen25-1.5b-instruct | **77.0% (853/1106) ±2.5pp** | 58.5% (96/164) | 64.0% (105/164) | 62.5% (267/427) ±4.6pp |
+| granite33-2b-instruct | 69.4% (768/1106) ±2.7pp | 53.0% (87/164) | 64.6% (106/164) | 59.7% (255/427) ±4.6pp |
+| qwen25-coder-1.5b-instruct | 58.6% (649/1106) ±2.9pp | **69.5% (114/164)** | **78.0% (128/164)** | **64.2% (274/427) ±4.5pp** |
 
 The three are in a non-dominated triangle: qwen25-1.5b wins tool-use,
 qwen25-coder wins coding, granite33 wins irrelevance discipline. The
@@ -100,6 +100,63 @@ Temperature shape:
   window): qwen25-coder = 36, qwen25-1.5b = 35, granite33 = 38. All
   similar at this draw — best-of-3 is worth ~22pp over pass@1 for each.
 
+## MBPP — sanitized split, n=427 (rep_0 t=0.0)
+
+Second coding signal beyond HumanEval. Sanitized split (427 problems)
+vendored at `benchmarks/mbpp/MBPP.jsonl`. Per-problem subprocess
+isolation; the adapter normalizes model output (markdown-fence + first-
+def anchor + main-guard drop) before execution.
+
+| model | pass@1 | passed | 95% Wilson CI | wall | comp tokens |
+|---|---|---|---|---|---|
+| qwen25-coder-1.5b-instruct | **64.2%** | 274/427 | ±4.5pp | 4:01 | 18,985 |
+| qwen25-1.5b-instruct | 62.5% | 267/427 | ±4.6pp | 4:48 | 25,150 |
+| granite33-2b-instruct | 59.7% | 255/427 | ±4.6pp | 6:44 | 33,275 |
+
+### MBPP head-to-head matrix (PPP / FPF / etc.)
+
+| outcome | qwen-1.5b / coder / granite | count |
+|---|---|---|
+| all pass | P P P | 205 (48%) |
+| all fail | F F F | 106 (25%) |
+| qwen + coder, not granite | P P F | 32 (7%) |
+| only coder | F P F | 21 (5%) |
+| qwen + granite, not coder | P F P | 17 (4%) |
+| only granite | F F P | 17 (4%) |
+| coder + granite, not qwen | F P P | 16 (4%) |
+| only qwen | P F F | 13 (3%) |
+
+### Interpretation (MBPP vs HumanEval)
+
+MBPP and HumanEval measure overlapping but **non-equivalent** coding
+skills. Treat the two numbers as orthogonal, not redundant:
+
+- **HumanEval** rewards synthesis, longer dependency chains, and
+  edge-case handling. Function signatures are given; the model fills
+  in the body.
+- **MBPP (sanitized)** rewards short-template completion, memorized
+  educational patterns, and shallow reasoning. The model produces a
+  fresh function from a natural-language spec + a single test hint.
+
+What the numbers show this draw:
+- **qwen25-coder** wins both, but its lead is much smaller on MBPP
+  (+1.7pp over qwen-1.5b vs +11pp on HumanEval). Coder-tuned models
+  saturate on MBPP-shaped problems sooner — the synthesis ceiling
+  HumanEval probes is where the gap widens.
+- **granite33 and qwen-1.5b each gain ~+6pp going HE → MBPP** (53 → 60,
+  58 → 62 respectively). Both benefit from MBPP's shorter problem
+  template. Granite specifically uniquely solves 17 MBPP rows the
+  other two miss (vs only 5 on HumanEval at t=0.0) — a ~3.5× lift
+  in its unique-solve count.
+- All three sit within mutual CI overlap on MBPP (±4.5pp at n=427).
+  The MBPP ranking is essentially tied; only HumanEval separates the
+  coder model from the others.
+
+If qwen-coder widens its lead on MBPP but stays tied on HumanEval —
+that didn't happen in this draw, but if it ever does — it would not
+be a signal contradiction. Coder models tend to over-fit short-form
+coding priors. Read each number for the skill it measures.
+
 ## Stochastic notes (vs the prior edition's published numbers)
 
 - All non-deterministic runs (BFCL with `seed: 42` but model sampling
@@ -131,7 +188,8 @@ Non-dominated triangle — no single model wins every axis:
 
 | if you value… | pick |
 |---|---|
-| **Coding accuracy** | qwen25-coder-1.5b (70.1% pass@1, +14pp on next; pass@3 77.4%) |
+| **Synthesis coding** (HumanEval) | qwen25-coder-1.5b (69.5% pass@1, +11pp on next; pass@3 78.0%) |
+| **Short-form coding** (MBPP) | qwen25-coder-1.5b (64.2%), but all three are tied within CI overlap; pick on HumanEval signal |
 | **Tool-use generalist + lowest cost** | qwen25-1.5b (BFCL 77%, +7.6pp on next, cheapest of the three) |
 | **Decline discipline** (knows when *not* to act) | granite33-2b (95% live_irrelevance, 85% curated) |
 

@@ -103,6 +103,33 @@ Curiously, qwen25-coder's live_simple (69.3%) is competitive with the
 other two — when the problem is "single call, realistic phrasing" it
 holds its own; when the problem demands N emissions, it collapses.
 
+## MBPP — sanitized split, n=427 (rep_0 t=0.0)
+
+| model | pass@1 | uniquely solves | uniquely misses |
+|---|---|---|---|
+| qwen25-coder-1.5b-instruct | 64.2% (274/427) | 21 (5%) | 13 |
+| qwen25-1.5b-instruct | 62.5% (267/427) | 13 (3%) | 21 |
+| granite33-2b-instruct | 59.7% (255/427) | 17 (4%) | 28 |
+
+48% of problems pass for all three (205/427); 25% fail for all three
+(106/427). The remaining 27% is where the models differentiate, and the
+"only X" buckets are evenly distributed (13/17/21) — no single model
+runs away with the MBPP-unique territory.
+
+Compare to the HumanEval head-to-head shape: there qwen-coder uniquely
+solves 23 problems (14% of HE), and granite/qwen-1.5b uniquely solve 4–5
+each. **MBPP equalizes the unique-solve counts** because short-form,
+template-heavy problems are within reach of all three architectures.
+HumanEval-shaped synthesis is what concentrates wins in the coder
+model.
+
+Normalization audit: all 427 model outputs contained a markdown fence
+across all three models — the system prompt's "single fenced block"
+instruction is followed 100% of the time. The normalizer's fence-strip
++ first-def-anchor + main-guard-drop converted every raw output into
+executable Python without dropping any (`n_extract_ok = 427/427` for
+all three models).
+
 ## HumanEval — failure modes & temperature behavior
 
 All three are 100% extraction-clean on rep_0/rep_2; rep_3 has 1
