@@ -25,8 +25,11 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "src"))
 
-from benchmarks.bfcl.adapter import ALL_CATEGORIES, load_ground_truth  # noqa: E402
-from benchmarks.bfcl.grade import grade  # noqa: E402
+from benchmarks.bfcl.adapter import ALL_CATEGORIES, load_ground_truth, load_problems  # noqa: E402
+from benchmarks.bfcl.grade import grade, grade_multi_turn  # noqa: E402
+from benchmarks.bfcl.multi_turn import MULTI_TURN_CATEGORIES, is_multi_turn  # noqa: E402
+
+GRADED_CATEGORIES = tuple(ALL_CATEGORIES) + MULTI_TURN_CATEGORIES
 
 
 @dataclass
@@ -63,6 +66,32 @@ def _grade_one_problem(
     return res.passed, res.reason
 
 
+def _grade_one_multi_turn(
+    category: str,
+    row: dict[str, Any],
+    test_entry: dict[str, Any] | None,
+    model_id: str,
+) -> tuple[bool, str]:
+    """Multi-turn: hand per-turn-step call-strings to bfcl_eval's state checker.
+
+    `test_entry` must include the problem record + a `ground_truth` key
+    (merged from the possible_answer file). Returns (False, "missing_*")
+    if either the row or test_entry is malformed.
+    """
+    if test_entry is None:
+        return False, "missing_test_entry"
+    if "ground_truth" not in test_entry:
+        return False, "missing_ground_truth"
+    per_turn_steps = row.get("per_turn_steps") or []
+    res = grade_multi_turn(
+        per_turn_steps=per_turn_steps,
+        test_entry=test_entry,
+        category=category,
+        model_name=model_id,
+    )
+    return res.passed, res.reason
+
+
 def grade_model(
     model_dir: Path,
     rep: int,
@@ -74,16 +103,60 @@ def grade_model(
         return {}
     out: dict[str, CatStats] = {}
     gt_cache: dict[str, dict[str, list]] = {}
-    for cat in ALL_CATEGORIES:
+    # Multi-turn needs the full problem record (initial_config, involved_classes)
+    # in addition to GT. Built lazily per-category.
+    mt_entry_cache: dict[str, dict[str, dict]] = {}
+    model_id = model_dir.name
+    for cat in GRADED_CATEGORIES:
         cat_dir = rep_dir / cat
         if not cat_dir.is_dir():
             continue
+        cs = CatStats()
+        if is_multi_turn(cat):
+            if cat not in mt_entry_cache:
+                problems = load_problems(cat) or []
+                try:
+                    gt_for_cat = load_ground_truth(cat)
+                except FileNotFoundError:
+                    gt_for_cat = {}
+                # test_entry per id = problem fields + ground_truth list.
+                merged: dict[str, dict] = {}
+                for p in problems:
+                    pid = p.get("id")
+                    if not pid:
+                        continue
+                    entry = dict(p)
+                    entry["ground_truth"] = gt_for_cat.get(pid)
+                    merged[pid] = entry
+                mt_entry_cache[cat] = merged
+            for path in sorted(cat_dir.glob("*.json")):
+                try:
+                    row = json.loads(path.read_text())
+                except (OSError, json.JSONDecodeError):
+                    continue
+                cs.n += 1
+                cs.wall_s += float(row.get("wall_s") or 0)
+                cs.completion_tokens += int(row.get("completion_tokens") or 0)
+                if row.get("error"):
+                    cs.errors += 1
+                if any(row.get("per_turn_steps") or []):
+                    cs.n_with_calls += 1
+                test_entry = mt_entry_cache[cat].get(row.get("id", ""))
+                passed, reason = _grade_one_multi_turn(cat, row, test_entry, model_id)
+                if passed:
+                    cs.passed += 1
+                if write_back:
+                    row["passed"] = passed
+                    row["reason"] = reason
+                    path.write_text(json.dumps(row))
+            out[cat] = cs
+            continue
+
         if cat not in gt_cache:
             try:
                 gt_cache[cat] = load_ground_truth(cat)
             except FileNotFoundError:
                 gt_cache[cat] = {}
-        cs = CatStats()
         for path in sorted(cat_dir.glob("*.json")):
             try:
                 row = json.loads(path.read_text())
@@ -109,13 +182,17 @@ def grade_model(
 
 
 def render(per_model: dict[str, dict[str, CatStats]]) -> str:
-    cats = list(ALL_CATEGORIES)
+    cats = list(GRADED_CATEGORIES)
     short = {"simple_python": "simple", "multiple": "multi",
              "parallel": "par", "parallel_multiple": "par_mul",
              "irrelevance": "irrel",
              "live_simple": "L.simple", "live_multiple": "L.multi",
              "live_parallel": "L.par", "live_parallel_multiple": "L.par_mul",
-             "live_irrelevance": "L.irrel", "live_relevance": "L.rel"}
+             "live_irrelevance": "L.irrel", "live_relevance": "L.rel",
+             "multi_turn_base": "MT.base",
+             "multi_turn_long_context": "MT.lc",
+             "multi_turn_miss_func": "MT.miss_fn",
+             "multi_turn_miss_param": "MT.miss_pa"}
     lines: list[str] = []
     lines.append("# BFCL graded leaderboard")
     lines.append("")

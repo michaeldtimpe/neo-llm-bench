@@ -277,3 +277,52 @@ def grade(
     if ground_truth is None:
         return GradeResult(False, "missing_ground_truth")
     return _GRADERS_BY_CATEGORY[category](actual_calls, ground_truth)
+
+
+def grade_multi_turn(
+    per_turn_steps: list[list[list[str]]],
+    test_entry: dict[str, Any],
+    category: str,
+    model_name: str,
+) -> GradeResult:
+    """Multi-turn grader: delegate to bfcl_eval's state-based checker.
+
+    `per_turn_steps` is shaped [turn][step][call_string] — what the
+    conversation driver in `benchmarks.bfcl.multi_turn` collected. The
+    bfcl_eval checker runs the calls + the GT against fresh mock-API
+    instances and compares end-state per turn.
+
+    `test_entry` is the original problem record (must include `id`,
+    `initial_config`, `involved_classes`). `category` is e.g.
+    `multi_turn_base`.
+
+    Returns a GradeResult — `passed` mirrors the checker's `valid`,
+    `reason` carries the checker's `error_message`/`error_type` so
+    failure-mode analysis can bucket by failure type.
+    """
+    from bfcl_eval.eval_checker.multi_turn_eval.multi_turn_checker import (
+        multi_turn_checker,
+    )
+
+    # GT is on the test_entry's matched possible_answer file in the
+    # caller. We expect it injected onto the test_entry dict.
+    ground_truth_list = test_entry.get("ground_truth")
+    if ground_truth_list is None:
+        return GradeResult(False, "missing_ground_truth")
+
+    try:
+        result = multi_turn_checker(
+            multi_turn_model_result_list_decoded=per_turn_steps,
+            multi_turn_ground_truth_list=ground_truth_list,
+            test_entry=test_entry,
+            test_category=category,
+            model_name=model_name,
+        )
+    except Exception as e:  # noqa: BLE001
+        return GradeResult(False, f"grader_crash:{type(e).__name__}:{e}")
+
+    if result.get("valid"):
+        return GradeResult(True, "multi_turn_pass")
+    reason = result.get("error_type") or result.get("error_message") or "multi_turn_fail"
+    # Tame long state-diff messages.
+    return GradeResult(False, str(reason)[:200])
