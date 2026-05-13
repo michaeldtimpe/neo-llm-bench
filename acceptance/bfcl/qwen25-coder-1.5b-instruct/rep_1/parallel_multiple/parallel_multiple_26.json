@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_26", "actual_calls": [["bank.get_transaction_history", {"account": "00125648", "days": 7}]], "wall_s": 2.808877499999653, "prompt_tokens": 528, "completion_tokens": 45, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

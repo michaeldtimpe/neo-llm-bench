@@ -1,0 +1,1 @@
+{"id": "multiple_112", "actual_calls": [["forest_growth_forecast", {"location": "Yellowstone National Park", "years": 5, "include_human_impact": true}]], "wall_s": 4.2554883749980945, "prompt_tokens": 439, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

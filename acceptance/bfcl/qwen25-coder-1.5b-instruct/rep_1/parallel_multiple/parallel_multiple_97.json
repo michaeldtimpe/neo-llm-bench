@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_97", "actual_calls": [["calc_Simple_Interest", {"principle_amount": 5000, "duration": 5, "annual_rate": 0.04}]], "wall_s": 3.822363708000921, "prompt_tokens": 775, "completion_tokens": 55, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

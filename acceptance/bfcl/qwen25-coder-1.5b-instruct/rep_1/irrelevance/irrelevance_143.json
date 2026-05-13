@@ -1,0 +1,1 @@
+{"id": "irrelevance_143", "actual_calls": [["get_historical_figure_info", {"name": "Albert Einstein", "detail": "achievement", "region": "global"}]], "wall_s": 2.802910250000423, "prompt_tokens": 334, "completion_tokens": 60, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_historical_figure_info"}

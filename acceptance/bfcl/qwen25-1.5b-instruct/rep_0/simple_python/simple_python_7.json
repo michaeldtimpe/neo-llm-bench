@@ -1,0 +1,1 @@
+{"id": "simple_python_7", "actual_calls": [["calculate_circumference", {"radius": 4, "unit": "in"}]], "wall_s": 1.575026082999102, "prompt_tokens": 302, "completion_tokens": 29, "error": "", "passed": true, "reason": "matched_gt_entry"}

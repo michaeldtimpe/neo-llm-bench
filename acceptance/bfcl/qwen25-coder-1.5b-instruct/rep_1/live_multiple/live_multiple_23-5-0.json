@@ -1,0 +1,1 @@
+{"id": "live_multiple_23-5-0", "actual_calls": [["search_products", {"category": "shoes", "size": "8", "brand": "red"}]], "wall_s": 3.4460978339993744, "prompt_tokens": 799, "completion_tokens": 44, "error": "", "passed": false, "reason": "call_search_products_did_not_match_any_gt"}

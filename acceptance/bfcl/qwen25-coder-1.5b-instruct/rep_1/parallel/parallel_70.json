@@ -1,0 +1,1 @@
+{"id": "parallel_70", "actual_calls": [["geometry.circumference", {"radius": [5, 10, 15, 20], "units": "m"}]], "wall_s": 2.5428277910032193, "prompt_tokens": 346, "completion_tokens": 51, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

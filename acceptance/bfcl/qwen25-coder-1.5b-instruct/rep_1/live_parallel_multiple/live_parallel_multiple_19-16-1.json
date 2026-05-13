@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_19-16-1", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "Los Angeles, CA", "date": "2023-03-10"}]], "wall_s": 5.093200750001415, "prompt_tokens": 1744, "completion_tokens": 59, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

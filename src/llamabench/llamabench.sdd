@@ -1,0 +1,36 @@
+# llamabench
+
+Root invariants for the llamabench codebase. Picked up by `find_all_sdd`
+and surfaced to the model in the task prompt when `set_repo_root`
+points at the llamabench checkout itself; read by humans and Claude Code
+as the authoritative architectural contract.
+
+llamabench is a fork of llamabench (`~/Downloads/llamabench`) whose purpose is to run
+the same agentic loop against **dense** models instead of the MoE
+champion llamabench pinned to. Sourced from `lessons.md` postmortems and the
+durable rules carried over from llamabench's auto-memory.
+
+## Must
+- Mono-only execution mode (single capable model, full tool surface)
+- temp=0.0 in production fixture configs
+- All mono prompt edits go through `src/llamabench/agents/prompts.py` registry
+- Pin `--work-dir ~/.llamabench/bench-workspace` for bench runs (random tempdir leaks into prompts)
+- `oMLX` `idle_timeout_seconds: 1800` (null keeps models resident forever)
+- `--keep-loaded` for bench mode (post-run unload fires by default)
+
+## Must not
+- Read `origin/<branch>` in offline-cache repos (stale-ref trap; use local ref or sidecar regrade)
+- Use any MoE model family — this fork is dense-only by purpose (subsumes llamabench's narrower MoE Instruct-2507 ban)
+- Use `--no-verify`, `--no-gpg-sign`, or other hook-skip flags
+- Force-push to `main` or `master`
+- Configure dense >30B mxfp8 models (granite-4.1-30b-mxfp8 spiked 22GB+ wired and pushed system into swap)
+- Write into `~/.llamabench/fixture-cache/` (chmod-locked read-only; llamabench shares the cache as immutable artifact store)
+
+## Owns
+- src/llamabench/**
+
+## Forbids
+- src/swarm/**
+- src/micro/**
+- src/phased/**
+- src/llamabench/**

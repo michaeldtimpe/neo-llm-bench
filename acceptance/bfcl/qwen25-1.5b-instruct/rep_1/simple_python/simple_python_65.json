@@ -1,0 +1,1 @@
+{"id": "simple_python_65", "actual_calls": [["calculate_density", {"country": "Brazil", "year": "2022", "population": 213000000, "land_area": 8500000}]], "wall_s": 2.717244750005193, "prompt_tokens": 372, "completion_tokens": 56, "error": "", "passed": true, "reason": "matched_gt_entry"}

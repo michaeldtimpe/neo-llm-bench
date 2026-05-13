@@ -1,0 +1,1 @@
+{"id": "irrelevance_122", "actual_calls": [["get_neural_activity", {"patient_id": "12345", "start_time": "2023-01-01 00:00:00", "end_time": "2023-01-01 01:00:00", "filter_frequency": false}]], "wall_s": 5.288795208994998, "prompt_tokens": 364, "completion_tokens": 121, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_neural_activity"}

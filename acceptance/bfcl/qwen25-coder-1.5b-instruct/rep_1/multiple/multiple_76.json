@@ -1,0 +1,1 @@
+{"id": "multiple_76", "actual_calls": [["sculpture.create_custom", {"item": "horse", "material": ["Bronze", "Marble", "Terracotta", "Wood", "Stone"], "size": 12}]], "wall_s": 3.409187999997812, "prompt_tokens": 502, "completion_tokens": 63, "error": "", "passed": false, "reason": "call_sculpture.create_custom_did_not_match_any_gt"}

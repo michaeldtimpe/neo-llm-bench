@@ -1,0 +1,1 @@
+{"id": "live_simple_59-28-0", "actual_calls": [["get_movies", {"city": "Mumbai"}]], "wall_s": 1.6188051250064746, "prompt_tokens": 427, "completion_tokens": 21, "error": "", "passed": true, "reason": "matched_gt_entry"}

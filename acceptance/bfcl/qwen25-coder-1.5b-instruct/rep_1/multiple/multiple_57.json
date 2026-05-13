@@ -1,0 +1,1 @@
+{"id": "multiple_57", "actual_calls": [["financial.compound_interest", {"principle": 1000, "rate": 0.05, "time": 10, "n": 4}]], "wall_s": 3.3863644169978215, "prompt_tokens": 551, "completion_tokens": 60, "error": "", "passed": true, "reason": "matched_gt_entry"}

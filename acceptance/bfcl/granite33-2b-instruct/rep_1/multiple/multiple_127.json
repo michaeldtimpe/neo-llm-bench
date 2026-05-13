@@ -1,0 +1,1 @@
+{"id": "multiple_127", "actual_calls": [["finance.calculate_quarterly_dividend_per_share", {"total_payout": 50000000, "outstanding_shares": 100000000}]], "wall_s": 9.821644624993496, "prompt_tokens": 862, "completion_tokens": 56, "error": "", "passed": true, "reason": "matched_gt_entry"}

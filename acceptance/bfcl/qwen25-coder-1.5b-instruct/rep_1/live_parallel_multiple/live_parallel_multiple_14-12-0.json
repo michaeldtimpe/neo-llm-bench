@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_14-12-0", "actual_calls": [["math_gcd", {"a": 36, "b": 48}]], "wall_s": 2.488139166998735, "prompt_tokens": 543, "completion_tokens": 39, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

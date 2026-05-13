@@ -1,0 +1,1 @@
+{"id": "simple_python_149", "actual_calls": [["get_stock_price", {"company_names": ["Apple", "Microsoft"]}]], "wall_s": 2.0299058749951655, "prompt_tokens": 254, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}

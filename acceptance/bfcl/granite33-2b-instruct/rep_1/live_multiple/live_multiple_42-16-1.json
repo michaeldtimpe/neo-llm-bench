@@ -1,0 +1,1 @@
+{"id": "live_multiple_42-16-1", "actual_calls": [["get_pods", {"namespace": "cascade-sandbox"}]], "wall_s": 1.3591831250014366, "prompt_tokens": 491, "completion_tokens": 21, "error": "", "passed": true, "reason": "matched_gt_entry"}

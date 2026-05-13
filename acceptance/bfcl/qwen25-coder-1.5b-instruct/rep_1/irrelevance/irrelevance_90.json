@@ -1,0 +1,1 @@
+{"id": "irrelevance_90", "actual_calls": [["file_complaint", {"complaint_type": "civil", "location": "New York", "details": "Involves disputes over property rights, contracts, and family matters."}]], "wall_s": 3.641282875003526, "prompt_tokens": 332, "completion_tokens": 82, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: file_complaint"}

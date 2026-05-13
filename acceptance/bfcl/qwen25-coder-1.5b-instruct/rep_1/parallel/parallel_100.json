@@ -1,0 +1,1 @@
+{"id": "parallel_100", "actual_calls": [["get_boiling_melting_points", {"substance": "water", "sea_level": 0}], ["get_boiling_melting_points", {"substance": "iron", "sea_level": 1000}]], "wall_s": 3.946676874998957, "prompt_tokens": 318, "completion_tokens": 90, "error": "", "passed": false, "reason": "emitted_2_calls_expected_4"}

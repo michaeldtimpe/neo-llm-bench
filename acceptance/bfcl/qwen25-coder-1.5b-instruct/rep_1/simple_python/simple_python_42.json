@@ -1,0 +1,1 @@
+{"id": "simple_python_42", "actual_calls": [["calculate_resonant_frequency", {"inductance": 50, "capacitance": 0.0001, "round_off": 2}]], "wall_s": 2.9007144999995944, "prompt_tokens": 367, "completion_tokens": 58, "error": "", "passed": false, "reason": "call_calculate_resonant_frequency_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_10", "actual_calls": [["train_ticket.buy", {"origin": "New York", "destination": "Chicago", "date": "2023-06-30"}], ["musical_ticket.buy", {"show": "Mamma Mia", "date": "2023-06-30"}]], "wall_s": 6.959150499998941, "prompt_tokens": 594, "completion_tokens": 82, "error": "", "passed": true, "reason": "all_calls_matched"}

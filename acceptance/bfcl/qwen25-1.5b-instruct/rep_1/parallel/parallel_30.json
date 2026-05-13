@@ -1,0 +1,1 @@
+{"id": "parallel_30", "actual_calls": [["book_flight", {"departure_city": "San Francisco", "destination_city": "Tokyo", "date": "2022-05-03"}], ["book_flight", {"departure_city": "Tokyo", "destination_city": "Sydney", "date": "2022-05-18"}]], "wall_s": 3.9980307499936316, "prompt_tokens": 349, "completion_tokens": 90, "error": "", "passed": true, "reason": "all_calls_matched"}

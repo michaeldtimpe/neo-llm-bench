@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_124", "actual_calls": [["recipe_search", {"ingredients": ["eggs", "milk", "bread"], "calories": 300, "meal": "breakfast"}]], "wall_s": 3.8071639999980107, "prompt_tokens": 768, "completion_tokens": 55, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

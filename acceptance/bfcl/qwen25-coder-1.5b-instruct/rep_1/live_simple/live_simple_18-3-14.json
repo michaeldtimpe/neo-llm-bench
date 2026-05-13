@@ -1,0 +1,1 @@
+{"id": "live_simple_18-3-14", "actual_calls": [["get_current_weather", {"location": "Moscow, Russia", "unit": "celsius"}]], "wall_s": 1.6640715829998953, "prompt_tokens": 365, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

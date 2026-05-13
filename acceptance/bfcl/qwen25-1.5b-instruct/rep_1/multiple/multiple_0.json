@@ -1,0 +1,1 @@
+{"id": "multiple_0", "actual_calls": [["triangle_properties.get", {"side1": 5, "side2": 4, "side3": 3, "get_area": true, "get_perimeter": true, "get_angles": true}]], "wall_s": 3.441049416003807, "prompt_tokens": 640, "completion_tokens": 55, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,49 @@
+{
+  "model": "qwen25-coder-1.5b-instruct",
+  "rep": 1,
+  "mode": "auto",
+  "categories": {
+    "live_simple": {
+      "n_problems": 100,
+      "n_with_calls": 97,
+      "n_errors": 0,
+      "wall_s": 348.37557633600227,
+      "completion_tokens": 7295
+    },
+    "live_multiple": {
+      "n_problems": 100,
+      "n_with_calls": 96,
+      "n_errors": 0,
+      "wall_s": 348.47933791502146,
+      "completion_tokens": 5728
+    },
+    "live_parallel": {
+      "n_problems": 16,
+      "n_with_calls": 16,
+      "n_errors": 0,
+      "wall_s": 66.55161000101361,
+      "completion_tokens": 1446
+    },
+    "live_parallel_multiple": {
+      "n_problems": 24,
+      "n_with_calls": 23,
+      "n_errors": 0,
+      "wall_s": 110.63846345499041,
+      "completion_tokens": 1546
+    },
+    "live_irrelevance": {
+      "n_problems": 100,
+      "n_with_calls": 18,
+      "n_errors": 0,
+      "wall_s": 464.00153195299936,
+      "completion_tokens": 11050
+    },
+    "live_relevance": {
+      "n_problems": 16,
+      "n_with_calls": 15,
+      "n_errors": 0,
+      "wall_s": 71.76666003998253,
+      "completion_tokens": 1197
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"id": "simple_python_92", "actual_calls": [["imdb.find_movies_by_actor", {"actor_name": "Leonardo DiCaprio", "year": 2010}]], "wall_s": 3.2066050419962266, "prompt_tokens": 332, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

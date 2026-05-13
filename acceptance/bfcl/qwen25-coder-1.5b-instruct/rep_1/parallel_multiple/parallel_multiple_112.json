@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_112", "actual_calls": [["library.search_book", {"title": "To Kill a Mockingbird", "author": "Harper Lee", "platform": "New York Public Library"}]], "wall_s": 3.242577083998185, "prompt_tokens": 586, "completion_tokens": 54, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

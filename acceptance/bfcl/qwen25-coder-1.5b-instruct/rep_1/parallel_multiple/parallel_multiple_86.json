@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_86", "actual_calls": [["kinematics.calculate_speed_from_rest", {"distance": 120, "time": 10, "initial_speed": 0}]], "wall_s": 3.114288958000543, "prompt_tokens": 577, "completion_tokens": 51, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

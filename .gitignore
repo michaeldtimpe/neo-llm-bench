@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+.python-version
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local-only state
+.claude/
+.llamabench/
+
+# Bench run logs (large; regenerated on each run)
+acceptance/bench-*.log
+acceptance/_*.json
+acceptance/_*.md
+acceptance/resources-*.csv
+acceptance/resources-*.jsonl
+
+# Historical / pre-v2 BFCL snapshots — preserved locally for diffing
+# but not part of the canonical record going forward
+acceptance/bfcl/*/rep_0_pre_v2_*
+acceptance/bfcl/*/rep_0_pre_inject_fix
+acceptance/bfcl/*/rep_0_v2_partial_*
+
+# Cut models from round 1 — not part of round-2 finalist data
+acceptance/bfcl/smollm2-1.7b-instruct/
+acceptance/bfcl/llama32-1b-instruct/
+acceptance/bfcl/deepseek-coder-1.3b-instruct/
+acceptance/bfcl/deepseek-r1-distill-qwen-1.5b/
+acceptance/bfcl/phi-1.5/
+acceptance/humaneval/smollm2-1.7b-instruct/
+acceptance/humaneval/llama32-1b-instruct/
+acceptance/humaneval/deepseek-coder-1.3b-instruct/
+acceptance/humaneval/deepseek-r1-distill-qwen-1.5b/
+acceptance/humaneval/phi-1.5/

@@ -1,0 +1,1 @@
+{"id": "simple_python_18", "actual_calls": [["number_analysis.prime_factors", {"number": 123456}]], "wall_s": 2.0149665419994562, "prompt_tokens": 234, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

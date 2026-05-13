@@ -1,0 +1,1 @@
+{"id": "live_relevance_3-3-0", "actual_calls": [["open_meteo_api.fetch_weather_data", {"coordinates": [40.7128, -74.006], "units": "Celsius"}]], "wall_s": 2.417877874999249, "prompt_tokens": 362, "completion_tokens": 48, "error": "", "passed": true, "reason": "correctly_called_a_tool"}

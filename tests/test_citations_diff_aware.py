@@ -1,0 +1,443 @@
+"""Tests for src/llamabench/citations.py — diff-aware citation linter.
+
+Verifies that the linter:
+- Resolves citations on unchanged files via line+snippet match
+- Tolerates line shift on edited files via fuzzy snippet match within ±20 lines
+- Treats deletion-as-resolution (workers may delete buggy code as the fix)
+- Fails on missing files, out-of-range lines, content mismatches
+"""
+
+from __future__ import annotations
+
+import subprocess
+from pathlib import Path
+
+import pytest
+
+from llamabench.citations import (
+    Citation,
+    LintResult,
+    ValidatorEnvelope,
+    ValidatorFinding,
+    extract_citations,
+    lint_report,
+)
+
+
+@pytest.fixture
+def git_repo(tmp_path: Path) -> Path:
+    """A small git repo with a base commit."""
+    subprocess.run(["git", "init", "-q", "-b", "main"], cwd=tmp_path, check=True)
+    subprocess.run(["git", "config", "user.email", "test@test"], cwd=tmp_path, check=True)
+    subprocess.run(["git", "config", "user.name", "test"], cwd=tmp_path, check=True)
+    (tmp_path / "src").mkdir()
+    (tmp_path / "src" / "calc.py").write_text(
+        "def add(a, b):\n"
+        "    return a + b\n"
+        "\n"
+        "def sub(a, b):\n"
+        "    return a - b\n"
+        "\n"
+        "def mul(a, b):\n"
+        "    return a * b\n"
+    )
+    subprocess.run(["git", "add", "."], cwd=tmp_path, check=True)
+    subprocess.run(["git", "commit", "-q", "-m", "init"], cwd=tmp_path, check=True)
+    return tmp_path
+
+
+def _base_sha(repo: Path) -> str:
+    out = subprocess.run(
+        ["git", "rev-parse", "HEAD"], cwd=repo, capture_output=True, text=True, check=True
+    )
+    return out.stdout.strip()
+
+
+def test_extract_citations_basic():
+    text = "See `src/foo.py:42` and src/bar.py:100-105 for details."
+    cs = extract_citations(text)
+    assert len(cs) == 2
+    assert cs[0].path == "src/foo.py"
+    assert cs[0].line == 42
+    assert cs[1].path == "src/bar.py"
+    assert cs[1].line == 100
+    assert cs[1].line_end == 105
+
+
+def test_extract_skips_non_extension_paths():
+    text = "Bumped version 1.2.3:4 in setup.py:10"
+    cs = extract_citations(text)
+    paths = [c.path for c in cs]
+    assert "setup.py" in paths
+    # 1.2.3 has no source-y extension regex match
+
+
+def test_resolved_unchanged_with_snippet(git_repo: Path):
+    base = _base_sha(git_repo)
+    env = ValidatorEnvelope(status="verified", verified=[
+        ValidatorFinding(path="src/calc.py", line=2, snippet="return a + b",
+                         severity="info", description="add"),
+    ])
+    report = "Found `src/calc.py:2` see code."
+    res = lint_report(report, git_repo, base_sha=base, envelope=env)
+    assert not res.is_blocking
+    assert res.citations[0].status == "resolved"
+
+
+def test_content_mismatch_unchanged_file(git_repo: Path):
+    base = _base_sha(git_repo)
+    env = ValidatorEnvelope(status="verified", verified=[
+        # Wrong snippet — claims line 2 says something it doesn't
+        ValidatorFinding(path="src/calc.py", line=2, snippet="this code does not exist",
+                         severity="info", description="bogus"),
+    ])
+    report = "Found `src/calc.py:2`."
+    res = lint_report(report, git_repo, base_sha=base, envelope=env)
+    assert res.is_blocking
+    assert res.citations[0].status == "content_mismatch"
+
+
+def test_missing_file(git_repo: Path):
+    base = _base_sha(git_repo)
+    env = ValidatorEnvelope(status="verified", verified=[
+        ValidatorFinding(path="src/does_not_exist.py", line=1, snippet="x", severity="info"),
+    ])
+    report = "See `src/does_not_exist.py:1`."
+    res = lint_report(report, git_repo, base_sha=base, envelope=env)
+    assert res.is_blocking
+    assert res.citations[0].status == "missing_file"
+
+
+def test_out_of_range_line(git_repo: Path):
+    base = _base_sha(git_repo)
+    env = ValidatorEnvelope(status="verified", verified=[
+        ValidatorFinding(path="src/calc.py", line=999, snippet="x", severity="info"),
+    ])
+    report = "See `src/calc.py:999`."
+    res = lint_report(report, git_repo, base_sha=base, envelope=env)
+    assert res.is_blocking
+    assert res.citations[0].status == "out_of_range"
+
+
+def test_resolved_shifted_after_edit(git_repo: Path):
+    base = _base_sha(git_repo)
+
+    # Worker prepends 20 lines to the file. `sub` was at line 4, now at 24.
+    src = git_repo / "src" / "calc.py"
+    prefix = "# preamble line\n" * 20
+    src.write_text(prefix + src.read_text())
+    subprocess.run(["git", "add", "."], cwd=git_repo, check=True)
+    subprocess.run(["git", "commit", "-q", "-m", "prepend"], cwd=git_repo, check=True)
+
+    env = ValidatorEnvelope(status="verified", verified=[
+        # Validator's snippet was captured BEFORE the edit, citing line 4.
+        ValidatorFinding(path="src/calc.py", line=4, snippet="def sub(a, b):",
+                         severity="info", description="sub"),
+    ])
+    report = "Found `src/calc.py:4`."
+    res = lint_report(report, git_repo, base_sha=base, envelope=env)
+    # Within ±20 lines, the snippet IS at line 24 (4 + 20). Should resolve_shifted.
+    assert not res.is_blocking
+    assert res.citations[0].status == "resolved_shifted"
+    assert res.citations[0].matched_line == 24
+
+
+def test_shifted_unverified_when_too_far(git_repo: Path):
+    base = _base_sha(git_repo)
+
+    # Worker prepends 50 lines — `sub` moves from line 4 to line 54, past the ±20 window.
+    src = git_repo / "src" / "calc.py"
+    prefix = "# preamble line\n" * 50
+    src.write_text(prefix + src.read_text())
+    subprocess.run(["git", "add", "."], cwd=git_repo, check=True)
+    subprocess.run(["git", "commit", "-q", "-m", "prepend"], cwd=git_repo, check=True)
+
+    env = ValidatorEnvelope(status="verified", verified=[
+        ValidatorFinding(path="src/calc.py", line=4, snippet="def sub(a, b):",
+                         severity="info", description="sub"),
+    ])
+    report = "Found `src/calc.py:4`."
+    res = lint_report(report, git_repo, base_sha=base, envelope=env)
+    assert res.is_blocking
+    assert res.citations[0].status == "shifted_unverified"
+
+
+def test_resolved_by_deletion(git_repo: Path):
+    base = _base_sha(git_repo)
+    # Worker deletes the file (a legitimate fix — buggy code removed)
+    (git_repo / "src" / "calc.py").unlink()
+    subprocess.run(["git", "add", "-A"], cwd=git_repo, check=True)
+    subprocess.run(["git", "commit", "-q", "-m", "remove buggy file"], cwd=git_repo, check=True)
+
+    env = ValidatorEnvelope(status="verified", verified=[
+        ValidatorFinding(path="src/calc.py", line=2, snippet="return a + b", severity="info"),
+    ])
+    report = "Reported `src/calc.py:2` was buggy and removed."
+    res = lint_report(report, git_repo, base_sha=base, envelope=env)
+    assert not res.is_blocking
+    assert res.citations[0].status == "resolved_by_deletion"
+
+
+def test_lint_with_no_envelope_accepts_in_range_unchanged(git_repo: Path):
+    base = _base_sha(git_repo)
+    report = "See `src/calc.py:2`."
+    res = lint_report(report, git_repo, base_sha=base, envelope=None)
+    # No snippet to verify and file unchanged: resolved on line existence.
+    assert res.citations[0].status == "resolved"
+
+
+def test_dedupe_citations():
+    text = "`src/foo.py:1` and `src/foo.py:1` again"
+    cs = extract_citations(text)
+    assert len(cs) == 1
+
+
+def test_extract_citations_rejects_ipv4_host_port():
+    """`127.0.0.1:8000` is a host:port reference (deployment doc), not a
+    file:line citation. The extractor must skip IPv4-shaped paths so the
+    citation linter doesn't flag dashboard URLs as unresolved.
+
+    Regression: isomer-quickstart synthesizer reports referenced
+    `127.0.0.1:27001` for the dashboard and the build-breaking citation
+    gate then docked the fixture's score (Phase 1 ship-confirmation
+    2026-05-02). Surgical fix at extractor: reject paths matching
+    `^\\d+\\.\\d+\\.\\d+\\.\\d+$`.
+    """
+    text = (
+        "Run with `docker compose up`; the dashboard is at "
+        "`http://127.0.0.1:27001/`. The mapping `127.0.0.1:27001:27001` "
+        "is in `docker-compose.yml`. A real citation: `app.py:42`."
+    )
+    cs = extract_citations(text)
+    paths = {c.path for c in cs}
+    assert "127.0.0.1" not in paths
+    # The legitimate file:line reference should still be extracted.
+    assert "app.py" in paths
+    # Both IP-shaped strings rejected; only the real one survives.
+    assert len(cs) == 1
+
+
+def test_extract_citations_keeps_dotted_filenames_with_digits():
+    """`v1.2.3.py:10` is a real (if unusual) filename; the IPv4 guard
+    must NOT reject it. Only paths that fully match `\\d+\\.\\d+\\.\\d+\\.\\d+`
+    (no extension) are dropped — `v1.2.3.py` has a `.py` extension and
+    a non-digit prefix in the leading segment."""
+    text = "See `v1.2.3.py:10` for the override."
+    cs = extract_citations(text)
+    assert len(cs) == 1
+    assert cs[0].path == "v1.2.3.py"
+
+
+def test_bare_filename_resolves_to_unique_canonical_path(git_repo: Path):
+    """Synthesizer prose sometimes truncates `bot/strategy/foo.py:42` to
+    `foo.py:42` even when the deliverable's own citations use the full path.
+    When exactly one file with that basename exists in the repo, the linter
+    should resolve to it rather than flag missing_file.
+
+    Regression: nothing-ever-happens-document-config diag rep 1 (2026-05-03)
+    — model wrote canonical paths in CONFIG.md but bare names
+    (`nothing_happens.py:307`, `dashboard.py:71`) in the synthesizer's
+    Final Report. Linter dinged 2 citations and fixture scored 3/5 instead
+    of 4/5.
+    """
+    # `src/calc.py` is the only `calc.py` in the repo — bare reference resolves.
+    base = _base_sha(git_repo)
+    report = "Helper at `calc.py:2`."
+    res = lint_report(report, git_repo, base_sha=base)
+    assert not res.is_blocking
+    assert res.citations[0].status == "resolved"
+    assert res.citations[0].matched_line == 2
+
+
+def test_bare_filename_ambiguous_stays_missing(git_repo: Path):
+    """Two files with the same basename → ambiguous; the linter must NOT
+    guess. Falls through to missing_file so the model's truncation surfaces
+    rather than silently resolving to the wrong file.
+    """
+    (git_repo / "tests").mkdir()
+    (git_repo / "tests" / "calc.py").write_text("# different file\n")
+    subprocess.run(["git", "add", "."], cwd=git_repo, check=True)
+    subprocess.run(["git", "commit", "-q", "-m", "add second calc"], cwd=git_repo, check=True)
+    base = _base_sha(git_repo)
+    report = "See `calc.py:1`."  # ambiguous — could be src/calc.py or tests/calc.py
+    res = lint_report(report, git_repo, base_sha=base)
+    assert res.is_blocking
+    assert res.citations[0].status == "missing_file"
+
+
+def test_bare_filename_typo_stays_missing(git_repo: Path):
+    """A bare filename that doesn't match any file in the repo is a real
+    miss — must still flag missing_file, not silently resolve.
+    """
+    base = _base_sha(git_repo)
+    report = "See `nonexistent.py:1`."
+    res = lint_report(report, git_repo, base_sha=base)
+    assert res.is_blocking
+    assert res.citations[0].status == "missing_file"
+
+
+def test_bare_filename_skips_excluded_dirs(git_repo: Path):
+    """A unique match inside `node_modules/` (or another vendored/build dir)
+    should NOT count. Otherwise a citation could resolve to an irrelevant
+    vendored copy.
+    """
+    (git_repo / "node_modules" / "pkg").mkdir(parents=True)
+    (git_repo / "node_modules" / "pkg" / "index.js").write_text("// vendored\n")
+    subprocess.run(["git", "add", "-f", "node_modules/"], cwd=git_repo, check=True)
+    subprocess.run(["git", "commit", "-q", "-m", "vendor"], cwd=git_repo, check=True)
+    base = _base_sha(git_repo)
+    report = "See `index.js:1`."
+    res = lint_report(report, git_repo, base_sha=base)
+    assert res.is_blocking
+    assert res.citations[0].status == "missing_file"
+
+
+def test_bare_filename_does_not_apply_to_paths_with_slashes(git_repo: Path):
+    """`bot/missing.py:1` is an explicit path; it should NOT fall back to
+    bare-filename resolution if that path doesn't exist. Slashed paths are
+    intentional — a miss there is a real miss.
+    """
+    base = _base_sha(git_repo)
+    # `src/calc.py` exists, but `subdir/calc.py` does not — explicit path miss.
+    report = "See `subdir/calc.py:1`."
+    res = lint_report(report, git_repo, base_sha=base)
+    assert res.is_blocking
+    assert res.citations[0].status == "missing_file"
+
+
+# --- SpecDD Lever 2: spec_violation / spec_orphan -------------------------
+
+
+def _add_sdd(repo: Path, rel_path: str, body: str) -> None:
+    """Drop a `.sdd` file and commit it as part of the base."""
+    p = repo / rel_path
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(body, encoding="utf-8")
+
+
+def _modify(repo: Path, rel_path: str, content: str) -> None:
+    """Add or modify a file and commit it (post-base)."""
+    p = repo / rel_path
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(content, encoding="utf-8")
+    subprocess.run(["git", "add", str(p)], cwd=repo, check=True)
+    subprocess.run(["git", "commit", "-q", "-m", f"add {rel_path}"], cwd=repo, check=True)
+
+
+class TestSpecComplianceFindings:
+    def test_no_sdd_means_no_findings(self, git_repo: Path):
+        base = _base_sha(git_repo)
+        _modify(git_repo, "src/new.py", "x = 1\n")
+        res = lint_report("", git_repo, base_sha=base)
+        assert res.spec_findings == []
+
+    def test_spec_violation_fires_on_forbidden_path(self, git_repo: Path):
+        # Drop an .sdd at the repo root (named after the dir).
+        _add_sdd(
+            git_repo,
+            f"{git_repo.name}.sdd",
+            "# root\n## Forbids\n- tests/**\n",
+        )
+        subprocess.run(["git", "add", "."], cwd=git_repo, check=True)
+        subprocess.run(["git", "commit", "-q", "-m", "add sdd"], cwd=git_repo, check=True)
+        base = _base_sha(git_repo)
+
+        # Modify a forbidden file and check.
+        _modify(git_repo, "tests/test_thing.py", "x = 1\n")
+        res = lint_report("", git_repo, base_sha=base)
+        assert res.is_blocking
+        assert len(res.spec_violations) == 1
+        v = res.spec_violations[0]
+        assert v.path == "tests/test_thing.py"
+        assert v.glob == "tests/**"
+
+    def test_spec_orphan_fires_outside_owns_glob(self, git_repo: Path):
+        _add_sdd(
+            git_repo,
+            f"{git_repo.name}.sdd",
+            "# root\n## Owns\n- src/**\n",
+        )
+        subprocess.run(["git", "add", "."], cwd=git_repo, check=True)
+        subprocess.run(["git", "commit", "-q", "-m", "add sdd"], cwd=git_repo, check=True)
+        base = _base_sha(git_repo)
+
+        _modify(git_repo, "docs/note.md", "# note\n")
+        res = lint_report("", git_repo, base_sha=base)
+        # Orphan is warning only — should not block.
+        assert not res.is_blocking
+        assert len(res.spec_orphans) == 1
+        assert res.spec_orphans[0].path == "docs/note.md"
+
+    def test_spec_orphan_skipped_when_no_owns_globs(self, git_repo: Path):
+        # Forbids-only sdd (no Owns) — should NOT fire orphan for any path.
+        _add_sdd(
+            git_repo,
+            f"{git_repo.name}.sdd",
+            "# root\n## Forbids\n- secret/**\n",
+        )
+        subprocess.run(["git", "add", "."], cwd=git_repo, check=True)
+        subprocess.run(["git", "commit", "-q", "-m", "add sdd"], cwd=git_repo, check=True)
+        base = _base_sha(git_repo)
+
+        _modify(git_repo, "anywhere/foo.py", "x = 1\n")
+        res = lint_report("", git_repo, base_sha=base)
+        assert res.spec_orphans == []
+        assert res.spec_violations == []
+
+    def test_owned_path_yields_no_finding(self, git_repo: Path):
+        _add_sdd(
+            git_repo,
+            f"{git_repo.name}.sdd",
+            "# root\n## Owns\n- src/**\n## Forbids\n- tests/**\n",
+        )
+        subprocess.run(["git", "add", "."], cwd=git_repo, check=True)
+        subprocess.run(["git", "commit", "-q", "-m", "add sdd"], cwd=git_repo, check=True)
+        base = _base_sha(git_repo)
+
+        _modify(git_repo, "src/new.py", "x = 1\n")
+        res = lint_report("", git_repo, base_sha=base)
+        assert res.spec_findings == []
+        assert not res.is_blocking
+
+    def test_summary_includes_spec_counts(self, git_repo: Path):
+        _add_sdd(
+            git_repo,
+            f"{git_repo.name}.sdd",
+            "# root\n## Owns\n- src/**\n## Forbids\n- tests/**\n",
+        )
+        subprocess.run(["git", "add", "."], cwd=git_repo, check=True)
+        subprocess.run(["git", "commit", "-q", "-m", "add sdd"], cwd=git_repo, check=True)
+        base = _base_sha(git_repo)
+
+        _modify(git_repo, "tests/x.py", "x = 1\n")  # violation
+        _modify(git_repo, "docs/y.md", "x\n")  # orphan
+        res = lint_report("", git_repo, base_sha=base)
+        s = res.summary()
+        assert "spec_violation=1" in s
+        assert "spec_orphan=1" in s
+
+    def test_deleted_files_are_not_lint_targets(self, git_repo: Path):
+        # Workers may delete files as part of a fix; deletion shouldn't
+        # produce spec_violation findings even if the deleted path
+        # matches a Forbids glob.
+        # Setup: pre-existing tests/old.py committed at base, then sdd
+        # added that forbids tests/**.
+        _modify(git_repo, "tests/old.py", "x\n")
+        _add_sdd(
+            git_repo,
+            f"{git_repo.name}.sdd",
+            "# root\n## Forbids\n- tests/**\n",
+        )
+        subprocess.run(["git", "add", "."], cwd=git_repo, check=True)
+        subprocess.run(["git", "commit", "-q", "-m", "sdd"], cwd=git_repo, check=True)
+        base = _base_sha(git_repo)
+
+        # Worker deletes tests/old.py.
+        subprocess.run(
+            ["git", "rm", "-q", "tests/old.py"], cwd=git_repo, check=True
+        )
+        subprocess.run(
+            ["git", "commit", "-q", "-m", "delete"], cwd=git_repo, check=True
+        )
+        res = lint_report("", git_repo, base_sha=base)
+        assert res.spec_violations == []

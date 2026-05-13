@@ -1,0 +1,1 @@
+{"id": "live_simple_48-21-0", "actual_calls": [["find_beer", {"brewery": "Sierra Nevada", "taste": "bitter", "aroma": "hoppy", "color": "pale", "style": "lager"}]], "wall_s": 4.20452570800262, "prompt_tokens": 673, "completion_tokens": 67, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_56", "actual_calls": [["time_zones.get_current_time", {"location": "Beijing"}]], "wall_s": 1.9648507499950938, "prompt_tokens": 382, "completion_tokens": 33, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

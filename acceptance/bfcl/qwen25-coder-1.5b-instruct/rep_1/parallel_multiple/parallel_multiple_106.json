@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_106", "actual_calls": [["traffic_estimate", {"start_location": "San Francisco", "end_location": "Palo Alto", "time_period": "now"}]], "wall_s": 3.155882582999766, "prompt_tokens": 617, "completion_tokens": 49, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

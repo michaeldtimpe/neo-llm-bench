@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_11-10-0", "actual_calls": [["get_relevant_classes", {"search_string": "CellResult", "case_sensitive": false, "include_subdirectories": true}]], "wall_s": 4.333737082997686, "prompt_tokens": 1011, "completion_tokens": 48, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

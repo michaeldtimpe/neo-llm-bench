@@ -1,0 +1,1 @@
+{"id": "irrelevance_125", "actual_calls": [["get_recent_tweets", {"username": "J.K. Rowling", "count": 10, "exclude_replies": false}]], "wall_s": 3.372980499996629, "prompt_tokens": 313, "completion_tokens": 75, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_recent_tweets"}

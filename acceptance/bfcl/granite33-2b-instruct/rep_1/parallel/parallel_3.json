@@ -1,0 +1,1 @@
+{"id": "parallel_3", "actual_calls": [], "wall_s": 11.317289124999661, "prompt_tokens": 300, "completion_tokens": 124, "error": "", "passed": false, "reason": "emitted_0_calls_expected_3"}

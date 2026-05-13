@@ -1,0 +1,11 @@
+memory_budget_gb: 8
+peak_model_gb: 2.0
+benchmarks:
+  - bfcl
+  - humaneval
+parallel_models: 1
+work_dir: ~/.llamabench/bench-workspace
+keep_loaded: false
+server_host: 127.0.0.1
+server_port: 8080
+server_bin: ~/code/llama.cpp/build/bin/llama-server

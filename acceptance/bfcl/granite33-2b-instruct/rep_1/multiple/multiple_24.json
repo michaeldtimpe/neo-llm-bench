@@ -1,0 +1,1 @@
+{"id": "multiple_24", "actual_calls": [["route_planner.calculate_route", {"start": "London", "destination": "Edinburgh"}], ["chess_club_details.find", {"name": "chess_club_details.find", "city": "Edinburgh"}]], "wall_s": 5.829959000002418, "prompt_tokens": 516, "completion_tokens": 69, "error": "", "passed": false, "reason": "emitted_2_calls_expected_1"}

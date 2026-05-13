@@ -1,0 +1,1 @@
+{"id": "multiple_130", "actual_calls": [["calculate_cagr", {"initial_value": 2000, "final_value": 3000, "period_in_years": 4}]], "wall_s": 6.531695417004812, "prompt_tokens": 666, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

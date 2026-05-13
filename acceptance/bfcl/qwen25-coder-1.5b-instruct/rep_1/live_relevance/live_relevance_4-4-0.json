@@ -1,0 +1,1 @@
+{"id": "live_relevance_4-4-0", "actual_calls": [], "wall_s": 2.0310356249974575, "prompt_tokens": 497, "completion_tokens": 28, "error": "", "passed": false, "reason": "no_tool_call_when_relevant"}

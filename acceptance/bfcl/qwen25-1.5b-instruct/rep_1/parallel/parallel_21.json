@@ -1,0 +1,1 @@
+{"id": "parallel_21", "actual_calls": [["law_crimes.search", {"crime": "money laundering", "location": "San Francisco", "year": 2019}], ["law_crimes.search", {"crime": "money laundering", "location": "Texas", "year": 2018}]], "wall_s": 3.4846567919958034, "prompt_tokens": 337, "completion_tokens": 77, "error": "", "passed": true, "reason": "all_calls_matched"}

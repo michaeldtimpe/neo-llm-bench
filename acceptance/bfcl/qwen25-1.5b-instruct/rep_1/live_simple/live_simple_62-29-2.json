@@ -1,0 +1,1 @@
+{"id": "live_simple_62-29-2", "actual_calls": [["todo", {"type": "delete", "content": "ravi"}]], "wall_s": 1.0783017080029822, "prompt_tokens": 353, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}

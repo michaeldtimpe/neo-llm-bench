@@ -1,0 +1,1 @@
+{"id": "simple_python_132", "actual_calls": [["calculate_return_on_equity", {"net_income": 2000000, "shareholder_equity": 10000000, "dividends_paid": 200000}]], "wall_s": 3.3744205000039074, "prompt_tokens": 385, "completion_tokens": 71, "error": "", "passed": true, "reason": "matched_gt_entry"}

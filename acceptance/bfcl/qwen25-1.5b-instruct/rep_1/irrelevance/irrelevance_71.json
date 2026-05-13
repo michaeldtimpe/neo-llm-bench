@@ -1,0 +1,1 @@
+{"id": "irrelevance_71", "actual_calls": [["calculate_ROI", {"investment_amount": 150000, "net_profit": 50000, "duration_years": 1}]], "wall_s": 2.292004499999166, "prompt_tokens": 345, "completion_tokens": 45, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_ROI"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_45-18-1", "actual_calls": [["ThinQ_Connect", {"body": {"currentJobMode": "COOL", "targetTemperature": 20}}], ["ThinQ_Connect", {"body": {"airCleanOperationMode": "START"}}]], "wall_s": 2.753491709001537, "prompt_tokens": 621, "completion_tokens": 66, "error": "", "passed": false, "reason": "emitted_2_calls_expected_1"}

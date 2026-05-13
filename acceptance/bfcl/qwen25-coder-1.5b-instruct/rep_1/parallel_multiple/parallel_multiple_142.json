@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_142", "actual_calls": [["get_collectables_in_season", {"game_name": "Animal Crossing", "season": "Summer", "item_type": "bug"}]], "wall_s": 2.9083477090025553, "prompt_tokens": 613, "completion_tokens": 49, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

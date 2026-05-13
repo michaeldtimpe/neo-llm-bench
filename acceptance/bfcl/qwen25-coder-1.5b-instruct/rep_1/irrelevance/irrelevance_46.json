@@ -1,0 +1,1 @@
+{"id": "irrelevance_46", "actual_calls": [["get_exchange_rate", {"base_currency": "USD", "target_currency": "INR"}]], "wall_s": 1.9371570420044009, "prompt_tokens": 285, "completion_tokens": 40, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_exchange_rate"}

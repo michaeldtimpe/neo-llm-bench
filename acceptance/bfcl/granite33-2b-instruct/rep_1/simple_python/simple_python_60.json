@@ -1,0 +1,1 @@
+{"id": "simple_python_60", "actual_calls": [["mutation_type.find", {"snp_id": "rs6034464", "species": "Homo sapiens"}]], "wall_s": 3.002484957993147, "prompt_tokens": 315, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

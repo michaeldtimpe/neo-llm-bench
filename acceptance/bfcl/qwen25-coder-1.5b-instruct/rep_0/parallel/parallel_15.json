@@ -1,0 +1,1 @@
+{"id": "parallel_15", "actual_calls": [["calculate_capital_gains_tax", {"short_term_gain": 15000, "long_term_gain": 25000, "state": "california"}]], "wall_s": 2.9525944589986466, "prompt_tokens": 376, "completion_tokens": 60, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

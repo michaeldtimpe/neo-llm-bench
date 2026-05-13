@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_5-0-5", "actual_calls": [["requests.get", {"url": "https://date.nager.at/api/v2/holidays?country=US&city=NYC&longWeekend=true&maxDuration=120"}]], "wall_s": 3.110902749998786, "prompt_tokens": 963, "completion_tokens": 50, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

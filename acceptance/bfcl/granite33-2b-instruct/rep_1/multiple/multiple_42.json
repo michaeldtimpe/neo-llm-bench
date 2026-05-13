@@ -1,0 +1,1 @@
+{"id": "multiple_42", "actual_calls": [["calculate_final_temperature", {"quantity1": 2, "temperature1": 300, "quantity2": 3, "temperature2": 400}]], "wall_s": 4.418712582999433, "prompt_tokens": 509, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

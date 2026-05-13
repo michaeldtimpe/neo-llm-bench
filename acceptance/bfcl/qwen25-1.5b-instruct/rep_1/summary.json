@@ -1,0 +1,49 @@
+{
+  "model": "qwen25-1.5b-instruct",
+  "rep": 1,
+  "mode": "auto",
+  "categories": {
+    "live_simple": {
+      "n_problems": 100,
+      "n_with_calls": 100,
+      "n_errors": 0,
+      "wall_s": 213.05924745304947,
+      "completion_tokens": 4088
+    },
+    "live_multiple": {
+      "n_problems": 100,
+      "n_with_calls": 96,
+      "n_errors": 0,
+      "wall_s": 272.1119576580313,
+      "completion_tokens": 3835
+    },
+    "live_parallel": {
+      "n_problems": 16,
+      "n_with_calls": 16,
+      "n_errors": 0,
+      "wall_s": 63.652792248009064,
+      "completion_tokens": 1373
+    },
+    "live_parallel_multiple": {
+      "n_problems": 24,
+      "n_with_calls": 24,
+      "n_errors": 0,
+      "wall_s": 128.68571762697684,
+      "completion_tokens": 1990
+    },
+    "live_irrelevance": {
+      "n_problems": 100,
+      "n_with_calls": 19,
+      "n_errors": 0,
+      "wall_s": 205.74952087896963,
+      "completion_tokens": 4466
+    },
+    "live_relevance": {
+      "n_problems": 16,
+      "n_with_calls": 15,
+      "n_errors": 0,
+      "wall_s": 66.9373982489924,
+      "completion_tokens": 1068
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"id": "multiple_18", "actual_calls": [["european_history.battle_details", {"battle": "Battle of Stalingrad"}]], "wall_s": 1.7898324170018896, "prompt_tokens": 416, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

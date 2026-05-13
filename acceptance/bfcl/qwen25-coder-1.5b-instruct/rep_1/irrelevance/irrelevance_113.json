@@ -1,0 +1,1 @@
+{"id": "irrelevance_113", "actual_calls": [["find_pois", {"location": "London, UK", "category": ["Restaurants"], "rating": 0.3}]], "wall_s": 2.446481124999991, "prompt_tokens": 341, "completion_tokens": 49, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: find_pois"}

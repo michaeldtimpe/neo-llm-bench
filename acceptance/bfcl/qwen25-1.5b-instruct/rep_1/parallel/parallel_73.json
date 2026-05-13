@@ -1,0 +1,1 @@
+{"id": "parallel_73", "actual_calls": [["calculus.derivative", {"function": "3*x**2 + 2*x - 1", "value": 5}], ["calculus.derivative", {"function": "4*y**3 - 3*y**2 + 2*y - 1", "value": 3, "function_variable": "y"}]], "wall_s": 3.80979141699936, "prompt_tokens": 401, "completion_tokens": 89, "error": "", "passed": true, "reason": "all_calls_matched"}

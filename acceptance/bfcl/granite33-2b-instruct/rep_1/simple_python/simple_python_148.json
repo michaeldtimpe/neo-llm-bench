@@ -1,0 +1,1 @@
+{"id": "simple_python_148", "actual_calls": [["finance.calculate_future_value", {"initial_investment": 20000, "rate_of_return": 8, "years": 5}]], "wall_s": 3.6855782919956255, "prompt_tokens": 373, "completion_tokens": 46, "error": "", "passed": false, "reason": "call_finance.calculate_future_value_did_not_match_any_gt"}

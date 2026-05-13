@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_28", "actual_calls": [["criminal_record.get_status", {"criminal_name": "John Doe", "region": "New York"}], ["criminal_record.get_offense_nature", {"criminal_name": "John Doe"}]], "wall_s": 3.5241262090021337, "prompt_tokens": 414, "completion_tokens": 72, "error": "", "passed": true, "reason": "all_calls_matched"}

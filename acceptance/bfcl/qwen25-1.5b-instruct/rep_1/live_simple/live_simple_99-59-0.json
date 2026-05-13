@@ -1,0 +1,1 @@
+{"id": "live_simple_99-59-0", "actual_calls": [["connectBluetooth", {"device_name": "ue boom", "timeout": 30, "auto_reconnect": true}]], "wall_s": 1.92654895799933, "prompt_tokens": 336, "completion_tokens": 36, "error": "", "passed": false, "reason": "call_connectBluetooth_did_not_match_any_gt"}

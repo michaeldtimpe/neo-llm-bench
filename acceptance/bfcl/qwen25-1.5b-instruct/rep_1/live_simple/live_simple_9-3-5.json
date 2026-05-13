@@ -1,0 +1,1 @@
+{"id": "live_simple_9-3-5", "actual_calls": [["get_current_weather", {"location": "Hyderabad, India (HYD)", "unit": "fahrenheit"}]], "wall_s": 1.4317333750004764, "prompt_tokens": 356, "completion_tokens": 34, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

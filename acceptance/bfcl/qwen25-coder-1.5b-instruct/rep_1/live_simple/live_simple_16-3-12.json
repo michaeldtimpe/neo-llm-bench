@@ -1,0 +1,1 @@
+{"id": "live_simple_16-3-12", "actual_calls": [["get_current_weather", {"location": "Lang Son, Vietnam", "unit": "fahrenheit"}]], "wall_s": 1.6651917080016574, "prompt_tokens": 361, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

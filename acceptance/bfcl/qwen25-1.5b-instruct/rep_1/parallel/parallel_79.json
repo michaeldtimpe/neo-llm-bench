@@ -1,0 +1,1 @@
+{"id": "parallel_79", "actual_calls": [["prime_factorize", {"number": 4567}], ["prime_factorize", {"number": 7890}]], "wall_s": 1.9847138749973965, "prompt_tokens": 350, "completion_tokens": 48, "error": "", "passed": false, "reason": "call_prime_factorize_unmatched_in_gt"}

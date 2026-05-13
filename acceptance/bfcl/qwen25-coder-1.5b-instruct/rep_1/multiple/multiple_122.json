@@ -1,0 +1,1 @@
+{"id": "multiple_122", "actual_calls": [["run_linear_regression", {"predictors": ["Age", "Income", "Education"], "target": "Purchase_Amount", "standardize": true}]], "wall_s": 3.7263756250031292, "prompt_tokens": 774, "completion_tokens": 53, "error": "", "passed": true, "reason": "matched_gt_entry"}

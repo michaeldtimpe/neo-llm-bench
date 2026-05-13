@@ -1,0 +1,1 @@
+{"id": "live_parallel_0-0-0", "actual_calls": [["get_current_weather", {"location": "\u5317\u4eac, China", "unit": "fahrenheit"}], ["get_current_weather", {"location": "\u4e0a\u6d77, China", "unit": "fahrenheit"}]], "wall_s": 2.903437249995477, "prompt_tokens": 354, "completion_tokens": 60, "error": "", "passed": false, "reason": "call_get_current_weather_unmatched_in_gt"}

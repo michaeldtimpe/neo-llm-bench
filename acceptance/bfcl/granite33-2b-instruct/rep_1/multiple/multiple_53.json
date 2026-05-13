@@ -1,0 +1,1 @@
+{"id": "multiple_53", "actual_calls": [["linear_regression", {"independent_var": ["interest_rate", "unemployment_rate"], "dependent_var": "house_price", "forecast_period": 5}]], "wall_s": 4.744354624999687, "prompt_tokens": 558, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

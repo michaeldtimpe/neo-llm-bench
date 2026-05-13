@@ -1,0 +1,1 @@
+{"id": "irrelevance_22", "actual_calls": [["magnetic_field_intensity", {"current": 5, "distance": 2}]], "wall_s": 2.6008545000004233, "prompt_tokens": 343, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: magnetic_field_intensity"}

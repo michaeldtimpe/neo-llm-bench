@@ -1,0 +1,1 @@
+{"id": "parallel_32", "actual_calls": [["us_history.events_by_presidency", {"president_name": "Abraham Lincoln"}], ["us_history.events_by_presidency", {"president_name": "George Washington"}]], "wall_s": 6.975876707998395, "prompt_tokens": 343, "completion_tokens": 68, "error": "", "passed": true, "reason": "all_calls_matched"}

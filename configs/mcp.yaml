@@ -1,0 +1,47 @@
+# MCP — Model Context Protocol — client + server config.
+#
+# Default ships with NO client servers configured. Add servers under
+# `client.servers` to opt in. The server-side block governs `llamabench serve`
+# (Phase 6) and is documented here for reference.
+#
+# Each client server has its own per-call timeout and per-session call cap;
+# the global circuit breaker trips after `consecutive_failures` failed calls
+# from one server.
+
+client:
+  servers: []
+  # Example (commented):
+  # - name: github
+  #   transport: stdio
+  #   command: npx
+  #   args: ["-y", "@modelcontextprotocol/server-github"]
+  #   env:
+  #     GITHUB_TOKEN: "${GITHUB_TOKEN}"
+  #   timeout_s: 30
+  #   enabled_for: [maintain, review]
+  #   max_calls_per_session: 50
+  # - name: filesystem
+  #   transport: stdio
+  #   command: npx
+  #   args: ["-y", "@modelcontextprotocol/server-filesystem", "/safe/path"]
+  #   timeout_s: 30
+  #   enabled_for: [maintain]
+  #   max_calls_per_session: 50
+
+  circuit_breaker:
+    consecutive_failures: 3
+    hard_cap_calls: 200
+
+# Server side (llamabench serve) — Phase 6 will consume this.
+server:
+  read_only_tools:
+    - llamabench_review
+    - llamabench_summarize
+    - llamabench_explain
+  mutation_tools:
+    - llamabench_maintain
+  rate_limits:
+    llamabench_maintain: "1/min"
+    llamabench_review: "6/min"
+    llamabench_summarize: "6/min"
+    llamabench_explain: "6/min"

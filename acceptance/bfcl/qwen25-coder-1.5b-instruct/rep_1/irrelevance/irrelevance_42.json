@@ -1,0 +1,1 @@
+{"id": "irrelevance_42", "actual_calls": [["calculate_biodiversity_index", {"species_richness": 100, "species_evenness": 0.5, "region": "Tropical Rainforest"}]], "wall_s": 3.7662924160031253, "prompt_tokens": 366, "completion_tokens": 83, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_biodiversity_index"}

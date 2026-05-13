@@ -1,0 +1,1 @@
+{"id": "multiple_134", "actual_calls": [["crime_record.get_record", {"case_number": "CA123456", "county": "San Diego"}]], "wall_s": 3.097001458001614, "prompt_tokens": 811, "completion_tokens": 36, "error": "", "passed": false, "reason": "call_crime_record.get_record_did_not_match_any_gt"}

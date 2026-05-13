@@ -1,0 +1,1 @@
+{"id": "parallel_26", "actual_calls": [["court_case.find", {"location": "New York District court", "case_number": ["67813", "71249"], "case_type": ["Civil", "Criminal"]}]], "wall_s": 6.408070624995162, "prompt_tokens": 377, "completion_tokens": 59, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

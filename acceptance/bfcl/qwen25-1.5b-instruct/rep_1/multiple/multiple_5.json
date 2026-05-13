@@ -1,0 +1,1 @@
+{"id": "multiple_5", "actual_calls": [["weather.get_by_coordinates_date", {"coordinates": [46.603354, 1.888334], "date": "2019-12-13"}]], "wall_s": 3.6692948330019135, "prompt_tokens": 624, "completion_tokens": 57, "error": "", "passed": true, "reason": "matched_gt_entry"}

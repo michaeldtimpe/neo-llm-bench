@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_145", "actual_calls": [["calculate_fitness", {"trait_values": [0.7, 0.8, 0.9], "trait_contributions": [0.3, 0.4, 0.3]}]], "wall_s": 4.669884667004226, "prompt_tokens": 1050, "completion_tokens": 63, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

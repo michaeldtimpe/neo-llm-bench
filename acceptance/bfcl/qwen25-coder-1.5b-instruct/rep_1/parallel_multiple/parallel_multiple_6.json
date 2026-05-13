@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_6", "actual_calls": [["find_prime_numbers", {"start": 50, "end": 150}]], "wall_s": 2.35896829199919, "prompt_tokens": 456, "completion_tokens": 40, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

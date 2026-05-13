@@ -1,0 +1,10 @@
+{
+  "model": "granite33-2b-instruct",
+  "rep": 0,
+  "n_problems": 164,
+  "n_passed": 85,
+  "n_extract_ok": 164,
+  "wall_s": 1410.1331374529873,
+  "completion_tokens": 22430,
+  "pass_at_1": 0.5182926829268293
+}

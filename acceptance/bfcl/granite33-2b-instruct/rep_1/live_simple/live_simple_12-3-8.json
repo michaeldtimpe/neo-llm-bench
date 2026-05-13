@@ -1,0 +1,1 @@
+{"id": "live_simple_12-3-8", "actual_calls": [["get_current_weather", {"location": "New York, NY", "unit": "celsius"}]], "wall_s": 2.6001388329968904, "prompt_tokens": 367, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

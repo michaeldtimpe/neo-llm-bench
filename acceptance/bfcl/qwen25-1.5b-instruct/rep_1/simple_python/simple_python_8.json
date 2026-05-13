@@ -1,0 +1,1 @@
+{"id": "simple_python_8", "actual_calls": [["geometry.area_circle", {"radius": 10}]], "wall_s": 1.294249917002162, "prompt_tokens": 296, "completion_tokens": 22, "error": "", "passed": true, "reason": "matched_gt_entry"}

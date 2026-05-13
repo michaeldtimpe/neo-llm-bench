@@ -1,0 +1,1 @@
+{"id": "live_relevance_2-2-0", "actual_calls": [["search_web", {"query": "capital of the United States in French", "results_limit": 5, "language": "fr", "safe_search": false}]], "wall_s": 2.3806449999974575, "prompt_tokens": 390, "completion_tokens": 45, "error": "", "passed": true, "reason": "correctly_called_a_tool"}

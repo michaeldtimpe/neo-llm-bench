@@ -1,0 +1,1 @@
+{"id": "parallel_111", "actual_calls": [["calculate_molecular_weight", {"compound": "C6H12O6", "to_unit": "grams/mole"}]], "wall_s": 2.364625916998193, "prompt_tokens": 346, "completion_tokens": 47, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

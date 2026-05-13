@@ -1,0 +1,1 @@
+{"id": "parallel_1", "actual_calls": [["calculate_em_force", {"b_field": 5, "area": 2, "d_time": 4}], ["calculate_em_force", {"b_field": 5, "area": 2, "d_time": 10}]], "wall_s": 4.29345629099771, "prompt_tokens": 385, "completion_tokens": 94, "error": "", "passed": true, "reason": "all_calls_matched"}

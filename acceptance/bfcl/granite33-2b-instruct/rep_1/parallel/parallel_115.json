@@ -1,0 +1,1 @@
+{"id": "parallel_115", "actual_calls": [["genetics.calculate_similarity", {"species1": "human", "species2": "chimpanzee"}], ["genetics.calculate_similarity", {"species1": "human", "species2": "gorilla"}]], "wall_s": 5.491146125001251, "prompt_tokens": 334, "completion_tokens": 62, "error": "", "passed": false, "reason": "emitted_2_calls_expected_4"}

@@ -1,0 +1,1 @@
+{"id": "irrelevance_4", "actual_calls": [["find_roots", {"b": 1, "c": -6}]], "wall_s": 3.19238229199982, "prompt_tokens": 314, "completion_tokens": 71, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: find_roots"}

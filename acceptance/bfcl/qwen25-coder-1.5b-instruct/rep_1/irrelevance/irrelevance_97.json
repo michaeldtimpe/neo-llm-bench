@@ -1,0 +1,1 @@
+{"id": "irrelevance_97", "actual_calls": [["file_lawsuit", {"defendant": "John Doe", "plaintiff": "Jane Smith", "jurisdiction": "New York, NY"}]], "wall_s": 3.8274681250040885, "prompt_tokens": 328, "completion_tokens": 86, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: file_lawsuit"}

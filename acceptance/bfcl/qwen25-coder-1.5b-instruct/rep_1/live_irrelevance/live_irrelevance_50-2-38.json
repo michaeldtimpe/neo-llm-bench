@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_50-2-38", "actual_calls": [["get_current_weather", {"location": "\u5317\u4eac, \u5317\u4eac", "unit": "celsius"}]], "wall_s": 1.7010997079996741, "prompt_tokens": 340, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_current_weather"}

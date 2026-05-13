@@ -1,0 +1,1 @@
+{"id": "simple_python_145", "actual_calls": [["calculate_compounded_interest", {"principal": 5000, "interest_rate": 0.05, "period": 10}]], "wall_s": 2.249688125004468, "prompt_tokens": 387, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

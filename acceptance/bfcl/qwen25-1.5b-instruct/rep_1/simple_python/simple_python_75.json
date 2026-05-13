@@ -1,0 +1,1 @@
+{"id": "simple_python_75", "actual_calls": [["elephant_population_estimate", {"current_population": 35000, "growth_rate": 0.015, "years": 5}]], "wall_s": 2.2305095000047004, "prompt_tokens": 343, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

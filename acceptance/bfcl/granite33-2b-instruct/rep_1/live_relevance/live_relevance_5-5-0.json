@@ -1,0 +1,1 @@
+{"id": "live_relevance_5-5-0", "actual_calls": [["get_copyright_info", {"copyright_content": "The image is a poster for The Lego Movie", "copyright_holder": "Warner Bros. Pictures", "confidence_score": 100.0}]], "wall_s": 5.882258416997502, "prompt_tokens": 589, "completion_tokens": 58, "error": "", "passed": true, "reason": "correctly_called_a_tool"}

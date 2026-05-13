@@ -1,0 +1,1 @@
+{"id": "irrelevance_54", "actual_calls": [["movies.search", {"title": "", "year": "", "genre": "science fiction"}]], "wall_s": 2.9819397920000483, "prompt_tokens": 312, "completion_tokens": 65, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: movies.search"}

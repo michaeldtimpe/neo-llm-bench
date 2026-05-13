@@ -1,0 +1,1 @@
+{"id": "live_simple_5-3-1", "actual_calls": [["get_current_weather", {"location": "Divin\u00f3polis, MG"}]], "wall_s": 1.5674120420007966, "prompt_tokens": 353, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "simple_python_136", "actual_calls": [["compound_interest", {"principal": 10000, "annual_rate": 5, "compounding_freq": "monthly", "time_in_years": 5}]], "wall_s": 4.103270791994873, "prompt_tokens": 400, "completion_tokens": 51, "error": "", "passed": true, "reason": "matched_gt_entry"}

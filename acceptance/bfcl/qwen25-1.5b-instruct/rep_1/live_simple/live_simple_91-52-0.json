@@ -1,0 +1,1 @@
+{"id": "live_simple_91-52-0", "actual_calls": [["fetchPerson", {"id": 4}]], "wall_s": 1.1502647079978487, "prompt_tokens": 274, "completion_tokens": 20, "error": "", "passed": true, "reason": "matched_gt_entry"}

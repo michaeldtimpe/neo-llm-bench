@@ -1,0 +1,1 @@
+{"id": "live_simple_8-3-4", "actual_calls": [["get_current_weather", {"location": "London, UK", "unit": "fahrenheit"}]], "wall_s": 1.2571388329961337, "prompt_tokens": 365, "completion_tokens": 30, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_81", "actual_calls": [["geometry_rectangle.calculate", {"width": 30, "length": 50}], ["geometry_square.calculate", {"side": 5}], ["geometry_circle.calculate", {"radius": 3}]], "wall_s": 3.736348165999516, "prompt_tokens": 522, "completion_tokens": 71, "error": "", "passed": true, "reason": "all_calls_matched"}

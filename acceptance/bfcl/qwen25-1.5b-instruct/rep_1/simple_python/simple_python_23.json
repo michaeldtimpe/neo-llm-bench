@@ -1,0 +1,1 @@
+{"id": "simple_python_23", "actual_calls": [["prime_factorize", {"number": 60}]], "wall_s": 1.350337750001927, "prompt_tokens": 332, "completion_tokens": 22, "error": "", "passed": false, "reason": "call_prime_factorize_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "multiple_34", "actual_calls": [["math.lcm", {"num1": 18, "num2": 12}]], "wall_s": 2.0614414170049713, "prompt_tokens": 484, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}
