@@ -282,6 +282,7 @@ def main() -> int:
             bfcl_mode=args.bfcl_mode,
             bfcl_run_mode=args.bfcl_run_mode,
             temperature_override=args.temperature,
+            profile_path=args.profile,
         )
 
         # ETA based on average wall of steps we've completed THIS invocation.
