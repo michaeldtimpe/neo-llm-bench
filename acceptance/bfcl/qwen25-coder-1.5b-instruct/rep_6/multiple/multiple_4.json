@@ -1,0 +1,1 @@
+{"id": "multiple_4", "actual_calls": [["kinematics.calculate_displacement", {"initial_speed": 20, "acceleration": 10, "time": 5, "rounding": 2}]], "wall_s": 0.7939108749851584, "prompt_tokens": 721, "completion_tokens": 58, "error": "", "passed": true, "reason": "matched_gt_entry"}

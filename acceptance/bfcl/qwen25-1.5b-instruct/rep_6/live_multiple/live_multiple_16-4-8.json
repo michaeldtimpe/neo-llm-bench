@@ -1,0 +1,1 @@
+{"id": "live_multiple_16-4-8", "actual_calls": [["HNA_NEWS.search", {"keyword": "\ubc15\uc9c0\uc131", "category": "General"}]], "wall_s": 0.5075753330020234, "prompt_tokens": 1386, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

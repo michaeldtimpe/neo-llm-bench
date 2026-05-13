@@ -1,0 +1,1 @@
+{"id": "simple_python_117", "actual_calls": [["probability_of_event", {"success_outcomes": 1, "total_outcomes": 52, "format_as_ratio": true}]], "wall_s": 0.43154570896876976, "prompt_tokens": 470, "completion_tokens": 50, "error": "", "passed": false, "reason": "call_probability_of_event_did_not_match_any_gt"}

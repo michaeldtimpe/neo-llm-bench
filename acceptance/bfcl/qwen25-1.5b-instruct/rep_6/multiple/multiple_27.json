@@ -1,0 +1,1 @@
+{"id": "multiple_27", "actual_calls": [["maps.shortest_path", {"start_location": "Paris, France", "end_location": "Rome, Italy", "mode": "transit"}]], "wall_s": 0.264211209025234, "prompt_tokens": 473, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

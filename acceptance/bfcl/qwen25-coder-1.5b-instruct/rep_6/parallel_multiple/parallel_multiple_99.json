@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_99", "actual_calls": [["corporate_finance.dividend_data", {"company": "Microsoft", "years": 5, "frequency": "quarterly"}]], "wall_s": 0.6301822499954142, "prompt_tokens": 631, "completion_tokens": 49, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

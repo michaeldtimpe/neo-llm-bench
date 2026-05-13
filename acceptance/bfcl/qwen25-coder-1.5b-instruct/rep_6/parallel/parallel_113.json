@@ -1,0 +1,1 @@
+{"id": "parallel_113", "actual_calls": [["diabetes_prediction", {"weight": 180, "height": 70, "activity_level": "lightly active"}]], "wall_s": 0.6254999589873478, "prompt_tokens": 581, "completion_tokens": 49, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

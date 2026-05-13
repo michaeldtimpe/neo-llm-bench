@@ -1,0 +1,1 @@
+{"id": "live_multiple_98-42-2", "actual_calls": [["open_project", {"path": "/Foo/Bar", "create_if_missing": true, "access_mode": "readwrite"}]], "wall_s": 0.513181375048589, "prompt_tokens": 1840, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

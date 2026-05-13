@@ -1,0 +1,1 @@
+{"id": "simple_python_43", "actual_calls": [["calculate_magnetic_field_strength", {"current": 20, "distance": 10}]], "wall_s": 0.19450166600290686, "prompt_tokens": 380, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

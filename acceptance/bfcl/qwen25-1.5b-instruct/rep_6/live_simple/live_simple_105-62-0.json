@@ -1,0 +1,1 @@
+{"id": "live_simple_105-62-0", "actual_calls": [["classify", {"clean_hello": ["hello"], "faq_link_accounts_start": ["link my account", "connect my accounts"]}]], "wall_s": 0.5158517910167575, "prompt_tokens": 343, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

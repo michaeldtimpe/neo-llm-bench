@@ -1,0 +1,1 @@
+{"id": "live_multiple_59-22-6", "actual_calls": [["inventory_management", {"product_id": "Wonderland maxi dress", "sizes": ["S"]}]], "wall_s": 0.46651212498545647, "prompt_tokens": 835, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

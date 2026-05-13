@@ -367,6 +367,68 @@ The pass-any column is the model's effective ceiling with best-of-3
 sampling. qwen25-coder's pass-any (128/164 = 78.0%) is still solidly
 ahead of the others' pass@1 ceilings, by ~20pp.
 
+## Round 3 prompt-engineering experiments — failure-bucket movement (rep_6)
+
+Per-branch, did the variant move the targeted bucket? Each table shows
+the bucket count for non-passing problems, base→variant.
+
+### Branch A — qwen25-1.5b · v3a · curated `irrelevance` (target = `called_tool_when_irrelevant`)
+
+| bucket | rep_1 | rep_6 v3a | Δ |
+|---|---|---|---|
+| PASS | 86/150 | 77/150 | **-9** |
+| over_called (`called_tool_when_irrelevant`) | 64/150 | 73/150 | **+9** ← wrong direction |
+
+The imperative made the over-call bucket *bigger*. The "MUST NOT call
+unless fully satisfies" prefix appears to act more like a salience cue
+("calls are being discussed") than a restraint cue — the model emits
+more, not fewer, when told not to over-emit. The collateral live-cat
+damage (`live_simple` -15pp, `live_irrelevance` -23pp) confirms the
+boundary moved system-wide, not just on the target slice.
+
+### Branch B — qwen25-coder · v2_fewshot_parallel · `parallel` (target = `under_called_1_of_N`)
+
+| bucket | rep_1 | rep_6 v2_fewshot | Δ |
+|---|---|---|---|
+| PASS | 32/150 | 25/150 | -7 |
+| `under_called_1_of_N` (collapse to single call) | 111/150 | 102/150 | -9 |
+| `emitted_0_calls_expected_N` (no calls at all) | 0/150 | 20/150 | **+20** ← new failure mode |
+| `under_called_other` / wrong call | 7/150 | 3/150 | -4 |
+
+Few-shot examples did move 9 problems out of the single-call collapse
+bucket — but pushed 20 *new* problems into outright silence. The
+model is interpreting the few-shot block as part of the user message
+in some fraction of cases ("the parallel calls already happened, no
+further action needed") rather than as a pattern to imitate. Net
+movement on the target bucket is negative (-7 pass).
+
+### Branch C — granite33-2b · v3c · `multi_turn_miss_func` (target = `empty_turn_model_response`)
+
+| bucket | rep_5 baseline | rep_6 v3c | Δ |
+|---|---|---|---|
+| PASS | 0/100 | 0/100 | 0 |
+| `empty_turn_model_response` | 74/100 | 71/100 | -3 |
+| `instance_state_mismatch` (wrong tool, wrong state) | 14/100 | 17/100 | **+3** |
+| `execution_response_mismatch` | 11/100 | 12/100 | +1 |
+| `grader_crash` | 1/100 | 0/100 | -1 |
+
+The 1:1 trade between `empty_response` and `state_mismatch` is the
+cleanest signal: the prompt *can* shift the decline boundary, but the
+problems that move all break state instead of completing. The
+alternative-tool-selection competence required to convert these into
+passes is not present at this size.
+
+Collateral irrelevance buckets (per round-3 trade-off framing):
+
+| cat | bucket | rep_1 baseline | rep_6 v3c | Δ |
+|---|---|---|---|---|
+| irrelevance (first 100) | `called_tool_when_irrelevant` | 15/100 | 20/100 | +5 |
+| live_irrelevance | `called_tool_when_irrelevant` | 3/100 | 2/100 | -1 |
+
+The over-call cost concentrated on the curated `irrelevance` set
+(easier-to-trigger over-calls), with `live_irrelevance` essentially
+flat — the boundary shift didn't reach the live distribution.
+
 ## Cross-bench observations
 
 1. **The three are non-dominated.** qwen25-1.5b wins tool-use,

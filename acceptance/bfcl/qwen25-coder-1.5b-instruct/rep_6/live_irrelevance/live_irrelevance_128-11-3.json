@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_128-11-3", "actual_calls": [["create_workspace", {"name": "my_workspace", "base_branch": "main"}]], "wall_s": 0.4285377919441089, "prompt_tokens": 725, "completion_tokens": 38, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: create_workspace"}

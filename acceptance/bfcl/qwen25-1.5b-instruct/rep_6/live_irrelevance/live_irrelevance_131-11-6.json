@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_131-11-6", "actual_calls": [["get_current_weather", {"location": "Seattle, WA", "unit": "metric"}]], "wall_s": 0.4076375830336474, "prompt_tokens": 803, "completion_tokens": 29, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_current_weather"}

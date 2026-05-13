@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_138", "actual_calls": [["calculate_magnetic_field", {"current": 5, "radius": 0.02, "permeability": 125700000000.0}]], "wall_s": 0.8341467499849387, "prompt_tokens": 859, "completion_tokens": 57, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

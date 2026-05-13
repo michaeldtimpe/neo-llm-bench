@@ -1,0 +1,1 @@
+{"id": "irrelevance_10", "actual_calls": [["calculus.compute_definite_integral", {"function": "2*x", "interval": [1], "num_of_partitions": 1000}]], "wall_s": 0.5857661669724621, "prompt_tokens": 352, "completion_tokens": 43, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculus.compute_definite_integral"}

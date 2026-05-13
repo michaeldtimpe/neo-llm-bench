@@ -1,0 +1,1 @@
+{"id": "parallel_149", "actual_calls": [["calculate_distance", {"body1": "Mars", "body2": "Venus", "unit": "miles"}], ["calculate_distance", {"body1": "Mars", "body2": "Jupiter", "unit": "miles"}]], "wall_s": 0.9596950000268407, "prompt_tokens": 353, "completion_tokens": 74, "error": "", "passed": true, "reason": "all_calls_matched"}

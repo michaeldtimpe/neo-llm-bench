@@ -1,0 +1,1 @@
+{"id": "simple_python_3", "actual_calls": [["algebra.quadratic_roots", {"a": 1, "b": -3, "c": 2}]], "wall_s": 0.41180845902999863, "prompt_tokens": 452, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

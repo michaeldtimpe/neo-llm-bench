@@ -1,0 +1,1 @@
+{"id": "parallel_17", "actual_calls": [["get_stock_data", {"symbol": ["AAPL", "GOOGL", "MSFT"], "data_points": ["price", "volume"]}]], "wall_s": 0.6815702919848263, "prompt_tokens": 472, "completion_tokens": 51, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

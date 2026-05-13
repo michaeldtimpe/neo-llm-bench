@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_140-13-6", "actual_calls": [["cookbook.search_recipe", {"keyword": "AI", "cuisine": "Italian", "max_results": 5}]], "wall_s": 0.4772732079727575, "prompt_tokens": 1267, "completion_tokens": 47, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: cookbook.search_recipe"}

@@ -1,0 +1,1 @@
+{"id": "simple_python_66", "actual_calls": [["ecology_data.precipitation_stats", {"location": "Amazon rainforest", "time_frame": "six_months"}]], "wall_s": 0.22102120803901926, "prompt_tokens": 336, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

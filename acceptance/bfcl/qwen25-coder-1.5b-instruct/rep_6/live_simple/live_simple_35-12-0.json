@@ -1,0 +1,1 @@
+{"id": "live_simple_35-12-0", "actual_calls": [["answer.string", {"answer": "Logistic regression is not present in the text, therefore I cannot answer this question."}]], "wall_s": 0.43348412500927225, "prompt_tokens": 471, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

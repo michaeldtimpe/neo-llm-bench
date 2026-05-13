@@ -1,0 +1,1 @@
+{"id": "simple_python_103", "actual_calls": [["mathematics.calculate_area_under_curve", {"polynomial": [3, 2, -4], "limits": [-1, 2]}]], "wall_s": 0.4248671249952167, "prompt_tokens": 514, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

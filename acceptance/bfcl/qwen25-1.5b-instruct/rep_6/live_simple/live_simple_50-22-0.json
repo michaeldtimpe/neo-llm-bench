@@ -1,0 +1,1 @@
+{"id": "live_simple_50-22-0", "actual_calls": [["get_latest_carbon_intensity", {"zone": "Great Britain"}]], "wall_s": 0.36145562503952533, "prompt_tokens": 308, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_147-95-4", "actual_calls": [["cmd_controller.execute", {"command": "taskkill /F /IM timer.exe", "unit": "seconds"}]], "wall_s": 0.4371208749944344, "prompt_tokens": 482, "completion_tokens": 44, "error": "", "passed": false, "reason": "call_cmd_controller.execute_did_not_match_any_gt"}

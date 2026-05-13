@@ -1,0 +1,1 @@
+{"id": "irrelevance_72", "actual_calls": [["calculate_internal_rate_of_return", {"cash_flows": [-100, 40, 60, 80, 120]}]], "wall_s": 0.6264215419651009, "prompt_tokens": 356, "completion_tokens": 45, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_internal_rate_of_return"}

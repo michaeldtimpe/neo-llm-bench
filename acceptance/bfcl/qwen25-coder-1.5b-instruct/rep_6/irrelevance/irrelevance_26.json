@@ -1,0 +1,1 @@
+{"id": "irrelevance_26", "actual_calls": [["thermodynamics.calc_gas_pressure", {"volume": 2, "initial_temperature": 25, "final_temperature": 100, "initial_pressure": 101325}]], "wall_s": 1.1596907089697197, "prompt_tokens": 505, "completion_tokens": 65, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: thermodynamics.calc_gas_pressure"}

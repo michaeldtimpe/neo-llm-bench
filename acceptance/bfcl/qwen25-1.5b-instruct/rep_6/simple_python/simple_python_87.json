@@ -1,0 +1,1 @@
+{"id": "simple_python_87", "actual_calls": [["array_sort", {"list": [5, 3, 4, 1, 2], "order": "ascending"}]], "wall_s": 0.24002654099604115, "prompt_tokens": 325, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

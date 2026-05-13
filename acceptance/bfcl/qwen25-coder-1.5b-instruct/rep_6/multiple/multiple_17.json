@@ -1,0 +1,1 @@
+{"id": "multiple_17", "actual_calls": [["currency_conversion.get_rate", {"from_currency": "EUR", "to_currency": "USD", "date": "2022-01-01"}]], "wall_s": 0.7129550829995424, "prompt_tokens": 717, "completion_tokens": 56, "error": "", "passed": true, "reason": "matched_gt_entry"}

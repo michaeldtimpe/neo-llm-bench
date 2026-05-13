@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_129-11-4", "actual_calls": [["get_current_weather", {"location": "Beijing, China", "unit": "metric"}]], "wall_s": 0.7477806250099093, "prompt_tokens": 921, "completion_tokens": 29, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_current_weather"}

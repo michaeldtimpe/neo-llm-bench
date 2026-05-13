@@ -1,0 +1,1 @@
+{"id": "multiple_6", "actual_calls": [["capacitance_calculator.calculate", {"A": 10, "d": 0.01, "K": 1.0}]], "wall_s": 0.2840787500026636, "prompt_tokens": 604, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

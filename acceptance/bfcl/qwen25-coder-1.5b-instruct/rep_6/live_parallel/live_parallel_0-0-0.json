@@ -1,0 +1,1 @@
+{"id": "live_parallel_0-0-0", "actual_calls": [["get_current_weather", {"location": "\u5317\u4eac", "unit": "celsius"}], ["get_current_weather", {"location": "\u4e0a\u6d77", "unit": "celsius"}]], "wall_s": 0.4995292500243522, "prompt_tokens": 482, "completion_tokens": 53, "error": "", "passed": false, "reason": "call_get_current_weather_unmatched_in_gt"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_14-3-10", "actual_calls": [["get_current_weather", {"location": "Bangkok, Thailand", "unit": "fahrenheit"}]], "wall_s": 0.4331977919791825, "prompt_tokens": 390, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_relevance_14-14-0", "actual_calls": [["OpenWeatherMap.get_current_weather", {"location": "Beijing, China", "units": "metric", "api_key": "YOUR_API_KEY_HERE"}]], "wall_s": 0.7914081250200979, "prompt_tokens": 1492, "completion_tokens": 79, "error": "", "passed": true, "reason": "correctly_called_a_tool"}

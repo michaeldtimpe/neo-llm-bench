@@ -1,0 +1,1 @@
+{"id": "simple_python_37", "actual_calls": [["route.estimate_time", {"start_location": "San Francisco", "end_location": "Los Angeles", "stops": ["Santa Barbara", "Monterey"]}]], "wall_s": 0.27823270799126476, "prompt_tokens": 379, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

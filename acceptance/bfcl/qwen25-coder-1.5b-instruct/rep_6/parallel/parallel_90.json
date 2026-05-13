@@ -1,0 +1,1 @@
+{"id": "parallel_90", "actual_calls": [["travel_itinerary_generator", {"destination": "Tokyo", "days": 7, "daily_budget": 200, "exploration_type": "urban"}]], "wall_s": 0.750685415987391, "prompt_tokens": 581, "completion_tokens": 58, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

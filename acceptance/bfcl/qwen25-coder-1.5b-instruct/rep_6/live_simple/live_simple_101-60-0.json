@@ -1,0 +1,1 @@
+{"id": "live_simple_101-60-0", "actual_calls": [["askForSSID", {"prompt_message": "Please enter the Wi-Fi network name you wish to connect to:"}]], "wall_s": 0.3037100000074133, "prompt_tokens": 550, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

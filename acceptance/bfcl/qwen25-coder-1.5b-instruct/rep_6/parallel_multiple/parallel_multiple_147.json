@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_147", "actual_calls": [["find_restaurants", {"location": "San Francisco", "food_type": "Italian", "number": 5, "dietary_requirements": ["vegan"]}]], "wall_s": 0.8127167919883505, "prompt_tokens": 1009, "completion_tokens": 56, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

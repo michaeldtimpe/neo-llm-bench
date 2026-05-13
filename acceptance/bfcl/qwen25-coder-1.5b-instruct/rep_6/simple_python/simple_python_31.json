@@ -1,0 +1,1 @@
+{"id": "simple_python_31", "actual_calls": [["calculate_final_velocity", {"initial_velocity": 0, "acceleration": 9.8, "time": 5}]], "wall_s": 0.40470062498934567, "prompt_tokens": 478, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

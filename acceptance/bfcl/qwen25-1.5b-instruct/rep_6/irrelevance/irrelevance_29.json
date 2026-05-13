@@ -1,0 +1,1 @@
+{"id": "irrelevance_29", "actual_calls": [["get_cell_function", {"cell_part": "mitochondria", "detail_level": "basic"}]], "wall_s": 0.39914041600422934, "prompt_tokens": 321, "completion_tokens": 31, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_cell_function"}

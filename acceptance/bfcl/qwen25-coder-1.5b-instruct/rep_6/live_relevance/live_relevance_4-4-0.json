@@ -1,0 +1,1 @@
+{"id": "live_relevance_4-4-0", "actual_calls": [["tavily_search_results_json", {"query": "weather today", "results_limit": 10, "include_snippets": true, "date_range": null}]], "wall_s": 0.5108118330244906, "prompt_tokens": 625, "completion_tokens": 45, "error": "", "passed": true, "reason": "correctly_called_a_tool"}

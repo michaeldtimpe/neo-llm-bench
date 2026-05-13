@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_117-7-7", "actual_calls": [["uber.eat.order", {"restaurant": "Indigo", "items": ["flight status"], "quantities": [1]}]], "wall_s": 0.6374717089929618, "prompt_tokens": 503, "completion_tokens": 74, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: uber.eat.order"}

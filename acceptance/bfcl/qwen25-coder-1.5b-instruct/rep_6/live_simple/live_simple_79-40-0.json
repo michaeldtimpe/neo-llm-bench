@@ -1,0 +1,1 @@
+{"id": "live_simple_79-40-0", "actual_calls": [["search_hotels", {"location": "San Diego, CA"}]], "wall_s": 0.2577633330365643, "prompt_tokens": 481, "completion_tokens": 23, "error": "", "passed": true, "reason": "matched_gt_entry"}

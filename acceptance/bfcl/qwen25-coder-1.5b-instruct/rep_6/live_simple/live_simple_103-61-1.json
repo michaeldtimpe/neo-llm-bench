@@ -1,0 +1,1 @@
+{"id": "live_simple_103-61-1", "actual_calls": [["calculate_tax", {"purchase_amount": 999, "state": "CA", "tax_exempt": false, "discount_rate": 0, "apply_special_tax": false}]], "wall_s": 0.5578382919775322, "prompt_tokens": 646, "completion_tokens": 62, "error": "", "passed": true, "reason": "matched_gt_entry"}

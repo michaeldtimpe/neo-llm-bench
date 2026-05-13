@@ -1,0 +1,1 @@
+{"id": "multiple_90", "actual_calls": [["restaurant.find_group", {"location": "Seattle, WA", "group_size": 5, "cuisine": ["Seafood"]}]], "wall_s": 0.2643312499858439, "prompt_tokens": 528, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

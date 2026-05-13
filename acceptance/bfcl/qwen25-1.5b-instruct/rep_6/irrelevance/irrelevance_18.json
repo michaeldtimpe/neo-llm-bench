@@ -1,0 +1,1 @@
+{"id": "irrelevance_18", "actual_calls": [["calculate_vector_angle", {"X_component": 10, "Y_component": 10, "use_degrees": false}]], "wall_s": 1.8900165419909172, "prompt_tokens": 349, "completion_tokens": 162, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_vector_angle"}

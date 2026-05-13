@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_58", "actual_calls": [["triangle_properties.get", {"side1": 5, "side2": 7, "side3": 9, "get_area": true, "get_perimeter": true, "get_angles": true}]], "wall_s": 1.297765083028935, "prompt_tokens": 793, "completion_tokens": 69, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

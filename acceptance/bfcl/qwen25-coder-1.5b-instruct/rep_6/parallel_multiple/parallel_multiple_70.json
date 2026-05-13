@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_70", "actual_calls": [["solarFarm.potential", {"coordinates": [37.7749, -122.4194], "panelArea": 50000, "month": "July"}]], "wall_s": 0.9940732920076698, "prompt_tokens": 759, "completion_tokens": 68, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

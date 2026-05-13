@@ -1,0 +1,1 @@
+{"id": "irrelevance_92", "actual_calls": [["search_lawyer", {"area": "New York", "specialization": "Security", "min_experience": 5}]], "wall_s": 0.8298381249769591, "prompt_tokens": 471, "completion_tokens": 67, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: search_lawyer"}

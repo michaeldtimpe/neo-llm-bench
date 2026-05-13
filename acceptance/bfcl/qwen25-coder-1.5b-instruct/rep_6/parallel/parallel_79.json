@@ -1,0 +1,1 @@
+{"id": "parallel_79", "actual_calls": [["prime_factorize", {"number": 4567, "return_type": "dictionary"}], ["prime_factorize", {"number": 7890, "return_type": "dictionary"}]], "wall_s": 0.9864762499928474, "prompt_tokens": 478, "completion_tokens": 77, "error": "", "passed": true, "reason": "all_calls_matched"}

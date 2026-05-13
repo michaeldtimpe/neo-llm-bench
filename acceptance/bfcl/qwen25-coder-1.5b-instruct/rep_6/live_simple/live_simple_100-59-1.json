@@ -1,0 +1,1 @@
+{"id": "live_simple_100-59-1", "actual_calls": [["connectBluetooth", {"device_name": "JBL Flip 4", "timeout": 30, "auto_reconnect": false}]], "wall_s": 0.44022245798259974, "prompt_tokens": 468, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

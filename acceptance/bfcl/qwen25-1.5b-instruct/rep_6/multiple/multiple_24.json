@@ -1,0 +1,1 @@
+{"id": "multiple_24", "actual_calls": [["route_planner.calculate_route", {"start": "London", "destination": "Edinburgh", "method": "fastest"}]], "wall_s": 0.23741179204080254, "prompt_tokens": 490, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

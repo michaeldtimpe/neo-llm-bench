@@ -1,0 +1,1 @@
+{"id": "parallel_11", "actual_calls": [["ml.predict_house_price", {"location": "New York", "size": 3000}]], "wall_s": 0.6006470000138506, "prompt_tokens": 444, "completion_tokens": 42, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

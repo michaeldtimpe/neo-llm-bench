@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_98", "actual_calls": [["unit_conversion", {"value": 5000, "from_unit": "JPY", "to_unit": "USD"}], ["unit_conversion", {"value": 15, "from_unit": "km", "to_unit": "miles"}]], "wall_s": 0.9914612080319785, "prompt_tokens": 503, "completion_tokens": 74, "error": "", "passed": false, "reason": "call_unit_conversion_unmatched_in_gt"}

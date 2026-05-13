@@ -1,0 +1,1 @@
+{"id": "live_simple_57-26-1", "actual_calls": [["todo_manager.handle_action", {"type": "add", "content": "go to sleep at 9 pm"}]], "wall_s": 0.6076904169749469, "prompt_tokens": 383, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "simple_python_54", "actual_calls": [["get_protein_sequence", {"gene": "BRCA1", "species": "Homo sapiens"}]], "wall_s": 0.37276683398522437, "prompt_tokens": 429, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

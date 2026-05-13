@@ -1,0 +1,1 @@
+{"id": "simple_python_78", "actual_calls": [["average_temperature", {"location": "Austin", "days": 3, "temp_unit": "Celsius"}]], "wall_s": 0.3874990830081515, "prompt_tokens": 473, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

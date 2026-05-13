@@ -1,0 +1,1 @@
+{"id": "simple_python_45", "actual_calls": [["thermo.calculate_energy", {"mass": 100, "phase_transition": "vaporization", "substance": "water"}]], "wall_s": 0.4349396249745041, "prompt_tokens": 497, "completion_tokens": 51, "error": "", "passed": true, "reason": "matched_gt_entry"}

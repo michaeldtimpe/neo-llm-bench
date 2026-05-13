@@ -1,0 +1,1 @@
+{"id": "parallel_112", "actual_calls": [["mutation_type.find", {"snp_id": "rs123456", "species": "Homo sapiens"}], ["mutation_type.find", {"snp_id": "rs7891011", "species": "Canis lupus familiaris"}]], "wall_s": 0.983093083021231, "prompt_tokens": 382, "completion_tokens": 79, "error": "", "passed": true, "reason": "all_calls_matched"}

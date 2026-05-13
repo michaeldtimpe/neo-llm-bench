@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_83", "actual_calls": [["calculate_integral", {"func": "3*x**2 - 2*x + 1", "a": 1, "b": 4}], ["calculate_derivative", {"func": "2*x**3 - 3*x**2 + 4*x - 5", "x_value": 2, "order": 2}]], "wall_s": 1.1467002909630537, "prompt_tokens": 562, "completion_tokens": 91, "error": "", "passed": false, "reason": "emitted_2_calls_expected_3"}

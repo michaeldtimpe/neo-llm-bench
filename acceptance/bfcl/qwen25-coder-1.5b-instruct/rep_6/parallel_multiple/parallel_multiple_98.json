@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_98", "actual_calls": [["currency_conversion", {"amount": 5000, "from_currency": "JPY", "to_currency": "USD"}], ["unit_conversion", {"value": 15, "from_unit": "km", "to_unit": "mi"}]], "wall_s": 1.0875754590379074, "prompt_tokens": 620, "completion_tokens": 90, "error": "", "passed": true, "reason": "all_calls_matched"}

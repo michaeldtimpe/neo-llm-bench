@@ -1,0 +1,1 @@
+{"id": "multiple_93", "actual_calls": [["hotel.book", {"location": "New York", "roomType": "deluxe", "nights": 2, "additional_services": ["breakfast"]}]], "wall_s": 0.7667932499898598, "prompt_tokens": 681, "completion_tokens": 56, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_76", "actual_calls": [["video_games.store_price", {"game_title": "The Legend of Zelda: Breath of the Wild", "platform": "Nintendo Switch", "region": "United States"}]], "wall_s": 0.8619986659614369, "prompt_tokens": 827, "completion_tokens": 56, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

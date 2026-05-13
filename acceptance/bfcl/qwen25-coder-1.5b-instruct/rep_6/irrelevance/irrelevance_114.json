@@ -1,0 +1,1 @@
+{"id": "irrelevance_114", "actual_calls": [["get_closest_airport", {"location": "Los Angeles", "radius": 100, "limit": 5}], ["get_closest_airport", {"location": "New York", "radius": 100, "limit": 5}]], "wall_s": 3.133601333014667, "prompt_tokens": 463, "completion_tokens": 225, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_closest_airport"}

@@ -1,0 +1,1 @@
+{"id": "parallel_51", "actual_calls": [["recipe_search.find", {"dish": "Chicken Noodle Soup", "diet": "Vegan"}], ["recipe_search.find", {"dish": "Vegan Salad", "diet": "Vegan"}]], "wall_s": 0.5041479589999653, "prompt_tokens": 325, "completion_tokens": 61, "error": "", "passed": false, "reason": "call_recipe_search.find_unmatched_in_gt"}

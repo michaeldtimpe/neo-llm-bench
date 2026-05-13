@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_45", "actual_calls": [["calcVolume.cuboid", {"height": 10, "width": 5, "depth": 8}]], "wall_s": 0.6809369170223363, "prompt_tokens": 546, "completion_tokens": 47, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

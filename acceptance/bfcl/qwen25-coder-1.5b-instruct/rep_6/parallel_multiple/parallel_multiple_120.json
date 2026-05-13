@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_120", "actual_calls": [["soccer_scores.get_scores", {"team": "Manchester United", "league": "English Premier League", "rounds": 5}]], "wall_s": 0.7173355410341173, "prompt_tokens": 631, "completion_tokens": 50, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

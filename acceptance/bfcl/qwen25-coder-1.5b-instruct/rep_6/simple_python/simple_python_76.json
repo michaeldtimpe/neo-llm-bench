@@ -1,0 +1,1 @@
+{"id": "simple_python_76", "actual_calls": [["prediction.evolution", {"species": "Homo Sapiens", "years": 50, "model": "Darwin"}]], "wall_s": 0.4183956669876352, "prompt_tokens": 473, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

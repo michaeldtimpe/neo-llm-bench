@@ -1,0 +1,1 @@
+{"id": "parallel_77", "actual_calls": [["math.hcf", {"number1": 45, "number2": 60}], ["math.hcf", {"number1": 90, "number2": 120}], ["math.hcf", {"number1": 36, "number2": 48}], ["math.hcf", {"number1": 72, "number2": 96}]], "wall_s": 1.9783021250041202, "prompt_tokens": 484, "completion_tokens": 160, "error": "", "passed": true, "reason": "all_calls_matched"}

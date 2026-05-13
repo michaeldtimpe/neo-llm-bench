@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_119", "actual_calls": [["player_stats.get_all_time_goals", {"player_name": "Cristiano Ronaldo", "team_name": "Manchester United", "competition": "Premier League"}]], "wall_s": 0.7629221249953844, "prompt_tokens": 750, "completion_tokens": 55, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

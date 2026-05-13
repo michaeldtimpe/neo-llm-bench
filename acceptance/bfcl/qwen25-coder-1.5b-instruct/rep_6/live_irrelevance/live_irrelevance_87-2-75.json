@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_87-2-75", "actual_calls": [["get_current_weather", {"location": "Boston, MA", "unit": "celsius"}]], "wall_s": 0.3811710830195807, "prompt_tokens": 483, "completion_tokens": 40, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_current_weather"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_74", "actual_calls": [["basketball.player_stats.get", {"player_name": "LeBron James", "stats_fields": ["points", "assists", "rebounds", "minutes"]}]], "wall_s": 0.7798972090240568, "prompt_tokens": 838, "completion_tokens": 54, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

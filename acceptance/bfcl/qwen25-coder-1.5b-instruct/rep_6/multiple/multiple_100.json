@@ -1,0 +1,1 @@
+{"id": "multiple_100", "actual_calls": [["math.hcf", {"number1": 36, "number2": 24}]], "wall_s": 0.5778266669949517, "prompt_tokens": 584, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

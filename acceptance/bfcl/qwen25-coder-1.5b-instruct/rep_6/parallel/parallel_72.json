@@ -1,0 +1,1 @@
+{"id": "parallel_72", "actual_calls": [["integrate", {"function": "x^3", "start_x": 2, "end_x": 5, "method": "trapezoid"}]], "wall_s": 0.7193307080306113, "prompt_tokens": 580, "completion_tokens": 57, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

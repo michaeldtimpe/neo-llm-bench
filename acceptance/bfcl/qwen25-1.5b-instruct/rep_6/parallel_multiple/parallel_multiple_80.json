@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_80", "actual_calls": [["functions.intersect", {"function1": "4x+7", "function2": "2x+5"}], ["functions.zero", {"function": "3x+9"}]], "wall_s": 0.7834629999706522, "prompt_tokens": 478, "completion_tokens": 58, "error": "", "passed": false, "reason": "call_functions.intersect_unmatched_in_gt"}

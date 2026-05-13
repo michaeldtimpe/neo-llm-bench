@@ -1,0 +1,1 @@
+{"id": "live_simple_132-85-0", "actual_calls": [["requests.get", {"url": "https://example.com/device-connector-versions.json?params={}", "params": {}}]], "wall_s": 0.8050039579975419, "prompt_tokens": 456, "completion_tokens": 46, "error": "", "passed": false, "reason": "call_requests.get_did_not_match_any_gt"}

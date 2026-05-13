@@ -1,0 +1,1 @@
+{"id": "parallel_97", "actual_calls": [["calculate_resonant_frequency", {"inductance": 0.005, "capacitance": 1e-07, "round_off": 3}]], "wall_s": 0.848216250014957, "prompt_tokens": 571, "completion_tokens": 64, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

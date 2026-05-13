@@ -1,0 +1,1 @@
+{"id": "parallel_37", "actual_calls": [["color_converter.get_color_info", {"color_name": ["navy", "purple", "maroon"], "conversion_type": ["RGB", "HEX"]}]], "wall_s": 0.6722006660420448, "prompt_tokens": 447, "completion_tokens": 53, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

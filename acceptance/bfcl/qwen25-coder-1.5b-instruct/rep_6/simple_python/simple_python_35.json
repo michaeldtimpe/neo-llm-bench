@@ -1,0 +1,1 @@
+{"id": "simple_python_35", "actual_calls": [["vegan_restaurant.find_nearby", {"location": "New York, NY", "operating_hours": 11}]], "wall_s": 0.39369845896726474, "prompt_tokens": 484, "completion_tokens": 47, "error": "", "passed": false, "reason": "call_vegan_restaurant.find_nearby_did_not_match_any_gt"}

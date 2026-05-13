@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_24", "actual_calls": [["investment.invest", {"company": "Google", "amount": 2000}]], "wall_s": 0.594673291023355, "prompt_tokens": 520, "completion_tokens": 40, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

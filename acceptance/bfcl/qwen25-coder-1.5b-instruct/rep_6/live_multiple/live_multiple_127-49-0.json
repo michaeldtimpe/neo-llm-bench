@@ -1,0 +1,1 @@
+{"id": "live_multiple_127-49-0", "actual_calls": [["search_engine.query", {"prompt": "history of kites and how they're made", "since_year": 1800, "source": "google", "include_facts": true}]], "wall_s": 0.6937144999974407, "prompt_tokens": 1043, "completion_tokens": 64, "error": "", "passed": false, "reason": "call_search_engine.query_did_not_match_any_gt"}

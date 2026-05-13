@@ -1,0 +1,1 @@
+{"id": "irrelevance_132", "actual_calls": [["historical_event.get_date", {"event_name": "Battle of Waterloo", "format": "YYYY-MM-DD"}]], "wall_s": 0.5210640840232372, "prompt_tokens": 302, "completion_tokens": 34, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: historical_event.get_date"}

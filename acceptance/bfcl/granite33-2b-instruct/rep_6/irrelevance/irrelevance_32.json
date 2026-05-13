@@ -1,0 +1,1 @@
+{"id": "irrelevance_32", "actual_calls": [["cellBiology.getCellType", {"nucleus_count": 2, "organism_type": "human", "membrane_type": "Phospholipid bi-layer"}]], "wall_s": 0.9036206250311807, "prompt_tokens": 379, "completion_tokens": 51, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: cellBiology.getCellType"}

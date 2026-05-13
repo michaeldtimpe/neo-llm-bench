@@ -1,0 +1,1 @@
+{"id": "simple_python_119", "actual_calls": [["hypothesis_testing.ttest_ind", {"sample1": [22, 33, 42, 12, 34], "sample2": [23, 45, 44, 14, 38], "significance_level": 0.05}]], "wall_s": 0.41820508404634893, "prompt_tokens": 411, "completion_tokens": 70, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "multiple_126", "actual_calls": [["t_test", {"dataset_A": [12, 24, 36], "dataset_B": [15, 30, 45], "alpha": 0.05}]], "wall_s": 0.9011277080280706, "prompt_tokens": 768, "completion_tokens": 66, "error": "", "passed": true, "reason": "matched_gt_entry"}

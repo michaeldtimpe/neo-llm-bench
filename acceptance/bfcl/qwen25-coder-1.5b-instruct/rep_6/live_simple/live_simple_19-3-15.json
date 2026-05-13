@@ -1,0 +1,1 @@
+{"id": "live_simple_19-3-15", "actual_calls": [["get_current_weather", {"location": "Quintana Roo, Mexico", "unit": "celsius"}]], "wall_s": 0.33347891602898017, "prompt_tokens": 518, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

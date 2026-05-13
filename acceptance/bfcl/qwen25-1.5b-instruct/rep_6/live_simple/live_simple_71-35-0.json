@@ -1,0 +1,1 @@
+{"id": "live_simple_71-35-0", "actual_calls": [["extract_parameters_v1", {"targets": ["brand:Apple"], "metrics": "view", "demographics": ["age:25-34"], "min_date": "2022-07-01", "max_date": "2022-07-31"}]], "wall_s": 1.1288332080002874, "prompt_tokens": 660, "completion_tokens": 75, "error": "", "passed": false, "reason": "call_extract_parameters_v1_did_not_match_any_gt"}

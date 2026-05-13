@@ -1,0 +1,1 @@
+{"id": "parallel_122", "actual_calls": [["calculate_vehicle_emission", {"vehicle_type": "gas", "miles_driven": 15000, "emission_factor": 1.4}]], "wall_s": 0.7785842499579303, "prompt_tokens": 553, "completion_tokens": 57, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

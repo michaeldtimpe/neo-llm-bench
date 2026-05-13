@@ -1,0 +1,1 @@
+{"id": "parallel_12", "actual_calls": [["model.DecisionTreeClassifier", {"criterion": "gini", "max_depth": 5, "random_state": 1}], ["model.DecisionTreeClassifier", {"criterion": "entropy", "max_depth": 10, "random_state": 1}]], "wall_s": 0.6566326669999398, "prompt_tokens": 391, "completion_tokens": 78, "error": "", "passed": true, "reason": "all_calls_matched"}

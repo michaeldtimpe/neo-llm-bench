@@ -1,0 +1,1 @@
+{"id": "live_simple_82-43-0", "actual_calls": [["sitefinity_create_contentitem", {"ContentItem": "News", "Title": "Julian is testing"}]], "wall_s": 0.4994421250303276, "prompt_tokens": 514, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

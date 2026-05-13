@@ -1,0 +1,1 @@
+{"id": "multiple_73", "actual_calls": [["religion.get_origin", {"religion": "Buddhism"}], ["religion.get_core_beliefs", {"religion": "Buddhism"}]], "wall_s": 0.33038216695422307, "prompt_tokens": 374, "completion_tokens": 54, "error": "", "passed": false, "reason": "emitted_2_calls_expected_1"}

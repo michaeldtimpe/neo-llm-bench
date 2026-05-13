@@ -1,0 +1,1 @@
+{"id": "live_parallel_6-3-0", "actual_calls": [["get_snow_report", {"location": "Paris, France", "unit": "fahrenheit"}], ["get_snow_report", {"location": "Bordeaux, France", "unit": "fahrenheit"}]], "wall_s": 0.8895166660076939, "prompt_tokens": 515, "completion_tokens": 64, "error": "", "passed": true, "reason": "all_calls_matched"}

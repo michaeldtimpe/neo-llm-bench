@@ -313,6 +313,125 @@ on this hardware (n_ctx=8192), qwen25-coder is the worst pick of the
 three. Its per-turn verbosity blows past the context window the fastest
 even when the underlying behavior is on the right track.
 
+## Round 3 — prompt-engineering experiments (rep_6)
+
+Three system-prompt variants, one per finalist, each targeting that
+model's worst axis from round 2. Base weights + orchestrator + sampler
+held constant; only the BFCL system prompt changes. All three branches'
+primary gates **failed** — the prompt-mediated capability layer cannot
+shift the round-2 weaknesses on these finalists at this quant.
+
+### Branch A — qwen25-1.5b · v3a (stronger imperative)
+
+**Hypothesis**: a "MUST NOT call unless fully satisfies" imperative
+tightens the decline boundary on `irrelevance` over-call without
+harming legitimate live single-call categories.
+
+**Result**: regressed across the board. v3b (decision-tree sibling)
+aborted per the round-3 abort gate ("any cat drops ≥3pp at v3a → skip
+v3b"). Apples-to-apples slice (live cats truncated to first-100 to
+match rep_1's smaller live limit):
+
+| cat | rep_1 | rep_6 v3a | Δpp |
+|---|---|---|---|
+| simple_python | 92.0% | 91.3% | -0.7 |
+| multiple | 88.7% | 89.3% | +0.7 |
+| parallel | 78.7% | 77.3% | -1.3 |
+| parallel_multiple | 73.3% | 72.7% | -0.7 |
+| irrelevance | 57.3% | 51.3% | **-6.0** ← target regressed |
+| live_simple | 82.0% | 67.0% | **-15.0** ← collateral |
+| live_multiple | 71.0% | 67.0% | -4.0 |
+| live_irrelevance | 78.0% | 55.0% | **-23.0** ← collateral |
+| OVERALL | 77.1% | 72.3% | **-4.8** |
+
+The imperative shifted the decline boundary in the wrong direction —
+the model declined on legitimate user requests (`live_simple`,
+`live_irrelevance`) as severely as on irrelevant ones, while
+*increasing* over-call on the curated `irrelevance` set (over_called
+bucket 64 → 73, +9 problems). Hypothesis A falsified.
+
+### Branch B — qwen25-coder · v2_fewshot_parallel
+
+**Hypothesis**: two in-context parallel examples close qwen25-coder's
+under_called_1_of_N gap on `parallel`/`parallel_multiple` — recovering
+agent-mode's +52 parallel-recovery (rep_4) at raw-mode token cost.
+
+**Result**: combined parallel cats moved **-13 problems** vs the +25
+required; few-shot transferred in the wrong direction.
+
+| gate | required | observed | verdict |
+|---|---|---|---|
+| parallel + parallel_multiple recovery | ≥+25 problems | **-13** (74 → 61) | FAIL |
+| completion-token mult on parallel cats | ≤1.2× | 1.12× / 1.13× | PASS |
+| non-parallel regression (5-cat mean) | ≤-1pp | +1.80pp | PASS |
+
+Per-category:
+
+| cat | rep_1 | rep_6 v2_fewshot | Δ |
+|---|---|---|---|
+| parallel | 32/150 | 25/150 | -7 |
+| parallel_multiple | 42/150 | 36/150 | -6 |
+
+Failure-bucket movement on `parallel` is the diagnostic: `under_called_1_of_N`
+fell 111 → 102 (-9, marginal), but `emitted_0_calls_expected_N` (model
+emitted nothing) jumped 0 → 20 (+20). The few-shot examples didn't
+teach the model to emit *more* calls — they pushed 20 problems into
+outright silence. Likely a prompt-length / instruction-confusion
+effect at this size. Hypothesis B falsified.
+
+### Branch C — granite33-2b · v3c (decline-boundary calibration)
+
+**Hypothesis**: a prompt addendum loosens the decline boundary on
+`multi_turn_miss_func` — converting `empty_turn_model_response`
+problems (baseline 74/100) into alternative-tool attempts. Framed as a
+trade-off measurement, not one-sided improvement; collateral on
+irrelevance is the question.
+
+**Result**: primary gate failed; collateral gates passed.
+
+| gate | required | observed | verdict |
+|---|---|---|---|
+| mt_miss_func `empty_response` reduction | ≥20% (74 → ≤59) | **4.1%** (74 → 71) | FAIL |
+| irrelevance + live_irrelevance combined harm | ≤5pp drop | -4pp combined | PASS |
+| live_irrelevance Wilson 95% CI lower bound | ≥85% | 93.0% (98/100) | PASS |
+
+Per-category (irrelevance sliced to first 100 to match rep_6's limit):
+
+| cat | baseline | rep_6 v3c | Δ |
+|---|---|---|---|
+| mt_miss_func `empty_response` | 74/100 (rep_5) | 71/100 | -3 |
+| mt_miss_func `state_mismatch` | 14/100 (rep_5) | 17/100 | +3 |
+| mt_miss_func PASS | 0/100 | 0/100 | 0 |
+| irrelevance (first 100) | 85/100 (rep_1) | 80/100 | -5 |
+| live_irrelevance | 97/100 (rep_1) | 98/100 | +1 |
+| multi_turn_base (collateral) | 1/100 (rep_5) | 2/100 | +1 |
+| multi_turn_miss_param (collateral) | 2/100 (rep_5) | 2/100 | 0 |
+
+The boundary did move — granite traded exactly 3 empty responses for 3
+state-mismatch failures — but no movement converted to passes: the
+calls the model now emits on `miss_func` are the wrong tool in the
+wrong order. The irrelevance harm landed within budget (combined
+-4pp), so the trade isn't catastrophic, just inefficient. Hypothesis C
+partially disconfirmed: the decline boundary is movable, but the
+alternative-tool-selection capability that would convert moved
+problems into passes is absent at this size/quant.
+
+### Round 3 take-away
+
+Three orthogonal hypotheses, three falsified primary gates. The
+prompt-mediated capability layer — at least via the variants tested —
+cannot shift any of the round-2 weaknesses on the finalists' base
+weights:
+
+- qwen25-1.5b's irrelevance over-call is structural, not promptable
+- qwen25-coder's parallel collapse is not a few-shot-recoverable
+  pattern at this size
+- granite33's `miss_func` decline is a capability ceiling
+  (alternative-tool selection), not a boundary-calibration problem
+
+The non-dominated round-2 triangle is unchanged. The data closes round
+3 with negative findings rather than a new leader.
+
 ## Stochastic notes (vs the prior edition's published numbers)
 
 - All non-deterministic runs (BFCL with `seed: 42` but model sampling

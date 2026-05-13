@@ -1,0 +1,1 @@
+{"id": "multiple_137", "actual_calls": [["lawsuit_search", {"company": "Google", "start_date": "2021-01-01", "location": "California", "status": "ongoing"}]], "wall_s": 0.8905844580149278, "prompt_tokens": 803, "completion_tokens": 62, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "simple_python_21", "actual_calls": [["number_theory.gcd", {"number1": 36, "number2": 48}]], "wall_s": 0.20925391599303111, "prompt_tokens": 310, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}
