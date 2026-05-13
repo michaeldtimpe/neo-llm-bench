@@ -47,10 +47,15 @@ Download to `~/models/`:
 ```bash
 export HF_HUB_ENABLE_HF_TRANSFER=1
 mkdir -p ~/models
-hf download Qwen/Qwen2.5-1.5B-Instruct-GGUF \
-    qwen2.5-1.5b-instruct-q8_0.gguf \
-    --local-dir ~/models/
-# repeat for the other two; rename to match configs/models/*.yaml gguf_path
+hf download Qwen/Qwen2.5-1.5B-Instruct-GGUF             qwen2.5-1.5b-instruct-q8_0.gguf       --local-dir ~/models/
+hf download Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF       qwen2.5-coder-1.5b-instruct-q8_0.gguf --local-dir ~/models/
+hf download ibm-granite/granite-3.3-2b-instruct-GGUF    granite-3.3-2b-instruct-Q8_0.gguf     --local-dir ~/models/
+
+# Rename to match configs/models/*.yaml gguf_path (Qwen repos use lowercase
+# `q8_0`; the configs expect `Q8_0` plus CamelCase model name).
+mv ~/models/qwen2.5-1.5b-instruct-q8_0.gguf        ~/models/Qwen2.5-1.5B-Instruct-Q8_0.gguf
+mv ~/models/qwen2.5-coder-1.5b-instruct-q8_0.gguf  ~/models/Qwen2.5-Coder-1.5B-Instruct-Q8_0.gguf
+# granite file already matches its YAML — no rename needed.
 ```
 
 Check filenames match the per-model YAMLs (`configs/models/<id>.yaml`). The configs use tildes (`~/models/...`) so they're portable.
