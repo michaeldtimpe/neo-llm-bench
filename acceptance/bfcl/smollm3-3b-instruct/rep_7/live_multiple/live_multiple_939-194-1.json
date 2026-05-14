@@ -1,0 +1,1 @@
+{"id": "live_multiple_939-194-1", "actual_calls": [["set_alarm", {"alarm_time": "23:00", "purpose": "brush teeth"}]], "wall_s": 0.2987472909990174, "prompt_tokens": 871, "completion_tokens": 31, "error": "", "passed": false, "reason": "call_set_alarm_did_not_match_any_gt"}

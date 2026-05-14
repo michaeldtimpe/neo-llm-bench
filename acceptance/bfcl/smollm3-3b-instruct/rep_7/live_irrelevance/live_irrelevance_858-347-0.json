@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_858-347-0", "actual_calls": [["getIncomeStatement", {"symbol": "AAPL", "cik": "0000320193", "period": "annual", "datatype": "json", "limit": 100}]], "wall_s": 0.5556969169992954, "prompt_tokens": 708, "completion_tokens": 51, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: getIncomeStatement"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_962-205-2", "actual_calls": [["web_search", {"query": "where is columbia university"}]], "wall_s": 0.2223096250090748, "prompt_tokens": 562, "completion_tokens": 25, "error": "", "raw_text": "[{\"arguments\": {\"query\": \"where is columbia university\"}, \"name\": \"web_search\"}]", "passed": true, "reason": "matched_gt_entry"}

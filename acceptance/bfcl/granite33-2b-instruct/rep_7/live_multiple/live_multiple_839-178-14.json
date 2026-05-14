@@ -1,0 +1,1 @@
+{"id": "live_multiple_839-178-14", "actual_calls": [["Music_3_LookupMusic", {"genre": "Country"}]], "wall_s": 0.20315125001070555, "prompt_tokens": 1049, "completion_tokens": 22, "error": "", "raw_text": "[{\"arguments\": {\"genre\": \"Country\"}, \"name\": \"Music_3_LookupMusic\"}]", "passed": true, "reason": "matched_gt_entry"}

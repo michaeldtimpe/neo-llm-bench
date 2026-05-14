@@ -1,0 +1,1 @@
+{"id": "live_multiple_787-174-1", "actual_calls": [], "wall_s": 0.4010248330014292, "prompt_tokens": 783, "completion_tokens": 47, "error": "", "raw_text": "I can help with that. Let's find a 2-bedroom rental property in Berkeley, CA with in-unit laundry. I'll call the Homes_2_FindHomeByArea function.", "passed": false, "reason": "no_tool_call_emitted"}

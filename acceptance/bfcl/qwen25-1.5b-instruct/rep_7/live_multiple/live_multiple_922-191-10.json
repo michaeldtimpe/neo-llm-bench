@@ -1,0 +1,1 @@
+{"id": "live_multiple_922-191-10", "actual_calls": [["get_service_providers", {"min_age": 25, "max_age": 35, "professional_group_id": 2, "is_cleaning_condo": false, "is_cleaning_home": false, "is_cleaning_office": false}]], "wall_s": 0.4085950829903595, "prompt_tokens": 1192, "completion_tokens": 65, "error": "", "passed": true, "reason": "matched_gt_entry"}

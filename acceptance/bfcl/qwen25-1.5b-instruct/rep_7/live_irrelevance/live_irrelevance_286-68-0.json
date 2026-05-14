@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_286-68-0", "actual_calls": [["searchCVE", {"cveId": "CVE-2023-0001", "delay": 1, "key": "3bf5f6c4-b9f3-4932-ba70-62ed5d513e61", "verbose": false}]], "wall_s": 0.6717751669930294, "prompt_tokens": 2095, "completion_tokens": 80, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: searchCVE"}

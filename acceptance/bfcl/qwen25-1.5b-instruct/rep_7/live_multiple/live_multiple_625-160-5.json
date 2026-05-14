@@ -1,0 +1,1 @@
+{"id": "live_multiple_625-160-5", "actual_calls": [["Payment_1_MakePayment", {"payment_method": "debit card", "amount": 200, "receiver": "amelia@example.com", "private_visibility": true}]], "wall_s": 0.2807249579927884, "prompt_tokens": 579, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

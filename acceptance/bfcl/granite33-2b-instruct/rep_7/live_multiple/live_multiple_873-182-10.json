@@ -1,0 +1,1 @@
+{"id": "live_multiple_873-182-10", "actual_calls": [["Movies_1_FindMovies", {"location": "San Francisco, CA"}]], "wall_s": 0.24963074999686796, "prompt_tokens": 2107, "completion_tokens": 26, "error": "", "raw_text": "[{\"name\": \"Movies_1_FindMovies\", \"arguments\": {\"location\": \"San Francisco, CA\"}}]", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_87-48-0", "actual_calls": [["get_current_loc", {"coordinate_format": "DMS", "include_altitude": true}]], "wall_s": 0.19131866699899547, "prompt_tokens": 378, "completion_tokens": 30, "error": "", "passed": true, "reason": "matched_gt_entry"}

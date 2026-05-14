@@ -1,0 +1,1 @@
+{"id": "simple_python_108", "actual_calls": [["run_linear_regression", {"predictors": ["Age", "Income", "Education"], "target": "Purchase_Amount", "standardize": true}]], "wall_s": 1.0401015829993412, "prompt_tokens": 358, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

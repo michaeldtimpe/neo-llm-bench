@@ -1,0 +1,1 @@
+{"id": "live_multiple_842-178-17", "actual_calls": [["Music_3_PlayMedia", {"track": "Konshens - I'm a Gangsta", "artist": "Konshens", "device": "Patio"}], ["Music_3_LookupMusic", {"artist": "Konshens", "genre": "Reggae"}]], "wall_s": 0.697593583001435, "prompt_tokens": 815, "completion_tokens": 77, "error": "", "passed": false, "reason": "emitted_2_calls_expected_1"}

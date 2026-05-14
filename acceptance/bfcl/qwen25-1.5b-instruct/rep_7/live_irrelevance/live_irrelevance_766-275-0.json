@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_766-275-0", "actual_calls": [["search_local_docs", {"query": "first Studio Ghibli film Japan Academy Film Prize Picture of the Year", "limit": 1, "include_metadata": false}]], "wall_s": 0.2966826670017326, "prompt_tokens": 471, "completion_tokens": 46, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: search_local_docs"}

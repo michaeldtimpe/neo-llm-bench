@@ -1,0 +1,1 @@
+{"id": "live_multiple_32-10-2", "actual_calls": [], "wall_s": 0.22230041600414552, "prompt_tokens": 819, "completion_tokens": 38, "error": "", "raw_text": "```json\n{\n  \"name\": \"subtract\",\n  \"arguments\": {\n    \"a\": 100,\n    \"b\": 40\n  }\n}\n```", "passed": false, "reason": "no_tool_call_emitted"}

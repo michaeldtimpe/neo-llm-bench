@@ -1,0 +1,1 @@
+{"id": "live_multiple_515-150-3", "actual_calls": [["Movies_1_FindMovies", {"location": "San Jose, CA", "theater_name": "West Wind Capitol Drive-In", "genre": "Horror"}]], "wall_s": 0.2732190419919789, "prompt_tokens": 1667, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

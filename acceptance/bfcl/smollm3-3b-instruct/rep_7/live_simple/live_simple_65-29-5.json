@@ -1,0 +1,1 @@
+{"id": "live_simple_65-29-5", "actual_calls": [["todo", {"type": "add", "content": "Hi charlie"}]], "wall_s": 0.2705160410005192, "prompt_tokens": 360, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

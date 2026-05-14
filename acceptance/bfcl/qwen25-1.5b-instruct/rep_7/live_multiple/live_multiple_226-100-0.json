@@ -1,0 +1,1 @@
+{"id": "live_multiple_226-100-0", "actual_calls": [["AclApi.add_mapping", {"resource_id": "123-resource", "user_id": "user-456", "permissions": ["read", "write"]}]], "wall_s": 0.3885385830071755, "prompt_tokens": 1236, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

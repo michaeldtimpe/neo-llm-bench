@@ -1,0 +1,1 @@
+{"id": "live_multiple_299-130-8", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "Sydney, Australia", "has_laundry_service": "True", "number_of_adults": 3}]], "wall_s": 0.46784754200052703, "prompt_tokens": 645, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

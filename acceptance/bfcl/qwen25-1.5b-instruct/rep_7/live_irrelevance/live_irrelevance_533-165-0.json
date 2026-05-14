@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_533-165-0", "actual_calls": [], "wall_s": 0.10453045800386462, "prompt_tokens": 373, "completion_tokens": 14, "error": "", "raw_text": "I am a function-calling assistant. What is your name?", "passed": true, "reason": "correctly_no_tool_call"}

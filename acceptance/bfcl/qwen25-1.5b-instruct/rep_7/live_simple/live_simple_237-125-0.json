@@ -1,0 +1,1 @@
+{"id": "live_simple_237-125-0", "actual_calls": [["play_spotify_song", {"query": "track:Wrecking Ball artist:Miley Cyrus", "device_id": "null", "play": true}]], "wall_s": 0.26428949998808093, "prompt_tokens": 372, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

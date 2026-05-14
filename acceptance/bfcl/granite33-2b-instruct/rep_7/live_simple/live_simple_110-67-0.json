@@ -1,0 +1,1 @@
+{"id": "live_simple_110-67-0", "actual_calls": [], "wall_s": 0.2636223329900531, "prompt_tokens": 575, "completion_tokens": 24, "error": "", "raw_text": "The query \"Need ATM location\" should be classified under the 'atm_finder_start' intent.", "passed": false, "reason": "no_tool_call_emitted"}

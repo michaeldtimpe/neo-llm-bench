@@ -1,0 +1,1 @@
+{"id": "live_multiple_182-77-0", "actual_calls": [["math_gcd", {"a": 100, "b": 120}]], "wall_s": 0.2670818340120604, "prompt_tokens": 488, "completion_tokens": 41, "error": "", "raw_text": "```json\n{\n  \"name\": \"math_gcd\",\n  \"arguments\": {\n    \"a\": 100,\n    \"b\": 120\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

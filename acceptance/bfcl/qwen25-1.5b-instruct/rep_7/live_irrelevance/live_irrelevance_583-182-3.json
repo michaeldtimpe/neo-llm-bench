@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_583-182-3", "actual_calls": [["getDataForProfessional", {"province_id": 1, "service_id": 1, "is_cleaning_condo": true, "is_cleaning_home": false, "is_cleaning_office": false}]], "wall_s": 0.3319685419992311, "prompt_tokens": 1038, "completion_tokens": 54, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: getDataForProfessional"}

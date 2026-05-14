@@ -1,0 +1,1 @@
+{"id": "live_multiple_272-127-7", "actual_calls": [["Weather_1_GetWeather", {"city": "Nairobi"}]], "wall_s": 0.2340336670022225, "prompt_tokens": 2122, "completion_tokens": 24, "error": "", "raw_text": "[{\"arguments\": {\"city\": \"Nairobi\"}, \"name\": \"Weather_1_GetWeather\"}]", "passed": true, "reason": "matched_gt_entry"}

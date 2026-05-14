@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_873-358-0", "actual_calls": [["create_material", {"prompt_material": "desert map 100 x 100", "material_type": "wood", "quantity": 1, "dimensions": "100 x 100"}]], "wall_s": 0.44086516699462663, "prompt_tokens": 1216, "completion_tokens": 58, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: create_material"}

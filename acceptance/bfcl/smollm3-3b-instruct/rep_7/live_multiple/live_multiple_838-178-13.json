@@ -1,0 +1,1 @@
+{"id": "live_multiple_838-178-13", "actual_calls": [["Music_3_PlayMedia", {"track": "Narrated For You", "artist": "Alec Benjamin", "genre": "POP"}], ["Music_3_LookupMusic", {"artist": "Alec Benjamin", "genre": "POP"}]], "wall_s": 0.6293044999983977, "prompt_tokens": 808, "completion_tokens": 69, "error": "", "passed": false, "reason": "emitted_2_calls_expected_1"}

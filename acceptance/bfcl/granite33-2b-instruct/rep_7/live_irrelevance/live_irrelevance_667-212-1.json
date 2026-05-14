@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_667-212-1", "actual_calls": [], "wall_s": 0.2724233339977218, "prompt_tokens": 1025, "completion_tokens": 30, "error": "", "raw_text": "[{\"arguments\": {\"city\": \"New York, NY\", \"date\": \"2023-03-03\"}}]", "passed": true, "reason": "correctly_no_tool_call"}

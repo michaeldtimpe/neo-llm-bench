@@ -1,0 +1,1 @@
+{"id": "live_multiple_184-79-0", "actual_calls": [["finish", {"query": "career growth"}]], "wall_s": 0.3093167920014821, "prompt_tokens": 956, "completion_tokens": 20, "error": "", "raw_text": "[{\"name\": \"finish\", \"arguments\": {\"query\": \"career growth\"}}]", "passed": false, "reason": "call_finish_did_not_match_any_gt"}

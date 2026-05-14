@@ -1,0 +1,1 @@
+{"id": "live_multiple_1024-253-0", "actual_calls": [["find_infra_alert_config_versions", {"id": "delta"}]], "wall_s": 0.35116433299845085, "prompt_tokens": 864, "completion_tokens": 25, "error": "", "passed": true, "reason": "matched_gt_entry"}

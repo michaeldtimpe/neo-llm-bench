@@ -1,0 +1,1 @@
+{"id": "live_simple_227-118-1", "actual_calls": [["text_to_speech.convert", {"text": "\u6211\u7231\u5b66\u4e60", "language": "zh-CN", "gender": "male", "format": "wav"}]], "wall_s": 0.4495657079969533, "prompt_tokens": 471, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

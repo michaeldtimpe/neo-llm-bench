@@ -1,0 +1,1 @@
+{"id": "live_multiple_993-224-0", "actual_calls": [["get_apdex_report", {"apdexId": "ns9934", "_from": 1617176400000, "to": 1617262800000}]], "wall_s": 0.5244824580004206, "prompt_tokens": 722, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

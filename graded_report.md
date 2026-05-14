@@ -664,32 +664,79 @@ The curated parallel-cat advantage holds (+7 / +6 / +5 on parallel /
 parallel_multiple / simple_python) — the one durable mechanical Branch D
 improvement.
 
-#### Subsection 2 — Full-distribution comparison (within-smollm3, asymmetric vs finalists)
+#### Subsection 2 — Full-distribution comparison (rep_7, full live cats)
 
-smollm3's full live cat sizes (258 / 1053 / 884 / 16 / 24 / 16 across the
-six live cats) let us measure smollm3's *own* distribution robustness:
+Phase K reran the three finalists on the full live distribution
+(2251 problems per model, same as smollm3's rep_1). Source:
+`scripts/compare_matched_slice.py --rep 7 --models ...`; matched-ID
+artifact at `acceptance/audits/phase_k_rep7_4way_live_matched_ids.json`.
 
-| cat | smollm3 curated rate | smollm3 full live rate | Δ (within-model) |
+This is now a proper apples-to-apples comparison on the full live
+distribution.
+
+| model | overall (n=2251) | live_simple (n=258) | live_multiple (n=1053) | live_irrelevance (n=884) | live_parallel | live_par_mul | live_relevance |
+|---|---|---|---|---|---|---|---|
+| **granite33-2b-instruct** | **1456/2251 (64.7%)** [62.7, 66.6] | 156/258 (60.5%) | 557/1053 (52.9%) | **720/884 (81.4%)** | 4/16 | 9/24 | 10/16 |
+| qwen25-1.5b-instruct | 1395/2251 (62.0%) [59.9, 64.0] | **192/258 (74.4%)** | **699/1053 (66.4%)** | 467/884 (52.8%) | **10/16** | **12/24** | 15/16 |
+| smollm3-3b-instruct | 1309/2251 (58.2%) [56.1, 60.2] | 173/258 (67.1%) | 670/1053 (63.6%) | 434/884 (49.1%) | 5/16 | 11/24 | **16/16** |
+| qwen25-coder-1.5b-instruct | 1147/2251 (51.0%) [48.9, 53.0] | 172/258 (66.7%) | 684/1053 (65.0%) | 271/884 (30.7%) | 3/16 | 2/24 | 15/16 |
+
+The overall rankings shift on full live data — **granite33 leads
+overall** because `live_irrelevance` is 39% of the slice (884/2251) and
+granite33 dominates it (+28.6pp over the next-best). Strip irrelevance
+out and look at active categories (live_simple + live_multiple +
+live_parallel + live_par_mul = 1351 problems): qwen25-1.5b wins
+(913/1351 = 67.6%), smollm3 second (859/1351 = 63.6%), qwen-coder
+third (861/1351 = 63.7% — within smollm3 of CI), granite33 last
+(726/1351 = 53.7%).
+
+#### Subsection 3 — Distribution robustness (within-model: first-100 → full live)
+
+Each model ran on the same first-100 problems per live cat in rep_1
+(matched). rep_7 added the remaining 158 / 953 / 784 problems per cat.
+The within-model drop on the remaining problems measures distribution
+robustness — does performance hold across the full distribution, or
+were the first-100 systematically easier?
+
+Per-model drop on `live_irrelevance` (the most distribution-sensitive cat):
+
+| model | first-100 rate | remaining-784 rate | Δ (within-model) |
 |---|---|---|---|
-| live_simple | 73/100 (matched) | 173/258 (67.1%) | -5.9pp |
-| live_multiple | 65/100 (matched) | 670/1053 (63.6%) | -1.4pp |
-| live_irrelevance | 89/100 (matched) | 434/884 (49.1%) | **-39.9pp** |
+| granite33-2b | 97/100 (97.0%) | 623/784 (79.5%) | -17.5pp |
+| qwen25-1.5b | 78/100 (78.0%) | 389/784 (49.6%) | -28.4pp |
+| smollm3-3b | 89/100 (89.0%) | 345/784 (44.0%) | **-45.0pp** |
+| qwen25-coder | 75/100 (75.0%) | 196/784 (25.0%) | -50.0pp |
 
-The within-model collapse on `live_irrelevance` is large (89% on the
-first 100 problems → 49.1% on the remaining 784). That is a real signal
-of distribution-dependent behavior — but it is **not** a head-to-head
-claim against any finalist, because no finalist ran the full
-distribution. Phase K (rep_7) will rerun the three finalists on full
-live cats so this becomes a proper cross-model comparison.
+**All four models drop substantially** on the remaining live_irrelevance
+distribution — the first 100 problems are systematically easier than
+the rest (likely curated-at-source ordering effect). granite33 is the
+most robust (-17.5pp). smollm3's drop (-45pp) is larger than the
+finalists' but smaller than qwen-coder's (-50pp). The "smollm3
+collapses on live_irrelevance" framing **is now properly evidenced**
+as a within-model distribution claim: smollm3's irrelevance behavior
+on the broader distribution is meaningfully weaker than its first-100
+performance, and is bottom-tier among the four models (only qwen-coder
+drops more).
 
-For the curated 80.1% mean from Branch D, the drop to ~78% on the
-matched 1106 slice and to lower numbers on the unmatched full live cats
-is documented in two registers: (a) matched-quality (subsection 1, the
-controlled claim), (b) distribution-robustness (this subsection, the
-within-model behavioral signal). Earlier framing collapsed both into a
-single "smollm3 collapses on live" headline; the corrected reading is
-that the matched comparison shows no statistical collapse, while the
-within-model distribution drop is real but currently uncompared.
+For other live cats, drops are small to negligible (most models within
+±3pp first-100 → full). The irrelevance category is the only one where
+distribution-robustness is a separating signal.
+
+#### Synthesis — which corner does each model own on full live data?
+
+| corner | rep_7 leader | second | gap |
+|---|---|---|---|
+| Tool-use (live active cats, n=1351) | qwen25-1.5b 67.6% | smollm3 63.6% | +4.0pp, CIs overlap |
+| Decline-discipline (live_irrelevance, n=884) | granite33 81.4% | qwen25-1.5b 52.8% | **+28.6pp, CI-distinct** |
+| Distribution robustness (within-model live_irrelevance drop) | granite33 -17.5pp | qwen25-1.5b -28.4pp | granite33 -11pp better drop |
+| Coding (HumanEval pass-any) | qwen25-coder 78.0% | smollm3 75.0% | +3.0pp, CIs overlap |
+
+The non-dominated triangle holds **directionally**, but with cleaner
+evidence and one substantive sharpening: granite33's decline-discipline
+lead is now CI-distinct at +28.6pp on the full distribution (was a
+CI-overlap 8pp on the matched-100 slice). smollm3 is competitive on
+active tool-use cats (within CI of qwen25-1.5b) but bottom-tier on
+distribution robustness for irrelevance.
 
 #### HumanEval pass@1 / pass-any / pass-all — smollm3 vs qwen25-coder
 
@@ -757,25 +804,35 @@ parallel recovery rep_4 → rep_4) remain unchallenged.
 
 #### Triangle status after the full smollm3 spectrum
 
-| corner | prior claim (Phase H, 2026-05-13) | corrected verdict (2026-05-14) | audit note |
+After the Phase K rep_7 cross-model run, the triangle picture stabilizes
+on cleaner evidence:
+
+| corner | prior claim (Phase H, 2026-05-13) | corrected verdict (2026-05-14, post-Phase K) | audit note |
 |---|---|---|---|
-| **Tool-use generalist (BFCL)** | qwen25-1.5b holds; 77.1% vs smollm3 72.8% (CIs barely overlap) | **tied within CI on matched slice** (qwen 77.1%, smollm3 77.8%, ~4.3pp CI overlap) | prior 72.8% smollm3 number came from a non-matching slice (lex-sort first-100 vs natural first-100 of finalists); see errata |
+| **Tool-use generalist (BFCL)** | qwen25-1.5b holds; 77.1% vs smollm3 72.8% (CIs barely overlap) | **qwen25-1.5b holds on active live cats** (67.6% vs smollm3 63.6% on 1351 active live problems, CIs overlap ~4pp). On the matched-1106 slice (curated + first-100 live), smollm3 is +0.7pp above qwen — statistical tie. | prior 72.8% smollm3 number was from a lex-sort non-matching slice; see errata |
 | **Synthesis coding (HumanEval)** | qwen25-coder holds (69.5%/78% pass-any); smollm3 close (64.0%/75.0%) | unchanged — qwen25-coder holds, smollm3 within CI on all 3 metrics | full n=164 / n=427 each, no slicing involved |
-| **Decline discipline (live_irrelevance)** | granite33 97% vs smollm3 58% (CI-distinct, -39pp) | **granite33 holds, but the -39pp gap is split into two cleaner claims**: matched-ID 100-slice: granite 97% vs smollm3 89% (Δ=-8pp, **CIs overlap**); within-smollm3 distribution: 49.1% on the full 884 set vs granite's measured 97% on 100 (denominators differ — proper full-vs-full comparison pending Phase K rep_7) | prior 58% number was the lex-sort first-100 slice for smollm3; that slice does not match any real reference set |
+| **Decline discipline (live_irrelevance)** | granite33 97% vs smollm3 58% (CI-distinct, -39pp) | **granite33 holds with cleaner, larger gap**: on full live_irrelevance (n=884), granite33 81.4% vs next-best qwen25-1.5b 52.8% (**+28.6pp, CI-distinct**). Distribution-robustness ranking on the cat: granite -17pp < qwen25-1.5b -28pp < smollm3 -45pp < qwen-coder -50pp. | prior 58% number was the lex-sort first-100 slice for smollm3; the -39pp magnitude was wrong but the granite-holds direction is verified at +28.6pp on full data |
 
-**Triangle stands directionally**, but two of the three corner-defense
-arguments rest on weaker evidence than originally published. The
-tool-use corner is now a statistical tie on matched data (smollm3 is
-+0.7pp above qwen25-1.5b on the same problems); the decline corner
-holds on full-distribution behavior but is CI-overlap on the matched
-100-problem slice. The coding-corner finding is unchanged.
+**Triangle stands**, with two sharpenings vs the published Phase H:
 
-The "smollm3 collapses on live" headline does not survive matched
-data; what survives is **distribution-dependent behavior** — smollm3's
-own live_irrelevance rate drops from 89% on its first 100 problems
-to 49.1% on the remaining 784. That is a real signal but a different
-claim from "smollm3 underperforms finalists on live cats." Phase K
-will turn the within-model signal into a cross-model one.
+1. **Tool-use corner is "statistically tied on matched, qwen leads on
+   full active cats"** — published as "qwen holds, CIs barely overlap";
+   the matched-slice tie was hidden by the bug. On the full active live
+   distribution (1351 problems, excluding irrelevance), qwen25-1.5b
+   leads by 4pp with CI overlap.
+2. **Decline corner is on much firmer footing** — published with the
+   wrong specific magnitude (-39pp from a bad slice). True full-data
+   gap is **+28.6pp CI-distinct** between granite33 (81.4%) and the
+   next-best (qwen25-1.5b at 52.8%). Granite's lead grew when the
+   comparison became apples-to-apples on the full distribution.
+
+The "smollm3 collapses on live" framing now resolves cleanly:
+matched-quality shows smollm3 is competitive with qwen25-1.5b on active
+cats and slightly above on the matched 100-problem irrelevance slice;
+**distribution-robustness** shows smollm3's live_irrelevance behavior
+drops -45pp going from first-100 to remaining-784 (worse than qwen
+and granite, better than qwen-coder). Both claims are real and they
+measure different things.
 
 #### Smollm3's actual niche
 
@@ -842,6 +899,107 @@ Two tactical observations to feed into the decision:
    deployment surfaces tool-irrelevant queries, granite handles those
    correctly far more often than the other two (which over-call
    ~23–26% of the time).
+
+## Errata and methodology corrections
+
+### 2026-05-14 — Lexicographic-sort slicing bug (commit `e50fdce2`)
+
+**Bug**: `sorted(cat_dir.glob("*.json"))` returns paths in Python string
+order, not natural-integer order. When used to compute "first-100"
+slices on category directories with >100 files, the resulting subset
+is not problems 0–99 but a chaotic mix
+(`0, 1, 10, 100..149, 11, 110..119, ...`). Two such "first-100" slices
+on different-sized directories overlap by 7–11/100, not 100/100. The
+comparisons were measuring mostly-disjoint problem subsets while
+claiming controlled head-to-head inference.
+
+**Affected sections** (all corrected in `e50fdce2`):
+
+- **Phase H BFCL "apples-to-apples (n=1106)"**: smollm3 reported as
+  805/1106 (72.8%) [70.1, 75.3]; matched-ID recount = **860/1106
+  (77.8%) [75.2, 80.1]**. smollm3 is +0.7pp ABOVE qwen25-1.5b on the
+  same problems, not -4.3pp below as published.
+- **Phase H per-cat collapse**: live_irrelevance reported -20pp
+  CI-distinct; matched-ID = **+11pp** (direction reversed — smollm3
+  outperforms qwen25-1.5b on the matched 100). live_simple reported
+  -25pp CI-distinct; matched-ID = -9pp CI-overlap.
+- **Round 3 Branch A v3a vs rep_1**: live_simple reported -15pp
+  collateral regression; matched-ID = -2pp (within noise, withdrawn).
+  live_irrelevance reported -23pp; matched-ID = -15pp (smaller, still
+  real). Hypothesis A still falsified, **weakened**.
+- **Round 3 Branch B (qwen-coder fewshot)**: unchanged — curated cats
+  ran 150/150 IDs both reps; bug didn't reach this branch.
+- **Round 3 Branch C v3c**: collateral irrelevance harm reported -4pp
+  combined (PASS within 5pp budget); matched-ID = **-7pp combined
+  (FAIL exceeds budget)**. Pre-registered collateral gate **reversed**
+  from PASS to FAIL. The "trade isn't catastrophic, just inefficient"
+  framing in the original write-up does not survive.
+
+**Evidentiary status changes**:
+
+- Tool-use corner ("qwen25-1.5b holds, CIs barely overlap") →
+  "**tied within CI on matched slice**" (~4.3pp shared band).
+- live_irrelevance "smollm3 collapse" (head-to-head, CI-distinct) →
+  withdrawn on matched data; surviving claim is **within-smollm3
+  distribution-robustness** (49.1% on full 884 vs 89% on matched 100),
+  which is a different epistemological category from cross-model
+  superiority.
+- Granite33 decline corner: -39pp CI-distinct gap is replaced with a
+  split: matched-100 Δ=-8pp **CIs overlap**; full-distribution Δ=-48pp
+  pending Phase K rep_7 for proper cross-model evidence.
+
+**Fix**: `scripts/compare_matched_slice.py` with explicit
+`--policy {intersection,union}` arg, `<model>:<rep>` target syntax for
+cross-rep comparisons, and `--write-ids` for reproducible matched-ID
+artifacts in `acceptance/audits/`. New helper module
+`scripts/_problem_ids.py` provides natural-integer sort if a future
+analysis needs slice-by-position. Regression test in
+`tests/test_matched_slice.py::test_intersection_does_not_pick_lex_mangled_first_100`
+fails if the helper ever silently regresses to lex-sort. Memory entry
+`feedback_slicing_methodology.md` codifies the operational rule.
+
+### 2026-05-14 — BFCL `raw_text` persistence gap (commit `3905bd7f`)
+
+**Bug**: `BfclInvocationResult` dataclass and the runner serializer
+never wrote a `raw_text` field; rep_4 per-problem JSONs contained
+`actual_calls`, `n_turns`, etc., but not the model's actual output
+text. CLAUDE.md asserted persistence from 2026-05-13, but for BFCL
+specifically the path was missing.
+
+**Affected section**: Phase H agent-mode mechanism claim — "smollm3
+emits Python code blocks instead of structured tool calls" — was not
+verifiable from on-disk data. The 240/1240 artifact count was correct
+on disk (n_with_calls=0 across all 1240 problems), but the *what does
+it emit instead* question had no persisted answer.
+
+**Fix**:
+- `BfclInvocationResult.raw_text: str | None = None` (optional for
+  back-compat with legacy reps).
+- Raw mode captures `ChatResponse.text` from the single call.
+- Agent mode captures concatenated assistant turns joined by literal
+  `"\n---\n"` (schema in ARCHITECTURE.md).
+- Runner serializer omits the field when None (legacy rows differ from
+  new rows only when there's text to capture).
+- 11 regression tests in `tests/test_raw_text_persistence.py` cover
+  forward path, backward-compat for legacy rows, and the serializer
+  shape contract.
+
+**Verified mechanism** (re-ran smollm3 rep_4; wall=59:57; reproduced
+240/1240 deterministically). Reproducible sampling via
+`scripts/sample_raw_text.py --seed 1337 --n 20`; full-population
+artifact at `acceptance/audits/phase_j_smollm3_mechanism_samples.json`.
+Bucket distribution over 1229 problems with non-empty raw_text:
+
+- prose_only: 747 (60.8%) — dominant mode
+- code_block: 464 (37.8%) — the visually-striking mode the prior
+  claim focused on
+- pseudo_tool / partial_tool: 18 (1.5%) combined
+- empty / malformed_json: 0
+
+The prior "emits Python code blocks" claim captured the minority
+shape. Majority is prose explanation. Both fail to produce parseable
+tool calls; the aggregate finding (smollm3 unusable in raw agent
+mode at this size) is unchanged.
 
 ## What changed from round 1
 

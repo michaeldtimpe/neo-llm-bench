@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_605-193-7", "actual_calls": [["Movies_1_GetTimesForMovie", {"movie_name": "Imaginative fiction", "location": "New York, NY", "show_date": "2023-04-15", "show_type": "regular"}]], "wall_s": 0.3663465829886263, "prompt_tokens": 1038, "completion_tokens": 62, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Movies_1_GetTimesForMovie"}

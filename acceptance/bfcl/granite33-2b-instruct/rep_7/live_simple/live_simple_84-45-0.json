@@ -1,0 +1,1 @@
+{"id": "live_simple_84-45-0", "actual_calls": [["get_coordinates_from_city", {"city_name": "Seattle"}]], "wall_s": 0.24666979200264905, "prompt_tokens": 308, "completion_tokens": 26, "error": "", "raw_text": "[{\"arguments\": {\"city_name\": \"Seattle\"}, \"name\": \"get_coordinates_from_city\"}]", "passed": true, "reason": "matched_gt_entry"}

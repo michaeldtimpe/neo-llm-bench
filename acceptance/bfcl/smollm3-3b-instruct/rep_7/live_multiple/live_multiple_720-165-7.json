@@ -1,0 +1,1 @@
+{"id": "live_multiple_720-165-7", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "New York, NY", "has_laundry_service": "dontcare", "number_of_adults": 4, "rating": 3.0}]], "wall_s": 0.5312459160013532, "prompt_tokens": 950, "completion_tokens": 56, "error": "", "passed": true, "reason": "matched_gt_entry"}

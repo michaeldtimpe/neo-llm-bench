@@ -1,0 +1,1 @@
+{"id": "live_multiple_713-165-0", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "London, England", "has_laundry_service": "True", "number_of_adults": 1, "rating": 3.0}]], "wall_s": 0.6301862920008716, "prompt_tokens": 934, "completion_tokens": 54, "error": "", "passed": false, "reason": "call_Hotels_2_SearchHouse_did_not_match_any_gt"}

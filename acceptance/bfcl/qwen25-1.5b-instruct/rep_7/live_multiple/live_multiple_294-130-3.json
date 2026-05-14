@@ -1,0 +1,1 @@
+{"id": "live_multiple_294-130-3", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "Kuala Lumpur, Malaysia", "has_laundry_service": "dontcare", "number_of_adults": 1, "rating": 3.8}]], "wall_s": 0.34162187499168795, "prompt_tokens": 713, "completion_tokens": 57, "error": "", "passed": true, "reason": "matched_gt_entry"}

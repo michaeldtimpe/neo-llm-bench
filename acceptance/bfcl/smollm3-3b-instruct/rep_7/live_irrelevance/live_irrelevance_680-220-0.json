@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_680-220-0", "actual_calls": [["Homes_2_ScheduleVisit", {"property_name": "Property Name", "visit_date": "2023-10-15"}]], "wall_s": 0.42758025000148336, "prompt_tokens": 618, "completion_tokens": 40, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Homes_2_ScheduleVisit"}

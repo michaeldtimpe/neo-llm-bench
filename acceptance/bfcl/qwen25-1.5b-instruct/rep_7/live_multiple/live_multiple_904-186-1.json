@@ -1,0 +1,1 @@
+{"id": "live_multiple_904-186-1", "actual_calls": [["Trains_1_FindTrains", {"_from": "New York, NY", "to": "Los Angeles, CA", "date_of_journey": "03/04/2023", "_class": "Value", "number_of_adults": 2}]], "wall_s": 0.42352658401068766, "prompt_tokens": 1380, "completion_tokens": 72, "error": "", "passed": true, "reason": "matched_gt_entry"}

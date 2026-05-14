@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_229-36-0", "actual_calls": [["GetProductDetailsV1", {"product_id": "running-shoes", "include_reviews": false, "min_price": 0, "max_price": 1000, "availability_status": "in_stock"}]], "wall_s": 0.35338600000250153, "prompt_tokens": 389, "completion_tokens": 57, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: GetProductDetailsV1"}

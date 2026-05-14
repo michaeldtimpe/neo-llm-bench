@@ -1,0 +1,1 @@
+{"id": "live_multiple_444-144-4", "actual_calls": [["Services_4_FindProvider", {"city": "Los Gatos, CA", "type": "Family Counselor"}]], "wall_s": 0.21690570800274145, "prompt_tokens": 1558, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

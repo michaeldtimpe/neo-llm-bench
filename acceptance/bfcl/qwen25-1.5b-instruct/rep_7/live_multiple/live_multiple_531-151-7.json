@@ -1,0 +1,1 @@
+{"id": "live_multiple_531-151-7", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "Philadelphia, PA"}]], "wall_s": 0.18931649999285582, "prompt_tokens": 606, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

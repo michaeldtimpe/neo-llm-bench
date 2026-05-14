@@ -1,0 +1,1 @@
+{"id": "live_multiple_598-158-4", "actual_calls": [["Hotels_4_SearchHotel", {"location": "Washington D.C.", "star_rating": "dontcare", "smoking_allowed": false, "number_of_rooms": "dontcare"}]], "wall_s": 0.4878717499996128, "prompt_tokens": 691, "completion_tokens": 51, "error": "", "passed": true, "reason": "matched_gt_entry"}

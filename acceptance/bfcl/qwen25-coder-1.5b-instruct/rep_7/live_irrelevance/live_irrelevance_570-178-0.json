@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_570-178-0", "actual_calls": [], "wall_s": 0.288416249997681, "prompt_tokens": 707, "completion_tokens": 42, "error": "", "raw_text": "```json\n{\n  \"name\": \"metrics_api.MetricsApi.get_current_time\",\n  \"arguments\": {\n    \"date\": \"20230401\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

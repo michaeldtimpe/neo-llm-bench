@@ -1,0 +1,1 @@
+{"id": "live_multiple_984-215-8", "actual_calls": [["get_service_providers", {"province_id": 3, "service_id": 1, "job_qty": 100}]], "wall_s": 0.23539920899202116, "prompt_tokens": 1306, "completion_tokens": 39, "error": "", "passed": false, "reason": "call_get_service_providers_did_not_match_any_gt"}

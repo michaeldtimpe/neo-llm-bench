@@ -1,0 +1,1 @@
+{"id": "live_multiple_37-13-0", "actual_calls": [], "wall_s": 0.33436145799350925, "prompt_tokens": 693, "completion_tokens": 29, "error": "", "raw_text": "Sure, I can help with that. I'll delete the to-do item titled 'go for shopping at 9 pm'.", "passed": false, "reason": "no_tool_call_emitted"}

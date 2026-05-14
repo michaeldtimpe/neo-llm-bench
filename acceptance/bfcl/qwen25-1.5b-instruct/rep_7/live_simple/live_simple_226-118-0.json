@@ -1,0 +1,1 @@
+{"id": "live_simple_226-118-0", "actual_calls": [["text_to_speech.convert", {"text": "I am a pretty girl", "language": "es-ES", "gender": "female", "format": "mp3", "speed": 1}]], "wall_s": 0.3353223330050241, "prompt_tokens": 479, "completion_tokens": 54, "error": "", "passed": true, "reason": "matched_gt_entry"}

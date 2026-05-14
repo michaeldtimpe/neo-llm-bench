@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_159-19-1", "actual_calls": [], "wall_s": 0.23890045899315737, "prompt_tokens": 218, "completion_tokens": 41, "error": "", "raw_text": "```json\n{\n  \"name\": \"calculate_profit_loss\",\n  \"arguments\": {\n    \"cost_price\": 10,\n    \"selling_price\": 15\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

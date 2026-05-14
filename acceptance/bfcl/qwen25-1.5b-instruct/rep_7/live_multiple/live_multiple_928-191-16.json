@@ -1,0 +1,1 @@
+{"id": "live_multiple_928-191-16", "actual_calls": [["get_service_providers", {"is_subscription": true, "professional_group_id": 2, "is_cleaning_condo": false, "is_cleaning_home": false, "is_cleaning_office": false}]], "wall_s": 0.34305000001040753, "prompt_tokens": 1256, "completion_tokens": 55, "error": "", "passed": true, "reason": "matched_gt_entry"}

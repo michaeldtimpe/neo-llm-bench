@@ -1,0 +1,1 @@
+{"id": "live_multiple_113-44-0", "actual_calls": [["list_servers", {"server_type": "mtna"}]], "wall_s": 0.598436166997999, "prompt_tokens": 2094, "completion_tokens": 24, "error": "", "raw_text": "[{\"name\": \"list_servers\", \"arguments\": {\"server_type\": \"mtna\"}}]", "passed": true, "reason": "matched_gt_entry"}

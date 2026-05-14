@@ -1,0 +1,1 @@
+{"id": "live_multiple_192-86-0", "actual_calls": [["analyze_image_with_question.pipeline", {"image_path": "image.png", "question": "generate with technically complex attention to detail a description of what you see"}]], "wall_s": 0.3108089169982122, "prompt_tokens": 890, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

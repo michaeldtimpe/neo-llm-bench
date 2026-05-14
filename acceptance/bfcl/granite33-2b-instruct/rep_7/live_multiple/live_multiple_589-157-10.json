@@ -1,0 +1,1 @@
+{"id": "live_multiple_589-157-10", "actual_calls": [["Media_3_FindMovies", {"genre": "Sci-fi", "starring": "Bobby Nish"}]], "wall_s": 0.3123406659869943, "prompt_tokens": 765, "completion_tokens": 36, "error": "", "raw_text": "[{\"arguments\": {\"genre\": \"Sci-fi\", \"starring\": \"Bobby Nish\"}, \"name\": \"Media_3_FindMovies\"}]", "passed": true, "reason": "matched_gt_entry"}

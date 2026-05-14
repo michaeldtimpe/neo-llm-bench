@@ -1,0 +1,1 @@
+{"id": "live_simple_215-117-7", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "dontcare", "genre": "Fantasy", "cast": "dontcare"}]], "wall_s": 0.38259000000107335, "prompt_tokens": 441, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

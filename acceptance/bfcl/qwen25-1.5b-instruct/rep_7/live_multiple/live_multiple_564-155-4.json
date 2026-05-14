@@ -1,0 +1,1 @@
+{"id": "live_multiple_564-155-4", "actual_calls": [["Events_3_FindEvents", {"event_type": "Theater", "city": "Seattle, WA", "date": "2023-03-07"}]], "wall_s": 0.3764395830075955, "prompt_tokens": 1735, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

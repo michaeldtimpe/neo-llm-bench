@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_510-150-1", "actual_calls": [["requests.get", {"url": "https://api.example.com/fabric/test", "params": {"ip": "10.2.3.4"}}]], "wall_s": 0.25408183300169185, "prompt_tokens": 431, "completion_tokens": 44, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_739-253-0", "actual_calls": [["GET_PARCEL_STATE", {"parcelTrackingId": "1234567890", "includeHistory": true}]], "wall_s": 0.2541694590036059, "prompt_tokens": 562, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: GET_PARCEL_STATE"}

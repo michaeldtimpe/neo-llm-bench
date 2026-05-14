@@ -1,0 +1,1 @@
+{"id": "live_multiple_170-70-0", "actual_calls": [["get_adriel_detail_experience_and_education", {"experience_or_education_name": "internship", "experience_or_education_type": "education"}]], "wall_s": 0.3203169170010369, "prompt_tokens": 1047, "completion_tokens": 41, "error": "", "passed": false, "reason": "call_get_adriel_detail_experience_and_education_did_not_match_any_gt"}

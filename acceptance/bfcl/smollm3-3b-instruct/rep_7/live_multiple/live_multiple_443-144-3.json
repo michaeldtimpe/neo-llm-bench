@@ -1,0 +1,1 @@
+{"id": "live_multiple_443-144-3", "actual_calls": [["Services_4_FindProvider", {"city": "Pittsburg, PA", "type": "Psychiatrist"}]], "wall_s": 0.3554723749984987, "prompt_tokens": 1310, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_749-169-4", "actual_calls": [["Media_3_FindMovies", {"genre": "Offbeat"}]], "wall_s": 0.22216049999406096, "prompt_tokens": 1789, "completion_tokens": 23, "error": "", "raw_text": "[{\"arguments\": {\"genre\": \"Offbeat\"}, \"name\": \"Media_3_FindMovies\"}]", "passed": true, "reason": "matched_gt_entry"}

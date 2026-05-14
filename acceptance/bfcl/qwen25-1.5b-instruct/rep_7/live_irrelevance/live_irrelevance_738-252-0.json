@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_738-252-0", "actual_calls": [], "wall_s": 0.21672895799565595, "prompt_tokens": 1110, "completion_tokens": 22, "error": "", "raw_text": "None of the provided functions can be used to list Instana events in the last 24 hours.", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_195-116-3", "actual_calls": [["Weather_1_GetWeather", {"city": "Palo Alto", "date": "2023-04-25"}]], "wall_s": 0.35208179199980805, "prompt_tokens": 345, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

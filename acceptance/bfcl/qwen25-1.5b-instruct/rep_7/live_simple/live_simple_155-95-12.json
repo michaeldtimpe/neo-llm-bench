@@ -1,0 +1,1 @@
+{"id": "live_simple_155-95-12", "actual_calls": [["cmd_controller.execute", {"command": "date"}], ["cmd_controller.execute", {"command": "echo today"}]], "wall_s": 0.2471968750032829, "prompt_tokens": 352, "completion_tokens": 43, "error": "", "passed": false, "reason": "emitted_2_calls_expected_1"}

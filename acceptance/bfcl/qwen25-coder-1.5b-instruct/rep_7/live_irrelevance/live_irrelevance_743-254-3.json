@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_743-254-3", "actual_calls": [], "wall_s": 0.14507324999431148, "prompt_tokens": 461, "completion_tokens": 24, "error": "", "raw_text": "{{\"name\": \"get_name\", \"arguments\": {\"name\": \"Opa, quem \u00e9 voc\u00ea?\"}}}", "passed": true, "reason": "correctly_no_tool_call"}

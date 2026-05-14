@@ -1,0 +1,1 @@
+{"id": "live_multiple_556-154-2", "actual_calls": [["RentalCars_3_GetCarsAvailable", {"city": "Long Beach, CA", "start_date": "2023-04-12", "pickup_time": "14:00", "end_date": "2023-04-12", "car_type": "Sedan"}]], "wall_s": 0.5168288749991916, "prompt_tokens": 1196, "completion_tokens": 81, "error": "", "passed": true, "reason": "matched_gt_entry"}

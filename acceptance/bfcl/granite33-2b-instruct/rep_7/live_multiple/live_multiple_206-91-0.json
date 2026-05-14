@@ -1,0 +1,1 @@
+{"id": "live_multiple_206-91-0", "actual_calls": [["contact", {"person_name": "Adriel"}]], "wall_s": 0.4550119169871323, "prompt_tokens": 1666, "completion_tokens": 21, "error": "", "raw_text": "[{\"name\": \"contact\", \"arguments\": {\"person_name\": \"Adriel\"}}]", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_594-158-0", "actual_calls": [["Hotels_4_SearchHotel", {"location": "London, UK", "smoking_allowed": false, "number_of_rooms": "dontcare"}]], "wall_s": 0.30128787500143517, "prompt_tokens": 750, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

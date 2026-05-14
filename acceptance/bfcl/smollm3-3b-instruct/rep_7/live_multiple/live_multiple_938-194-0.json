@@ -1,0 +1,1 @@
+{"id": "live_multiple_938-194-0", "actual_calls": [["play_spotify_song", {"query": "track:Shape of You artist:Ed Sheeran", "autoplay": true, "volume": 70}]], "wall_s": 0.5158065000032366, "prompt_tokens": 891, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

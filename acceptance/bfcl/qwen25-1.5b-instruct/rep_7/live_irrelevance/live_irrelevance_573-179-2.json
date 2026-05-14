@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_573-179-2", "actual_calls": [["reschedule_event", {"event_identifier": "1234567890", "new_datetime": "2023-04-08T11:00:00Z"}]], "wall_s": 0.3192000839917455, "prompt_tokens": 555, "completion_tokens": 57, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: reschedule_event"}

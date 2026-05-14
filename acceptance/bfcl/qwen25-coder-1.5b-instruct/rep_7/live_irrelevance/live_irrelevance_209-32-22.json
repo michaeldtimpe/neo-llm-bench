@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_209-32-22", "actual_calls": [], "wall_s": 0.1656515000067884, "prompt_tokens": 356, "completion_tokens": 28, "error": "", "raw_text": "{{\"name\": \"user_authentication.is_pants_ready\", \"arguments\": {\"pants_id\": \"12345\"}}}", "passed": true, "reason": "correctly_no_tool_call"}

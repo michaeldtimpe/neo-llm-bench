@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_33-2-21", "actual_calls": [], "wall_s": 0.246006083994871, "prompt_tokens": 364, "completion_tokens": 43, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_domain_report\",\n  \"arguments\": {\n    \"domain\": \"amazon.com\",\n    \"api_key\": \"amazon_key123\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

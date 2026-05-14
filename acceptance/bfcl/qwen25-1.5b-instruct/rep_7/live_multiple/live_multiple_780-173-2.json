@@ -1,0 +1,1 @@
+{"id": "live_multiple_780-173-2", "actual_calls": [["Services_4_FindProvider", {"city": "New York, NY", "type": "Family Counselor"}]], "wall_s": 0.20650037500308827, "prompt_tokens": 682, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

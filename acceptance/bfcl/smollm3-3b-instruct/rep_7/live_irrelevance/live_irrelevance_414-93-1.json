@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_414-93-1", "actual_calls": [["requests.get", {"url": "https://visitfuji.com/api/tourist-attractions?sort=size", "headers": {"Accept": "application/json"}}]], "wall_s": 0.48632241700033774, "prompt_tokens": 782, "completion_tokens": 47, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

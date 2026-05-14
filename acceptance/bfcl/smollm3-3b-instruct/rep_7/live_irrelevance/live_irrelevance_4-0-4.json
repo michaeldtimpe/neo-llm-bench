@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_4-0-4", "actual_calls": [["requests.get", {"url": "https://date.nager.at/api/v2/holidays?year=2019&country=US", "headers": {"Content-Type": "application/json"}, "params": {"query": "games"}}]], "wall_s": 0.6491703749998123, "prompt_tokens": 844, "completion_tokens": 61, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

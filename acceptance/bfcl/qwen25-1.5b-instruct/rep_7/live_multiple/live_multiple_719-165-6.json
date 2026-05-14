@@ -1,0 +1,1 @@
+{"id": "live_multiple_719-165-6", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "Anaheim, CA", "number_of_adults": 1}]], "wall_s": 0.2324358750047395, "prompt_tokens": 1039, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

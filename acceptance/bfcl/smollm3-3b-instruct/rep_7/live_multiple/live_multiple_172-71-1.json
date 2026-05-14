@@ -1,0 +1,1 @@
+{"id": "live_multiple_172-71-1", "actual_calls": [["get_adriel_list_projects", {"user_id": 123, "include_completed": false, "project_status": "active", "date_filter": null}]], "wall_s": 0.4231463750002149, "prompt_tokens": 1177, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

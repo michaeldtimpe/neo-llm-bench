@@ -1,0 +1,1 @@
+{"id": "live_multiple_710-164-26", "actual_calls": [["Movies_3_FindMovies", {"genre": "Comedy"}]], "wall_s": 0.24880433300859295, "prompt_tokens": 1009, "completion_tokens": 23, "error": "", "raw_text": "[{\"arguments\": {\"genre\": \"Comedy\"}, \"name\": \"Movies_3_FindMovies\"}]", "passed": true, "reason": "matched_gt_entry"}

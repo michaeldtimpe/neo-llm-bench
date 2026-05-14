@@ -1,0 +1,1 @@
+{"id": "live_multiple_308-131-7", "actual_calls": [["Hotels_4_SearchHotel", {"location": "Phoenix, AZ", "star_rating": "dontcare", "smoking_allowed": "dontcare", "number_of_rooms": 1}]], "wall_s": 0.3082044170005247, "prompt_tokens": 1886, "completion_tokens": 51, "error": "", "passed": false, "reason": "call_Hotels_4_SearchHotel_did_not_match_any_gt"}

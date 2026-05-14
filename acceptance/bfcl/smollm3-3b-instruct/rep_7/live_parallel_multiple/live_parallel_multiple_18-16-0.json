@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_18-16-0", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "San Diego, CA", "date": "2023-03-01"}]], "wall_s": 0.6670660419986234, "prompt_tokens": 1485, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_495-142-6", "actual_calls": [["detail_project", {"project_name": "e-commerce-website", "include_status": true, "start_date": null}]], "wall_s": 0.35897662500065053, "prompt_tokens": 1165, "completion_tokens": 37, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: detail_project"}

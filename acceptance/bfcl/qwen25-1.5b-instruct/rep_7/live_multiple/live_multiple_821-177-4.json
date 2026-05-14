@@ -1,0 +1,1 @@
+{"id": "live_multiple_821-177-4", "actual_calls": [["Events_3_BuyEventTickets", {"event_name": "Mimosas Cabaret", "number_of_tickets": 1, "date": "2023-10-15", "city": "Seattle, WA"}]], "wall_s": 0.3796993330033729, "prompt_tokens": 1196, "completion_tokens": 61, "error": "", "passed": false, "reason": "call_Events_3_BuyEventTickets_did_not_match_any_gt"}

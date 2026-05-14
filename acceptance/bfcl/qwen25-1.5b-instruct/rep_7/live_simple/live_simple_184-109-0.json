@@ -1,0 +1,1 @@
+{"id": "live_simple_184-109-0", "actual_calls": [["getDataForProfessional", {"service_id": 1, "province_id": 1, "rating": 4.5}]], "wall_s": 0.23419954199925996, "prompt_tokens": 354, "completion_tokens": 37, "error": "", "passed": false, "reason": "call_getDataForProfessional_did_not_match_any_gt"}

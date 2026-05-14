@@ -1,0 +1,1 @@
+{"id": "live_multiple_373-134-18", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Jagan Shakti", "genre": "Action", "cast": "Sanjay Kapoor"}]], "wall_s": 0.2507347920036409, "prompt_tokens": 976, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

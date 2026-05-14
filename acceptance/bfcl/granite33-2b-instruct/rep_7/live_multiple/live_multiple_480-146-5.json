@@ -1,0 +1,1 @@
+{"id": "live_multiple_480-146-5", "actual_calls": [], "wall_s": 0.2730816660041455, "prompt_tokens": 830, "completion_tokens": 31, "error": "", "raw_text": "[{\"arguments\": {\"track\": \"Summer Vibes\", \"artist\": \"DJ Sunny\", \"device\": \"Kitchen\"}}]", "passed": false, "reason": "no_tool_call_emitted"}

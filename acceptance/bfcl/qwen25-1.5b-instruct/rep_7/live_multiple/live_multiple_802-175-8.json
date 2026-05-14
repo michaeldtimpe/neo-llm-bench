@@ -1,0 +1,1 @@
+{"id": "live_multiple_802-175-8", "actual_calls": [["Weather_1_GetWeather", {"city": "Santa Rosa, CA", "date": "2023-04-09"}]], "wall_s": 0.2505996249965392, "prompt_tokens": 1570, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

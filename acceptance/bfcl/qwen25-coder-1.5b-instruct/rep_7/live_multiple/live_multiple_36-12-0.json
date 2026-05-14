@@ -1,0 +1,1 @@
+{"id": "live_multiple_36-12-0", "actual_calls": [["todo_add", {"content": "go for shopping at 9 pm"}]], "wall_s": 0.21399887501320336, "prompt_tokens": 356, "completion_tokens": 35, "error": "", "raw_text": "```json\n{\n  \"name\": \"todo_add\",\n  \"arguments\": {\n    \"content\": \"go for shopping at 9 pm\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

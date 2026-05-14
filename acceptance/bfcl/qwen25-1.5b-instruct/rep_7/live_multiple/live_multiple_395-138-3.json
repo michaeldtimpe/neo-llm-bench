@@ -1,0 +1,1 @@
+{"id": "live_multiple_395-138-3", "actual_calls": [["Services_1_FindProvider", {"city": "Rohnert Park, CA", "is_unisex": false}]], "wall_s": 0.21186416699492838, "prompt_tokens": 533, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

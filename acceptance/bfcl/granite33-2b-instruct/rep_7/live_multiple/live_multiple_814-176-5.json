@@ -1,0 +1,1 @@
+{"id": "live_multiple_814-176-5", "actual_calls": [], "wall_s": 0.23152970800583716, "prompt_tokens": 515, "completion_tokens": 26, "error": "", "raw_text": "Sure, I can help with that. I will set a new alarm for you at 17:15.", "passed": false, "reason": "no_tool_call_emitted"}

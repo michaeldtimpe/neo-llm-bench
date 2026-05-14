@@ -1,0 +1,1 @@
+{"id": "live_multiple_510-149-7", "actual_calls": [["Flights_4_SearchOnewayFlight", {"origin_airport": "JFK", "destination_airport": "PDX", "departure_date": "2023-04-20", "seating_class": "Economy", "number_of_tickets": 1}]], "wall_s": 0.6504518340007053, "prompt_tokens": 1440, "completion_tokens": 69, "error": "", "passed": true, "reason": "matched_gt_entry"}

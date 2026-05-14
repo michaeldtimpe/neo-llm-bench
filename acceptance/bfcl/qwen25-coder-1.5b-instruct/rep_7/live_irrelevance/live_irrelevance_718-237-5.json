@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_718-237-5", "actual_calls": [["get_service_providers", {}]], "wall_s": 0.10973887500585988, "prompt_tokens": 1244, "completion_tokens": 16, "error": "", "raw_text": "{{\"name\": \"get_service_providers\", \"arguments\": null}}", "passed": false, "reason": "called_tool_when_irrelevant: get_service_providers"}

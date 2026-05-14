@@ -1,0 +1,1 @@
+{"id": "live_multiple_417-141-6", "actual_calls": [["Movies_1_FindMovies", {"location": "San Jose, CA"}]], "wall_s": 0.2478835829970194, "prompt_tokens": 1035, "completion_tokens": 35, "error": "", "raw_text": "```json\n{\n  \"name\": \"Movies_1_FindMovies\",\n  \"arguments\": {\n    \"location\": \"San Jose, CA\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

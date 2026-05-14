@@ -1,0 +1,1 @@
+{"id": "live_multiple_178-75-0", "actual_calls": [["HNA_NEWS.search", {"keyword": "Ji Sung Park", "limit": 5}]], "wall_s": 0.5034612910094438, "prompt_tokens": 1502, "completion_tokens": 32, "error": "", "raw_text": "[{\"arguments\": {\"keyword\": \"Ji Sung Park\", \"limit\": 5}, \"name\": \"HNA_NEWS.search\"}]", "passed": true, "reason": "matched_gt_entry"}

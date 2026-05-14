@@ -1,0 +1,1 @@
+{"id": "live_multiple_985-216-0", "actual_calls": [["reminders_complete", {"token": "1231289312"}]], "wall_s": 2.663755332992878, "prompt_tokens": 7228, "completion_tokens": 29, "error": "", "raw_text": "[{\"arguments\": {\"token\": \"1231289312\"}, \"name\": \"reminders_complete\"}]", "passed": true, "reason": "matched_gt_entry"}

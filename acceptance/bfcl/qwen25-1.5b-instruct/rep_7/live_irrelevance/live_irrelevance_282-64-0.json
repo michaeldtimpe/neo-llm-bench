@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_282-64-0", "actual_calls": [["get_sensor_readings_latest", {"perPage": 1, "serials": ["org-serial"], "metrics": ["temperature"]}]], "wall_s": 0.259558833000483, "prompt_tokens": 1168, "completion_tokens": 39, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_sensor_readings_latest"}

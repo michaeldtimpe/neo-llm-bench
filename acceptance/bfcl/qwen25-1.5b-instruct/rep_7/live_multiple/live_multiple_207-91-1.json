@@ -1,0 +1,1 @@
+{"id": "live_multiple_207-91-1", "actual_calls": [["get_tech_stack", {"employee_id": "Adriel"}]], "wall_s": 0.18866191699635237, "prompt_tokens": 1390, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}

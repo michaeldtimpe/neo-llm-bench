@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_530-164-0", "actual_calls": [["get_spouse_name", {"spouse_of": "John Doe", "include_maiden_name": true}]], "wall_s": 0.20605933300976176, "prompt_tokens": 317, "completion_tokens": 34, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_spouse_name"}

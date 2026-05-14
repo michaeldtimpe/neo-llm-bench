@@ -1,0 +1,1 @@
+{"id": "live_multiple_912-191-0", "actual_calls": [["get_service_providers", {"avg_rating": 4, "province_id": 1, "district_name": "Bang Khen"}]], "wall_s": 0.349895249994006, "prompt_tokens": 1203, "completion_tokens": 39, "error": "", "passed": false, "reason": "call_get_service_providers_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_856-180-4", "actual_calls": [["Buses_3_BuyBusTicket", {"from_city": "Berkeley, CA", "to_city": "Portland, OR", "departure_date": "2023-05-15", "departure_time": "09:00", "num_passengers": 2, "additional_luggage": true}]], "wall_s": 0.7111911659994803, "prompt_tokens": 1211, "completion_tokens": 76, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "simple_python_61", "actual_calls": [["diabetes_prediction", {"weight": 150, "height": 70, "activity_level": "lightly active"}]], "wall_s": 0.8726641250004832, "prompt_tokens": 365, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

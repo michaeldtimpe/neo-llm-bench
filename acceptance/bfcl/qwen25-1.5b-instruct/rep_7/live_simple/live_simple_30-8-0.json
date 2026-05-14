@@ -1,0 +1,1 @@
+{"id": "live_simple_30-8-0", "actual_calls": [["aws.lexv2_models.list_exports", {"botId": "my-bot-id", "botVersion": "v2", "sortBy": "ASC", "maxResults": 50}]], "wall_s": 0.3321849579951959, "prompt_tokens": 688, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

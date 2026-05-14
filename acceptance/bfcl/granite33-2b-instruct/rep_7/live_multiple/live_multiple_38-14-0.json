@@ -1,0 +1,1 @@
+{"id": "live_multiple_38-14-0", "actual_calls": [], "wall_s": 0.34710329200606793, "prompt_tokens": 646, "completion_tokens": 29, "error": "", "raw_text": "To find interviewers qualified in Python, I'll need to know the experience level and availability preferences. Could you please provide that information?", "passed": false, "reason": "no_tool_call_emitted"}

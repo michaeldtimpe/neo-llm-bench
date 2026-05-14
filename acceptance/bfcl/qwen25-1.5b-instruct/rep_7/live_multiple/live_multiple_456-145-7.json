@@ -1,0 +1,1 @@
+{"id": "live_multiple_456-145-7", "actual_calls": [["Travel_1_FindAttractions", {"location": "London, UK", "free_entry": "True", "category": "Performing Arts Venue", "good_for_kids": "dontcare"}]], "wall_s": 0.3123851249984, "prompt_tokens": 1801, "completion_tokens": 52, "error": "", "passed": true, "reason": "matched_gt_entry"}

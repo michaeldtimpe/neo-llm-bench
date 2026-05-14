@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_137-13-3", "actual_calls": [["ControlAppliance.execute", {"command": "\uc2e4\ud589, \ubcf8\ubcf8, \uc2e4\ud589"}]], "wall_s": 0.556990458000655, "prompt_tokens": 1324, "completion_tokens": 48, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: ControlAppliance.execute"}

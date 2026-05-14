@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_37-2-25", "actual_calls": [], "wall_s": 0.27736200000799727, "prompt_tokens": 370, "completion_tokens": 49, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_whois_historical_data\",\n  \"arguments\": {\n    \"domain\": \"adobe.com\",\n    \"api_key\": \"adobe_key123\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

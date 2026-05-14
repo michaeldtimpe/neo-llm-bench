@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_83-2-71", "actual_calls": [], "wall_s": 0.2637940830027219, "prompt_tokens": 362, "completion_tokens": 46, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_virus_total_report\",\n  \"arguments\": {\n    \"domain\": \"microsoft.com\",\n    \"access_token\": \"MS_key321\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

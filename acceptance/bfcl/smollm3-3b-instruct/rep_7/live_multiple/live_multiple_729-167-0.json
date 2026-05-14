@@ -1,0 +1,1 @@
+{"id": "live_multiple_729-167-0", "actual_calls": [["Homes_2_FindHomeByArea", {"area": "Denver, CO", "intent": "rent", "number_of_beds": 2, "number_of_baths": 1}]], "wall_s": 0.6239169590007805, "prompt_tokens": 927, "completion_tokens": 53, "error": "", "passed": true, "reason": "matched_gt_entry"}

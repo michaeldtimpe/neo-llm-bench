@@ -1,0 +1,1 @@
+{"id": "live_multiple_674-162-16", "actual_calls": [["Events_3_FindEvents", {"event_type": "Theater", "city": "Los Angeles, CA", "date": "dontcare"}]], "wall_s": 0.253920916991774, "prompt_tokens": 2480, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_184-79-0", "actual_calls": [["random_advice", {"question": "career growth"}]], "wall_s": 0.21263529200223275, "prompt_tokens": 829, "completion_tokens": 22, "error": "", "passed": false, "reason": "call_random_advice_did_not_match_any_gt"}

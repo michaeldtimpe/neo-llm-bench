@@ -1,0 +1,1 @@
+{"id": "live_simple_205-116-13", "actual_calls": [["Weather_1_GetWeather", {"city": "Berkeley", "date": "2023-04-29"}]], "wall_s": 0.32602633399073966, "prompt_tokens": 322, "completion_tokens": 38, "error": "", "raw_text": "[{\"arguments\": {\"city\": \"Berkeley\", \"date\": \"2023-04-29\"}, \"name\": \"Weather_1_GetWeather\"}]", "passed": true, "reason": "matched_gt_entry"}

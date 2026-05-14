@@ -1,0 +1,1 @@
+{"id": "live_multiple_535-151-11", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "Belvedere, CA", "date": "dontcare"}]], "wall_s": 0.3990842910025094, "prompt_tokens": 575, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

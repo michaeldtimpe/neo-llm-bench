@@ -1,0 +1,1 @@
+{"id": "live_multiple_718-165-5", "actual_calls": [["Hotels_2_BookHouse", {"where_to": "Austin, TX", "number_of_adults": 4, "check_in_date": "05/12/2023", "check_out_date": "05/18/2023"}]], "wall_s": 0.4196848330029752, "prompt_tokens": 1074, "completion_tokens": 72, "error": "", "passed": true, "reason": "matched_gt_entry"}

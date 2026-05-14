@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_250-51-0", "actual_calls": [["open_project", {"path": "/Volumes/DataArchive"}]], "wall_s": 0.1460417089983821, "prompt_tokens": 1214, "completion_tokens": 22, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: open_project"}

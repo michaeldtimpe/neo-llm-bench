@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_232-38-0", "actual_calls": [["add_postgres_server", {"host": "http://plgah.ca", "database": "default", "username": "pascal", "password": ""}]], "wall_s": 0.4645432079996681, "prompt_tokens": 513, "completion_tokens": 46, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: add_postgres_server"}

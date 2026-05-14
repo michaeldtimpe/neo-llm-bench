@@ -1,0 +1,1 @@
+{"id": "live_multiple_371-134-16", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Gregory La Cava", "genre": "Drama", "cast": "Franklin Pangborn"}]], "wall_s": 0.42870925000170246, "prompt_tokens": 825, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

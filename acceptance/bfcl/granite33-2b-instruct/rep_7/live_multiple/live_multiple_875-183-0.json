@@ -1,0 +1,1 @@
+{"id": "live_multiple_875-183-0", "actual_calls": [["Travel_1_FindAttractions", {"location": "San Francisco, CA"}]], "wall_s": 0.6554366250056773, "prompt_tokens": 2172, "completion_tokens": 27, "error": "", "raw_text": "[{\"name\": \"Travel_1_FindAttractions\", \"arguments\": {\"location\": \"San Francisco, CA\"}}]", "passed": true, "reason": "matched_gt_entry"}

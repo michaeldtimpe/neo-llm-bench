@@ -1,0 +1,1 @@
+{"id": "live_multiple_61-23-0", "actual_calls": [["get_movies", {"city": "Noida", "cinema_hall": null, "movie_date": null}]], "wall_s": 7.294921459000761, "prompt_tokens": 956, "completion_tokens": 794, "error": "", "passed": true, "reason": "matched_gt_entry"}

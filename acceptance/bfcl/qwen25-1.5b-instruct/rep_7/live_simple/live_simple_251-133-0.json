@@ -1,0 +1,1 @@
+{"id": "live_simple_251-133-0", "actual_calls": [["flight.status.check", {"flight_id": "6E123", "passenger_name": "Karan", "ticket_number": "IND4567"}]], "wall_s": 0.28919799999857787, "prompt_tokens": 404, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

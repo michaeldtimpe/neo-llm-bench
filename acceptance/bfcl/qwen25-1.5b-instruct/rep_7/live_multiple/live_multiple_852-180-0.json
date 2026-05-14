@@ -1,0 +1,1 @@
+{"id": "live_multiple_852-180-0", "actual_calls": [["Buses_3_FindBus", {"from_city": "San Francisco, CA", "to_city": "Los Angeles, CA", "departure_date": "04/25/2023", "num_passengers": 1, "category": "direct"}]], "wall_s": 0.5047674579982413, "prompt_tokens": 1371, "completion_tokens": 68, "error": "", "passed": true, "reason": "matched_gt_entry"}

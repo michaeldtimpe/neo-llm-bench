@@ -1,0 +1,1 @@
+{"id": "live_multiple_697-164-13", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Quentin Tarantino", "genre": "Offbeat"}]], "wall_s": 0.21431420899170917, "prompt_tokens": 884, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

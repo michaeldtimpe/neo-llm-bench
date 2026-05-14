@@ -1,0 +1,1 @@
+{"id": "live_multiple_301-131-0", "actual_calls": [["Hotels_4_SearchHotel", {"location": "London, UK"}]], "wall_s": 0.6939624579972588, "prompt_tokens": 2365, "completion_tokens": 27, "error": "", "raw_text": "[{\"name\": \"Hotels_4_SearchHotel\", \"arguments\": {\"location\": \"London, UK\"}}]", "passed": true, "reason": "matched_gt_entry"}

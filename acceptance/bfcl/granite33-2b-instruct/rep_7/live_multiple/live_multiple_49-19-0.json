@@ -1,0 +1,1 @@
+{"id": "live_multiple_49-19-0", "actual_calls": [], "wall_s": 0.34171445900574327, "prompt_tokens": 600, "completion_tokens": 34, "error": "", "raw_text": "I can help with that. To provide you with the ratings and reviews for Charlie Ji, I'll need his full name. Could you please provide it?", "passed": false, "reason": "no_tool_call_emitted"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_709-233-0", "actual_calls": [["Travel_1_FindAttractions", {"location": "New York, NY"}]], "wall_s": 0.4582090000003518, "prompt_tokens": 1220, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Travel_1_FindAttractions"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_860-349-0", "actual_calls": [], "wall_s": 0.20669375000579748, "prompt_tokens": 461, "completion_tokens": 32, "error": "", "raw_text": "{{\"name\": \"get_astronaut\", \"arguments\": {\"name\": \"\u795e\u821f\u516b\u53f7\", \"position\": \"\u5b87\u822a\u5458\"}}}", "passed": true, "reason": "correctly_no_tool_call"}

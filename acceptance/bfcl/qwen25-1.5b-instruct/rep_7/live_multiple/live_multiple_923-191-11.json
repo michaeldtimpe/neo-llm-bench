@@ -1,0 +1,1 @@
+{"id": "live_multiple_923-191-11", "actual_calls": [["get_service_providers", {"service_id": 39, "available_for_pet": false, "is_cleaning_home": true, "is_cleaning_office": false}]], "wall_s": 0.32500658300705254, "prompt_tokens": 1276, "completion_tokens": 47, "error": "", "passed": false, "reason": "call_get_service_providers_did_not_match_any_gt"}

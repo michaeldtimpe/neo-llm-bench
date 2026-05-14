@@ -1,0 +1,1 @@
+{"id": "live_multiple_785-173-7", "actual_calls": [["Services_4_FindProvider", {"city": "Sunnyvale, CA", "type": "Psychologist"}]], "wall_s": 0.21053862498956732, "prompt_tokens": 710, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

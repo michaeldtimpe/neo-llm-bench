@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_349-81-10", "actual_calls": [["requests.get", {"url": "https://api.coindesk.com/v1/bpi/currentprice/BTC.json", "params": {"latitude": 0, "longitude": 0, "elevation": 0}}]], "wall_s": 0.4013648749969434, "prompt_tokens": 887, "completion_tokens": 61, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_330-132-20", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Joel Zwick", "cast": "Joey Fatone"}]], "wall_s": 0.23169379199680407, "prompt_tokens": 1137, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

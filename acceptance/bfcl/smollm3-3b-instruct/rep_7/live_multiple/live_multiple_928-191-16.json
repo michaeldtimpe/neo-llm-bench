@@ -1,0 +1,1 @@
+{"id": "live_multiple_928-191-16", "actual_calls": [["get_service_providers", {"service_id": 39, "is_subscription": true, "professional_group_id": 2, "has_late_check_in": false}]], "wall_s": 0.4618380829997477, "prompt_tokens": 1115, "completion_tokens": 47, "error": "", "passed": false, "reason": "call_get_service_providers_did_not_match_any_gt"}

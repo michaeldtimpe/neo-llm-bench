@@ -1,0 +1,1 @@
+{"id": "live_multiple_364-134-9", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Wes Anderson", "genre": "Comedy", "cast": "dontcare"}]], "wall_s": 0.24082724998879712, "prompt_tokens": 974, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

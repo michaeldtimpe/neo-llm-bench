@@ -1,0 +1,1 @@
+{"id": "live_simple_218-117-10", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Paul Downs Colaizzo", "cast": "Michaela Watkins", "genre": "dontcare"}]], "wall_s": 0.4195141669988516, "prompt_tokens": 470, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

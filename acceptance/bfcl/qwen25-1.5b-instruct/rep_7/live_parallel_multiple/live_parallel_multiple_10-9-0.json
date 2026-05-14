@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_10-9-0", "actual_calls": [["recall_memory_search", {"query": "Shishir's birthday"}]], "wall_s": 0.17423966599744745, "prompt_tokens": 1800, "completion_tokens": 25, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_159-95-16", "actual_calls": [["cmd_controller.execute", {"command": "timeout 10"}]], "wall_s": 0.14655004200176336, "prompt_tokens": 362, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}

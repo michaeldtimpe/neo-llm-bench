@@ -1,0 +1,1 @@
+{"id": "live_multiple_38-14-0", "actual_calls": [["get_interviewer_list", {"skill": "Python", "experience_level": "Mid-Level", "availability": true}]], "wall_s": 0.43065979200036963, "prompt_tokens": 565, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

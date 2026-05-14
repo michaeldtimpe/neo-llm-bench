@@ -1,0 +1,1 @@
+{"id": "live_multiple_497-148-7", "actual_calls": [["Events_3_FindEvents", {"event_type": "Theater", "city": "Oakland, CA", "date": "2023-04-11"}]], "wall_s": 0.4306752910015348, "prompt_tokens": 870, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

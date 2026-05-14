@@ -1,0 +1,1 @@
+{"id": "live_multiple_333-132-23", "actual_calls": [], "wall_s": 0.22441841699765064, "prompt_tokens": 1343, "completion_tokens": 24, "error": "", "raw_text": "Sure, I can help with that. Could you please specify the director, genre, or cast you prefer?", "passed": false, "reason": "no_tool_call_emitted"}

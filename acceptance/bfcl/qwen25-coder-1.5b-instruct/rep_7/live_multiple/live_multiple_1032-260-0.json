@@ -1,0 +1,1 @@
+{"id": "live_multiple_1032-260-0", "actual_calls": [["get_synthetic_locations", {"limit": 5}]], "wall_s": 0.20865191699704155, "prompt_tokens": 622, "completion_tokens": 31, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_synthetic_locations\",\n  \"arguments\": {\n    \"limit\": 5\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_230-121-0", "actual_calls": [["play_song", {"song_id": "wjeiruhuq_roar", "artist": "Roar", "quality": "high"}]], "wall_s": 0.24963654200837482, "prompt_tokens": 388, "completion_tokens": 41, "error": "", "passed": false, "reason": "call_play_song_did_not_match_any_gt"}

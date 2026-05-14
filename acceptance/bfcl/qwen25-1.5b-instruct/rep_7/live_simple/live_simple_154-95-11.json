@@ -1,0 +1,1 @@
+{"id": "live_simple_154-95-11", "actual_calls": [["cmd_controller.execute", {"command": "start https://www.youtube.com/watch?v=dQw4w9WgXcQ"}]], "wall_s": 0.22764724999433383, "prompt_tokens": 370, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

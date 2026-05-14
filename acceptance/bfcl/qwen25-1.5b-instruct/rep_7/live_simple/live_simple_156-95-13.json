@@ -1,0 +1,1 @@
+{"id": "live_simple_156-95-13", "actual_calls": [["cmd_controller.execute", {"command": "dir C:\\", "unit": "seconds"}]], "wall_s": 0.18142870800511446, "prompt_tokens": 365, "completion_tokens": 29, "error": "", "passed": false, "reason": "call_cmd_controller.execute_did_not_match_any_gt"}

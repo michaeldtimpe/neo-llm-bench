@@ -1,0 +1,1 @@
+{"id": "live_multiple_613-159-6", "actual_calls": [["Events_3_FindEvents", {"event_type": "Theater", "city": "London, UK", "date": "2023-03-10"}]], "wall_s": 0.4212852919990837, "prompt_tokens": 955, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_702-164-18", "actual_calls": [["Movies_3_FindMovies", {"cast": "Katsunosuke Hori"}]], "wall_s": 0.2902295000021695, "prompt_tokens": 809, "completion_tokens": 29, "error": "", "passed": true, "reason": "matched_gt_entry"}

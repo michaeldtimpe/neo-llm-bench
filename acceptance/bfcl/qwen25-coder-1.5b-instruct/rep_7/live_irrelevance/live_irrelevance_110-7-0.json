@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_110-7-0", "actual_calls": [], "wall_s": 0.13573079100751784, "prompt_tokens": 367, "completion_tokens": 20, "error": "", "raw_text": "To determine the temperature in Tel Aviv in Fahrenheit, I would need to use a weather API.", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_796-305-0", "actual_calls": [], "wall_s": 0.2654468749969965, "prompt_tokens": 1097, "completion_tokens": 31, "error": "", "raw_text": "```json\n{\n  \"name\": \"redirect\",\n  \"arguments\": {\n    \"url\": \"https://example.com\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_955-202-1", "actual_calls": [["uber.eat.order", {"restaurant": "McDonald's", "items": ["fries"], "quantities": [5]}]], "wall_s": 0.37684395800170023, "prompt_tokens": 512, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

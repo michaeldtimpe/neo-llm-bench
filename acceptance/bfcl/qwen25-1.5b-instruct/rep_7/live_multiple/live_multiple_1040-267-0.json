@@ -1,0 +1,1 @@
+{"id": "live_multiple_1040-267-0", "actual_calls": [["detail_experience_and_education", {"experience_or_education_type": "Education at Universitas Sebelas Maret (UNS)"}]], "wall_s": 0.23340912500862032, "prompt_tokens": 1398, "completion_tokens": 38, "error": "", "passed": false, "reason": "call_detail_experience_and_education_did_not_match_any_gt"}

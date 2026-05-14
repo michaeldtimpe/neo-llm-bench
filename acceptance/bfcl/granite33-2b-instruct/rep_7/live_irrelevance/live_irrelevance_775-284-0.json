@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_775-284-0", "actual_calls": [], "wall_s": 0.35903195801074617, "prompt_tokens": 327, "completion_tokens": 40, "error": "", "raw_text": "[{\"arguments\": {\"latitude\": 37.8651, \"longitude\": -119.5383}, \"name\": \"fetch_weather_data\"}]", "passed": true, "reason": "correctly_no_tool_call"}

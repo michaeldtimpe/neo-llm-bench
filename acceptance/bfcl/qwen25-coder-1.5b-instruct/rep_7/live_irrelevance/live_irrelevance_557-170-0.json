@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_557-170-0", "actual_calls": [["get_items", {"items": []}]], "wall_s": 0.11815645900787786, "prompt_tokens": 289, "completion_tokens": 17, "error": "", "raw_text": "{{\"name\": \"get_items\", \"arguments\": {\"items\": []}}}", "passed": false, "reason": "called_tool_when_irrelevant: get_items"}

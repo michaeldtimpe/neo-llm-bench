@@ -1,0 +1,1 @@
+{"id": "live_multiple_217-93-0", "actual_calls": [["Subdomain", {"domain": "google.com"}]], "wall_s": 0.8735297090024687, "prompt_tokens": 4946, "completion_tokens": 30, "error": "", "raw_text": "```json\n{\n  \"name\": \"Subdomain\",\n  \"arguments\": {\n    \"domain\": \"google.com\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

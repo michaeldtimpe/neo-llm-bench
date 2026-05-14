@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_169-23-1", "actual_calls": [], "wall_s": 0.17418458400061354, "prompt_tokens": 687, "completion_tokens": 29, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_weather\",\n  \"arguments\": {\n    \"location\": \"Boston\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

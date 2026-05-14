@@ -1,0 +1,1 @@
+{"id": "irrelevance_128", "actual_calls": [["personality_assessment.calculate_score", {"user_responses": [], "weighted_score": false}]], "wall_s": 6.185534000000189, "prompt_tokens": 347, "completion_tokens": 300, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: personality_assessment.calculate_score"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_492-148-2", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "Berkeley, CA", "date": "2023-03-10"}]], "wall_s": 0.29701599999680184, "prompt_tokens": 995, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

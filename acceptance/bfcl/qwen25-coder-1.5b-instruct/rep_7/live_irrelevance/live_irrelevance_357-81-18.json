@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_357-81-18", "actual_calls": [], "wall_s": 0.08376974999555387, "prompt_tokens": 871, "completion_tokens": 12, "error": "", "raw_text": "I am a large language model created by Anthropic.", "passed": true, "reason": "correctly_no_tool_call"}

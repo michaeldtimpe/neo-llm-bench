@@ -1,0 +1,1 @@
+{"id": "live_multiple_956-203-0", "actual_calls": [["partner.mandates", {}]], "wall_s": 0.15319870799430646, "prompt_tokens": 476, "completion_tokens": 22, "error": "", "raw_text": "```json\n{\n  \"name\": \"partner.mandates\",\n  \"arguments\": {}\n}\n```", "passed": true, "reason": "matched_gt_entry"}

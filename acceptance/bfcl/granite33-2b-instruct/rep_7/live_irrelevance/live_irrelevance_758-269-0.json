@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_758-269-0", "actual_calls": [], "wall_s": 0.37980370900186244, "prompt_tokens": 1340, "completion_tokens": 18, "error": "", "raw_text": "[{\"arguments\": {}, \"name\": \"team_api.get_self\"}]", "passed": true, "reason": "correctly_no_tool_call"}

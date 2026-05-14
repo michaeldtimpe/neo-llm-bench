@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_635-201-3", "actual_calls": [["Movies_1_FindMovies", {"location": "Larkspur, CA"}]], "wall_s": 0.17692900000838563, "prompt_tokens": 1649, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Movies_1_FindMovies"}

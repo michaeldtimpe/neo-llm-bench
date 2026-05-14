@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_822-315-0", "actual_calls": [["open_asset", {"asset_name": "MV31"}]], "wall_s": 0.1534914999938337, "prompt_tokens": 440, "completion_tokens": 22, "error": "", "raw_text": "{{\"name\": \"open_asset\", \"arguments\": {\"asset_name\": \"MV31\"}}}", "passed": false, "reason": "called_tool_when_irrelevant: open_asset"}

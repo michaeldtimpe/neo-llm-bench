@@ -1,0 +1,1 @@
+{"id": "live_multiple_302-131-1", "actual_calls": [["Hotels_4_ReserveHotel", {"place_name": "New York City", "check_in_date": "2023-07-15", "stay_length": 1, "location": "New York, NY", "number_of_rooms": "1"}]], "wall_s": 0.4113588750042254, "prompt_tokens": 1888, "completion_tokens": 69, "error": "", "passed": false, "reason": "call_Hotels_4_ReserveHotel_did_not_match_any_gt"}

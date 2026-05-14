@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_19-2-7", "actual_calls": [], "wall_s": 0.3188669170049252, "prompt_tokens": 378, "completion_tokens": 57, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_threat_actors\",\n  \"arguments\": {\n    \"ip\": \"192.168.1.1\",\n    \"key\": \"epsilon_key\",\n    \"limit\": 5\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

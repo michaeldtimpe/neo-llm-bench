@@ -1,0 +1,1 @@
+{"id": "live_multiple_635-161-3", "actual_calls": [["Music_3_LookupMusic", {"genre": "Electropop", "year": "2019"}]], "wall_s": 0.30739729100605473, "prompt_tokens": 1691, "completion_tokens": 34, "error": "", "raw_text": "[{\"name\": \"Music_3_LookupMusic\", \"arguments\": {\"genre\": \"Electropop\", \"year\": \"2019\"}}]", "passed": true, "reason": "matched_gt_entry"}

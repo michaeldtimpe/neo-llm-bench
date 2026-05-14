@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_702-230-1", "actual_calls": [["Payment_1_RequestPayment", {"receiver": "John Doe", "amount": 122}]], "wall_s": 0.19870266600628383, "prompt_tokens": 1242, "completion_tokens": 32, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Payment_1_RequestPayment"}

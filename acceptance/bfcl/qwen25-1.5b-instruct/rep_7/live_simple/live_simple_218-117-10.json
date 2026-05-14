@@ -1,0 +1,1 @@
+{"id": "live_simple_218-117-10", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Paul Downs Colaizzo", "cast": "Michaela Watkins"}]], "wall_s": 0.2304711659962777, "prompt_tokens": 486, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_699-228-0", "actual_calls": [["RideSharing_2_GetRide", {"destination": "1270 Linford Lane, Anytown, CA, 12345", "number_of_seats": 1, "ride_type": "Luxury"}]], "wall_s": 0.35712487500859424, "prompt_tokens": 414, "completion_tokens": 61, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: RideSharing_2_GetRide"}

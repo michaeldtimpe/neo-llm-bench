@@ -1,0 +1,1 @@
+{"id": "live_multiple_472-145-23", "actual_calls": [["Travel_1_FindAttractions", {"location": "Chicago, IL", "free_entry": "dontcare", "category": "dontcare", "good_for_kids": "True"}]], "wall_s": 0.3043370419909479, "prompt_tokens": 1806, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

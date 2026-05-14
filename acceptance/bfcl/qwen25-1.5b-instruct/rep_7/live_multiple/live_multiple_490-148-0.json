@@ -1,0 +1,1 @@
+{"id": "live_multiple_490-148-0", "actual_calls": [["Events_3_FindEvents", {"event_type": "Theater", "city": "Chicago, IL", "date": "2023-04-29"}]], "wall_s": 0.35390950000146404, "prompt_tokens": 987, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

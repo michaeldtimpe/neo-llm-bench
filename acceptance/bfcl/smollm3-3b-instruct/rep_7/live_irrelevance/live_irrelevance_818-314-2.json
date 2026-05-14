@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_818-314-2", "actual_calls": [["requests.get", {"url": "https://example.com/api/...?format=standard", "params": {"format": "standard"}}]], "wall_s": 8.511787874998845, "prompt_tokens": 758, "completion_tokens": 961, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

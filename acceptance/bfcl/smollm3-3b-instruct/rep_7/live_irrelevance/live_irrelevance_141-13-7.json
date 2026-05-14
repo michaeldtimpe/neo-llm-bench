@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_141-13-7", "actual_calls": [["HNA_WQA.search", {"keyword": "\uacf5\uae30\uccad\uc815\uae30 \ucf1c", "result_format": "text", "language": "EN", "max_results": 1}]], "wall_s": 0.5522262080012297, "prompt_tokens": 920, "completion_tokens": 50, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: HNA_WQA.search"}

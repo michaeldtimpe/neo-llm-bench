@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_719-238-0", "actual_calls": [["book_flight", {"departure_location": "New York, NY", "departure_time": "15/04/2023 14:00", "return_time": "20/04/2023 14:00"}]], "wall_s": 0.5556844159982575, "prompt_tokens": 403, "completion_tokens": 57, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: book_flight"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_148-58-2", "actual_calls": [["get_sensor_readings_latest", {"perPage": 10}]], "wall_s": 0.45799108399660327, "prompt_tokens": 2436, "completion_tokens": 33, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_sensor_readings_latest\",\n  \"arguments\": {\n    \"perPage\": 10\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

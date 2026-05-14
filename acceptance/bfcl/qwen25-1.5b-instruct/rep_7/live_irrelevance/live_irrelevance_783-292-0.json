@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_783-292-0", "actual_calls": [["api_token_api.APITokenApi.get_api_tokens", {"user_id": 0, "active_only": true}]], "wall_s": 0.2613162920024479, "prompt_tokens": 687, "completion_tokens": 35, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: api_token_api.APITokenApi.get_api_tokens"}

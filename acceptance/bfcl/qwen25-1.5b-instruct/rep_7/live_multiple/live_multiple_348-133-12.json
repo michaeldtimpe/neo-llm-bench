@@ -1,0 +1,1 @@
+{"id": "live_multiple_348-133-12", "actual_calls": [["Music_3_LookupMusic", {"artist": "Meghan Trainor", "album": "dontcare", "genre": "Pop", "year": 2018}]], "wall_s": 0.29451266600517556, "prompt_tokens": 983, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

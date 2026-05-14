@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_286-68-0", "actual_calls": [["searchCVE", {"key": "3bf5f6c4-b9f3-4932-ba70-62ed5d513e61", "delay": 1, "limit": 5}]], "wall_s": 4.6240889159998915, "prompt_tokens": 1790, "completion_tokens": 481, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: searchCVE"}

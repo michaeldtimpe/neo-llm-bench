@@ -1,0 +1,1 @@
+{"id": "live_simple_180-105-0", "actual_calls": [], "wall_s": 0.27745658400817774, "prompt_tokens": 408, "completion_tokens": 28, "error": "", "raw_text": "[{\"arguments\": {\"service_id\": 2, \"province_id\": 1, \"rating\": 4}}]", "passed": false, "reason": "no_tool_call_emitted"}

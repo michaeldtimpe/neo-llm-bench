@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_114-7-4", "actual_calls": [], "wall_s": 0.10823037500085775, "prompt_tokens": 361, "completion_tokens": 17, "error": "", "raw_text": "To determine the weather in Boston, I would need to call a weather API.", "passed": true, "reason": "correctly_no_tool_call"}

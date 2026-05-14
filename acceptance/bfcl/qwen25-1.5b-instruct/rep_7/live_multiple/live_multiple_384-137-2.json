@@ -1,0 +1,1 @@
+{"id": "live_multiple_384-137-2", "actual_calls": [["Services_1_FindProvider", {"city": "San Jose, CA", "is_unisex": true}]], "wall_s": 0.19637487499858253, "prompt_tokens": 979, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

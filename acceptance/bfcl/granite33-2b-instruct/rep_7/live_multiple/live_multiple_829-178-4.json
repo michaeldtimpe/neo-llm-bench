@@ -1,0 +1,1 @@
+{"id": "live_multiple_829-178-4", "actual_calls": [], "wall_s": 0.2235898330109194, "prompt_tokens": 1057, "completion_tokens": 24, "error": "", "raw_text": "[{\"arguments\": {\"track\": \"Bohemian Rhapsody\", \"device\": \"Kitchen\"}}]", "passed": false, "reason": "no_tool_call_emitted"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_397-139-1", "actual_calls": [["Events_3_FindEvents", {"event_type": "Theater", "city": "Palo Alto, CA", "date": "2023-03-13"}]], "wall_s": 0.4371337920019869, "prompt_tokens": 773, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

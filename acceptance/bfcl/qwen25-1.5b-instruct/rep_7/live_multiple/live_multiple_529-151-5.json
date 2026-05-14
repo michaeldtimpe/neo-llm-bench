@@ -1,0 +1,1 @@
+{"id": "live_multiple_529-151-5", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "Los Angeles, CA", "date": "04/07/2023"}]], "wall_s": 0.2736900419986341, "prompt_tokens": 612, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

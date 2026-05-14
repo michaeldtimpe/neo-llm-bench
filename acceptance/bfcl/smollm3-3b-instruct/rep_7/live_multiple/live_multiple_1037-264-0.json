@@ -1,0 +1,1 @@
+{"id": "live_multiple_1037-264-0", "actual_calls": [["calendar_event_create", {"start_date": "2024-12-01", "start_time": "19:00", "duration": 120, "rrule": "D"}]], "wall_s": 5.256086207999033, "prompt_tokens": 1110, "completion_tokens": 567, "error": "", "passed": false, "reason": "call_calendar_event_create_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_951-200-0", "actual_calls": [["version_api.VersionApi.get_version", {}]], "wall_s": 0.3209974999917904, "prompt_tokens": 980, "completion_tokens": 22, "error": "", "raw_text": "[{\"name\": \"version_api.VersionApi.get_version\", \"arguments\": {}}]", "passed": true, "reason": "matched_gt_entry"}

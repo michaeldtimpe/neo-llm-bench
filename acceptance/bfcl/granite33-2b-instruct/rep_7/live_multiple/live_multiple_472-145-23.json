@@ -1,0 +1,1 @@
+{"id": "live_multiple_472-145-23", "actual_calls": [], "wall_s": 0.26496979100920726, "prompt_tokens": 2268, "completion_tokens": 26, "error": "", "raw_text": "[{\"arguments\": {\"location\": \"Chicago, IL\", \"good_for_kids\": \"True\"}}]", "passed": false, "reason": "no_tool_call_emitted"}

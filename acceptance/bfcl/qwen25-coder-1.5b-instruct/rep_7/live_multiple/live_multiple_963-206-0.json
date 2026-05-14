@@ -1,0 +1,1 @@
+{"id": "live_multiple_963-206-0", "actual_calls": [], "wall_s": 0.302376292005647, "prompt_tokens": 579, "completion_tokens": 45, "error": "", "raw_text": "To check the current status of your complaint, I'll need to use the `GET_PARCEL_STATE` function. Please provide the tracking ID `TX1234567890` to proceed.", "passed": false, "reason": "no_tool_call_emitted"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_86-2-74", "actual_calls": [], "wall_s": 0.1292400410020491, "prompt_tokens": 347, "completion_tokens": 21, "error": "", "raw_text": "{{\"name\": \"web_search\", \"arguments\": {\"query\": \"Columbia University\"}}}}", "passed": true, "reason": "correctly_no_tool_call"}

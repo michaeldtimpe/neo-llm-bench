@@ -1,0 +1,1 @@
+{"id": "live_multiple_894-185-4", "actual_calls": [], "wall_s": 0.323386499992921, "prompt_tokens": 1481, "completion_tokens": 36, "error": "", "raw_text": "[{\"arguments\": {\"payment_method\": \"debit card\", \"amount\": 150, \"receiver\": \"Alice\", \"private_visibility\": true}}]", "passed": false, "reason": "no_tool_call_emitted"}

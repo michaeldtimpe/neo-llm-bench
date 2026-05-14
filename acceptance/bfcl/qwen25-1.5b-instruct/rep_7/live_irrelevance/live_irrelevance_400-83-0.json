@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_400-83-0", "actual_calls": [["calculate_sum", {"number1": 8.5, "number2": 3.2}]], "wall_s": 0.20556091600155924, "prompt_tokens": 331, "completion_tokens": 32, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_sum"}

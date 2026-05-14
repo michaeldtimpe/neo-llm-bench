@@ -1,0 +1,1 @@
+{"id": "live_multiple_300-130-9", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "Rio de Janeiro, Brazil", "has_laundry_service": "dontcare", "number_of_adults": 2, "rating": 4.2}]], "wall_s": 0.3334336660045665, "prompt_tokens": 693, "completion_tokens": 57, "error": "", "passed": true, "reason": "matched_gt_entry"}

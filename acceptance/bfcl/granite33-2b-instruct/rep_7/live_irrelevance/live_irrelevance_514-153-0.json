@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_514-153-0", "actual_calls": [], "wall_s": 0.4664001249911962, "prompt_tokens": 456, "completion_tokens": 52, "error": "", "raw_text": "[{\"url\": \"https://api.example.com/top-flows\", \"params\": {\"startDate\": \"2023-03-32\", \"endDate\": \"2023-10-22\"}}]", "passed": true, "reason": "correctly_no_tool_call"}

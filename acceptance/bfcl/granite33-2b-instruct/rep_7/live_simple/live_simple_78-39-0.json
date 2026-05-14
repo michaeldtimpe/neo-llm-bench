@@ -1,0 +1,1 @@
+{"id": "live_simple_78-39-0", "actual_calls": [], "wall_s": 0.4280361669952981, "prompt_tokens": 602, "completion_tokens": 41, "error": "", "raw_text": "[{\"arguments\": {\"to_address\": \"andy@gorilla.ai\", \"subject\": \"Sales Forecast Request\", \"body\": \"where is the latest sales forecast spreadsheet?\"}}]", "passed": false, "reason": "no_tool_call_emitted"}

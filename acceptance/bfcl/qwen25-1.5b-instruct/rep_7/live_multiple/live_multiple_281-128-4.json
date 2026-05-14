@@ -1,0 +1,1 @@
+{"id": "live_multiple_281-128-4", "actual_calls": [["Restaurants_2_FindRestaurants", {"category": "Vegetarian", "location": "Berkeley, CA", "price_range": "cheap", "has_vegetarian_options": true, "has_seating_outdoors": false}]], "wall_s": 0.3821113750018412, "prompt_tokens": 1025, "completion_tokens": 61, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_172-26-0", "actual_calls": [["review_of_interviewer", {"interviewer_name": "Jane Doe", "include_comments": true}]], "wall_s": 0.1920502499997383, "prompt_tokens": 483, "completion_tokens": 33, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: review_of_interviewer"}

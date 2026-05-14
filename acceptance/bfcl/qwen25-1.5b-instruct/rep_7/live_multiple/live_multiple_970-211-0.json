@@ -1,0 +1,1 @@
+{"id": "live_multiple_970-211-0", "actual_calls": [["fmp.income_statement", {"symbol": "APPL", "period": "annual", "datatype": "json", "limit": 2}]], "wall_s": 0.2876827080035582, "prompt_tokens": 674, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

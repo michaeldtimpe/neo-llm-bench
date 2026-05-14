@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_317-76-15", "actual_calls": [["requests.get", {"url": "https://api.openweathermap.org/data/2.5/weather?q=Antwerpen&appid=YOUR_API_KEY&units=metric"}]], "wall_s": 0.44651662499745726, "prompt_tokens": 846, "completion_tokens": 47, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_723-165-10", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "Paris, FR", "has_laundry_service": "True", "number_of_adults": 1, "rating": 4}]], "wall_s": 0.30923554199398495, "prompt_tokens": 1039, "completion_tokens": 52, "error": "", "passed": false, "reason": "call_Hotels_2_SearchHouse_did_not_match_any_gt"}

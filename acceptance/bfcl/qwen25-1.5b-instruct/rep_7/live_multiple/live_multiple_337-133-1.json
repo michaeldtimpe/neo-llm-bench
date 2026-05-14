@@ -1,0 +1,1 @@
+{"id": "live_multiple_337-133-1", "actual_calls": [["Music_3_PlayMedia", {"track": "Remind Me", "artist": "Carrie Underwood", "device": "Living room", "album": "dontcare"}]], "wall_s": 0.3097152079863008, "prompt_tokens": 1000, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

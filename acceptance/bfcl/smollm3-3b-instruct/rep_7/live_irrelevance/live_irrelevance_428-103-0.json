@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_428-103-0", "actual_calls": [["get_response", {"url": "http://www.myapi.com/intent", "intents": ["Weather", "News", "Traffic"]}]], "wall_s": 0.44328633299664943, "prompt_tokens": 571, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_response"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_300-130-9", "actual_calls": [], "wall_s": 0.3278372499917168, "prompt_tokens": 777, "completion_tokens": 38, "error": "", "raw_text": "[{\"arguments\": {\"where_to\": \"Rio de Janeiro\", \"rating\": 4.2}, \"name\": \"Hotels_2_SearchHouse}]", "passed": false, "reason": "no_tool_call_emitted"}

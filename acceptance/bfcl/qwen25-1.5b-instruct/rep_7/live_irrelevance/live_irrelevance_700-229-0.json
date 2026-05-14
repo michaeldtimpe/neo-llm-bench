@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_700-229-0", "actual_calls": [], "wall_s": 0.26806854200549424, "prompt_tokens": 1645, "completion_tokens": 31, "error": "", "raw_text": "Could you please specify the departure city, destination city, date of departure, number of passengers, and the type of bus route you're interested in?", "passed": true, "reason": "correctly_no_tool_call"}

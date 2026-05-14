@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_496-142-7", "actual_calls": [["help.display", {"command": "all", "verbose": true}]], "wall_s": 0.24102829199910047, "prompt_tokens": 1162, "completion_tokens": 26, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: help.display"}

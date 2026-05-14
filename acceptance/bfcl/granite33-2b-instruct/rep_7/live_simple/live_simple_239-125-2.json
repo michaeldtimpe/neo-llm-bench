@@ -1,0 +1,1 @@
+{"id": "live_simple_239-125-2", "actual_calls": [["play_spotify_song", {"query": "Shape of You", "play": true}]], "wall_s": 0.24525033299869392, "prompt_tokens": 354, "completion_tokens": 28, "error": "", "raw_text": "[{\"arguments\": {\"query\": \"Shape of You\", \"play\": true}, \"name\": \"play_spotify_song\"}]", "passed": true, "reason": "matched_gt_entry"}

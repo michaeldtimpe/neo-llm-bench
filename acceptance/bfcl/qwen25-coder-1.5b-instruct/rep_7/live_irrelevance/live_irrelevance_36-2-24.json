@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_36-2-24", "actual_calls": [], "wall_s": 0.2934839999943506, "prompt_tokens": 382, "completion_tokens": 52, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_files_by_domain\",\n  \"arguments\": {\n    \"domain\": \"example.net\",\n    \"limit\": 20,\n    \"api_key\": \"apikey_456\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_253-53-1", "actual_calls": [["list_files", {"type": "txt"}]], "wall_s": 0.13280654199479613, "prompt_tokens": 1849, "completion_tokens": 20, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: list_files"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_133-12-0", "actual_calls": [], "wall_s": 0.29929529198852833, "prompt_tokens": 728, "completion_tokens": 23, "error": "", "raw_text": "[{\"arguments\": {\"question\": \"\u5982\u4f55\u5b89\u88c5mbox?\", \"oncall_type\": \"mbox\"}}]", "passed": true, "reason": "correctly_no_tool_call"}

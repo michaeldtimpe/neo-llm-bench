@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_136-13-2", "actual_calls": [["HNA_NEWS.search", {"keyword": "Ji Sung Park", "category": "General", "date_range": "null", "sort_by": "date", "language": "EN"}]], "wall_s": 0.5588212920010847, "prompt_tokens": 1146, "completion_tokens": 53, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: HNA_NEWS.search"}

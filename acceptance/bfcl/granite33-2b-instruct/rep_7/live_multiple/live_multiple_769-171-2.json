@@ -1,0 +1,1 @@
+{"id": "live_multiple_769-171-2", "actual_calls": [], "wall_s": 0.30695783300325274, "prompt_tokens": 1589, "completion_tokens": 34, "error": "", "raw_text": "Of course! I can help with that. Would you prefer a unisex salon or a specific gender-segregated salon in Mill Valley?", "passed": false, "reason": "no_tool_call_emitted"}

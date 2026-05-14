@@ -1,0 +1,1 @@
+{"id": "live_multiple_309-131-8", "actual_calls": [], "wall_s": 0.6358580829983111, "prompt_tokens": 2401, "completion_tokens": 43, "error": "", "raw_text": "I can help with that. Let's proceed with the hotel reservation in Berkeley for August 15th to August 17th, 2023. How many rooms do you need?", "passed": false, "reason": "no_tool_call_emitted"}

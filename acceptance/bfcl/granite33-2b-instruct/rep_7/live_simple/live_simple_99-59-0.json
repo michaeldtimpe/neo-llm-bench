@@ -1,0 +1,1 @@
+{"id": "live_simple_99-59-0", "actual_calls": [], "wall_s": 0.27681637500063516, "prompt_tokens": 318, "completion_tokens": 30, "error": "", "raw_text": "[{\"arguments\": {\"device_name\": \"ue boom\", \"timeout\": 30, \"auto_reconnect\": true}}]", "passed": false, "reason": "no_tool_call_emitted"}

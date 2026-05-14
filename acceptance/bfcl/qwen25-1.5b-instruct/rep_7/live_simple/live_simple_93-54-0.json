@@ -1,0 +1,1 @@
+{"id": "live_simple_93-54-0", "actual_calls": [["play_artist", {"artist_name": "K\u00e4\u00e4rij\u00e4"}]], "wall_s": 0.15914775000419468, "prompt_tokens": 276, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}

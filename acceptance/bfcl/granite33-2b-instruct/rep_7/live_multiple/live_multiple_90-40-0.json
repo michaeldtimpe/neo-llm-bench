@@ -1,0 +1,1 @@
+{"id": "live_multiple_90-40-0", "actual_calls": [], "wall_s": 0.6238103329960722, "prompt_tokens": 1300, "completion_tokens": 50, "error": "", "raw_text": "[{\"arguments\": {\"host\": \"data.example.com\", \"api_key\": \"12345-ABCDE\", \"nickname\": \"FastDataServer\"}, \"name\": \"add_mtna_server\"}]", "passed": false, "reason": "no_tool_call_emitted"}

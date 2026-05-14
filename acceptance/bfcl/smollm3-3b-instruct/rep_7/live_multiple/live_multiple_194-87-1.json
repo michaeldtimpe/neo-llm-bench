@@ -1,0 +1,1 @@
+{"id": "live_multiple_194-87-1", "actual_calls": [["CalcProduct", {"a": 443, "b": 349}]], "wall_s": 0.2619645409977238, "prompt_tokens": 489, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}

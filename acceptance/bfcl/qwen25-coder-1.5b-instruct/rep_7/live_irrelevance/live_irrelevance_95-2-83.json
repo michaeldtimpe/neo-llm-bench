@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_95-2-83", "actual_calls": [], "wall_s": 0.32456529200135265, "prompt_tokens": 378, "completion_tokens": 58, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_downloaded_files\",\n  \"arguments\": {\n    \"ip\": \"123.45.67.8\",\n    \"api_key\": \"beta_key\",\n    \"limit\": 30\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

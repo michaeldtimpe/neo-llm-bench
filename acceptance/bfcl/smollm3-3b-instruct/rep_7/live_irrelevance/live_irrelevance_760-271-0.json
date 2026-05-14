@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_760-271-0", "actual_calls": [["component_api.ComponentApi.get_component_by_hash", {"hash": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0"}]], "wall_s": 0.6903071669985366, "prompt_tokens": 748, "completion_tokens": 66, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: component_api.ComponentApi.get_component_by_hash"}

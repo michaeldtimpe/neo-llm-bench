@@ -1,0 +1,1 @@
+{"id": "live_simple_223-117-15", "actual_calls": [["Movies_3_FindMovies", {"genre": "Imaginative fiction"}]], "wall_s": 0.23147637498914264, "prompt_tokens": 481, "completion_tokens": 26, "error": "", "raw_text": "[{\"arguments\": {\"genre\": \"Imaginative fiction\"}, \"name\": \"Movies_3_FindMovies\"}]", "passed": false, "reason": "call_Movies_3_FindMovies_did_not_match_any_gt"}

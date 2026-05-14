@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_512-151-1", "actual_calls": [["requests.get", {"url": "https://dashboards.cisco.com/nexus/anomalies?start_date=2023-01-01&end_date=2023-01-31&anomaly_type=network"}]], "wall_s": 0.3643615410110215, "prompt_tokens": 499, "completion_tokens": 65, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

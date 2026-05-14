@@ -1,0 +1,1 @@
+{"id": "live_multiple_446-144-6", "actual_calls": [["Services_4_FindProvider", {"city": "Vacaville, CA", "type": "Psychologist"}]], "wall_s": 0.3477459580026334, "prompt_tokens": 1333, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

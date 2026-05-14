@@ -1,0 +1,1 @@
+{"id": "live_multiple_392-138-0", "actual_calls": [["Services_1_FindProvider", {"city": "Austin, TX"}]], "wall_s": 0.27920262499537785, "prompt_tokens": 570, "completion_tokens": 25, "error": "", "raw_text": "[{\"arguments\": {\"city\": \"Austin, TX\"}, \"name\": \"Services_1_FindProvider\"}]", "passed": true, "reason": "matched_gt_entry"}

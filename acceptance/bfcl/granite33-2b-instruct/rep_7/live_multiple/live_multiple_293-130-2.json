@@ -1,0 +1,1 @@
+{"id": "live_multiple_293-130-2", "actual_calls": [], "wall_s": 0.3049396669957787, "prompt_tokens": 781, "completion_tokens": 35, "error": "", "raw_text": "[{\"arguments\": {\"where_to\": \"New York\", \"has_laundry_service\": \"True\", \"rating\": 3.7}}]", "passed": false, "reason": "no_tool_call_emitted"}

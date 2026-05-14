@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_455-122-0", "actual_calls": [["weather.forecast", {"location": "New York, NY", "start_date": "2023-01-01", "end_date": "2023-01-31", "units": "F", "include_precipitation": true}]], "wall_s": 0.6075660419992346, "prompt_tokens": 484, "completion_tokens": 63, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: weather.forecast"}

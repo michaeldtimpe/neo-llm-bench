@@ -1,0 +1,1 @@
+{"id": "live_multiple_234-106-0", "actual_calls": [["set_integer", {"name": "columnCount", "value": 8}]], "wall_s": 0.25926183399860747, "prompt_tokens": 664, "completion_tokens": 37, "error": "", "raw_text": "```json\n{\n  \"name\": \"set_integer\",\n  \"arguments\": {\n    \"name\": \"columnCount\",\n    \"value\": 8\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

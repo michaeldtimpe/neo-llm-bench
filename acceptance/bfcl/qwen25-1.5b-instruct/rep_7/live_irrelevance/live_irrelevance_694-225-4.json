@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_694-225-4", "actual_calls": [["Movies_1_FindMovies", {"location": "New York, NY", "genre": "Supernatural", "show_type": "dontcare"}]], "wall_s": 0.25294199999189004, "prompt_tokens": 1733, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Movies_1_FindMovies"}

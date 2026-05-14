@@ -1,0 +1,1 @@
+{"id": "live_multiple_1016-245-0", "actual_calls": [["create_global_application_alert_config", {"name": "UrgentAlert77f7", "alert_type": "error_rate", "threshold": 5, "recipients": ["admin@example.com", "support@example.com"], "enabled": true}]], "wall_s": 0.4035846659971867, "prompt_tokens": 776, "completion_tokens": 63, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_714-237-1", "actual_calls": [["get_service_providers", {"start_available_date": "2024-03-19 12:00", "end_available_date": "2024-03-19 12:00", "service_id": 1}]], "wall_s": 0.5504504999989877, "prompt_tokens": 1112, "completion_tokens": 58, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_service_providers"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_519-157-0", "actual_calls": [["reschedule", {"identifier": "dentist-appointment-2024-11-01-16:00", "dateortime": "2024-11-01T16:00:00", "timezone": "America/New_York"}]], "wall_s": 0.469917832990177, "prompt_tokens": 590, "completion_tokens": 75, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: reschedule"}

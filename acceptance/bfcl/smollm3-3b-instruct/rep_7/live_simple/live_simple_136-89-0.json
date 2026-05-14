@@ -1,0 +1,1 @@
+{"id": "live_simple_136-89-0", "actual_calls": [["requests.get", {"url": "https://192.168.1.1/api/v1/applications/topologies", "params": {"filter": "accountName:AcmeCorp AND applicationName:SalesApp"}}]], "wall_s": 0.6113470419986697, "prompt_tokens": 467, "completion_tokens": 57, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_958-204-0", "actual_calls": [["partner.sips", {"status": "active"}]], "wall_s": 0.2009881249978207, "prompt_tokens": 574, "completion_tokens": 30, "error": "", "raw_text": "```json\n{\n  \"name\": \"partner.sips\",\n  \"arguments\": {\n    \"status\": \"active\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

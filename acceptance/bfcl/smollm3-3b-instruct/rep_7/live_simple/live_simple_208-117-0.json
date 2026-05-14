@@ -1,0 +1,1 @@
+{"id": "live_simple_208-117-0", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Quentin Tarantino", "cast": "Duane Whitaker", "genre": "dontcare"}]], "wall_s": 0.44862170800115564, "prompt_tokens": 445, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_171-25-0", "actual_calls": [["todo.add", {"content": "Go for shopping at 9 pm", "priority": "medium", "due_date": "2023-12-31", "completed": false}]], "wall_s": 0.5072608330010553, "prompt_tokens": 551, "completion_tokens": 50, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: todo.add"}

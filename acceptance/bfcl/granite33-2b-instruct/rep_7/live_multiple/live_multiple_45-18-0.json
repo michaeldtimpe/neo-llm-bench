@@ -1,0 +1,1 @@
+{"id": "live_multiple_45-18-0", "actual_calls": [], "wall_s": 0.50697079100064, "prompt_tokens": 857, "completion_tokens": 47, "error": "", "raw_text": "I can help with that. Let me check the inventory for medium red skirts.\n\n```python\nresponse = inventory_management(product_id=\"skirt\", sizes=[\"M\"], color=\"red\")\n```", "passed": false, "reason": "no_tool_call_emitted"}

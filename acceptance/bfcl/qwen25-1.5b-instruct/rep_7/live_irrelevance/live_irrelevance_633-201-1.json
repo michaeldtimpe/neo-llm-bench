@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_633-201-1", "actual_calls": [["Movies_1_FindMovies", {"location": "Los Angeles, CA", "genre": "World", "show_type": "regular"}]], "wall_s": 0.25654795800801367, "prompt_tokens": 1656, "completion_tokens": 39, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Movies_1_FindMovies"}

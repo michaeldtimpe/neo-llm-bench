@@ -1,0 +1,1 @@
+{"id": "live_multiple_585-157-6", "actual_calls": [["Media_3_FindMovies", {"genre": "Action", "starring": "Bruce Willis"}]], "wall_s": 0.3161821250032517, "prompt_tokens": 600, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

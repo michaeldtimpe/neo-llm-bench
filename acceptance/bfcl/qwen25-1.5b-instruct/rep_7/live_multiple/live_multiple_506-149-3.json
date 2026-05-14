@@ -1,0 +1,1 @@
+{"id": "live_multiple_506-149-3", "actual_calls": [["Flights_4_SearchOnewayFlight", {"origin_airport": "JFK", "destination_airport": "LAX", "departure_date": "2023-04-15", "seating_class": "Economy", "number_of_tickets": 1}]], "wall_s": 0.5506123329978436, "prompt_tokens": 1669, "completion_tokens": 72, "error": "", "passed": true, "reason": "matched_gt_entry"}

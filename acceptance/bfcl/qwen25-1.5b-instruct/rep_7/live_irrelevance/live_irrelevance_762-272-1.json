@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_762-272-1", "actual_calls": [["get_service_providers", {"service_id": 1, "is_cleaning_condo": true, "is_cleaning_home": true, "is_cleaning_office": true}]], "wall_s": 0.30315145901113283, "prompt_tokens": 1856, "completion_tokens": 48, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_service_providers"}

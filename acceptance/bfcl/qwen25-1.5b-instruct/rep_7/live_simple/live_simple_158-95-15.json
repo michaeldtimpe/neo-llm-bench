@@ -1,0 +1,1 @@
+{"id": "live_simple_158-95-15", "actual_calls": [["cmd_controller.execute", {"command": "taskkill /F /IM code.exe"}]], "wall_s": 0.1675073749938747, "prompt_tokens": 350, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

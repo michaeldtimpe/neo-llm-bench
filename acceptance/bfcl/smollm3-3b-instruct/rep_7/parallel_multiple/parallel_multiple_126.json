@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_126", "actual_calls": [["recipe.find", {"mainIngredient": "chicken", "ingredientLimit": 5}], ["restaurant.find", {"cuisine": "Italian"}], ["recipe.find", {"mainIngredient": "beef", "ingredientLimit": 7}]], "wall_s": 1.6257170419994509, "prompt_tokens": 465, "completion_tokens": 72, "error": "", "passed": true, "reason": "all_calls_matched"}

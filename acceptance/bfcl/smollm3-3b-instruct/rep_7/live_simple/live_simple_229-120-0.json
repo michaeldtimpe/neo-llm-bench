@@ -1,0 +1,1 @@
+{"id": "live_simple_229-120-0", "actual_calls": [["requests.get", {"anchor": "user"}]], "wall_s": 2.1063451250010985, "prompt_tokens": 310, "completion_tokens": 239, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,51 @@
+{
+  "model": "qwen25-coder-1.5b-instruct",
+  "rep": 7,
+  "mode": "auto",
+  "run_mode": "raw",
+  "system_prompt": "v2",
+  "categories": {
+    "live_simple": {
+      "n_problems": 258,
+      "n_with_calls": 253,
+      "n_errors": 0,
+      "wall_s": 101.4329999157344,
+      "completion_tokens": 17702
+    },
+    "live_multiple": {
+      "n_problems": 1053,
+      "n_with_calls": 1046,
+      "n_errors": 0,
+      "wall_s": 399.0534788818477,
+      "completion_tokens": 64409
+    },
+    "live_parallel": {
+      "n_problems": 16,
+      "n_with_calls": 16,
+      "n_errors": 0,
+      "wall_s": 7.745265793026192,
+      "completion_tokens": 1371
+    },
+    "live_parallel_multiple": {
+      "n_problems": 24,
+      "n_with_calls": 24,
+      "n_errors": 0,
+      "wall_s": 8.051440289971652,
+      "completion_tokens": 1197
+    },
+    "live_irrelevance": {
+      "n_problems": 884,
+      "n_with_calls": 613,
+      "n_errors": 0,
+      "wall_s": 484.89454398896487,
+      "completion_tokens": 84402
+    },
+    "live_relevance": {
+      "n_problems": 16,
+      "n_with_calls": 15,
+      "n_errors": 0,
+      "wall_s": 7.051705957012018,
+      "completion_tokens": 1204
+    }
+  }
+}

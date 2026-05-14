@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_189-32-2", "actual_calls": [], "wall_s": 0.16676087499945424, "prompt_tokens": 356, "completion_tokens": 26, "error": "", "raw_text": "{{\"name\": \"product_availability.check\", \"arguments\": {\"product_id\": \"12345\"}}}", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_666-212-0", "actual_calls": [["Weather_1_GetWeather", {"city": "New York, NY", "date": "2023-07-25"}]], "wall_s": 0.46328866700059734, "prompt_tokens": 784, "completion_tokens": 38, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Weather_1_GetWeather"}

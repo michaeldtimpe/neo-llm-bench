@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_555-169-8", "actual_calls": [["tts_tool", {"content": "hi"}]], "wall_s": 0.12364425000851043, "prompt_tokens": 1280, "completion_tokens": 21, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: tts_tool"}

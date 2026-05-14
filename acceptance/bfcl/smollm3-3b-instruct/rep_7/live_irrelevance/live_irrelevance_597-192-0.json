@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_597-192-0", "actual_calls": [["RideSharing_2_GetRide", {"destination": "China Station Restaurant", "number_of_seats": 1, "ride_type": "Regular"}]], "wall_s": 0.5273665419990721, "prompt_tokens": 779, "completion_tokens": 45, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: RideSharing_2_GetRide"}

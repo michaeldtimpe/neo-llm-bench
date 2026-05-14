@@ -1,0 +1,1 @@
+{"id": "live_multiple_47-18-2", "actual_calls": [["order_status_check", {"order_id": "123456789", "product": "Smart LED TV"}]], "wall_s": 0.3247119580009894, "prompt_tokens": 711, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

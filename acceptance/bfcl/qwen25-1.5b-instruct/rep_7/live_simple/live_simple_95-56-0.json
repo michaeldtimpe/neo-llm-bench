@@ -1,0 +1,1 @@
+{"id": "live_simple_95-56-0", "actual_calls": [["process_data", {"data": [2.5, 3.6, 4.1, 5.2], "normalize": true, "categories": ["red", "blue", "green"], "encoding_type": "one-hot", "missing_values": "mean"}]], "wall_s": 0.41475158400135115, "prompt_tokens": 594, "completion_tokens": 69, "error": "", "passed": true, "reason": "matched_gt_entry"}

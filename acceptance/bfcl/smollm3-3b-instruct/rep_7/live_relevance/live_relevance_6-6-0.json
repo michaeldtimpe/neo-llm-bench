@@ -1,0 +1,1 @@
+{"id": "live_relevance_6-6-0", "actual_calls": [["handover_to_agent", {"agent_id": "agent123", "session_id": "session456", "priority": "medium", "message": "Please provide your parcel tracking number so we can assist you further."}]], "wall_s": 5.29559670800154, "prompt_tokens": 1148, "completion_tokens": 572, "error": "", "passed": true, "reason": "correctly_called_a_tool"}

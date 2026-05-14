@@ -1,0 +1,1 @@
+{"id": "live_multiple_238-106-4", "actual_calls": [["set_float", {"name": "roomHeight", "value": 4.2}]], "wall_s": 0.2561001660069451, "prompt_tokens": 768, "completion_tokens": 29, "error": "", "raw_text": "[{\"arguments\": {\"name\": \"roomHeight\", \"value\": 4.2}, \"name\": \"set_float\"}]", "passed": false, "reason": "call_set_float_did_not_match_any_gt"}

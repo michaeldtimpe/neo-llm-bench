@@ -1,0 +1,1 @@
+{"id": "live_multiple_946-196-4", "actual_calls": [["play_song", {"query": "Thriller", "volume": 100}]], "wall_s": 0.17363575000490528, "prompt_tokens": 493, "completion_tokens": 29, "error": "", "passed": true, "reason": "matched_gt_entry"}

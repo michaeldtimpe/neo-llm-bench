@@ -1,0 +1,1 @@
+{"id": "live_multiple_708-164-24", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Steven Spielberg", "genre": "Sci-fi"}]], "wall_s": 0.20296833300380968, "prompt_tokens": 885, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

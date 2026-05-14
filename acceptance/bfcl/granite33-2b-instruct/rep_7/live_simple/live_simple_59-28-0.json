@@ -1,0 +1,1 @@
+{"id": "live_simple_59-28-0", "actual_calls": [], "wall_s": 0.4724692080053501, "prompt_tokens": 438, "completion_tokens": 53, "error": "", "raw_text": "Sure, let me check the movies playing today in Mumbai for you.\n\n[function call: get_movies(city: \"Mumbai\", movie_date: \"2023-03-15\")]", "passed": false, "reason": "no_tool_call_emitted"}

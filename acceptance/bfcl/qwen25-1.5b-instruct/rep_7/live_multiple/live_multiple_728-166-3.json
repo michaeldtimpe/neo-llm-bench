@@ -1,0 +1,1 @@
+{"id": "live_multiple_728-166-3", "actual_calls": [["Services_1_FindProvider", {"city": "Walnut Creek, CA", "is_unisex": false}]], "wall_s": 0.20926120900548995, "prompt_tokens": 670, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

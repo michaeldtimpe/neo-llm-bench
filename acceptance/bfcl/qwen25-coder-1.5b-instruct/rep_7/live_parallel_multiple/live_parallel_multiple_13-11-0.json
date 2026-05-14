@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_13-11-0", "actual_calls": [["math_gcd", {"a": 36, "b": 48}]], "wall_s": 0.24978220798948314, "prompt_tokens": 565, "completion_tokens": 39, "error": "", "raw_text": "```json\n{\n  \"name\": \"math_gcd\",\n  \"arguments\": {\n    \"a\": 36,\n    \"b\": 48\n  }\n}\n```", "passed": false, "reason": "emitted_1_calls_expected_2"}

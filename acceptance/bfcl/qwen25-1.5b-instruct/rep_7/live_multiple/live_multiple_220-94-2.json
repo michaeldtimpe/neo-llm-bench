@@ -1,0 +1,1 @@
+{"id": "live_multiple_220-94-2", "actual_calls": [["get_sensor_readings_latest", {"perPage": 100, "metrics": ["temperature"]}]], "wall_s": 0.3742903749953257, "prompt_tokens": 1904, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

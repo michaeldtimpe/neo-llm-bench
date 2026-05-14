@@ -1,0 +1,1 @@
+{"id": "live_multiple_885-184-2", "actual_calls": [["Buses_3_FindBus", {"from_city": "New York, NY", "to_city": "Boston, MA", "departure_date": "2023-05-15", "num_passengers": 1, "category": "direct"}]], "wall_s": 0.39502479101065546, "prompt_tokens": 1701, "completion_tokens": 67, "error": "", "passed": true, "reason": "matched_gt_entry"}

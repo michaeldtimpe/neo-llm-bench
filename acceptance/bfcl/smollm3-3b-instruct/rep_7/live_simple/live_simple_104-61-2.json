@@ -1,0 +1,1 @@
+{"id": "live_simple_104-61-2", "actual_calls": [["calculate_tax", {"purchase_amount": 250, "state": "NY"}]], "wall_s": 0.2741715000011027, "prompt_tokens": 487, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

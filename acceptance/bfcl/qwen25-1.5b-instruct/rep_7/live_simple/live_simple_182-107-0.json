@@ -1,0 +1,1 @@
+{"id": "live_simple_182-107-0", "actual_calls": [["get_service_providers", {"service_id": 2, "province_id": 1, "district_name": "Khlong Sam Wa", "sub_district_name": "Sai Kong", "rating": 4.5}]], "wall_s": 0.34775899999658577, "prompt_tokens": 495, "completion_tokens": 58, "error": "", "passed": true, "reason": "matched_gt_entry"}

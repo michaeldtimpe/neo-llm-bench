@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_51", "actual_calls": [["get_player_record", {"player": "Michael Jordan", "stat": "highest_scoring_game"}], ["get_player_record", {"player": "Michael Jordan", "stat": "total_championships"}]], "wall_s": 1.3248542920000546, "prompt_tokens": 401, "completion_tokens": 59, "error": "", "passed": true, "reason": "all_calls_matched"}

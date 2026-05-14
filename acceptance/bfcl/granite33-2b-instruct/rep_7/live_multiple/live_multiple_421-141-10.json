@@ -1,0 +1,1 @@
+{"id": "live_multiple_421-141-10", "actual_calls": [], "wall_s": 0.3453906250069849, "prompt_tokens": 1221, "completion_tokens": 39, "error": "", "raw_text": "Of course! Could you please provide me with the movie title, preferred genre, and show type you're interested in? Also, let me know the date you'd like to watch it.", "passed": false, "reason": "no_tool_call_emitted"}

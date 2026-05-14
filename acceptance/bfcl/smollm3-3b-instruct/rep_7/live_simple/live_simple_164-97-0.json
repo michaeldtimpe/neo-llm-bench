@@ -1,0 +1,1 @@
+{"id": "live_simple_164-97-0", "actual_calls": [["get_copyright_info", {"copyright_content": "The image contains the Coca-Cola logo", "copyright_holder": "The Coca-Cola Company", "confidence_score": 100.0}]], "wall_s": 0.48843637500249315, "prompt_tokens": 502, "completion_tokens": 49, "error": "", "passed": false, "reason": "call_get_copyright_info_did_not_match_any_gt"}

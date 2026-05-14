@@ -1,0 +1,1 @@
+{"id": "live_multiple_436-142-2", "actual_calls": [["RentalCars_3_GetCarsAvailable", {"city": "Portland, OR", "start_date": "2023-04-22", "pickup_time": "10:00", "end_date": "2023-04-27", "car_type": "dontcare"}]], "wall_s": 0.4628788749978412, "prompt_tokens": 2254, "completion_tokens": 79, "error": "", "passed": true, "reason": "matched_gt_entry"}

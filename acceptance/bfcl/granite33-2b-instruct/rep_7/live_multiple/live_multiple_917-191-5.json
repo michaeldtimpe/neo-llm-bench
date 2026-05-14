@@ -1,0 +1,1 @@
+{"id": "live_multiple_917-191-5", "actual_calls": [["view_service_provider_profile", {"professional_id": 7434}]], "wall_s": 0.26189824999892153, "prompt_tokens": 1420, "completion_tokens": 29, "error": "", "raw_text": "[{\"arguments\": {\"professional_id\": 7434}, \"name\": \"view_service_provider_profile\"}]", "passed": true, "reason": "matched_gt_entry"}

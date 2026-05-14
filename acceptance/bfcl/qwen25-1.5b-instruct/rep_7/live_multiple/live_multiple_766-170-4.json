@@ -1,0 +1,1 @@
+{"id": "live_multiple_766-170-4", "actual_calls": [["Buses_3_FindBus", {"from_city": "Austin, TX", "to_city": "Dallas, TX", "departure_date": "2023-03-13", "num_passengers": 3, "category": "direct"}]], "wall_s": 0.38445291700190865, "prompt_tokens": 769, "completion_tokens": 66, "error": "", "passed": true, "reason": "matched_gt_entry"}

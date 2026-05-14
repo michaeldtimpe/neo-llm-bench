@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_1-0-1", "actual_calls": [["requests.get", {"url": "https://date.nager.at/api/v2/stock/lastYearsData/top10Stocks/Toronto"}]], "wall_s": 0.3056462499953341, "prompt_tokens": 963, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

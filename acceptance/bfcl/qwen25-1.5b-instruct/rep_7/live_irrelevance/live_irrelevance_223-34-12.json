@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_223-34-12", "actual_calls": [["ProductSearch.execute", {"keywords": "", "category": "clothing", "price_range": "50-100", "sort_order": "desc", "in_stock": true}]], "wall_s": 0.2902095830067992, "prompt_tokens": 506, "completion_tokens": 51, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: ProductSearch.execute"}

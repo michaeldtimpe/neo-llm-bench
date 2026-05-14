@@ -1,0 +1,1 @@
+{"id": "live_multiple_1038-265-0", "actual_calls": [["detail_project", {"project_name": "invoice-website", "include_status": true, "start_date": null}]], "wall_s": 0.3586728750015027, "prompt_tokens": 1192, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

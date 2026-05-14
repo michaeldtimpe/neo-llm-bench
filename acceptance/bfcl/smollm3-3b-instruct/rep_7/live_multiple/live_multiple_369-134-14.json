@@ -1,0 +1,1 @@
+{"id": "live_multiple_369-134-14", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Peter Jackson", "genre": "Fantasy", "cast": "dontcare"}]], "wall_s": 0.3862080420003622, "prompt_tokens": 815, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

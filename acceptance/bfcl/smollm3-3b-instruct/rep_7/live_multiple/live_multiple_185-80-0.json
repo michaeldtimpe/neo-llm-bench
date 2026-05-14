@@ -1,0 +1,1 @@
+{"id": "live_multiple_185-80-0", "actual_calls": [["get_activity_by_participants", {"participant_count": 5, "activity_type": "education", "price": 0.0, "accessibility": 0.0}]], "wall_s": 3.0757875409981352, "prompt_tokens": 1543, "completion_tokens": 316, "error": "", "passed": true, "reason": "matched_gt_entry"}

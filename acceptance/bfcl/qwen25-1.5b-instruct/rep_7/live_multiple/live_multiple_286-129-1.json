@@ -1,0 +1,1 @@
+{"id": "live_multiple_286-129-1", "actual_calls": [["Services_4_FindProvider", {"city": "San Jose, CA", "type": "Psychologist", "insurance_accepted": true}]], "wall_s": 0.23796199999924283, "prompt_tokens": 835, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_754-265-0", "actual_calls": [["user_api.UserApi.remove_team_from_user", {"username": "user@example.com", "team_id": 123}]], "wall_s": 0.2877126249950379, "prompt_tokens": 854, "completion_tokens": 37, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: user_api.UserApi.remove_team_from_user"}

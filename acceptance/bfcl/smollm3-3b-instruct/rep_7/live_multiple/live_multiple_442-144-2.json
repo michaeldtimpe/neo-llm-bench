@@ -1,0 +1,1 @@
+{"id": "live_multiple_442-144-2", "actual_calls": [["Services_4_FindProvider", {"city": "Campbell, CA", "type": "Psychologist", "accepts_insurance": false}]], "wall_s": 0.4096322080004029, "prompt_tokens": 1311, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

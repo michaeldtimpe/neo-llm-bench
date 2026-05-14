@@ -1,0 +1,1 @@
+{"id": "irrelevance_115", "actual_calls": [["calculate_distance", {"origin": {"latitude": 42.3582, "longitude": -71.0598}, "destination": {"latitude": 40.7128, "longitude": -74.006}, "speed": 60}]], "wall_s": 1.359846249999464, "prompt_tokens": 331, "completion_tokens": 63, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_distance"}

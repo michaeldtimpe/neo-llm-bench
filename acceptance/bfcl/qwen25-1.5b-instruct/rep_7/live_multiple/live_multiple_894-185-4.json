@@ -1,0 +1,1 @@
+{"id": "live_multiple_894-185-4", "actual_calls": [["Payment_1_MakePayment", {"payment_method": "debit card", "amount": 150, "receiver": "Alice", "private_visibility": true}]], "wall_s": 0.2770657919900259, "prompt_tokens": 1250, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

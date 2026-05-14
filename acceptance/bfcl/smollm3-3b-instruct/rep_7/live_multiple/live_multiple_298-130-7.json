@@ -1,0 +1,1 @@
+{"id": "live_multiple_298-130-7", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "Chicago, IL", "has_laundry_service": "True", "rating": 3.9}]], "wall_s": 0.42087529199852725, "prompt_tokens": 632, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

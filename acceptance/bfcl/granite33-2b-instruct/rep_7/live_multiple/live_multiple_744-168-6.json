@@ -1,0 +1,1 @@
+{"id": "live_multiple_744-168-6", "actual_calls": [], "wall_s": 0.3478510830027517, "prompt_tokens": 1626, "completion_tokens": 39, "error": "", "raw_text": "[{\"arguments\": {\"payment_method\": \"app balance\", \"amount\": 250, \"receiver\": \"Svetlana\", \"private_visibility\": true}}]", "passed": false, "reason": "no_tool_call_emitted"}

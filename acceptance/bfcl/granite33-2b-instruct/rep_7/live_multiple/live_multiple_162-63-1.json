@@ -1,0 +1,1 @@
+{"id": "live_multiple_162-63-1", "actual_calls": [["get_detail_adriel_project", {"project_name": "e-commerce-web"}]], "wall_s": 0.27078216600057203, "prompt_tokens": 1141, "completion_tokens": 30, "error": "", "raw_text": "[{\"arguments\": {\"project_name\": \"e-commerce-web\"}, \"name\": \"get_detail_adriel_project\"}]", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_237-106-3", "actual_calls": [], "wall_s": 0.3834134159988025, "prompt_tokens": 784, "completion_tokens": 45, "error": "", "raw_text": "To fulfill your request, I will use the `set_point` function. Here's the invocation:\n\n```python\nset_point(2, 3, 4, \"pointA\")\n```", "passed": false, "reason": "no_tool_call_emitted"}

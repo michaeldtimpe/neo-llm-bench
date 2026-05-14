@@ -1,0 +1,1 @@
+{"id": "live_simple_174-100-0", "actual_calls": [["get_service_id", {"service_id": 2, "unit": 1}]], "wall_s": 0.18543874999159016, "prompt_tokens": 417, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

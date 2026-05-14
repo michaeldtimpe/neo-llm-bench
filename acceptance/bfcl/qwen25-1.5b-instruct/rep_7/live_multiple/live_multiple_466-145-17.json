@@ -1,0 +1,1 @@
+{"id": "live_multiple_466-145-17", "actual_calls": [["Travel_1_FindAttractions", {"location": "New York, NY", "free_entry": "True", "category": "Shopping Area", "good_for_kids": "True"}]], "wall_s": 0.3255330420070095, "prompt_tokens": 1804, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

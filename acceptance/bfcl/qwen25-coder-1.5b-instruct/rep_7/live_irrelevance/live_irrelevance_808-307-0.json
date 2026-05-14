@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_808-307-0", "actual_calls": [], "wall_s": 0.23847166700579692, "prompt_tokens": 437, "completion_tokens": 38, "error": "", "raw_text": "```json\n{\n  \"name\": \"releases_api.ReleasesApi.delete_release\",\n  \"arguments\": {\n    \"release_id\": \"RL50\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_58-22-5", "actual_calls": [["inventory_management", {"product_id": "XY123", "sizes": ["M"]}]], "wall_s": 4.038977165997494, "prompt_tokens": 785, "completion_tokens": 448, "error": "", "passed": true, "reason": "matched_gt_entry"}

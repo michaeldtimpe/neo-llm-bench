@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_498-144-0", "actual_calls": [["python_send_mail", {"address": "mom@example.com", "context": "We should go out and play if Friday is okay.", "subject": "Play Date", "priority": "high"}]], "wall_s": 0.31268800000543706, "prompt_tokens": 614, "completion_tokens": 51, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: python_send_mail"}

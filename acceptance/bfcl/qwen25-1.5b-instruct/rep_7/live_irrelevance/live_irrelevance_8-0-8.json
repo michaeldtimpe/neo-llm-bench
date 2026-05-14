@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_8-0-8", "actual_calls": [], "wall_s": 0.21914012500201352, "prompt_tokens": 958, "completion_tokens": 32, "error": "", "raw_text": "I'm sorry, but the provided tool is for retrieving holiday information and not for company data. I don't have a function to call for this purpose.", "passed": true, "reason": "correctly_no_tool_call"}

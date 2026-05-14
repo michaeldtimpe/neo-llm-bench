@@ -1,0 +1,1 @@
+{"id": "live_multiple_212-91-6", "actual_calls": [["detail_project", {"project_name": "car-rental", "include_status": true, "start_date": null}]], "wall_s": 0.3650645000016084, "prompt_tokens": 1192, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

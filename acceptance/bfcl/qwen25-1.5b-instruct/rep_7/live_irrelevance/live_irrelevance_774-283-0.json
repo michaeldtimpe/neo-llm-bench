@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_774-283-0", "actual_calls": [["getMeetingTranscriptFunc", {"meetingID": "your_meeting_id"}]], "wall_s": 0.19611429200449493, "prompt_tokens": 562, "completion_tokens": 27, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: getMeetingTranscriptFunc"}

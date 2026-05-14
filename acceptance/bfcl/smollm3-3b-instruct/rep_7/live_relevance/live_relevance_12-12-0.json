@@ -1,0 +1,1 @@
+{"id": "live_relevance_12-12-0", "actual_calls": [["RentalCars_3_GetCarsAvailable", {"city": "Toronto, Canada", "start_date": "2023-10-05", "end_date": "2023-10-06", "pickup_time": "10:00", "car_type": "dontcare"}]], "wall_s": 0.6409063749997586, "prompt_tokens": 722, "completion_tokens": 70, "error": "", "passed": true, "reason": "correctly_called_a_tool"}

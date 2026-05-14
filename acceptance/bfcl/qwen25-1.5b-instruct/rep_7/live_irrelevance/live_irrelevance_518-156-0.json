@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_518-156-0", "actual_calls": [["list_directory_contents", {"dir_path": "/path/to/directory"}]], "wall_s": 0.17634225000801962, "prompt_tokens": 855, "completion_tokens": 25, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: list_directory_contents"}

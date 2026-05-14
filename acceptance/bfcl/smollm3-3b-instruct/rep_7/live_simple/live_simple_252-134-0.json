@@ -1,0 +1,1 @@
+{"id": "live_simple_252-134-0", "actual_calls": [["flight.status.check", {"airlines": "Indigo", "person_name": "Karan", "ticket_number": "IND4567"}]], "wall_s": 0.40468775000044843, "prompt_tokens": 404, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

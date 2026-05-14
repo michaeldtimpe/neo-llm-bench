@@ -1,0 +1,1 @@
+{"id": "live_multiple_332-132-22", "actual_calls": [["Movies_3_FindMovies", {"genre": "Mystery", "cast": "Kathy Griffin"}]], "wall_s": 0.20254908299830277, "prompt_tokens": 1144, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

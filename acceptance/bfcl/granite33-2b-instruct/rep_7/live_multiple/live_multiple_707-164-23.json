@@ -1,0 +1,1 @@
+{"id": "live_multiple_707-164-23", "actual_calls": [["Movies_3_FindMovies", {"cast": "Pete Davidson"}]], "wall_s": 0.22991345899936277, "prompt_tokens": 1007, "completion_tokens": 25, "error": "", "raw_text": "[{\"arguments\": {\"cast\": \"Pete Davidson\"}, \"name\": \"Movies_3_FindMovies\"}]", "passed": true, "reason": "matched_gt_entry"}

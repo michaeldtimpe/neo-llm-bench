@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_160-19-2", "actual_calls": [["add", {"a": 37, "b": 42}], ["multiply", {"a": 37, "b": 42}]], "wall_s": 0.32817470900772605, "prompt_tokens": 329, "completion_tokens": 54, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: add"}

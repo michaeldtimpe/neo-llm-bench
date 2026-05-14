@@ -1,0 +1,1 @@
+{"id": "live_multiple_378-135-2", "actual_calls": [["Services_4_FindProvider", {"city": "Mountain View, CA", "type": "Family Counselor"}]], "wall_s": 0.19934366700181272, "prompt_tokens": 516, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

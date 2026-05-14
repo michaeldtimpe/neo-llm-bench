@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_575-179-4", "actual_calls": [["EventQuery", {"search_string": "Trip", "start_date": "2023-01-01", "end_date": "2023-12-31", "include_recurring": true}]], "wall_s": 0.46524904200123274, "prompt_tokens": 512, "completion_tokens": 53, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: EventQuery"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_611-194-4", "actual_calls": [["RentalCars_3_GetCarsAvailable", {"city": "New York, NY", "start_date": "2023-07-08", "pickup_time": "00:00", "end_date": "2023-07-15"}]], "wall_s": 0.6077673340005276, "prompt_tokens": 1872, "completion_tokens": 64, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: RentalCars_3_GetCarsAvailable"}

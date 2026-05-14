@@ -1,0 +1,1 @@
+{"id": "live_multiple_580-157-1", "actual_calls": [["Media_3_FindMovies", {"genre": "Comedy", "starring": "Vanessa Przada"}]], "wall_s": 0.3509709589998238, "prompt_tokens": 603, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

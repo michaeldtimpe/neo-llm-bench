@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_434-108-0", "actual_calls": [["get_response", {"url": "https://example.com/intent", "intent": "clean_hello_start", "probability": 1.0}]], "wall_s": 4.8964763340009085, "prompt_tokens": 447, "completion_tokens": 557, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_response"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_374-81-35", "actual_calls": [["requests.get", {"url": "https://api.opencagedata.com/geocode/v1/json", "params": {"latitude": 37.4224764, "longitude": -122.0842499}}]], "wall_s": 0.4239430000016, "prompt_tokens": 905, "completion_tokens": 70, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

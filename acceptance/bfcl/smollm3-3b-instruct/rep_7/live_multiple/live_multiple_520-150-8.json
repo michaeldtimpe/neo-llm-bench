@@ -1,0 +1,1 @@
+{"id": "live_multiple_520-150-8", "actual_calls": [["Movies_1_FindMovies", {"location": "Saratoga, CA", "theater_name": "AMC", "genre": "dontcare"}]], "wall_s": 0.4251354169973638, "prompt_tokens": 1385, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

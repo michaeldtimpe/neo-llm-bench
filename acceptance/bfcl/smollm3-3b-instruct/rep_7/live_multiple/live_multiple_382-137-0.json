@@ -1,0 +1,1 @@
+{"id": "live_multiple_382-137-0", "actual_calls": [["Services_1_FindProvider", {"city": "Fremont, CA", "is_unisex": false}]], "wall_s": 0.4417012500016426, "prompt_tokens": 854, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

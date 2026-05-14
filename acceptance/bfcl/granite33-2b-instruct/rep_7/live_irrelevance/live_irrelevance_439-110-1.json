@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_439-110-1", "actual_calls": [["joku", {"f": 4}]], "wall_s": 0.1661397499992745, "prompt_tokens": 234, "completion_tokens": 18, "error": "", "raw_text": "[{\"arguments\": {\"f\": 4}, \"name\": \"joku\"}]", "passed": false, "reason": "called_tool_when_irrelevant: joku"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_602-193-4", "actual_calls": [["Movies_1_FindMovies", {"location": "Los Angeles, CA", "theater_name": "dontcare", "genre": "dontcare", "show_type": "dontcare"}]], "wall_s": 0.4778182920017571, "prompt_tokens": 923, "completion_tokens": 51, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Movies_1_FindMovies"}

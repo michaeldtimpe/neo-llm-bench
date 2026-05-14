@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_727-243-0", "actual_calls": [["issue_priorities_api.get_priorities", {"project_id": "PRJ-123", "include_inactive": false}]], "wall_s": 0.2984323750133626, "prompt_tokens": 1082, "completion_tokens": 37, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: issue_priorities_api.get_priorities"}

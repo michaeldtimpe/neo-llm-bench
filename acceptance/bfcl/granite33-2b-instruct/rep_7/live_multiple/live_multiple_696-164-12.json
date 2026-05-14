@@ -1,0 +1,1 @@
+{"id": "live_multiple_696-164-12", "actual_calls": [["Movies_3_FindMovies", {"cast": "Noah Gaynor", "genre": "Mystery"}]], "wall_s": 0.2999479159916518, "prompt_tokens": 1010, "completion_tokens": 34, "error": "", "raw_text": "[{\"arguments\": {\"cast\": \"Noah Gaynor\", \"genre\": \"Mystery\"}, \"name\": \"Movies_3_FindMovies\"}]", "passed": true, "reason": "matched_gt_entry"}

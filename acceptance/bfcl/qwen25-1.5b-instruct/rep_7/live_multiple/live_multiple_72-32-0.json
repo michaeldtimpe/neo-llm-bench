@@ -1,0 +1,1 @@
+{"id": "live_multiple_72-32-0", "actual_calls": [["add_postgres_server", {"nickname": "PrimaryDB", "host": "192.168.0.10", "port": 5432, "database": "main", "username": "admin_user", "password": "secure*pass123"}]], "wall_s": 0.4611387499899138, "prompt_tokens": 797, "completion_tokens": 73, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_918-191-6", "actual_calls": [["get_service_providers", {"province_id": 2, "district_name": "Bang Kruai", "service_id": 2}]], "wall_s": 0.25383187500119675, "prompt_tokens": 1258, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_575-156-1", "actual_calls": [["Services_1_FindProvider", {"city": "Santa Rosa, CA"}]], "wall_s": 0.2515236670005834, "prompt_tokens": 1672, "completion_tokens": 27, "error": "", "raw_text": "[{\"name\": \"Services_1_FindProvider\", \"arguments\": {\"city\": \"Santa Rosa, CA\"}}]", "passed": true, "reason": "matched_gt_entry"}

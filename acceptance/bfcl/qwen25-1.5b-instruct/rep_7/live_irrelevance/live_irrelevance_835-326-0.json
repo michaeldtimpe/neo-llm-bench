@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_835-326-0", "actual_calls": [["determine_body_mass_index", {"weight": 70, "height": 1.7}]], "wall_s": 0.2110663750063395, "prompt_tokens": 308, "completion_tokens": 32, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: determine_body_mass_index"}

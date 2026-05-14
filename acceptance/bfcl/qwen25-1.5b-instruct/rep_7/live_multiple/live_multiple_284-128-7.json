@@ -1,0 +1,1 @@
+{"id": "live_multiple_284-128-7", "actual_calls": [["Restaurants_2_FindRestaurants", {"category": "Italian", "location": "San Francisco, CA", "has_vegetarian_options": false, "has_seating_outdoors": false}]], "wall_s": 0.40278204198693857, "prompt_tokens": 1051, "completion_tokens": 52, "error": "", "passed": true, "reason": "matched_gt_entry"}

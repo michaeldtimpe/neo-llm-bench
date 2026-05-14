@@ -1,0 +1,1 @@
+{"id": "live_multiple_768-171-1", "actual_calls": [["Services_1_FindProvider", {"city": "Emeryville, CA", "is_unisex": true}]], "wall_s": 0.2109070409933338, "prompt_tokens": 1328, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

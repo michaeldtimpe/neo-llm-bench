@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_62-2-50", "actual_calls": [], "wall_s": 0.2297352080058772, "prompt_tokens": 364, "completion_tokens": 40, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_dns_resolutions\",\n  \"arguments\": {\n    \"location\": \"site.info\",\n    \"unit\": \"apikey_info\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

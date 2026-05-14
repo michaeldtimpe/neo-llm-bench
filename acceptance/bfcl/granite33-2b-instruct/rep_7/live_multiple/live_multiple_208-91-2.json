@@ -1,0 +1,1 @@
+{"id": "live_multiple_208-91-2", "actual_calls": [["list_projects", {"user_id": "1234", "include_completed": true}]], "wall_s": 0.2858192499988945, "prompt_tokens": 1686, "completion_tokens": 31, "error": "", "raw_text": "[{\"arguments\": {\"user_id\": \"1234\", \"include_completed\": true}, \"name\": \"list_projects\"}]", "passed": true, "reason": "matched_gt_entry"}

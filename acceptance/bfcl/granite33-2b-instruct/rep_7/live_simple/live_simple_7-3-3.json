@@ -1,0 +1,1 @@
+{"id": "live_simple_7-3-3", "actual_calls": [["get_current_weather", {"location": "Riga, Latvia", "unit": "celsius"}]], "wall_s": 0.30471125000622123, "prompt_tokens": 345, "completion_tokens": 33, "error": "", "raw_text": "[{\"arguments\": {\"location\": \"Riga, Latvia\", \"unit\": \"celsius\"}, \"name\": \"get_current_weather\"}]", "passed": true, "reason": "matched_gt_entry"}

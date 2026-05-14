@@ -1,0 +1,1 @@
+{"id": "live_multiple_628-160-8", "actual_calls": [["Payment_1_RequestPayment", {"receiver": "Diego", "amount": 108}]], "wall_s": 0.27040583299822174, "prompt_tokens": 603, "completion_tokens": 31, "error": "", "raw_text": "[{\"arguments\": {\"receiver\": \"Diego\", \"amount\": 108}, \"name\": \"Payment_1_RequestPayment\"}]", "passed": true, "reason": "matched_gt_entry"}

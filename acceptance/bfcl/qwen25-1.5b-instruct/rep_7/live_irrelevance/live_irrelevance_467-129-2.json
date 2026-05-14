@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_467-129-2", "actual_calls": [["process_data", {"file_path": "questiondetails.txt", "image_path": "cat.jpeg", "vqa_pipeline": "load_model('microsoft/git-large-vqav2', -1)"}]], "wall_s": 0.3011370839958545, "prompt_tokens": 556, "completion_tokens": 53, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: process_data"}

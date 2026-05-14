@@ -1,0 +1,1 @@
+{"id": "live_multiple_579-157-0", "actual_calls": [["Media_3_FindMovies", {"genre": "Comedy", "starring": "Jim Carrey"}]], "wall_s": 0.24900454199814703, "prompt_tokens": 673, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

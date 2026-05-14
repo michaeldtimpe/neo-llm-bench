@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_261-56-4", "actual_calls": [["acl_api.add_mapping", {"principal_id": "user123", "resource_id": "project456", "permissions": "admin"}]], "wall_s": 0.2519060839986196, "prompt_tokens": 957, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: acl_api.add_mapping"}

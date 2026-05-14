@@ -1,0 +1,1 @@
+{"id": "live_multiple_166-66-0", "actual_calls": [["get_adriel_profile", {"user_id": "12445", "include_contacts": true}]], "wall_s": 0.5010250420018565, "prompt_tokens": 1312, "completion_tokens": 35, "error": "", "raw_text": "[{\"arguments\": {\"user_id\": \"12445\", \"include_contacts\": true}, \"name\": \"get_adriel_profile\"}]", "passed": true, "reason": "matched_gt_entry"}

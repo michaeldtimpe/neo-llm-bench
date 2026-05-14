@@ -1,0 +1,1 @@
+{"id": "live_multiple_624-160-4", "actual_calls": [["Payment_1_RequestPayment", {"receiver": "JohnDoe@example.com", "amount": 150.25, "private_visibility": true}]], "wall_s": 0.25303995799913537, "prompt_tokens": 580, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

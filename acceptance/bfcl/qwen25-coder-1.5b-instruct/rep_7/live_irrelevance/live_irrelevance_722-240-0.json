@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_722-240-0", "actual_calls": [["set_volume", {"volume": 50}]], "wall_s": 0.17996537500584964, "prompt_tokens": 962, "completion_tokens": 30, "error": "", "raw_text": "```json\n{\n  \"name\": \"set_volume\",\n  \"arguments\": {\n    \"volume\": 50\n  }\n}\n```", "passed": false, "reason": "called_tool_when_irrelevant: set_volume"}

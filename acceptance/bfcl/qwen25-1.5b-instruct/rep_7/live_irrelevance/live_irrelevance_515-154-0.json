@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_515-154-0", "actual_calls": [["requests.get", {"url": "https://api.example.com/queues", "params": {"siteGroupName": "Network4", "nodeName": "Node5", "interfaceName": "eth0"}}]], "wall_s": 0.3168206249974901, "prompt_tokens": 495, "completion_tokens": 53, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

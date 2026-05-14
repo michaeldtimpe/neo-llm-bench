@@ -1,0 +1,1 @@
+{"id": "live_multiple_760-169-15", "actual_calls": [["Media_3_FindMovies", {"genre": "Thriller", "starring": "Michelle Caspar"}]], "wall_s": 0.206982000003336, "prompt_tokens": 1469, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_375-134-20", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Sameh Zoabi"}]], "wall_s": 0.17621370899723843, "prompt_tokens": 964, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

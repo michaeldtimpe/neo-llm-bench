@@ -1,0 +1,1 @@
+{"id": "live_multiple_1051-278-0", "actual_calls": [], "wall_s": 0.6523682499973802, "prompt_tokens": 731, "completion_tokens": 69, "error": "", "raw_text": "Sure, I can help with that. I'll set a reminder for you to wake up at 7:00 AM tomorrow.\n\n```python\nset_alarm(alarm_time='2023-12-01 07:00:00', purpose='wake up')\n```", "passed": false, "reason": "no_tool_call_emitted"}

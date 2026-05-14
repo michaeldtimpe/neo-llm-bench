@@ -1,0 +1,1 @@
+{"id": "live_multiple_1019-248-0", "actual_calls": [["releases_api.ReleasesApi.delete_release", {"releaseId": "RL50"}]], "wall_s": 0.34309429199493024, "prompt_tokens": 763, "completion_tokens": 29, "error": "", "raw_text": "[{\"arguments\": {\"releaseId\": \"RL50\"}, \"name\": \"releases_api.ReleasesApi.delete_release\"}]", "passed": true, "reason": "matched_gt_entry"}

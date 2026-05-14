@@ -1,0 +1,1 @@
+{"id": "live_multiple_872-182-9", "actual_calls": [["Movies_1_FindMovies", {"location": "Healdsburg, CA", "genre": "Drama", "show_type": "regular"}]], "wall_s": 0.25184533299761824, "prompt_tokens": 1746, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_209-91-3", "actual_calls": [["detail_project", {"project_name": "turing-machine"}]], "wall_s": 0.15026483401015867, "prompt_tokens": 1382, "completion_tokens": 23, "error": "", "passed": true, "reason": "matched_gt_entry"}

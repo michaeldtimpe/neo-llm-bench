@@ -1,0 +1,1 @@
+{"id": "live_multiple_346-133-10", "actual_calls": [["Music_3_LookupMusic", {"artist": "Justin Bieber", "genre": "Pop", "year": 2013}]], "wall_s": 0.3777611670011538, "prompt_tokens": 839, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

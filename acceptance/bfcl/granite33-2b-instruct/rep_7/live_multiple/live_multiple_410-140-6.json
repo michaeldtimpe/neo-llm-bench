@@ -1,0 +1,1 @@
+{"id": "live_multiple_410-140-6", "actual_calls": [], "wall_s": 0.3483936250122497, "prompt_tokens": 1121, "completion_tokens": 37, "error": "", "raw_text": "Sure, I can help with that. To proceed, I need the destination address and the preferred ride type. Also, could you specify how many seats you need?", "passed": false, "reason": "no_tool_call_emitted"}

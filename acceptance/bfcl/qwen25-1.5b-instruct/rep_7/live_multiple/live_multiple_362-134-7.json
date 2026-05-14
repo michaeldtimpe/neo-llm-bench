@@ -1,0 +1,1 @@
+{"id": "live_multiple_362-134-7", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Sujeeth Reddy", "genre": "Action", "cast": "Supreet Reddy"}]], "wall_s": 0.25643850000051316, "prompt_tokens": 980, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

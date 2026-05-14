@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_517-155-0", "actual_calls": [["send.message", {"dest": "jhon@example.com", "message": "I need some money to buy a gift."}]], "wall_s": 0.23938058299245313, "prompt_tokens": 836, "completion_tokens": 37, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: send.message"}

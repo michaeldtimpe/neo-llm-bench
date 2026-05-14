@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_152-16-1", "actual_calls": [["ThinQ_Connect", {"body": {"targetTemperature": 50}}]], "wall_s": 0.1664827089989558, "prompt_tokens": 597, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: ThinQ_Connect"}

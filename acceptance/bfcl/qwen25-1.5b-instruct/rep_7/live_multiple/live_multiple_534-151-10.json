@@ -1,0 +1,1 @@
+{"id": "live_multiple_534-151-10", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "Livermore, CA", "date": "03/06/2023"}]], "wall_s": 0.27524254099989776, "prompt_tokens": 615, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

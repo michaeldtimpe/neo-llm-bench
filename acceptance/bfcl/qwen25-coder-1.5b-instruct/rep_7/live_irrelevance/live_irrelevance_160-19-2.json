@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_160-19-2", "actual_calls": [], "wall_s": 0.31726412499847356, "prompt_tokens": 329, "completion_tokens": 55, "error": "", "raw_text": "```json\n{\n  \"name\": \"geocode\",\n  \"arguments\": {\n    \"latitude\": 37.4224764,\n    \"longitude\": -122.0842499\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

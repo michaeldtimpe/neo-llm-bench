@@ -1,0 +1,1 @@
+{"id": "multiple_3", "actual_calls": [["EuclideanDistance.calculate", {"pointA": [3, 4], "pointB": [1, 2]}]], "wall_s": 0.9316178330000184, "prompt_tokens": 459, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

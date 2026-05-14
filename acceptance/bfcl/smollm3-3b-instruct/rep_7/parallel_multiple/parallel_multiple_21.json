@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_21", "actual_calls": [["data_loading", {"file_path": "dataset.csv"}], ["linear_regression_fit", {"x": "data['sales']", "y": "data['future_sales']", "return_residuals": true}]], "wall_s": 1.3710493329999736, "prompt_tokens": 449, "completion_tokens": 58, "error": "", "passed": true, "reason": "all_calls_matched"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_163-64-0", "actual_calls": [["get_detail_adriel_project", {"project_name": "portfolio-web", "include_tasks": true, "include_financials": true}]], "wall_s": 0.27818329200090375, "prompt_tokens": 737, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

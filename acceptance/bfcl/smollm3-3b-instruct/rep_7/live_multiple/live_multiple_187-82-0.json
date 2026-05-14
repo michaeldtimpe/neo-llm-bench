@@ -1,0 +1,1 @@
+{"id": "live_multiple_187-82-0", "actual_calls": [["quarterly_earnings", {"company_name": "Berkshire Hathaway", "cik": "0001067983"}]], "wall_s": 0.40049858299971675, "prompt_tokens": 503, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

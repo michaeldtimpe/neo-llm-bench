@@ -1,0 +1,1 @@
+{"id": "live_multiple_584-157-5", "actual_calls": [["Media_3_FindMovies", {"genre": "Sci-fi", "starring": "Chris Hemsworth, Zoe Saldana"}]], "wall_s": 0.22942812499240972, "prompt_tokens": 666, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

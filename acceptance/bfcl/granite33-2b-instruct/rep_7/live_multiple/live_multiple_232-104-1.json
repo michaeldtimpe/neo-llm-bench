@@ -1,0 +1,1 @@
+{"id": "live_multiple_232-104-1", "actual_calls": [], "wall_s": 0.39102804100548383, "prompt_tokens": 661, "completion_tokens": 46, "error": "", "raw_text": "I can help with that. I'll retrieve Liam Neeson's contact information using the provided name.\n\n[tool: get_contact_information, parameters: {\"name\": \"Liam Neeson\"}]", "passed": false, "reason": "no_tool_call_emitted"}

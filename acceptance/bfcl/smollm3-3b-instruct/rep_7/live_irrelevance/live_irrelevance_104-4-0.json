@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_104-4-0", "actual_calls": [["ChaFod", {"TheFod": "WHOPPER"}]], "wall_s": 0.2740892090005218, "prompt_tokens": 333, "completion_tokens": 26, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: ChaFod"}

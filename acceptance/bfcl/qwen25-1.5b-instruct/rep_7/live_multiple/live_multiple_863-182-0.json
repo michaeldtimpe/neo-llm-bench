@@ -1,0 +1,1 @@
+{"id": "live_multiple_863-182-0", "actual_calls": [["Movies_1_FindMovies", {"location": "Orinda, CA", "theater_name": "Orinda Theatre", "genre": "dontcare", "show_type": "regular"}]], "wall_s": 0.45774808299029246, "prompt_tokens": 1749, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

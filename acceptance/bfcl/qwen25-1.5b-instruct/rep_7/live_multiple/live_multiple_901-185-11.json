@@ -1,0 +1,1 @@
+{"id": "live_multiple_901-185-11", "actual_calls": [["Payment_1_MakePayment", {"payment_method": "app balance", "amount": 31, "receiver": "Svetlana", "private_visibility": false}]], "wall_s": 0.2902894579892745, "prompt_tokens": 1257, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

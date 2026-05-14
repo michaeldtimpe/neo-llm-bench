@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_179-30-0", "actual_calls": [["order_status_check", {"order_id": "123", "product": "Product X"}]], "wall_s": 0.3922995829998399, "prompt_tokens": 807, "completion_tokens": 30, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: order_status_check"}

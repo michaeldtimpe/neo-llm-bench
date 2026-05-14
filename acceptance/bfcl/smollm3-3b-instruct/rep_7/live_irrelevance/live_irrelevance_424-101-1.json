@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_424-101-1", "actual_calls": [["get_response", {"url": "https://api.example.com/balance", "intent": "get_balance"}]], "wall_s": 2.5994313750015863, "prompt_tokens": 515, "completion_tokens": 296, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_response"}

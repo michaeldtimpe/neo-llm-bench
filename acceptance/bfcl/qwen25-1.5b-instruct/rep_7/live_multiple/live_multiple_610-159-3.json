@@ -1,0 +1,1 @@
+{"id": "live_multiple_610-159-3", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "Portland, OR", "date": "2023-03-14"}]], "wall_s": 0.2810860000026878, "prompt_tokens": 1090, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

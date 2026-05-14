@@ -1,0 +1,1 @@
+{"id": "live_multiple_502-148-12", "actual_calls": [["Events_3_FindEvents", {"event_type": "Theater", "city": "New York, NY", "date": "2023-03-12"}]], "wall_s": 0.29244079199270345, "prompt_tokens": 980, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_356-134-1", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Quentin Tarantino", "cast": "Lawrence Bender"}]], "wall_s": 0.22035937500186265, "prompt_tokens": 981, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

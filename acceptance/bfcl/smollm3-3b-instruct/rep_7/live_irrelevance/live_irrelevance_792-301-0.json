@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_792-301-0", "actual_calls": [["summary_stat_explainer", {"file_path": "path/to/patient_data.csv"}]], "wall_s": 1.8744691250030883, "prompt_tokens": 847, "completion_tokens": 200, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: summary_stat_explainer"}

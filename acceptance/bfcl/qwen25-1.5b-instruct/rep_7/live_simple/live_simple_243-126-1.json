@@ -1,0 +1,1 @@
+{"id": "live_simple_243-126-1", "actual_calls": [["set_volume", {"volume": 30}]], "wall_s": 0.1312502500077244, "prompt_tokens": 305, "completion_tokens": 21, "error": "", "passed": true, "reason": "matched_gt_entry"}

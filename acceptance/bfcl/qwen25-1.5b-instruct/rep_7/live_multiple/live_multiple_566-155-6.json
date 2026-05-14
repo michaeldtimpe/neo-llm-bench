@@ -1,0 +1,1 @@
+{"id": "live_multiple_566-155-6", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "Sacramento, CA", "date": "any"}]], "wall_s": 0.2369183340051677, "prompt_tokens": 1721, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

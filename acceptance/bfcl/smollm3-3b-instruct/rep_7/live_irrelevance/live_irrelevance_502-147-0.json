@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_502-147-0", "actual_calls": [["requests.get", {"url": "https://fab-ed.insightsGroup/integrationData?epochUUID=...", "params": {"epochUUID": "..."}}]], "wall_s": 0.4406349999990198, "prompt_tokens": 405, "completion_tokens": 44, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

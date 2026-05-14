@@ -1,0 +1,1 @@
+{"id": "live_multiple_307-131-6", "actual_calls": [["Hotels_4_SearchHotel", {"location": "Philadelphia, PA", "star_rating": "dontcare", "smoking_allowed": "dontcare", "number_of_rooms": 3}]], "wall_s": 0.602278957998351, "prompt_tokens": 1616, "completion_tokens": 52, "error": "", "passed": false, "reason": "call_Hotels_4_SearchHotel_did_not_match_any_gt"}
