@@ -1,0 +1,1 @@
+{"id": "live_multiple_50-20-0", "actual_calls": [["get_movies", {"city": "Noida", "movie_date": "04-11-2024", "movie_language": "Hindi", "movie_format": "2D"}]], "wall_s": 0.6090590420026274, "prompt_tokens": 924, "completion_tokens": 52, "error": "", "passed": true, "reason": "matched_gt_entry"}

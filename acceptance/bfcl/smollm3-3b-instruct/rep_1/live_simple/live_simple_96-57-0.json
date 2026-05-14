@@ -1,0 +1,1 @@
+{"id": "live_simple_96-57-0", "actual_calls": [["get_current_weather", {"location": "Boston, MA", "unit": "celsius"}]], "wall_s": 0.32104687500032014, "prompt_tokens": 354, "completion_tokens": 31, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

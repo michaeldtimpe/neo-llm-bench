@@ -1,0 +1,1 @@
+{"id": "live_multiple_724-165-11", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "Los Angeles, CA", "has_laundry_service": "True", "number_of_adults": 2, "rating": 3.7}]], "wall_s": 0.5241949160008517, "prompt_tokens": 940, "completion_tokens": 55, "error": "", "passed": false, "reason": "call_Hotels_2_SearchHouse_did_not_match_any_gt"}

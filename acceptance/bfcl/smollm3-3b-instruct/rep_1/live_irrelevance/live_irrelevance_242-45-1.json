@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_242-45-1", "actual_calls": [["dartfx_help", {"topic": "help", "language": "English"}]], "wall_s": 0.3890033339994261, "prompt_tokens": 865, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: dartfx_help"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_655-207-0", "actual_calls": [["Hotels_4_SearchHotel", {"location": "dontcare", "star_rating": "3", "smoking_allowed": "dontcare", "number_of_rooms": "dontcare"}]], "wall_s": 0.5533294170018053, "prompt_tokens": 669, "completion_tokens": 51, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Hotels_4_SearchHotel"}

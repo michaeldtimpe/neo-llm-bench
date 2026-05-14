@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_283-65-0", "actual_calls": [["get_shopping", {"item_name": "\u8863\u670d", "location": "\u5317\u4eac, \u5317\u4eac", "currency": "USD"}]], "wall_s": 0.38749087500036694, "prompt_tokens": 593, "completion_tokens": 37, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_shopping"}

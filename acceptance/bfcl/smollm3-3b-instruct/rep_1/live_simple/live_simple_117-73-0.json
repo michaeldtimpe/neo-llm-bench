@@ -1,0 +1,1 @@
+{"id": "live_simple_117-73-0", "actual_calls": [["reverse_input", {"input_value": "say hi"}]], "wall_s": 0.24616845800119336, "prompt_tokens": 323, "completion_tokens": 23, "error": "", "passed": true, "reason": "matched_gt_entry"}

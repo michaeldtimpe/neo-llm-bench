@@ -1,0 +1,1 @@
+{"id": "live_multiple_408-140-4", "actual_calls": [["RideSharing_2_GetRide", {"destination": "123 Park Branham Apartments, San Jose", "number_of_seats": 2, "ride_type": "Pool"}]], "wall_s": 0.4687550000016927, "prompt_tokens": 800, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,37 @@
+{
+  "model": "smollm3-3b-instruct",
+  "rep": 5,
+  "mode": "inject",
+  "run_mode": "raw",
+  "system_prompt": "v2",
+  "categories": {
+    "multi_turn_base": {
+      "n_problems": 100,
+      "n_with_calls": 0,
+      "n_errors": 0,
+      "wall_s": 616.5026689639999,
+      "completion_tokens": 66213
+    },
+    "multi_turn_long_context": {
+      "n_problems": 100,
+      "n_with_calls": 0,
+      "n_errors": 0,
+      "wall_s": 605.7176519570166,
+      "completion_tokens": 66867
+    },
+    "multi_turn_miss_func": {
+      "n_problems": 100,
+      "n_with_calls": 0,
+      "n_errors": 0,
+      "wall_s": 723.8743436630066,
+      "completion_tokens": 79717
+    },
+    "multi_turn_miss_param": {
+      "n_problems": 100,
+      "n_with_calls": 0,
+      "n_errors": 0,
+      "wall_s": 1011.7955348330179,
+      "completion_tokens": 109567
+    }
+  }
+}

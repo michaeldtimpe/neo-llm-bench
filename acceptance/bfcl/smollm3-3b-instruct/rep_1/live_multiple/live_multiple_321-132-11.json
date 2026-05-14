@@ -1,0 +1,1 @@
+{"id": "live_multiple_321-132-11", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Quentin Tarantino", "genre": "Bizarre", "cast": "Maya Hawke"}]], "wall_s": 0.5347715839998273, "prompt_tokens": 999, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

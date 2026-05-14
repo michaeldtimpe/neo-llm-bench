@@ -1,0 +1,1 @@
+{"id": "live_multiple_364-134-9", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Wes Anderson", "genre": "Comedy"}]], "wall_s": 0.33367912500034436, "prompt_tokens": 824, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

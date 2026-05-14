@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_725-241-1", "actual_calls": [["play_song", {"query": "Jeopardy", "volume": 100, "shuffle": true}]], "wall_s": 0.32176833400080795, "prompt_tokens": 449, "completion_tokens": 34, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: play_song"}

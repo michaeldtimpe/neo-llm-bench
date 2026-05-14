@@ -1,0 +1,1 @@
+{"id": "live_multiple_823-177-6", "actual_calls": [["Events_3_BuyEventTickets", {"event_name": "Brockhampton", "number_of_tickets": 4, "date": "2023-03-13", "city": "Berkeley, CA"}]], "wall_s": 0.5500859579988173, "prompt_tokens": 1026, "completion_tokens": 58, "error": "", "passed": true, "reason": "matched_gt_entry"}

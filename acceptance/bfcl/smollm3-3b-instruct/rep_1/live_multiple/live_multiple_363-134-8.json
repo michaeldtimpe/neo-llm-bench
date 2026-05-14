@@ -1,0 +1,1 @@
+{"id": "live_multiple_363-134-8", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Thurop Van Orman", "cast": "Zach Woods"}]], "wall_s": 0.3610545839983388, "prompt_tokens": 845, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

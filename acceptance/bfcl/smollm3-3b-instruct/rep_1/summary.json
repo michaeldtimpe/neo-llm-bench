@@ -5,40 +5,47 @@
   "run_mode": "raw",
   "system_prompt": "v2",
   "categories": {
-    "simple_python": {
-      "n_problems": 150,
-      "n_with_calls": 150,
+    "live_simple": {
+      "n_problems": 258,
+      "n_with_calls": 254,
       "n_errors": 0,
-      "wall_s": 137.86734879699816,
-      "completion_tokens": 5724
+      "wall_s": 144.33594783003718,
+      "completion_tokens": 15158
     },
-    "multiple": {
-      "n_problems": 150,
-      "n_with_calls": 149,
+    "live_multiple": {
+      "n_problems": 1053,
+      "n_with_calls": 1039,
       "n_errors": 0,
-      "wall_s": 237.064461460006,
-      "completion_tokens": 10046
+      "wall_s": 934.4251502809348,
+      "completion_tokens": 97367
     },
-    "parallel": {
-      "n_problems": 150,
-      "n_with_calls": 150,
+    "live_parallel": {
+      "n_problems": 16,
+      "n_with_calls": 16,
       "n_errors": 0,
-      "wall_s": 322.81553195799825,
-      "completion_tokens": 14384
+      "wall_s": 12.979554629007907,
+      "completion_tokens": 1403
     },
-    "parallel_multiple": {
-      "n_problems": 150,
-      "n_with_calls": 150,
+    "live_parallel_multiple": {
+      "n_problems": 24,
+      "n_with_calls": 24,
       "n_errors": 0,
-      "wall_s": 332.3881865840003,
-      "completion_tokens": 14534
+      "wall_s": 36.736299499996676,
+      "completion_tokens": 3820
     },
-    "irrelevance": {
-      "n_problems": 150,
-      "n_with_calls": 64,
+    "live_irrelevance": {
+      "n_problems": 884,
+      "n_with_calls": 450,
       "n_errors": 0,
-      "wall_s": 350.78015012799915,
-      "completion_tokens": 16185
+      "wall_s": 1424.1416227889458,
+      "completion_tokens": 154887
+    },
+    "live_relevance": {
+      "n_problems": 16,
+      "n_with_calls": 16,
+      "n_errors": 0,
+      "wall_s": 20.457550875002198,
+      "completion_tokens": 2149
     }
   }
 }

@@ -1,0 +1,1 @@
+{"id": "live_multiple_372-134-17", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Joel Zwick", "genre": "Comedy", "cast": "Fiona Reid"}]], "wall_s": 0.4127095420008118, "prompt_tokens": 821, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

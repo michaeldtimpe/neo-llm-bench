@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_561-172-2", "actual_calls": [["cmd_controller.execute", {"command": "& d:/playground/pc_controller/env/Scripts/python.exe d:/playground/pc_controller/test.py"}]], "wall_s": 0.3918766669994511, "prompt_tokens": 358, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: cmd_controller.execute"}

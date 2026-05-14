@@ -1,0 +1,1 @@
+{"id": "live_simple_5-3-1", "actual_calls": [["get_current_weather", {"location": "Divinopolis, MG", "unit": "fahrenheit"}]], "wall_s": 0.3536668750020908, "prompt_tokens": 361, "completion_tokens": 34, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

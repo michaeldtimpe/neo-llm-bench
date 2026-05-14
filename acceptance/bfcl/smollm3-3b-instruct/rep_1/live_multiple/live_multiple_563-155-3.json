@@ -1,0 +1,1 @@
+{"id": "live_multiple_563-155-3", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "Philadelphia, PA", "date": "2023-03-07"}]], "wall_s": 0.4295720420013822, "prompt_tokens": 1487, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

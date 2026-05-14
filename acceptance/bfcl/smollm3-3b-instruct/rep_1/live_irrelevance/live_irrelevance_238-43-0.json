@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_238-43-0", "actual_calls": [["dartfx_help", {"topic": "account_setup", "include_examples": false}]], "wall_s": 0.36440645800030325, "prompt_tokens": 701, "completion_tokens": 29, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: dartfx_help"}

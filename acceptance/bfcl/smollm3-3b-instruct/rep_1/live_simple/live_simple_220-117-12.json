@@ -1,0 +1,1 @@
+{"id": "live_simple_220-117-12", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Alexander Mackendrick", "genre": "Thriller", "cast": "dontcare"}]], "wall_s": 0.400457790998189, "prompt_tokens": 435, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

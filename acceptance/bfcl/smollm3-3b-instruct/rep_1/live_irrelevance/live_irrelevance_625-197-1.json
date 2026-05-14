@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_625-197-1", "actual_calls": [["Music_3_LookupMusic", {"artist": "Any Artist", "album": "Any Album", "genre": "dontcare", "year": "dontcare"}]], "wall_s": 0.45693670800028485, "prompt_tokens": 648, "completion_tokens": 48, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Music_3_LookupMusic"}

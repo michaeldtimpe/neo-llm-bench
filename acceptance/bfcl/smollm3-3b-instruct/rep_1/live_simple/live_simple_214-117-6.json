@@ -1,0 +1,1 @@
+{"id": "live_simple_214-117-6", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Nitesh Tiwari", "genre": "Comic"}]], "wall_s": 0.3506708329987305, "prompt_tokens": 469, "completion_tokens": 37, "error": "", "passed": false, "reason": "call_Movies_3_FindMovies_did_not_match_any_gt"}

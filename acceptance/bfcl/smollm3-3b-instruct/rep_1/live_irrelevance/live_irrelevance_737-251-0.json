@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_737-251-0", "actual_calls": [["get_current_weather", {"location": "New York, NY", "unit": "celsius"}]], "wall_s": 0.3402591659978498, "prompt_tokens": 472, "completion_tokens": 32, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_current_weather"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_243-46-0", "actual_calls": [["add_mtnards_server", {"host": "plga.ca", "api_key": ""}]], "wall_s": 0.3990797080004995, "prompt_tokens": 775, "completion_tokens": 32, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: add_mtnards_server"}

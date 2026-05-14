@@ -1,0 +1,1 @@
+{"id": "live_multiple_687-164-3", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Guillermo del Toro", "genre": "Fantasy"}]], "wall_s": 0.36838904099931824, "prompt_tokens": 790, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

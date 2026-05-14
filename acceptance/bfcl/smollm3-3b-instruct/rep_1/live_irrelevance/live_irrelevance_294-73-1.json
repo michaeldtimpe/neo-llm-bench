@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_294-73-1", "actual_calls": [["get_detail_adriel_project", {"project_name": "detail", "include_financials": false, "response_format": "json", "start_date": null}]], "wall_s": 0.45052270800078986, "prompt_tokens": 920, "completion_tokens": 46, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_detail_adriel_project"}

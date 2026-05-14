@@ -1,0 +1,1 @@
+{"id": "live_multiple_616-159-9", "actual_calls": [["Events_3_FindEvents", {"event_type": "Theater", "city": "Los Angeles, CA", "date": "2023-03-11"}]], "wall_s": 0.43032066699743154, "prompt_tokens": 953, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

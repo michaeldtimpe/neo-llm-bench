@@ -1,0 +1,1 @@
+{"id": "live_multiple_549-152-11", "actual_calls": [["Homes_2_FindHomeByArea", {"area": "San Jose, CA", "intent": "buy", "number_of_beds": 3, "number_of_baths": 2, "has_garage": true}]], "wall_s": 0.5698205830012739, "prompt_tokens": 831, "completion_tokens": 62, "error": "", "passed": true, "reason": "matched_gt_entry"}

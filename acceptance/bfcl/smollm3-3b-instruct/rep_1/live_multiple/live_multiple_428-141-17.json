@@ -1,0 +1,1 @@
+{"id": "live_multiple_428-141-17", "actual_calls": [["Movies_1_FindMovies", {"location": "Berkeley, CA", "genre": "Sci-fi", "show_type": "imax"}]], "wall_s": 0.39681437499893946, "prompt_tokens": 916, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

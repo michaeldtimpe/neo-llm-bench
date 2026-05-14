@@ -1,0 +1,1 @@
+{"id": "live_simple_70-34-0", "actual_calls": [["get_sensor_alerts", {"perPage": 10, "sensorSerial": "Q3CC-CRT3-SZ2G", "t0": "2023-10-05", "t1": "2023-10-05", "timespan": 86400}]], "wall_s": 0.6906677080005466, "prompt_tokens": 652, "completion_tokens": 71, "error": "", "passed": false, "reason": "call_get_sensor_alerts_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_752-169-7", "actual_calls": [["Media_3_FindMovies", {"genre": "Mystery", "starring": "Monica Dolan"}]], "wall_s": 0.3498708339975565, "prompt_tokens": 1214, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_213-34-2", "actual_calls": [["ProductSearch.execute", {"keywords": "maroon clothing", "category": "all categories", "price_range": "0-0", "sort_order": "asc", "in_stock": true}]], "wall_s": 2.9150052499971935, "prompt_tokens": 412, "completion_tokens": 329, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: ProductSearch.execute"}

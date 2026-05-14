@@ -1,0 +1,1 @@
+{"id": "live_simple_114-70-0", "actual_calls": [["update_user_profile", {"user_id": 12345, "profile_data": {"email": "john.doe@example.com", "age": 30}}]], "wall_s": 0.45879983300255844, "prompt_tokens": 430, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

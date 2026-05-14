@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_162-20-1", "actual_calls": [["get_snow_report", {"location": "Paris, France", "unit": "celsius"}], ["get_snow_report", {"location": "Letterkenny, Ireland", "unit": "celsius"}]], "wall_s": 0.5571118340012617, "prompt_tokens": 450, "completion_tokens": 61, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_snow_report"}

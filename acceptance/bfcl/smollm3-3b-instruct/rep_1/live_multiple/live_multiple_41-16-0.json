@@ -1,0 +1,1 @@
+{"id": "live_multiple_41-16-0", "actual_calls": [["get_services", {"namespace": "default"}]], "wall_s": 2.4313846660006675, "prompt_tokens": 447, "completion_tokens": 274, "error": "", "passed": true, "reason": "matched_gt_entry"}

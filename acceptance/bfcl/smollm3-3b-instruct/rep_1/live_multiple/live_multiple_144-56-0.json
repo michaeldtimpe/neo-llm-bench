@@ -1,0 +1,1 @@
+{"id": "live_multiple_144-56-0", "actual_calls": [["get_sensor_readings_latest", {"perPage": 100, "networkId": ["myorg"], "serials": [], "metrics": ["temperature"]}]], "wall_s": 0.5437873329974536, "prompt_tokens": 1021, "completion_tokens": 44, "error": "", "passed": false, "reason": "call_get_sensor_readings_latest_did_not_match_any_gt"}

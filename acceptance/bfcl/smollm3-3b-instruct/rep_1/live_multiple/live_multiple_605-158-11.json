@@ -1,0 +1,1 @@
+{"id": "live_multiple_605-158-11", "actual_calls": [["Hotels_4_SearchHotel", {"location": "Paris, FR", "star_rating": "3", "number_of_rooms": "1"}]], "wall_s": 0.40976591700018616, "prompt_tokens": 707, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

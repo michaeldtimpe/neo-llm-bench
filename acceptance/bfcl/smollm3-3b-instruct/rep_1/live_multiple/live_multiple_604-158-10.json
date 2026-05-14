@@ -1,0 +1,1 @@
+{"id": "live_multiple_604-158-10", "actual_calls": [["Hotels_4_SearchHotel", {"location": "Sacramento, CA"}]], "wall_s": 0.27961312499974156, "prompt_tokens": 698, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

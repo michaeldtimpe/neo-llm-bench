@@ -1,0 +1,1 @@
+{"id": "live_simple_39-16-0", "actual_calls": [["fetch_weather_data", {"latitude": 37.8651, "longitude": -119.5383, "url": "https://api.open-meteo.com/v1/forecast", "units": "metric", "language": "en", "period": "10d"}]], "wall_s": 0.667168459000095, "prompt_tokens": 451, "completion_tokens": 70, "error": "", "passed": true, "reason": "matched_gt_entry"}

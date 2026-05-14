@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_591-186-0", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "San Francisco, CA", "has_laundry_service": "True", "number_of_adults": 2, "rating": 4.5}]], "wall_s": 0.568738083999051, "prompt_tokens": 615, "completion_tokens": 55, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Hotels_2_SearchHouse"}

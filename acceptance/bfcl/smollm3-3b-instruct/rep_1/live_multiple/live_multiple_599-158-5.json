@@ -1,0 +1,1 @@
+{"id": "live_multiple_599-158-5", "actual_calls": [["Hotels_4_SearchHotel", {"location": "Delhi, India"}]], "wall_s": 0.2794274170009885, "prompt_tokens": 655, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

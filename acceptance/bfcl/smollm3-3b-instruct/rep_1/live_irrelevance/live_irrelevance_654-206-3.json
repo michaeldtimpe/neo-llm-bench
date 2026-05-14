@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_654-206-3", "actual_calls": [["Services_1_FindProvider", {"city": "New York, NY"}]], "wall_s": 0.2739799580012914, "prompt_tokens": 1211, "completion_tokens": 27, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Services_1_FindProvider"}

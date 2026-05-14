@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_768-277-0", "actual_calls": [["get_city_name", {"city_name": "San Francisco, CA"}]], "wall_s": 0.28842291600085446, "prompt_tokens": 478, "completion_tokens": 26, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_city_name"}

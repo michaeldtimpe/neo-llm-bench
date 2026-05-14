@@ -1,5 +1,5 @@
 {
-  "ts_started": "2026-05-13T23:49:05.486158+00:00",
+  "ts_started": "2026-05-14T02:48:15.422096+00:00",
   "model_id": "smollm3-3b-instruct",
   "benchmark": "bfcl",
   "rep": 1,
@@ -40,6 +40,6 @@
   },
   "tooling": {
     "python": "3.11.15",
-    "neo_llm_bench_commit": "2f437d46f2cbd6c17a2049357e622e6799c4fbfa"
+    "neo_llm_bench_commit": "4347c7ff8d396732f22d991ace013b6f2716fb4f"
   }
 }

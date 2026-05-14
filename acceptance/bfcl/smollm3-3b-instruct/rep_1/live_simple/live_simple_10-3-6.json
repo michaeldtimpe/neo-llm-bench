@@ -1,0 +1,1 @@
+{"id": "live_simple_10-3-6", "actual_calls": [["get_current_weather", {"location": "Yosemite National Park, Mariposa, CA", "unit": "celsius"}]], "wall_s": 0.37145266700099455, "prompt_tokens": 393, "completion_tokens": 38, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

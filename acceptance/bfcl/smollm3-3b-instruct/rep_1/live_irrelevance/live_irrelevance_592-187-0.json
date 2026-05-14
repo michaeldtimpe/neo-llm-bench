@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_592-187-0", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "dontcare", "genre": "dontcare", "cast": "dontcare"}]], "wall_s": 1.332122249998065, "prompt_tokens": 983, "completion_tokens": 132, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Movies_3_FindMovies"}

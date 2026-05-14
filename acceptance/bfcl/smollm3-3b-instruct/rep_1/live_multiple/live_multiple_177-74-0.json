@@ -1,0 +1,1 @@
+{"id": "live_multiple_177-74-0", "actual_calls": [["get_trip", {"location": "New York, NY"}]], "wall_s": 0.2615174999991723, "prompt_tokens": 427, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}

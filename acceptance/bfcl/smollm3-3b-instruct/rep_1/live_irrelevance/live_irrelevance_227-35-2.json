@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_227-35-2", "actual_calls": [["check_order_status", {"order_id": "ORD123", "include_tracking": false, "customer_id": "CUS456", "date_format": "MM/DD/YYYY"}]], "wall_s": 7.629980375000741, "prompt_tokens": 536, "completion_tokens": 847, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: check_order_status"}

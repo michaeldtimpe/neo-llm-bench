@@ -1,0 +1,1 @@
+{"id": "live_multiple_788-174-2", "actual_calls": [["Homes_2_ScheduleVisit", {"property_name": "Beach Park Apartments", "visit_date": "2023-10-01"}]], "wall_s": 0.3922007080000185, "prompt_tokens": 630, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

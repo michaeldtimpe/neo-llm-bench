@@ -1,0 +1,1 @@
+{"id": "live_multiple_586-157-7", "actual_calls": [["Media_3_FindMovies", {"genre": "Fantasy", "starring": "Timothy Bateson"}]], "wall_s": 0.34232450000126846, "prompt_tokens": 594, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

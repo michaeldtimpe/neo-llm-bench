@@ -1,0 +1,1 @@
+{"id": "live_parallel_8-4-0", "actual_calls": [["todo", {"type": "add", "content": "Machine Learning Study Session"}], ["todo", {"type": "delete", "content": "todo random"}]], "wall_s": 0.48757183300040197, "prompt_tokens": 362, "completion_tokens": 51, "error": "", "passed": true, "reason": "all_calls_matched"}

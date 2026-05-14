@@ -1,0 +1,1 @@
+{"id": "live_simple_13-3-9", "actual_calls": [["get_current_weather", {"location": "Shanghai, China", "unit": "celsius"}]], "wall_s": 0.3205794999994396, "prompt_tokens": 382, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

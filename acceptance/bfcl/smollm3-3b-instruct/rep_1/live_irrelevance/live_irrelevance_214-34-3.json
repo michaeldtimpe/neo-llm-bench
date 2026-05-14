@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_214-34-3", "actual_calls": [["ProductSearch.execute", {"keywords": "maroon cloth", "in_stock": true}]], "wall_s": 2.4549454170009994, "prompt_tokens": 413, "completion_tokens": 281, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: ProductSearch.execute"}

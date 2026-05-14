@@ -1,0 +1,1 @@
+{"id": "live_multiple_393-138-1", "actual_calls": [["Services_1_FindProvider", {"city": "Pinole, CA", "is_unisex": true}]], "wall_s": 0.32526537499870756, "prompt_tokens": 508, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

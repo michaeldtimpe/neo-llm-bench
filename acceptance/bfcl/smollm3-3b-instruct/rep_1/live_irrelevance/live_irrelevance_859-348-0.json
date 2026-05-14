@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_859-348-0", "actual_calls": [["requests.get", {"url": "https://financialmodelingprep.com/api/v3/summary?symbol=AAPL", "apikey": "YOUR_API_KEY"}]], "wall_s": 0.47814150000340305, "prompt_tokens": 669, "completion_tokens": 45, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

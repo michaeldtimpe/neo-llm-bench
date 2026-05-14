@@ -1,0 +1,1 @@
+{"id": "live_simple_139-92-0", "actual_calls": [["requests.get", {"url": "https://192.168.1.1/sedgeapi/v1/cisco-nir/api/api/v1/anomalies/summary", "params": {"insightsGroup": "defaultInsightsGroup", "fabric": "network222"}}]], "wall_s": 4.196739957998943, "prompt_tokens": 496, "completion_tokens": 471, "error": "", "passed": true, "reason": "matched_gt_entry"}

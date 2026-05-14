@@ -1,0 +1,1 @@
+{"id": "live_multiple_401-139-5", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "Toronto, ON", "date": "2023-10-02"}]], "wall_s": 0.463498167002399, "prompt_tokens": 787, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

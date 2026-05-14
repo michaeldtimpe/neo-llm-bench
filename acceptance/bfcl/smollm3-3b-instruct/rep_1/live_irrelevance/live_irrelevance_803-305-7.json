@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_803-305-7", "actual_calls": [["product_list.retrieve", {}]], "wall_s": 4.402387375001126, "prompt_tokens": 994, "completion_tokens": 492, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: product_list.retrieve"}

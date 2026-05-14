@@ -1,0 +1,1 @@
+{"id": "live_multiple_232-104-1", "actual_calls": [["get_contact_information", {"name": "Liam Neeson"}]], "wall_s": 0.24530208399664843, "prompt_tokens": 568, "completion_tokens": 25, "error": "", "passed": true, "reason": "matched_gt_entry"}

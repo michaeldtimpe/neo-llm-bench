@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_672-215-0", "actual_calls": [["Homes_2_FindHomeByArea", {"area": "New York, NY", "intent": "buy", "number_of_beds": 3, "number_of_baths": 2}]], "wall_s": 0.6174964579986408, "prompt_tokens": 940, "completion_tokens": 54, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Homes_2_FindHomeByArea"}

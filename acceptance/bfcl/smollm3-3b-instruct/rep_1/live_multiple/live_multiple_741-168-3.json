@@ -1,0 +1,1 @@
+{"id": "live_multiple_741-168-3", "actual_calls": [["Payment_1_MakePayment", {"payment_method": "credit card", "amount": 125, "receiver": "Alex", "private_visibility": true}]], "wall_s": 0.43392154200046207, "prompt_tokens": 1181, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

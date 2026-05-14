@@ -1,0 +1,1 @@
+{"id": "live_multiple_152-58-6", "actual_calls": [["get_sensor_readings_latest", {"perPage": 100, "networkId": ["office-network-001"], "metrics": ["temperature", "humidity"]}]], "wall_s": 0.4325766250003653, "prompt_tokens": 2025, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

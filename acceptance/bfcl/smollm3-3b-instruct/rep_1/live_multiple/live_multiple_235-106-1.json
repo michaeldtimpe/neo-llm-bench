@@ -1,0 +1,1 @@
+{"id": "live_multiple_235-106-1", "actual_calls": [["set_integer", {"name": "columnCount", "value": 12}]], "wall_s": 0.2711782910009788, "prompt_tokens": 585, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

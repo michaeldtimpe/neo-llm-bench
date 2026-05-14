@@ -1,0 +1,1 @@
+{"id": "live_multiple_622-160-2", "actual_calls": [["Payment_1_MakePayment", {"payment_method": "credit card", "amount": 29, "receiver": "Thomas", "private_visibility": false}]], "wall_s": 0.4194445419998374, "prompt_tokens": 530, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

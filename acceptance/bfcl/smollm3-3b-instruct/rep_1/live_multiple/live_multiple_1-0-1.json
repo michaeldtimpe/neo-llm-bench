@@ -1,0 +1,1 @@
+{"id": "live_multiple_1-0-1", "actual_calls": [["ChaDri.change_drink", {"drink_id": "1234", "new_preferences": {"size": "medium", "temperature": "hot", "sweetness_level": "none", "milk_type": "regular", "special_instructions": ""}}]], "wall_s": 3.5041098750007222, "prompt_tokens": 602, "completion_tokens": 392, "error": "", "passed": true, "reason": "matched_gt_entry"}

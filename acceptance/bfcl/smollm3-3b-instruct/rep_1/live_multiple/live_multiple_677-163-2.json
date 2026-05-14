@@ -1,0 +1,1 @@
+{"id": "live_multiple_677-163-2", "actual_calls": [["Weather_1_GetWeather", {"city": "Philadelphia, PA", "date": "2024-04-13"}]], "wall_s": 0.3648473749999539, "prompt_tokens": 814, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

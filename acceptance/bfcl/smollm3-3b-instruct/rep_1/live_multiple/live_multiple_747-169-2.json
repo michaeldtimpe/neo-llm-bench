@@ -1,0 +1,1 @@
+{"id": "live_multiple_747-169-2", "actual_calls": [["Media_3_FindMovies", {"genre": "Fantasy", "starring": "David Shaughnessy"}]], "wall_s": 0.3541573750007956, "prompt_tokens": 1225, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}
