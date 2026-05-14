@@ -263,6 +263,11 @@ def _run_bfcl(backend: Backend, req: RunRequest) -> dict:
                 row["n_turns"] = r.n_turns
                 row["n_tool_calls_total"] = r.n_tool_calls_total
                 row["n_schema_rejects"] = r.n_schema_rejects
+            # raw_text is optional; omit when None to keep file diff
+            # minimal for problems where the model emitted no text.
+            # Legacy rows (pre-2026-05-14) lack the field entirely.
+            if r.raw_text is not None:
+                row["raw_text"] = r.raw_text
             (cat_dir / f"{r.problem_id}.json").write_text(json.dumps(row))
             cat_summary["wall_s"] += r.wall_s
             cat_summary["completion_tokens"] += r.completion_tokens

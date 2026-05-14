@@ -34,6 +34,13 @@ class AgentResult:
     completion_tokens: int = 0
     wall_s: float = 0.0
     peak_context_pressure: float = 0.0
+    # Per-turn assistant texts captured across the loop. Used by BFCL
+    # agent-mode persistence to populate `raw_text` for mechanism
+    # diagnosis (e.g. detecting when the model emits prose/code instead
+    # of tool calls). Empty strings (turns with only tool_calls and no
+    # text content) are skipped. See ARCHITECTURE.md "Per-problem
+    # persistence and `raw_text` semantics."
+    assistant_texts: list[str] = field(default_factory=list)
 
 
 OnToolEvent = Callable[[ToolCall], None]
@@ -301,6 +308,12 @@ def run_agent(
         tool_calls = resp.tool_calls
         if not tool_calls and resp.text and tool_defs:
             tool_calls = _parse_text_tool_calls(resp.text, known_names)
+
+        # Capture assistant text for raw_text persistence (BFCL agent
+        # mode). Append every non-empty turn; the final-turn case below
+        # also appends before breaking.
+        if resp.text:
+            result.assistant_texts.append(resp.text)
 
         if not tool_calls:
             result.final_text = resp.text

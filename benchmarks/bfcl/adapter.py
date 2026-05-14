@@ -263,6 +263,16 @@ class BfclInvocationResult:
     n_turns: int = 0
     n_tool_calls_total: int = 0   # incl. duplicates/errors emitted by the loop
     n_schema_rejects: int = 0
+    # Persisted assistant text (since 2026-05-14). Semantics differ by
+    # mode — see ARCHITECTURE.md "Per-problem persistence and `raw_text`
+    # semantics":
+    #   - raw mode: ChatResponse.text from the single backend call.
+    #   - agent mode: concatenated assistant turns joined by '\n---\n'.
+    # Optional (None) for back-compat with rows written before this
+    # field existed; the runner serializer drops the field when None
+    # so legacy JSONs and new JSONs differ only when there's text to
+    # capture.
+    raw_text: str | None = None
 
 
 def _format_tool_prompt(tool_defs: list[ToolDef]) -> str:
@@ -395,6 +405,7 @@ def run_problem_raw(
         wall_s=time.monotonic() - t0,
         prompt_tokens=resp.timing.prompt_tokens,
         completion_tokens=resp.timing.completion_tokens,
+        raw_text=resp.text or None,
     )
 
 
@@ -436,6 +447,12 @@ def run_problem_agent(
 
     calls = [(tc.name, tc.arguments) for tc in result.tool_calls
              if not tc.duplicate and not tc.error]
+    # Agent-mode raw_text: concatenate non-empty assistant turns with
+    # the literal separator '\n---\n'. Empty list → None (no text emitted
+    # at all, e.g. model emitted only structured tool_calls). See
+    # ARCHITECTURE.md for the schema contract.
+    texts = [t for t in result.assistant_texts if t]
+    raw_text = "\n---\n".join(texts) if texts else None
     return BfclInvocationResult(
         problem_id=pid,
         actual_calls=calls,
@@ -445,4 +462,5 @@ def run_problem_agent(
         n_turns=result.steps,
         n_tool_calls_total=result.tool_calls_total,
         n_schema_rejects=result.schema_rejects,
+        raw_text=raw_text,
     )

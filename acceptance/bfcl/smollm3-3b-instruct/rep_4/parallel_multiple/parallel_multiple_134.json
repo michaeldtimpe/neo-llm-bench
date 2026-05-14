@@ -1,1 +1,1 @@
-{"id": "parallel_multiple_134", "actual_calls": [], "wall_s": 2.6705218750012136, "prompt_tokens": 206, "completion_tokens": 306, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": false, "reason": "emitted_0_calls_expected_2"}
+{"id": "parallel_multiple_134", "actual_calls": [], "wall_s": 18.310294084003544, "prompt_tokens": 206, "completion_tokens": 2048, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": false, "reason": "emitted_0_calls_expected_2"}

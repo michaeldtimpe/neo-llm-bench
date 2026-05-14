@@ -57,15 +57,26 @@ hardware. Round-2 reruns + Phase A–E work was done on a 128 GB M5 Max
 3. **Use `time.monotonic()`-derived wall times, not wall-clock.**
    macOS sleep pauses monotonic; the runner's reported wall is
    compute time.
-4. **`raw_text` is persisted on all reps from 2026-05-13 forward.**
-   Earlier `rep_0` HumanEval data was missing it. Currently `rep_0`
-   HumanEval was re-run on M5, so `raw_text` is present everywhere.
+4. **`raw_text` is persisted on all HumanEval/MBPP reps from 2026-05-13
+   forward; BFCL persistence landed 2026-05-14 (Phase J).** For BFCL,
+   `raw_text` is optional; legacy reps without the field remain
+   readable. Semantics: raw mode = `ChatResponse.text` from the single
+   call; agent mode = concatenated assistant turns joined by `"\n---\n"`.
+   See `ARCHITECTURE.md` "Per-problem persistence and `raw_text`
+   semantics" for the full schema contract.
 5. **Provenance discipline.** When citing numbers across rounds, link
    to the source rep + grading artifact. `round_3_planning.md`'s
    matrix is the pattern.
 6. **`audit_one_multi_turn.py` for multi-turn regrading.** bfcl_eval's
    `globals()` instance cache pollutes re-grade calls in the same
    process. Use subprocess isolation for any multi-turn audit.
+7. **Cross-model BFCL deltas go through `scripts/compare_matched_slice.py`.**
+   Lex-sort over numeric problem IDs is invalid (string order puts
+   `live_simple_10` before `live_simple_2`). The helper takes
+   `<model>:<rep>` targets and an explicit `--policy {intersection,union}`
+   and persists matched-ID sets to `acceptance/audits/`. Regression
+   test: `tests/test_matched_slice.py`. See
+   `memory/feedback_slicing_methodology.md` for the operational rule.
 
 ## Code conventions
 

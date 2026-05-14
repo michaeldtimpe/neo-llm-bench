@@ -1,1 +1,1 @@
-{"id": "simple_python_52", "actual_calls": [], "wall_s": 2.2442092080000293, "prompt_tokens": 161, "completion_tokens": 255, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": false, "reason": "no_tool_call_emitted"}
+{"id": "simple_python_52", "actual_calls": [], "wall_s": 18.09923650001292, "prompt_tokens": 161, "completion_tokens": 2048, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": false, "reason": "no_tool_call_emitted"}

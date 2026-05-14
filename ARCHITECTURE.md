@@ -99,6 +99,40 @@ Two normalizations applied at value-match time:
 
 34 unit tests in `tests/test_bfcl_grade.py`.
 
+### Per-problem persistence and `raw_text` semantics
+
+Each BFCL problem produces a `<problem_id>.json` row in
+`acceptance/bfcl/<model>/rep_N/<category>/`. Shared fields across raw,
+agent, and multi-turn paths: `id`, `actual_calls`, `wall_s`,
+`prompt_tokens`, `completion_tokens`, `error`, plus per-mode extras
+(`n_turns`, `n_tool_calls_total`, `n_schema_rejects` for agent;
+`per_turn_steps` for multi-turn). After grading, `passed` and `reason`
+are written back by `scripts/grade_bakeoff.py --write-back`.
+
+**`raw_text` field** (since 2026-05-14, after Phase J audit fix). The
+field is optional (`raw_text: str | None`); legacy reps written before
+this date deserialize with `raw_text` absent and remain readable.
+Semantics depend on mode:
+
+- **Raw mode** (`run_problem_raw`): `raw_text` = the assistant's
+  `ChatResponse.text` from the single backend call. May be empty if
+  the model emits only structured tool calls with no surrounding
+  prose. Useful for offline re-extraction (e.g. text-channel tool-call
+  parsing) and for diagnosing models that ignore the tool-spec.
+- **Agent mode** (`run_problem_agent`): `raw_text` = the **concatenated
+  assistant turns** across the agent loop, joined by a literal
+  `"\n---\n"` separator. Each entry is one assistant message's
+  `content`; tool-result turns are excluded. This is a trace, not a
+  single completion — multi-turn loops may contribute several entries.
+- **Multi-turn mode** (`run_problem_multi_turn`): per-turn assistant
+  text is already captured inside `per_turn_steps`; `raw_text` is not
+  populated separately.
+
+Why this matters: Phase H asserted "smollm3 emits Python code blocks
+in agent mode" without persisted evidence (the field didn't exist).
+Any future agent-mode mechanism claim should cite `raw_text` directly,
+not derive shape from `actual_calls` absence.
+
 ## HumanEval adapter
 
 `benchmarks/humaneval/adapter.py` loads problems from the canonical `HumanEval.jsonl` (164 problems). Per problem:
