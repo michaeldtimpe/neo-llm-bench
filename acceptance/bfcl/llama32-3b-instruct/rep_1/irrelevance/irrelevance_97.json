@@ -1,0 +1,1 @@
+{"id": "irrelevance_97", "actual_calls": [["file_lawsuit", {"defendant": "unknown", "plaintiff": "unknown", "jurisdiction": "New York, NY"}]], "wall_s": 0.7821626670001933, "prompt_tokens": 367, "completion_tokens": 38, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: file_lawsuit"}

@@ -1,0 +1,1 @@
+{"id": "irrelevance_34", "actual_calls": [["genetics.get_variant_frequency", {"variant_id": "dominant", "population": "Lion"}]], "wall_s": 0.6090489580001304, "prompt_tokens": 326, "completion_tokens": 30, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: genetics.get_variant_frequency"}

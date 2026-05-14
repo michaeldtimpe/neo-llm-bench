@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_134", "actual_calls": [["get_top_cases", {"field_of_law": "constitutional law", "top_number": "5", "country": "United Kingdom"}], ["math.gcd", {"num1": "36", "num2": "48"}]], "wall_s": 2.62017058299989, "prompt_tokens": 465, "completion_tokens": 62, "error": "", "passed": true, "reason": "all_calls_matched"}

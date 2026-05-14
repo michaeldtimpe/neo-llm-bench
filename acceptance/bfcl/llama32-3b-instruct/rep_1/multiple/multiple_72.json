@@ -1,0 +1,1 @@
+{"id": "multiple_72", "actual_calls": [["us_history.population_by_state_year", {"state": "California", "year": "1970"}]], "wall_s": 0.4288311669997711, "prompt_tokens": 538, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "multiple_87", "actual_calls": [["games.update.find", {"game": "Cyberpunk 2077", "platform": "Xbox"}]], "wall_s": 0.7768835829992895, "prompt_tokens": 485, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

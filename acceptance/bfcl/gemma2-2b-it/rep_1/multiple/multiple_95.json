@@ -1,0 +1,1 @@
+{"id": "multiple_95", "actual_calls": [["currency_exchange.convert", {"amount": 200, "from_currency": "EUR", "to_currency": "USD"}]], "wall_s": 0.9256856660003905, "prompt_tokens": 439, "completion_tokens": 43, "error": "", "passed": false, "reason": "call_currency_exchange.convert_did_not_match_any_gt"}

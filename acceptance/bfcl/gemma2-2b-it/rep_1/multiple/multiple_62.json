@@ -1,0 +1,1 @@
+{"id": "multiple_62", "actual_calls": [["nature_park.find_nearby", {"location": "Boston, MA", "features": ["Camping", "Scenic View"]}]], "wall_s": 0.8566426659999706, "prompt_tokens": 416, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

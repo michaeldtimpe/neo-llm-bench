@@ -1,0 +1,1 @@
+{"id": "simple_python_62", "actual_calls": [["analyze_dna_sequence", {"sequence": "AGTCGATCGAACGTACGTACG", "reference_sequence": "AGTCCATCGAACGTACGTACG", "mutation_type": "substitution"}]], "wall_s": 1.0332837089999884, "prompt_tokens": 354, "completion_tokens": 59, "error": "", "passed": true, "reason": "matched_gt_entry"}

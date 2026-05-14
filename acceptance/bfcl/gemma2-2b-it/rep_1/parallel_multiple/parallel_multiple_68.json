@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_68", "actual_calls": [["corporate_finance.calculate_YOY_growth_rate", {"company_name": "Tech Innovators", "year1": 2018, "year1_revenue": 500000, "year2": 2019, "year2_revenue": 750000}]], "wall_s": 1.737350334000439, "prompt_tokens": 703, "completion_tokens": 84, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

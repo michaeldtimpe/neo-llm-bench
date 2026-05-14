@@ -1,0 +1,1 @@
+{"id": "irrelevance_134", "actual_calls": [["calculate_battle_outcome", {"battle_name": "World Cup 2022", "strategy_type": "unknown", "weather_condition": "unknown"}]], "wall_s": 0.816904290999446, "prompt_tokens": 368, "completion_tokens": 40, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_battle_outcome"}

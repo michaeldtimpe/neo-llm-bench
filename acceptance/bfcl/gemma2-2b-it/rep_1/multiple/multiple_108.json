@@ -1,0 +1,1 @@
+{"id": "multiple_108", "actual_calls": [["calc_heat_capacity", {"temp": 298, "volume": 10, "gas": "air"}]], "wall_s": 0.8240221670002938, "prompt_tokens": 465, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

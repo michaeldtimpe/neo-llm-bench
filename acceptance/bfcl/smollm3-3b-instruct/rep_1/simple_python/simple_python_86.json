@@ -1,0 +1,1 @@
+{"id": "simple_python_86", "actual_calls": [["city_distance.find_shortest", {"start_city": "New York", "end_city": "Los Angeles", "transportation": "train", "allow_transfer": true}]], "wall_s": 1.0556752080001388, "prompt_tokens": 384, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

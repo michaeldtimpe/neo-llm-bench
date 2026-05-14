@@ -1,0 +1,1 @@
+{"id": "simple_python_80", "actual_calls": [["find_restaurants", {"number": "5", "food_type": "Thai", "dietary_requirements": "[\"vegan\"]", "location": "Manhattan"}]], "wall_s": 0.40470025000013266, "prompt_tokens": 424, "completion_tokens": 43, "error": "", "passed": false, "reason": "call_find_restaurants_did_not_match_any_gt"}

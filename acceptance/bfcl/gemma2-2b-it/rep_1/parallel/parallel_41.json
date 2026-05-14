@@ -1,0 +1,1 @@
+{"id": "parallel_41", "actual_calls": [["find_music_instrument_store", {"location": "San Francisco, CA", "instruments": ["Yamaha acoustic guitar", "Kawai piano"]}]], "wall_s": 0.9324036669995621, "prompt_tokens": 321, "completion_tokens": 44, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

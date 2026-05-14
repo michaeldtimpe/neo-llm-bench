@@ -1,0 +1,1 @@
+{"id": "irrelevance_53", "actual_calls": [["database_query.run", {"database": "baseball", "query": "SELECT team FROM teams WHERE year = 2018", "connect_credentials": {"username": "root", "password": "password"}}]], "wall_s": 1.1895367919996716, "prompt_tokens": 341, "completion_tokens": 60, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: database_query.run"}

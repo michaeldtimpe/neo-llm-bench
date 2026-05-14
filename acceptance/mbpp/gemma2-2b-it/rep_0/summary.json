@@ -1,0 +1,10 @@
+{
+  "model": "gemma2-2b-it",
+  "rep": 0,
+  "n_problems": 427,
+  "n_passed": 211,
+  "n_extract_ok": 425,
+  "wall_s": 445.05774331499924,
+  "completion_tokens": 23327,
+  "pass_at_1": 0.49414519906323184
+}

@@ -1,0 +1,1 @@
+{"id": "irrelevance_56", "actual_calls": [["database_connect.select", {"database_name": "bitcoin", "table_name": "price", "condition": "none"}]], "wall_s": 0.6593251250005778, "prompt_tokens": 306, "completion_tokens": 41, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: database_connect.select"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_140", "actual_calls": [["calculate_density", {"mass": 10, "volume": 2, "unit": "kg/m\u00b3"}]], "wall_s": 0.894355207999979, "prompt_tokens": 589, "completion_tokens": 39, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

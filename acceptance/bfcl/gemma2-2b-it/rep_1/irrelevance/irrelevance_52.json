@@ -1,0 +1,1 @@
+{"id": "irrelevance_52", "actual_calls": [["compress_file", {"file_path": "hello.txt", "archive_name": "hello.zip", "compression_level": 5}]], "wall_s": 0.9670361250000497, "prompt_tokens": 322, "completion_tokens": 47, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: compress_file"}

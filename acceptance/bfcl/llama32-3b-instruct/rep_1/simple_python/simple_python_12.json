@@ -1,0 +1,1 @@
+{"id": "simple_python_12", "actual_calls": [["geometry.circumference", {"radius": "3"}]], "wall_s": 0.21100625000053697, "prompt_tokens": 322, "completion_tokens": 20, "error": "", "passed": true, "reason": "matched_gt_entry"}

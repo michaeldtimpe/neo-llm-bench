@@ -1,0 +1,1 @@
+{"id": "irrelevance_54", "actual_calls": [["movies.search", {"title": "highest grossing movie of all time", "year": 0}]], "wall_s": 0.7898288340002182, "prompt_tokens": 321, "completion_tokens": 33, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: movies.search"}

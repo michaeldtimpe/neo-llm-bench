@@ -1,0 +1,1 @@
+{"id": "parallel_52", "actual_calls": [["restaurant_finder", {"location": "New York", "cuisine": "Italian", "preferences": ["Vegetarian"]}], ["restaurant_finder", {"location": "Los Angeles", "cuisine": "Japanese", "preferences": ["Delivery"]}]], "wall_s": 1.4418225420004092, "prompt_tokens": 353, "completion_tokens": 76, "error": "", "passed": true, "reason": "all_calls_matched"}

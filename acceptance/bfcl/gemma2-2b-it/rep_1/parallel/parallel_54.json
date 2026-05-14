@@ -1,0 +1,1 @@
+{"id": "parallel_54", "actual_calls": [["whole_foods.order", {"location": "uptown", "items": ["chicken Caesar salad"], "size": "large"}]], "wall_s": 1.0763714580007218, "prompt_tokens": 328, "completion_tokens": 54, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

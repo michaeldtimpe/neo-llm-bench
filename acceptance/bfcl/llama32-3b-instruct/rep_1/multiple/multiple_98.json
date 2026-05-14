@@ -1,0 +1,1 @@
+{"id": "multiple_98", "actual_calls": [["geometry.circumference", {"radius": "3", "units": "cm"}]], "wall_s": 0.49674633399990853, "prompt_tokens": 875, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}

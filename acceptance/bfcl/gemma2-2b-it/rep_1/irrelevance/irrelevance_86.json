@@ -1,0 +1,1 @@
+{"id": "irrelevance_86", "actual_calls": [["law_info.get_penalty", {"crime": "burglary", "state": "California"}]], "wall_s": 0.7248431669995625, "prompt_tokens": 285, "completion_tokens": 34, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: law_info.get_penalty"}

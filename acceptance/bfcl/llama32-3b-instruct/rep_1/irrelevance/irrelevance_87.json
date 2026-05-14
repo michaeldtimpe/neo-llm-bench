@@ -1,0 +1,1 @@
+{"id": "irrelevance_87", "actual_calls": [["legal_case.file", {"court": "California", "case_type": "information", "documents": "['governor.txt']"}]], "wall_s": 0.7359209579999515, "prompt_tokens": 369, "completion_tokens": 37, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: legal_case.file"}

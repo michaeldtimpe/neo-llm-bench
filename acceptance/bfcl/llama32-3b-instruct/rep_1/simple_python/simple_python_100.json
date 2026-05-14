@@ -1,0 +1,1 @@
+{"id": "simple_python_100", "actual_calls": [["light_travel_time", {"distance_in_light_years": "4", "speed_of_light": "299792458"}]], "wall_s": 0.2997604580004918, "prompt_tokens": 357, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

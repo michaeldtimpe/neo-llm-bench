@@ -1,0 +1,1 @@
+{"id": "irrelevance_32", "actual_calls": [["cellBiology.getCellType", {"nucleus_count": "1", "organism_type": "animal", "membrane_type": "none"}]], "wall_s": 0.8131752499994036, "prompt_tokens": 394, "completion_tokens": 40, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: cellBiology.getCellType"}

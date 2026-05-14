@@ -1,0 +1,1 @@
+{"id": "parallel_28", "actual_calls": [["get_current_and_future_temperature", {"location": "Seattle", "hours": 3}], ["get_current_and_future_temperature", {"location": "Los Angeles", "hours": 3}]], "wall_s": 1.5290403749995676, "prompt_tokens": 305, "completion_tokens": 71, "error": "", "passed": true, "reason": "all_calls_matched"}

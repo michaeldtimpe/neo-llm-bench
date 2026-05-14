@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_33", "actual_calls": [["supermarket.find_in_city", {"city": "Los Angeles", "state": ""}]], "wall_s": 0.7130016670007535, "prompt_tokens": 414, "completion_tokens": 34, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

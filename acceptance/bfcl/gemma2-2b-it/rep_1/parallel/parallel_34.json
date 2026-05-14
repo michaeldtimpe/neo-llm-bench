@@ -1,0 +1,1 @@
+{"id": "parallel_34", "actual_calls": [["religion_history.track", {"region": "Egypt", "religion": "Christianity", "start_year": 100, "end_year": 1500}]], "wall_s": 1.0417484999998123, "prompt_tokens": 362, "completion_tokens": 52, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

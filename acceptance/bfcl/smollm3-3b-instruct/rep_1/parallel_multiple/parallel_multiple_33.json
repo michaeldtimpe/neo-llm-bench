@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_33", "actual_calls": [["supermarket.find_in_city", {"city": "Los Angeles", "state": "CA", "openNow": true}], ["sightseeing.popular_in_city", {"city": "Miami", "state": "FL", "kidsFriendly": true}]], "wall_s": 1.6081442080003399, "prompt_tokens": 434, "completion_tokens": 70, "error": "", "passed": true, "reason": "all_calls_matched"}

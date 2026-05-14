@@ -1,0 +1,1 @@
+{"id": "parallel_130", "actual_calls": [["find_restaurants", {"location": "New York", "food_type": "Italian", "number": 4, "dietary_requirements": ["vegan", "gluten-free"]}]], "wall_s": 1.0480155830000513, "prompt_tokens": 377, "completion_tokens": 53, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

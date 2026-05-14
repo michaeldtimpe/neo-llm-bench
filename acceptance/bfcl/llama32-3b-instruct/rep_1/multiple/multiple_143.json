@@ -1,0 +1,1 @@
+{"id": "multiple_143", "actual_calls": [["calculate_slope_gradient", {"point1": "[40.7128, -74.0060]", "point2": "[34.0522, -118.2437]", "unit": "degree"}]], "wall_s": 0.8204097500001808, "prompt_tokens": 893, "completion_tokens": 50, "error": "", "passed": false, "reason": "call_calculate_slope_gradient_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_47", "actual_calls": [["product_search", {"city": "Austin", "product": "Yamaha Acoustic Guitar"}]], "wall_s": 0.6606535830005669, "prompt_tokens": 553, "completion_tokens": 31, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

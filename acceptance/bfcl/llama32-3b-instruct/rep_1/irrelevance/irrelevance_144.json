@@ -1,0 +1,1 @@
+{"id": "irrelevance_144", "actual_calls": [["search_holy_books", {"book": "a holy book"}]], "wall_s": 0.4748103749989241, "prompt_tokens": 352, "completion_tokens": 21, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: search_holy_books"}

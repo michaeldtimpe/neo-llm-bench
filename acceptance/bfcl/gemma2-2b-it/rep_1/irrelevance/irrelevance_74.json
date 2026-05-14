@@ -1,0 +1,1 @@
+{"id": "irrelevance_74", "actual_calls": [["investment_analysis.calculate_profit", {"total_revenue": 15000, "total_cost": 22000, "tax_rate": 0.2}]], "wall_s": 1.0996419160001096, "prompt_tokens": 335, "completion_tokens": 55, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: investment_analysis.calculate_profit"}

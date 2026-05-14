@@ -1,0 +1,1 @@
+{"id": "simple_python_9", "actual_calls": [["geometry.calculate_area_circle", {"radius": "5", "unit": "units"}]], "wall_s": 0.26004295899929275, "prompt_tokens": 328, "completion_tokens": 25, "error": "", "passed": true, "reason": "matched_gt_entry"}

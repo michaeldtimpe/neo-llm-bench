@@ -1,0 +1,1 @@
+{"id": "simple_python_133", "actual_calls": [["finance.predict_future_value", {"present_value": "5000", "annual_interest_rate": "0", "compounding_periods_per_year": "12", "time_years": "3"}]], "wall_s": 0.4277116670000396, "prompt_tokens": 438, "completion_tokens": 46, "error": "", "passed": false, "reason": "call_finance.predict_future_value_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "irrelevance_20", "actual_calls": [["currency_converter", {"base_currency": "USD", "target_currency": "BBD", "amount": "0"}]], "wall_s": 0.6605233750005937, "prompt_tokens": 359, "completion_tokens": 33, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: currency_converter"}

@@ -1,0 +1,44 @@
+{
+  "model": "llama32-3b-instruct",
+  "rep": 1,
+  "mode": "auto",
+  "run_mode": "raw",
+  "system_prompt": "v2",
+  "categories": {
+    "simple_python": {
+      "n_problems": 150,
+      "n_with_calls": 150,
+      "n_errors": 0,
+      "wall_s": 51.00875128499683,
+      "completion_tokens": 5216
+    },
+    "multiple": {
+      "n_problems": 150,
+      "n_with_calls": 150,
+      "n_errors": 0,
+      "wall_s": 78.62213521299782,
+      "completion_tokens": 5213
+    },
+    "parallel": {
+      "n_problems": 150,
+      "n_with_calls": 149,
+      "n_errors": 0,
+      "wall_s": 551.8513161700021,
+      "completion_tokens": 13395
+    },
+    "parallel_multiple": {
+      "n_problems": 150,
+      "n_with_calls": 148,
+      "n_errors": 0,
+      "wall_s": 595.7574050480025,
+      "completion_tokens": 13866
+    },
+    "irrelevance": {
+      "n_problems": 150,
+      "n_with_calls": 119,
+      "n_errors": 0,
+      "wall_s": 136.8656430389956,
+      "completion_tokens": 5509
+    }
+  }
+}

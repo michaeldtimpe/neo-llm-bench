@@ -1,0 +1,1 @@
+{"id": "multiple_74", "actual_calls": [["art_auction.fetch_artwork_price", {"artwork_name": "Starry Night", "artist": "Van Gogh", "platform": "all"}]], "wall_s": 0.5866432499997245, "prompt_tokens": 554, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

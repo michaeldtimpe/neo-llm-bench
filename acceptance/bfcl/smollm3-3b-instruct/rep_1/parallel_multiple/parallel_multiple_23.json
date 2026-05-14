@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_23", "actual_calls": [["financial_ratio.net_profit_margin", {"net_income": 20000, "total_revenue": 100000}], ["financial_ratio.debt_ratio", {"total_liabilities": 10000, "total_assets": 30000}]], "wall_s": 1.5399036669996349, "prompt_tokens": 440, "completion_tokens": 65, "error": "", "passed": true, "reason": "all_calls_matched"}

@@ -1,0 +1,1 @@
+{"id": "simple_python_89", "actual_calls": [["db_fetch_records", {"database_name": "StudentDB", "table_name": "Students", "conditions": {"school": "Bluebird High School", "department": "Science"}, "fetch_limit": 0}]], "wall_s": 0.9274109999996654, "prompt_tokens": 395, "completion_tokens": 62, "error": "", "passed": false, "reason": "call_db_fetch_records_did_not_match_any_gt"}

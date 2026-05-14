@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_60", "actual_calls": [["country_info.capital", {"country": "Australia"}]], "wall_s": 0.5446750000000975, "prompt_tokens": 381, "completion_tokens": 25, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

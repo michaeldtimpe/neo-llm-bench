@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_135", "actual_calls": [["musical_scale", {"key": "C"}]], "wall_s": 0.5865220000005138, "prompt_tokens": 765, "completion_tokens": 23, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

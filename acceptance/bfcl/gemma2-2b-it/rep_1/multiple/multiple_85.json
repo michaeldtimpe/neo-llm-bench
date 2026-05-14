@@ -1,0 +1,1 @@
+{"id": "multiple_85", "actual_calls": [["soccer_scores.get_scores", {"team": "Real Madrid", "league": "La Liga", "rounds": 5}]], "wall_s": 0.8824500410000837, "prompt_tokens": 429, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

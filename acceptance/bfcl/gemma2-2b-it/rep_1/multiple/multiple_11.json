@@ -1,0 +1,1 @@
+{"id": "multiple_11", "actual_calls": [["math_roots.quadratic", {"a": 5, "b": 20, "c": -25}]], "wall_s": 0.8296378340000956, "prompt_tokens": 494, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

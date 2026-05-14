@@ -1,0 +1,1 @@
+{"id": "simple_python_16", "actual_calls": [["calculus.derivative", {"function": "2x^2", "value": "1", "function_variable": "x"}]], "wall_s": 0.3547415829998499, "prompt_tokens": 374, "completion_tokens": 35, "error": "", "passed": false, "reason": "call_calculus.derivative_did_not_match_any_gt"}

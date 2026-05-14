@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_43", "actual_calls": [["get_artwork_price", {"museum_location": "Philadelphia", "sculpture_material": "marble", "sculpture_size": [4, 4]}]], "wall_s": 0.9928808750000826, "prompt_tokens": 431, "completion_tokens": 47, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

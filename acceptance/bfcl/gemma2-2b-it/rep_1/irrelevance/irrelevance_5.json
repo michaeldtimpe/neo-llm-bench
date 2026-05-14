@@ -1,0 +1,1 @@
+{"id": "irrelevance_5", "actual_calls": [["solve_quadratic_equation", {"a": 5, "b": 0, "c": 0}]], "wall_s": 0.7439056670000355, "prompt_tokens": 315, "completion_tokens": 37, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: solve_quadratic_equation"}

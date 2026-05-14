@@ -1,0 +1,1 @@
+{"id": "irrelevance_139", "actual_calls": [["space.star_info", {"star_name": "Jupiter", "information": "mass"}]], "wall_s": 0.42397616600101173, "prompt_tokens": 313, "completion_tokens": 30, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: space.star_info"}

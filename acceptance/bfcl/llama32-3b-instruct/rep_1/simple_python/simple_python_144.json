@@ -1,0 +1,1 @@
+{"id": "simple_python_144", "actual_calls": [["market_performance.get_data", {"indexes": "['S&P 500', 'Dow Jones']", "days": "5"}]], "wall_s": 0.3381502920001367, "prompt_tokens": 439, "completion_tokens": 35, "error": "", "passed": false, "reason": "call_market_performance.get_data_did_not_match_any_gt"}

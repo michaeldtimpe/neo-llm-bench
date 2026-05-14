@@ -1,0 +1,1 @@
+{"id": "irrelevance_80", "actual_calls": [["stock_ticker", {"company_name": "Spain", "ticker_symbol": "", "exchange": ""}]], "wall_s": 0.6144275830001789, "prompt_tokens": 387, "completion_tokens": 30, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: stock_ticker"}

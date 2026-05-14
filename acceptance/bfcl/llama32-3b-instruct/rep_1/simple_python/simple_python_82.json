@@ -1,0 +1,1 @@
+{"id": "simple_python_82", "actual_calls": [["calculate_average", {"numbers": "[12, 15, 18, 20, 21, 26, 30]"}]], "wall_s": 0.3296446250005829, "prompt_tokens": 323, "completion_tokens": 36, "error": "", "passed": false, "reason": "call_calculate_average_did_not_match_any_gt"}

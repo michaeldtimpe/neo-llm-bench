@@ -1,0 +1,1 @@
+{"id": "irrelevance_95", "actual_calls": [["case_review.retrieve_case_outcome", {"case_name": "Doe vs. Smith", "case_year": 2022, "location": "CA"}]], "wall_s": 1.0804232919999777, "prompt_tokens": 328, "completion_tokens": 51, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: case_review.retrieve_case_outcome"}

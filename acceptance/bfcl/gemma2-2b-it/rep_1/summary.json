@@ -1,0 +1,44 @@
+{
+  "model": "gemma2-2b-it",
+  "rep": 1,
+  "mode": "inject",
+  "run_mode": "raw",
+  "system_prompt": "v2",
+  "categories": {
+    "simple_python": {
+      "n_problems": 150,
+      "n_with_calls": 143,
+      "n_errors": 0,
+      "wall_s": 121.50672641600158,
+      "completion_tokens": 6701
+    },
+    "multiple": {
+      "n_problems": 150,
+      "n_with_calls": 147,
+      "n_errors": 0,
+      "wall_s": 132.28940862501076,
+      "completion_tokens": 6231
+    },
+    "parallel": {
+      "n_problems": 150,
+      "n_with_calls": 145,
+      "n_errors": 0,
+      "wall_s": 213.8213790860009,
+      "completion_tokens": 10753
+    },
+    "parallel_multiple": {
+      "n_problems": 150,
+      "n_with_calls": 146,
+      "n_errors": 0,
+      "wall_s": 182.35939257600148,
+      "completion_tokens": 8940
+    },
+    "irrelevance": {
+      "n_problems": 150,
+      "n_with_calls": 103,
+      "n_errors": 0,
+      "wall_s": 111.93596730299942,
+      "completion_tokens": 5646
+    }
+  }
+}

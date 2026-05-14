@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_143", "actual_calls": [["math.factorial", {"number": "7"}]], "wall_s": 0.5261003749992597, "prompt_tokens": 729, "completion_tokens": 19, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

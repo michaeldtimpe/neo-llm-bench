@@ -1,0 +1,1 @@
+{"id": "multiple_29", "actual_calls": [["functions.intersect", {"function1": "3x+2", "function2": "2x+3"}]], "wall_s": 0.3514544579993526, "prompt_tokens": 469, "completion_tokens": 33, "error": "", "passed": false, "reason": "call_functions.intersect_did_not_match_any_gt"}

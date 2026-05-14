@@ -1,0 +1,1 @@
+{"id": "simple_python_83", "actual_calls": [["calculate_distance", {"coord1": "[33.4484, -112.0740]", "coord2": "[34.0522, 118.2437]", "unit": "miles"}]], "wall_s": 0.46073591699951066, "prompt_tokens": 422, "completion_tokens": 50, "error": "", "passed": false, "reason": "call_calculate_distance_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "irrelevance_106", "actual_calls": [["soil_analysis.analyze_soil_type", {"soil_type": "loam", "parameters_needed": "['pH level', 'Mineral content']"}]], "wall_s": 0.8299240000005739, "prompt_tokens": 391, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: soil_analysis.analyze_soil_type"}

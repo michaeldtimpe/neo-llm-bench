@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_43", "actual_calls": [["get_artwork_price", {"museum_location": "Philadelphia", "sculpture_material": "bronze", "sculpture_size": "[4, 4]", "x": "6", "y": "3"}]], "wall_s": 1.4172238750006727, "prompt_tokens": 558, "completion_tokens": 66, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

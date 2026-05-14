@@ -1,0 +1,1 @@
+{"id": "multiple_7", "actual_calls": [["wildlife_population.assess_growth", {"species": "deer", "location": "Washington state", "duration": 10}]], "wall_s": 0.8330201250000755, "prompt_tokens": 453, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

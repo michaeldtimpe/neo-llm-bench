@@ -1,0 +1,1 @@
+{"id": "parallel_94", "actual_calls": [["calculate_electric_field", {"charge": 5, "distance": 2, "permitivity": 1}]], "wall_s": 0.8258730830002605, "prompt_tokens": 411, "completion_tokens": 39, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

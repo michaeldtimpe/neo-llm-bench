@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_78", "actual_calls": [["maps.shortest_path", {"start_location": "New York City", "end_location": "Metropolitan Museum of Art", "mode": "walk"}]], "wall_s": 0.9389402909991986, "prompt_tokens": 509, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

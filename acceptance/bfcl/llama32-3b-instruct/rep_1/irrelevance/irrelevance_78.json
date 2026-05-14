@@ -1,0 +1,1 @@
+{"id": "irrelevance_78", "actual_calls": [["calculate_Bond_Price", {"Face_Value": "0", "Coupon_rate": "0", "Required_return": "0", "maturity_years": "0"}]], "wall_s": 0.8643994579997525, "prompt_tokens": 405, "completion_tokens": 43, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_Bond_Price"}

@@ -1,0 +1,1 @@
+{"id": "irrelevance_48", "actual_calls": [["finance.fetchGDP", {"country": "USA", "year": "2021", "format": "Gini coefficient"}]], "wall_s": 1.2355502499995055, "prompt_tokens": 331, "completion_tokens": 34, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: finance.fetchGDP"}

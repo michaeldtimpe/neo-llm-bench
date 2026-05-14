@@ -1,0 +1,1 @@
+{"id": "irrelevance_69", "actual_calls": [["regression_model.predict", {"features": "[4.2, 1.3, 3.4, 1.1, 2.2, 5.5]", "model": "california_housing_model", "scaler": "1"}]], "wall_s": 1.2928904589998638, "prompt_tokens": 373, "completion_tokens": 64, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: regression_model.predict"}

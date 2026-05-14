@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_24", "actual_calls": [["investment.invest", {"company": "Google", "amount": 2000}], ["investment.withdraw", {"company": "Apple", "amount": 1000}]], "wall_s": 1.1881915410003785, "prompt_tokens": 361, "completion_tokens": 59, "error": "", "passed": true, "reason": "all_calls_matched"}

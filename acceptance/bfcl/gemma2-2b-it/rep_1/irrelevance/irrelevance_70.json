@@ -1,0 +1,1 @@
+{"id": "irrelevance_70", "actual_calls": [["calculate_mortgage_payment", {"loan_amount": 10000, "loan_term": 3, "annual_interest_rate": 0.05}]], "wall_s": 1.0676155839992134, "prompt_tokens": 356, "completion_tokens": 52, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_mortgage_payment"}

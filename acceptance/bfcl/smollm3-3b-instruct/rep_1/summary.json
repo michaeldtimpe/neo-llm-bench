@@ -1,0 +1,44 @@
+{
+  "model": "smollm3-3b-instruct",
+  "rep": 1,
+  "mode": "inject",
+  "run_mode": "raw",
+  "system_prompt": "v2",
+  "categories": {
+    "simple_python": {
+      "n_problems": 150,
+      "n_with_calls": 150,
+      "n_errors": 0,
+      "wall_s": 137.86734879699816,
+      "completion_tokens": 5724
+    },
+    "multiple": {
+      "n_problems": 150,
+      "n_with_calls": 149,
+      "n_errors": 0,
+      "wall_s": 237.064461460006,
+      "completion_tokens": 10046
+    },
+    "parallel": {
+      "n_problems": 150,
+      "n_with_calls": 150,
+      "n_errors": 0,
+      "wall_s": 322.81553195799825,
+      "completion_tokens": 14384
+    },
+    "parallel_multiple": {
+      "n_problems": 150,
+      "n_with_calls": 150,
+      "n_errors": 0,
+      "wall_s": 332.3881865840003,
+      "completion_tokens": 14534
+    },
+    "irrelevance": {
+      "n_problems": 150,
+      "n_with_calls": 64,
+      "n_errors": 0,
+      "wall_s": 350.78015012799915,
+      "completion_tokens": 16185
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"id": "simple_python_93", "actual_calls": [["get_theater_movie_releases", {"location": "LA", "timeframe": 7, "format": "IMAX"}]], "wall_s": 0.8172599999998056, "prompt_tokens": 348, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

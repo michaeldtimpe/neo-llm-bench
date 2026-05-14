@@ -1,0 +1,1 @@
+{"id": "parallel_31", "actual_calls": [["history_fact.fetch", {"event": "Treaty of Paris", "depth": "detailed", "year": 1763}], ["history_fact.fetch", {"event": "Magna Carta", "depth": "detailed", "year": 1215}]], "wall_s": 1.650587166999685, "prompt_tokens": 347, "completion_tokens": 74, "error": "", "passed": false, "reason": "call_history_fact.fetch_unmatched_in_gt"}

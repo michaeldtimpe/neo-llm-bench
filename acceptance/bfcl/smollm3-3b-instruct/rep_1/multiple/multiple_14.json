@@ -1,0 +1,1 @@
+{"id": "multiple_14", "actual_calls": [["finance.property_depreciation", {"initial_cost": 200000, "depreciation_rate": 3, "years": 5}]], "wall_s": 1.01604558300005, "prompt_tokens": 588, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

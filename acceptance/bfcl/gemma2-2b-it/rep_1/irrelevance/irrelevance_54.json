@@ -1,0 +1,1 @@
+{"id": "irrelevance_54", "actual_calls": [["movies.search", {"title": "highest grossing", "year": "all", "genre": "science fiction"}]], "wall_s": 0.5264184169991495, "prompt_tokens": 299, "completion_tokens": 38, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: movies.search"}

@@ -1,0 +1,1 @@
+{"id": "multiple_119", "actual_calls": [["database.query", {"table": "user", "conditions": [{"field": "age", "operation": ">", "value": "25"}, {"field": "job", "operation": "=", "value": "engineer"}]}]], "wall_s": 8.12052041700008, "prompt_tokens": 714, "completion_tokens": 360, "error": "", "passed": false, "reason": "call_database.query_did_not_match_any_gt"}

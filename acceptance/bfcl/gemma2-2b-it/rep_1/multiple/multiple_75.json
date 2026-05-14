@@ -1,0 +1,1 @@
+{"id": "multiple_75", "actual_calls": [["paint_color.trends", {"room": "Living room"}]], "wall_s": 0.5673414160000902, "prompt_tokens": 481, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}

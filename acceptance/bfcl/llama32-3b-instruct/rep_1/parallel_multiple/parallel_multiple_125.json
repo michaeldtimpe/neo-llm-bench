@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_125", "actual_calls": [["restaurant.find_group", {"location": "Seattle, WA", "cuisine": "[\"Seafood\", \"Italian\"]", "group_size": "10"}]], "wall_s": 2.5769066660004682, "prompt_tokens": 527, "completion_tokens": 40, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

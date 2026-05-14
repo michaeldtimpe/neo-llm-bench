@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_69", "actual_calls": [["finance.property_depreciation", {"initial_cost": 500000, "depreciation_rate": 0.02, "years": 5, "monthly": false}]], "wall_s": 1.190659875000165, "prompt_tokens": 733, "completion_tokens": 56, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

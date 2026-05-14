@@ -1,0 +1,1 @@
+{"id": "multiple_40", "actual_calls": [["electromagnetism.biot_savart_law", {"current": 12, "distance": 8}]], "wall_s": 0.9126111249997848, "prompt_tokens": 542, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

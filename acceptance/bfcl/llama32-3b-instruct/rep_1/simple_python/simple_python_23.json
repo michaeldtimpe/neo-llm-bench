@@ -1,0 +1,1 @@
+{"id": "simple_python_23", "actual_calls": [["prime_factorize", {"number": "60", "return_type": "dictionary"}]], "wall_s": 0.25881954099986615, "prompt_tokens": 363, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}

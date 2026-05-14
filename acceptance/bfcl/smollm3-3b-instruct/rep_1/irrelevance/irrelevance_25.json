@@ -1,0 +1,1 @@
+{"id": "irrelevance_25", "actual_calls": [["thermodynamics.calculate_boiling_point", {"substance": "water", "pressure": 10, "unit": "kPa"}]], "wall_s": 0.9606313329995828, "prompt_tokens": 344, "completion_tokens": 40, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: thermodynamics.calculate_boiling_point"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_112", "actual_calls": [["art_auction.fetch_artwork_price", {"artwork_name": "Starry Night", "artist": "Vincent Van Gogh", "platform": "Sotheby"}]], "wall_s": 1.041812332999143, "prompt_tokens": 536, "completion_tokens": 48, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

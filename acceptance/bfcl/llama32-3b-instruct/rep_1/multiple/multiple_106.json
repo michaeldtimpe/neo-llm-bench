@@ -1,0 +1,1 @@
+{"id": "multiple_106", "actual_calls": [["calculate_electric_field_strength", {"distance": "4", "charge": "0"}]], "wall_s": 0.4884447080003156, "prompt_tokens": 923, "completion_tokens": 26, "error": "", "passed": false, "reason": "call_calculate_electric_field_strength_did_not_match_any_gt"}

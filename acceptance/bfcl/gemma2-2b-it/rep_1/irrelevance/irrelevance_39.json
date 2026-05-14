@@ -1,0 +1,1 @@
+{"id": "irrelevance_39", "actual_calls": [["calculate_population_growth", {"current_population": 100, "birth_rate": 0.1, "death_rate": 0.05}]], "wall_s": 0.6830679999993663, "prompt_tokens": 320, "completion_tokens": 50, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_population_growth"}

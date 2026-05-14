@@ -1,0 +1,1 @@
+{"id": "simple_python_60", "actual_calls": [["mutation_type.find", {"snp_id": "rs6034464"}]], "wall_s": 0.5594010830000116, "prompt_tokens": 324, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

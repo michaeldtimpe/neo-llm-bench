@@ -1,0 +1,1 @@
+{"id": "irrelevance_34", "actual_calls": [["genetics.get_variant_frequency", {"variant_id": "lion_mane", "population": "African Lion"}]], "wall_s": 0.5130764169998656, "prompt_tokens": 289, "completion_tokens": 38, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: genetics.get_variant_frequency"}

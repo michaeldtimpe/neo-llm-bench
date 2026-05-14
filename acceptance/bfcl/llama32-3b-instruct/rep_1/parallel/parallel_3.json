@@ -1,0 +1,1 @@
+{"id": "parallel_3", "actual_calls": [["protein_info.get_sequence_and_3D", {"protein_name": "rat hemoglobin", "model_3d": "true"}]], "wall_s": 1.5396238749999611, "prompt_tokens": 353, "completion_tokens": 74, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

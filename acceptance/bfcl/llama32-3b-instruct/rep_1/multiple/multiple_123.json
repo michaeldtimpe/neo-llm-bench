@@ -1,0 +1,1 @@
+{"id": "multiple_123", "actual_calls": [["calculate_probability", {"total_outcomes": "52", "favorable_outcomes": "4"}]], "wall_s": 0.5007174169995778, "prompt_tokens": 719, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

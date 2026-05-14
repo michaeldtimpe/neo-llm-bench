@@ -1,0 +1,1 @@
+{"id": "simple_python_141", "actual_calls": [["get_metal_price", {"metal": "gold", "measure": "ounce"}]], "wall_s": 0.6379320829992139, "prompt_tokens": 287, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

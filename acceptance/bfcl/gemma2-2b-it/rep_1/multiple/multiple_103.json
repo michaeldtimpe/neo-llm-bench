@@ -1,0 +1,1 @@
+{"id": "multiple_103", "actual_calls": [["calculate_final_speed", {"initial_velocity": 0, "height": 100, "gravity": 9.8}]], "wall_s": 0.8959956250000687, "prompt_tokens": 620, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

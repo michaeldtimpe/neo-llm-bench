@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_35", "actual_calls": [["image_processing.object_identification", {"image_url": "my_backyard_image_url"}]], "wall_s": 0.7235776249999617, "prompt_tokens": 340, "completion_tokens": 36, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

@@ -1,0 +1,41 @@
+{
+  "ts_started": "2026-05-14T00:10:36.486883+00:00",
+  "model_id": "gemma2-2b-it",
+  "benchmark": "mbpp",
+  "rep": 0,
+  "mode": {},
+  "model_config": {
+    "gguf_path": "/Users/mtimpe/models/gemma-2-2b-it-Q8_0.gguf",
+    "gguf_sha256": "2d448a9aab894b8e8e18168cf3f490cb9f65632222f29f93514ac9ecc754debe",
+    "quant": "Q8_0",
+    "params_b": 2.6,
+    "family": "gemma",
+    "alias": "gemma2-2b-it"
+  },
+  "server": {
+    "bin": "/Users/mtimpe/code/llama.cpp/build/bin/llama-server",
+    "llama_cpp_commit": "2dfeca31cc34ffa03c510e75438455d9c6773ffb",
+    "n_ctx": 8192,
+    "cache_type_k": "q8_0",
+    "cache_type_v": "q8_0",
+    "jinja": true,
+    "n_parallel": 1
+  },
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 2048,
+    "seed": 42
+  },
+  "host": {
+    "arch": "arm64",
+    "os": "Darwin 25.4.0",
+    "cpu": "Apple M5 Max",
+    "mem_gb": 128.0,
+    "profile": "configs/profile_m5max.yaml"
+  },
+  "tooling": {
+    "python": "3.11.15",
+    "neo_llm_bench_commit": "2f437d46f2cbd6c17a2049357e622e6799c4fbfa"
+  }
+}

@@ -1,0 +1,1 @@
+{"id": "multiple_58", "actual_calls": [["lawyer.search", {"location": "Los Angeles, CA", "expertise": "Divorce"}]], "wall_s": 0.44078995899963047, "prompt_tokens": 491, "completion_tokens": 29, "error": "", "passed": true, "reason": "matched_gt_entry"}

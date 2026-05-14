@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_39", "actual_calls": [["scientist_info.get_birthdate", {"name": "Nikola Tesla"}], ["scientist_info.get_famous_discovery", {"name": "Nikola Tesla", "discovery_order": 1}]], "wall_s": 1.347181166000155, "prompt_tokens": 386, "completion_tokens": 61, "error": "", "passed": true, "reason": "all_calls_matched"}

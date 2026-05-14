@@ -1,0 +1,1 @@
+{"id": "irrelevance_14", "actual_calls": [["calculate_maximum_height", {"initial_velocity": "5", "gravity": "9.8"}]], "wall_s": 0.5944302910002079, "prompt_tokens": 356, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_maximum_height"}

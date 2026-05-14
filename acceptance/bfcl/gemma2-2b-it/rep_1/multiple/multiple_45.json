@@ -1,0 +1,1 @@
+{"id": "multiple_45", "actual_calls": [["geology.get_era", {"era_name": "Ice age"}]], "wall_s": 0.6578286670001035, "prompt_tokens": 379, "completion_tokens": 28, "error": "", "passed": false, "reason": "call_geology.get_era_did_not_match_any_gt"}

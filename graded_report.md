@@ -432,6 +432,109 @@ weights:
 The non-dominated round-2 triangle is unchanged. The data closes round
 3 with negative findings rather than a new leader.
 
+## Round 4 — Branch D model-comparison disruptor
+
+Round-3 design doc deferred Branch D ("a truly different base model
+could shift the ceiling") pending the outcome of A+B+C. With all three
+prompt branches falsified, the deferral condition fired and three new
+≤3B disruptor candidates were run through the **headline triangle**
+data only (BFCL curated rep_1 + HumanEval rep_0 + MBPP rep_0):
+`gemma-2-2b-it`, `llama-3.2-3b-instruct`, `smollm3-3b-instruct`. Live
+BFCL, agent mode, multi-turn, and the HumanEval temperature sweep are
+deferred pending an interesting headline.
+
+### Headline (apples-to-apples curated cats, 750 / model)
+
+| model | BFCL curated | HumanEval | MBPP | BFCL mode | rank shift |
+|---|---|---|---|---|---|
+| **smollm3-3b-instruct** | **601/750 (80.1%)** | 105/164 (64.0%) | 261/427 (61.1%) | inject | new #1 on BFCL? |
+| qwen25-1.5b-instruct | 585/750 (78.0%) | 96/164 (58.5%) | 267/427 (62.5%) | structured | prior BFCL #1 |
+| granite33-2b-instruct | 532/750 (70.9%) | 87/164 (53.0%) | 255/427 (59.7%) | structured | — |
+| qwen25-coder-1.5b-instruct | 422/750 (56.3%) | **114/164 (69.5%)** | **274/427 (64.2%)** | structured | HE/MBPP #1 |
+| llama32-3b-instruct | 393/750 (52.4%) | 95/164 (57.9%) | 265/427 (62.1%) | auto (struct) | strictly dominated |
+| gemma2-2b-it | 364/750 (48.5%) | 73/164 (44.5%) | 211/427 (49.4%) | inject | strictly dominated |
+
+### Wilson 95% CIs on the smollm3 vs prior-champions comparison
+
+| comparison | smollm3 | prior | overlap? |
+|---|---|---|---|
+| BFCL curated (n=750) | 80.1% [77.1, 82.8] | qwen25-1.5b 78.0% [74.9, 80.8] | **YES** |
+| HumanEval pass@1 (n=164) | 64.0% [56.4, 71.0] | qwen25-coder 69.5% [62.1, 76.0] | **YES** |
+| MBPP pass@1 (n=427) | 61.1% [56.4, 65.6] | qwen25-coder 64.2% [59.5, 68.6] | **YES** |
+| parallel (n=150) | 83.3% [76.6, 88.4] | qwen25-1.5b 78.7% [71.4, 84.5] | **YES** |
+
+CIs overlap on every comparison. smollm3 is **statistically tied** with
+the prior champions on each headline axis, not a clean dethroner. The
++2.1pp BFCL curated edge and -5.5pp HumanEval gap are within the
+multi-pp wobble band documented in "Stochastic notes."
+
+### Per-model verdict
+
+**gemma2-2b-it** (49% BFCL / 44.5% HE / 49.4% MBPP) — **strictly
+dominated** on every axis by every existing finalist. Gemma 2's chat
+template has no native function-calling support; in structured mode
+the model emits Python-like pseudocalls (`area(10, 5)`) that no parser
+recognizes. Inject mode rescues the call format but the underlying
+weights still trail the field. Coding numbers (HE 44.5%, MBPP 49.4%)
+are worst-on-board. Confirm dropped.
+
+**llama-3.2-3b-instruct** (52% BFCL / 58% HE / 62% MBPP) — middling.
+Strong on parallel/parallel_multiple curated cats (89/82) but
+catastrophic on `irrelevance` (31/150 = 21% pass, 119/150 over-calls).
+Coding is middle-of-pack between qwen25-1.5b and qwen25-coder, doesn't
+beat either. The 3B parameter count buys nothing here over the 1.5B
+finalists. Strictly dominated by qwen25-1.5b on every axis except
+parallel/parallel_multiple, where it matches but doesn't exceed.
+Confirm dropped.
+
+**smollm3-3b-instruct** (80% BFCL / 64% HE / 61% MBPP) — **the only
+candidate worth a follow-up**. Tied with qwen25-1.5b at the top of
+BFCL curated within CIs, second on both HumanEval (behind qwen25-
+coder) and MBPP. Notably it does *not* collapse on parallel cats the
+way qwen25-coder does — parallel 125/150 (83%) and par_mul 116/150
+(77%) are the highest non-qwen25-1.5b numbers on either axis. Its
+irrelevance behavior (86/150, 57%) is identical to qwen25-1.5b — same
+over-call bucket, same volume.
+
+### Apples-to-apples caveat: BFCL mode
+
+smollm3 and gemma2 ran in `--bfcl-mode inject` (no native tool
+template, BFCL prompt-injected); the three existing finalists and
+llama32-3b ran in structured mode. Each model used the best mode it
+supports — methodology-consistent — but the comparison is "model +
+adapter mode" not "model alone." If a future run wants to make smollm3
+the new BFCL champion, the cleanest follow-up is to re-baseline the
+existing finalists in inject mode too (or accept that "best mode each"
+is the operational comparison that matters).
+
+### Triangle status after Branch D
+
+| corner | prior holder | Branch D challenger | verdict |
+|---|---|---|---|
+| **Tool-use generalist (BFCL)** | qwen25-1.5b (77%) | smollm3 (80% curated, no live data) | **tied within CI**, smollm3 untested on live cats |
+| **Synthesis coding (HumanEval)** | qwen25-coder (69.5% / 78% pass@3) | smollm3 (64.0% pass@1, no temp sweep) | qwen25-coder holds; smollm3 inside CI but no pass@3 yet |
+| **Decline discipline (live_irrelevance)** | granite33 (97%) | none (no Branch D live data) | granite33 unchallenged |
+
+The non-dominated triangle is **not redrawn** by Branch D headline
+data — but it's slightly *less stable* on the tool-use corner, where
+smollm3 sits within the CI of qwen25-1.5b and dominates qwen25-1.5b on
+the two parallel categories (+7 / +6 problems).
+
+### Recommendation — expand-or-close
+
+Two options for the next session, decision is yours:
+
+- **Expand smollm3 to the full round-2 spectrum** (live BFCL + multi-
+  turn + agent + HumanEval temp sweep). Wall ~2h. If smollm3 holds its
+  CI parity on live cats and shows a non-floor multi-turn result, it
+  earns a spot in a redrawn triangle. If it collapses on live cats
+  (which is where qwen25-coder lost ~22pp from curated→live), the
+  curated finding doesn't carry.
+- **Close**: the headline data is enough. Branch D produced one
+  partial near-tie (smollm3) and two strictly-dominated drops
+  (gemma2, llama32-3b). The triangle stands; the gemma2/llama32-3b
+  results close those candidates definitively.
+
 ## Stochastic notes (vs the prior edition's published numbers)
 
 - All non-deterministic runs (BFCL with `seed: 42` but model sampling

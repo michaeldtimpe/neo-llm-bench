@@ -1,0 +1,1 @@
+{"id": "irrelevance_116", "actual_calls": [["word_count", {"text": "I recommend watching Inception", "language": "en"}]], "wall_s": 0.542510250000305, "prompt_tokens": 324, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: word_count"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_1", "actual_calls": [["area_rectangle.calculate", {"length": 7, "breadth": 3}]], "wall_s": 0.6955256250003004, "prompt_tokens": 428, "completion_tokens": 32, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_103", "actual_calls": [["lawyer.search", {"location": "New York, NY", "expertise": "Divorce"}], ["lawyer.search", {"location": "Los Angeles, CA", "expertise": "Criminal"}]], "wall_s": 3.5660748749996856, "prompt_tokens": 443, "completion_tokens": 57, "error": "", "passed": false, "reason": "emitted_2_calls_expected_4"}

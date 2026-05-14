@@ -1,0 +1,1 @@
+{"id": "parallel_66", "actual_calls": [["geometry.area_circle", {"radius": 5}], ["geometry.area_circle", {"radius": 10}], ["geometry.area_circle", {"radius": 15}]], "wall_s": 1.3659900420007034, "prompt_tokens": 348, "completion_tokens": 56, "error": "", "passed": true, "reason": "all_calls_matched"}

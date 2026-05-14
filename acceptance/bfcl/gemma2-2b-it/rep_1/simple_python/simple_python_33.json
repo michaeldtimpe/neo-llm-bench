@@ -1,0 +1,1 @@
+{"id": "simple_python_33", "actual_calls": [["get_directions", {"start_location": "Sydney", "end_location": "Melbourne", "route_type": "fastest"}]], "wall_s": 0.7248486250000497, "prompt_tokens": 327, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "simple_python_109", "actual_calls": [["random_forest.train", {"n_estimators": 100, "max_depth": 5, "data": "my_data"}]], "wall_s": 0.9234263339994868, "prompt_tokens": 336, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

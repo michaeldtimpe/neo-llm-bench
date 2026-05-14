@@ -1,0 +1,1 @@
+{"id": "multiple_22", "actual_calls": [["sports_data.basketball.most_points_single_game", {"league": "NBA"}]], "wall_s": 0.7462591250005062, "prompt_tokens": 494, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

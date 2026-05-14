@@ -1,0 +1,1 @@
+{"id": "irrelevance_61", "actual_calls": [["calculate_svm", {"train_data": "Hello", "test_data": "Hello", "C": 1.0}]], "wall_s": 0.5535326250001162, "prompt_tokens": 341, "completion_tokens": 41, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_svm"}

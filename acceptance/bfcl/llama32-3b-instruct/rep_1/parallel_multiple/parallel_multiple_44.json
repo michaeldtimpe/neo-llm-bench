@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_44", "actual_calls": [["house_designer.design", {"bedrooms": "3", "bathrooms": "2", "garden": "true"}], ["office_designer.design", {"rooms": "5", "meeting_room": "large"}]], "wall_s": 2.576430334000179, "prompt_tokens": 408, "completion_tokens": 60, "error": "", "passed": false, "reason": "call_house_designer.design_unmatched_in_gt"}

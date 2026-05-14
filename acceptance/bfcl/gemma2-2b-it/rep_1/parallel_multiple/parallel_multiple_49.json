@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_49", "actual_calls": [["beat_generator", {"genre": "Hip Hop", "bpm": 95, "scale": "Major"}]], "wall_s": 0.7767226659998414, "prompt_tokens": 425, "completion_tokens": 37, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

@@ -1,0 +1,1 @@
+{"id": "parallel_104", "actual_calls": [["calculate_entropy_change", {"initial_temp": 300, "final_temp": 350, "heat_capacity": 4.18, "isothermal": true}]], "wall_s": 1.1770575410000674, "prompt_tokens": 421, "completion_tokens": 45, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

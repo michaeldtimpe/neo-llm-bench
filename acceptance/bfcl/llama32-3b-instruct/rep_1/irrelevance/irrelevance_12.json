@@ -1,0 +1,1 @@
+{"id": "irrelevance_12", "actual_calls": [["prime_numbers_in_range", {"start": "1", "end": "100", "return_format": "array"}]], "wall_s": 0.701399083999604, "prompt_tokens": 374, "completion_tokens": 33, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: prime_numbers_in_range"}

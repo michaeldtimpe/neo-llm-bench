@@ -1,0 +1,1 @@
+{"id": "irrelevance_42", "actual_calls": [["calculate_biodiversity_index", {"species_richness": "60", "species_evenness": "0", "region": "Tundra"}]], "wall_s": 0.8227380839998659, "prompt_tokens": 414, "completion_tokens": 39, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_biodiversity_index"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_63", "actual_calls": [["weather.get_by_city_date", {"city": "New York City", "date": "2020-12-25"}]], "wall_s": 0.9490629160000026, "prompt_tokens": 625, "completion_tokens": 46, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

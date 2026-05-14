@@ -1,0 +1,1 @@
+{"id": "simple_python_122", "actual_calls": [["chi_squared_test", {"table": "[[10, 20], [30, 40]]", "alpha": "0"}]], "wall_s": 0.9370470829999249, "prompt_tokens": 344, "completion_tokens": 35, "error": "", "passed": false, "reason": "call_chi_squared_test_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_51", "actual_calls": [["get_player_record", {"player": "Michael Jordan", "stat": "highest_scoring_game"}], ["get_team_info", {"team": "Chicago Bulls", "info": "total_championships"}]], "wall_s": 2.3030748749997656, "prompt_tokens": 391, "completion_tokens": 56, "error": "", "passed": false, "reason": "call_get_team_info_unmatched_in_gt"}

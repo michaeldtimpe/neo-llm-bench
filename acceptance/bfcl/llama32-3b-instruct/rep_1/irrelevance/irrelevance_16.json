@@ -1,0 +1,1 @@
+{"id": "irrelevance_16", "actual_calls": [["calculate_projectile_range", {"initial_velocity": "v", "angle": "theta", "time": "t"}]], "wall_s": 0.6301207080005042, "prompt_tokens": 396, "completion_tokens": 33, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_projectile_range"}

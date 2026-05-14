@@ -1,0 +1,1 @@
+{"id": "irrelevance_53", "actual_calls": [["database_query.run", {"database": "world_series_2018", "query": "SELECT winner FROM years", "connect_credentials": "{'username': 'baseball', 'password': 'home run'}"}]], "wall_s": 1.0610448749994248, "prompt_tokens": 413, "completion_tokens": 52, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: database_query.run"}

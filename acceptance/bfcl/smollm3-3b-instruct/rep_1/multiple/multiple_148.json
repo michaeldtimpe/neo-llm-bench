@@ -1,0 +1,1 @@
+{"id": "multiple_148", "actual_calls": [["get_stock_info", {"company_name": "Apple Inc.", "detail_level": "detailed"}]], "wall_s": 0.7866950409998026, "prompt_tokens": 423, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

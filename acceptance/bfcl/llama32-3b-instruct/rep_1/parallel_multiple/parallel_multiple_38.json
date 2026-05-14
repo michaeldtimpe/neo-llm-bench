@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_38", "actual_calls": [["us_history.life_expectancy", {"year": "1900"}], ["us_history.life_expectancy", {"year": "1950"}], ["us_history.gdp", {"year": "1900"}], ["us_history.gdp", {"year": "1950"}]], "wall_s": 3.287458458999936, "prompt_tokens": 366, "completion_tokens": 82, "error": "", "passed": true, "reason": "all_calls_matched"}

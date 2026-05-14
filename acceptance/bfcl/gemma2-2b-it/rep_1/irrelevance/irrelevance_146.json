@@ -1,0 +1,1 @@
+{"id": "irrelevance_146", "actual_calls": [["get_prophet_details", {"religion": "unknown", "prophet": "unknown"}]], "wall_s": 0.6622132499996951, "prompt_tokens": 326, "completion_tokens": 33, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_prophet_details"}

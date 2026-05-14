@@ -1,0 +1,1 @@
+{"id": "irrelevance_108", "actual_calls": [["emission_estimator", {"current_emissions": "0", "action": "switch to electric cars", "duration": "10", "scale": "population"}]], "wall_s": 0.844997209000212, "prompt_tokens": 421, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: emission_estimator"}

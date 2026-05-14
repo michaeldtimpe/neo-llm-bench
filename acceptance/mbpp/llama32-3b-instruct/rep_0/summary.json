@@ -1,0 +1,10 @@
+{
+  "model": "llama32-3b-instruct",
+  "rep": 0,
+  "n_problems": 427,
+  "n_passed": 265,
+  "n_extract_ok": 427,
+  "wall_s": 402.8906429250019,
+  "completion_tokens": 31179,
+  "pass_at_1": 0.6206088992974239
+}
