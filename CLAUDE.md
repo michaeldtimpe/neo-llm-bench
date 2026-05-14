@@ -11,18 +11,37 @@ you don't conflate `rep_1` (BFCL raw) with `rep_4` (BFCL agent) with
 
 ## Project shape
 
-llama.cpp-based bake-off harness for small (≤2B) GGUF models. Round 1
+llama.cpp-based bake-off harness for small (≤3B) GGUF models. Round 1
 narrowed an 8-model roster to 3 finalists (qwen25-1.5b-instruct,
-qwen25-coder-1.5b-instruct, granite33-2b-instruct). **Round 2 is
-complete**: BFCL raw + agent + multi-turn, HumanEval × 3 temperatures,
-MBPP sanitized. The data describes a non-dominated triangle — see
-`graded_report.md` for the leaderboard, `graded_failure_modes.md` for
-the per-model failure shape.
+qwen25-coder-1.5b-instruct, granite33-2b-instruct); Round 4 / Branch D
+added smollm3-3b-instruct as the 4th model (competitive on tool-use +
+coding, axis-loser on decline).
 
-**Round 3 is scoped** in `round_3_design.md` (branches A+B+C —
-prompt-engineering experiments on each finalist's weakest axis).
-Awaiting execution; requires a small prereq (`--bfcl-system-prompt`
-CLI flag + variant registry, ~30 LOC) before launch.
+**Rounds 1–4 are complete**, plus a 2026-05-14 audit-correction cycle
+(Phase I+J+K+L) that:
+- Fixed a lexicographic-sort slicing bug in cross-model BFCL deltas
+  (commit `e50fdce2`). All cross-model claims now route through
+  `scripts/compare_matched_slice.py` with matched-ID artifacts
+  in `acceptance/audits/`.
+- Added BFCL `raw_text` persistence (commit `3905bd7f`) and verified
+  the smollm3 agent-mode mechanism (dominant bucket: prose_only at
+  ~61%, not "Python code blocks" at ~38% as previously asserted).
+- Reran finalists on full live cats (rep_7, commit `f7bbf35d`) so
+  cross-model comparisons on the live distribution are properly
+  apples-to-apples. ~56 min wall.
+- Final consistency sweep + champion-framework update (commit
+  `af56bb3c`).
+
+Current non-dominated quadrilateral: qwen25-1.5b leads active tool-use
+(rep_7 1351 problems), granite33 leads decline-discipline (rep_7
+live_irrelevance n=884, +28.6pp CI-distinct), qwen25-coder leads
+HumanEval, smollm3 is the balanced generalist (within CI of qwen25-1.5b
+on BFCL and qwen25-coder on every coding metric).
+
+See `graded_report.md` for the full leaderboard + the
+"Errata and methodology corrections" section near the end for the
+audit trail. `graded_failure_modes.md` for the per-model failure shape
+(curated cats, pre-audit but unaffected by the bug).
 
 **The user picks the champion from the data.** Do not recommend a
 winner unprompted.
