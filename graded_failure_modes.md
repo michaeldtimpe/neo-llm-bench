@@ -525,6 +525,33 @@ finalist; nearly a quarter (112) are universal — problems where every
 model over-calls. The differentiator is the long tail of "smollm3 +
 1 or 2 others fail, granite alone succeeds."
 
+**Smollm3-unique failure shape — placeholder-value hallucination.**
+Inspecting the 20 smollm3-unique failures reveals a coherent pattern:
+smollm3 emits the call with *fabricated placeholder values* to satisfy
+the user's stated intent, where the other three finalists recognize
+"I don't have the information." Examples from rep_7 (raw_text omitted
+for space; full data in `acceptance/bfcl/smollm3-3b-instruct/rep_7/live_irrelevance/`):
+
+- `live_irrelevance_202-*`: emits `user_authentication.login` with
+  `{"username": "your_username", "password": "your_password"}` —
+  placeholder strings literally used as arg values.
+- `live_irrelevance_300-*`: emits `regression_model_predict` with
+  `features: [0.5, 0.8, 0.3, 0.7, 0.2]` — invented feature vector
+  for an unanswerable user request.
+- `live_irrelevance_312-*`: emits `requests.get` against
+  `https://api.fixerio.com/v1/latest` with `{lat: 0, lon: 0}` — both
+  the URL and the params are model-fabricated.
+- `live_irrelevance_322-*`: routes a question about basketball through
+  a `requests.get` to a reddit URL with `Accept: application/json`.
+
+Operational implication: deployments that accept placeholder values
+silently (e.g. tools that pass them through to downstream systems
+without strict validation) inherit a smollm3-specific hallucination
+risk on irrelevance traffic. Tools that error on `your_username` /
+default-valued numeric features will catch these locally. The pattern
+is small in absolute count (20/884 = 2.3%) but distinctive enough to
+mark as a model-specific deployment hazard.
+
 **Granite33's unique decline advantage: 181 problems** (20.5% of the
 distribution) where granite alone declines correctly while all three
 other finalists over-call. This is the concrete operational evidence
