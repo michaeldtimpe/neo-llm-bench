@@ -94,13 +94,13 @@ Terms that have become core but aren't self-explanatory:
 
 ## Multi-turn caveat
 
-Multi-turn `rep_5` pass rates (0–1.5% across the three finalists) are
+Multi-turn `rep_5` pass rates (0–1.5% across the four finalists) are
 **floor-level signals at this model scale**, not mature capability
 rankings. Treat them as stress measurements for long-context handling
 and state-tracking robustness. Public BFCL multi-turn shows GPT-4-
 class models at 30–50%; small open-weight models reliably cluster near
 zero, and the 0–1.5% spread in this report does not statistically
-separate the three finalists. The useful comparative signal in `rep_5`
+separate the four finalists. The useful comparative signal in `rep_5`
 is in the *failure-mode mix* (`graded_failure_modes.md`) — who fails
 on context overruns vs who over-declines vs who emits state-mismatches
 — not the bare pass rate.
