@@ -34,13 +34,14 @@ This produces `~/code/llama.cpp/build/bin/llama-server`, which is the default pa
 
 ## 3. Download model GGUFs
 
-The round-2 finalists are:
+The four finalists (3 from Round 2 + smollm3 added in Round 4/Branch D):
 
 | model | HuggingFace repo | quant | size |
 |---|---|---|---|
 | qwen25-1.5b-instruct | `Qwen/Qwen2.5-1.5B-Instruct-GGUF` | Q8_0 | ~1.6 GB |
 | qwen25-coder-1.5b-instruct | `Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF` | Q8_0 | ~1.6 GB |
 | granite33-2b-instruct | `ibm-granite/granite-3.3-2b-instruct-GGUF` | Q8_0 | ~2.4 GB |
+| smollm3-3b-instruct | `ggml-org/SmolLM3-3B-GGUF` | Q8_0 | ~3.1 GB |
 
 Download to `~/models/`:
 
@@ -50,11 +51,13 @@ mkdir -p ~/models
 hf download Qwen/Qwen2.5-1.5B-Instruct-GGUF             qwen2.5-1.5b-instruct-q8_0.gguf       --local-dir ~/models/
 hf download Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF       qwen2.5-coder-1.5b-instruct-q8_0.gguf --local-dir ~/models/
 hf download ibm-granite/granite-3.3-2b-instruct-GGUF    granite-3.3-2b-instruct-Q8_0.gguf     --local-dir ~/models/
+hf download ggml-org/SmolLM3-3B-GGUF                    SmolLM3-Q8_0.gguf                     --local-dir ~/models/
 
 # Rename to match configs/models/*.yaml gguf_path (Qwen repos use lowercase
-# `q8_0`; the configs expect `Q8_0` plus CamelCase model name).
+# `q8_0`; smollm3 file ships without the model name prefix).
 mv ~/models/qwen2.5-1.5b-instruct-q8_0.gguf        ~/models/Qwen2.5-1.5B-Instruct-Q8_0.gguf
 mv ~/models/qwen2.5-coder-1.5b-instruct-q8_0.gguf  ~/models/Qwen2.5-Coder-1.5B-Instruct-Q8_0.gguf
+mv ~/models/SmolLM3-Q8_0.gguf                      ~/models/SmolLM3-3B-Q8_0.gguf
 # granite file already matches its YAML — no rename needed.
 ```
 
