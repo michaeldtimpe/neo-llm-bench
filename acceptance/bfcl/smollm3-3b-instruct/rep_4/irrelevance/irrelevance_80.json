@@ -1,1 +1,1 @@
-{"id": "irrelevance_80", "actual_calls": [], "wall_s": 0.18274925000150688, "prompt_tokens": 145, "completion_tokens": 18, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": true, "reason": "correctly_no_tool_call"}
+{"id": "irrelevance_80", "actual_calls": [], "wall_s": 0.18382054100220557, "prompt_tokens": 145, "completion_tokens": 18, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "\nThe winner of the FIFA World Cup 2010 was Spain.", "passed": true, "reason": "correctly_no_tool_call"}

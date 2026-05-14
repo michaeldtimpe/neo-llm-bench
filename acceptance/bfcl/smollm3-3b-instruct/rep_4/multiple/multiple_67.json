@@ -1,1 +1,1 @@
-{"id": "multiple_67", "actual_calls": [], "wall_s": 2.2170598749999044, "prompt_tokens": 147, "completion_tokens": 254, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": false, "reason": "no_tool_call_emitted"}
+{"id": "multiple_67", "actual_calls": [], "wall_s": 2.0484470420051366, "prompt_tokens": 147, "completion_tokens": 234, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "\n\nBonjour, comment \u00e7a va?", "passed": false, "reason": "no_tool_call_emitted"}

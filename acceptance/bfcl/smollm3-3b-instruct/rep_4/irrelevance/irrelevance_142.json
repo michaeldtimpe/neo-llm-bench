@@ -1,1 +1,1 @@
-{"id": "irrelevance_142", "actual_calls": [], "wall_s": 0.16240645800280618, "prompt_tokens": 148, "completion_tokens": 15, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": true, "reason": "correctly_no_tool_call"}
+{"id": "irrelevance_142", "actual_calls": [], "wall_s": 0.15983129100641236, "prompt_tokens": 148, "completion_tokens": 15, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "\nEinstein proposed the special theory of relativity.", "passed": true, "reason": "correctly_no_tool_call"}

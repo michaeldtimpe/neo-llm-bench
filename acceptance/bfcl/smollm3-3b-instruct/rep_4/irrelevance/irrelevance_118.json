@@ -1,1 +1,1 @@
-{"id": "irrelevance_118", "actual_calls": [], "wall_s": 0.18433766700036358, "prompt_tokens": 144, "completion_tokens": 18, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": true, "reason": "correctly_no_tool_call"}
+{"id": "irrelevance_118", "actual_calls": [], "wall_s": 0.18504983400634956, "prompt_tokens": 144, "completion_tokens": 18, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "\nThe 1996 NBA championship was won by the Chicago Bulls.", "passed": true, "reason": "correctly_no_tool_call"}

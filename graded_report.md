@@ -724,17 +724,36 @@ per-problem `actual_calls` empty everywhere). The result reads as
 "100%" only because the model emits no calls at all (correct by
 accident on a no-call category).
 
-The *mechanism* — what smollm3 emits *instead* of tool calls — is not
-yet on disk: rep_4 was run before `raw_text` capture landed in the
-BFCL adapter (Phase J). The prior edition of this section asserted
-"emits Python code blocks"; that specific shape was not measurable
-from the persisted data. Phase J fixes the persistence path and re-runs
-rep_4 to verify or revise the mechanism claim. The aggregate finding —
-smollm3 is **effectively unusable in raw agent mode** at this size
-without an adapter change — is independent of the mechanism question
-and stands on the n_with_calls=0 signal alone. Existing finalists'
-agent advantages (qwen25-coder's parallel recovery rep_4 → rep_4)
-remain unchallenged.
+**Verified mechanism** (Phase J, after `raw_text` persistence landed
+2026-05-14; rep_4 re-run wall=59:57, same 240/1240 reproduced
+deterministically at T=0). Reproducible mechanism taxonomy via
+`scripts/sample_raw_text.py --seed 1337 --n 20`; full-population
+sample artifact at
+`acceptance/audits/phase_j_smollm3_mechanism_samples.json`. Bucket
+distribution over 1229 problems with non-empty `raw_text`:
+
+| bucket | count | % |
+|---|---|---|
+| `prose_only` (math/explanation, no call shape) | 747 | 60.8% |
+| `code_block` (fenced ```python or bare `def`) | 464 | 37.8% |
+| `pseudo_tool` (call shape outside JSON) | 15 | 1.2% |
+| `partial_tool` (truncated mid-emission) | 3 | 0.2% |
+| `malformed_json` | 0 | 0.0% |
+| `empty` (sampled subset) | 0 | 0.0% |
+
+The dominant mode is **prose** (~61%), not the previously asserted
+"Python code blocks" (~38%). Both shapes are present and neither is
+parseable as a structured tool call. The model behaves as a Python
+tutor — it explains the task and sometimes provides a code block —
+rather than as a tool-using agent. The original "emits Python code
+blocks" framing captured the visually-striking minority shape but
+missed the majority pattern.
+
+Aggregate finding — smollm3 is **effectively unusable in raw agent
+mode** at this size without an adapter change — is independent of
+the dominant-bucket question and stands on the n_with_calls=0
+signal alone. Existing finalists' agent advantages (qwen25-coder's
+parallel recovery rep_4 → rep_4) remain unchallenged.
 
 #### Triangle status after the full smollm3 spectrum
 
