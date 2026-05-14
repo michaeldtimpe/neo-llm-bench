@@ -163,9 +163,13 @@ Each `(model, bench, rep)` produces a self-contained directory. Conventions in t
 | rep | content |
 |---|---|
 | `rep_0` | round-1 (10/cat) and round-1.5 (30/cat) BFCL + HumanEval baseline (t=0.0) |
-| `rep_1` | round-2 deep BFCL — curated 150/cat + live ≤100/cat |
+| `rep_1` | round-2 deep BFCL — curated 150/cat + live 100/cat for original finalists; live full-distribution for smollm3 (Branch D, no `--bfcl-limit`) |
 | `rep_2` | round-2 HumanEval t=0.3 |
 | `rep_3` | round-2 HumanEval t=0.7 |
+| `rep_4` | BFCL agent mode (same problem set as `rep_1` curated) |
+| `rep_5` | BFCL multi-turn — `multi_turn_*` categories, 100/cat |
+| `rep_6` | round-3 prompt-engineering variants (v3a / v3b / v3c / v2_fewshot_parallel) |
+| `rep_7` | Phase K full-live-cats parity baseline (2026-05-14) — all four finalists on the full live distribution (no `--bfcl-limit`); 2251 problems per model. smollm3 rep_7 is a derived copy of its already-full-live rep_1; finalists were rerun fresh. |
 
 Historical snapshots are preserved (gitignored) for diffing:
 - `rep_0_pre_v2_*` — pre-system-prompt run, 30/cat
