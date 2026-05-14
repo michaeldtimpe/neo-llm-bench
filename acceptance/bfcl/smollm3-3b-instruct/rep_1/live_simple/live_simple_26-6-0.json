@@ -1,0 +1,1 @@
+{"id": "live_simple_26-6-0", "actual_calls": [["uber.ride", {"loc": "123 University Ave, Berkeley, CA 94704", "type": "plus", "time": 10}]], "wall_s": 0.42979087500134483, "prompt_tokens": 412, "completion_tokens": 43, "error": "", "passed": false, "reason": "call_uber.ride_did_not_match_any_gt"}

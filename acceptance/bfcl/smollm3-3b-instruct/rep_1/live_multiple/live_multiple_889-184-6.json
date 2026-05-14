@@ -1,0 +1,1 @@
+{"id": "live_multiple_889-184-6", "actual_calls": [["Buses_3_FindBus", {"from_city": "Miami, FL", "to_city": "Atlanta, GA", "departure_date": "2023-04-22", "num_passengers": 2}]], "wall_s": 0.5501084999996237, "prompt_tokens": 1449, "completion_tokens": 57, "error": "", "passed": true, "reason": "matched_gt_entry"}

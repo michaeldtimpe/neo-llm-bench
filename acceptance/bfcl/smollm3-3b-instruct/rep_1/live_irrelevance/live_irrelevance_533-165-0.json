@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_533-165-0", "actual_calls": [["question.ask", {"prompt": "what is your name?", "default_answer": "No response", "timeout": 30, "required": true}]], "wall_s": 0.42171891699763364, "prompt_tokens": 370, "completion_tokens": 43, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: question.ask"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_476-134-0", "actual_calls": [["search_google", {"query": "vaccine schedule", "num_results": 5, "language": "en", "filter": true}]], "wall_s": 3.7425936670006195, "prompt_tokens": 409, "completion_tokens": 426, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: search_google"}

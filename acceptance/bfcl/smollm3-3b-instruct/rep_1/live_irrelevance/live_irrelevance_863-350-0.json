@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_863-350-0", "actual_calls": [["user_details.update", {"user_id": 12345, "email": "new@example.com"}]], "wall_s": 0.3513451670005452, "prompt_tokens": 532, "completion_tokens": 32, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: user_details.update"}

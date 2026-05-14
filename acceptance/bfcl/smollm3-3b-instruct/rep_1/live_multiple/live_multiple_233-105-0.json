@@ -1,0 +1,1 @@
+{"id": "live_multiple_233-105-0", "actual_calls": [["get_contact_information", {"name": "Rayson Goh"}]], "wall_s": 0.28166083299947786, "prompt_tokens": 536, "completion_tokens": 25, "error": "", "passed": true, "reason": "matched_gt_entry"}

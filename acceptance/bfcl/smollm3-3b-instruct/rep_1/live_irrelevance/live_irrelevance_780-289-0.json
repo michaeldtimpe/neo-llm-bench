@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_780-289-0", "actual_calls": [["EventSettingsApi.get_custom_event_specifications", {"project_id": "your_project_id", "active_only": true}]], "wall_s": 0.4268568330007838, "prompt_tokens": 704, "completion_tokens": 36, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: EventSettingsApi.get_custom_event_specifications"}

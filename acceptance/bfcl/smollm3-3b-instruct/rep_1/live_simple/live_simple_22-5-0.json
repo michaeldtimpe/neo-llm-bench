@@ -1,0 +1,1 @@
+{"id": "live_simple_22-5-0", "actual_calls": [["ChaFod", {"TheFod": "WHOPPER"}]], "wall_s": 0.2696959999993851, "prompt_tokens": 343, "completion_tokens": 26, "error": "", "passed": false, "reason": "call_ChaFod_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_239-107-0", "actual_calls": [["search_web_tool", {"query": "apple", "num_results": 3, "source": "text"}]], "wall_s": 3.368568874997436, "prompt_tokens": 1127, "completion_tokens": 359, "error": "", "passed": true, "reason": "matched_gt_entry"}

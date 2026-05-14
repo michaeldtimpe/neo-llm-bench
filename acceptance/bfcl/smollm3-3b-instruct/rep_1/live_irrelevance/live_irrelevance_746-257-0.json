@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_746-257-0", "actual_calls": [["get_service_providers", {"province_id": 1}]], "wall_s": 0.38891249999869615, "prompt_tokens": 1184, "completion_tokens": 24, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_service_providers"}

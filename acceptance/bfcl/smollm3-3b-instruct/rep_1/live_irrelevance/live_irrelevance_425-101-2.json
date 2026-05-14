@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_425-101-2", "actual_calls": [["get_response", {"intent": "get_balance"}]], "wall_s": 4.999733250002464, "prompt_tokens": 515, "completion_tokens": 573, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_response"}

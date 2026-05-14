@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_178-29-1", "actual_calls": [["todo", {"type": "add", "content": "Buy groceries"}]], "wall_s": 0.24193129200284602, "prompt_tokens": 347, "completion_tokens": 27, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: todo"}

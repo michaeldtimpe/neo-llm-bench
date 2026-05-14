@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_325-76-23", "actual_calls": [["requests.get", {"url": "https://api.huggingface.co/address", "headers": {"Accept": "application/json"}}]], "wall_s": 0.36748295900179073, "prompt_tokens": 848, "completion_tokens": 39, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

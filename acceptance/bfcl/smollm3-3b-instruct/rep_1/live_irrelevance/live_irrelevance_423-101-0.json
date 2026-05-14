@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_423-101-0", "actual_calls": [["get_response", {"url": "https://api.example.com/intent-classifier", "intent": "funds_transfer_start"}]], "wall_s": 2.358783166997455, "prompt_tokens": 533, "completion_tokens": 263, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_response"}

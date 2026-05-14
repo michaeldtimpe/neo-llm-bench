@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_421-99-0", "actual_calls": [["record", {"faq_auto_withdraw_start": [], "payment_information_start": [], "pma_income_requirements_start": [], "outofscope": []}]], "wall_s": 0.48916162500245264, "prompt_tokens": 727, "completion_tokens": 43, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: record"}

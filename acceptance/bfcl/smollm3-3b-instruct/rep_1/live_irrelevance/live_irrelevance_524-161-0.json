@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_524-161-0", "actual_calls": [["greet_user", {"user_name": "your_name_here"}]], "wall_s": 1.0370460000012827, "prompt_tokens": 317, "completion_tokens": 115, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: greet_user"}

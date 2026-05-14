@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_218-34-7", "actual_calls": [["ProductSearch.execute", {"keywords": "size 40", "in_stock": true}]], "wall_s": 0.9454330000007758, "prompt_tokens": 474, "completion_tokens": 103, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: ProductSearch.execute"}

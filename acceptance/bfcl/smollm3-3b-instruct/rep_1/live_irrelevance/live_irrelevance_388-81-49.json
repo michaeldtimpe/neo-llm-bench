@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_388-81-49", "actual_calls": [["requests.get", {"url": "https://opendata.meteo-observatoire.fr/api/v1/forecast/point", "params": {"latitude": 48.8566, "longitude": 2.3522, "elevation": 0}}]], "wall_s": 0.6198670000012498, "prompt_tokens": 795, "completion_tokens": 68, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

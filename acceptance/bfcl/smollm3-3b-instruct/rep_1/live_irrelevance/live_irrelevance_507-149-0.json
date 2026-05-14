@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_507-149-0", "actual_calls": [["requests.get", {"url": "https://nexus-dashboard.cisco.com/api/v1/device-connector-versions", "params": {"version": "6.3.1"}}]], "wall_s": 0.4782506250012375, "prompt_tokens": 354, "completion_tokens": 50, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

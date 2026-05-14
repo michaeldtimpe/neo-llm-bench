@@ -1,0 +1,1 @@
+{"id": "live_multiple_445-144-5", "actual_calls": [["Services_4_FindProvider", {"city": "Santa Rosa, CA", "type": "Psychiatrist"}]], "wall_s": 0.34400441700199735, "prompt_tokens": 1307, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

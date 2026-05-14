@@ -1,0 +1,1 @@
+{"id": "live_multiple_726-166-1", "actual_calls": [["Services_1_FindProvider", {"city": "New York, NY", "is_unisex": true}]], "wall_s": 0.3244648750005581, "prompt_tokens": 601, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

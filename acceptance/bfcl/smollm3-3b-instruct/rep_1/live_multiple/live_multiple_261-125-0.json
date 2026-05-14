@@ -1,0 +1,1 @@
+{"id": "live_multiple_261-125-0", "actual_calls": [["rotateImageAction", {"degrees": 30, "image_format": "JPEG", "keep_original": true}]], "wall_s": 2.4894985419996374, "prompt_tokens": 1023, "completion_tokens": 262, "error": "", "passed": true, "reason": "matched_gt_entry"}

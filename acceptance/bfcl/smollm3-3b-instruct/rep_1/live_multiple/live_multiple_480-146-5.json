@@ -1,0 +1,1 @@
+{"id": "live_multiple_480-146-5", "actual_calls": [["Music_3_PlayMedia", {"track": "Summer Vibes", "artist": "DJ Sunny", "device": "Kitchen"}]], "wall_s": 0.3862581670000509, "prompt_tokens": 650, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,59 @@
+{
+  "model": "smollm3-3b-instruct",
+  "rep": 4,
+  "mode": "inject",
+  "run_mode": "agent",
+  "system_prompt": "v2",
+  "categories": {
+    "simple_python": {
+      "n_problems": 400,
+      "n_with_calls": 0,
+      "n_errors": 0,
+      "wall_s": 1000.7751031239786,
+      "completion_tokens": 113283,
+      "n_turns_total": 400,
+      "n_tool_calls_total": 0,
+      "n_schema_rejects_total": 0
+    },
+    "multiple": {
+      "n_problems": 200,
+      "n_with_calls": 0,
+      "n_errors": 0,
+      "wall_s": 467.8523619639982,
+      "completion_tokens": 53311,
+      "n_turns_total": 200,
+      "n_tool_calls_total": 0,
+      "n_schema_rejects_total": 0
+    },
+    "parallel": {
+      "n_problems": 200,
+      "n_with_calls": 0,
+      "n_errors": 0,
+      "wall_s": 636.657680874021,
+      "completion_tokens": 72697,
+      "n_turns_total": 200,
+      "n_tool_calls_total": 0,
+      "n_schema_rejects_total": 0
+    },
+    "parallel_multiple": {
+      "n_problems": 200,
+      "n_with_calls": 0,
+      "n_errors": 0,
+      "wall_s": 704.2349278729889,
+      "completion_tokens": 80422,
+      "n_turns_total": 200,
+      "n_tool_calls_total": 0,
+      "n_schema_rejects_total": 0
+    },
+    "irrelevance": {
+      "n_problems": 240,
+      "n_with_calls": 0,
+      "n_errors": 0,
+      "wall_s": 494.7744597859928,
+      "completion_tokens": 56263,
+      "n_turns_total": 240,
+      "n_tool_calls_total": 0,
+      "n_schema_rejects_total": 0
+    }
+  }
+}

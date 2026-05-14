@@ -1,0 +1,1 @@
+{"id": "live_multiple_34-11-0", "actual_calls": [["get_news_report", {"location": "Letterkenny, Ireland"}]], "wall_s": 0.30381095799748437, "prompt_tokens": 484, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_583-157-4", "actual_calls": [["Media_3_FindMovies", {"genre": "Fantasy", "starring": "Bret McKenzie"}]], "wall_s": 0.3331869159992493, "prompt_tokens": 601, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

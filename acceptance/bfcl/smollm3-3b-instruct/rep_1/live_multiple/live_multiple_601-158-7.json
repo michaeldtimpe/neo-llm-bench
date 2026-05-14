@@ -1,0 +1,1 @@
+{"id": "live_multiple_601-158-7", "actual_calls": [["Hotels_4_SearchHotel", {"location": "Kuala Lumpur, Malaysia"}]], "wall_s": 0.30611683299866854, "prompt_tokens": 708, "completion_tokens": 29, "error": "", "passed": false, "reason": "call_Hotels_4_SearchHotel_did_not_match_any_gt"}

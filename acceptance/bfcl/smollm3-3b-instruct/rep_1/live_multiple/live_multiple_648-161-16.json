@@ -1,0 +1,1 @@
+{"id": "live_multiple_648-161-16", "actual_calls": [["Music_3_LookupMusic", {"artist": "Little Mix", "album": "Get Weird", "genre": "dontcare", "year": "dontcare"}]], "wall_s": 0.4611280839999381, "prompt_tokens": 1150, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

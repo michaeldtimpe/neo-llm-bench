@@ -1,0 +1,1 @@
+{"id": "live_multiple_295-130-4", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "Los Angeles, CA"}]], "wall_s": 0.3034007089991064, "prompt_tokens": 634, "completion_tokens": 29, "error": "", "passed": true, "reason": "matched_gt_entry"}

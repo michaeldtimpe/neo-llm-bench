@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_161-20-0", "actual_calls": [["get_snow_report", {"location": "Beijing, China", "unit": "celsius"}]], "wall_s": 0.3354445829972974, "prompt_tokens": 441, "completion_tokens": 33, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_snow_report"}

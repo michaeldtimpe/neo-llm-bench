@@ -1,0 +1,1 @@
+{"id": "live_multiple_459-145-10", "actual_calls": [["Travel_1_FindAttractions", {"location": "Berlin, Germany", "free_entry": "True", "category": "dontcare", "good_for_kids": "True"}]], "wall_s": 0.6372605420001491, "prompt_tokens": 1554, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

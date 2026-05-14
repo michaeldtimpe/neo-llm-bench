@@ -1,0 +1,1 @@
+{"id": "live_multiple_597-158-3", "actual_calls": [["Hotels_4_SearchHotel", {"location": "Toronto, Canada", "star_rating": "4", "number_of_rooms": "1"}]], "wall_s": 0.4032206669980951, "prompt_tokens": 661, "completion_tokens": 42, "error": "", "passed": false, "reason": "call_Hotels_4_SearchHotel_did_not_match_any_gt"}

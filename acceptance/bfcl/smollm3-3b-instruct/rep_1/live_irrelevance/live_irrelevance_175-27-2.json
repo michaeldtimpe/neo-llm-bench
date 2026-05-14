@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_175-27-2", "actual_calls": [["inventory_management", {"product_id": "418901918", "sizes": [], "color": "produk ini masih tersedia", "quantity": 1}]], "wall_s": 0.41229112499786424, "prompt_tokens": 714, "completion_tokens": 44, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: inventory_management"}

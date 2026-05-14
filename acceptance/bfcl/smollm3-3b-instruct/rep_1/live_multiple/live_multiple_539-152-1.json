@@ -1,0 +1,1 @@
+{"id": "live_multiple_539-152-1", "actual_calls": [["Homes_2_FindHomeByArea", {"area": "San Francisco, CA", "intent": "rent", "number_of_beds": 2, "number_of_baths": 2, "has_garage": true, "in_unit_laundry": true}]], "wall_s": 0.6377387079992332, "prompt_tokens": 837, "completion_tokens": 70, "error": "", "passed": true, "reason": "matched_gt_entry"}

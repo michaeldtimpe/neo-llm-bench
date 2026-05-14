@@ -1,0 +1,1 @@
+{"id": "live_multiple_317-132-7", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Guillermo del Toro", "genre": "Fantasy", "cast": "Emma Watson"}]], "wall_s": 0.4163048340014939, "prompt_tokens": 988, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_430-141-19", "actual_calls": [["Movies_1_BuyMovieTickets", {"movie_name": "Eternal Warriors", "number_of_tickets": 3, "location": "Los Angeles, CA", "show_date": "2023-04-15", "show_time": "19:00", "show_type": "regular"}]], "wall_s": 0.6723833750002086, "prompt_tokens": 925, "completion_tokens": 74, "error": "", "passed": true, "reason": "matched_gt_entry"}

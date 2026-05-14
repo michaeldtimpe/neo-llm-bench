@@ -1,0 +1,1 @@
+{"id": "live_multiple_279-128-2", "actual_calls": [["Restaurants_2_FindRestaurants", {"category": "Asian Fusion", "location": "Santa Clara, CA"}]], "wall_s": 0.3927352909995534, "prompt_tokens": 897, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

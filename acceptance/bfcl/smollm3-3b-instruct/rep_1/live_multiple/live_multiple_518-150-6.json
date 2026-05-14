@@ -1,0 +1,1 @@
+{"id": "live_multiple_518-150-6", "actual_calls": [["Movies_1_FindMovies", {"location": "Sonoma, CA", "theater_name": "dontcare", "genre": "Action"}]], "wall_s": 0.40936320800028625, "prompt_tokens": 1378, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_1-1-0", "actual_calls": [["get_current_weather", {"location": "Guangzhou, China", "unit": "metric"}], ["get_current_weather", {"location": "Beijing, China", "unit": "metric"}]], "wall_s": 0.6393310409985133, "prompt_tokens": 730, "completion_tokens": 60, "error": "", "passed": true, "reason": "all_calls_matched"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_291-72-0", "actual_calls": [["get_adriel_list_projects", {"user_id": "ede", "status_filter": "active", "include_archived": false, "sort_order": "asc"}]], "wall_s": 0.4596240000028047, "prompt_tokens": 414, "completion_tokens": 46, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_adriel_list_projects"}

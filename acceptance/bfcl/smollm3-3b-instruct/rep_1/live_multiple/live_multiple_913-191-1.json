@@ -1,0 +1,1 @@
+{"id": "live_multiple_913-191-1", "actual_calls": [["get_service_providers", {"avg_rating": 4.9, "province_id": 1, "district_name": "Bangna", "start_available_date": "2024-03-19 12:00:00", "end_available_date": null}]], "wall_s": 0.7718798329988203, "prompt_tokens": 1138, "completion_tokens": 67, "error": "", "passed": true, "reason": "matched_gt_entry"}

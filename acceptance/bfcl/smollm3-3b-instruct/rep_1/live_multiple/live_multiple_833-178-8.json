@@ -1,0 +1,1 @@
+{"id": "live_multiple_833-178-8", "actual_calls": [["Music_3_PlayMedia", {"track": "Captured", "artist": "Spice", "album": "Captured", "device": "Living room"}]], "wall_s": 0.43066499999986263, "prompt_tokens": 793, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

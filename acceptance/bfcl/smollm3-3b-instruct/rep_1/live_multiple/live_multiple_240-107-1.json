@@ -1,0 +1,1 @@
+{"id": "live_multiple_240-107-1", "actual_calls": [["search_web_tool", {"query": "weather in India", "num_results": 3}]], "wall_s": 2.2756966660017497, "prompt_tokens": 1125, "completion_tokens": 251, "error": "", "passed": true, "reason": "matched_gt_entry"}

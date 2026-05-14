@@ -1,0 +1,1 @@
+{"id": "live_multiple_628-160-8", "actual_calls": [["Payment_1_RequestPayment", {"receiver": "Diego", "amount": 108, "private_visibility": false}]], "wall_s": 0.34938454199800617, "prompt_tokens": 526, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

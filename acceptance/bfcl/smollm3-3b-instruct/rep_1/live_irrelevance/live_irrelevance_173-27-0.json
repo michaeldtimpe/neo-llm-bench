@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_173-27-0", "actual_calls": [["inventory_management", {"product_id": "product_123", "sizes": ["40"], "quantity": 1}]], "wall_s": 0.4258062090011663, "prompt_tokens": 697, "completion_tokens": 36, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: inventory_management"}

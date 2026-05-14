@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_554-169-7", "actual_calls": [["tts_tool", {"content": "I'm unable to book flights using the available tools. Please use a dedicated flight booking service for this purpose."}]], "wall_s": 2.6725732919985603, "prompt_tokens": 1134, "completion_tokens": 296, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: tts_tool"}

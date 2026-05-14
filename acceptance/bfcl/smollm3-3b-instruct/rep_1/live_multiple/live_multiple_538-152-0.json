@@ -1,0 +1,1 @@
+{"id": "live_multiple_538-152-0", "actual_calls": [["Homes_2_FindHomeByArea", {"area": "Sunnyvale, CA", "intent": "buy", "number_of_beds": 3, "number_of_baths": 2}]], "wall_s": 0.608493042000191, "prompt_tokens": 825, "completion_tokens": 55, "error": "", "passed": true, "reason": "matched_gt_entry"}

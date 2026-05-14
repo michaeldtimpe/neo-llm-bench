@@ -1,0 +1,1 @@
+{"id": "live_simple_181-106-0", "actual_calls": [["get_service_id", {"service_id": 2, "province_id": 1, "district_name": "Chatuchak", "rating": 4.5}]], "wall_s": 0.47509220900246873, "prompt_tokens": 481, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

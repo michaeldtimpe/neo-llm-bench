@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_837-327-1", "actual_calls": [["search_on_google", {"q": "oi"}]], "wall_s": 0.2054639580019284, "prompt_tokens": 1307, "completion_tokens": 22, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: search_on_google"}

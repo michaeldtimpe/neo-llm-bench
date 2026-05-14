@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_636-202-0", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "New York, NY", "date": "dontcare"}]], "wall_s": 0.434242749997793, "prompt_tokens": 565, "completion_tokens": 41, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Events_3_FindEvents"}

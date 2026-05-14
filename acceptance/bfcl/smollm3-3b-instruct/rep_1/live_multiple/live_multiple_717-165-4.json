@@ -1,0 +1,1 @@
+{"id": "live_multiple_717-165-4", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "Kuala Lumpur", "has_laundry_service": "True", "number_of_adults": 1}]], "wall_s": 0.44094037499962724, "prompt_tokens": 920, "completion_tokens": 46, "error": "", "passed": false, "reason": "call_Hotels_2_SearchHouse_did_not_match_any_gt"}

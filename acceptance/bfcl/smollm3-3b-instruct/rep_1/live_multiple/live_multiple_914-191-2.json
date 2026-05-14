@@ -1,0 +1,1 @@
+{"id": "live_multiple_914-191-2", "actual_calls": [["view_service_provider_profile", {"professional_id": 9974}]], "wall_s": 2.5154086660004396, "prompt_tokens": 1037, "completion_tokens": 280, "error": "", "passed": true, "reason": "matched_gt_entry"}

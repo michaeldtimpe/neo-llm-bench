@@ -1,0 +1,1 @@
+{"id": "live_multiple_409-140-5", "actual_calls": [["RideSharing_2_GetRide", {"destination": "123 White Street, San Jose", "number_of_seats": 1, "ride_type": "Pool"}]], "wall_s": 0.4639502089994494, "prompt_tokens": 815, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

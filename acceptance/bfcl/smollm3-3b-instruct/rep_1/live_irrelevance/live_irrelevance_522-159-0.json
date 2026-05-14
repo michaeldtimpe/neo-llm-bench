@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_522-159-0", "actual_calls": [["introduce_sara", {"greeting": "Hello", "punctuation": "."}]], "wall_s": 0.30748795899853576, "prompt_tokens": 323, "completion_tokens": 30, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: introduce_sara"}

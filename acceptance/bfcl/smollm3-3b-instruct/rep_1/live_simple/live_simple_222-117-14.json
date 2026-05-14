@@ -1,0 +1,1 @@
+{"id": "live_simple_222-117-14", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Thurop Van Orman", "cast": "Sterling K. Brown"}]], "wall_s": 0.3956616670002404, "prompt_tokens": 454, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

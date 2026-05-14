@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_216-34-5", "actual_calls": [["ProductSearch.execute", {"keywords": "black shirt", "in_stock": false}]], "wall_s": 0.28669729200191796, "prompt_tokens": 474, "completion_tokens": 29, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: ProductSearch.execute"}

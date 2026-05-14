@@ -1,0 +1,1 @@
+{"id": "live_multiple_414-141-3", "actual_calls": [["Movies_1_FindMovies", {"location": "Newark, NJ", "show_date": "2023-10-02"}]], "wall_s": 0.38933587499923306, "prompt_tokens": 912, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

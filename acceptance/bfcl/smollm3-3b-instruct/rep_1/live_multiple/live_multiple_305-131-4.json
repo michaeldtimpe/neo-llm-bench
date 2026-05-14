@@ -1,0 +1,1 @@
+{"id": "live_multiple_305-131-4", "actual_calls": [["Hotels_4_ReserveHotel", {"place_name": "Studio Sessions", "check_in_date": "2023-07-15", "stay_length": 5, "location": "Los Angeles, CA"}]], "wall_s": 0.6894112080008199, "prompt_tokens": 1634, "completion_tokens": 58, "error": "", "passed": false, "reason": "call_Hotels_4_ReserveHotel_did_not_match_any_gt"}

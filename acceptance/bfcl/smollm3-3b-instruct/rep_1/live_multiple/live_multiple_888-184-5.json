@@ -1,0 +1,1 @@
+{"id": "live_multiple_888-184-5", "actual_calls": [["Buses_3_FindBus", {"from_city": "Los Angeles, CA", "to_city": "San Diego, CA", "departure_date": "2023-10-01", "num_passengers": 1, "category": "direct"}]], "wall_s": 0.6198713330013561, "prompt_tokens": 1469, "completion_tokens": 65, "error": "", "passed": true, "reason": "matched_gt_entry"}

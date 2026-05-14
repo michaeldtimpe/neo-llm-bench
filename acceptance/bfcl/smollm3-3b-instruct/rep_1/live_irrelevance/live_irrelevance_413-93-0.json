@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_413-93-0", "actual_calls": [["requests.get", {"url": "https://api.geocoding.us/v3/geocode?address=Soda+Hall%2C+Berkeley%2C+CA&format=json&key=YOUR_API_KEY&output=geojson"}]], "wall_s": 0.6656223339996359, "prompt_tokens": 803, "completion_tokens": 62, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

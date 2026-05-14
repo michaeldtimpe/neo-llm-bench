@@ -1,0 +1,1 @@
+{"id": "live_multiple_289-129-4", "actual_calls": [["Services_4_FindProvider", {"city": "Novato, CA", "type": "Psychologist"}]], "wall_s": 0.3260832499981916, "prompt_tokens": 748, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

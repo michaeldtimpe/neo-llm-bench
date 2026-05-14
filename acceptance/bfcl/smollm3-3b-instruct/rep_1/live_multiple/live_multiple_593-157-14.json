@@ -1,0 +1,1 @@
+{"id": "live_multiple_593-157-14", "actual_calls": [["Media_3_FindMovies", {"genre": "Comedy", "starring": "Ellise Chappell"}]], "wall_s": 0.3511305839965644, "prompt_tokens": 594, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

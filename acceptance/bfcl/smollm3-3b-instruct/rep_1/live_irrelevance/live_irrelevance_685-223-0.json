@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_685-223-0", "actual_calls": [["Buses_3_FindBus", {"from_city": "New York, NY", "to_city": "Los Angeles, CA", "departure_date": "2023-04-25", "num_passengers": 2, "category": "direct"}]], "wall_s": 1.570880584000406, "prompt_tokens": 1158, "completion_tokens": 157, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Buses_3_FindBus"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_304-76-2", "actual_calls": [["requests.get", {"url": "https://maps.googleapis.com/maps/api/geocode/json", "params": {"lat": 37.4224764, "lon": -122.0842499, "format": "json"}}]], "wall_s": 0.551326708002307, "prompt_tokens": 874, "completion_tokens": 60, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

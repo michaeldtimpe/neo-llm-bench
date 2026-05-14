@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_155-17-2", "actual_calls": [["get_product_details", {"item_id": "product123", "size": "XL", "detailLevel": "SKU"}]], "wall_s": 0.3875602499974775, "prompt_tokens": 460, "completion_tokens": 37, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_product_details"}

@@ -1,0 +1,1 @@
+{"id": "live_parallel_6-3-0", "actual_calls": [["get_snow_report", {"location": "Paris, France", "unit": "celsius"}], ["get_snow_report", {"location": "Bordeaux, France", "unit": "celsius"}]], "wall_s": 0.5901773750010761, "prompt_tokens": 479, "completion_tokens": 61, "error": "", "passed": false, "reason": "call_get_snow_report_unmatched_in_gt"}

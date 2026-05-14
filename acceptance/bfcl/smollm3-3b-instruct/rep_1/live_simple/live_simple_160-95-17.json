@@ -1,0 +1,1 @@
+{"id": "live_simple_160-95-17", "actual_calls": [["cmd_controller.execute", {"command": "start microsoft.windows.camera:", "unit": "seconds"}]], "wall_s": 0.29733458400005475, "prompt_tokens": 359, "completion_tokens": 31, "error": "", "passed": false, "reason": "call_cmd_controller.execute_did_not_match_any_gt"}

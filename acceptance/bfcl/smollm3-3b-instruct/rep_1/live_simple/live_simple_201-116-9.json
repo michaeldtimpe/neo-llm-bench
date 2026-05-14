@@ -1,0 +1,1 @@
+{"id": "live_simple_201-116-9", "actual_calls": [["Weather_1_GetWeather", {"city": "Campbell", "date": "2023-03-04"}]], "wall_s": 0.34005995800180244, "prompt_tokens": 360, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_1017-246-0", "actual_calls": [["events_api.EventsApi.get_event", {"eventId": "efJG9"}]], "wall_s": 0.3047578749974491, "prompt_tokens": 417, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

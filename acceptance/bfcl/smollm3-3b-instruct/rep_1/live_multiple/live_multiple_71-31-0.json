@@ -1,0 +1,1 @@
+{"id": "live_multiple_71-31-0", "actual_calls": [["add_postgres_server", {"nickname": "EnterpriseDB", "host": "db.company.com", "database": "sales_data", "username": "dbadmin", "password": "secure*pwd123"}]], "wall_s": 0.5583698339978582, "prompt_tokens": 601, "completion_tokens": 55, "error": "", "passed": true, "reason": "matched_gt_entry"}

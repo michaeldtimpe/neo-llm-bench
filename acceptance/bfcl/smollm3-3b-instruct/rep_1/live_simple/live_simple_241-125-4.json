@@ -1,0 +1,1 @@
+{"id": "live_simple_241-125-4", "actual_calls": [["play_spotify_song", {"query": "Johnny Johnny Yes papa", "play": true}]], "wall_s": 0.30653691699990304, "prompt_tokens": 375, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

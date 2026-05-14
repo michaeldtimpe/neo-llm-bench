@@ -1,0 +1,1 @@
+{"id": "live_simple_17-3-13", "actual_calls": [["get_current_weather", {"location": "Boston, MA", "unit": "fahrenheit"}]], "wall_s": 0.30940250000276137, "prompt_tokens": 365, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

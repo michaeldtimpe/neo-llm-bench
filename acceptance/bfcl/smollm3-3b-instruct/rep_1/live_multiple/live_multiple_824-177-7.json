@@ -1,0 +1,1 @@
+{"id": "live_multiple_824-177-7", "actual_calls": [["Events_3_BuyEventTickets", {"event_name": "Read The Tempest", "number_of_tickets": 3, "date": "2023-03-02", "city": "Princeton, NJ"}]], "wall_s": 0.551307582998561, "prompt_tokens": 1035, "completion_tokens": 58, "error": "", "passed": true, "reason": "matched_gt_entry"}

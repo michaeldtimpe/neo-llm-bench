@@ -1,0 +1,1 @@
+{"id": "live_simple_161-96-0", "actual_calls": [["get_items", {"items": ["Superman logo", "Iron Man logo", "Hulk logo", "Batman logo"]}]], "wall_s": 0.39057741700162296, "prompt_tokens": 458, "completion_tokens": 38, "error": "", "passed": false, "reason": "call_get_items_did_not_match_any_gt"}

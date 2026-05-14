@@ -1,0 +1,1 @@
+{"id": "live_multiple_159-62-0", "actual_calls": [["get_detail_adriel_projects", {"project_name": "e-commerce platform overhaul"}]], "wall_s": 0.3067755410011159, "prompt_tokens": 477, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

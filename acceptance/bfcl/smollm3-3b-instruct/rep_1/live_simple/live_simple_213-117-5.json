@@ -1,0 +1,1 @@
+{"id": "live_simple_213-117-5", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Tim Burton", "genre": "Offbeat"}]], "wall_s": 0.32324549999975716, "prompt_tokens": 435, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

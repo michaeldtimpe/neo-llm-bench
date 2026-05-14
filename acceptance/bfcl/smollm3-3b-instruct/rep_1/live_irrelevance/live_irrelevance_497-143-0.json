@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_497-143-0", "actual_calls": [["concat_strings", {"strings": ["string1", "string2"], "separator": ""}]], "wall_s": 0.3145110410005145, "prompt_tokens": 317, "completion_tokens": 31, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: concat_strings"}

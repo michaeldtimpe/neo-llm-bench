@@ -1,0 +1,1 @@
+{"id": "live_multiple_322-132-12", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Peter Jackson", "genre": "Fantasy", "cast": "Dominic Monaghan"}]], "wall_s": 0.4132420829992043, "prompt_tokens": 990, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

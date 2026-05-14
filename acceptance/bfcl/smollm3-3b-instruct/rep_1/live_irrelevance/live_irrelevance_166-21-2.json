@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_166-21-2", "actual_calls": [["multiply", {"a": 10, "b": 4}], ["multiply", {"a": 2, "b": 2}], ["multiply", {"a": 2, "b": 4}]], "wall_s": 3.5580357079998066, "prompt_tokens": 535, "completion_tokens": 403, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: multiply"}

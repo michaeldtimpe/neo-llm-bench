@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_301-75-0", "actual_calls": [["search_web", {"query": "United States is at North America", "results_limit": 10, "language": "en", "safe_search": true}]], "wall_s": 0.43856658300137497, "prompt_tokens": 370, "completion_tokens": 45, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: search_web"}

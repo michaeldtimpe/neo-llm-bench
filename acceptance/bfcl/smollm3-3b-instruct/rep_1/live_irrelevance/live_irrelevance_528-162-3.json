@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_528-162-3", "actual_calls": [["introduction.greet", {"name": "Daniel", "relationship": "Friend", "related_person": "you", "include_relationship": true}]], "wall_s": 0.392981458997383, "prompt_tokens": 371, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: introduction.greet"}

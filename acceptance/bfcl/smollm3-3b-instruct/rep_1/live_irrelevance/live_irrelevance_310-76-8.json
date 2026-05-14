@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_310-76-8", "actual_calls": [["requests.get", {"url": "https://api.openweathermap.org/data/2.5/forecast?lat=35.68&lon=-121.34&units=imperial&appid=YOUR_API_KEY", "params": {"format": "json"}}]], "wall_s": 0.6154957090002426, "prompt_tokens": 907, "completion_tokens": 66, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

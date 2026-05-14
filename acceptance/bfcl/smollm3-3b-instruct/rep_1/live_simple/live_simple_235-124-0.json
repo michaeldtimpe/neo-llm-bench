@@ -1,0 +1,1 @@
+{"id": "live_simple_235-124-0", "actual_calls": [["play_spotify_song", {"query": "track:Friends artist:Marshmello", "shuffle": false, "volume": 50}]], "wall_s": 0.4049212919999263, "prompt_tokens": 392, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

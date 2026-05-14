@@ -535,6 +535,111 @@ Two options for the next session, decision is yours:
   (gemma2, llama32-3b). The triangle stands; the gemma2/llama32-3b
   results close those candidates definitively.
 
+### Phase H — smollm3 full-spectrum follow-up (rep_1 live + rep_4 + rep_5 + HE rep_2/rep_3)
+
+The Branch D headline-pass section above flagged smollm3 as the only
+candidate worth expanding. The expansion ran the four missing data
+slices and the prediction held: **smollm3 collapses on the live BFCL
+distribution**, the same pattern that hit qwen25-coder. The triangle
+is **not redrawn**.
+
+#### BFCL apples-to-apples (n=1106 sliced to match existing finalists)
+
+| model | overall | live_simple | live_multiple | live_irrelevance | parallel (curated) |
+|---|---|---|---|---|---|
+| qwen25-1.5b-instruct | **853/1106 (77.1%)** [74.6, 79.5] | 82/100 | 71/100 | 78/100 | 118/150 |
+| smollm3-3b-instruct | 805/1106 (72.8%) [70.1, 75.3] | 57/100 | 57/100 | 58/100 | **125/150** |
+| granite33-2b-instruct | 768/1106 (69.4%) | 68/100 | 48/100 | **97/100** | 93/150 |
+| qwen25-coder-1.5b-instruct | 649/1106 (58.7%) | 70/100 | 62/100 | 75/100 | 32/150 |
+
+smollm3 vs qwen25-1.5b CIs **just touch** (smollm3 upper 75.3 / qwen25-1.5b
+lower 74.6 = 0.7pp overlap). The headline curated 80.1% mean dropped
+4.3pp once live cats were added. Per-cat collapse on the live
+distribution:
+
+| cat | smollm3 | qwen25-1.5b | Δ | CI overlap? |
+|---|---|---|---|---|
+| live_simple | 57.0% | 82.0% | **-25.0pp** | **NO** |
+| live_multiple | 57.0% | 71.0% | -14.0pp | YES |
+| live_parallel (n=16) | 31.2% | 62.5% | -31.3pp | YES (small N) |
+| live_parallel_multiple (n=24) | 45.8% | 50.0% | -4.2pp | YES |
+| live_irrelevance | 58.0% | 78.0% | **-20.0pp** | **NO** |
+| live_relevance (n=16) | 100% | 93.8% | +6.2pp | YES |
+
+Two CI-distinct losses (live_simple, live_irrelevance). The curated
+parallel-cat advantage holds (+7 / +6 / +5 on parallel /
+parallel_multiple / simple_python) — the only durable Branch D
+improvement.
+
+#### HumanEval pass@1 / pass-any / pass-all — smollm3 vs qwen25-coder
+
+| metric | smollm3 | qwen25-coder | Δ | CI overlap? |
+|---|---|---|---|---|
+| pass@1 (rep_0, n=164) | 64.0% [56.4, 71.0] | 69.5% [62.1, 76.0] | -5.5pp | YES |
+| pass-any (rep_0∪2∪3) | 75.0% [67.9, 81.0] | 78.0% [71.1, 83.7] | -3.0pp | YES |
+| pass-all (rep_0∩2∩3) | 54.3% [46.6, 61.7] | 56.1% [48.4, 63.5] | -1.8pp | YES |
+
+Statistically tied across all three coding metrics. qwen25-coder's
+mean is consistently above smollm3 by 2–6pp but never CI-distinct on
+any metric. **MBPP**: smollm3 61.1% vs qwen25-coder 64.2%, also CI
+overlap.
+
+#### Multi-turn (rep_5) — floor everywhere
+
+| model | mt_base | mt_long_context | mt_miss_func | mt_miss_param |
+|---|---|---|---|---|
+| qwen25-1.5b | 0/100 | 0/100 | 0/100 | 0/100 |
+| qwen25-coder | 0/100 | 0/100 | 1/100 | 1/100 |
+| granite33-2b | 1/100 | 1/100 | 0/100 | 2/100 |
+| smollm3-3b | 0/100 | 0/100 | 0/100 | 0/100 |
+
+smollm3 doesn't separate from the floor. No tiebreaker.
+
+#### Agent mode (rep_4) — non-functional for smollm3
+
+The agent loop calls `backend.chat(tools=[...])` with structured tool
+definitions. smollm3 in structured mode emits Python code blocks
+(`def calculate_triangle_area(...): return ...`) rather than tool
+calls, so the agent loop sees no parseable calls on most categories.
+The result reads as 240/1240 (19%) but is artifactual — the 240/240
+on irrelevance is "100%" only because the model emits no calls at
+all (correct by accident on a no-call category). Smollm3 is
+**effectively unusable in raw agent mode** at this size without an
+adapter rewrite that injects tool spec into the system prompt for the
+agent path too. Existing finalists' agent advantages (qwen25-coder's
+parallel recovery rep_4 → rep_4) remain unchallenged.
+
+#### Triangle status after the full smollm3 spectrum
+
+| corner | prior | smollm3 | verdict |
+|---|---|---|---|
+| **Tool-use generalist (BFCL)** | qwen25-1.5b 77.1% | 72.8% (CI overlaps barely) | **qwen25-1.5b holds**; live cats collapse confirmed |
+| **Synthesis coding (HumanEval)** | qwen25-coder 69.5% / 78% pass-any | 64.0% / 75.0% pass-any (CI overlap on all 3 metrics) | **qwen25-coder holds**; smollm3 is the closest challenger ever |
+| **Decline discipline (live_irrelevance)** | granite33 97% | 58% (CI-distinct, -39pp) | **granite33 unchallenged** |
+
+**Triangle stands.** smollm3 is not a clean dethroner on any corner
+and is decisively beaten on decline-discipline. The expansion run
+**confirms** the headline-pass caveat: smollm3 ran best on curated
+distributions and dropped 14–25pp on the live ones.
+
+#### Smollm3's actual niche
+
+Smollm3 is the only model in the project's data that's competitive on
+**two corners simultaneously** (within CIs of qwen25-1.5b on BFCL
+overall *and* qwen25-coder on every coding metric). The existing
+finalists are each axis-specialists; smollm3 is the only generalist
+near the frontier. For deployments that want one model that does
+*both* tool-use and coding adequately — instead of two models for two
+axes — smollm3 is the cleanest pick. For axis-specific deployments,
+the round-2 champions still win.
+
+The mechanical durable finding from Branch D: smollm3 doesn't suffer
+the parallel-call collapse that crushes qwen25-coder. On curated
+parallel/parallel_multiple smollm3 is +93/+74 problems vs qwen25-coder
+and +7/+6 vs qwen25-1.5b. If your deployment needs reliable parallel
+emission, smollm3 is the strongest of the four-model field at this
+size.
+
 ## Stochastic notes (vs the prior edition's published numbers)
 
 - All non-deterministic runs (BFCL with `seed: 42` but model sampling

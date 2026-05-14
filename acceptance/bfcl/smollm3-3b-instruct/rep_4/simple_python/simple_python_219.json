@@ -1,0 +1,1 @@
+{"id": "simple_python_219", "actual_calls": [], "wall_s": 0.5961056670003018, "prompt_tokens": 158, "completion_tokens": 65, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": false, "reason": "no_tool_call_emitted"}

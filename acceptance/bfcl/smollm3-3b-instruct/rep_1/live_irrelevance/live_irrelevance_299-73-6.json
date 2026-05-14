@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_299-73-6", "actual_calls": [["get_adriel_profile", {"user_id": "ed"}]], "wall_s": 0.21244841699808603, "prompt_tokens": 919, "completion_tokens": 24, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_adriel_profile"}

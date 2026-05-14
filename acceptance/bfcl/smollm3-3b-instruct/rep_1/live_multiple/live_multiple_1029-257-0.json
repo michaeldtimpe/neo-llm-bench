@@ -1,0 +1,1 @@
+{"id": "live_multiple_1029-257-0", "actual_calls": [["InfrastructureResourcesApi.software_versions", {"time": "2023-04-01 12:00:00", "version": "5.5", "origin": "", "type": "", "name": ""}]], "wall_s": 4.265392625002278, "prompt_tokens": 718, "completion_tokens": 475, "error": "", "passed": true, "reason": "matched_gt_entry"}

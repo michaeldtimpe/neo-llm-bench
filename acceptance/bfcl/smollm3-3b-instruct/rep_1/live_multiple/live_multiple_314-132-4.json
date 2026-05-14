@@ -1,0 +1,1 @@
+{"id": "live_multiple_314-132-4", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Jim Henson", "cast": "Jennifer Connelly"}]], "wall_s": 0.3464689159991394, "prompt_tokens": 994, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

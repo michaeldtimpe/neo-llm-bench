@@ -1,0 +1,1 @@
+{"id": "live_parallel_multiple_2-2-0", "actual_calls": [["ControlAppliance.execute", {"command": "\uc2e4\uc6a9\ub3c4, \uc5d0\uc5b4\ucee8, \ub0c9\ubc29 \uc2e4\ud589"}]], "wall_s": 0.8169030420031049, "prompt_tokens": 1336, "completion_tokens": 66, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

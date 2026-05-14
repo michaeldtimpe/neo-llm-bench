@@ -1,0 +1,1 @@
+{"id": "live_simple_245-127-0", "actual_calls": [["book_flight", {"departure_location": "JFK", "departure_date": "16/03/2024", "departure_time": "14:00"}]], "wall_s": 0.4410435000027064, "prompt_tokens": 413, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

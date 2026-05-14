@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_210-33-0", "actual_calls": [["inventory.restock_check", {"item_ids": [1, 2], "threshold": 100, "include_discontinued": false}]], "wall_s": 0.39454812499752734, "prompt_tokens": 370, "completion_tokens": 40, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: inventory.restock_check"}

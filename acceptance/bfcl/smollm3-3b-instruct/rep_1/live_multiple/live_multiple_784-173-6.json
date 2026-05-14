@@ -1,0 +1,1 @@
+{"id": "live_multiple_784-173-6", "actual_calls": [["Services_4_FindProvider", {"city": "Berkeley, CA", "type": "Psychologist"}]], "wall_s": 0.3246524159985711, "prompt_tokens": 650, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}
