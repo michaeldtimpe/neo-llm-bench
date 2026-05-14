@@ -1,0 +1,1 @@
+{"id": "live_multiple_124-47-0", "actual_calls": [["duck_duck_go", {"query": "LangFuse"}]], "wall_s": 0.3956639589887345, "prompt_tokens": 1164, "completion_tokens": 23, "error": "", "raw_text": "[{\"arguments\": {\"query\": \"LangFuse\"}, \"name\": \"duck_duck_go\"}]", "passed": false, "reason": "call_duck_duck_go_did_not_match_any_gt"}

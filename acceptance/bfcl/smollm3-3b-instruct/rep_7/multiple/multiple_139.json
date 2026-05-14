@@ -1,0 +1,1 @@
+{"id": "multiple_139", "actual_calls": [["lawsuit_details.find", {"company_name": "Apple Inc.", "year": 2010}]], "wall_s": 0.8563214589994459, "prompt_tokens": 697, "completion_tokens": 32, "error": "", "passed": false, "reason": "call_lawsuit_details.find_did_not_match_any_gt"}

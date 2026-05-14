@@ -1,0 +1,1 @@
+{"id": "live_multiple_725-166-0", "actual_calls": [["Services_1_FindProvider", {"city": "Lafayette, LA", "is_unisex": false}]], "wall_s": 0.23633062500448432, "prompt_tokens": 654, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

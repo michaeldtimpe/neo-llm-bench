@@ -1,0 +1,1 @@
+{"id": "live_multiple_514-150-2", "actual_calls": [["Movies_1_FindMovies", {"location": "San Jose, CA", "theater_name": "Century 20", "genre": "dontcare", "show_type": "regular"}]], "wall_s": 0.32107195899880026, "prompt_tokens": 1664, "completion_tokens": 51, "error": "", "passed": true, "reason": "matched_gt_entry"}

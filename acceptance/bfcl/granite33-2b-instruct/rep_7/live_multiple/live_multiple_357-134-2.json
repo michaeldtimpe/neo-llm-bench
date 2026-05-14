@@ -1,0 +1,1 @@
+{"id": "live_multiple_357-134-2", "actual_calls": [["Movies_3_FindMovies", {"cast": "Ving Rhames"}]], "wall_s": 0.3474424169980921, "prompt_tokens": 1109, "completion_tokens": 26, "error": "", "raw_text": "[{\"arguments\": {\"cast\": \"Ving Rhames\"}, \"name\": \"Movies_3_FindMovies\"}]", "passed": true, "reason": "matched_gt_entry"}

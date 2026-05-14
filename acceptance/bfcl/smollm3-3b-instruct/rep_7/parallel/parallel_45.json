@@ -1,0 +1,1 @@
+{"id": "parallel_45", "actual_calls": [["musicCharts.getMostPlayed", {"genre": "Pop", "region": "Australia"}], ["musicCharts.getMostPlayed", {"genre": "Rock", "region": "Australia"}]], "wall_s": 1.2887342920002993, "prompt_tokens": 356, "completion_tokens": 55, "error": "", "passed": true, "reason": "all_calls_matched"}

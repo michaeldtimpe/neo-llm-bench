@@ -1,0 +1,1 @@
+{"id": "live_multiple_705-164-21", "actual_calls": [["Movies_3_FindMovies", {"cast": "Nikita Mehta"}]], "wall_s": 0.21968558299704455, "prompt_tokens": 897, "completion_tokens": 36, "error": "", "raw_text": "```json\n{\n  \"name\": \"Movies_3_FindMovies\",\n  \"arguments\": {\n    \"cast\": \"Nikita Mehta\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

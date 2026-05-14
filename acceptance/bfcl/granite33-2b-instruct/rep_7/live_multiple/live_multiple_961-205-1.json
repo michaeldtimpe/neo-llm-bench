@@ -1,0 +1,1 @@
+{"id": "live_multiple_961-205-1", "actual_calls": [], "wall_s": 0.3183315420028521, "prompt_tokens": 561, "completion_tokens": 37, "error": "", "raw_text": "[{\"arguments\": {\"query\": \"where is beijing\", \"results_limit\": 5, \"language\": \"en\", \"safe_search\": true}}]", "passed": false, "reason": "no_tool_call_emitted"}

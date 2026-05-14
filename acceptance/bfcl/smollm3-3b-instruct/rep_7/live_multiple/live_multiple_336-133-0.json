@@ -1,0 +1,1 @@
+{"id": "live_multiple_336-133-0", "actual_calls": [["Music_3_PlayMedia", {"track": "Shape of You", "artist": "Ed Sheeran", "device": "Kitchen"}]], "wall_s": 0.4870927499978279, "prompt_tokens": 842, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_576-156-2", "actual_calls": [["Services_1_FindProvider", {"city": "Berkeley, CA", "is_unisex": true}]], "wall_s": 0.20411412500834558, "prompt_tokens": 1382, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

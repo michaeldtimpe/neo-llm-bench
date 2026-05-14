@@ -1,0 +1,1 @@
+{"id": "live_multiple_573-155-13", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "Seattle, WA", "date": "2023-03-11"}]], "wall_s": 0.2845673749980051, "prompt_tokens": 1734, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

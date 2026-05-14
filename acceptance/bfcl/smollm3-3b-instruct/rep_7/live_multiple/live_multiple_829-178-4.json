@@ -1,0 +1,1 @@
+{"id": "live_multiple_829-178-4", "actual_calls": [["Music_3_PlayMedia", {"track": "Bohemian Rhapsody", "device": "Kitchen"}]], "wall_s": 0.3383940829990024, "prompt_tokens": 789, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

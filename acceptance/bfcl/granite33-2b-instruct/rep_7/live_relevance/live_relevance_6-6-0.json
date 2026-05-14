@@ -1,0 +1,1 @@
+{"id": "live_relevance_6-6-0", "actual_calls": [], "wall_s": 0.5195657089934684, "prompt_tokens": 1497, "completion_tokens": 33, "error": "", "raw_text": "I understand your concern. To track your parcel, I would need the tracking number. Could you please provide it, and I'll help you find the status?", "passed": false, "reason": "no_tool_call_when_relevant"}

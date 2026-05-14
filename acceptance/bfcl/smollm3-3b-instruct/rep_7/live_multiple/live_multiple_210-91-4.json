@@ -1,0 +1,1 @@
+{"id": "live_multiple_210-91-4", "actual_calls": [["detail_experience_and_education", {"experience_or_education_type": "Freelance at Pingfest", "person_id": "adriel"}]], "wall_s": 10.641127250000864, "prompt_tokens": 1167, "completion_tokens": 1190, "error": "", "passed": true, "reason": "matched_gt_entry"}

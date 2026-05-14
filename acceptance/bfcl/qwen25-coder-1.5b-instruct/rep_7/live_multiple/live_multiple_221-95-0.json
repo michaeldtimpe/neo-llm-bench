@@ -1,0 +1,1 @@
+{"id": "live_multiple_221-95-0", "actual_calls": [["segment", {"img_path": "/yoha.jpg"}]], "wall_s": 0.2034292910102522, "prompt_tokens": 472, "completion_tokens": 31, "error": "", "raw_text": "```json\n{\n  \"name\": \"segment\",\n  \"arguments\": {\n    \"img_path\": \"/yoha.jpg\"\n  }\n}\n```", "passed": false, "reason": "call_segment_did_not_match_any_gt"}

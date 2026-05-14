@@ -1,0 +1,1 @@
+{"id": "live_simple_211-117-3", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "dontcare", "genre": "Comedy", "cast": "James Corden"}]], "wall_s": 0.2731397079915041, "prompt_tokens": 465, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

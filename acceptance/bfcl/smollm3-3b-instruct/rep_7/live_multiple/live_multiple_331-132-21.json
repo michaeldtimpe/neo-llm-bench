@@ -1,0 +1,1 @@
+{"id": "live_multiple_331-132-21", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Josephine Decker", "genre": "Thriller", "cast": "Sunita Mani"}]], "wall_s": 0.4345612090000941, "prompt_tokens": 990, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

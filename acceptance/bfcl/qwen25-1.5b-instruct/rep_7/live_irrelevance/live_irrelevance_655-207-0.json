@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_655-207-0", "actual_calls": [["Hotels_4_SearchHotel", {"location": "New York, NY", "star_rating": "3", "smoking_allowed": "dontcare", "number_of_rooms": "dontcare"}]], "wall_s": 0.3072648749948712, "prompt_tokens": 742, "completion_tokens": 52, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Hotels_4_SearchHotel"}

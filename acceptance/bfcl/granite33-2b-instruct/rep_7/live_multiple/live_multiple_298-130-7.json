@@ -1,0 +1,1 @@
+{"id": "live_multiple_298-130-7", "actual_calls": [], "wall_s": 0.3194376250030473, "prompt_tokens": 766, "completion_tokens": 37, "error": "", "raw_text": "[{\"arguments\": {\"where_to\": \"Chicago, IL\", \"has_laundry_service\": \"True\", \"rating\": 3.9}}]", "passed": false, "reason": "no_tool_call_emitted"}

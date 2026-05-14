@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_638-202-2", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "LAX, CA", "date": "03/07/2023"}]], "wall_s": 0.274679958994966, "prompt_tokens": 608, "completion_tokens": 48, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Events_3_FindEvents"}

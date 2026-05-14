@@ -1,0 +1,1 @@
+{"id": "live_simple_153-95-10", "actual_calls": [["cmd_controller.execute", {"command": "del \"%userprofile%\\Desktop\\putty.lnk\"", "unit": "N/A"}]], "wall_s": 0.37556854099966586, "prompt_tokens": 371, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

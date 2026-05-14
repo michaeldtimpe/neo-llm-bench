@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_26-2-14", "actual_calls": [], "wall_s": 0.29973904199141543, "prompt_tokens": 366, "completion_tokens": 53, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_virustotal_report\",\n  \"arguments\": {\n    \"ip\": \"10.10.0.0\",\n    \"api_key\": \"RST495\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

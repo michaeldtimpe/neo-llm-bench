@@ -1,0 +1,1 @@
+{"id": "live_multiple_773-171-6", "actual_calls": [], "wall_s": 0.2597395420016255, "prompt_tokens": 1590, "completion_tokens": 28, "error": "", "raw_text": "Sure, I can help with that. Do you have a preferred salon in mind, or should I find one for you?", "passed": false, "reason": "no_tool_call_emitted"}

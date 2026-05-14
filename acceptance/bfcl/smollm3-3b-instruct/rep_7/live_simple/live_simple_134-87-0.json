@@ -1,0 +1,1 @@
+{"id": "live_simple_134-87-0", "actual_calls": [["requests.get", {"url": "https://api.insights.com/groups", "params": {"limit": 20, "sort": "desc"}}]], "wall_s": 0.4490626250008063, "prompt_tokens": 429, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

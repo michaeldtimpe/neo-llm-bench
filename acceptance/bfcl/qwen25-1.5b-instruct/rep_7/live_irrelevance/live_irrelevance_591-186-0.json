@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_591-186-0", "actual_calls": [], "wall_s": 0.1624969589902321, "prompt_tokens": 664, "completion_tokens": 27, "error": "", "raw_text": "Sure, I can help with that. Could you please specify the location, number of adults, and check-in/check-out dates?", "passed": true, "reason": "correctly_no_tool_call"}

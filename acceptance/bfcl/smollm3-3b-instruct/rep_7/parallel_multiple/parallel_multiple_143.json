@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_143", "actual_calls": [["math.factorial", {"number": 7}], ["calculate_genotype_frequency", {"allele_frequency": 0.6, "genotype": "AA"}]], "wall_s": 1.2112210409995896, "prompt_tokens": 575, "completion_tokens": 50, "error": "", "passed": false, "reason": "emitted_2_calls_expected_3"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_630-160-10", "actual_calls": [["Payment_1_RequestPayment", {"receiver": "Amelia", "amount": 15500, "private_visibility": false}]], "wall_s": 0.2332117079931777, "prompt_tokens": 579, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

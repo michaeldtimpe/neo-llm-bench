@@ -1,0 +1,1 @@
+{"id": "parallel_59", "actual_calls": [["get_conversion_cost", {"amount": 15000, "from_currency": "Euro", "to_currency": "dollars"}], ["get_conversion_cost", {"amount": 200, "from_currency": "pounds", "to_currency": "dollars"}]], "wall_s": 1.5999967079997077, "prompt_tokens": 342, "completion_tokens": 71, "error": "", "passed": true, "reason": "all_calls_matched"}

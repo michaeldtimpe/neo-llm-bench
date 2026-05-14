@@ -1,0 +1,1 @@
+{"id": "live_multiple_644-161-12", "actual_calls": [["Music_3_LookupMusic", {"genre": "Pop"}], ["Music_3_PlayMedia", {"track": "any", "artist": "dontcare", "device": "Living room", "album": "dontcare"}]], "wall_s": 0.40402691600320395, "prompt_tokens": 1409, "completion_tokens": 69, "error": "", "passed": false, "reason": "emitted_2_calls_expected_1"}

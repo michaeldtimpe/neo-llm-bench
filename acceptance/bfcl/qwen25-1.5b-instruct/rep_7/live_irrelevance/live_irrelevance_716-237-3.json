@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_716-237-3", "actual_calls": [], "wall_s": 0.0744154999993043, "prompt_tokens": 1240, "completion_tokens": 12, "error": "", "raw_text": "None of the provided functions are related to finding promotions.", "passed": true, "reason": "correctly_no_tool_call"}

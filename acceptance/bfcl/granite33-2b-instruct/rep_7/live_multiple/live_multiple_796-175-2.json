@@ -1,0 +1,1 @@
+{"id": "live_multiple_796-175-2", "actual_calls": [["Weather_1_GetWeather", {"city": "Sunol"}]], "wall_s": 0.2298265830031596, "prompt_tokens": 1879, "completion_tokens": 24, "error": "", "raw_text": "[{\"name\": \"Weather_1_GetWeather\", \"arguments\": {\"city\": \"Sunol\"}}]", "passed": false, "reason": "call_Weather_1_GetWeather_did_not_match_any_gt"}

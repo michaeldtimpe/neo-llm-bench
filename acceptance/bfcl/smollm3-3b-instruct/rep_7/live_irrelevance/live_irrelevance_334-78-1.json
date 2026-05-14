@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_334-78-1", "actual_calls": [["get_trip", {"destination": "Paris, France", "include_cost": true, "travel_date": null, "number_of_travelers": 1}]], "wall_s": 0.4082419160004065, "prompt_tokens": 452, "completion_tokens": 44, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_trip"}

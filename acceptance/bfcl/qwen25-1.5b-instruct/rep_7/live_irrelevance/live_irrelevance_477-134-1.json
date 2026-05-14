@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_477-134-1", "actual_calls": [["search_google", {"query": "vaccine manufactures", "num_results": 5, "language": "en", "filter": true, "date_range": "01/01/2020-12/31/2020"}]], "wall_s": 0.3817206670064479, "prompt_tokens": 424, "completion_tokens": 67, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: search_google"}

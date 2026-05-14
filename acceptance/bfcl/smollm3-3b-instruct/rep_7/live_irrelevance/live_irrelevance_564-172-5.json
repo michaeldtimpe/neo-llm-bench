@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_564-172-5", "actual_calls": [["cmd_controller.execute", {"command": "calc"}]], "wall_s": 0.20771379199868534, "prompt_tokens": 336, "completion_tokens": 23, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: cmd_controller.execute"}

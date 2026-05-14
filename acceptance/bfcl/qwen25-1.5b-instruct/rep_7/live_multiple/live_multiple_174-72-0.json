@@ -1,0 +1,1 @@
+{"id": "live_multiple_174-72-0", "actual_calls": [["get_adriel_detail_experience_and_education", {"experience_or_education_type": "Internship at Sebelas Maret University (UNS)"}]], "wall_s": 0.32394550000026356, "prompt_tokens": 1094, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

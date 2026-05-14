@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_422-100-0", "actual_calls": [["record", {"outofscope": ["what is the weather like"]}]], "wall_s": 0.26574658398749307, "prompt_tokens": 611, "completion_tokens": 24, "error": "", "raw_text": "[{\"arguments\": {\"outofscope\": [\"what is the weather like\"]}, \"name\": \"record\"}]", "passed": false, "reason": "called_tool_when_irrelevant: record"}

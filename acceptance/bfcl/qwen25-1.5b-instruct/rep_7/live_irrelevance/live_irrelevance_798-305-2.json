@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_798-305-2", "actual_calls": [], "wall_s": 0.12547962499957066, "prompt_tokens": 1098, "completion_tokens": 19, "error": "", "raw_text": "The command 'Welcome' was not found. Please provide a valid command or function call.", "passed": true, "reason": "correctly_no_tool_call"}

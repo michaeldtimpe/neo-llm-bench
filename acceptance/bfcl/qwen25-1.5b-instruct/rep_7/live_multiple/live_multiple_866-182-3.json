@@ -1,0 +1,1 @@
+{"id": "live_multiple_866-182-3", "actual_calls": [["Movies_1_GetTimesForMovie", {"movie_name": "Dramatic Story", "location": "Livermore, CA", "show_date": "2023-10-05", "theater_name": "Vine Cinema"}]], "wall_s": 0.37761370799853466, "prompt_tokens": 1746, "completion_tokens": 64, "error": "", "passed": false, "reason": "call_Movies_1_GetTimesForMovie_did_not_match_any_gt"}

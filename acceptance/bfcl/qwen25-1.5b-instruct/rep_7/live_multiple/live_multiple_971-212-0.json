@@ -1,0 +1,1 @@
+{"id": "live_multiple_971-212-0", "actual_calls": [["get_service_providers", {"province_id": 1, "avg_rating": 4.0, "is_cleaning_condo": false, "is_cleaning_home": true, "is_cleaning_office": false}]], "wall_s": 0.4368131669907598, "prompt_tokens": 1230, "completion_tokens": 57, "error": "", "passed": true, "reason": "matched_gt_entry"}

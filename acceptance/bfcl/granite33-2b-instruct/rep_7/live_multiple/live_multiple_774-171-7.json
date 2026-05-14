@@ -1,0 +1,1 @@
+{"id": "live_multiple_774-171-7", "actual_calls": [["Services_1_FindProvider", {"city": "Morgan Hill", "is_unisex": true}]], "wall_s": 0.313848167003016, "prompt_tokens": 1588, "completion_tokens": 35, "error": "", "raw_text": "[{\"name\": \"Services_1_FindProvider\", \"arguments\": {\"city\": \"Morgan Hill\", \"is_unisex\": true}}]", "passed": true, "reason": "matched_gt_entry"}

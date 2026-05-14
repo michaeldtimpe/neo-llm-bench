@@ -1,0 +1,1 @@
+{"id": "live_simple_140-93-0", "actual_calls": [["greet_partner", {"user_name": "Emily", "partner_name": "Jeff", "relationship": "husband"}]], "wall_s": 0.22305174999928568, "prompt_tokens": 351, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

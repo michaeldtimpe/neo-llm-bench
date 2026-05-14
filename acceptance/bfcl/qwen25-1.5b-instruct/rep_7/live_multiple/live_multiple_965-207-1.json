@@ -1,0 +1,1 @@
+{"id": "live_multiple_965-207-1", "actual_calls": [["transfer_to_human_agent", {"statement": "I've submitted a complaint and would like to discuss its status with a human agent."}]], "wall_s": 0.23592674999963492, "prompt_tokens": 322, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

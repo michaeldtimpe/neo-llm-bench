@@ -1,0 +1,1 @@
+{"id": "live_simple_190-115-0", "actual_calls": [["raptor.mpn.specs", {"identifier": "ACHD", "search_type": "MPN", "include_images": true}]], "wall_s": 0.2396624169923598, "prompt_tokens": 384, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

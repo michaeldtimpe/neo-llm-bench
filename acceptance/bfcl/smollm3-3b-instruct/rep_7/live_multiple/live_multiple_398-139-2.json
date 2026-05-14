@@ -1,0 +1,1 @@
+{"id": "live_multiple_398-139-2", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "San Diego, CA", "date": "2023-05-02"}]], "wall_s": 0.4193194590006897, "prompt_tokens": 772, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

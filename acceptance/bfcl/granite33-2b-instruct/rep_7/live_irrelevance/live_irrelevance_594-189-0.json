@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_594-189-0", "actual_calls": [], "wall_s": 0.3194714999990538, "prompt_tokens": 556, "completion_tokens": 31, "error": "", "raw_text": "I understand you're feeling this way. Let's find a suitable therapist for you. Could you please specify the city where you're located?", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_188-113-0", "actual_calls": [["getDataForProfessional", {"service_id": 2, "province_id": 2, "district_name": "Sankampang", "sub_district_name": "Ton Pao", "rating": 4.5}]], "wall_s": 0.36799470899859443, "prompt_tokens": 558, "completion_tokens": 57, "error": "", "passed": true, "reason": "matched_gt_entry"}

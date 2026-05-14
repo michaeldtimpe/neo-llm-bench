@@ -1,0 +1,1 @@
+{"id": "live_simple_197-116-5", "actual_calls": [["Weather_1_GetWeather", {"city": "Stinson Beach", "date": "2023-04-05"}]], "wall_s": 0.23232262500096112, "prompt_tokens": 346, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

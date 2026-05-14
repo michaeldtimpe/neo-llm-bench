@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_548-169-1", "actual_calls": [["get_url_content", {"url": "https://cloud.google.com/compute/docs/instances/create-start-ubuntu-2004-instance", "timeout": 30, "user_agent": "Mozilla/5.0"}]], "wall_s": 0.34293645799334627, "prompt_tokens": 1310, "completion_tokens": 58, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_url_content"}

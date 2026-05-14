@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_740-254-0", "actual_calls": [["call_uber", {"location": "Rua Explos\u00e3o, 8899", "ride_type": "UberX", "passenger_count": 1, "payment_method": "Credit Card"}]], "wall_s": 0.3170917079987703, "prompt_tokens": 475, "completion_tokens": 53, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: call_uber"}

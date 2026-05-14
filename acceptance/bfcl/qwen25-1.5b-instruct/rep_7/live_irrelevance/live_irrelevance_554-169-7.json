@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_554-169-7", "actual_calls": [["search_web_tool", {"query": "book a ticket from USA NYC to India New Delhi", "num_results": 5, "source": "text"}]], "wall_s": 0.2599365000060061, "prompt_tokens": 1297, "completion_tokens": 43, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: search_web_tool"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_352-133-16", "actual_calls": [["Music_3_LookupMusic", {"artist": "Pitbull"}]], "wall_s": 0.22467675000370946, "prompt_tokens": 1166, "completion_tokens": 24, "error": "", "raw_text": "[{\"arguments\": {\"artist\": \"Pitbull\"}, \"name\": \"Music_3_LookupMusic\"}]", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "simple_python_77", "actual_calls": [["restaurant.find_nearby", {"location": "Los Angeles", "dietary_preference": ["Vegan"]}]], "wall_s": 0.8584215000000768, "prompt_tokens": 338, "completion_tokens": 34, "error": "", "passed": false, "reason": "call_restaurant.find_nearby_did_not_match_any_gt"}

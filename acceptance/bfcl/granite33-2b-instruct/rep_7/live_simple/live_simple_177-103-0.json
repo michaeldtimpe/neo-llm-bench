@@ -1,0 +1,1 @@
+{"id": "live_simple_177-103-0", "actual_calls": [], "wall_s": 0.28501500000129454, "prompt_tokens": 317, "completion_tokens": 31, "error": "", "raw_text": "To find a cleaning service provider, I need the service identifier and the quantity of service sessions you're interested in. Could you please provide these details?", "passed": false, "reason": "no_tool_call_emitted"}

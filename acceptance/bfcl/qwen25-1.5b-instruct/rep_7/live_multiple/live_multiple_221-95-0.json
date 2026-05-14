@@ -1,0 +1,1 @@
+{"id": "live_multiple_221-95-0", "actual_calls": [["segment", {"img_path": "./yoha.jpg"}]], "wall_s": 0.1565100000007078, "prompt_tokens": 472, "completion_tokens": 22, "error": "", "passed": true, "reason": "matched_gt_entry"}

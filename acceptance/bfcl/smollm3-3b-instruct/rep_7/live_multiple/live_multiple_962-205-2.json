@@ -1,0 +1,1 @@
+{"id": "live_multiple_962-205-2", "actual_calls": [["web_search", {"query": "where is Columbia University located", "results_limit": 1, "language": "en", "safe_search": true}]], "wall_s": 0.40955050000047777, "prompt_tokens": 481, "completion_tokens": 44, "error": "", "passed": false, "reason": "call_web_search_did_not_match_any_gt"}

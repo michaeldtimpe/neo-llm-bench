@@ -1,0 +1,1 @@
+{"id": "live_multiple_1048-275-0", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "Paris, France", "number_of_adults": 2}]], "wall_s": 0.3516875829991477, "prompt_tokens": 621, "completion_tokens": 37, "error": "", "passed": false, "reason": "call_Hotels_2_SearchHouse_did_not_match_any_gt"}

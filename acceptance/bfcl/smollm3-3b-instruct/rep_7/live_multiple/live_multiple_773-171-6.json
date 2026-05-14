@@ -1,0 +1,1 @@
+{"id": "live_multiple_773-171-6", "actual_calls": [["Services_1_FindProvider", {"city": "San Ramon, CA"}]], "wall_s": 0.2835360419994686, "prompt_tokens": 1141, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

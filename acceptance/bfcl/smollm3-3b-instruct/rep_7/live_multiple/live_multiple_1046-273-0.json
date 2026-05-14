@@ -1,0 +1,1 @@
+{"id": "live_multiple_1046-273-0", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "Delhi", "has_laundry_service": "dontcare", "number_of_adults": 2, "rating": 4.6}]], "wall_s": 0.5204834579999442, "prompt_tokens": 629, "completion_tokens": 54, "error": "", "passed": true, "reason": "matched_gt_entry"}

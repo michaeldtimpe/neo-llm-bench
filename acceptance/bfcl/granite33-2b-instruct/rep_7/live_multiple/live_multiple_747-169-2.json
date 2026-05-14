@@ -1,0 +1,1 @@
+{"id": "live_multiple_747-169-2", "actual_calls": [], "wall_s": 0.24505358299938962, "prompt_tokens": 1785, "completion_tokens": 26, "error": "", "raw_text": "[{\"arguments\": {\"genre\": \"Fantasy\", \"starring\": \"David Shaughnessy\"}}]", "passed": false, "reason": "no_tool_call_emitted"}

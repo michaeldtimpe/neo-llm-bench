@@ -1,0 +1,1 @@
+{"id": "live_multiple_714-165-1", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "Phoenix, AZ", "rating": 4.1}]], "wall_s": 0.3547345840015623, "prompt_tokens": 926, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

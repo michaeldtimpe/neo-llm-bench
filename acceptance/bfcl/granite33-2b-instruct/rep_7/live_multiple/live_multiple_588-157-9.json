@@ -1,0 +1,1 @@
+{"id": "live_multiple_588-157-9", "actual_calls": [["Media_3_FindMovies", {"genre": "Horror", "starring": "Arthur Lowe"}]], "wall_s": 0.3030625829997007, "prompt_tokens": 756, "completion_tokens": 35, "error": "", "raw_text": "[{\"arguments\": {\"genre\": \"Horror\", \"starring\": \"Arthur Lowe\"}, \"name\": \"Media_3_FindMovies\"}]", "passed": true, "reason": "matched_gt_entry"}

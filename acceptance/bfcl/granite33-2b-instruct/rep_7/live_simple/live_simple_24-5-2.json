@@ -1,0 +1,1 @@
+{"id": "live_simple_24-5-2", "actual_calls": [["ChaFod", {"TheFod": "BURGER"}]], "wall_s": 0.2058722499932628, "prompt_tokens": 307, "completion_tokens": 23, "error": "", "raw_text": "[{\"arguments\": {\"TheFod\": \"BURGER\"}, \"name\": \"ChaFod\"}]", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_53-24-0", "actual_calls": [["todo_add", {"content": "go for shopping at 9 pm"}]], "wall_s": 0.2775028750002093, "prompt_tokens": 296, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}

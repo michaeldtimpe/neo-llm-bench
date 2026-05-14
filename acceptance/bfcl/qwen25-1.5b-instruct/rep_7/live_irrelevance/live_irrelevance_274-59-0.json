@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_274-59-0", "actual_calls": [["generate_human_image", {"prompt": "children", "image_quality": "high", "image_format": "PNG", "include_watermark": false}]], "wall_s": 0.3711150000017369, "prompt_tokens": 1296, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: generate_human_image"}

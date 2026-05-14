@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_424-101-1", "actual_calls": [], "wall_s": 0.16953845899843145, "prompt_tokens": 529, "completion_tokens": 28, "error": "", "raw_text": "To classify the query \"show me my balance\" as an intent, you should use the \"information\" intent from the provided list.", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_168-99-2", "actual_calls": [["cmd_controller.execute", {"command": "docker start"}]], "wall_s": 0.18311562499729916, "prompt_tokens": 325, "completion_tokens": 31, "error": "", "raw_text": "```json\n{\n  \"name\": \"cmd_controller.execute\",\n  \"arguments\": {\n    \"command\": \"docker start\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

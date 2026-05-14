@@ -1,0 +1,1 @@
+{"id": "live_simple_103-61-1", "actual_calls": [["calculate_tax", {"purchase_amount": 999, "state": "CA"}]], "wall_s": 0.257520042010583, "prompt_tokens": 537, "completion_tokens": 29, "error": "", "raw_text": "[{\"arguments\": {\"purchase_amount\": 999, \"state\": \"CA\"}, \"name\": \"calculate_tax\"}]", "passed": true, "reason": "matched_gt_entry"}

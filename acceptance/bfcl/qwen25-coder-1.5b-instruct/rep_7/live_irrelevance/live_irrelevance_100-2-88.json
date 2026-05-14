@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_100-2-88", "actual_calls": [], "wall_s": 0.24849487499159295, "prompt_tokens": 359, "completion_tokens": 43, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_virus_total_details\",\n  \"arguments\": {\n    \"domain\": \"reddit.com\",\n    \"api_key\": \"reddit_api_key\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

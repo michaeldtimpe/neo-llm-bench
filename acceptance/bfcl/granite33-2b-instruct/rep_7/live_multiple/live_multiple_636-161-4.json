@@ -1,0 +1,1 @@
+{"id": "live_multiple_636-161-4", "actual_calls": [["Music_3_LookupMusic", {"artist": "Tove Lo", "genre": "Electropop"}]], "wall_s": 0.2993110419920413, "prompt_tokens": 1691, "completion_tokens": 33, "error": "", "raw_text": "[{\"name\": \"Music_3_LookupMusic\", \"arguments\": {\"artist\": \"Tove Lo\", \"genre\": \"Electropop\"}}]", "passed": true, "reason": "matched_gt_entry"}

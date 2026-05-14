@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_589-184-0", "actual_calls": [["Restaurants_2_FindRestaurants", {"category": "Asian", "location": "Oakland", "price_range": "moderate"}]], "wall_s": 0.5123632499999076, "prompt_tokens": 878, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Restaurants_2_FindRestaurants"}

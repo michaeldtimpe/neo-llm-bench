@@ -1,0 +1,1 @@
+{"id": "live_multiple_501-148-11", "actual_calls": [["Events_3_FindEvents", {"event_type": "Theater", "city": "San Francisco, CA", "date": "2023-10-01"}]], "wall_s": 0.35175708298629615, "prompt_tokens": 1013, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

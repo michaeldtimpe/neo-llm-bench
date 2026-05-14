@@ -1,0 +1,1 @@
+{"id": "parallel_58", "actual_calls": [["get_exchange_rate", {"base_currency": "USD", "target_currency": "AUD"}], ["get_exchange_rate", {"base_currency": "USD", "target_currency": "CAD"}]], "wall_s": 1.2888503330004824, "prompt_tokens": 320, "completion_tokens": 55, "error": "", "passed": true, "reason": "all_calls_matched"}

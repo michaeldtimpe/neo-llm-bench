@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_569-177-0", "actual_calls": [["get_service_id", {"service_id": 2, "province_id": 1}]], "wall_s": 0.19292320900422055, "prompt_tokens": 378, "completion_tokens": 29, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_service_id"}

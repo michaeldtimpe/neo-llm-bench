@@ -1,0 +1,1 @@
+{"id": "live_simple_118-74-0", "actual_calls": [["get_temperature", {"units": "Celsius", "location": "Hyderabad, India"}]], "wall_s": 0.192912916012574, "prompt_tokens": 394, "completion_tokens": 30, "error": "", "passed": true, "reason": "matched_gt_entry"}

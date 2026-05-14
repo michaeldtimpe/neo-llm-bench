@@ -1,0 +1,1 @@
+{"id": "live_simple_191-115-1", "actual_calls": [["raptor.mpn.specs", {"identifier": "3pak7"}]], "wall_s": 0.15840333300002385, "prompt_tokens": 382, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}

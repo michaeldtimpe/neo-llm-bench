@@ -1,0 +1,1 @@
+{"id": "live_multiple_319-132-9", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Gavin Hood", "genre": "Mystery", "cast": "Hattie Morahan"}]], "wall_s": 0.26999004199751653, "prompt_tokens": 1139, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_423-101-0", "actual_calls": [], "wall_s": 0.278982999996515, "prompt_tokens": 565, "completion_tokens": 26, "error": "", "raw_text": "The intent for the user's query 'hello, I want to transfer funds' is 'funds_transfer_start'.", "passed": true, "reason": "correctly_no_tool_call"}

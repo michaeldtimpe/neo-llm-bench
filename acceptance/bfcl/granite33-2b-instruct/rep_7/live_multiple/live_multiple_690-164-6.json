@@ -1,0 +1,1 @@
+{"id": "live_multiple_690-164-6", "actual_calls": [["Movies_3_FindMovies", {"cast": "Jack Carson"}]], "wall_s": 0.22280462499475107, "prompt_tokens": 1007, "completion_tokens": 24, "error": "", "raw_text": "[{\"arguments\": {\"cast\": \"Jack Carson\"}, \"name\": \"Movies_3_FindMovies\"}]", "passed": true, "reason": "matched_gt_entry"}

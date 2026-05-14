@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_316-76-14", "actual_calls": [["requests.get", {"url": "https://api.nasa.gov/solar-system-json?planetary_body=Earth", "headers": {"Accept": "application/json"}, "timeout": 5}]], "wall_s": 0.28457495900511276, "prompt_tokens": 945, "completion_tokens": 50, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

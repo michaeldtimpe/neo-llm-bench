@@ -1,0 +1,1 @@
+{"id": "live_multiple_770-171-3", "actual_calls": [["Services_1_FindProvider", {"city": "Burlingame, CA", "is_unisex": true}]], "wall_s": 0.21842304199526552, "prompt_tokens": 1345, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

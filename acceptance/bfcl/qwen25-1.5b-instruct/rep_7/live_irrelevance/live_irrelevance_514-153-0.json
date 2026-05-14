@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_514-153-0", "actual_calls": [["requests.get", {"url": "https://api.example.com/top-flows-by-anomalies", "params": {"startDate": "2023-03-32", "endDate": "2023-10-22"}}]], "wall_s": 0.37966995799797587, "prompt_tokens": 459, "completion_tokens": 65, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

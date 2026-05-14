@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_866-352-0", "actual_calls": [], "wall_s": 0.3668676250090357, "prompt_tokens": 697, "completion_tokens": 57, "error": "", "raw_text": "```json\n{\n  \"name\": \"geocode\",\n  \"arguments\": {\n    \"query\": \"37.4224764,-122.0842499\",\n    \"format\": \"json\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

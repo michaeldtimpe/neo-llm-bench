@@ -1,0 +1,1 @@
+{"id": "live_multiple_304-131-3", "actual_calls": [["Hotels_4_SearchHotel", {"location": "Los Angeles, CA", "star_rating": "4", "number_of_rooms": 1}]], "wall_s": 0.27121820900356397, "prompt_tokens": 1889, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

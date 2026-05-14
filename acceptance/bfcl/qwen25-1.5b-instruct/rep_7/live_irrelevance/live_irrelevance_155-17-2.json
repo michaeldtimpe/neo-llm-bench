@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_155-17-2", "actual_calls": [["get_product_details", {"item_id": "shimmer_product_id", "size": "XL"}]], "wall_s": 0.20280295799602754, "prompt_tokens": 480, "completion_tokens": 31, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_product_details"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_263-126-0", "actual_calls": [], "wall_s": 0.338461333012674, "prompt_tokens": 586, "completion_tokens": 33, "error": "", "raw_text": "I can help you find that information. Please provide me with the start date of your gym session if you know it, or I can search through your calendar.", "passed": false, "reason": "no_tool_call_emitted"}

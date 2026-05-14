@@ -1,0 +1,1 @@
+{"id": "live_multiple_716-165-3", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "Austin, TX", "has_laundry_service": "dontcare", "number_of_adults": 2, "rating": 3.0}]], "wall_s": 0.5207924579990504, "prompt_tokens": 916, "completion_tokens": 55, "error": "", "passed": false, "reason": "call_Hotels_2_SearchHouse_did_not_match_any_gt"}

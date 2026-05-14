@@ -1,0 +1,1 @@
+{"id": "live_multiple_964-207-0", "actual_calls": [["get_parcel_state", {"parcelTrackingId": "1234567890"}]], "wall_s": 0.21050266599922907, "prompt_tokens": 401, "completion_tokens": 32, "error": "", "raw_text": "{{\"name\": \"get_parcel_state\", \"arguments\": {\"parcelTrackingId\": \"1234567890\"}}}", "passed": false, "reason": "call_get_parcel_state_did_not_match_any_gt"}

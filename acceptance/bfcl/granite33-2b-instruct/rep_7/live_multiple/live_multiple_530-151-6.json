@@ -1,0 +1,1 @@
+{"id": "live_multiple_530-151-6", "actual_calls": [], "wall_s": 0.4209677500039106, "prompt_tokens": 671, "completion_tokens": 49, "error": "", "raw_text": "I found a Music event for you. The event is \"The Summer Jam\" and it's happening on 09/09/2023 in New York. Would you like to purchase tickets for this event?", "passed": false, "reason": "no_tool_call_emitted"}

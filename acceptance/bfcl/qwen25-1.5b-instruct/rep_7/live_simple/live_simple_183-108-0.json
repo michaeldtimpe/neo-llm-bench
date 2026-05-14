@@ -1,0 +1,1 @@
+{"id": "live_simple_183-108-0", "actual_calls": [["getDataForProfessional", {"province_id": 1, "avg_rating": 2.0, "districts_name": "District, Bangkok", "service_id": 1}]], "wall_s": 0.30279950000112876, "prompt_tokens": 397, "completion_tokens": 48, "error": "", "passed": false, "reason": "call_getDataForProfessional_did_not_match_any_gt"}

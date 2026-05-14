@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_470-131-0", "actual_calls": [["date.current_date", {"format": "YYYY-MM-DD", "locale": "en_US"}]], "wall_s": 0.316879207999591, "prompt_tokens": 353, "completion_tokens": 31, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: date.current_date"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_361-81-22", "actual_calls": [], "wall_s": 0.24225645800470375, "prompt_tokens": 884, "completion_tokens": 37, "error": "", "raw_text": "```json\n{\n  \"name\": \"error\",\n  \"arguments\": {\n    \"message\": \"Invalid input. Please provide a valid URL and parameters.\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

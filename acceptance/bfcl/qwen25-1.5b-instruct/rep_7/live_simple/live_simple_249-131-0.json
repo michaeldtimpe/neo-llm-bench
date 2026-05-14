@@ -1,0 +1,1 @@
+{"id": "live_simple_249-131-0", "actual_calls": [], "wall_s": 0.13923616700049024, "prompt_tokens": 293, "completion_tokens": 21, "error": "", "raw_text": "I'm just a virtual bunny, but thank you for asking! How can I assist you today?", "passed": false, "reason": "no_tool_call_emitted"}

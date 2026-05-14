@@ -1,0 +1,1 @@
+{"id": "live_multiple_754-169-9", "actual_calls": [], "wall_s": 0.2621538329985924, "prompt_tokens": 1774, "completion_tokens": 28, "error": "", "raw_text": "[{\"arguments\": {\"genre\": \"Comedy-drama\", \"starring\": \"Ana de Armas\"}}]", "passed": false, "reason": "no_tool_call_emitted"}

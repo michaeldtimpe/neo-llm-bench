@@ -1,0 +1,1 @@
+{"id": "live_multiple_782-173-4", "actual_calls": [["Services_4_FindProvider", {"city": "Sausalito, CA", "type": "Psychologist"}]], "wall_s": 0.20765595899138134, "prompt_tokens": 688, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

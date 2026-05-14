@@ -1,0 +1,1 @@
+{"id": "live_multiple_942-196-0", "actual_calls": [["play_song", {"query": "baby Shark", "volume": 70}]], "wall_s": 0.2864109579968499, "prompt_tokens": 483, "completion_tokens": 29, "error": "", "raw_text": "[{\"arguments\": {\"query\": \"baby Shark\", \"volume\": 70}, \"name\": \"play_song\"}]", "passed": true, "reason": "matched_gt_entry"}

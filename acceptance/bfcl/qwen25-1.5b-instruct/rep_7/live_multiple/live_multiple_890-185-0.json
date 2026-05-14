@@ -1,0 +1,1 @@
+{"id": "live_multiple_890-185-0", "actual_calls": [["Payment_1_RequestPayment", {"receiver": "Mahmoud", "amount": 43, "private_visibility": false}]], "wall_s": 0.3351339169894345, "prompt_tokens": 1247, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

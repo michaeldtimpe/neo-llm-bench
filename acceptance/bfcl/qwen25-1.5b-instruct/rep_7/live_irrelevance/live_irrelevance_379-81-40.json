@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_379-81-40", "actual_calls": [["requests.get", {"url": "https://api.torchhub.com/models", "params": {"latitude": 37.7749, "longitude": -122.4194, "elevation": 0}}]], "wall_s": 0.42972154200833756, "prompt_tokens": 877, "completion_tokens": 66, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

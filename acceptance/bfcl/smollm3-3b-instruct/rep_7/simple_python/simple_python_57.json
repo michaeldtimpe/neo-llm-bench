@@ -1,0 +1,1 @@
+{"id": "simple_python_57", "actual_calls": [["calculate_cell_density", {"optical_density": 0.6, "dilution": 5}]], "wall_s": 0.8399167500001568, "prompt_tokens": 382, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

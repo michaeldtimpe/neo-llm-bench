@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_22", "actual_calls": [["sales_growth.calculate", {"company": "XYZ", "years": 3}], ["financial_ratios.interest_coverage", {"company_name": "XYZ", "years": 3}]], "wall_s": 1.2497609160000138, "prompt_tokens": 487, "completion_tokens": 55, "error": "", "passed": true, "reason": "all_calls_matched"}

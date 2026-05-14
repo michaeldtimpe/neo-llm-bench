@@ -1,0 +1,1 @@
+{"id": "live_multiple_754-169-9", "actual_calls": [["Media_3_FindMovies", {"genre": "Comedy", "starring": "Ana de Armas"}]], "wall_s": 0.34502666700063855, "prompt_tokens": 1213, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

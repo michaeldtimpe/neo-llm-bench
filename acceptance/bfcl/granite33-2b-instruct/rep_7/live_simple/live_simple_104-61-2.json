@@ -1,0 +1,1 @@
+{"id": "live_simple_104-61-2", "actual_calls": [], "wall_s": 0.20140545899630524, "prompt_tokens": 523, "completion_tokens": 22, "error": "", "raw_text": "[{\"arguments\": {\"purchase_amount\": 250, \"state\": \"NY\"}}]", "passed": false, "reason": "no_tool_call_emitted"}

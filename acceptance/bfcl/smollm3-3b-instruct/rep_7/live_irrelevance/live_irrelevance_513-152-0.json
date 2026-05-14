@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_513-152-0", "actual_calls": [["requests.get", {"url": "https://api.insights.cloud/v1/nodes", "params": {"query": "node", "limit": 10, "sort": "asc"}}]], "wall_s": 0.4980586249985208, "prompt_tokens": 396, "completion_tokens": 52, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

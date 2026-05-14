@@ -1,0 +1,1 @@
+{"id": "live_multiple_290-129-5", "actual_calls": [["Services_4_FindProvider", {"city": "Walnut Creek, CA", "type": "Family Counselor"}]], "wall_s": 0.2079411250015255, "prompt_tokens": 838, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

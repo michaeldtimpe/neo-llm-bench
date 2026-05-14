@@ -1,0 +1,1 @@
+{"id": "live_multiple_998-229-0", "actual_calls": [["health_api.HealthApi.get_version", {}]], "wall_s": 0.21589462501287926, "prompt_tokens": 991, "completion_tokens": 24, "error": "", "raw_text": "```json\n{\n  \"name\": \"health_api.HealthApi.get_version\",\n  \"arguments\": {}\n}\n```", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_1", "actual_calls": [["area_rectangle.calculate", {"length": 7, "breadth": 3}], ["area_circle.calculate", {"radius": 5}]], "wall_s": 0.8647159169995575, "prompt_tokens": 442, "completion_tokens": 46, "error": "", "passed": true, "reason": "all_calls_matched"}

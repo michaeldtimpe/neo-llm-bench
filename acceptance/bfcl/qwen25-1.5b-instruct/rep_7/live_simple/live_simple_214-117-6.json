@@ -1,0 +1,1 @@
+{"id": "live_simple_214-117-6", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Nitesh Tiwari", "genre": "Comedy", "cast": "dontcare"}]], "wall_s": 0.2592005420010537, "prompt_tokens": 485, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_146-95-3", "actual_calls": [["cmd_controller.execute", {"command": "start https://huggingface.co"}]], "wall_s": 0.16407933400478214, "prompt_tokens": 360, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}

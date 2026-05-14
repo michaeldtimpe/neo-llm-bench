@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_800-305-4", "actual_calls": [["sce_api.get_product_information", {"crm_id": 12345, "fields": "name,version,status"}]], "wall_s": 0.23414575000060722, "prompt_tokens": 1121, "completion_tokens": 38, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: sce_api.get_product_information"}

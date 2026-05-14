@@ -1,0 +1,1 @@
+{"id": "live_multiple_596-158-2", "actual_calls": [["Hotels_4_SearchHotel", {"location": "San Francisco, CA", "number_of_rooms": "1"}]], "wall_s": 0.21336762499413453, "prompt_tokens": 731, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

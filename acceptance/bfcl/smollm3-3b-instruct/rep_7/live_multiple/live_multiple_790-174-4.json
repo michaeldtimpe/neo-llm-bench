@@ -1,0 +1,1 @@
+{"id": "live_multiple_790-174-4", "actual_calls": [["Homes_2_FindHomeByArea", {"area": "Berkeley, CA", "intent": "rent", "number_of_beds": 3, "number_of_baths": 2}]], "wall_s": 0.49659820799934096, "prompt_tokens": 630, "completion_tokens": 54, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_37", "actual_calls": [["history.get_timeline", {"event": "World War 2", "region": "Europe"}], ["history.get_important_figures", {"event": "World War 2", "number": 10}]], "wall_s": 1.3458882919994721, "prompt_tokens": 402, "completion_tokens": 60, "error": "", "passed": false, "reason": "call_history.get_important_figures_unmatched_in_gt"}

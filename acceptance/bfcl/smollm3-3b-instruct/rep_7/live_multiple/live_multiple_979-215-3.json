@@ -1,0 +1,1 @@
+{"id": "live_multiple_979-215-3", "actual_calls": [["get_service_providers", {"province_id": 1, "service_id": 1, "extra_service_id": 2}]], "wall_s": 0.38235837499814807, "prompt_tokens": 1197, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_56-2-44", "actual_calls": [], "wall_s": 0.29284987499704584, "prompt_tokens": 374, "completion_tokens": 52, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_community_comments\",\n  \"arguments\": {\n    \"ip\": \"109.87.65.43\",\n    \"delta_key\": \"your_delta_key_here\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

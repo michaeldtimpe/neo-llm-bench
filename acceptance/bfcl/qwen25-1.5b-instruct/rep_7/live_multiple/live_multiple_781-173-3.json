@@ -1,0 +1,1 @@
+{"id": "live_multiple_781-173-3", "actual_calls": [["Services_4_FindProvider", {"city": "San Francisco, CA", "type": "Psychologist"}]], "wall_s": 0.2018931659986265, "prompt_tokens": 690, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

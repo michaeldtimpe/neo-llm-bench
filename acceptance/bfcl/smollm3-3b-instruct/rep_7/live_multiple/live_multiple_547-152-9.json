@@ -1,0 +1,1 @@
+{"id": "live_multiple_547-152-9", "actual_calls": [["Homes_2_FindHomeByArea", {"area": "San Francisco, CA", "intent": "buy", "number_of_beds": 3, "number_of_baths": 0, "has_garage": true}]], "wall_s": 0.5678040409984533, "prompt_tokens": 821, "completion_tokens": 62, "error": "", "passed": false, "reason": "call_Homes_2_FindHomeByArea_did_not_match_any_gt"}

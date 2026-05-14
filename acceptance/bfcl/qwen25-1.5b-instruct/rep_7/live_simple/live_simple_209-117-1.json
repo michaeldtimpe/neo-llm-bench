@@ -1,0 +1,1 @@
+{"id": "live_simple_209-117-1", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "David Leitch", "cast": "Lori Pelenise Tuisano"}]], "wall_s": 0.25182849999691825, "prompt_tokens": 461, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

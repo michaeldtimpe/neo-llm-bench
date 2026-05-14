@@ -1,0 +1,1 @@
+{"id": "live_simple_255-136-1", "actual_calls": [["user.mandates", {"user_id": "U123456", "status": "active"}]], "wall_s": 0.306197499998234, "prompt_tokens": 375, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

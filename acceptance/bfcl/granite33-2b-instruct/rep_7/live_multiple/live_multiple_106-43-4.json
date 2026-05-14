@@ -1,0 +1,1 @@
+{"id": "live_multiple_106-43-4", "actual_calls": [], "wall_s": 0.44234270800370723, "prompt_tokens": 2281, "completion_tokens": 48, "error": "", "raw_text": "[{\"arguments\": {\"nickname\": \"FastQuery\", \"host\": \"rds.example.org\", \"api_key\": \"1231231\"}, \"name\": \"add_mtna_server\"}]", "passed": false, "reason": "no_tool_call_emitted"}

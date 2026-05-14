@@ -1,0 +1,1 @@
+{"id": "live_multiple_517-150-5", "actual_calls": [["Movies_1_FindMovies", {"location": "Los Angeles, CA", "genre": "Supernatural", "show_type": "regular"}]], "wall_s": 0.2524727080017328, "prompt_tokens": 1661, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

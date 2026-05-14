@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_782-291-0", "actual_calls": [["get_event_specification_infos", {"include_custom": true, "page_size": 50, "page_number": 1}]], "wall_s": 0.4056024999990768, "prompt_tokens": 593, "completion_tokens": 38, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_event_specification_infos"}

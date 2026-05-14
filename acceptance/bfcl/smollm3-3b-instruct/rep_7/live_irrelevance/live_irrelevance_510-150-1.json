@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_510-150-1", "actual_calls": [["requests.get", {"url": "https://10.2.3.4/path", "params": {"advisoryId": "test", "ip": "10.2.3.4"}}]], "wall_s": 0.5053766249984619, "prompt_tokens": 431, "completion_tokens": 55, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

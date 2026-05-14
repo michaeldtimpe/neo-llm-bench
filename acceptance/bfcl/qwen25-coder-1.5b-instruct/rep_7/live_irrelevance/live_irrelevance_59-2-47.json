@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_59-2-47", "actual_calls": [], "wall_s": 0.23196879199531395, "prompt_tokens": 372, "completion_tokens": 40, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_urls_by_domain\",\n  \"arguments\": {\n    \"domain\": \"facebook.com\",\n    \"limit\": 10\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

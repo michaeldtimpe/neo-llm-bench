@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_710-234-0", "actual_calls": [["raptor.mpn.specs", {"query": "ACHD"}]], "wall_s": 0.16064720800204668, "prompt_tokens": 326, "completion_tokens": 25, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: raptor.mpn.specs"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_834-178-9", "actual_calls": [["Music_3_PlayMedia", {"track": "Borbena", "artist": "Teodora", "album": "Borbena", "device": "Kitchen"}]], "wall_s": 0.44586304199765436, "prompt_tokens": 807, "completion_tokens": 48, "error": "", "passed": true, "reason": "matched_gt_entry"}

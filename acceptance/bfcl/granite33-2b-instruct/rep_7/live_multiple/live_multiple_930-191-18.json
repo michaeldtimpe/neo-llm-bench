@@ -1,0 +1,1 @@
+{"id": "live_multiple_930-191-18", "actual_calls": [["get_service_providers", {"service_id": 35}]], "wall_s": 0.22556495800381526, "prompt_tokens": 1419, "completion_tokens": 24, "error": "", "raw_text": "[{\"arguments\": {\"service_id\": 35}, \"name\": \"get_service_providers\"}]", "passed": true, "reason": "matched_gt_entry"}

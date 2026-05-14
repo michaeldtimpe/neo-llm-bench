@@ -1,0 +1,1 @@
+{"id": "live_multiple_213-91-7", "actual_calls": [["detail_experience_and_education", {"experience_or_education_type": "Internship at Universitas Sebelas Maret (UNS)"}]], "wall_s": 0.24289462500019, "prompt_tokens": 1396, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

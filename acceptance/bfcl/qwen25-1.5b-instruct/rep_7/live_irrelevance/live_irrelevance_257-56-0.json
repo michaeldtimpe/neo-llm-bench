@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_257-56-0", "actual_calls": [["version_api.VersionApi.get_version", {}]], "wall_s": 0.202782666994608, "prompt_tokens": 1342, "completion_tokens": 23, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: version_api.VersionApi.get_version"}

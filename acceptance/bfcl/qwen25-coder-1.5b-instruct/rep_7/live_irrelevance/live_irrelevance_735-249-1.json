@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_735-249-1", "actual_calls": [["partner.mandates", {}]], "wall_s": 0.12204387500241864, "prompt_tokens": 461, "completion_tokens": 22, "error": "", "raw_text": "```json\n{\n  \"name\": \"partner.mandates\",\n  \"arguments\": {}\n}\n```", "passed": false, "reason": "called_tool_when_irrelevant: partner.mandates"}

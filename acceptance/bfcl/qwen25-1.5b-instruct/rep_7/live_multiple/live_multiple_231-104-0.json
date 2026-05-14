@@ -1,0 +1,1 @@
+{"id": "live_multiple_231-104-0", "actual_calls": [["get_contact_information", {"id_no": "123"}]], "wall_s": 0.1724835419881856, "prompt_tokens": 608, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}

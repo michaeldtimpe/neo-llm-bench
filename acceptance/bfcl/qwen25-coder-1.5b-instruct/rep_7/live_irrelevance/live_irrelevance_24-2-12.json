@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_24-2-12", "actual_calls": [], "wall_s": 0.2825461250031367, "prompt_tokens": 375, "completion_tokens": 50, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_ssl_certificates\",\n  \"arguments\": {\n    \"ip\": \"56.78.90.1\",\n    \"api_key\": \"sec_key4\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_437-142-3", "actual_calls": [["RentalCars_3_GetCarsAvailable", {"city": "Los Angeles, CA", "start_date": "2023-05-05", "pickup_time": "12:30", "end_date": "2023-05-11", "car_type": "dontcare"}]], "wall_s": 0.46926054199866485, "prompt_tokens": 2255, "completion_tokens": 80, "error": "", "passed": true, "reason": "matched_gt_entry"}

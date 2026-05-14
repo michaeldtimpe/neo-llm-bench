@@ -1,0 +1,1 @@
+{"id": "live_multiple_177-74-0", "actual_calls": [["get_trip", {"location": "New York, NY"}]], "wall_s": 0.21788945799926296, "prompt_tokens": 439, "completion_tokens": 32, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_trip\",\n  \"arguments\": {\n    \"location\": \"New York, NY\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

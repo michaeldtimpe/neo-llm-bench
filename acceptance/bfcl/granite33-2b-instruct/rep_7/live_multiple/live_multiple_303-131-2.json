@@ -1,0 +1,1 @@
+{"id": "live_multiple_303-131-2", "actual_calls": [], "wall_s": 0.41745774999435525, "prompt_tokens": 2386, "completion_tokens": 45, "error": "", "raw_text": "Sure, I can assist with that. Let's find a hotel in Vancouver with one room and a three-star rating. I'll also ensure it allows smoking if that's a preference.", "passed": false, "reason": "no_tool_call_emitted"}

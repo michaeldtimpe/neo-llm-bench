@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_616-195-4", "actual_calls": [["Trains_1_FindTrains", {"_from": "Portland", "to": "Seattle", "date_of_journey": "2023-04-15", "_class": "Value", "number_of_adults": 1}]], "wall_s": 0.5856551670003682, "prompt_tokens": 1173, "completion_tokens": 62, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Trains_1_FindTrains"}

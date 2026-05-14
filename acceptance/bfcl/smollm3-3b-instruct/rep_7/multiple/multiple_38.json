@@ -1,0 +1,1 @@
+{"id": "multiple_38", "actual_calls": [["library.search_book", {"book_name": "The Alchemist", "city": "New York", "availability": true}]], "wall_s": 0.9035645839994686, "prompt_tokens": 470, "completion_tokens": 37, "error": "", "passed": false, "reason": "call_library.search_book_did_not_match_any_gt"}

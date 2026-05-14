@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_771-280-0", "actual_calls": [["contains_word_gaurav", {"keyword": "gaurav"}]], "wall_s": 0.157552124990616, "prompt_tokens": 283, "completion_tokens": 24, "error": "", "raw_text": "{{\"name\": \"contains_word_gaurav\", \"arguments\": {\"keyword\": \"gaurav\"}}}", "passed": false, "reason": "called_tool_when_irrelevant: contains_word_gaurav"}

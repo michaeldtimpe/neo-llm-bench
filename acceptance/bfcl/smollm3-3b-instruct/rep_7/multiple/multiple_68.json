@@ -1,0 +1,1 @@
+{"id": "multiple_68", "actual_calls": [["library.search_books", {"location": "New York public library", "genre": "historical fiction"}]], "wall_s": 0.8241180830000303, "prompt_tokens": 452, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

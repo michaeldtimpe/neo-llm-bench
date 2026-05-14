@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_198-32-11", "actual_calls": [], "wall_s": 0.25026662499294616, "prompt_tokens": 372, "completion_tokens": 44, "error": "", "raw_text": "```json\n{\n  \"name\": \"user_authentication.logout\",\n  \"arguments\": {\n    \"username\": \"JohnDoe\",\n    \"password\": \"JD@2023\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

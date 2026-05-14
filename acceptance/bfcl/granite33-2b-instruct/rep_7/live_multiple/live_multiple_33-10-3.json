@@ -1,0 +1,1 @@
+{"id": "live_multiple_33-10-3", "actual_calls": [["multiply", {"a": 10, "b": 3}]], "wall_s": 0.3922208750009304, "prompt_tokens": 1044, "completion_tokens": 25, "error": "", "raw_text": "[{\"name\": \"multiply\", \"arguments\": {\"a\": 10, \"b\": 3}}]", "passed": false, "reason": "call_multiply_did_not_match_any_gt"}

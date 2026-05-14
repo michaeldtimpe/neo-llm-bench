@@ -1,0 +1,1 @@
+{"id": "live_multiple_453-145-4", "actual_calls": [["Travel_1_FindAttractions", {"location": "San Francisco, CA", "free_entry": "True", "category": "dontcare", "good_for_kids": "True"}]], "wall_s": 0.3024834169918904, "prompt_tokens": 1807, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

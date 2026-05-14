@@ -1,0 +1,1 @@
+{"id": "irrelevance_141", "actual_calls": [["look_up_scientific_contributions", {"scientist_name": "Henry Moseley", "contributions": 3}]], "wall_s": 3.6276850829999603, "prompt_tokens": 322, "completion_tokens": 278, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: look_up_scientific_contributions"}

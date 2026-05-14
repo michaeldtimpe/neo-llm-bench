@@ -1,0 +1,1 @@
+{"id": "live_multiple_233-105-0", "actual_calls": [["get_contact_information", {"name": "Rayson Goh"}]], "wall_s": 0.21811666699068155, "prompt_tokens": 579, "completion_tokens": 33, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_contact_information\",\n  \"arguments\": {\n    \"name\": \"Rayson Goh\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

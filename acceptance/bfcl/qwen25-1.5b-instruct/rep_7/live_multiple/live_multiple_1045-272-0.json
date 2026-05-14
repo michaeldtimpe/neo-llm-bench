@@ -1,0 +1,1 @@
+{"id": "live_multiple_1045-272-0", "actual_calls": [["Services_4_FindProvider", {"city": "Lafayette, LA", "type": "Family Counselor", "insurance_accepted": true}]], "wall_s": 0.25021208298858255, "prompt_tokens": 832, "completion_tokens": 41, "error": "", "passed": false, "reason": "call_Services_4_FindProvider_did_not_match_any_gt"}

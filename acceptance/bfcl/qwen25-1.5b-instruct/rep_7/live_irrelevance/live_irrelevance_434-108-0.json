@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_434-108-0", "actual_calls": [], "wall_s": 0.10297025000909343, "prompt_tokens": 446, "completion_tokens": 12, "error": "", "raw_text": "None of the provided intents match the query 'hello'.", "passed": true, "reason": "correctly_no_tool_call"}

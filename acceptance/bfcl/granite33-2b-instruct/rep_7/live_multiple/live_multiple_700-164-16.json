@@ -1,0 +1,1 @@
+{"id": "live_multiple_700-164-16", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Hari Sama"}]], "wall_s": 0.24429770800634287, "prompt_tokens": 1008, "completion_tokens": 27, "error": "", "raw_text": "[{\"arguments\": {\"directed_by\": \"Hari Sama\"}, \"name\": \"Movies_3_FindMovies\"}]", "passed": true, "reason": "matched_gt_entry"}

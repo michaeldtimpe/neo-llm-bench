@@ -1,0 +1,1 @@
+{"id": "live_simple_253-135-0", "actual_calls": [["uber.eat.order", {"restaurants": "McDonald's", "items": ["burgers", "chicken wings"], "quantities": [5, 6]}]], "wall_s": 0.28205045900540426, "prompt_tokens": 389, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

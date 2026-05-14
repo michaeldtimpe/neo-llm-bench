@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_258-56-1", "actual_calls": [], "wall_s": 0.28994362500088755, "prompt_tokens": 1094, "completion_tokens": 33, "error": "", "raw_text": "To add an Access Control List (ACL) mapping, I need the principal_id, resource_id, and permissions. Could you please provide these details?", "passed": true, "reason": "correctly_no_tool_call"}

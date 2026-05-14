@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_423-101-0", "actual_calls": [["get_response", {"url": "https://api.example.com/intent", "headers": {"Accept": "application/json", "User-Agent": "chat_service"}, "intent": "purchase"}]], "wall_s": 0.3205662079999456, "prompt_tokens": 547, "completion_tokens": 50, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_response"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_201-90-3", "actual_calls": [["adriel_contact", {"format": "xml"}]], "wall_s": 0.18632754099962767, "prompt_tokens": 1145, "completion_tokens": 30, "error": "", "raw_text": "```json\n{\n  \"name\": \"adriel_contact\",\n  \"arguments\": {\n    \"format\": \"xml\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

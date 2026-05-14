@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_377-81-38", "actual_calls": [], "wall_s": 0.14403062500059605, "prompt_tokens": 873, "completion_tokens": 19, "error": "", "raw_text": "None of the available tools can be used to determine if a model has conversational capabilities.", "passed": true, "reason": "correctly_no_tool_call"}

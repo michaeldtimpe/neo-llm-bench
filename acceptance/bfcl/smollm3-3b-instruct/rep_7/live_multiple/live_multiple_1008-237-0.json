@@ -1,0 +1,1 @@
+{"id": "live_multiple_1008-237-0", "actual_calls": [["ApplicationAnalyzeApi.get_trace_download", {"id": "grgr", "retrievalSize": 1024, "offset": 0, "ingestionTime": null}]], "wall_s": 3.5297150410005997, "prompt_tokens": 597, "completion_tokens": 399, "error": "", "passed": true, "reason": "matched_gt_entry"}

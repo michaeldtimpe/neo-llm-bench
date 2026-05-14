@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_509-150-0", "actual_calls": [["requests.get", {"url": "https://api.example.com/recommendations/EOL3030_3030", "params": {"advisoryId": "EOL3030_3030"}}]], "wall_s": 0.5267325000022538, "prompt_tokens": 428, "completion_tokens": 54, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

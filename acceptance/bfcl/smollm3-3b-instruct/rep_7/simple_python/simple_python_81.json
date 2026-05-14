@@ -1,0 +1,1 @@
+{"id": "simple_python_81", "actual_calls": [["map_routing.fastest_route", {"start_location": "San Francisco", "end_location": "Los Angeles", "avoid_tolls": true}]], "wall_s": 0.9725445419999232, "prompt_tokens": 343, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

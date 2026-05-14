@@ -1,0 +1,1 @@
+{"id": "live_multiple_267-127-2", "actual_calls": [["Weather_1_GetWeather", {"city": "Vancouver", "date": "2023-04-04"}]], "wall_s": 0.35737562499707565, "prompt_tokens": 1461, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

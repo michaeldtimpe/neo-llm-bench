@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_827-320-0", "actual_calls": [["query_amap_info", {"query": "5A\u666f\u533a", "city": "\u5317\u4eac", "output": "JSON", "batch": false, "radius": 1000}]], "wall_s": 0.49135158300123294, "prompt_tokens": 406, "completion_tokens": 50, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: query_amap_info"}

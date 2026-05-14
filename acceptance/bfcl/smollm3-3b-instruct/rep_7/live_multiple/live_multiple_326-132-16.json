@@ -1,0 +1,1 @@
+{"id": "live_multiple_326-132-16", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Gurinder Chadha", "cast": "Vincent Andriano"}]], "wall_s": 0.3835608340014005, "prompt_tokens": 996, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

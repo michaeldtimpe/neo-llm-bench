@@ -1,0 +1,1 @@
+{"id": "live_simple_199-116-7", "actual_calls": [["Weather_1_GetWeather", {"city": "Marshall", "date": "2023-03-05"}]], "wall_s": 0.22807216699584387, "prompt_tokens": 344, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

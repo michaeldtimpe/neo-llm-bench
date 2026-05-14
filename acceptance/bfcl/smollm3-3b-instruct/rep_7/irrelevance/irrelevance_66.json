@@ -1,0 +1,1 @@
+{"id": "irrelevance_66", "actual_calls": [["get_standard_deviation", {"data": [0.5, 0.5], "population": true}]], "wall_s": 7.284314209000513, "prompt_tokens": 322, "completion_tokens": 331, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_standard_deviation"}

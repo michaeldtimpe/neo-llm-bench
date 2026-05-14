@@ -1,0 +1,1 @@
+{"id": "live_multiple_1014-243-0", "actual_calls": [["get_identity_provider_patch", {"tenant_id": "12345-tenant-id"}]], "wall_s": 0.40130933398904745, "prompt_tokens": 922, "completion_tokens": 33, "error": "", "raw_text": "[{\"arguments\": {\"tenant_id\": \"12345-tenant-id\"}, \"name\": \"get_identity_provider_patch\"}]", "passed": true, "reason": "matched_gt_entry"}

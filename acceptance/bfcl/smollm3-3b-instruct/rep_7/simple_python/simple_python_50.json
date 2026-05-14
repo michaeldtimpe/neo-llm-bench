@@ -1,0 +1,1 @@
+{"id": "simple_python_50", "actual_calls": [["entropy_change.calculate", {"substance": "ice", "mass": 1, "initial_temperature": 0, "final_temperature": 100, "pressure": 1}]], "wall_s": 1.1836754579999251, "prompt_tokens": 413, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

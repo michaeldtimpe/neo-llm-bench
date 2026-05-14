@@ -1,0 +1,1 @@
+{"id": "live_multiple_937-193-0", "actual_calls": [["acl_api.AclApi.retrieve_projects", {"uuid": "123e4567-e89b-12d3-a456-426614174000", "excludeInactive": false, "onlyRoot": false}]], "wall_s": 0.565144792002684, "prompt_tokens": 562, "completion_tokens": 55, "error": "", "passed": true, "reason": "matched_gt_entry"}

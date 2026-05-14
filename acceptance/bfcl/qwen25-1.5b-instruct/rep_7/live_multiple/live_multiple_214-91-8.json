@@ -1,0 +1,1 @@
+{"id": "live_multiple_214-91-8", "actual_calls": [["experiences_and_education", {"person_id": "1234", "include_experiences": true, "include_education": true}]], "wall_s": 0.2530200409964891, "prompt_tokens": 1394, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

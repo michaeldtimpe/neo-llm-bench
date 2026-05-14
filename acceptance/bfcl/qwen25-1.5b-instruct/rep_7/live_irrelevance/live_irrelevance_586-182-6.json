@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_586-182-6", "actual_calls": [["getDataForProfessional", {"province_id": 1, "service_id": 1, "job_qty": 10}]], "wall_s": 0.23459087499941234, "prompt_tokens": 1030, "completion_tokens": 37, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: getDataForProfessional"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_23-2-11", "actual_calls": [], "wall_s": 0.267716707996442, "prompt_tokens": 380, "completion_tokens": 47, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_subdomains\",\n  \"arguments\": {\n    \"domain\": \"paypal.com\",\n    \"limit\": 25,\n    \"cursor\": \"pp_next\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

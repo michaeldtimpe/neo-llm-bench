@@ -1,0 +1,1 @@
+{"id": "live_multiple_592-157-13", "actual_calls": [["Media_3_FindMovies", {"genre": "Offbeat", "starring": "Inbal Amirav"}]], "wall_s": 0.2075044590019388, "prompt_tokens": 670, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

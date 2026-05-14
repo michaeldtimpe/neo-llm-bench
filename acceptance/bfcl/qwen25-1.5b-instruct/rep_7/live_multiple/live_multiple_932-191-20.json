@@ -1,0 +1,1 @@
+{"id": "live_multiple_932-191-20", "actual_calls": [["view_service_provider_profile", {"professional_id": 4724}]], "wall_s": 0.1644470829924103, "prompt_tokens": 1248, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}

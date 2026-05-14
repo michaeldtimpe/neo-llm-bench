@@ -1,0 +1,1 @@
+{"id": "live_multiple_56-22-3", "actual_calls": [["inventory_management", {"product_id": "111", "sizes": ["L"]}]], "wall_s": 0.272227458000998, "prompt_tokens": 1056, "completion_tokens": 30, "error": "", "raw_text": "[{\"arguments\": {\"product_id\": \"111\", \"sizes\": [\"L\"]}, \"name\": \"inventory_management\"}]", "passed": true, "reason": "matched_gt_entry"}

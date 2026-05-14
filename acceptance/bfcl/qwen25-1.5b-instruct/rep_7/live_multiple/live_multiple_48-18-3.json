@@ -1,0 +1,1 @@
+{"id": "live_multiple_48-18-3", "actual_calls": [["inventory_management", {"product_id": "123123", "quantity": 30}]], "wall_s": 0.2006349169969326, "prompt_tokens": 828, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

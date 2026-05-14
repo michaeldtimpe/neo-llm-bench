@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_731-246-0", "actual_calls": [["vt_get_dns_resolution_object", {"id": "1234567890abcdef"}]], "wall_s": 0.467906416990445, "prompt_tokens": 2605, "completion_tokens": 33, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: vt_get_dns_resolution_object"}

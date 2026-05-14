@@ -1,0 +1,1 @@
+{"id": "live_multiple_168-68-0", "actual_calls": [["get_adriel_profile", {"user_id": 12345, "include_private": true}]], "wall_s": 0.2771336669975426, "prompt_tokens": 1081, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_186-31-5", "actual_calls": [["inventory_management", {"product_id": "WDMX12345", "sizes": ["L", "XL"], "color": "any"}]], "wall_s": 0.25949004098947626, "prompt_tokens": 872, "completion_tokens": 43, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: inventory_management"}

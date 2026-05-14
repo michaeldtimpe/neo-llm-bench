@@ -1,0 +1,1 @@
+{"id": "live_multiple_1011-240-0", "actual_calls": [["get_synthetic_credential_names", {"filter": "active", "sort_order": "asc"}]], "wall_s": 0.20838208400527947, "prompt_tokens": 607, "completion_tokens": 31, "error": "", "passed": true, "reason": "matched_gt_entry"}

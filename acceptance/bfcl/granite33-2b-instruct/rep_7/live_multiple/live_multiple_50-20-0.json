@@ -1,0 +1,1 @@
+{"id": "live_multiple_50-20-0", "actual_calls": [], "wall_s": 0.4862581250054063, "prompt_tokens": 1127, "completion_tokens": 36, "error": "", "raw_text": "To provide you with the list of movies playing today in Noida, I need to know the cinema hall you prefer. Could you please specify the cinema hall?", "passed": false, "reason": "no_tool_call_emitted"}

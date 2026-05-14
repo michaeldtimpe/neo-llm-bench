@@ -1,0 +1,1 @@
+{"id": "live_multiple_40-15-0", "actual_calls": [["oven_preheat", {"duration": 36, "temperature": 201}]], "wall_s": 0.24906837499293033, "prompt_tokens": 491, "completion_tokens": 40, "error": "", "raw_text": "```json\n{\n  \"name\": \"oven_preheat\",\n  \"arguments\": {\n    \"duration\": 36,\n    \"temperature\": 201\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_581-157-2", "actual_calls": [["Media_3_FindMovies", {"genre": "Sci-fi"}]], "wall_s": 0.19991033300175332, "prompt_tokens": 658, "completion_tokens": 33, "error": "", "raw_text": "```json\n{\n  \"name\": \"Media_3_FindMovies\",\n  \"arguments\": {\n    \"genre\": \"Sci-fi\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

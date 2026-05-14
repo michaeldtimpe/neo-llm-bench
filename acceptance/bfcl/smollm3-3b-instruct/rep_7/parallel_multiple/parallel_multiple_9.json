@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_9", "actual_calls": [["flight_book", {"_from": "Seattle", "to": "Boston", "airlines": "American Airlines"}], ["hotel_book", {"location": "Boston", "nights": 4}]], "wall_s": 1.4076126660002046, "prompt_tokens": 405, "completion_tokens": 59, "error": "", "passed": true, "reason": "all_calls_matched"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_248-49-0", "actual_calls": [], "wall_s": 0.2241501250100555, "prompt_tokens": 1198, "completion_tokens": 18, "error": "", "raw_text": "Hello! How can I assist you in scheduling a flight with IndiGo airlines?", "passed": true, "reason": "correctly_no_tool_call"}

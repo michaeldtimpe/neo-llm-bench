@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_336-79-1", "actual_calls": [], "wall_s": 0.05683333300112281, "prompt_tokens": 429, "completion_tokens": 7, "error": "", "raw_text": "Pizzas are from Italy.", "passed": true, "reason": "correctly_no_tool_call"}

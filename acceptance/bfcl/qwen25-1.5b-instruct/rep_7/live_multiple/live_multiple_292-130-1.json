@@ -1,0 +1,1 @@
+{"id": "live_multiple_292-130-1", "actual_calls": [["Hotels_2_SearchHouse", {"where_to": "Long Beach, CA", "has_laundry_service": "dontcare", "number_of_adults": 1, "rating": 4.2}]], "wall_s": 0.3229700829979265, "prompt_tokens": 691, "completion_tokens": 56, "error": "", "passed": true, "reason": "matched_gt_entry"}

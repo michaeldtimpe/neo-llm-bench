@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_458-124-1", "actual_calls": [["get_weather_forecast", {"location": "30022", "units": "metric", "date": "null", "include_hourly": false}]], "wall_s": 0.265249957999913, "prompt_tokens": 437, "completion_tokens": 45, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_weather_forecast"}

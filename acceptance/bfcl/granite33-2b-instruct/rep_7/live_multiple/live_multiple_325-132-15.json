@@ -1,0 +1,1 @@
+{"id": "live_multiple_325-132-15", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Riley Stearns"}]], "wall_s": 0.2571764169988455, "prompt_tokens": 1348, "completion_tokens": 28, "error": "", "raw_text": "[{\"arguments\": {\"directed_by\": \"Riley Stearns\"}, \"name\": \"Movies_3_FindMovies\"}]", "passed": true, "reason": "matched_gt_entry"}

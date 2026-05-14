@@ -1,0 +1,1 @@
+{"id": "simple_python_139", "actual_calls": [["estimate_mutual_fund_return", {"yearly_yield": 5, "investment_amount": 2000, "years": 3}]], "wall_s": 1.0398318340003243, "prompt_tokens": 377, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

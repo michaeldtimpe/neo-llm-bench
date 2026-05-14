@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_862-349-2", "actual_calls": [], "wall_s": 0.14049833299941383, "prompt_tokens": 456, "completion_tokens": 23, "error": "", "raw_text": "{{\"name\": \"spacex\", \"arguments\": {\"query\": \"What is SpaceX?\"}}}}", "passed": true, "reason": "correctly_no_tool_call"}

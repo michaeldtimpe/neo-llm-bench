@@ -1,0 +1,1 @@
+{"id": "live_multiple_662-162-4", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "New York, NY", "date": "2023-10-07"}]], "wall_s": 0.4401533339987509, "prompt_tokens": 2082, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

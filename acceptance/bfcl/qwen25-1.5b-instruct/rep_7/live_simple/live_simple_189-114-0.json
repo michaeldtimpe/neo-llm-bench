@@ -1,0 +1,1 @@
+{"id": "live_simple_189-114-0", "actual_calls": [["extractor.extract_information", {"data": [{"age": 42, "name": "Chester", "nick_name": "None"}, {"age": 43, "name": "Jane", "nick_name": "None"}]}]], "wall_s": 0.38092329099890776, "prompt_tokens": 357, "completion_tokens": 62, "error": "", "passed": false, "reason": "call_extractor.extract_information_did_not_match_any_gt"}

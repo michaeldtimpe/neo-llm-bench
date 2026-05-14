@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_457-124-0", "actual_calls": [["get_weather_forecast", {"location": "Alpharetta, GA", "units": "metric", "include_hourly": false}]], "wall_s": 0.24760908300231677, "prompt_tokens": 446, "completion_tokens": 40, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_weather_forecast"}

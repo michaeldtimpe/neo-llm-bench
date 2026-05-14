@@ -1,0 +1,1 @@
+{"id": "live_multiple_1040-267-0", "actual_calls": [["experiences_and_education", {"person_id": "adriel", "include_education": true, "include_experiences": false}]], "wall_s": 0.3958519170009822, "prompt_tokens": 1183, "completion_tokens": 40, "error": "", "passed": false, "reason": "call_experiences_and_education_did_not_match_any_gt"}

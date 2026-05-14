@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_658-209-1", "actual_calls": [["Payment_1_MakePayment", {"payment_method": "app balance", "amount": 100, "receiver": "Diego", "private_visibility": false}]], "wall_s": 0.2670502090040827, "prompt_tokens": 561, "completion_tokens": 47, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Payment_1_MakePayment"}

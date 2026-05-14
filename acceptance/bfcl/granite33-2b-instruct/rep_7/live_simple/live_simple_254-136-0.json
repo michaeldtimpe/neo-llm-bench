@@ -1,0 +1,1 @@
+{"id": "live_simple_254-136-0", "actual_calls": [["user.mandates", {"user_id": "U123", "status": "pending"}]], "wall_s": 0.28721608298656065, "prompt_tokens": 353, "completion_tokens": 31, "error": "", "raw_text": "[{\"arguments\": {\"user_id\": \"U123\", \"status\": \"pending\"}, \"name\": \"user.mandates\"}]", "passed": true, "reason": "matched_gt_entry"}

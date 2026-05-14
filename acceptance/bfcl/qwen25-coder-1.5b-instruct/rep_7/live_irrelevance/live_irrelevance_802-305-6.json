@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_802-305-6", "actual_calls": [], "wall_s": 0.17974995799886528, "prompt_tokens": 1148, "completion_tokens": 28, "error": "", "raw_text": "```json\n{\n  \"name\": \"cli.start\",\n  \"arguments\": {\n    \"interactive\": true\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

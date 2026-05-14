@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_735-249-1", "actual_calls": [["partner.mandates", {}]], "wall_s": 0.10250658400764223, "prompt_tokens": 461, "completion_tokens": 18, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: partner.mandates"}

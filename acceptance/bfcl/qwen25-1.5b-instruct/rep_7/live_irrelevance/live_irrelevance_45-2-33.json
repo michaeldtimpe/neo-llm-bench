@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_45-2-33", "actual_calls": [["get_current_weather", {"location": "domain6.xyz, US", "unit": "fahrenheit"}]], "wall_s": 0.22604004100139719, "prompt_tokens": 377, "completion_tokens": 34, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_current_weather"}

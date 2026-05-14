@@ -88,6 +88,32 @@ Hard-won lessons from the bake-off. Read before starting fresh work.
 
 **Lesson**: Reasoning models need either a constrained `<think>` budget or a strip-and-re-prompt pass before they can be evaluated on tool-use at this size. Distilled R1 was cut from round 2 as a result.
 
+### 13. Lex-sort over numeric problem IDs is silent corruption (2026-05-14)
+
+**What happened**: Phase H's BFCL "apples-to-apples (n=1106)" table for smollm3 used `sorted(cat_dir.glob("*.json"))[:100]` to slice the full live cats down to 100 problems for comparison against the finalists' 100-per-cat baseline. Python lexicographic sort returns `live_simple_10` before `live_simple_2` and `live_simple_100` before `live_simple_11`. The "first 100" picked a chaotic subset that overlapped the finalists' actual reference 100 by only 7–11 problems out of 100. Same bug propagated through Round 3 Branch A and Branch C "first-100" comparisons.
+
+Headline downstream impact: smollm3 published as 805/1106 (72.8%) on matched data is actually 860/1106 (77.8%); the `live_irrelevance` "-20pp CI-distinct collapse" is actually **+11pp** when measured on the same problems; Branch C's collateral irrelevance harm gate published as PASS (-4pp combined) actually FAILS on matched data (-7pp combined).
+
+**Lesson**: Never lex-sort numeric problem IDs. Cross-model or cross-rep deltas must intersect problem-ID sets, not slice positionally. `[:N]` over a globbed list is itself a code smell on this kind of data.
+
+**How to apply**: All cross-model BFCL deltas go through `scripts/compare_matched_slice.py` with explicit `--policy intersection` and matched-ID artifact persistence in `acceptance/audits/`. Regression test in `tests/test_matched_slice.py::test_intersection_does_not_pick_lex_mangled_first_100` fails if the helper ever regresses. Memory: `feedback_slicing_methodology.md`.
+
+### 14. Mechanism claims need persisted evidence (2026-05-14)
+
+**What happened**: Phase H asserted "smollm3 emits Python code blocks instead of structured tool calls" in agent mode. The 240/1240 artifact count was real (n_with_calls=0 across all problems), but the per-problem JSON shape for rep_4 had no `raw_text` field — only `actual_calls` (empty everywhere). The specific text shape was inferred without persisted data to check. After Phase J added the field and re-ran rep_4, the dominant bucket turned out to be **prose** (61%, math/explanation text), not code blocks (38%). The prior claim captured the visually-striking minority.
+
+**Lesson**: When a report claims "model emits X instead of Y" in failure analysis, the underlying X must be in the artifact files at audit time. If the persistence path doesn't capture the relevant text, the claim is unverifiable and should be flagged as such, not asserted.
+
+**How to apply**: Per-problem JSONs persist `raw_text` since Phase J (BFCL specifically; HumanEval/MBPP earlier). Schema contract in ARCHITECTURE.md "Per-problem persistence and `raw_text` semantics" — raw mode = single `ChatResponse.text`; agent mode = assistant turns joined by `\n---\n`. Mechanism classification via `scripts/sample_raw_text.py --seed <s> --n <n>` with the 6-bucket taxonomy. Persist samples to `acceptance/audits/` for reproducibility.
+
+### 15. Matched-quality vs distribution-robustness are different claims (2026-05-14)
+
+**What happened**: Phase H's "smollm3 collapses on live cats" headline conflated two separately measurable phenomena: (a) head-to-head pass-rate on the same problems (matched-quality) and (b) within-model performance change when the problem distribution broadens (distribution-robustness). The published evidence for the collapse claim was largely the matched-quality table with a slicing bug. After correction: smollm3's matched-quality numbers are statistically tied with qwen25-1.5b (and above on live_irrelevance). Smollm3's *within-model* live distribution drop (89% on first-100 → 49% on the full 884) is real, but is a different claim — and the finalists hadn't been measured on full-live data, so no cross-model collapse comparison was actually evidenced.
+
+**Lesson**: Every cross-model claim must specify whether it's (a) head-to-head on the same tasks or (b) within-model behavioral drift. Mixing them produces conclusions that look strong but rest on incompatible evidence.
+
+**How to apply**: Report structure now splits "Subsection 1: matched-ID" from "Subsection 2: full-distribution" for BFCL cross-model claims. Phase K rep_7 (finalists on full live cats) turns within-model distribution signals into proper cross-model comparisons.
+
 ## What's still unknown
 
 - **BFCL multi-turn**: data exists (800 problems across 4 categories), grader is deferred. Need state-tracking; not trivially additive to the current single-turn grader.

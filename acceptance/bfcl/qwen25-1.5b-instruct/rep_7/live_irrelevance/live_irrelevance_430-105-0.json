@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_430-105-0", "actual_calls": [["get_response", {"url": "https://api.intent.com/query", "intents": ["hello", "I want to transfer funds", "show my balance", "hey there"], "timeout": 30.0}]], "wall_s": 0.34441516699735075, "prompt_tokens": 598, "completion_tokens": 57, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_response"}

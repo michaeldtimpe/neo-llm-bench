@@ -1,0 +1,1 @@
+{"id": "live_multiple_940-194-2", "actual_calls": [["play_spotify_song", {"query": "track:Baby Shark artist:Pinkfong", "autoplay": true, "volume": 100}]], "wall_s": 0.39658058299755794, "prompt_tokens": 862, "completion_tokens": 42, "error": "", "passed": false, "reason": "call_play_spotify_song_did_not_match_any_gt"}

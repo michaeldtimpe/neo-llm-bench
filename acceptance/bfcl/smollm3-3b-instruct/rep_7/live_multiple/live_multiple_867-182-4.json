@@ -1,0 +1,1 @@
+{"id": "live_multiple_867-182-4", "actual_calls": [["Movies_1_FindMovies", {"location": "Berkeley, CA", "genre": "Supernatural"}]], "wall_s": 0.3555248330012546, "prompt_tokens": 1465, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

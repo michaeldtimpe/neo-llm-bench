@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_8-0-8", "actual_calls": [["requests.get", {"url": "https://date.nager.at/api/v2/lookup?ip={ip_address}"}]], "wall_s": 1.4521759170020232, "prompt_tokens": 874, "completion_tokens": 163, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

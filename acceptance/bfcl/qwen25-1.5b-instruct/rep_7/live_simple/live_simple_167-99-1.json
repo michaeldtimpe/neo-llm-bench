@@ -1,0 +1,1 @@
+{"id": "live_simple_167-99-1", "actual_calls": [["cmd_controller.execute", {"command": "tasklist /FI \"IMAGENAME eq Code.exe\""}]], "wall_s": 0.19038549999822862, "prompt_tokens": 337, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

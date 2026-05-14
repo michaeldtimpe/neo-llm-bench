@@ -1,0 +1,1 @@
+{"id": "live_simple_102-61-0", "actual_calls": [["calculate_tax", {"purchase_amount": 59.99, "state": "CA", "county": "San Francisco", "city": "San Francisco", "tax_exempt": false, "discount_rate": 0, "apply_special_tax": false}]], "wall_s": 0.3954798750055488, "prompt_tokens": 516, "completion_tokens": 65, "error": "", "passed": true, "reason": "matched_gt_entry"}

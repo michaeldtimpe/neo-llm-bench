@@ -1,0 +1,1 @@
+{"id": "live_multiple_551-153-0", "actual_calls": [], "wall_s": 0.4091917499899864, "prompt_tokens": 1037, "completion_tokens": 31, "error": "", "raw_text": "Sure, I can help with that. Would you prefer a unisex salon or a salon that caters to a specific gender?", "passed": false, "reason": "no_tool_call_emitted"}

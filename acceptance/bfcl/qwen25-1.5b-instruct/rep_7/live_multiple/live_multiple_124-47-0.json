@@ -1,0 +1,1 @@
+{"id": "live_multiple_124-47-0", "actual_calls": [["duck_duck_go", {"query": "What is LangFuse and how can I use it in my genAI project?"}]], "wall_s": 0.2897419170039939, "prompt_tokens": 965, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

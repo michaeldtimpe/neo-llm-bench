@@ -1,0 +1,1 @@
+{"id": "irrelevance_135", "actual_calls": [["add_dates", {"date": "1776-07-04", "days_to_add": 0}]], "wall_s": 0.8084225830007199, "prompt_tokens": 323, "completion_tokens": 34, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: add_dates"}

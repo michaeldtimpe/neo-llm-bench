@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_682-221-0", "actual_calls": [["Events_3_BuyEventTickets", {"event_name": "Toto", "number_of_tickets": 1, "date": "2023-04-15"}]], "wall_s": 0.29776220899657346, "prompt_tokens": 1168, "completion_tokens": 50, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Events_3_BuyEventTickets"}

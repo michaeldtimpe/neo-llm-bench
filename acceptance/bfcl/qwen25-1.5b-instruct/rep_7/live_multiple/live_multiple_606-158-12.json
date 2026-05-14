@@ -1,0 +1,1 @@
+{"id": "live_multiple_606-158-12", "actual_calls": [["Hotels_4_SearchHotel", {"location": "Sydney, Australia", "star_rating": "4", "smoking_allowed": true, "number_of_rooms": "2"}]], "wall_s": 0.298678374994779, "prompt_tokens": 770, "completion_tokens": 49, "error": "", "passed": false, "reason": "call_Hotels_4_SearchHotel_did_not_match_any_gt"}

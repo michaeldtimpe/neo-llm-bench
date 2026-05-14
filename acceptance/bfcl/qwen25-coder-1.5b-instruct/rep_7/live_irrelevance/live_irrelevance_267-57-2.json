@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_267-57-2", "actual_calls": [], "wall_s": 0.12003229100082535, "prompt_tokens": 1235, "completion_tokens": 18, "error": "", "raw_text": "To determine the weather in Boston, you can use the `get_weather` function.", "passed": true, "reason": "correctly_no_tool_call"}

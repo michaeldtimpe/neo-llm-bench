@@ -1,0 +1,1 @@
+{"id": "multiple_80", "actual_calls": [["music_shop.find_nearby", {"location": "Nashville, TN", "services": ["Violin Lessons"], "instruments": ["Guitars"]}]], "wall_s": 1.1246674579997489, "prompt_tokens": 532, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

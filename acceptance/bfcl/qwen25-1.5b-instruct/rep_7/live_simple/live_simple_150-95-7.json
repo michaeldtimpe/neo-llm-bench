@@ -1,0 +1,1 @@
+{"id": "live_simple_150-95-7", "actual_calls": [["cmd_controller.execute", {"command": "shutdown /s /t 0"}]], "wall_s": 0.1628569169988623, "prompt_tokens": 356, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}

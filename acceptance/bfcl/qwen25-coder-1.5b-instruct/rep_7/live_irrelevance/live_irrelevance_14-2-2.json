@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_14-2-2", "actual_calls": [], "wall_s": 0.19287841700133868, "prompt_tokens": 355, "completion_tokens": 33, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_votes\",\n  \"arguments\": {\n    \"ip\": \"http://digdeep.io\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

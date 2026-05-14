@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_587-183-0", "actual_calls": [], "wall_s": 0.21373879100428894, "prompt_tokens": 1563, "completion_tokens": 33, "error": "", "raw_text": "```json\n{\n  \"name\": \"Weather_4_GetWeather\",\n  \"arguments\": {\n    \"city\": \"Hanoi\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

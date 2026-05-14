@@ -1,0 +1,1 @@
+{"id": "irrelevance_49", "actual_calls": [["get_co_ordinate", {"location": "Los Angeles"}], ["get_co_ordinate", {"location": "Berlin"}]], "wall_s": 0.9789434590002202, "prompt_tokens": 284, "completion_tokens": 43, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_co_ordinate"}

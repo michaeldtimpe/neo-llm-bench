@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_681-220-1", "actual_calls": [["Homes_2_FindHomeByArea", {"area": "Walnut Creek, CA", "intent": "rent", "number_of_beds": 3, "number_of_baths": 2}]], "wall_s": 0.305822458001785, "prompt_tokens": 674, "completion_tokens": 54, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Homes_2_FindHomeByArea"}

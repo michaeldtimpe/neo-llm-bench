@@ -1,0 +1,1 @@
+{"id": "live_multiple_492-148-2", "actual_calls": [], "wall_s": 0.3024220829975093, "prompt_tokens": 1149, "completion_tokens": 34, "error": "", "raw_text": "I can help you find music events in Berkeley, CA on March 10th, 2023. Let's find some options for you.", "passed": false, "reason": "no_tool_call_emitted"}

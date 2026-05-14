@@ -1,0 +1,1 @@
+{"id": "live_multiple_957-203-1", "actual_calls": [["user.mandates", {"name": "John Doe", "status": "active"}]], "wall_s": 0.28865350000342005, "prompt_tokens": 454, "completion_tokens": 30, "error": "", "passed": true, "reason": "matched_gt_entry"}

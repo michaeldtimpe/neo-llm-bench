@@ -1,0 +1,1 @@
+{"id": "live_multiple_711-164-27", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Jim Henson", "genre": "Fantasy", "cast": "Steve Whitmire"}]], "wall_s": 0.2596867920074146, "prompt_tokens": 900, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_446-116-0", "actual_calls": [["update_user_profile", {"user_id": 12345, "email": "john.doe@example.com", "preferences": {"privacy_settings": "public"}}]], "wall_s": 0.45160862500051735, "prompt_tokens": 487, "completion_tokens": 45, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: update_user_profile"}

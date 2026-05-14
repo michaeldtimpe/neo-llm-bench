@@ -1,0 +1,1 @@
+{"id": "live_multiple_470-145-21", "actual_calls": [["Travel_1_FindAttractions", {"location": "Paris, France", "free_entry": "True", "category": "dontcare", "good_for_kids": "True"}]], "wall_s": 0.2956580829923041, "prompt_tokens": 1800, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

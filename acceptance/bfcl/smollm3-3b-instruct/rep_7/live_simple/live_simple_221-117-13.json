@@ -1,0 +1,1 @@
+{"id": "live_simple_221-117-13", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "James Gray", "genre": "dontcare", "cast": "dontcare"}]], "wall_s": 0.4002992499990796, "prompt_tokens": 450, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "irrelevance_91", "actual_calls": [["get_law_categories", {"law_type": "noise", "country": "USA", "specific_category": "noise complaints"}]], "wall_s": 0.9029184169994551, "prompt_tokens": 337, "completion_tokens": 38, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_law_categories"}

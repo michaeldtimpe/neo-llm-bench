@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_462-127-0", "actual_calls": [["requests.get", {"url": "https://api.openweathermap.org/data/2.5/weather", "params": {"location": "Hyderabad", "format": "json"}, "auth": ["your_api_key"]}]], "wall_s": 0.38893004099372774, "prompt_tokens": 749, "completion_tokens": 56, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

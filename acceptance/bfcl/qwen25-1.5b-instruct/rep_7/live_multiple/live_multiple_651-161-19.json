@@ -1,0 +1,1 @@
+{"id": "live_multiple_651-161-19", "actual_calls": [["Music_3_PlayMedia", {"track": "The Getaway", "artist": "Red Hot Chili Peppers", "device": "Living room", "album": "The Getaway"}]], "wall_s": 0.29977670799416956, "prompt_tokens": 1417, "completion_tokens": 50, "error": "", "passed": true, "reason": "matched_gt_entry"}

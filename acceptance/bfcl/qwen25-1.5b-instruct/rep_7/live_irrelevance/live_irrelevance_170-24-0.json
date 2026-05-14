@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_170-24-0", "actual_calls": [], "wall_s": 0.11747333400126081, "prompt_tokens": 361, "completion_tokens": 18, "error": "", "raw_text": "None of the provided tools are suitable for the task of connecting with someone on Twitter.", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_843-333-0", "actual_calls": [], "wall_s": 0.08534799999324605, "prompt_tokens": 390, "completion_tokens": 10, "error": "", "raw_text": "I enjoy aprendiendo nuevas lenguas.", "passed": true, "reason": "correctly_no_tool_call"}

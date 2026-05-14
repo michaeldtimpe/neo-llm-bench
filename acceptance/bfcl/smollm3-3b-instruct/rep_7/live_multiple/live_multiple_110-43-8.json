@@ -1,0 +1,1 @@
+{"id": "live_multiple_110-43-8", "actual_calls": [["list_files", {"type": "txt", "include_hidden": true}]], "wall_s": 2.5053207089986245, "prompt_tokens": 1543, "completion_tokens": 277, "error": "", "passed": true, "reason": "matched_gt_entry"}

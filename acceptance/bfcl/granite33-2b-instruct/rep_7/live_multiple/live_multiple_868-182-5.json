@@ -1,0 +1,1 @@
+{"id": "live_multiple_868-182-5", "actual_calls": [], "wall_s": 0.376790082998923, "prompt_tokens": 2111, "completion_tokens": 41, "error": "", "raw_text": "Sure, I can help with that. Could you please provide more details? Specifically, I need to know the genre, show type, and the desired show date and time for the movie.", "passed": false, "reason": "no_tool_call_emitted"}

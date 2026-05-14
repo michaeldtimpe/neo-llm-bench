@@ -1,0 +1,1 @@
+{"id": "multiple_89", "actual_calls": [["recipe_search", {"ingredients": ["chicken", "mushrooms"], "calories": 500}]], "wall_s": 0.8695575410001766, "prompt_tokens": 599, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

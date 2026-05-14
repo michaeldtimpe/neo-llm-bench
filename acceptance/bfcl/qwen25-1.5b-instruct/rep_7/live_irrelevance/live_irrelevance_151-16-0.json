@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_151-16-0", "actual_calls": [["ThinQ_Connect", {"body": {"airConOperationMode": "POWER_ON"}}]], "wall_s": 0.16500545899907593, "prompt_tokens": 593, "completion_tokens": 30, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: ThinQ_Connect"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_121-77-0", "actual_calls": [["generate_chart", {"data_labels": ["Software Engineer", "Graphic Designer", "Data Analyst", "Sales Manager", "Nurse"], "data_values": [90000, 50000, 70000, 60000, 80000]}]], "wall_s": 0.45557387499138713, "prompt_tokens": 434, "completion_tokens": 78, "error": "", "passed": true, "reason": "matched_gt_entry"}

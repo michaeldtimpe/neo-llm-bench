@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_145-13-11", "actual_calls": [["cookbook.search_recipe", {"keyword": "\uc784\uc9c4\uc65c\ub780", "cuisine": "Chinese", "max_results": 5}]], "wall_s": 0.24423554200620856, "prompt_tokens": 1143, "completion_tokens": 39, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: cookbook.search_recipe"}

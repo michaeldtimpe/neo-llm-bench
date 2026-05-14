@@ -1,0 +1,1 @@
+{"id": "live_simple_116-72-0", "actual_calls": [["sum_numbers", {"numbers_list": [133, 34]}]], "wall_s": 0.21695012498821598, "prompt_tokens": 284, "completion_tokens": 36, "error": "", "raw_text": "```json\n{\n  \"name\": \"sum_numbers\",\n  \"arguments\": {\n    \"numbers_list\": [133, 34]\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

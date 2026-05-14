@@ -1,0 +1,1 @@
+{"id": "live_simple_142-94-1", "actual_calls": [["cmd_controller.execute", {"command": "dir Desktop"}]], "wall_s": 0.1367282499995781, "prompt_tokens": 331, "completion_tokens": 22, "error": "", "passed": true, "reason": "matched_gt_entry"}

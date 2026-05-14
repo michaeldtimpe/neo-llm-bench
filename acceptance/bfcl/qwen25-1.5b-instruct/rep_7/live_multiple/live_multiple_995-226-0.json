@@ -1,0 +1,1 @@
+{"id": "live_multiple_995-226-0", "actual_calls": [["events_api.EventsApi.kubernetes_info_events", {"to": 339000, "windowSize": 600000, "excludeTriggeredBefore": false, "filterEventUpdates": true}]], "wall_s": 0.45060450000164565, "prompt_tokens": 1319, "completion_tokens": 58, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_308-131-7", "actual_calls": [["Hotels_4_SearchHotel", {"location": "Phoenix, AZ"}]], "wall_s": 0.27153774999896996, "prompt_tokens": 2370, "completion_tokens": 28, "error": "", "raw_text": "[{\"name\": \"Hotels_4_SearchHotel\", \"arguments\": {\"location\": \"Phoenix, AZ\"}}]", "passed": true, "reason": "matched_gt_entry"}

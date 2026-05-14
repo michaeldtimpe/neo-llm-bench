@@ -1,0 +1,1 @@
+{"id": "live_simple_204-116-12", "actual_calls": [["Weather_1_GetWeather", {"city": "Rutherford", "date": "2023-04-22"}]], "wall_s": 0.2291555830015568, "prompt_tokens": 350, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

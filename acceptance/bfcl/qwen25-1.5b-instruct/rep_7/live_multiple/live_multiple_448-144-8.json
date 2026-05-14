@@ -1,0 +1,1 @@
+{"id": "live_multiple_448-144-8", "actual_calls": [["Services_4_FindProvider", {"city": "St. Helena, CA", "type": "Family Counselor"}]], "wall_s": 0.21886208301293664, "prompt_tokens": 1562, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_927-191-15", "actual_calls": [["get_service_providers", {"avg_rating": 4.5, "province_id": 1, "has_quality_problem": false, "is_excellent": true}]], "wall_s": 0.2794322919944534, "prompt_tokens": 1269, "completion_tokens": 46, "error": "", "passed": false, "reason": "call_get_service_providers_did_not_match_any_gt"}

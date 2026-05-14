@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_305-76-3", "actual_calls": [], "wall_s": 0.09268429198709782, "prompt_tokens": 978, "completion_tokens": 13, "error": "", "raw_text": "The feline [jumped] onto the [table].", "passed": true, "reason": "correctly_no_tool_call"}

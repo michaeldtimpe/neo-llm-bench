@@ -1,0 +1,1 @@
+{"id": "live_multiple_140-54-0", "actual_calls": [["weather.get", {"city": "London", "country": "GB", "units": "metric", "include_forecast": false}]], "wall_s": 0.2518284580000909, "prompt_tokens": 588, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

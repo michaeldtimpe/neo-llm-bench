@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_699-228-0", "actual_calls": [["RideSharing_2_GetRide", {"destination": "1270 Linford Lane", "number_of_seats": 4, "ride_type": "Luxury"}]], "wall_s": 0.47699987500163843, "prompt_tokens": 408, "completion_tokens": 48, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: RideSharing_2_GetRide"}

@@ -1,0 +1,1 @@
+{"id": "irrelevance_124", "actual_calls": [["get_social_trends", {"category": "technology", "region": "worldwide"}]], "wall_s": 0.6724069999982021, "prompt_tokens": 305, "completion_tokens": 30, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_social_trends"}

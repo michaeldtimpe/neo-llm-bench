@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_372-81-33", "actual_calls": [["requests.get", {"url": "https://www.amazon.com/Galaxy-S24-128GB-Storage/dp/B08N5Z4Z8W"}]], "wall_s": 1.9824619999999413, "prompt_tokens": 787, "completion_tokens": 226, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

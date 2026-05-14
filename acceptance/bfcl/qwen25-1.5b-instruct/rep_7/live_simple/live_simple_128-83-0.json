@@ -1,0 +1,1 @@
+{"id": "live_simple_128-83-0", "actual_calls": [["requests.get", {"fabricName": "PEK-ACI", "url": "https://192.168.11.33/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/nodes?fabricName=PEK-ACI"}]], "wall_s": 0.4326510000100825, "prompt_tokens": 449, "completion_tokens": 73, "error": "", "passed": true, "reason": "matched_gt_entry"}

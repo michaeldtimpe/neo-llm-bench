@@ -1,0 +1,1 @@
+{"id": "live_simple_119-75-0", "actual_calls": [["GetPrimeMinisters", {"countries": ["Australia", "Canada", "India"]}]], "wall_s": 0.2845059170067543, "prompt_tokens": 307, "completion_tokens": 31, "error": "", "raw_text": "[{\"arguments\": {\"countries\": [\"Australia\", \"Canada\", \"India\"]}, \"name\": \"GetPrimeMinisters\"}]", "passed": true, "reason": "matched_gt_entry"}

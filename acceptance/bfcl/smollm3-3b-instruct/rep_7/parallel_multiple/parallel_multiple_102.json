@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_102", "actual_calls": [["financial.compound_interest", {"principle": 5000, "rate": 0.04, "time": 5, "n": 4}], ["financial.simple_interest", {"principle": 5000, "rate": 0.035, "time": 5}]], "wall_s": 1.7283598750000237, "prompt_tokens": 565, "completion_tokens": 78, "error": "", "passed": true, "reason": "all_calls_matched"}

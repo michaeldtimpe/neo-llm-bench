@@ -1,0 +1,1 @@
+{"id": "live_simple_115-71-0", "actual_calls": [["calculate_sum", {"number1": 133, "number2": 34}]], "wall_s": 0.275033917001565, "prompt_tokens": 280, "completion_tokens": 30, "error": "", "raw_text": "[{\"arguments\": {\"number1\": 133, \"number2\": 34}, \"name\": \"calculate_sum\"}]", "passed": true, "reason": "matched_gt_entry"}

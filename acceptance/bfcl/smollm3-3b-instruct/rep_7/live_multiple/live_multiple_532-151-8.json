@@ -1,0 +1,1 @@
+{"id": "live_multiple_532-151-8", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "Portland, OR", "date": "dontcare"}]], "wall_s": 0.37693741700059036, "prompt_tokens": 565, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

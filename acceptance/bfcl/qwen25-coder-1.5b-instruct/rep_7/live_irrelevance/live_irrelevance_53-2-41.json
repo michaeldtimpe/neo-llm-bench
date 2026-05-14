@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_53-2-41", "actual_calls": [], "wall_s": 0.25202291599998716, "prompt_tokens": 366, "completion_tokens": 44, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_caa_records\",\n  \"arguments\": {\n    \"domain\": \"instagram.com\",\n    \"authorization_key\": \"ig_key001\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

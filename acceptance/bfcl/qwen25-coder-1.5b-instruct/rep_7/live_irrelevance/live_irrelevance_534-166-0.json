@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_534-166-0", "actual_calls": [["get_contact_information", {"name": "John Doe"}]], "wall_s": 0.15209287499601487, "prompt_tokens": 601, "completion_tokens": 21, "error": "", "raw_text": "{{\"name\": \"get_contact_information\", \"arguments\": {\"name\": \"John Doe\"}}}}", "passed": false, "reason": "called_tool_when_irrelevant: get_contact_information"}

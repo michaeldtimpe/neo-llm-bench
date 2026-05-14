@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_105-4-1", "actual_calls": [["ChaFod", {"TheFod": "PIZZA"}]], "wall_s": 0.147628957987763, "prompt_tokens": 325, "completion_tokens": 24, "error": "", "raw_text": "{{\"name\": \"ChaFod\", \"arguments\": {\"TheFod\": \"PIZZA\"}}}}", "passed": false, "reason": "called_tool_when_irrelevant: ChaFod"}

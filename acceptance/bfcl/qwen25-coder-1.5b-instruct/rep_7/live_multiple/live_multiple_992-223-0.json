@@ -1,0 +1,1 @@
+{"id": "live_multiple_992-223-0", "actual_calls": [["delete_apdex_configuration", {"id": "d0404"}]], "wall_s": 0.2531897500011837, "prompt_tokens": 734, "completion_tokens": 35, "error": "", "raw_text": "```json\n{\n  \"name\": \"delete_apdex_configuration\",\n  \"arguments\": {\n    \"id\": \"d0404\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

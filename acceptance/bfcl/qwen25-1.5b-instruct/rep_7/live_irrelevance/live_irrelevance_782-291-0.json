@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_782-291-0", "actual_calls": [["get_event_specification_infos_by_ids", {"event_ids": ["shoes"]}]], "wall_s": 0.21497033300693147, "prompt_tokens": 666, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_event_specification_infos_by_ids"}

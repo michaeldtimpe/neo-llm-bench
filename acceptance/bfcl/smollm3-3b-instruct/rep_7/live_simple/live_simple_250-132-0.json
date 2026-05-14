@@ -1,0 +1,1 @@
+{"id": "live_simple_250-132-0", "actual_calls": [["uber.eat.order", {"restaurants": "McDonald's", "items": ["Big Mac", "Big Mac", "McFlurry"], "quantities": [2, 2, 1]}]], "wall_s": 0.5238184160007222, "prompt_tokens": 395, "completion_tokens": 55, "error": "", "passed": false, "reason": "call_uber.eat.order_did_not_match_any_gt"}

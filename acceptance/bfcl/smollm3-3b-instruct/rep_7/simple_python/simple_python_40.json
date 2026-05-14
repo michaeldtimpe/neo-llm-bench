@@ -1,0 +1,1 @@
+{"id": "simple_python_40", "actual_calls": [["calculate_magnetic_field", {"current": 5, "radius": 4}]], "wall_s": 0.6762561669993374, "prompt_tokens": 360, "completion_tokens": 29, "error": "", "passed": true, "reason": "matched_gt_entry"}

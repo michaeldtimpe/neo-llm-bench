@@ -1,0 +1,1 @@
+{"id": "live_multiple_915-191-3", "actual_calls": [["get_service_providers", {"avg_rating": 5, "province_id": 1, "district_name": "Lat Phrao", "is_package": true}]], "wall_s": 0.28097633400466293, "prompt_tokens": 1264, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

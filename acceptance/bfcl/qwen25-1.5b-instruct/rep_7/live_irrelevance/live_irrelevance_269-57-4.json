@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_269-57-4", "actual_calls": [], "wall_s": 0.06050620898895431, "prompt_tokens": 1234, "completion_tokens": 7, "error": "", "raw_text": "France's capital is Paris.", "passed": true, "reason": "correctly_no_tool_call"}

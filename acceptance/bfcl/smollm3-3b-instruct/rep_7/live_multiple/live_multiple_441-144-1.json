@@ -1,0 +1,1 @@
+{"id": "live_multiple_441-144-1", "actual_calls": [["Services_4_FindProvider", {"city": "Los Altos, CA", "type": "Family Counselor"}]], "wall_s": 0.3706700830007321, "prompt_tokens": 1311, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

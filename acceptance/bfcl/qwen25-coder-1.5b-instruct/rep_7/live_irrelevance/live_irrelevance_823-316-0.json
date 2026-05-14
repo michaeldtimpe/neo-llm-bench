@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_823-316-0", "actual_calls": [["open_asset", {"asset_name": "MV32 - LightModel"}]], "wall_s": 0.17834516700531822, "prompt_tokens": 608, "completion_tokens": 25, "error": "", "raw_text": "{{\"name\": \"open_asset\", \"arguments\": {\"asset_name\": \"MV32 - LightModel\"}}}}", "passed": false, "reason": "called_tool_when_irrelevant: open_asset"}

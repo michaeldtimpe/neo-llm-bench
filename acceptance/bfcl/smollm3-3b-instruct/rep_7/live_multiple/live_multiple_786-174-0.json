@@ -1,0 +1,1 @@
+{"id": "live_multiple_786-174-0", "actual_calls": [["Homes_2_ScheduleVisit", {"property_name": "Riverdale Apartments", "visit_date": "2023-04-15"}]], "wall_s": 0.4355286660029378, "prompt_tokens": 629, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

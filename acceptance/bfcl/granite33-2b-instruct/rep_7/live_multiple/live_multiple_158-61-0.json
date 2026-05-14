@@ -1,0 +1,1 @@
+{"id": "live_multiple_158-61-0", "actual_calls": [["get_adriel_projects", {"user_id": 7623, "include_completed": true}]], "wall_s": 0.32934541699069086, "prompt_tokens": 563, "completion_tokens": 34, "error": "", "raw_text": "[{\"arguments\": {\"user_id\": 7623, \"include_completed\": true}, \"name\": \"get_adriel_projects\"}]", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_406-140-2", "actual_calls": [], "wall_s": 0.2852693329914473, "prompt_tokens": 1082, "completion_tokens": 32, "error": "", "raw_text": "I can help with that. I'll book a regular cab for you to 2508 University Avenue, Palo Alto, CA.", "passed": false, "reason": "no_tool_call_emitted"}

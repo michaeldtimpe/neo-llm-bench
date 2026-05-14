@@ -1,0 +1,1 @@
+{"id": "live_simple_249-131-0", "actual_calls": [["chat_with_friend", {"user_message": "Hey bunny, How are you doing"}]], "wall_s": 0.28385204200458247, "prompt_tokens": 265, "completion_tokens": 31, "error": "", "raw_text": "[{\"arguments\": {\"user_message\": \"Hey bunny, How are you doing\"}, \"name\": \"chat_with_friend\"}]", "passed": true, "reason": "matched_gt_entry"}

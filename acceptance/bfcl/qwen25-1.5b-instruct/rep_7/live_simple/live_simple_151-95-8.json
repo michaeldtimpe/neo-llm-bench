@@ -1,0 +1,1 @@
+{"id": "live_simple_151-95-8", "actual_calls": [["cmd_controller.execute", {"command": "netsh wlan disconnect"}]], "wall_s": 0.14779429200279992, "prompt_tokens": 351, "completion_tokens": 24, "error": "", "passed": true, "reason": "matched_gt_entry"}

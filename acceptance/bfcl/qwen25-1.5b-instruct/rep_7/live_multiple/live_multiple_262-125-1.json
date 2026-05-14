@@ -1,0 +1,1 @@
+{"id": "live_multiple_262-125-1", "actual_calls": [["rotateImageAction", {"degrees": 20}], ["flipImageAction", {"flip_direction": "vertical"}]], "wall_s": 0.2758516670000972, "prompt_tokens": 1209, "completion_tokens": 44, "error": "", "passed": false, "reason": "emitted_2_calls_expected_1"}

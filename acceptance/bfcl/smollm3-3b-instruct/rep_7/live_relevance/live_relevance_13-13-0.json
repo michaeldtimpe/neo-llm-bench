@@ -1,0 +1,1 @@
+{"id": "live_relevance_13-13-0", "actual_calls": [["Movies_1_GetTimesForMovie", {"movie_name": "The Matrix", "location": "San Francisco, CA", "show_date": "2023-10-01", "theater_name": "3rd Street Cinema", "show_type": "imax"}]], "wall_s": 0.6373694169997179, "prompt_tokens": 1477, "completion_tokens": 67, "error": "", "passed": true, "reason": "correctly_called_a_tool"}

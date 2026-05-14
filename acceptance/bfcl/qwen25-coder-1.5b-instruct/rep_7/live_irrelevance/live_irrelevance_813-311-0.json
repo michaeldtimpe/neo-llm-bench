@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_813-311-0", "actual_calls": [], "wall_s": 0.22232341600465588, "prompt_tokens": 427, "completion_tokens": 35, "error": "", "raw_text": "```json\n{\n  \"name\": \"CustomDashboardsApi.get_dashboard\",\n  \"arguments\": {\n    \"dashboard_name\": \"dashing\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

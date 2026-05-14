@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_461-126-0", "actual_calls": [["calculate_tax", {"income": 50000, "filing_status": "single", "deductions": 5000, "exemptions": 2, "tax_credits": [2000, 1000]}]], "wall_s": 0.5805584160007129, "prompt_tokens": 432, "completion_tokens": 60, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_tax"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_473-145-24", "actual_calls": [["Travel_1_FindAttractions", {"location": "New York, NY", "free_entry": "True", "category": "Museum"}]], "wall_s": 0.27659404098812956, "prompt_tokens": 1806, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

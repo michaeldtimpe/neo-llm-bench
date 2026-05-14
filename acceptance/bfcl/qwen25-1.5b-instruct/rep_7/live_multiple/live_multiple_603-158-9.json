@@ -1,0 +1,1 @@
+{"id": "live_multiple_603-158-9", "actual_calls": [["Hotels_4_SearchHotel", {"location": "New York, NY", "star_rating": "3", "number_of_rooms": "dontcare"}]], "wall_s": 0.2565532919979887, "prompt_tokens": 762, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

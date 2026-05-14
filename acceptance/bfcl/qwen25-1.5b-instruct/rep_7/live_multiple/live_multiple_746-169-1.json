@@ -1,0 +1,1 @@
+{"id": "live_multiple_746-169-1", "actual_calls": [["Media_3_FindMovies", {"genre": "Fantasy", "starring": "Emma Watson"}]], "wall_s": 0.1992543329979526, "prompt_tokens": 1466, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

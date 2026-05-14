@@ -1,0 +1,1 @@
+{"id": "live_multiple_237-106-3", "actual_calls": [["set_point", {"x": 2, "y": 3, "z": 4, "point_name": "pointA"}]], "wall_s": 0.2363032910070615, "prompt_tokens": 684, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

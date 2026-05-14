@@ -1,0 +1,1 @@
+{"id": "live_simple_32-9-0", "actual_calls": [["answer.string", {"answer": ""}]], "wall_s": 0.17062299999815878, "prompt_tokens": 332, "completion_tokens": 27, "error": "", "raw_text": "```json\n{\n  \"name\": \"answer.string\",\n  \"arguments\": {\n    \"answer\": \"\"\n  }\n}\n```", "passed": false, "reason": "call_answer.string_did_not_match_any_gt"}

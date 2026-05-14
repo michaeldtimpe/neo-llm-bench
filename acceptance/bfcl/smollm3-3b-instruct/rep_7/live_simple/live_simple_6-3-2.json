@@ -1,0 +1,1 @@
+{"id": "live_simple_6-3-2", "actual_calls": [["get_current_weather", {"location": "San Francisco", "unit": "fahrenheit"}]], "wall_s": 0.2894784579984844, "prompt_tokens": 381, "completion_tokens": 30, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

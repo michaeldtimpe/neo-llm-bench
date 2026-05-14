@@ -1,0 +1,1 @@
+{"id": "live_multiple_654-161-22", "actual_calls": [["Music_3_LookupMusic", {"genre": "Pop", "year": "2018"}]], "wall_s": 0.28447400000004563, "prompt_tokens": 1705, "completion_tokens": 31, "error": "", "raw_text": "[{\"arguments\": {\"genre\": \"Pop\", \"year\": \"2018\"}, \"name\": \"Music_3_LookupMusic\"}]", "passed": true, "reason": "matched_gt_entry"}

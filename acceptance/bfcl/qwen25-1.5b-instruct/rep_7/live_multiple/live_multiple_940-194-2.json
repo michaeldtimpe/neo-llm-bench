@@ -1,0 +1,1 @@
+{"id": "live_multiple_940-194-2", "actual_calls": [["play_spotify_song", {"query": "track:Baby Shark", "autoplay": true}]], "wall_s": 0.17896391601243522, "prompt_tokens": 959, "completion_tokens": 30, "error": "", "passed": false, "reason": "call_play_spotify_song_did_not_match_any_gt"}

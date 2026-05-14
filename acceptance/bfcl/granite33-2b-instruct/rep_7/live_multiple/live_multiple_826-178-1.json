@@ -1,0 +1,1 @@
+{"id": "live_multiple_826-178-1", "actual_calls": [["Music_3_LookupMusic", {"year": "2015"}]], "wall_s": 0.22999116699793376, "prompt_tokens": 1057, "completion_tokens": 25, "error": "", "raw_text": "[{\"arguments\": {\"year\": \"2015\"}, \"name\": \"Music_3_LookupMusic\"}]", "passed": true, "reason": "matched_gt_entry"}

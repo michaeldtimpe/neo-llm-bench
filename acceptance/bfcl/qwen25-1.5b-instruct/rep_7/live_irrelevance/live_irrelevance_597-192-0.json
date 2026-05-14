@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_597-192-0", "actual_calls": [["RideSharing_2_GetRide", {"destination": "China Station Restaurant, San Francisco, CA", "number_of_seats": 1, "ride_type": "Pool"}]], "wall_s": 0.28996891698625404, "prompt_tokens": 916, "completion_tokens": 49, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: RideSharing_2_GetRide"}

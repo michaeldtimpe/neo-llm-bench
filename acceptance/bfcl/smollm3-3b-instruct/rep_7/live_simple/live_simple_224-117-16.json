@@ -1,0 +1,1 @@
+{"id": "live_simple_224-117-16", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Tim Burton", "genre": "Offbeat", "cast": "Johnny Depp"}]], "wall_s": 0.39175266700112843, "prompt_tokens": 441, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_695-164-11", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Satoshi Kon", "genre": "Anime", "cast": "Akiko Kawase"}]], "wall_s": 0.25909108300402295, "prompt_tokens": 894, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

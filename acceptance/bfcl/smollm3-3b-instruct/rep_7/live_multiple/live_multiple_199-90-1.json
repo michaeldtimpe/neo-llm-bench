@@ -1,0 +1,1 @@
+{"id": "live_multiple_199-90-1", "actual_calls": [["adriel_tech_stack", {}], ["adriel_tech_stack", {}]], "wall_s": 0.5177000420007971, "prompt_tokens": 972, "completion_tokens": 56, "error": "", "passed": false, "reason": "emitted_2_calls_expected_1"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_742-254-2", "actual_calls": [], "wall_s": 0.15650883300986607, "prompt_tokens": 466, "completion_tokens": 26, "error": "", "raw_text": "Bubble sort has a worst-case and average complexity of O(n^2), where n is the number of items being sorted.", "passed": true, "reason": "correctly_no_tool_call"}

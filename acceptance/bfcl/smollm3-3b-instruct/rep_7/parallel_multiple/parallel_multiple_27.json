@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_27", "actual_calls": [["bank_account.transfer", {"from_account": "checking", "to_account": "saving", "amount": 5000}], ["bank_account.calculate_interest", {"principal": 5000, "rate": 0.03, "time": 5}]], "wall_s": 1.6395631250006772, "prompt_tokens": 432, "completion_tokens": 70, "error": "", "passed": true, "reason": "all_calls_matched"}

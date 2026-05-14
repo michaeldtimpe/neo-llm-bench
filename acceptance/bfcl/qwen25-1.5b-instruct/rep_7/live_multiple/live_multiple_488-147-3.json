@@ -1,0 +1,1 @@
+{"id": "live_multiple_488-147-3", "actual_calls": [["Trains_1_FindTrains", {"_from": "Portland, OR", "to": "Seattle, WA", "date_of_journey": "04/22/2023", "_class": "Value", "number_of_adults": 1}]], "wall_s": 0.5092125840019435, "prompt_tokens": 2198, "completion_tokens": 70, "error": "", "passed": true, "reason": "matched_gt_entry"}

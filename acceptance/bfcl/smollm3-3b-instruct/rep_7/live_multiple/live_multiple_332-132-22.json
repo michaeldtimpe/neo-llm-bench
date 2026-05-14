@@ -1,0 +1,1 @@
+{"id": "live_multiple_332-132-22", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "dontcare", "genre": "Mystery", "cast": "Kathy Griffin"}]], "wall_s": 0.40161950000037905, "prompt_tokens": 995, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_125-47-1", "actual_calls": [["multiply", {"a": 3, "b": 10}], ["add", {"a": 30, "b": 0}]], "wall_s": 0.6764049580015126, "prompt_tokens": 1438, "completion_tokens": 47, "error": "", "passed": false, "reason": "emitted_2_calls_expected_1"}

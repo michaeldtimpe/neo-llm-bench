@@ -1,0 +1,1 @@
+{"id": "live_multiple_309-131-8", "actual_calls": [["Hotels_4_ReserveHotel", {"place_name": "Berkeley, CA", "check_in_date": "2023-08-15", "stay_length": 3, "location": "Berkeley, CA", "number_of_rooms": "1"}]], "wall_s": 0.5118384160014102, "prompt_tokens": 1917, "completion_tokens": 70, "error": "", "passed": false, "reason": "call_Hotels_4_ReserveHotel_did_not_match_any_gt"}

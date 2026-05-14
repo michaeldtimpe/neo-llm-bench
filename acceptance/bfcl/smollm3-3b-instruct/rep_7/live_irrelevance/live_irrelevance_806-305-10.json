@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_806-305-10", "actual_calls": [["product_list.retrieve", {"category": "electronics", "availability": true, "sort_order": "desc", "limit": 10}]], "wall_s": 0.35526583299724734, "prompt_tokens": 945, "completion_tokens": 40, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: product_list.retrieve"}

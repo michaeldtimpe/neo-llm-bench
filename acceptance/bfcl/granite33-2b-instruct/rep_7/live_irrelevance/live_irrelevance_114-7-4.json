@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_114-7-4", "actual_calls": [], "wall_s": 0.3037554999900749, "prompt_tokens": 350, "completion_tokens": 35, "error": "", "raw_text": "I'm sorry, I can't assist with that. My capabilities are limited to calling functions for food delivery orders. I don't have the ability to fetch weather information.", "passed": true, "reason": "correctly_no_tool_call"}

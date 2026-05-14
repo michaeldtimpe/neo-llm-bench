@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_186-31-5", "actual_calls": [["inventory_management", {"product_id": "Wonderland_maxi_water_bottle_ID", "sizes": ["XL"], "color": "blue"}]], "wall_s": 7.879443750000064, "prompt_tokens": 757, "completion_tokens": 880, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: inventory_management"}

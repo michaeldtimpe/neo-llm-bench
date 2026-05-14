@@ -1,0 +1,1 @@
+{"id": "live_multiple_1007-236-0", "actual_calls": [["software_versions", {"version": "5.5"}]], "wall_s": 2.965934500000003, "prompt_tokens": 622, "completion_tokens": 334, "error": "", "passed": true, "reason": "matched_gt_entry"}

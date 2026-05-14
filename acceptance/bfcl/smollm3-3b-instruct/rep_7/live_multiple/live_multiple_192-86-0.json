@@ -1,0 +1,1 @@
+{"id": "live_multiple_192-86-0", "actual_calls": [], "wall_s": 0.5105471249989932, "prompt_tokens": 810, "completion_tokens": 43, "error": "", "passed": false, "reason": "no_tool_call_emitted"}

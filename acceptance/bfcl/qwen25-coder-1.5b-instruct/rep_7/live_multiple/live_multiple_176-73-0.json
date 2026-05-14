@@ -1,0 +1,1 @@
+{"id": "live_multiple_176-73-0", "actual_calls": [], "wall_s": 0.3859913339983905, "prompt_tokens": 1785, "completion_tokens": 36, "error": "", "raw_text": "{{\"name\": \"core_memory_search\", \"arguments\": {\"query\": \"Shishir's birthday\", \"page\": 0, \"request_heartbeat\": false}}}", "passed": false, "reason": "no_tool_call_emitted"}

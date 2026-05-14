@@ -1,0 +1,1 @@
+{"id": "live_multiple_282-128-5", "actual_calls": [["Restaurants_2_FindRestaurants", {"category": "American", "location": "Mountain View, CA", "has_seating_outdoors": true}]], "wall_s": 0.27992145899042953, "prompt_tokens": 1025, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

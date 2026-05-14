@@ -1,0 +1,1 @@
+{"id": "live_multiple_645-161-13", "actual_calls": [["Music_3_LookupMusic", {"artist": "Madonna", "year": "2019"}]], "wall_s": 0.308970166996005, "prompt_tokens": 1700, "completion_tokens": 34, "error": "", "raw_text": "[{\"name\": \"Music_3_LookupMusic\", \"arguments\": {\"artist\": \"Madonna\", \"year\": \"2019\"}}]", "passed": true, "reason": "matched_gt_entry"}

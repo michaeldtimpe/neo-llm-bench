@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_338-80-1", "actual_calls": [["mult", {"number1": 4, "number2": 5}]], "wall_s": 0.16066612499707844, "prompt_tokens": 289, "completion_tokens": 27, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: mult"}

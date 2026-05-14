@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_90-2-78", "actual_calls": [], "wall_s": 0.3195847080060048, "prompt_tokens": 381, "completion_tokens": 57, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_ip_resolutions\",\n  \"arguments\": {\n    \"ip\": \"67.89.0.1\",\n    \"api_key\": \"sec_key5\",\n    \"limit\": 25\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_200-116-8", "actual_calls": [["Weather_1_GetWeather", {"city": "Fremont", "date": "2023-03-01"}]], "wall_s": 0.3313397920137504, "prompt_tokens": 317, "completion_tokens": 39, "error": "", "raw_text": "[{\"arguments\": {\"city\": \"Fremont\", \"date\": \"2023-03-01\"}, \"name\": \"Weather_1_GetWeather\"}]", "passed": true, "reason": "matched_gt_entry"}

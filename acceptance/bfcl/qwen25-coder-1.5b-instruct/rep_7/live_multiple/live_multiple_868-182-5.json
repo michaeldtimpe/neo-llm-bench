@@ -1,0 +1,1 @@
+{"id": "live_multiple_868-182-5", "actual_calls": [["Movies_1_FindMovies", {"location": "Vallejo, CA"}]], "wall_s": 0.22003670799313113, "prompt_tokens": 1736, "completion_tokens": 36, "error": "", "raw_text": "```json\n{\n  \"name\": \"Movies_1_FindMovies\",\n  \"arguments\": {\n    \"location\": \"Vallejo, CA\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

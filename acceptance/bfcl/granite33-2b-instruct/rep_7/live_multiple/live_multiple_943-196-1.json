@@ -1,0 +1,1 @@
+{"id": "live_multiple_943-196-1", "actual_calls": [["play_song", {"query": "With You"}]], "wall_s": 0.18261541599349584, "prompt_tokens": 484, "completion_tokens": 20, "error": "", "raw_text": "[{\"arguments\": {\"query\": \"With You\"}, \"name\": \"play_song\"}]", "passed": true, "reason": "matched_gt_entry"}

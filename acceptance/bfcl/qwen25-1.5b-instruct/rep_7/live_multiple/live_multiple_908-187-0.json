@@ -1,0 +1,1 @@
+{"id": "live_multiple_908-187-0", "actual_calls": [["Travel_1_FindAttractions", {"location": "New York, NY", "free_entry": "True", "good_for_kids": "True"}]], "wall_s": 0.382043582998449, "prompt_tokens": 1454, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

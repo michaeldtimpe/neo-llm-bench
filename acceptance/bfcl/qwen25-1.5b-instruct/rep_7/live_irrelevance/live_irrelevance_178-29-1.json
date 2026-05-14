@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_178-29-1", "actual_calls": [["todo", {"type": "add", "content": "Demo task"}]], "wall_s": 0.15128008300962392, "prompt_tokens": 339, "completion_tokens": 26, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: todo"}

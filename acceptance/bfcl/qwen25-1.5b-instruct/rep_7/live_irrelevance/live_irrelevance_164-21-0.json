@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_164-21-0", "actual_calls": [["fahrenheit_to_celsius", {"fahrenheit": 100}]], "wall_s": 0.16381179200834595, "prompt_tokens": 626, "completion_tokens": 26, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: fahrenheit_to_celsius"}

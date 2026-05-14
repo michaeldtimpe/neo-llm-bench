@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_659-210-0", "actual_calls": [["Music_3_LookupMusic", {"artist": "Amitabh Bachchan", "genre": "dontcare", "year": 2017}]], "wall_s": 0.561676624998654, "prompt_tokens": 1123, "completion_tokens": 44, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Music_3_LookupMusic"}

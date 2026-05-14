@@ -1,0 +1,1 @@
+{"id": "live_multiple_755-169-10", "actual_calls": [], "wall_s": 0.22858495800755918, "prompt_tokens": 1779, "completion_tokens": 24, "error": "", "raw_text": "[{\"arguments\": {\"genre\": \"Fantasy\", \"starring\": \"Peter Jackson\"}}]", "passed": false, "reason": "no_tool_call_emitted"}

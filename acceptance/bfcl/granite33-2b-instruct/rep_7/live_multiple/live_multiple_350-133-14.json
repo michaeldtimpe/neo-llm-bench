@@ -1,0 +1,1 @@
+{"id": "live_multiple_350-133-14", "actual_calls": [], "wall_s": 0.20557504199678078, "prompt_tokens": 1152, "completion_tokens": 22, "error": "", "raw_text": "[{\"arguments\": {\"genre\": \"Metal\", \"starring\": \"Jinjer\"}}]", "passed": false, "reason": "no_tool_call_emitted"}

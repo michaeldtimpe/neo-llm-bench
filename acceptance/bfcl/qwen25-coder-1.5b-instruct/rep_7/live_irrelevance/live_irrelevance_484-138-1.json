@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_484-138-1", "actual_calls": [], "wall_s": 0.18293795800127555, "prompt_tokens": 447, "completion_tokens": 31, "error": "", "raw_text": "```json\n{\n  \"name\": \"rotate_card\",\n  \"arguments\": {\n    \"angle\": 360\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_169-99-3", "actual_calls": [["cmd_controller.execute", {"command": "d:/playground/pc_contoller/env/Scripts/python.exe d:/playground/pc_contoller/test.py"}]], "wall_s": 0.24969204200897366, "prompt_tokens": 356, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

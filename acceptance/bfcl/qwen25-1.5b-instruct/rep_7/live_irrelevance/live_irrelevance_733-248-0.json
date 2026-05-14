@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_733-248-0", "actual_calls": [["user.mandates", {"user_id": "12345", "status": "pending"}], ["user.mandates", {"user_id": "12345", "status": "active"}]], "wall_s": 0.3771171660046093, "prompt_tokens": 332, "completion_tokens": 66, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: user.mandates"}

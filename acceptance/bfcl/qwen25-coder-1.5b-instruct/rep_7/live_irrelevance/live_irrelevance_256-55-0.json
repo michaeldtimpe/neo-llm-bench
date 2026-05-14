@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_256-55-0", "actual_calls": [], "wall_s": 0.34800283299409784, "prompt_tokens": 1213, "completion_tokens": 42, "error": "", "raw_text": "```json\n{\n  \"name\": \"clone_repo\",\n  \"arguments\": {\n    \"repository_url\": \"git@github.com:zelarhq/nodejs-welcome.git\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

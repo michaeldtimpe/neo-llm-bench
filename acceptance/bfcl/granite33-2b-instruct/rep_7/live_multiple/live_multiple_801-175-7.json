@@ -1,0 +1,1 @@
+{"id": "live_multiple_801-175-7", "actual_calls": [["Weather_1_GetWeather", {"city": "New Delhi, India"}]], "wall_s": 0.2624088330048835, "prompt_tokens": 1877, "completion_tokens": 28, "error": "", "raw_text": "[{\"name\": \"Weather_1_GetWeather\", \"arguments\": {\"city\": \"New Delhi, India\"}}]", "passed": false, "reason": "call_Weather_1_GetWeather_did_not_match_any_gt"}

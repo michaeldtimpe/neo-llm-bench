@@ -1,0 +1,1 @@
+{"id": "live_multiple_204-90-6", "actual_calls": [["adriel_experiences_and_education", {}]], "wall_s": 0.15935558298951946, "prompt_tokens": 1142, "completion_tokens": 25, "error": "", "raw_text": "```json\n{\n  \"name\": \"adriel_experiences_and_education\",\n  \"arguments\": {}\n}\n```", "passed": true, "reason": "matched_gt_entry"}

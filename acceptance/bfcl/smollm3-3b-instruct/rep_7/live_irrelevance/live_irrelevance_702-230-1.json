@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_702-230-1", "actual_calls": [["Payment_1_MakePayment", {"payment_method": "debit card", "amount": 122, "receiver": "visa", "private_visibility": false}]], "wall_s": 0.43201433300055214, "prompt_tokens": 1067, "completion_tokens": 45, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Payment_1_MakePayment"}

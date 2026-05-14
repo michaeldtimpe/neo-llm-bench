@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_206-32-19", "actual_calls": [["user_authentication.login", {"username": "JohnDoe", "password": "mysecretpassword", "remember_me": true}]], "wall_s": 0.3746474590006983, "prompt_tokens": 371, "completion_tokens": 40, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: user_authentication.login"}

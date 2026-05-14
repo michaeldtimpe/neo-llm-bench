@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_786-295-0", "actual_calls": [["find_infra_alert_config_versions", {"id": "delta", "include_deleted": true}]], "wall_s": 0.43392154200046207, "prompt_tokens": 1036, "completion_tokens": 31, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: find_infra_alert_config_versions"}

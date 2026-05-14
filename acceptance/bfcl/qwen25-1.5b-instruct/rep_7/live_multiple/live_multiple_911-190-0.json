@@ -1,0 +1,1 @@
+{"id": "live_multiple_911-190-0", "actual_calls": [["view_service_provider_profile", {"service_id": 1}]], "wall_s": 0.21699520898982882, "prompt_tokens": 1029, "completion_tokens": 23, "error": "", "passed": true, "reason": "matched_gt_entry"}

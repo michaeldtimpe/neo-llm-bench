@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_744-255-0", "actual_calls": [["uber.ride", {"loc": "Tel Aviv, Israel", "type": "plus", "time": 30}]], "wall_s": 0.38613770799929625, "prompt_tokens": 531, "completion_tokens": 37, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: uber.ride"}

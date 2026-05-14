@@ -1,0 +1,1 @@
+{"id": "live_relevance_9-9-0", "actual_calls": [["Movies_1_GetTimesForMovie", {"movie_name": "The Matrix", "location": "Santa Rosa, CA", "show_date": "2023-04-15", "theater_name": "3rd Street Cinema", "show_type": "regular"}]], "wall_s": 0.41041591700923163, "prompt_tokens": 1045, "completion_tokens": 70, "error": "", "passed": true, "reason": "correctly_called_a_tool"}

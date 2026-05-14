@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_327-76-25", "actual_calls": [["requests.get", {"url": "https://www.google.com/search?q=1+1", "headers": {"Accept": "text/html"}, "timeout": 5}]], "wall_s": 0.2642166669975268, "prompt_tokens": 943, "completion_tokens": 46, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

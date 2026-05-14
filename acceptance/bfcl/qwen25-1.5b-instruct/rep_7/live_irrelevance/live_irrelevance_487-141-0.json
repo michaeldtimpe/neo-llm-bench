@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_487-141-0", "actual_calls": [["adriel_contact", {"contact_id": 1, "format": "json"}]], "wall_s": 0.16261254200071562, "prompt_tokens": 1132, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: adriel_contact"}

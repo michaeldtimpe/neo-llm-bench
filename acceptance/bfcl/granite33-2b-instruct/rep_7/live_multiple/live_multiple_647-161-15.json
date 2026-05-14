@@ -1,0 +1,1 @@
+{"id": "live_multiple_647-161-15", "actual_calls": [["Music_3_LookupMusic", {"artist": "Ariana Grande", "year": "2018"}]], "wall_s": 0.32380404199648183, "prompt_tokens": 1692, "completion_tokens": 36, "error": "", "raw_text": "[{\"name\": \"Music_3_LookupMusic\", \"arguments\": {\"artist\": \"Ariana Grande\", \"year\": \"2018\"}}]", "passed": true, "reason": "matched_gt_entry"}

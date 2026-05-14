@@ -1,0 +1,1 @@
+{"id": "live_multiple_315-132-5", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Herbert Ross", "cast": "James Shapkoff III"}]], "wall_s": 0.23048779100645334, "prompt_tokens": 1140, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

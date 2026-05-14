@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_352-81-13", "actual_calls": [["requests.get", {"url": "https://api.open-meteo.com/v1/forecast", "params": {"latitude": 40.7128, "longitude": -74.006, "elevation": 0}}]], "wall_s": 1.257877957999881, "prompt_tokens": 786, "completion_tokens": 142, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

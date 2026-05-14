@@ -1,0 +1,1 @@
+{"id": "live_multiple_316-132-6", "actual_calls": [["Movies_3_FindMovies", {"genre": "Offbeat", "cast": "Camila Sosa"}]], "wall_s": 0.2958053330075927, "prompt_tokens": 1343, "completion_tokens": 32, "error": "", "raw_text": "[{\"arguments\": {\"genre\": \"Offbeat\", \"cast\": \"Camila Sosa\"}, \"name\": \"Movies_3_FindMovies\"}]", "passed": true, "reason": "matched_gt_entry"}

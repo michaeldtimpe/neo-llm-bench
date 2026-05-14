@@ -1,0 +1,1 @@
+{"id": "live_simple_185-110-0", "actual_calls": [["get_service_providers", {"service_id": 2, "province_id": 3, "rating": 4.5, "start_available_date": "2023-09-29"}]], "wall_s": 0.33731050000642426, "prompt_tokens": 590, "completion_tokens": 55, "error": "", "passed": false, "reason": "call_get_service_providers_did_not_match_any_gt"}

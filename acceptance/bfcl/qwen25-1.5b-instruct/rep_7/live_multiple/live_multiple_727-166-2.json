@@ -1,0 +1,1 @@
+{"id": "live_multiple_727-166-2", "actual_calls": [["Services_1_BookAppointment", {"stylist_name": "John's Barber Shop", "appointment_time": "14:00", "appointment_date": "2023-03-15"}]], "wall_s": 0.328360707993852, "prompt_tokens": 664, "completion_tokens": 56, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_847-337-0", "actual_calls": [], "wall_s": 0.461462166000274, "prompt_tokens": 517, "completion_tokens": 51, "error": "", "raw_text": "[{\"arguments\": {\"url\": \"https://finance.yahoo.com/quote/AAPL/financials?p=AAPL\", \"params\": {\"search\": \"Apple revenue\"}, \"name\": \"requests.get\"}]", "passed": true, "reason": "correctly_no_tool_call"}

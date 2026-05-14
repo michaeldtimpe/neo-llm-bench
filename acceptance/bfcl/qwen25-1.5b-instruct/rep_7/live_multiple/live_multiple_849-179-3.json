@@ -1,0 +1,1 @@
+{"id": "live_multiple_849-179-3", "actual_calls": [["Restaurants_2_FindRestaurants", {"category": "Indian", "location": "Sunnyvale, CA", "price_range": "cheap", "has_vegetarian_options": false, "has_seating_outdoors": false}]], "wall_s": 0.35032099999079946, "prompt_tokens": 876, "completion_tokens": 60, "error": "", "passed": true, "reason": "matched_gt_entry"}

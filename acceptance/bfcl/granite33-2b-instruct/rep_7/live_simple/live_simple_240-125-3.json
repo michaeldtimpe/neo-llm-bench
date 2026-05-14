@@ -1,0 +1,1 @@
+{"id": "live_simple_240-125-3", "actual_calls": [["play_spotify_song", {"query": "Baby Shark"}]], "wall_s": 0.21491300000343472, "prompt_tokens": 353, "completion_tokens": 24, "error": "", "raw_text": "[{\"arguments\": {\"query\": \"Baby Shark\"}, \"name\": \"play_spotify_song\"}]", "passed": true, "reason": "matched_gt_entry"}

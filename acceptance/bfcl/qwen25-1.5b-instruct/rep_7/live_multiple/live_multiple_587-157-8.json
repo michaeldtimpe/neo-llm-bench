@@ -1,0 +1,1 @@
+{"id": "live_multiple_587-157-8", "actual_calls": [["Media_3_FindMovies", {"genre": "Horror", "starring": "Christopher Lee"}]], "wall_s": 0.19444858400675002, "prompt_tokens": 657, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

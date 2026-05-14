@@ -1,0 +1,1 @@
+{"id": "live_simple_211-117-3", "actual_calls": [], "wall_s": 0.44989183300640434, "prompt_tokens": 470, "completion_tokens": 50, "error": "", "raw_text": "Sure, I can help with that. Let me find the movies for you.\n\n[{\"arguments\": {\"genre\": \"Comic\", \"cast\": \"James Corden\"}, \"name\": \"Movies_3_FindMovies\"}]", "passed": false, "reason": "no_tool_call_emitted"}

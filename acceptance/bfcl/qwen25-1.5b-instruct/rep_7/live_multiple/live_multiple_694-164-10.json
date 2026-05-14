@@ -1,0 +1,1 @@
+{"id": "live_multiple_694-164-10", "actual_calls": [["Movies_3_FindMovies", {"cast": "Javier Bardem"}]], "wall_s": 0.16650016700441483, "prompt_tokens": 894, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}

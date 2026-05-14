@@ -1,0 +1,1 @@
+{"id": "live_simple_56-26-0", "actual_calls": [["todo_manager.handle_action", {"type": "delete", "content": "go to gym"}]], "wall_s": 0.19045024999650195, "prompt_tokens": 371, "completion_tokens": 30, "error": "", "passed": true, "reason": "matched_gt_entry"}

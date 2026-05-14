@@ -1,0 +1,1 @@
+{"id": "live_multiple_329-132-19", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "quentin tarantino", "cast": "eric stoltz"}]], "wall_s": 0.23267379199387506, "prompt_tokens": 1142, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_576-179-5", "actual_calls": [], "wall_s": 0.16702787499525584, "prompt_tokens": 553, "completion_tokens": 28, "error": "", "raw_text": "To determine when you go on your next trip, you can use the `EventQuery` function with the search string \"next trip\".", "passed": true, "reason": "correctly_no_tool_call"}

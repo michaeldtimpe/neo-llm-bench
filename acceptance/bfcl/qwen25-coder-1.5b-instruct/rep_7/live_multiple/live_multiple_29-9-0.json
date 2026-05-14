@@ -1,0 +1,1 @@
+{"id": "live_multiple_29-9-0", "actual_calls": [["add", {"a": 30, "b": 10}]], "wall_s": 0.23893387499265373, "prompt_tokens": 567, "completion_tokens": 37, "error": "", "raw_text": "```json\n{\n  \"name\": \"add\",\n  \"arguments\": {\n    \"a\": 30,\n    \"b\": 10\n  }\n}\n```", "passed": false, "reason": "call_add_did_not_match_any_gt"}

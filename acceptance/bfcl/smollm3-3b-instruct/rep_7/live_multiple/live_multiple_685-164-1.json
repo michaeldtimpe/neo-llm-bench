@@ -1,0 +1,1 @@
+{"id": "live_multiple_685-164-1", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Wes Anderson", "genre": "Offbeat"}]], "wall_s": 0.3429987910021737, "prompt_tokens": 791, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_253-117-0", "actual_calls": [["badge_api.BadgeApi.get_project_vulnerabilities_badge", {"name": "bandana", "version": "5"}]], "wall_s": 0.3926047919994744, "prompt_tokens": 484, "completion_tokens": 38, "error": "", "passed": true, "reason": "matched_gt_entry"}

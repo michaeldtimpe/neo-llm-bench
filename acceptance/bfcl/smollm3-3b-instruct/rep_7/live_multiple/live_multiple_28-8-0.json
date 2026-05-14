@@ -1,0 +1,1 @@
+{"id": "live_multiple_28-8-0", "actual_calls": [["my_core_function", {"name": "Balkrushn"}]], "wall_s": 0.2649807919988234, "prompt_tokens": 342, "completion_tokens": 25, "error": "", "passed": true, "reason": "matched_gt_entry"}

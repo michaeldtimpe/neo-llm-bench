@@ -1,0 +1,1 @@
+{"id": "live_multiple_97-42-1", "actual_calls": [["connect_to_server", {"nickname": "xyz"}]], "wall_s": 3.0050845420009864, "prompt_tokens": 1527, "completion_tokens": 318, "error": "", "passed": true, "reason": "matched_gt_entry"}

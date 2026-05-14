@@ -1,0 +1,1 @@
+{"id": "live_simple_78-39-0", "actual_calls": [["send_email", {"to_address": "andy@gorilla.ai", "subject": "Sales Forecast Request", "body": "where is the latest sales forecast spreadsheet?"}]], "wall_s": 0.5218740410018654, "prompt_tokens": 566, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

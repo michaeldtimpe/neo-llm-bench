@@ -1,0 +1,1 @@
+{"id": "live_simple_129-83-1", "actual_calls": [["requests.get", {"fabricName": "fab-ed", "url": "https://3.321.3232.2/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/nodes?fabricName=fab-ed"}]], "wall_s": 0.3872043750016019, "prompt_tokens": 420, "completion_tokens": 66, "error": "", "passed": true, "reason": "matched_gt_entry"}

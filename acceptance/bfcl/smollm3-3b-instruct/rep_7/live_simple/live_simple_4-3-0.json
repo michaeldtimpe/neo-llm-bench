@@ -1,0 +1,1 @@
+{"id": "live_simple_4-3-0", "actual_calls": [["get_current_weather", {"location": "Tel Aviv, Israel", "unit": "fahrenheit"}]], "wall_s": 0.3248573330020008, "prompt_tokens": 377, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

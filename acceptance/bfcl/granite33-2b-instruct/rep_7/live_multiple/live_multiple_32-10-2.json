@@ -1,0 +1,1 @@
+{"id": "live_multiple_32-10-2", "actual_calls": [["sub", {"a": 100, "b": 40}]], "wall_s": 0.2346226669906173, "prompt_tokens": 999, "completion_tokens": 26, "error": "", "raw_text": "[{\"arguments\": {\"a\": 100, \"b\": 40}, \"name\": \"sub\"}]", "passed": true, "reason": "matched_gt_entry"}

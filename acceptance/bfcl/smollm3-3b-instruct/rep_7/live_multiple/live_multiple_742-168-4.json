@@ -1,0 +1,1 @@
+{"id": "live_multiple_742-168-4", "actual_calls": [["Payment_1_MakePayment", {"payment_method": "app balance", "amount": 84, "receiver": "Yumi", "private_visibility": true}]], "wall_s": 0.4446565420003026, "prompt_tokens": 1182, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

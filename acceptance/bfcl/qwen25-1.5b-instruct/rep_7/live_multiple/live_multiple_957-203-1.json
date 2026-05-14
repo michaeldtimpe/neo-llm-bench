@@ -1,0 +1,1 @@
+{"id": "live_multiple_957-203-1", "actual_calls": [["partner.mandates", {"status": "active"}]], "wall_s": 0.1361345000041183, "prompt_tokens": 473, "completion_tokens": 22, "error": "", "passed": false, "reason": "call_partner.mandates_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_324-132-14", "actual_calls": [["Movies_3_FindMovies", {"cast": "Zoe Margaret Colletti"}]], "wall_s": 0.26680666700121947, "prompt_tokens": 1343, "completion_tokens": 29, "error": "", "raw_text": "[{\"arguments\": {\"cast\": \"Zoe Margaret Colletti\"}, \"name\": \"Movies_3_FindMovies\"}]", "passed": true, "reason": "matched_gt_entry"}

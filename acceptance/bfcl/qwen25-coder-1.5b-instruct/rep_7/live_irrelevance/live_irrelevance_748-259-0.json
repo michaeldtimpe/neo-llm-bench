@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_748-259-0", "actual_calls": [], "wall_s": 0.3613788329967065, "prompt_tokens": 1028, "completion_tokens": 50, "error": "", "raw_text": "```json\n{\n  \"name\": \"uber_api.UberApi.get_uber_ride_type\",\n  \"arguments\": {\n    \"zipcode\": \"94704\",\n    \"duration\": 10\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

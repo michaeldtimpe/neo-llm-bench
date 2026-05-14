@@ -1,0 +1,1 @@
+{"id": "live_multiple_911-190-0", "actual_calls": [["view_service_provider_profile", {"service_id": 1}]], "wall_s": 0.26559329198789783, "prompt_tokens": 1029, "completion_tokens": 32, "error": "", "raw_text": "```json\n{\n  \"name\": \"view_service_provider_profile\",\n  \"arguments\": {\n    \"service_id\": 1\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

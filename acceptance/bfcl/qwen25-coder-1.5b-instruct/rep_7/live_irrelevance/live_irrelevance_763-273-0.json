@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_763-273-0", "actual_calls": [], "wall_s": 0.1393207499932032, "prompt_tokens": 305, "completion_tokens": 20, "error": "", "raw_text": "{{\"name\": \"get_weather\", \"arguments\": {\"city\": \"San Francisco\"}}}}", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_39-2-27", "actual_calls": [], "wall_s": 0.24221954100357834, "prompt_tokens": 363, "completion_tokens": 42, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_url_descriptors\",\n  \"arguments\": {\n    \"domain\": \"linked.net\",\n    \"api_key\": \"linker_api\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

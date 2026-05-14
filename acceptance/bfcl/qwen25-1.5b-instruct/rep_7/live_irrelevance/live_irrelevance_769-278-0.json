@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_769-278-0", "actual_calls": [], "wall_s": 0.12002825000672601, "prompt_tokens": 337, "completion_tokens": 17, "error": "", "raw_text": "No, the given text is not relevant to the keyword \"Sahil\".", "passed": true, "reason": "correctly_no_tool_call"}

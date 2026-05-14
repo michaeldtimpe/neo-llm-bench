@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_487-141-0", "actual_calls": [["help", {"context": "user_interface"}]], "wall_s": 0.3863801249972312, "prompt_tokens": 1348, "completion_tokens": 20, "error": "", "raw_text": "[{\"name\": \"help\", \"arguments\": {\"context\": \"user_interface\"}}]", "passed": false, "reason": "called_tool_when_irrelevant: help"}

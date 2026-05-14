@@ -1,0 +1,1 @@
+{"id": "live_multiple_482-146-7", "actual_calls": [["Music_3_LookupMusic", {"genre": "Reggae"}]], "wall_s": 0.2169231660082005, "prompt_tokens": 818, "completion_tokens": 24, "error": "", "raw_text": "[{\"arguments\": {\"genre\": \"Reggae\"}, \"name\": \"Music_3_LookupMusic\"}]", "passed": true, "reason": "matched_gt_entry"}

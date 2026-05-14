@@ -1,0 +1,1 @@
+{"id": "live_multiple_223-97-0", "actual_calls": [["list_directory_contents", {"dir_path": "/out/programs", "include_hidden": true, "sort_order": "desc"}]], "wall_s": 0.24361549998866394, "prompt_tokens": 662, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

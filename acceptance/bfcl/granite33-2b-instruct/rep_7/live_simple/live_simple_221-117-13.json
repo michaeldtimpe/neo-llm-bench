@@ -1,0 +1,1 @@
+{"id": "live_simple_221-117-13", "actual_calls": [], "wall_s": 0.21690187499916647, "prompt_tokens": 470, "completion_tokens": 22, "error": "", "raw_text": "Sure, I can help with that. Let me find the movies directed by James Gray for you.", "passed": false, "reason": "no_tool_call_emitted"}

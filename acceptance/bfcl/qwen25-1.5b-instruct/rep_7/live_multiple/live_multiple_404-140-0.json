@@ -1,0 +1,1 @@
+{"id": "live_multiple_404-140-0", "actual_calls": [["RideSharing_2_GetRide", {"destination": "123 Beijing Street, San Francisco", "number_of_seats": 1, "ride_type": "Regular"}]], "wall_s": 0.3560149580007419, "prompt_tokens": 945, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

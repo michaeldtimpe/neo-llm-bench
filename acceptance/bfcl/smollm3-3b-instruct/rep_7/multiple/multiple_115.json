@@ -1,0 +1,1 @@
+{"id": "multiple_115", "actual_calls": [["find_restaurants", {"location": "Manhattan", "food_type": "Thai", "number": 5, "dietary_requirements": ["vegan"]}]], "wall_s": 1.1671750420000535, "prompt_tokens": 658, "completion_tokens": 46, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_199-90-1", "actual_calls": [["adriel_tech_stack", {}]], "wall_s": 0.1354167090030387, "prompt_tokens": 1142, "completion_tokens": 19, "error": "", "passed": true, "reason": "matched_gt_entry"}

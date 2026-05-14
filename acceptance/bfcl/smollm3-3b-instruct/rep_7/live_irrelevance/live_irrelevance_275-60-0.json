@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_275-60-0", "actual_calls": [["detect_beats_and_filter", {"capture_percentage": 50, "confidence_window_size": 0.5}]], "wall_s": 0.3533355420004227, "prompt_tokens": 380, "completion_tokens": 35, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: detect_beats_and_filter"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_162-63-1", "actual_calls": [["get_detail_adriel_project", {"project_name": "e-commerce-web", "include_financials": false, "date_format": "YYYY-MM-DD"}]], "wall_s": 0.4126556660012284, "prompt_tokens": 857, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

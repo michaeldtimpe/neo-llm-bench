@@ -1,0 +1,1 @@
+{"id": "live_simple_239-125-2", "actual_calls": [["play_spotify_song", {"query": "Shape of You", "device_id": "spotify_device_id", "play": true}]], "wall_s": 0.22149854101007804, "prompt_tokens": 375, "completion_tokens": 38, "error": "", "passed": false, "reason": "call_play_spotify_song_did_not_match_any_gt"}

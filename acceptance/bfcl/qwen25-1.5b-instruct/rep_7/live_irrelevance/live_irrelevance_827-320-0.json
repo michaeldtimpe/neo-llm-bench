@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_827-320-0", "actual_calls": [["query_amap_info", {"query": "5A\u666f\u533a"}]], "wall_s": 0.16332041600253433, "prompt_tokens": 418, "completion_tokens": 24, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: query_amap_info"}

@@ -1,0 +1,1 @@
+{"id": "live_simple_173-99-7", "actual_calls": [["cmd_controller.execute", {"command": "start calc"}]], "wall_s": 0.18293012499634642, "prompt_tokens": 326, "completion_tokens": 31, "error": "", "raw_text": "```json\n{\n  \"name\": \"cmd_controller.execute\",\n  \"arguments\": {\n    \"command\": \"start calc\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

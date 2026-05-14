@@ -1,0 +1,1 @@
+{"id": "live_simple_65-29-5", "actual_calls": [["todo", {"type": "add", "content": "Hi charlie"}]], "wall_s": 0.21557499999471474, "prompt_tokens": 352, "completion_tokens": 37, "error": "", "raw_text": "```json\n{\n  \"name\": \"todo\",\n  \"arguments\": {\n    \"type\": \"add\",\n    \"content\": \"Hi charlie\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_960-205-0", "actual_calls": [["get_current_weather", {"location": "New York, NY", "unit": "celsius"}]], "wall_s": 0.3410578750008426, "prompt_tokens": 477, "completion_tokens": 32, "error": "", "passed": false, "reason": "call_get_current_weather_did_not_match_any_gt"}

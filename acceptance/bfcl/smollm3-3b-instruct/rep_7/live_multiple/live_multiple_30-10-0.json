@@ -1,0 +1,1 @@
+{"id": "live_multiple_30-10-0", "actual_calls": [["duck_duck_go.search", {"query": "LangFuse and its application in generative AI projects"}]], "wall_s": 4.6385980829982145, "prompt_tokens": 695, "completion_tokens": 516, "error": "", "passed": true, "reason": "matched_gt_entry"}

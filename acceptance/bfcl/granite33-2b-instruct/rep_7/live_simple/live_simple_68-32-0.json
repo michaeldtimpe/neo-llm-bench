@@ -1,0 +1,1 @@
+{"id": "live_simple_68-32-0", "actual_calls": [], "wall_s": 0.42718475000583567, "prompt_tokens": 279, "completion_tokens": 49, "error": "", "raw_text": "Sure, let's calculate that for you.\n\ntool\n{\n    \"function\": \"sum\",\n    \"arguments\": {\n        \"a\": 5.0,\n        \"b\": 3.0\n    }\n}", "passed": false, "reason": "no_tool_call_emitted"}

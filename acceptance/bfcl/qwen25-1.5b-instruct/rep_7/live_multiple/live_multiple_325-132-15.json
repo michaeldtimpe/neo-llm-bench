@@ -1,0 +1,1 @@
+{"id": "live_multiple_325-132-15", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Riley Stearns", "genre": "dontcare", "cast": "dontcare"}]], "wall_s": 0.26399958299589343, "prompt_tokens": 1141, "completion_tokens": 43, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_24-5-1", "actual_calls": [["search_products", {"category": "clothing", "size": "XL"}]], "wall_s": 0.192333166996832, "prompt_tokens": 797, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_29-2-17", "actual_calls": [], "wall_s": 0.24478683300549164, "prompt_tokens": 359, "completion_tokens": 43, "error": "", "raw_text": "```json\n{\n  \"name\": \"get_comments\",\n  \"arguments\": {\n    \"domain\": \"example.com\",\n    \"api_key\": \"api12345\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_755-266-0", "actual_calls": [["search_api.SearchApi.component_search", {"query": "network device"}]], "wall_s": 0.20363570799236186, "prompt_tokens": 748, "completion_tokens": 25, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: search_api.SearchApi.component_search"}

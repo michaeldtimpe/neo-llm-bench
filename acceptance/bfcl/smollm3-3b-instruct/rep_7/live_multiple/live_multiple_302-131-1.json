@@ -1,0 +1,1 @@
+{"id": "live_multiple_302-131-1", "actual_calls": [["Hotels_4_SearchHotel", {"location": "New York, NY", "number_of_rooms": 1}]], "wall_s": 0.35359158299979754, "prompt_tokens": 1605, "completion_tokens": 36, "error": "", "passed": true, "reason": "matched_gt_entry"}

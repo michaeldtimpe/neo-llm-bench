@@ -1,0 +1,1 @@
+{"id": "live_multiple_141-54-1", "actual_calls": [["stock_price.get", {"ticker": "AAPL", "exchange": "NASDAQ"}]], "wall_s": 0.1717392499995185, "prompt_tokens": 586, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

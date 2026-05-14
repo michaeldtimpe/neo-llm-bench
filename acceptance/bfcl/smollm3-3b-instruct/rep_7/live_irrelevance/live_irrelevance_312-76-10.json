@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_312-76-10", "actual_calls": [["requests.get", {"url": "https://api.fixerio.com/v1/latest", "params": {"lat": 0, "lon": 0, "format": "json"}}]], "wall_s": 6.561977957997442, "prompt_tokens": 848, "completion_tokens": 738, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: requests.get"}

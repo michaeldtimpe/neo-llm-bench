@@ -1,0 +1,1 @@
+{"id": "live_parallel_15-11-0", "actual_calls": [["cmd_controller.execute", {"command": "dir", "unit": "seconds"}]], "wall_s": 0.2888069580003503, "prompt_tokens": 343, "completion_tokens": 28, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

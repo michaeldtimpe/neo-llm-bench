@@ -1,0 +1,1 @@
+{"id": "live_multiple_303-131-2", "actual_calls": [["Hotels_4_SearchHotel", {"location": "Vancouver, Canada", "star_rating": "3", "number_of_rooms": 1}]], "wall_s": 0.27697912500298116, "prompt_tokens": 1902, "completion_tokens": 42, "error": "", "passed": false, "reason": "call_Hotels_4_SearchHotel_did_not_match_any_gt"}

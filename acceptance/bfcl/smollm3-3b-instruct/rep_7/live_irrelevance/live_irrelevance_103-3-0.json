@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_103-3-0", "actual_calls": [["ReqScr.generate_key", {"TheLen": 15, "TheLen2": 20}]], "wall_s": 0.5451203329976124, "prompt_tokens": 1502, "completion_tokens": 32, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: ReqScr.generate_key"}

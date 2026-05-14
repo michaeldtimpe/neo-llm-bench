@@ -1,0 +1,1 @@
+{"id": "live_multiple_818-177-1", "actual_calls": [["Events_3_FindEvents", {"event_type": "Music", "city": "New York, NY"}]], "wall_s": 0.20321166700159665, "prompt_tokens": 1171, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

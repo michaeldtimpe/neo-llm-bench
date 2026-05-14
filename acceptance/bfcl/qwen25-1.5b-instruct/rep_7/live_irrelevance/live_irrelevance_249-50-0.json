@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_249-50-0", "actual_calls": [["list_servers", {}]], "wall_s": 0.10145008399558719, "prompt_tokens": 1065, "completion_tokens": 16, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: list_servers"}

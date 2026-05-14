@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_273-58-0", "actual_calls": [["generate_human_image", {"prompt": "a kite flying in the sky", "image_quality": "high", "include_background": true, "output_format": "JPEG"}]], "wall_s": 0.26676025000051595, "prompt_tokens": 906, "completion_tokens": 46, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: generate_human_image"}

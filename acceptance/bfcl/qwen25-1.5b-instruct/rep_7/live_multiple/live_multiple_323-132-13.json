@@ -1,0 +1,1 @@
+{"id": "live_multiple_323-132-13", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Steven Spielberg", "cast": "Josef Sommer"}]], "wall_s": 0.2138115830020979, "prompt_tokens": 1137, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

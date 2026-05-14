@@ -1,0 +1,1 @@
+{"id": "live_multiple_128-50-0", "actual_calls": [["generate_human_image", {"prompt": "a man wearing a red dress", "image_quality": "high", "image_format": "PNG"}]], "wall_s": 0.35642433298926335, "prompt_tokens": 1372, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

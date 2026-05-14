@@ -1,0 +1,1 @@
+{"id": "live_multiple_980-215-4", "actual_calls": [["get_service_providers", {"province_id": 3, "district_name": "Phaya Thai District", "is_cleaning_home": true, "is_cleaning_office": true}]], "wall_s": 0.3088018749986077, "prompt_tokens": 1318, "completion_tokens": 49, "error": "", "passed": false, "reason": "call_get_service_providers_did_not_match_any_gt"}

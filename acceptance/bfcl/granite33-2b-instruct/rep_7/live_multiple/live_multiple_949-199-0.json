@@ -1,0 +1,1 @@
+{"id": "live_multiple_949-199-0", "actual_calls": [], "wall_s": 0.3140616669988958, "prompt_tokens": 666, "completion_tokens": 29, "error": "", "raw_text": "Sure, I can help with that. Let's play some music by David Guetta. Shall I shuffle the songs?", "passed": false, "reason": "no_tool_call_emitted"}

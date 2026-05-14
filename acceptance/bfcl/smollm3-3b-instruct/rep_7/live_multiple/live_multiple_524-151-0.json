@@ -1,0 +1,1 @@
+{"id": "live_multiple_524-151-0", "actual_calls": [["Events_3_FindEvents", {"event_type": "Theater", "city": "Chicago, IL", "date": "dontcare"}]], "wall_s": 0.4344497499987483, "prompt_tokens": 564, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

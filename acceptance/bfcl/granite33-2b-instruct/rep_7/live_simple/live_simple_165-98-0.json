@@ -1,0 +1,1 @@
+{"id": "live_simple_165-98-0", "actual_calls": [], "wall_s": 0.41962174999935087, "prompt_tokens": 359, "completion_tokens": 46, "error": "", "raw_text": "[{\"arguments\": {\"data\": [{\"name\": \"\u674e\u96f7\", \"age\": 18}, {\"name\": \"\u674e\u4e3d\", \"age\": 5}], \"schema\": \"personal_info\"}}]", "passed": false, "reason": "no_tool_call_emitted"}

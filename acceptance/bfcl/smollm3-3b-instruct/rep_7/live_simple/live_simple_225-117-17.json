@@ -1,0 +1,1 @@
+{"id": "live_simple_225-117-17", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Kirill Mikhanovsky", "genre": "Comedy-drama"}]], "wall_s": 0.36879791699902853, "prompt_tokens": 456, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

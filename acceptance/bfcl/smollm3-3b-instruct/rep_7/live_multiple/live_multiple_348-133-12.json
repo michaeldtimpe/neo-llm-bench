@@ -1,0 +1,1 @@
+{"id": "live_multiple_348-133-12", "actual_calls": [["Music_3_LookupMusic", {"artist": "Meghan Trainor", "genre": "Pop", "year": 2018}]], "wall_s": 0.394996415998321, "prompt_tokens": 839, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_multiple_369-134-14", "actual_calls": [["Movies_3_FindMovies", {"directed_by": "Peter Jackson", "genre": "Fantasy"}]], "wall_s": 0.19615079199138563, "prompt_tokens": 965, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

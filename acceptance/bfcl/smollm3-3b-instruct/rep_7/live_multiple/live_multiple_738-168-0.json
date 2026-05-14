@@ -1,0 +1,1 @@
+{"id": "live_multiple_738-168-0", "actual_calls": [["Payment_1_MakePayment", {"payment_method": "app balance", "amount": 75.5, "receiver": "Peter"}]], "wall_s": 0.540807749999658, "prompt_tokens": 1178, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

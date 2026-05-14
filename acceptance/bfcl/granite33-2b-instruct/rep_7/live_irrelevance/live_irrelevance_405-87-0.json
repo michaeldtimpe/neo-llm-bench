@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_405-87-0", "actual_calls": [["play_artist", {"artist_name": "k\u00e4\u00e4rij\u00e4"}]], "wall_s": 0.2196359579975251, "prompt_tokens": 238, "completion_tokens": 24, "error": "", "raw_text": "[{\"arguments\": {\"artist_name\": \"k\u00e4\u00e4rij\u00e4\"}, \"name\": \"play_artist\"}]", "passed": false, "reason": "called_tool_when_irrelevant: play_artist"}

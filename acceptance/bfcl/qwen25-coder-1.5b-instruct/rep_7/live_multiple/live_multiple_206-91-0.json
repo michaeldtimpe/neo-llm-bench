@@ -1,0 +1,1 @@
+{"id": "live_multiple_206-91-0", "actual_calls": [["contact", {"person_name": "Adriel"}]], "wall_s": 0.2997965410031611, "prompt_tokens": 1381, "completion_tokens": 30, "error": "", "raw_text": "```json\n{\n  \"name\": \"contact\",\n  \"arguments\": {\n    \"person_name\": \"Adriel\"\n  }\n}\n```", "passed": true, "reason": "matched_gt_entry"}

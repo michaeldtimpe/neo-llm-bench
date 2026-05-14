@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_753-264-0", "actual_calls": [["releases_api.ReleasesApi.get_all_releases", {"releaseId": "", "name": "", "start": 0, "_from": 0, "to": 0, "maxResults": 50}]], "wall_s": 0.41262916699633934, "prompt_tokens": 929, "completion_tokens": 57, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: releases_api.ReleasesApi.get_all_releases"}

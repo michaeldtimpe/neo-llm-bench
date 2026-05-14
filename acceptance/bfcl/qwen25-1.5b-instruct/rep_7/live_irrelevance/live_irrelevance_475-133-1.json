@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_475-133-1", "actual_calls": [["sort_list", {"elements": ["test", "twetwet"], "order": "asc"}]], "wall_s": 0.18803133399342187, "prompt_tokens": 618, "completion_tokens": 32, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: sort_list"}

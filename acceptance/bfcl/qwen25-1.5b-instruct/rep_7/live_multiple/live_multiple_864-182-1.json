@@ -1,0 +1,1 @@
+{"id": "live_multiple_864-182-1", "actual_calls": [["Movies_1_FindMovies", {"location": "Los Angeles, CA", "theater_name": "dontcare", "genre": "dontcare", "show_type": "regular"}]], "wall_s": 0.29720745800295845, "prompt_tokens": 1760, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "live_irrelevance_692-225-2", "actual_calls": [["Movies_1_FindMovies", {"location": "Berkeley, CA", "theater_name": "Shattuck Cinemas", "genre": "Play"}]], "wall_s": 0.4353956669983745, "prompt_tokens": 1468, "completion_tokens": 45, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: Movies_1_FindMovies"}
