@@ -327,10 +327,23 @@ shift the round-2 weaknesses on these finalists at this quant.
 tightens the decline boundary on `irrelevance` over-call without
 harming legitimate live single-call categories.
 
-**Result**: regressed across the board. v3b (decision-tree sibling)
-aborted per the round-3 abort gate ("any cat drops ≥3pp at v3a → skip
-v3b"). Apples-to-apples slice (live cats truncated to first-100 to
-match rep_1's smaller live limit):
+> **2026-05-14 audit note** — Originally published with a
+> lexicographic-sort slice. Corrected matched-ID numbers below;
+> matched-ID artifact at `acceptance/audits/branch_a_matched_ids.json`.
+
+**Verdict shift**: hypothesis A **still falsified** on the target gate
+(irrelevance regressed -6pp same as published), but the magnitude on
+two collateral cats was overstated by the buggy slice.
+
+| metric | original (published) | corrected (matched-ID) | verdict |
+|---|---|---|---|
+| irrelevance | -6.0pp (57.3% → 51.3%) | -6.0pp (same, both reps at n=150) | unchanged |
+| live_simple | **-15.0pp** (82.0% → 67.0%) | **-2.0pp** (82.0% → 80.0%) | **withdrawn — slicing artifact** |
+| live_multiple | -4.0pp (71.0% → 67.0%) | -3.0pp (71.0% → 68.0%) | weakened (within noise) |
+| live_irrelevance | **-23.0pp** (78.0% → 55.0%) | **-15.0pp** (78.0% → 63.0%) | weakened, still material |
+| OVERALL | -4.8pp (77.1% → 72.3%) | -3.0pp (77.7% → 74.7%) | weakened |
+
+Per-category (matched-ID, rep_1 ∩ rep_6 IDs):
 
 | cat | rep_1 | rep_6 v3a | Δpp |
 |---|---|---|---|
@@ -339,22 +352,40 @@ match rep_1's smaller live limit):
 | parallel | 78.7% | 77.3% | -1.3 |
 | parallel_multiple | 73.3% | 72.7% | -0.7 |
 | irrelevance | 57.3% | 51.3% | **-6.0** ← target regressed |
-| live_simple | 82.0% | 67.0% | **-15.0** ← collateral |
-| live_multiple | 71.0% | 67.0% | -4.0 |
-| live_irrelevance | 78.0% | 55.0% | **-23.0** ← collateral |
-| OVERALL | 77.1% | 72.3% | **-4.8** |
+| live_simple | 82.0% | 80.0% | -2.0 (was -15.0; bug-corrected) |
+| live_multiple | 71.0% | 68.0% | -3.0 |
+| live_irrelevance | 78.0% | 63.0% | **-15.0** ← collateral, real |
+| OVERALL (n=1050) | 77.7% | 74.7% | **-3.0** |
 
-The imperative shifted the decline boundary in the wrong direction —
-the model declined on legitimate user requests (`live_simple`,
-`live_irrelevance`) as severely as on irrelevant ones, while
-*increasing* over-call on the curated `irrelevance` set (over_called
-bucket 64 → 73, +9 problems). Hypothesis A falsified.
+The imperative did move the decline boundary on `live_irrelevance` —
+the model now over-declines on ambiguous user requests (-15pp). The
+target gate also fires (irrelevance -6pp, over-call bucket 64 → 73).
+But the "regressed across the board" framing in the original write-up
+does not survive — `live_simple` was unaffected (-2pp is within noise),
+not a -15pp collateral. **Hypothesis A is still falsified, with one
+fewer piece of supporting evidence and overall magnitude shrunk by
+~1.8pp.**
 
 ### Branch B — qwen25-coder · v2_fewshot_parallel
 
 **Hypothesis**: two in-context parallel examples close qwen25-coder's
 under_called_1_of_N gap on `parallel`/`parallel_multiple` — recovering
 agent-mode's +52 parallel-recovery (rep_4) at raw-mode token cost.
+
+> **2026-05-14 audit note** — Branch B's primary gate is on curated
+> parallel cats where both rep_1 and rep_6 ran 150 problems with
+> matching IDs, so the slicing bug did **not** affect this branch's
+> verdict. Matched-ID recount confirmed identical numbers. Matched-ID
+> artifact at `acceptance/audits/branch_b_matched_ids.json`.
+
+**Verdict shift**: none. Hypothesis B remains falsified on identical
+numbers.
+
+| metric | original (published) | corrected (matched-ID) | verdict |
+|---|---|---|---|
+| parallel + parallel_multiple recovery | -13 problems (74 → 61) | -13 (same) | unchanged |
+| parallel | 32/150 → 25/150 | same | unchanged |
+| parallel_multiple | 42/150 → 36/150 | same | unchanged |
 
 **Result**: combined parallel cats moved **-13 problems** vs the +25
 required; few-shot transferred in the wrong direction.
@@ -379,6 +410,13 @@ teach the model to emit *more* calls — they pushed 20 problems into
 outright silence. Likely a prompt-length / instruction-confusion
 effect at this size. Hypothesis B falsified.
 
+Note: matched-ID recount also surfaced an unrelated **+17pp jump on
+live_irrelevance** (75/100 → 92/100) — the few-shot examples did
+sharpen qwen-coder's decline discipline on user-submitted irrelevance
+prompts. This wasn't a gate and doesn't change the verdict, but it's
+a real side-effect worth knowing about for any future parallel-recovery
+prompting attempt on this model.
+
 ### Branch C — granite33-2b · v3c (decline-boundary calibration)
 
 **Hypothesis**: a prompt addendum loosens the decline boundary on
@@ -387,34 +425,49 @@ problems (baseline 74/100) into alternative-tool attempts. Framed as a
 trade-off measurement, not one-sided improvement; collateral on
 irrelevance is the question.
 
-**Result**: primary gate failed; collateral gates passed.
+> **2026-05-14 audit note** — Originally published with a
+> lexicographic-sort slice on the irrelevance comparison (rep_1 had
+> 150 problems, rep_6 had 100; the published "first 100" of rep_1 was
+> the lex-mangled subset, not the proper rep_1 ∩ rep_6 intersection).
+> Matched-ID artifact at `acceptance/audits/branch_c_matched_ids.json`.
 
-| gate | required | observed | verdict |
+**Verdict shift**: primary gate still fails (unchanged). The **collateral
+gate that originally PASSED now FAILS on matched data** — the irrelevance
+harm was understated by 3pp because of the slicing bug.
+
+| metric | original (published) | corrected (matched-ID) | verdict |
 |---|---|---|---|
-| mt_miss_func `empty_response` reduction | ≥20% (74 → ≤59) | **4.1%** (74 → 71) | FAIL |
-| irrelevance + live_irrelevance combined harm | ≤5pp drop | -4pp combined | PASS |
-| live_irrelevance Wilson 95% CI lower bound | ≥85% | 93.0% (98/100) | PASS |
+| mt_miss_func empty_response reduction (primary) | -4.1% (74 → 71) | same — matched-ID multi-turn rep_5 ∩ rep_6 confirms 71/100 | unchanged — primary gate FAILS |
+| irrelevance (rep_1 → rep_6) | -5pp (85/100 → 80/100) | **-8pp (88/100 → 80/100)** | corrected baseline; harm larger than published |
+| live_irrelevance (rep_1 → rep_6) | +1pp (97/100 → 98/100) | +1pp (same — both reps 100 IDs, full match) | unchanged |
+| **irrelevance + live_irrelevance combined harm gate** | -4pp combined; **PASS** (≤5pp budget) | **-7pp combined; FAIL** (exceeds 5pp budget) | **reversed — collateral gate now fails** |
 
-Per-category (irrelevance sliced to first 100 to match rep_6's limit):
+Per-category (matched-ID intersection):
 
 | cat | baseline | rep_6 v3c | Δ |
 |---|---|---|---|
 | mt_miss_func `empty_response` | 74/100 (rep_5) | 71/100 | -3 |
 | mt_miss_func `state_mismatch` | 14/100 (rep_5) | 17/100 | +3 |
 | mt_miss_func PASS | 0/100 | 0/100 | 0 |
-| irrelevance (first 100) | 85/100 (rep_1) | 80/100 | -5 |
+| irrelevance (matched 100) | **88/100** (rep_1) | 80/100 | **-8** (was published -5) |
 | live_irrelevance | 97/100 (rep_1) | 98/100 | +1 |
 | multi_turn_base (collateral) | 1/100 (rep_5) | 2/100 | +1 |
 | multi_turn_miss_param (collateral) | 2/100 (rep_5) | 2/100 | 0 |
 
 The boundary did move — granite traded exactly 3 empty responses for 3
-state-mismatch failures — but no movement converted to passes: the
-calls the model now emits on `miss_func` are the wrong tool in the
-wrong order. The irrelevance harm landed within budget (combined
--4pp), so the trade isn't catastrophic, just inefficient. Hypothesis C
-partially disconfirmed: the decline boundary is movable, but the
-alternative-tool-selection capability that would convert moved
-problems into passes is absent at this size/quant.
+state-mismatch failures on the target — but no movement converted to
+passes: the calls the model now emits on `miss_func` are the wrong tool
+in the wrong order. The original write-up framed the irrelevance harm
+as "within budget (combined -4pp), so the trade isn't catastrophic,
+just inefficient." On matched data the combined harm is -7pp, **above
+the -5pp budget the gate set in advance**. The trade is **catastrophic
+by the pre-registered criterion** — not just inefficient.
+
+Hypothesis C is now more thoroughly disconfirmed: the decline boundary
+is movable, but moving it costs ~8pp on curated irrelevance for no
+target-gate gain. The alternative-tool-selection ceiling is still the
+deeper finding; the boundary-calibration trade-off **also** fails on
+the harm dimension that the original write-up reported as acceptable.
 
 ### Round 3 take-away
 
@@ -431,6 +484,19 @@ weights:
 
 The non-dominated round-2 triangle is unchanged. The data closes round
 3 with negative findings rather than a new leader.
+
+**Per-branch verdict summary after 2026-05-14 audit:**
+
+| branch | primary gate | collateral gate(s) | original verdict | corrected verdict | shift class |
+|---|---|---|---|---|---|
+| A (qwen25-1.5b v3a) | FAIL (-6pp irrelevance) | live_simple -2pp (was published -15pp), live_irrelevance -15pp (was published -23pp) | falsified | falsified | **weakened** — magnitudes smaller; live_simple regression was slicing artifact |
+| B (qwen-coder fewshot) | FAIL (-13 problems on parallel cats) | non-parallel mean PASS | falsified | falsified | **unchanged** — curated cats unaffected by bug |
+| C (granite33 v3c) | FAIL (-4.1% mt_miss_func empty_response reduction) | combined irrelevance harm published as PASS (-4pp); matched-ID shows -7pp | partially disconfirmed; "trade isn't catastrophic" | more thoroughly disconfirmed; collateral gate also fails | **reversed** on collateral gate — trade exceeds the pre-registered 5pp harm budget |
+
+Overall: the round-3 falsification holds in direction but on cleaner
+evidence. Branch A's supporting "collateral damage on legitimate user
+requests" softened (live_simple was unaffected); Branch C's verdict
+hardened (the harm budget was exceeded, not within it).
 
 ## Round 4 — Branch D model-comparison disruptor
 
@@ -539,37 +605,91 @@ Two options for the next session, decision is yours:
 
 The Branch D headline-pass section above flagged smollm3 as the only
 candidate worth expanding. The expansion ran the four missing data
-slices and the prediction held: **smollm3 collapses on the live BFCL
-distribution**, the same pattern that hit qwen25-coder. The triangle
-is **not redrawn**.
+slices.
 
-#### BFCL apples-to-apples (n=1106 sliced to match existing finalists)
+> **2026-05-14 audit note** — This section was originally published with
+> a lexicographic-sort slicing bug in the cross-model "apples-to-apples"
+> table; numbers are corrected below and the original tables are
+> reproduced under "Errata and methodology corrections" near the end of
+> this document. Source: `scripts/compare_matched_slice.py --rep 1
+> --models smollm3-3b-instruct qwen25-1.5b-instruct granite33-2b-instruct
+> qwen25-coder-1.5b-instruct`; matched-ID artifact at
+> `acceptance/audits/phase_h_n1106_4way_matched_ids.json`.
+
+The data separates into two methodologically distinct questions:
+
+1. **Matched-ID comparison** (subsection 1) — head-to-head, same problem
+   IDs across models; valid for "is X better than Y on the same tasks."
+2. **Full-distribution comparison** (subsection 2) — smollm3 on the full
+   live cats (258/1053/884) vs finalists on the smaller 100-per-cat slice
+   they ran. This is an *asymmetric* comparison and tells us about
+   distribution-robustness, not head-to-head superiority. Cleaner numbers
+   pending Phase K (rep_7 finalist full-live runs).
+
+#### Subsection 1 — Matched-ID comparison (n=1106 intersection)
+
+Per-category overlap_n shown in the helper output; for live cats the
+intersection equals the smaller dir's size (finalists' rep_1 ran live
+cats with `--bfcl-limit 100`, smollm3 ran no limit). For curated cats
+all four models have 150 IDs each (full overlap).
 
 | model | overall | live_simple | live_multiple | live_irrelevance | parallel (curated) |
 |---|---|---|---|---|---|
-| qwen25-1.5b-instruct | **853/1106 (77.1%)** [74.6, 79.5] | 82/100 | 71/100 | 78/100 | 118/150 |
-| smollm3-3b-instruct | 805/1106 (72.8%) [70.1, 75.3] | 57/100 | 57/100 | 58/100 | **125/150** |
-| granite33-2b-instruct | 768/1106 (69.4%) | 68/100 | 48/100 | **97/100** | 93/150 |
-| qwen25-coder-1.5b-instruct | 649/1106 (58.7%) | 70/100 | 62/100 | 75/100 | 32/150 |
+| smollm3-3b-instruct | **860/1106 (77.8%)** [75.2, 80.1] | 73/100 | 65/100 | 89/100 | **125/150** |
+| qwen25-1.5b-instruct | 853/1106 (77.1%) [74.6, 79.5] | **82/100** | **71/100** | 78/100 | 118/150 |
+| granite33-2b-instruct | 768/1106 (69.4%) [66.7, 72.1] | 68/100 | 48/100 | **97/100** | 93/150 |
+| qwen25-coder-1.5b-instruct | 649/1106 (58.7%) [55.8, 61.5] | 70/100 | 62/100 | 75/100 | 32/150 |
 
-smollm3 vs qwen25-1.5b CIs **just touch** (smollm3 upper 75.3 / qwen25-1.5b
-lower 74.6 = 0.7pp overlap). The headline curated 80.1% mean dropped
-4.3pp once live cats were added. Per-cat collapse on the live
-distribution:
+smollm3 and qwen25-1.5b are statistically tied — CIs overlap from 75.2
+to 79.5 (a ~4.3pp shared band). smollm3's mean is +0.7pp above qwen25-1.5b,
+not below.
+
+Per-cat matched deltas, smollm3 vs qwen25-1.5b:
 
 | cat | smollm3 | qwen25-1.5b | Δ | CI overlap? |
 |---|---|---|---|---|
-| live_simple | 57.0% | 82.0% | **-25.0pp** | **NO** |
-| live_multiple | 57.0% | 71.0% | -14.0pp | YES |
-| live_parallel (n=16) | 31.2% | 62.5% | -31.3pp | YES (small N) |
-| live_parallel_multiple (n=24) | 45.8% | 50.0% | -4.2pp | YES |
-| live_irrelevance | 58.0% | 78.0% | **-20.0pp** | **NO** |
-| live_relevance (n=16) | 100% | 93.8% | +6.2pp | YES |
+| live_simple | 73/100 (73.0%) | 82/100 (82.0%) | -9.0pp | YES |
+| live_multiple | 65/100 (65.0%) | 71/100 (71.0%) | -6.0pp | YES |
+| live_parallel (n=16) | 5/16 (31.2%) | 10/16 (62.5%) | -31.3pp | YES (small N) |
+| live_parallel_multiple (n=24) | 11/24 (45.8%) | 12/24 (50.0%) | -4.2pp | YES |
+| live_irrelevance | **89/100 (89.0%)** | 78/100 (78.0%) | **+11.0pp** | YES (smollm3 above) |
+| live_relevance (n=16) | 16/16 (100.0%) | 15/16 (93.8%) | +6.2pp | YES |
 
-Two CI-distinct losses (live_simple, live_irrelevance). The curated
-parallel-cat advantage holds (+7 / +6 / +5 on parallel /
-parallel_multiple / simple_python) — the only durable Branch D
+**No CI-distinct losses on matched data.** The previously-reported
+live_irrelevance "-20pp CI-distinct collapse" was an artifact of
+non-overlapping slices — on the same 100 problems, smollm3 actually
+outscores qwen25-1.5b by 11pp.
+
+The curated parallel-cat advantage holds (+7 / +6 / +5 on parallel /
+parallel_multiple / simple_python) — the one durable mechanical Branch D
 improvement.
+
+#### Subsection 2 — Full-distribution comparison (within-smollm3, asymmetric vs finalists)
+
+smollm3's full live cat sizes (258 / 1053 / 884 / 16 / 24 / 16 across the
+six live cats) let us measure smollm3's *own* distribution robustness:
+
+| cat | smollm3 curated rate | smollm3 full live rate | Δ (within-model) |
+|---|---|---|---|
+| live_simple | 73/100 (matched) | 173/258 (67.1%) | -5.9pp |
+| live_multiple | 65/100 (matched) | 670/1053 (63.6%) | -1.4pp |
+| live_irrelevance | 89/100 (matched) | 434/884 (49.1%) | **-39.9pp** |
+
+The within-model collapse on `live_irrelevance` is large (89% on the
+first 100 problems → 49.1% on the remaining 784). That is a real signal
+of distribution-dependent behavior — but it is **not** a head-to-head
+claim against any finalist, because no finalist ran the full
+distribution. Phase K (rep_7) will rerun the three finalists on full
+live cats so this becomes a proper cross-model comparison.
+
+For the curated 80.1% mean from Branch D, the drop to ~78% on the
+matched 1106 slice and to lower numbers on the unmatched full live cats
+is documented in two registers: (a) matched-quality (subsection 1, the
+controlled claim), (b) distribution-robustness (this subsection, the
+within-model behavioral signal). Earlier framing collapsed both into a
+single "smollm3 collapses on live" headline; the corrected reading is
+that the matched comparison shows no statistical collapse, while the
+within-model distribution drop is real but currently uncompared.
 
 #### HumanEval pass@1 / pass-any / pass-all — smollm3 vs qwen25-coder
 
@@ -597,30 +717,46 @@ smollm3 doesn't separate from the floor. No tiebreaker.
 
 #### Agent mode (rep_4) — non-functional for smollm3
 
-The agent loop calls `backend.chat(tools=[...])` with structured tool
-definitions. smollm3 in structured mode emits Python code blocks
-(`def calculate_triangle_area(...): return ...`) rather than tool
-calls, so the agent loop sees no parseable calls on most categories.
-The result reads as 240/1240 (19%) but is artifactual — the 240/240
-on irrelevance is "100%" only because the model emits no calls at
-all (correct by accident on a no-call category). Smollm3 is
-**effectively unusable in raw agent mode** at this size without an
-adapter rewrite that injects tool spec into the system prompt for the
-agent path too. Existing finalists' agent advantages (qwen25-coder's
-parallel recovery rep_4 → rep_4) remain unchallenged.
+In agent mode, smollm3 emits **zero parseable tool calls** across all
+1240 problems (verified: `n_with_calls=0` in every cat's summary.json;
+per-problem `actual_calls` empty everywhere). The result reads as
+240/1240 (19%) but is artifactual — the 240/240 on irrelevance is
+"100%" only because the model emits no calls at all (correct by
+accident on a no-call category).
+
+The *mechanism* — what smollm3 emits *instead* of tool calls — is not
+yet on disk: rep_4 was run before `raw_text` capture landed in the
+BFCL adapter (Phase J). The prior edition of this section asserted
+"emits Python code blocks"; that specific shape was not measurable
+from the persisted data. Phase J fixes the persistence path and re-runs
+rep_4 to verify or revise the mechanism claim. The aggregate finding —
+smollm3 is **effectively unusable in raw agent mode** at this size
+without an adapter change — is independent of the mechanism question
+and stands on the n_with_calls=0 signal alone. Existing finalists'
+agent advantages (qwen25-coder's parallel recovery rep_4 → rep_4)
+remain unchallenged.
 
 #### Triangle status after the full smollm3 spectrum
 
-| corner | prior | smollm3 | verdict |
+| corner | prior claim (Phase H, 2026-05-13) | corrected verdict (2026-05-14) | audit note |
 |---|---|---|---|
-| **Tool-use generalist (BFCL)** | qwen25-1.5b 77.1% | 72.8% (CI overlaps barely) | **qwen25-1.5b holds**; live cats collapse confirmed |
-| **Synthesis coding (HumanEval)** | qwen25-coder 69.5% / 78% pass-any | 64.0% / 75.0% pass-any (CI overlap on all 3 metrics) | **qwen25-coder holds**; smollm3 is the closest challenger ever |
-| **Decline discipline (live_irrelevance)** | granite33 97% | 58% (CI-distinct, -39pp) | **granite33 unchallenged** |
+| **Tool-use generalist (BFCL)** | qwen25-1.5b holds; 77.1% vs smollm3 72.8% (CIs barely overlap) | **tied within CI on matched slice** (qwen 77.1%, smollm3 77.8%, ~4.3pp CI overlap) | prior 72.8% smollm3 number came from a non-matching slice (lex-sort first-100 vs natural first-100 of finalists); see errata |
+| **Synthesis coding (HumanEval)** | qwen25-coder holds (69.5%/78% pass-any); smollm3 close (64.0%/75.0%) | unchanged — qwen25-coder holds, smollm3 within CI on all 3 metrics | full n=164 / n=427 each, no slicing involved |
+| **Decline discipline (live_irrelevance)** | granite33 97% vs smollm3 58% (CI-distinct, -39pp) | **granite33 holds, but the -39pp gap is split into two cleaner claims**: matched-ID 100-slice: granite 97% vs smollm3 89% (Δ=-8pp, **CIs overlap**); within-smollm3 distribution: 49.1% on the full 884 set vs granite's measured 97% on 100 (denominators differ — proper full-vs-full comparison pending Phase K rep_7) | prior 58% number was the lex-sort first-100 slice for smollm3; that slice does not match any real reference set |
 
-**Triangle stands.** smollm3 is not a clean dethroner on any corner
-and is decisively beaten on decline-discipline. The expansion run
-**confirms** the headline-pass caveat: smollm3 ran best on curated
-distributions and dropped 14–25pp on the live ones.
+**Triangle stands directionally**, but two of the three corner-defense
+arguments rest on weaker evidence than originally published. The
+tool-use corner is now a statistical tie on matched data (smollm3 is
++0.7pp above qwen25-1.5b on the same problems); the decline corner
+holds on full-distribution behavior but is CI-overlap on the matched
+100-problem slice. The coding-corner finding is unchanged.
+
+The "smollm3 collapses on live" headline does not survive matched
+data; what survives is **distribution-dependent behavior** — smollm3's
+own live_irrelevance rate drops from 89% on its first 100 problems
+to 49.1% on the remaining 784. That is a real signal but a different
+claim from "smollm3 underperforms finalists on live cats." Phase K
+will turn the within-model signal into a cross-model one.
 
 #### Smollm3's actual niche
 
