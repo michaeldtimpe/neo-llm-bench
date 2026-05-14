@@ -488,35 +488,114 @@ within-CI numeric one. On irrelevance, smollm3 over-calls at exactly
 the same volume as qwen25-1.5b — neither model has the granite33-style
 decline instinct.
 
+## Full-distribution failure breakdown (rep_7, 2026-05-14)
+
+Phase K reran the three finalists on the full live cats (no
+`--bfcl-limit`); smollm3 already had full-live data in rep_1. This
+section is the per-cat failure-shape analysis on the full distribution
+— the first-100 numbers in the earlier per-finalist sections were
+sliced to the same baseline rep_1 used. Source artifacts:
+`acceptance/bfcl/<model>/rep_7/` + `acceptance/audits/phase_k_rep7_4way_live_matched_ids.json`.
+
+### live_irrelevance (n=884) — where the decline-corner gap actually lives
+
+The headline `+28.6pp CI-distinct` granite33 lead on full
+`live_irrelevance` decomposes into concrete per-problem behavior:
+
+| model | pass | over-call (≥1 emitted) | within-model drop (first-100 → remaining-784) |
+|---|---|---|---|
+| granite33-2b | 720/884 (81.4%) | 164 (18.6%) | 98% → 79.3% (-18.7pp) |
+| qwen25-1.5b | 467/884 (52.8%) | 417 (47.2%) | 77% → 49.7% (-27.3pp) |
+| smollm3-3b | 434/884 (49.1%) | 450 (50.9%) | 89% → 44.0% (-45.0pp) |
+| qwen25-coder | 271/884 (30.7%) | 613 (69.3%) | 75% → 25.0% (-50.0pp) |
+
+Failure-overlap breakdown — for each smollm3 failure (450 problems),
+how many of the other 3 finalists also fail on that same problem?
+
+| smollm3 fails AND … | count | share |
+|---|---|---|
+| 0 of the other 3 also fail (smollm3-unique) | 20 | 4.4% |
+| 1 of the other 3 also fail | 118 | 26.2% |
+| 2 of the other 3 also fail | 200 | 44.4% |
+| all 3 also fail (universal hard problems) | 112 | 24.9% |
+
+Smollm3 has very few unique failures (20/884 = 2.3% of the
+distribution). Most of its failures are shared with at least one
+finalist; nearly a quarter (112) are universal — problems where every
+model over-calls. The differentiator is the long tail of "smollm3 +
+1 or 2 others fail, granite alone succeeds."
+
+**Granite33's unique decline advantage: 181 problems** (20.5% of the
+distribution) where granite alone declines correctly while all three
+other finalists over-call. This is the concrete operational evidence
+behind the +28.6pp lead — there are 181 specific problems where, in a
+deployment surfacing irrelevance prompts at scale, granite would
+correctly refuse and the others would all attempt an unsuitable tool.
+
+### Active live cats (live_simple + live_multiple + parallel cats, n=1351)
+
+| model | pass | mean per-cat rate |
+|---|---|---|
+| qwen25-1.5b | 913/1351 (67.6%) | live_simple 74.4%, live_multiple 66.4%, live_par 62.5%, live_par_mul 50.0% |
+| qwen25-coder | 861/1351 (63.7%) | live_simple 66.7%, live_multiple 65.0%, live_par 18.8%, live_par_mul 8.3% |
+| smollm3-3b | 859/1351 (63.6%) | live_simple 67.1%, live_multiple 63.6%, live_par 31.2%, live_par_mul 45.8% |
+| granite33-2b | 726/1351 (53.7%) | live_simple 60.5%, live_multiple 52.9%, live_par 25.0%, live_par_mul 37.5% |
+
+Two patterns to read off the active cats:
+
+1. **qwen25-coder's parallel collapse persists on live data** — 18.8%
+   on `live_parallel` and 8.3% on `live_parallel_multiple`, both
+   substantially below the next-worst (granite33). The same
+   `under_called_1_of_N` pattern documented for curated parallel cats
+   carries over to user-submitted prompts.
+2. **granite33's decline-by-default hurts on active cats** — 53.7%
+   overall vs the other three at 63–68%. Same trade documented in the
+   curated section (97/100 on irrelevance comes with 37/48 no-call
+   failures on `multiple`) plays out at scale.
+
 ## Cross-bench observations
 
-1. **The three are non-dominated.** qwen25-1.5b wins tool-use,
-   qwen25-coder wins coding, granite33 wins decline-discipline. No
-   model wins all three; ranking depends entirely on the deployment
-   profile.
+1. **The four are non-dominated.** qwen25-1.5b wins active live
+   tool-use (rep_7 1351-problem slice), qwen25-coder wins coding,
+   granite33 wins decline-discipline (+28.6pp CI-distinct on rep_7),
+   smollm3 is the balanced generalist (within CIs of qwen25-1.5b on
+   matched BFCL and qwen25-coder on every coding metric). No model
+   wins every axis; ranking depends on the deployment profile.
 
 2. **Granite33's no-call instinct cuts both ways.** Same training that
-   produces 97/100 on `live_irrelevance` produces 37 no-calls of 48
-   fails on `multiple` and 35 no-calls of 52 on `live_multiple`. If
-   you can engineer the deployment to surface single-tool contexts
-   cleanly, granite shines; if the toolbox is broad and the right
-   tool is one-of-many, granite under-emits.
+   produces 81.4% on full `live_irrelevance` (n=884) and 181
+   problems-where-only-granite-declines produces 37 no-calls of 48
+   fails on curated `multiple` and 35 no-calls of 52 on
+   `live_multiple` (first-100). The trade is durable across the full
+   distribution — granite is bottom-on-active-cats (53.7% on the 1351
+   active live problems) and top-on-decline by 28.6pp.
 
-3. **qwen25-coder's parallel collapse is the hard ceiling**, not a
-   noise floor. 74% of curated parallel rows (111/150) and 65% of
-   curated parallel_multiple rows (97/150) emit exactly one call when
-   N≥2 are required; these single-call emissions account for 94%/90%
-   of failures in those categories. The non-coder qwen25-1.5b sibling
-   at the same n=150 emits the right count comfortably 73–78% of the
-   time.
+3. **qwen25-coder's parallel collapse is the hard ceiling on both
+   curated and live data.** 74% of curated parallel rows (111/150)
+   and 65% of curated parallel_multiple rows (97/150) emit exactly
+   one call when N≥2 are required; live parallel rates are even lower
+   (18.8% live_parallel, 8.3% live_parallel_multiple on rep_7 — both
+   bottom-of-field). The non-coder qwen25-1.5b sibling at the same
+   n=150 emits the right count comfortably 73–78% of the time.
 
-4. **Live BFCL is harder than curated except on irrelevance.** Each
-   model loses 3–10pp going from curated to live on most active
-   categories. The exception is irrelevance/relevance, where live is
-   *easier* (the user-submitted irrelevance prompts are more clearly
-   out of scope; curated includes "model has a partial-fit tool" traps).
+4. **Live BFCL is harder than curated except on relevance.** Active
+   live cats run 5–15pp below the curated equivalents per model. The
+   exception is `live_relevance` (16 problems, easy for all but
+   granite). Within the full live distribution, the first-100 are
+   systematically easier than the remaining-784 — *every* model drops
+   substantially on the broader irrelevance distribution (granite -19pp
+   to qwen-coder -50pp). This is a dataset-shape phenomenon, not a
+   per-model failure mode.
 
-5. **All three are essentially extraction-clean on HumanEval.** 1
+5. **Smollm3's distribution-robustness on irrelevance is third-of-four**
+   (-45pp drop from first-100 to remaining-784, between qwen25-1.5b
+   at -27pp and qwen-coder at -50pp). Most smollm3 failures (95.6%)
+   are shared with at least one other finalist; only 20/884 (2.3%)
+   are smollm3-unique. The drop magnitude is real but the failures
+   aren't idiosyncratic — smollm3 fails on roughly the same hard
+   problems the others fail on.
+
+6. **All four are essentially extraction-clean on HumanEval.** 1
    extraction failure across 1,476 attempts. The fenced-block + def-line
    extractor in `benchmarks/humaneval/adapter.py` is doing its job.
 
