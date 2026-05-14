@@ -1,0 +1,1 @@
+{"id": "parallel_65", "actual_calls": [["calculate_circumference", {"radius": 5, "unit": "cm"}]], "wall_s": 0.6059194579993346, "prompt_tokens": 335, "completion_tokens": 30, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

@@ -1,0 +1,1 @@
+{"id": "irrelevance_89", "actual_calls": [["generate_contract", {"contract_type": "tenant rights contract", "parties": "tenant", "additional_details": "Texas"}]], "wall_s": 0.7127349579996007, "prompt_tokens": 381, "completion_tokens": 34, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: generate_contract"}

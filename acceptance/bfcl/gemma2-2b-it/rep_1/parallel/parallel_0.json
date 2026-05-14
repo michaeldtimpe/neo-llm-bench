@@ -1,0 +1,1 @@
+{"id": "parallel_0", "actual_calls": [["spotify.play", {"artist": "Taylor Swift", "duration": 20}], ["spotify.play", {"artist": "Maroon 5", "duration": 15}]], "wall_s": 1.2141945829998804, "prompt_tokens": 310, "completion_tokens": 59, "error": "", "passed": true, "reason": "all_calls_matched"}

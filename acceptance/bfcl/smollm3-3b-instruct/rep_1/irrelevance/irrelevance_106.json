@@ -1,0 +1,1 @@
+{"id": "irrelevance_106", "actual_calls": [["soil_analysis.analyze_soil_type", {"soil_type": "tomato soil"}]], "wall_s": 0.7053815420003957, "prompt_tokens": 349, "completion_tokens": 31, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: soil_analysis.analyze_soil_type"}

@@ -1,0 +1,1 @@
+{"id": "multiple_99", "actual_calls": [["calculus.derivative", {"function": "2x**2", "value": 1}]], "wall_s": 0.7053765000000567, "prompt_tokens": 421, "completion_tokens": 32, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "irrelevance_143", "actual_calls": [["get_historical_figure_info", {"name": "scientist", "detail": "achievement", "region": "global"}]], "wall_s": 0.7077141660010966, "prompt_tokens": 380, "completion_tokens": 33, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_historical_figure_info"}

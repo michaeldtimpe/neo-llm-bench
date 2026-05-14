@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_8", "actual_calls": [["kinematics.final_velocity", {"initial_velocity": 20, "acceleration": 5, "time": 6}]], "wall_s": 0.8508955409997725, "prompt_tokens": 477, "completion_tokens": 42, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

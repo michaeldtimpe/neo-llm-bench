@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_20", "actual_calls": [["statistics.variance", {"data": [3, 4, 5, 2, 8, 5]}]], "wall_s": 0.7986214579996158, "prompt_tokens": 434, "completion_tokens": 39, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

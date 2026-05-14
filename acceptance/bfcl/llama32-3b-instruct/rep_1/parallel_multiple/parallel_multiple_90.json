@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_90", "actual_calls": [["calculate_final_temperature", {"quantity1": 5, "temperature1": 300, "quantity2": 3, "temperature2": 500}], ["calculate_mass", {"quantity": 4, "molar_mass": 16}]], "wall_s": 2.768461333999767, "prompt_tokens": 541, "completion_tokens": 64, "error": "", "passed": true, "reason": "all_calls_matched"}

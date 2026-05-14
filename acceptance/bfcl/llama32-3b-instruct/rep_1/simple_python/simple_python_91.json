@@ -1,0 +1,1 @@
+{"id": "simple_python_91", "actual_calls": [["get_restaurant", {"cuisine": "sushi", "location": "Boston", "condition": "operating days: Sunday"}]], "wall_s": 0.33949058300004253, "prompt_tokens": 368, "completion_tokens": 36, "error": "", "passed": false, "reason": "call_get_restaurant_did_not_match_any_gt"}

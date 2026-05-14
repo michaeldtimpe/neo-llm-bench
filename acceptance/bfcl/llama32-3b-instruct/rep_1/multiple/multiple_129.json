@@ -1,0 +1,1 @@
+{"id": "multiple_129", "actual_calls": [["compound_interest", {"principal": "10000", "annual_rate": "0", "compounding_freq": "monthly", "time_in_years": "5"}]], "wall_s": 0.619979209000121, "prompt_tokens": 663, "completion_tokens": 41, "error": "", "passed": false, "reason": "call_compound_interest_did_not_match_any_gt"}

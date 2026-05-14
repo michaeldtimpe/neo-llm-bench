@@ -1,0 +1,1 @@
+{"id": "parallel_102", "actual_calls": [["calc_absolute_pressure", {"atm_pressure": 1, "gauge_pressure": 2.5}]], "wall_s": 0.8307557090001865, "prompt_tokens": 374, "completion_tokens": 37, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

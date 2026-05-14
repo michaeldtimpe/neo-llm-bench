@@ -1,0 +1,1 @@
+{"id": "parallel_133", "actual_calls": [["calculate_distance", {"coord1": [48.8584, 2.2945], "coord2": [41.8902, 12.4922], "coord3": [37.9715, 23.7257], "coord4": [29.9792, 31.1342], "unit": "km"}]], "wall_s": 2.1538501249997353, "prompt_tokens": 439, "completion_tokens": 110, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

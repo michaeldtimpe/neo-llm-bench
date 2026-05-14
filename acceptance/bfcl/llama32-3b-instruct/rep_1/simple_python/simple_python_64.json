@@ -1,0 +1,1 @@
+{"id": "simple_python_64", "actual_calls": [["calculate_genotype_frequency", {"allele_frequency": "0", "genotype": "AA"}]], "wall_s": 0.2794878329996209, "prompt_tokens": 372, "completion_tokens": 28, "error": "", "passed": false, "reason": "call_calculate_genotype_frequency_did_not_match_any_gt"}

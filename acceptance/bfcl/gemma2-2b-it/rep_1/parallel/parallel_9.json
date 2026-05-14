@@ -1,0 +1,1 @@
+{"id": "parallel_9", "actual_calls": [["find_movie_showing", {"location": "San Diego, CA", "movie": ["Tenet"], "time": ["5 pm"]}]], "wall_s": 0.8551440420005747, "prompt_tokens": 345, "completion_tokens": 43, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

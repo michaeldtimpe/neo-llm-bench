@@ -1,0 +1,1 @@
+{"id": "simple_python_130", "actual_calls": [["finance_calculator.npv", {"cash_flows": [-50000, 10000, 15000, 20000, 25000, 30000], "discount_rate": 0.08, "years": []}]], "wall_s": 1.624717624999903, "prompt_tokens": 399, "completion_tokens": 83, "error": "", "passed": true, "reason": "matched_gt_entry"}

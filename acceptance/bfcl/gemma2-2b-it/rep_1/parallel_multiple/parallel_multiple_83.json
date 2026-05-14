@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_83", "actual_calls": [["calculate_integral", {"func": "3x**2 - 2x + 1", "a": 1, "b": 4}]], "wall_s": 0.9185587500005568, "prompt_tokens": 514, "completion_tokens": 45, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

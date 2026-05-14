@@ -1,0 +1,1 @@
+{"id": "parallel_148", "actual_calls": [["calculate_speed", {"distance": 500, "time": 25, "to_unit": "km/h"}]], "wall_s": 0.8637409590000971, "prompt_tokens": 413, "completion_tokens": 42, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

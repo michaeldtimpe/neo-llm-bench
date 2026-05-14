@@ -1,0 +1,1 @@
+{"id": "simple_python_38", "actual_calls": [["calculate_electrostatic_potential", {"charge1": 1e-09, "charge2": 2e-09, "distance": 0.05, "constant": 8990000000.0}]], "wall_s": 0.954377583000678, "prompt_tokens": 359, "completion_tokens": 60, "error": "", "passed": true, "reason": "matched_gt_entry"}

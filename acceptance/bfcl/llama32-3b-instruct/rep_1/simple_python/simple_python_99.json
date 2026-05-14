@@ -1,0 +1,1 @@
+{"id": "simple_python_99", "actual_calls": [["plot_sine_wave", {"start_range": "0", "end_range": "2", "frequency": "5", "amplitude": "1", "phase_shift": "0"}]], "wall_s": 0.4337470829996164, "prompt_tokens": 441, "completion_tokens": 47, "error": "", "passed": false, "reason": "call_plot_sine_wave_did_not_match_any_gt"}

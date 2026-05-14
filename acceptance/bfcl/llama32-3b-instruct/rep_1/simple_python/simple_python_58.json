@@ -1,0 +1,1 @@
+{"id": "simple_python_58", "actual_calls": [["cell_biology.function_lookup", {"molecule": "ATP synthase", "organelle": "mitochondria", "specific_function": "true"}]], "wall_s": 0.38854041600006894, "prompt_tokens": 382, "completion_tokens": 41, "error": "", "passed": false, "reason": "call_cell_biology.function_lookup_did_not_match_any_gt"}

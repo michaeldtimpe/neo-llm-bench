@@ -1,0 +1,1 @@
+{"id": "multiple_8", "actual_calls": [["realestate.find_properties", {"location": "San Diego", "propertyType": "villa", "bedrooms": 3, "budget": {"min": 300000, "max": 400000}}]], "wall_s": 1.4115080830006264, "prompt_tokens": 533, "completion_tokens": 56, "error": "", "passed": true, "reason": "matched_gt_entry"}

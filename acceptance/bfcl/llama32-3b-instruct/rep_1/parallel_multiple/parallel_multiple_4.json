@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_4", "actual_calls": [["integral", {"function": "x**2", "a": 1, "b": 5}], ["derivative", {"function": "x**2", "x": 3}]], "wall_s": 2.33669720799935, "prompt_tokens": 400, "completion_tokens": 54, "error": "", "passed": true, "reason": "all_calls_matched"}

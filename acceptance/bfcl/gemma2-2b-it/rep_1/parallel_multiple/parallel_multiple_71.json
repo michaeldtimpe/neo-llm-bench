@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_71", "actual_calls": [["sculpture_availability.check", {"sculpture_name": "The Thinker", "material": "bronze"}]], "wall_s": 0.7680362499995681, "prompt_tokens": 534, "completion_tokens": 35, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

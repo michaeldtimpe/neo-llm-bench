@@ -1,0 +1,1 @@
+{"id": "simple_python_131", "actual_calls": [["calculate_compound_interest", {"principal": "10000", "rate": "0", "time": "10", "n": "4"}]], "wall_s": 0.3644777499994234, "prompt_tokens": 444, "completion_tokens": 38, "error": "", "passed": false, "reason": "call_calculate_compound_interest_did_not_match_any_gt"}

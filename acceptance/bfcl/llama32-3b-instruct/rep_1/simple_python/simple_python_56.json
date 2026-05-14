@@ -1,0 +1,1 @@
+{"id": "simple_python_56", "actual_calls": [["cellbio.get_proteins", {"cell_compartment": "plasma membrane"}]], "wall_s": 0.2570767089991932, "prompt_tokens": 336, "completion_tokens": 26, "error": "", "passed": true, "reason": "matched_gt_entry"}

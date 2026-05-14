@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_128", "actual_calls": [["hotel_room_pricing.get", {"hotelName": "Hilton New York", "roomType": "deluxe", "nights": "5"}]], "wall_s": 0.9578629170000568, "prompt_tokens": 611, "completion_tokens": 43, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

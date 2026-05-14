@@ -1,0 +1,1 @@
+{"id": "irrelevance_3", "actual_calls": [["find_critical_points", {"function": "y = 3x + 2", "variable": "y", "range": [0.0, 3.4]}]], "wall_s": 1.051871083000151, "prompt_tokens": 333, "completion_tokens": 52, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: find_critical_points"}

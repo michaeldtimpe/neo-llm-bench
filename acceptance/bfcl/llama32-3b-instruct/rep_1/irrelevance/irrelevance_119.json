@@ -1,0 +1,1 @@
+{"id": "irrelevance_119", "actual_calls": [["sentiment_analysis", {"text": "Believe you can and you\u2019re halfway there.", "model": "vader", "language": "en"}]], "wall_s": 0.8252596669999548, "prompt_tokens": 345, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: sentiment_analysis"}

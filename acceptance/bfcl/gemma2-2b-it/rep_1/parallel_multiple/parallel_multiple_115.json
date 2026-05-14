@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_115", "actual_calls": [["tourist_attraction.find", {"attractionType": "monument", "location": "New York"}]], "wall_s": 0.7184255419997498, "prompt_tokens": 528, "completion_tokens": 33, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

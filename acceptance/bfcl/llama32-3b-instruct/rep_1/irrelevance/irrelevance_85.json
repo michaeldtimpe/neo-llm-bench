@@ -1,0 +1,1 @@
+{"id": "irrelevance_85", "actual_calls": [["criminal_case_details.get", {"case_number": "2020 presidential election", "court_id": "US", "include_hearing_details": "false"}]], "wall_s": 0.8125024589999157, "prompt_tokens": 367, "completion_tokens": 40, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: criminal_case_details.get"}

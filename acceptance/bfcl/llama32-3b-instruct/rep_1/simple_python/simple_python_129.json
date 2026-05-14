@@ -1,0 +1,1 @@
+{"id": "simple_python_129", "actual_calls": [["calculate_discounted_cash_flow", {"coupon_payment": "100", "period": "5", "discount_rate": "0"}]], "wall_s": 0.3269440419999228, "prompt_tokens": 418, "completion_tokens": 34, "error": "", "passed": false, "reason": "call_calculate_discounted_cash_flow_did_not_match_any_gt"}

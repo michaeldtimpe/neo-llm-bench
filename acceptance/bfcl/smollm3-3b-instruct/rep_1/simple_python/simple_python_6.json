@@ -1,0 +1,1 @@
+{"id": "simple_python_6", "actual_calls": [["solve_quadratic", {"a": 2, "b": 5, "c": 3}]], "wall_s": 0.8061861249998401, "prompt_tokens": 326, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

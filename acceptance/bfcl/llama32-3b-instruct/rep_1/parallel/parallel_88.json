@@ -1,0 +1,1 @@
+{"id": "parallel_88", "actual_calls": [["calculate_final_speed", {"initial_velocity": "0", "height": "10", "gravity": "9"}], ["calculate_final_speed", {"initial_velocity": "5", "height": "20", "gravity": "9"}]], "wall_s": 6.968965249999201, "prompt_tokens": 403, "completion_tokens": 62, "error": "", "passed": false, "reason": "call_calculate_final_speed_unmatched_in_gt"}

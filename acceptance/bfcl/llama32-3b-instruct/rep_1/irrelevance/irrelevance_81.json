@@ -1,0 +1,1 @@
+{"id": "irrelevance_81", "actual_calls": [["get_stock_prices", {"ticker_symbol": "AAPL", "start_date": "2020-01-01", "end_date": "2020-12-31"}]], "wall_s": 0.8710460409993175, "prompt_tokens": 376, "completion_tokens": 45, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_stock_prices"}

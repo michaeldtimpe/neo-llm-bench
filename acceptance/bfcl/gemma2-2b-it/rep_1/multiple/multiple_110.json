@@ -1,0 +1,1 @@
+{"id": "multiple_110", "actual_calls": [["mutation_type.find", {"snp_id": "rs6034464", "species": "Homo sapiens"}]], "wall_s": 0.8651650000001609, "prompt_tokens": 455, "completion_tokens": 41, "error": "", "passed": true, "reason": "matched_gt_entry"}

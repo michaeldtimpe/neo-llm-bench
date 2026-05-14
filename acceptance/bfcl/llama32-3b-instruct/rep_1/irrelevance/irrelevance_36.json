@@ -1,0 +1,1 @@
+{"id": "irrelevance_36", "actual_calls": [["get_dominant_trait", {"allele1": "rs7412", "allele2": "rs7412", "inheritance_pattern": "frequency"}]], "wall_s": 0.8473319169997922, "prompt_tokens": 381, "completion_tokens": 41, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_dominant_trait"}

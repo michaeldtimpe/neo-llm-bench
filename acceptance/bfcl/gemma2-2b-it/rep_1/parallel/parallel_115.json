@@ -1,0 +1,1 @@
+{"id": "parallel_115", "actual_calls": [["genetics.calculate_similarity", {"species1": "human", "species2": "chimpanzee", "format": "percentage"}]], "wall_s": 0.8816574169995874, "prompt_tokens": 339, "completion_tokens": 41, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

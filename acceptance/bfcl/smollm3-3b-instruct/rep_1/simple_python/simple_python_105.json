@@ -1,0 +1,1 @@
+{"id": "simple_python_105", "actual_calls": [["math.power", {"base": 3, "exponent": 4}]], "wall_s": 0.6731711250004082, "prompt_tokens": 326, "completion_tokens": 28, "error": "", "passed": true, "reason": "matched_gt_entry"}

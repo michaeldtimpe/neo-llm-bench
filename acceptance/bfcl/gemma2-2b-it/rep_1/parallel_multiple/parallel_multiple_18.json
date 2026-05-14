@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_18", "actual_calls": [["currency_conversion", {"amount": 10, "from_currency": "USD", "to_currency": "EUR"}], ["banking_service", {"account_id": "987654", "amount": 10}]], "wall_s": 1.4357127920002313, "prompt_tokens": 387, "completion_tokens": 72, "error": "", "passed": true, "reason": "all_calls_matched"}

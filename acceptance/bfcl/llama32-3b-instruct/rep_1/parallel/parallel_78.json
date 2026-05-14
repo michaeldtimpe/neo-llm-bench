@@ -1,0 +1,1 @@
+{"id": "parallel_78", "actual_calls": [["number_theory.gcd", {"number1": "45", "number2": "60"}], ["number_theory.gcd", {"number1": "81", "number2": "63"}]], "wall_s": 2.3405216249993828, "prompt_tokens": 324, "completion_tokens": 56, "error": "", "passed": true, "reason": "all_calls_matched"}

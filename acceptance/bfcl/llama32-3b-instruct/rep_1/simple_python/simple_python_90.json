@@ -1,0 +1,1 @@
+{"id": "simple_python_90", "actual_calls": [["employee.fetch_data", {"company_name": "ABC Ltd.", "employee_id": "345", "data_field": "[\"Personal Info\", \"Job History\"]"}]], "wall_s": 0.3862221250001312, "prompt_tokens": 417, "completion_tokens": 41, "error": "", "passed": false, "reason": "call_employee.fetch_data_did_not_match_any_gt"}

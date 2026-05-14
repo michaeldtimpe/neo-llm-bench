@@ -1,0 +1,1 @@
+{"id": "irrelevance_47", "actual_calls": [["flight_schedule.get_timings", {"from_airport": "JFK", "to_airport": "LAX", "date": "2023-12-25"}]], "wall_s": 1.0421559160004108, "prompt_tokens": 315, "completion_tokens": 53, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: flight_schedule.get_timings"}

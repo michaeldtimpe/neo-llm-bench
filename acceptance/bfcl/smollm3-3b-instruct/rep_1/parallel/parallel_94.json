@@ -1,0 +1,1 @@
+{"id": "parallel_94", "actual_calls": [["calculate_electric_field", {"charge": 5, "distance": 2, "permitivity": 8.854e-12}], ["calculate_electric_field", {"charge": 3, "distance": 4, "permitivity": 8.854e-12}]], "wall_s": 1.8653691249992335, "prompt_tokens": 430, "completion_tokens": 77, "error": "", "passed": false, "reason": "call_calculate_electric_field_unmatched_in_gt"}

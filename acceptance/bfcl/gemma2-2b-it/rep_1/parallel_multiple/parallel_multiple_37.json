@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_37", "actual_calls": [["history.get_timeline", {"event": "World War 2", "region": "Europe"}]], "wall_s": 0.706045124999946, "prompt_tokens": 384, "completion_tokens": 34, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

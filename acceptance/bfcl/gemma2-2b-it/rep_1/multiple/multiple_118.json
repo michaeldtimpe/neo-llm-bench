@@ -1,0 +1,1 @@
+{"id": "multiple_118", "actual_calls": [["imdb.find_movies_by_actor", {"actor_name": "Leonardo DiCaprio", "year": 2010, "category": "all"}]], "wall_s": 1.0202959580001334, "prompt_tokens": 650, "completion_tokens": 47, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "parallel_43", "actual_calls": [["concert_finder", {"location": "San Francisco, California", "music_genre": "rock jazz", "time_period": 30}]], "wall_s": 0.9275548340001478, "prompt_tokens": 325, "completion_tokens": 44, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

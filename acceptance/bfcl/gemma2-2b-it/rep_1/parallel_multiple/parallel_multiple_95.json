@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_95", "actual_calls": [["cosine_similarity.calculate", {"vector1": [1, 2, 3], "vector2": [4, 5, 6], "rounding": 2}]], "wall_s": 1.111284292000164, "prompt_tokens": 646, "completion_tokens": 51, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

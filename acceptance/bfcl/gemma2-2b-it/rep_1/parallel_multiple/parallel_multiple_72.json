@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_72", "actual_calls": [["generate_sound_wave", {"frequency": 440, "duration": 5, "wave_type": "sine"}]], "wall_s": 0.8553681250004956, "prompt_tokens": 531, "completion_tokens": 41, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

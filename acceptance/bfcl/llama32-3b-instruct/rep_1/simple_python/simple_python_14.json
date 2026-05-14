@@ -1,0 +1,1 @@
+{"id": "simple_python_14", "actual_calls": [["calculate_derivative", {"function": "3*x**2 + 2*x - 1", "x_value": "0"}]], "wall_s": 0.3430767919999198, "prompt_tokens": 331, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

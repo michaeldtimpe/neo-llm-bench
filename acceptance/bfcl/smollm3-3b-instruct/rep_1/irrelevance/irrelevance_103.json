@@ -1,0 +1,1 @@
+{"id": "irrelevance_103", "actual_calls": [["weather_forecast.get", {"location": "New York City"}]], "wall_s": 0.5824821250007517, "prompt_tokens": 324, "completion_tokens": 25, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: weather_forecast.get"}

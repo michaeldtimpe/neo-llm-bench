@@ -1,0 +1,1 @@
+{"id": "irrelevance_121", "actual_calls": [["medical_records.get_disease_info", {"disease_name": "motor neuron disease", "include_statistics": "false"}]], "wall_s": 0.6575232920004055, "prompt_tokens": 329, "completion_tokens": 32, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: medical_records.get_disease_info"}

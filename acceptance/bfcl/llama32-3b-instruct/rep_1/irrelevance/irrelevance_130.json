@@ -1,0 +1,1 @@
+{"id": "irrelevance_130", "actual_calls": [["calculate_big_five_traits", {"answers": "[1, 2, 3, 4, 5]", "calculate_percentile": "false", "average_answers": "false"}]], "wall_s": 0.9474766669991368, "prompt_tokens": 398, "completion_tokens": 46, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_big_five_traits"}

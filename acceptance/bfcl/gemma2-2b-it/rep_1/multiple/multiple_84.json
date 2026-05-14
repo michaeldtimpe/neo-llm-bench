@@ -1,0 +1,1 @@
+{"id": "multiple_84", "actual_calls": [["getTopGoalScorers", {"competition": "UEFA Champions League", "team": "Barcelona", "number": 10}]], "wall_s": 0.7996541250004157, "prompt_tokens": 430, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

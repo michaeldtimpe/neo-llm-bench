@@ -1,0 +1,1 @@
+{"id": "multiple_9", "actual_calls": [["calculate_average", {"gradeDict": {"math": 90, "science": 75, "history": 82, "music": 89}}]], "wall_s": 1.0228032499999244, "prompt_tokens": 423, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

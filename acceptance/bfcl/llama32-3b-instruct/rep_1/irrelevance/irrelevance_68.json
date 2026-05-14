@@ -1,0 +1,1 @@
+{"id": "irrelevance_68", "actual_calls": [["statistics.calculate_p_value", {"sample_mean": "98", "population_mean": "98", "sample_std_dev": "1", "sample_size": "40"}]], "wall_s": 0.8613792079995619, "prompt_tokens": 467, "completion_tokens": 42, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: statistics.calculate_p_value"}

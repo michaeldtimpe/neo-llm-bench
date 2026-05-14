@@ -1,0 +1,1 @@
+{"id": "simple_python_20", "actual_calls": [["math.hcf", {"number1": "36", "number2": "24"}]], "wall_s": 0.25673183299932134, "prompt_tokens": 316, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "multiple_21", "actual_calls": [["generate_sound_wave", {"frequency": "440", "duration": "5", "wave_type": "sine"}]], "wall_s": 0.3454656250005428, "prompt_tokens": 565, "completion_tokens": 33, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_123", "actual_calls": [["video_games.get_player_count", {"game_title": "Call of Duty: Modern Warfare", "year": 2019, "platform": "Playstation"}]], "wall_s": 1.087453459000244, "prompt_tokens": 552, "completion_tokens": 52, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

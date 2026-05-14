@@ -1,0 +1,1 @@
+{"id": "multiple_35", "actual_calls": [["calculate_gcd", {"num1": 128, "num2": 256, "algorithm": "euclidean"}]], "wall_s": 0.8560089580005297, "prompt_tokens": 439, "completion_tokens": 42, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,10 @@
+{
+  "model": "smollm3-3b-instruct",
+  "rep": 0,
+  "n_problems": 427,
+  "n_passed": 261,
+  "n_extract_ok": 427,
+  "wall_s": 371.1298706219968,
+  "completion_tokens": 25440,
+  "pass_at_1": 0.6112412177985949
+}

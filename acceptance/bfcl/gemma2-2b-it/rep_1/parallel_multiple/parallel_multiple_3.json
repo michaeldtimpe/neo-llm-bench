@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_3", "actual_calls": [["get_rectangle_property", {"perimeter": 14, "area": 15, "property": "diagonal", "tolerance": 0.1}]], "wall_s": 0.9113416250002047, "prompt_tokens": 435, "completion_tokens": 47, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

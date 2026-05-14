@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_121", "actual_calls": [["BoardGameGeek.recommend", {"numPlayers": 6, "category": "strategy", "difficulty": "beginner"}]], "wall_s": 0.8706989169995722, "prompt_tokens": 658, "completion_tokens": 39, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

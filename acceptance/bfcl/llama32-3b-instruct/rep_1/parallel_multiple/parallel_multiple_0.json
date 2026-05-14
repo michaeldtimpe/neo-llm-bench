@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_0", "actual_calls": [["math_toolkit.sum_of_multiples", {"lower_limit": "1", "upper_limit": "1000", "multiples": "[3, 5]"}], ["math_toolkit.product_of_primes", {"count": "5"}]], "wall_s": 2.7356713330000275, "prompt_tokens": 410, "completion_tokens": 64, "error": "", "passed": false, "reason": "call_math_toolkit.sum_of_multiples_unmatched_in_gt"}

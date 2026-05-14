@@ -1,0 +1,1 @@
+{"id": "multiple_20", "actual_calls": [["sculpture_price.calculate", {"material": "marble", "size": 3, "complexity": "medium"}]], "wall_s": 0.7810040839995054, "prompt_tokens": 456, "completion_tokens": 37, "error": "", "passed": true, "reason": "matched_gt_entry"}

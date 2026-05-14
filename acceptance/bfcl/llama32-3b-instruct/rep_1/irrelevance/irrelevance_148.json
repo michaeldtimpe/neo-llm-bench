@@ -1,0 +1,1 @@
+{"id": "irrelevance_148", "actual_calls": [["color_complimentary", {"color": "blue", "color_format": "HEX"}]], "wall_s": 0.5733248750002531, "prompt_tokens": 350, "completion_tokens": 27, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: color_complimentary"}

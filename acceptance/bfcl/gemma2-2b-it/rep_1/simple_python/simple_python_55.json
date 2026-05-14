@@ -1,0 +1,1 @@
+{"id": "simple_python_55", "actual_calls": [["biology.get_cell_info", {"cell_type": "human"}]], "wall_s": 0.4870583749998332, "prompt_tokens": 296, "completion_tokens": 29, "error": "", "passed": false, "reason": "call_biology.get_cell_info_did_not_match_any_gt"}

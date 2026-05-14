@@ -1,0 +1,1 @@
+{"id": "irrelevance_23", "actual_calls": [["calculate_magnetic_field", {"current": "1.6021766341248e-19", "distance": "0", "permeability": "1.1126407575732e-26"}]], "wall_s": 0.9896214589998635, "prompt_tokens": 386, "completion_tokens": 52, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_magnetic_field"}

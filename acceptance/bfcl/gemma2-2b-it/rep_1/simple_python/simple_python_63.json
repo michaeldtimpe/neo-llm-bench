@@ -1,0 +1,1 @@
+{"id": "simple_python_63", "actual_calls": [["genetics.calculate_similarity", {"species1": "human", "species2": "chimp", "format": "percentage"}]], "wall_s": 0.5884575419995599, "prompt_tokens": 313, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

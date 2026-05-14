@@ -1,0 +1,1 @@
+{"id": "irrelevance_98", "actual_calls": [["lawsuit.settlement_estimate", {"damage_amount": 100000, "incident_type": "construction", "defendant_assets": 1000000}]], "wall_s": 1.130332042000191, "prompt_tokens": 315, "completion_tokens": 55, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: lawsuit.settlement_estimate"}

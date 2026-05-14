@@ -1,0 +1,1 @@
+{"id": "irrelevance_107", "actual_calls": [["soil_composition_analyze", {"location": "Boston", "soil_sample": "false", "season": "false"}]], "wall_s": 0.7882384159993308, "prompt_tokens": 383, "completion_tokens": 36, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: soil_composition_analyze"}

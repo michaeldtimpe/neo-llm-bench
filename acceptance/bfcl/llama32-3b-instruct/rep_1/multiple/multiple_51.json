@@ -1,0 +1,1 @@
+{"id": "multiple_51", "actual_calls": [["dice_roll_probability", {"desired_sum": "7", "sides_per_die": "2"}]], "wall_s": 0.4669745840001269, "prompt_tokens": 665, "completion_tokens": 28, "error": "", "passed": false, "reason": "call_dice_roll_probability_did_not_match_any_gt"}

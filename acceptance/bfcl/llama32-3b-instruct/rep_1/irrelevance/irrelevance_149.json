@@ -1,0 +1,1 @@
+{"id": "irrelevance_149", "actual_calls": [["calculate_paint_mix", {"target_color": "sky blue", "available_colors": "[\"Pantone 2965C\"]"}]], "wall_s": 0.6990209159994265, "prompt_tokens": 381, "completion_tokens": 35, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_paint_mix"}

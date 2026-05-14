@@ -1,0 +1,1 @@
+{"id": "multiple_49", "actual_calls": [["calc_Compound_Interest", {"principle_amount": "1500", "duration": "2", "annual_rate": "2.5"}]], "wall_s": 0.6535327920000782, "prompt_tokens": 781, "completion_tokens": 39, "error": "", "passed": true, "reason": "matched_gt_entry"}

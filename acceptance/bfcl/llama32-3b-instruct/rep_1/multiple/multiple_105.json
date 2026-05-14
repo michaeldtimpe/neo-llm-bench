@@ -1,0 +1,1 @@
+{"id": "multiple_105", "actual_calls": [["calculate_magnetic_field", {"current": "5", "radius": "4"}]], "wall_s": 0.4645427079994988, "prompt_tokens": 731, "completion_tokens": 25, "error": "", "passed": true, "reason": "matched_gt_entry"}

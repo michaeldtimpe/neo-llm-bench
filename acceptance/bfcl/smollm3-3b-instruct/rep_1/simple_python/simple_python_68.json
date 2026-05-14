@@ -1,0 +1,1 @@
+{"id": "simple_python_68", "actual_calls": [["forest_growth_forecast", {"location": "Yellowstone National Park", "years": 5, "include_human_impact": true}]], "wall_s": 0.9762967500000741, "prompt_tokens": 354, "completion_tokens": 40, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_53", "actual_calls": [["board_game_search", {"complexity": 2.5, "player_count": 6}], ["trivia_game_search", {"duration": 60}]], "wall_s": 1.1888805420003337, "prompt_tokens": 443, "completion_tokens": 50, "error": "", "passed": true, "reason": "all_calls_matched"}

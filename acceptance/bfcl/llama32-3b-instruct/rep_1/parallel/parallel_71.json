@@ -1,0 +1,1 @@
+{"id": "parallel_71", "actual_calls": [["calculate_derivative", {"function": "3*x**3 - 2*x**2 + 5*x - 7", "x_value": "4"}], ["calculate_derivative", {"function": "9*x**2 - 4*x + 5", "x_value": "2"}]], "wall_s": 3.099617207999472, "prompt_tokens": 363, "completion_tokens": 73, "error": "", "passed": true, "reason": "all_calls_matched"}

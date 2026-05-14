@@ -1,0 +1,1 @@
+{"id": "simple_python_82", "actual_calls": [["calculate_average", {"numbers": [12, 15, 18, 20, 21, 26, 30]}]], "wall_s": 0.766459625000607, "prompt_tokens": 295, "completion_tokens": 49, "error": "", "passed": true, "reason": "matched_gt_entry"}

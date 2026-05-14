@@ -1,0 +1,1 @@
+{"id": "irrelevance_96", "actual_calls": [["get_case_result", {"case_year": 1889, "case_name": "Eiffel Tower", "jurisdiction": "US Supreme Court"}]], "wall_s": 0.9442191669995736, "prompt_tokens": 325, "completion_tokens": 49, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_case_result"}

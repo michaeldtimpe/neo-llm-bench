@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_19", "actual_calls": [["math.gaussian_integral", {"function": "exp(-x**2)", "lower_limit": "-2", "upper_limit": "2"}], ["math.definite_integral", {"function": "sin(x)", "lower_limit": "0", "upper_limit": "3.1416"}]], "wall_s": 3.062231208000412, "prompt_tokens": 442, "completion_tokens": 74, "error": "", "passed": true, "reason": "all_calls_matched"}

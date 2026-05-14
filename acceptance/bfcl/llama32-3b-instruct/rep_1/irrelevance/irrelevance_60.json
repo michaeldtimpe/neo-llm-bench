@@ -1,0 +1,1 @@
+{"id": "irrelevance_60", "actual_calls": [["calculateFinalPrice", {"price": "1", "discount_rate": "0", "sales_tax": "0"}]], "wall_s": 0.7113028750000012, "prompt_tokens": 407, "completion_tokens": 33, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculateFinalPrice"}

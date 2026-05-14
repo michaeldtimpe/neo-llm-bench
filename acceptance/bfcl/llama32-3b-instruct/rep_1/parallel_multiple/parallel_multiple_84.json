@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_84", "actual_calls": [["math.sqrt", {"num": "72", "accuracy": "3"}], ["math.sqrt", {"num": "12", "accuracy": "3"}]], "wall_s": 2.1269087499995294, "prompt_tokens": 541, "completion_tokens": 46, "error": "", "passed": false, "reason": "call_math.sqrt_unmatched_in_gt"}

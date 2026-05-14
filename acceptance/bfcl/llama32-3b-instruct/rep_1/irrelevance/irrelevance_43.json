@@ -1,0 +1,1 @@
+{"id": "irrelevance_43", "actual_calls": [["evolve_creatures", {"population_size": "100", "mutation_rate": "0", "generations": "100"}]], "wall_s": 0.7547173749999274, "prompt_tokens": 409, "completion_tokens": 35, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: evolve_creatures"}

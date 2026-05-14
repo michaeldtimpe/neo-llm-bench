@@ -1,0 +1,1 @@
+{"id": "irrelevance_57", "actual_calls": [["genetic_algorithm.optimize", {"function": "lambda x: 2*x**2 + 3*x + 4", "constraints": [], "population_size": 10, "mutation_rate": 0.01}]], "wall_s": 1.314108749999832, "prompt_tokens": 351, "completion_tokens": 65, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: genetic_algorithm.optimize"}

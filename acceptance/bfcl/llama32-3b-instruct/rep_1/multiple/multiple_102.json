@@ -1,0 +1,1 @@
+{"id": "multiple_102", "actual_calls": [["calculate_displacement", {"initial_velocity": "10", "time": "5", "acceleration": "9.8"}]], "wall_s": 0.58654129200022, "prompt_tokens": 717, "completion_tokens": 34, "error": "", "passed": true, "reason": "matched_gt_entry"}

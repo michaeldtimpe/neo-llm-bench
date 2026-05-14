@@ -1,0 +1,1 @@
+{"id": "irrelevance_6", "actual_calls": [["draw_circle", {"radius": 5}]], "wall_s": 0.4916286249999757, "prompt_tokens": 304, "completion_tokens": 23, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: draw_circle"}

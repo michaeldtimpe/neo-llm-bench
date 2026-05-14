@@ -1,0 +1,1 @@
+{"id": "parallel_91", "actual_calls": [["vegan_restaurant.find_nearby", {"location": "Los Angeles, CA", "operating_hours": 22}]], "wall_s": 0.7545854999998483, "prompt_tokens": 362, "completion_tokens": 39, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

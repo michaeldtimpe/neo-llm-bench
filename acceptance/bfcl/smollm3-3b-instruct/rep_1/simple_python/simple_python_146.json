@@ -1,0 +1,1 @@
+{"id": "simple_python_146", "actual_calls": [["stock_price", {"company": "Amazon", "days": 3}]], "wall_s": 0.654180833999817, "prompt_tokens": 348, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}

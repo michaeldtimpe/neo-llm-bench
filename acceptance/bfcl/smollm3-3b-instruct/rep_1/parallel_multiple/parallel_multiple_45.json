@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_45", "actual_calls": [["calcVolume.cuboid", {"height": 10, "width": 5, "depth": 8}], ["calcVolume.sphere", {"radius": 4}]], "wall_s": 1.362033500000507, "prompt_tokens": 403, "completion_tokens": 54, "error": "", "passed": true, "reason": "all_calls_matched"}

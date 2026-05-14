@@ -1,0 +1,1 @@
+{"id": "parallel_50", "actual_calls": [["game.save_progress", {"stage": 7, "mode": "easy", "level": "user"}], ["game.save_progress", {"stage": 3, "mode": "hard", "level": "user"}]], "wall_s": 1.5527000840002074, "prompt_tokens": 352, "completion_tokens": 65, "error": "", "passed": true, "reason": "all_calls_matched"}

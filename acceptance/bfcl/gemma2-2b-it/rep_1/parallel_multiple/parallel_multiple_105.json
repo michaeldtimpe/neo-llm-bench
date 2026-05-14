@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_105", "actual_calls": [["geodistance.find", {"origin": "New York", "destination": "London", "unit": "kilometers"}]], "wall_s": 0.7926995839998199, "prompt_tokens": 569, "completion_tokens": 38, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

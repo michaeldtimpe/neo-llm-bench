@@ -1,0 +1,1 @@
+{"id": "simple_python_113", "actual_calls": [["probability.dice_roll", {"desired_number": 6, "number_of_rolls": 2, "die_sides": 6}]], "wall_s": 0.9210560410001563, "prompt_tokens": 347, "completion_tokens": 45, "error": "", "passed": true, "reason": "matched_gt_entry"}

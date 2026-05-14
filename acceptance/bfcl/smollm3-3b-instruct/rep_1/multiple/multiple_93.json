@@ -1,0 +1,1 @@
+{"id": "multiple_93", "actual_calls": [["hotel.book", {"location": "Marriott hotel New York", "roomType": "deluxe", "nights": 2, "additional_services": ["breakfast"]}]], "wall_s": 1.1835670420005044, "prompt_tokens": 508, "completion_tokens": 49, "error": "", "passed": false, "reason": "call_hotel.book_did_not_match_any_gt"}

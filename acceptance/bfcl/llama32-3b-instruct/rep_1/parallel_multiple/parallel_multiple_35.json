@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_35", "actual_calls": [["image_processing.object_identification", {"image_url": "my_backyard_image_url"}], ["text_analysis.sentiment_analysis", {"text": "my_journal_entry_text"}]], "wall_s": 1.8635638749992722, "prompt_tokens": 340, "completion_tokens": 47, "error": "", "passed": true, "reason": "all_calls_matched"}

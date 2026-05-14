@@ -1,0 +1,1 @@
+{"id": "simple_python_36", "actual_calls": [["get_shortest_driving_distance", {"origin": "New York City", "destination": "Washington D.C.", "unit": "km"}]], "wall_s": 0.7244031249992986, "prompt_tokens": 325, "completion_tokens": 44, "error": "", "passed": true, "reason": "matched_gt_entry"}

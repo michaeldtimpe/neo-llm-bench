@@ -1,0 +1,1 @@
+{"id": "parallel_29", "actual_calls": [["waste_calculation.calculate", {"population": {"adults": 2, "children": 2, "singles": 0}, "location": "Los Angeles"}]], "wall_s": 0.9780566659992473, "prompt_tokens": 350, "completion_tokens": 48, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

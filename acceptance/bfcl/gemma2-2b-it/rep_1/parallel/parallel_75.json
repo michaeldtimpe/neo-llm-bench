@@ -1,0 +1,1 @@
+{"id": "parallel_75", "actual_calls": [["number_analysis.prime_factors", {"number": 45}], ["number_analysis.prime_factors", {"number": 100}], ["number_analysis.prime_factors", {"number": 150}]], "wall_s": 1.6402420000003985, "prompt_tokens": 274, "completion_tokens": 86, "error": "", "passed": true, "reason": "all_calls_matched"}

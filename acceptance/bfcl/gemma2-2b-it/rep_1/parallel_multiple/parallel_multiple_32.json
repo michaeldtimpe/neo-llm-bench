@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_32", "actual_calls": [["weather_forecast_temperature", {"location": "Boston, USA", "days": 10}]], "wall_s": 0.6746885840002506, "prompt_tokens": 470, "completion_tokens": 34, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

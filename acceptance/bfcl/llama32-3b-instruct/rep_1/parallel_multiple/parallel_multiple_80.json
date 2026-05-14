@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_80", "actual_calls": [["functions.intersect", {"function1": "4x+7", "function2": "2x+5"}]], "wall_s": 1.8189209160000246, "prompt_tokens": 448, "completion_tokens": 32, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

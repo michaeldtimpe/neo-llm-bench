@@ -1,0 +1,1 @@
+{"id": "irrelevance_41", "actual_calls": [["calculate_fibonacci_sequence", {"limit": "6", "show_sequence": "false"}]], "wall_s": 0.5857635829997889, "prompt_tokens": 333, "completion_tokens": 28, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_fibonacci_sequence"}

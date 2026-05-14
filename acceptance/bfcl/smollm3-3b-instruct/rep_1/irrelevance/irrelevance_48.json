@@ -1,0 +1,1 @@
+{"id": "irrelevance_48", "actual_calls": [["finance.fetchGDP", {"country": "USA", "year": 2023}]], "wall_s": 2.8182852079999066, "prompt_tokens": 341, "completion_tokens": 128, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: finance.fetchGDP"}

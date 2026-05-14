@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_62", "actual_calls": [["kinematics.calculate_displacement", {"initial_speed": 5, "acceleration": 2, "time": 10}]], "wall_s": 0.8761771660001614, "prompt_tokens": 600, "completion_tokens": 42, "error": "", "passed": false, "reason": "emitted_1_calls_expected_2"}

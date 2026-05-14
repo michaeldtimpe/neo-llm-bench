@@ -1,0 +1,1 @@
+{"id": "multiple_92", "actual_calls": [["walmart.vegan_products", {"location": "Denver, CO", "categories": "[\"vegetarian\", \"gluten-free\"]"}]], "wall_s": 0.6257240409995575, "prompt_tokens": 716, "completion_tokens": 38, "error": "", "passed": false, "reason": "call_walmart.vegan_products_did_not_match_any_gt"}

@@ -1,0 +1,1 @@
+{"id": "parallel_42", "actual_calls": [["check_instrument_availability", {"instrument": "Yamaha P125", "city": "Berlin"}], ["check_instrument_availability", {"instrument": "Yamaha P125", "city": "Madrid"}]], "wall_s": 1.3686518750000687, "prompt_tokens": 302, "completion_tokens": 70, "error": "", "passed": true, "reason": "all_calls_matched"}

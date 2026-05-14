@@ -1,0 +1,1 @@
+{"id": "irrelevance_35", "actual_calls": [["get_genetic_traits", {"species": "Lion", "dominant_trait": "male", "recessive_trait": "female"}]], "wall_s": 0.7504593749999913, "prompt_tokens": 362, "completion_tokens": 37, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: get_genetic_traits"}

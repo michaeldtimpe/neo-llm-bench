@@ -1,0 +1,1 @@
+{"id": "simple_python_101", "actual_calls": [["calculate_speed", {"distance": 450, "time": 20, "to_unit": "km/h"}]], "wall_s": 0.8426717499996812, "prompt_tokens": 347, "completion_tokens": 35, "error": "", "passed": true, "reason": "matched_gt_entry"}

@@ -1,0 +1,1 @@
+{"id": "multiple_107", "actual_calls": [["calculate_density", {"mass": 45, "volume": 15}]], "wall_s": 0.6560027919995264, "prompt_tokens": 453, "completion_tokens": 27, "error": "", "passed": true, "reason": "matched_gt_entry"}

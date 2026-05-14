@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_61", "actual_calls": [["EuclideanDistance.calculate", {"pointA": [3, 2], "pointB": [7, 5], "rounding": 2}]], "wall_s": 0.938048042000446, "prompt_tokens": 580, "completion_tokens": 45, "error": "", "passed": false, "reason": "emitted_1_calls_expected_4"}

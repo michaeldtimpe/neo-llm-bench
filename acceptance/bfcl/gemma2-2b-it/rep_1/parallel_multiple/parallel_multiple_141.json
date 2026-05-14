@@ -1,0 +1,1 @@
+{"id": "parallel_multiple_141", "actual_calls": [["mutation_type.find", {"snp_id": "rs123456", "species": "Homo sapiens"}]], "wall_s": 0.9033734999993612, "prompt_tokens": 701, "completion_tokens": 40, "error": "", "passed": false, "reason": "emitted_1_calls_expected_3"}

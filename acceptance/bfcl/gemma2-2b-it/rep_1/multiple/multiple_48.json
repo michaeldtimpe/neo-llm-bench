@@ -1,0 +1,1 @@
+{"id": "multiple_48", "actual_calls": [["store.find_nearby", {"location": "New York City", "preferences": ["Pet-friendly", "Disabled Access"]}]], "wall_s": 0.8439851249995627, "prompt_tokens": 432, "completion_tokens": 40, "error": "", "passed": false, "reason": "call_store.find_nearby_did_not_match_any_gt"}

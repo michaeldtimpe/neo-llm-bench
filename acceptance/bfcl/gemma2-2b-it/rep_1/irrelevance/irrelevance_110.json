@@ -1,0 +1,1 @@
+{"id": "irrelevance_110", "actual_calls": [["calculate_bmi", {"weight": 70, "height": 1.75, "unit": "metric"}]], "wall_s": 0.8085313329993369, "prompt_tokens": 307, "completion_tokens": 39, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: calculate_bmi"}

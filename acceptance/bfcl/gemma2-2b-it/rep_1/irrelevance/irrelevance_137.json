@@ -1,0 +1,1 @@
+{"id": "irrelevance_137", "actual_calls": [["historical_event.get_date", {"event_name": "Declaration of Independence"}]], "wall_s": 0.6481332499997734, "prompt_tokens": 326, "completion_tokens": 31, "error": "", "passed": false, "reason": "called_tool_when_irrelevant: historical_event.get_date"}

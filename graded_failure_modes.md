@@ -429,6 +429,65 @@ The over-call cost concentrated on the curated `irrelevance` set
 (easier-to-trigger over-calls), with `live_irrelevance` essentially
 flat — the boundary shift didn't reach the live distribution.
 
+## Round 4 — Branch D model-comparison disruptor (rep_1 / rep_0)
+
+Three new ≤3B candidates run through curated BFCL + HumanEval + MBPP.
+Live cats / multi-turn / agent / temp sweep deferred. Per-model
+failure shape on the curated 5-cat BFCL (n=750 each):
+
+### gemma2-2b-it — strictly dominated
+
+| cat | pass | dominant failure |
+|---|---|---|
+| simple_python | 126/150 | wrong-tool selection (16) + no_calls_emitted (7) |
+| multiple | 124/150 | wrong-tool selection (15) + no_calls_emitted (1) |
+| parallel | 49/150 | under-called (101 problems) — same parallel collapse pattern as qwen25-coder |
+| parallel_multiple | 18/150 | under-called (132) — even worse than coder's 36/150 |
+| irrelevance | 47/150 | over_called_when_irrelevant ×103 |
+
+Gemma 2 has **no native function-calling chat template** in
+llama.cpp's `--jinja` resolution; in structured mode it emits
+Python-like pseudocalls that no parser recognises (e.g. `area(10, 5)`
+as plain text). Inject mode rescues the format but the underlying
+weights still trail. Strictly dominated on every BFCL category by
+every existing finalist *except* parallel (vs qwen25-coder's 32/150).
+
+### llama32-3b-instruct — middling, weak decline
+
+| cat | pass | dominant failure |
+|---|---|---|
+| simple_python | 91/150 | wrong-tool selection (59) — verbose tool selection without grounding |
+| multiple | 100/150 | wrong-tool selection (50) |
+| parallel | 89/150 | under-called (61) — better than coder but worse than qwen25-1.5b |
+| parallel_multiple | 82/150 | under-called (68) |
+| irrelevance | **31/150** | over_called_when_irrelevant **×119** ← weakest decline discipline of the 6 models |
+
+Llama-3.2-3B's irrelevance pass rate (21%) is the lowest BFCL
+irrelevance number anywhere in the project's data. It will call a
+tool with high confidence even when the toolbox is wrong for the
+question. Coding numbers (HE 57.9%, MBPP 62.1%) are middle-of-pack
+but don't beat any existing finalist — qwen25-1.5b matches MBPP and
+qwen25-coder beats both.
+
+### smollm3-3b-instruct — the credible challenger
+
+| cat | pass | failure shape vs qwen25-1.5b |
+|---|---|---|
+| simple_python | 143/150 | +5 vs qwen25-1.5b (138/150) |
+| multiple | 131/150 | -2 vs qwen25-1.5b (133/150) |
+| parallel | 125/150 | **+7** vs qwen25-1.5b (118/150) |
+| parallel_multiple | 116/150 | **+6** vs qwen25-1.5b (110/150) |
+| irrelevance | 86/150 | tied with qwen25-1.5b (86/150); identical over_called bucket (64) |
+
+SmolLM3's failure shape on parallel/parallel_multiple is materially
+better than qwen25-1.5b: the under_called_1_of_N collapse that hit
+qwen25-coder catastrophically (32/150 parallel) and qwen25-1.5b
+moderately (118/150) is less severe in smollm3 (125/150). This is the
+one place Branch D produced a *mechanical* improvement, not just a
+within-CI numeric one. On irrelevance, smollm3 over-calls at exactly
+the same volume as qwen25-1.5b — neither model has the granite33-style
+decline instinct.
+
 ## Cross-bench observations
 
 1. **The three are non-dominated.** qwen25-1.5b wins tool-use,

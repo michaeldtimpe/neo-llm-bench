@@ -1,0 +1,1 @@
+{"id": "parallel_48", "actual_calls": [["PokemonGO.get_moves", {"pokemon": "Pikachu", "move": "null"}], ["PokemonGO.get_moves", {"pokemon": "Bulbasaur", "move": "Solar Beam"}]], "wall_s": 2.3521506670003873, "prompt_tokens": 335, "completion_tokens": 56, "error": "", "passed": false, "reason": "call_PokemonGO.get_moves_unmatched_in_gt"}
