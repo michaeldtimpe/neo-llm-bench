@@ -552,6 +552,49 @@ default-valued numeric features will catch these locally. The pattern
 is small in absolute count (20/884 = 2.3%) but distinctive enough to
 mark as a model-specific deployment hazard.
 
+### Distribution-robustness only generalizes for `live_irrelevance`
+
+The "first-100 are systematically easier than remaining" pattern
+documented above for `live_irrelevance` (all four models drop -19pp
+to -50pp) is **NOT a universal dataset shape phenomenon**. Re-running
+the same first-100 vs remaining-N comparison on the other two
+high-volume live cats reveals mixed-direction behavior:
+
+**`live_multiple` (n=1053; first-100 vs remaining-953)**
+
+| model | first-100 | remaining-953 | drop |
+|---|---|---|---|
+| smollm3-3b | 65.0% | 63.5% | +1.5pp (flat) |
+| qwen25-1.5b | 71.0% | 65.9% | +5.1pp (mild) |
+| granite33-2b | 48.0% | 53.4% | **-5.4pp (inverse)** |
+| qwen25-coder | 62.0% | 65.3% | **-3.3pp (inverse)** |
+
+Two of the four models do *better* on the remaining 953 problems than
+on the first-100 — the easier-first ordering effect is absent on this
+cat.
+
+**`live_simple` (n=258; first-100 vs remaining-158)**
+
+| model | first-100 | remaining-158 | drop |
+|---|---|---|---|
+| smollm3-3b | 73.0% | 63.3% | +9.7pp |
+| qwen25-1.5b | 82.0% | 69.6% | +12.4pp |
+| granite33-2b | 68.0% | 55.7% | +12.3pp |
+| qwen25-coder | 70.0% | 64.6% | +5.4pp |
+
+All four drop on `live_simple` but more modestly than on
+`live_irrelevance` (5–12pp vs 19–50pp).
+
+**What this means for the "smollm3 collapses on live cats" framing:**
+- The collapse signal **was real** but **specific to `live_irrelevance`**, not a general distribution-robustness deficit.
+- On `live_multiple` smollm3 is the most distribution-robust model (+1.5pp = flat).
+- On `live_simple` smollm3 drops less than qwen25-1.5b and granite33.
+- The original headline mixed `live_irrelevance` (where smollm3 is third-of-four robust) with a more general "live cats" claim. Decomposed: smollm3 is competitive on robustness for active categories and bottom-tier-of-finalists on irrelevance specifically.
+
+For deployment: smollm3's distribution risk concentrates on
+irrelevance traffic; for tool-using active categories, smollm3 is
+roughly as robust as the qwen siblings.
+
 **Granite33's unique decline advantage: 181 problems** (20.5% of the
 distribution) where granite alone declines correctly while all three
 other finalists over-call. This is the concrete operational evidence
