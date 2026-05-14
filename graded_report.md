@@ -879,26 +879,39 @@ size.
 
 ## Champion-decision framework
 
-Non-dominated triangle — no single model wins every axis:
+Non-dominated quadrilateral — no single model wins every axis. Updated
+2026-05-14 with rep_7 full-live data; numeric framing distinguishes
+matched-quality from full-distribution evidence.
 
-| if you value… | pick |
-|---|---|
-| **Synthesis coding** (HumanEval) | qwen25-coder-1.5b (69.5% pass@1, +11pp on next; pass@3 78.0%) |
-| **Short-form coding** (MBPP) | qwen25-coder-1.5b (64.2%), but all three are tied within CI overlap; pick on HumanEval signal |
-| **Tool-use generalist + lowest cost** | qwen25-1.5b (BFCL 77%, +7.6pp on next, cheapest of the three) |
-| **Decline discipline** (knows when *not* to act) | granite33-2b (95% live_irrelevance, 85% curated) |
+| if you value… | pick | evidence |
+|---|---|---|
+| **Synthesis coding** (HumanEval) | qwen25-coder-1.5b | 69.5% pass@1, 78.0% pass-any (rep_0∪2∪3); +5.5pp on smollm3, +11pp on qwen25-1.5b, all within CI but consistent mean lead |
+| **Short-form coding** (MBPP) | qwen25-coder-1.5b | 64.2% pass@1; all four finalists within CI; pick on HumanEval signal |
+| **Active tool-use (live single + multi)** | qwen25-1.5b | 67.6% on the 1351 active live problems, +4pp on smollm3 (CI overlap); cheapest of the four; rep_7 cross-model parity |
+| **Decline discipline** (refuses irrelevant tools) | granite33-2b | 81.4% [78.8, 83.9] on full live_irrelevance n=884, **+28.6pp CI-distinct** on qwen25-1.5b (52.8%) and smollm3 (49.1%); also most distribution-robust (-17pp drop vs -28 to -50pp for the others) |
+| **Balanced generalist** (one model for both coding+tool-use) | smollm3-3b | tied within CI of qwen25-1.5b on matched BFCL (77.8% vs 77.1%); tied within CI of qwen25-coder on every coding metric (HumanEval pass@1 / pass-any / pass-all + MBPP); axis-loser on decline-discipline |
 
-Two tactical observations to feed into the decision:
+Three tactical observations to feed into the decision:
 
 1. **If the deployment runs an agent loop with retries, qwen25-coder's
-   pass@3 ceiling (77.4%) is the more relevant number than pass@1.**
-   The sibling pass@3 ceilings are 64.6% / 63.4%. The gap widens at the
-   ceiling, not the floor.
-2. **Granite33's live_irrelevance result is still the cleanest decline
-   signal in the data** (95% ±3.7pp, lower bound 89%). If the
-   deployment surfaces tool-irrelevant queries, granite handles those
-   correctly far more often than the other two (which over-call
-   ~23–26% of the time).
+   HumanEval pass-any (78.0%) is the more relevant number than pass@1
+   (69.5%).** The sibling pass-any rates are 75.0% / 64.0% / 64.7%
+   (smollm3 / qwen25-1.5b / granite33). The gap widens at the ceiling
+   for smollm3 (+11pp from pass@1 to pass-any) and qwen-coder (+8.5pp);
+   it narrows for granite33 (+11.7pp from a lower base).
+2. **Granite33's live_irrelevance result is the cleanest decline
+   signal in the data on full-distribution measurement** (81.4% on
+   n=884, lower bound 78.8% — and the most robust drop from first-100
+   to remaining, -17pp). If the deployment surfaces tool-irrelevant
+   queries at scale, granite33 handles those substantially better than
+   the other three (which over-call 47–69% of the time on the full
+   distribution).
+3. **smollm3 doesn't suffer the parallel-call collapse that crushes
+   qwen25-coder** on curated parallel/parallel_multiple (+93/+74
+   problems vs qwen25-coder; +7/+6 vs qwen25-1.5b). If your deployment
+   needs reliable parallel emission **and** broad coding ability,
+   smollm3 is the only candidate competitive on both — the cleanest
+   single-model pick for that combination.
 
 ## Errata and methodology corrections
 
@@ -938,15 +951,18 @@ claiming controlled head-to-head inference.
 **Evidentiary status changes**:
 
 - Tool-use corner ("qwen25-1.5b holds, CIs barely overlap") →
-  "**tied within CI on matched slice**" (~4.3pp shared band).
+  "**tied on matched slice (smollm3 +0.7pp); qwen leads active live
+  cats on rep_7 by +4pp CI-overlap**." Direction preserved with cleaner
+  evidence (Phase K commit `f7bbf35d`).
 - live_irrelevance "smollm3 collapse" (head-to-head, CI-distinct) →
-  withdrawn on matched data; surviving claim is **within-smollm3
-  distribution-robustness** (49.1% on full 884 vs 89% on matched 100),
-  which is a different epistemological category from cross-model
-  superiority.
-- Granite33 decline corner: -39pp CI-distinct gap is replaced with a
-  split: matched-100 Δ=-8pp **CIs overlap**; full-distribution Δ=-48pp
-  pending Phase K rep_7 for proper cross-model evidence.
+  withdrawn on matched data; **survives as within-model distribution-
+  robustness claim** verified on rep_7: smollm3 drops -45pp from
+  first-100 to remaining-784 (-17pp granite < -28pp qwen < -45pp
+  smollm3 < -50pp qwen-coder).
+- Granite33 decline corner: -39pp CI-distinct gap → **+28.6pp
+  CI-distinct on full rep_7 data** (granite33 81.4% vs next-best
+  qwen25-1.5b 52.8% on n=884). The corner holds with a cleaner,
+  larger gap than the original bad-slice number suggested.
 
 **Fix**: `scripts/compare_matched_slice.py` with explicit
 `--policy {intersection,union}` arg, `<model>:<rep>` target syntax for
