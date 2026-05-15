@@ -1,0 +1,1 @@
+{"id": "simple_python_323", "actual_calls": [], "wall_s": 0.18073345799348317, "prompt_tokens": 273, "completion_tokens": 18, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "The top player in woman tennis is Ashleigh Barty.", "passed": false, "reason": "no_tool_call_emitted"}

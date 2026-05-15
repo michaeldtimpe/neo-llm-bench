@@ -1,0 +1,1 @@
+{"id": "simple_python_299", "actual_calls": [], "wall_s": 0.2351589579920983, "prompt_tokens": 274, "completion_tokens": 25, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "The musical scale associated with C sharp major is: C# D E F# G# A# B.", "passed": false, "reason": "no_tool_call_emitted"}

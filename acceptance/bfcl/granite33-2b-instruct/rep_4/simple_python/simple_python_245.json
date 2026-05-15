@@ -1,0 +1,1 @@
+{"id": "simple_python_245", "actual_calls": [], "wall_s": 0.11287583400553558, "prompt_tokens": 324, "completion_tokens": 9, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "Marie Curie discovered radium.", "passed": false, "reason": "no_tool_call_emitted"}

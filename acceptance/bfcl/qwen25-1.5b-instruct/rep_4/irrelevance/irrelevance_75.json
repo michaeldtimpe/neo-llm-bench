@@ -1,1 +1,1 @@
-{"id": "irrelevance_75", "actual_calls": [], "wall_s": 0.25789025000995025, "prompt_tokens": 333, "completion_tokens": 18, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": true, "reason": "correctly_no_tool_call"}
+{"id": "irrelevance_75", "actual_calls": [], "wall_s": 0.1232131249998929, "prompt_tokens": 333, "completion_tokens": 18, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "1 pound is equal to approximately 0.453592 kilograms.", "passed": true, "reason": "correctly_no_tool_call"}

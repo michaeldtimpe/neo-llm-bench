@@ -1,0 +1,1 @@
+{"id": "irrelevance_172", "actual_calls": [], "wall_s": 0.19809620900196023, "prompt_tokens": 293, "completion_tokens": 20, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "Don Quixote was written by Miguel de Cervantes Saavedra.", "passed": true, "reason": "correctly_no_tool_call"}

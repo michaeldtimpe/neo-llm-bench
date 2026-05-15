@@ -1,0 +1,1 @@
+{"id": "simple_python_202", "actual_calls": [], "wall_s": 0.30685412501043174, "prompt_tokens": 322, "completion_tokens": 34, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "[{\"arguments\": {\"energy_type\": \"solar\", \"usage_duration\": 3}, \"name\": \"calculate_emissions_savings\"}]", "passed": false, "reason": "no_tool_call_emitted"}

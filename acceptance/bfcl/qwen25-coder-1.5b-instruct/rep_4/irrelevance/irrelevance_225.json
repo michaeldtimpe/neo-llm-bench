@@ -1,0 +1,1 @@
+{"id": "irrelevance_225", "actual_calls": [], "wall_s": 0.1828977080003824, "prompt_tokens": 386, "completion_tokens": 29, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "```json\n{\n  \"name\": \"population\",\n  \"arguments\": {\n    \"city\": \"New York\"\n  }\n}\n```", "passed": true, "reason": "correctly_no_tool_call"}

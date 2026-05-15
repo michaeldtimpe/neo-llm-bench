@@ -1,0 +1,1 @@
+{"id": "irrelevance_200", "actual_calls": [], "wall_s": 0.18004500000097323, "prompt_tokens": 313, "completion_tokens": 29, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "Ace is a special card in Blackjack. It can be worth either 1 or 11 points, depending on the game's rules.", "passed": true, "reason": "correctly_no_tool_call"}

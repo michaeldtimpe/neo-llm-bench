@@ -1,11 +1,12 @@
 {
-  "ts_started": "2026-05-13T18:16:45.885554+00:00",
+  "ts_started": "2026-05-14T23:04:59.384564+00:00",
   "model_id": "qwen25-1.5b-instruct",
   "benchmark": "bfcl",
   "rep": 4,
   "mode": {
     "bfcl_mode": "auto",
-    "bfcl_run_mode": "agent"
+    "bfcl_run_mode": "agent",
+    "bfcl_system_prompt": "v2"
   },
   "model_config": {
     "gguf_path": "/Users/mtimpe/models/Qwen2.5-1.5B-Instruct-Q8_0.gguf",
@@ -34,10 +35,11 @@
     "arch": "arm64",
     "os": "Darwin 25.4.0",
     "cpu": "Apple M5 Max",
-    "mem_gb": 128.0
+    "mem_gb": 128.0,
+    "profile": "configs/profile_m5max.yaml"
   },
   "tooling": {
     "python": "3.11.15",
-    "neo_llm_bench_commit": "8c83107725f8df2bc349c5ac5c3437aa01957733"
+    "neo_llm_bench_commit": "4a46dd742b5b5d71f31f4028a1c95e11078ea702"
   }
 }

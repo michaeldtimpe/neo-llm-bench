@@ -1,0 +1,1 @@
+{"id": "simple_python_323", "actual_calls": [["sports_ranking.get_top_player", {"sport": "tennis", "gender": "women"}]], "wall_s": 0.2722908750001807, "prompt_tokens": 662, "completion_tokens": 43, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "raw_text": "The top player in women's tennis is [stub].", "passed": true, "reason": "matched_gt_entry"}

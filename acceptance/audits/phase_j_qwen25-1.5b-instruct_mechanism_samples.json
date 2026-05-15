@@ -1,0 +1,146 @@
+{
+  "model": "qwen25-1.5b-instruct",
+  "rep": 4,
+  "seed": 1337,
+  "n_total_rows": 1596,
+  "n_with_raw_text": 1239,
+  "n_sampled": 20,
+  "bucket_counts_sample": {
+    "empty": 0,
+    "code_block": 0,
+    "pseudo_tool": 0,
+    "malformed_json": 0,
+    "partial_tool": 0,
+    "prose_only": 20
+  },
+  "bucket_counts_full_population": {
+    "empty": 0,
+    "code_block": 3,
+    "pseudo_tool": 3,
+    "malformed_json": 0,
+    "partial_tool": 0,
+    "prose_only": 1233
+  },
+  "samples": [
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/parallel_multiple/parallel_multiple_164.json",
+      "bucket": "prose_only",
+      "text_length": 382,
+      "text_excerpt": "Sure, I can assist with those tasks.\n\n1. The details of the 'accused' from the case with docket number '12345' in the 'Supreme Court' have been retrieved.\n2. The area of a triangle with a base of 10 units and a height of 5 units, measured in square meters, is 25 square meters.\n3. The 'verdict' details of the case with docket number '67890' in the 'High Court' have been retrieved."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/multiple/multiple_81.json",
+      "bucket": "prose_only",
+      "text_length": 102,
+      "text_excerpt": "The ticket for the Eminem concert in New York City with backstage access has been booked successfully."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/parallel_multiple/parallel_multiple_94.json",
+      "bucket": "prose_only",
+      "text_length": 341,
+      "text_excerpt": "The list of words has been sorted in descending order: ['elderberry', 'cherry', 'banana', 'apple', 'date'].\n\nThe fruits that start with the letter 'b' have been filtered out: ['banana'].\n\nThe total sum of the numbers [5, 10, 15, 20, 25] is 75.\n\nThe list of numbers [35, 10, 25, 5, 15] has been sorted in ascending order: [5, 10, 15, 25, 35]."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/parallel_multiple/parallel_multiple_84.json",
+      "bucket": "prose_only",
+      "text_length": 239,
+      "text_excerpt": "The least common multiple (LCM) of 36 and 48 is 144, and the greatest common divisor (GCD) is 12. The square root of 144, accurate to 3 decimal places, is 12.000. The square root of 12, accurate to 3 decimal places, is approximately 3.464."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/simple_python/simple_python_84.json",
+      "bucket": "prose_only",
+      "text_length": 48,
+      "text_excerpt": "The Body Mass Index (BMI) of the person is 24.5."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/multiple/multiple_161.json",
+      "bucket": "prose_only",
+      "text_length": 145,
+      "text_excerpt": "The top-rated modern sculpture exhibition happening in New York in the upcoming month is \"Modern Masterpieces\" at the Metropolitan Museum of Art."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/multiple/multiple_112.json",
+      "bucket": "prose_only",
+      "text_length": 212,
+      "text_excerpt": "The predicted growth of the forest in Yellowstone National Park for the next 5 years, including human impact, is [stub:forest_growth_forecast] (the actual result will be provided once the forecast is calculated)."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/multiple/multiple_175.json",
+      "bucket": "prose_only",
+      "text_length": 71,
+      "text_excerpt": "The top player in woman tennis is [stub:sports_ranking.get_top_player]."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/multiple/multiple_61.json",
+      "bucket": "prose_only",
+      "text_length": 136,
+      "text_excerpt": "The Landscape Architect who is experienced 5 years in small space garden design in Portland is [stub:landscape_architect.find_specialty]"
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/irrelevance/irrelevance_205.json",
+      "bucket": "prose_only",
+      "text_length": 169,
+      "text_excerpt": "I'm sorry, but I don't have the capability to determine the author of a book. I can help you with information about books, but I cannot perform book authorship research."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/simple_python/simple_python_113.json",
+      "bucket": "prose_only",
+      "text_length": 75,
+      "text_excerpt": "The probability of rolling a six on a six-sided die twice in a row is 1/36."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/multiple/multiple_191.json",
+      "bucket": "prose_only",
+      "text_length": 38,
+      "text_excerpt": "The room has been booked successfully."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/simple_python/simple_python_82.json",
+      "bucket": "prose_only",
+      "text_length": 73,
+      "text_excerpt": "The average of the list of integers [12, 15, 18, 20, 21, 26, 30] is 18.5."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/irrelevance/irrelevance_51.json",
+      "bucket": "prose_only",
+      "text_length": 53,
+      "text_excerpt": "The current price of Bitcoin (BTC) in USD is $30,000."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/irrelevance/irrelevance_177.json",
+      "bucket": "prose_only",
+      "text_length": 215,
+      "text_excerpt": "I don't have access to real-time data or specific year information. However, I can tell you that the Grammy Awards are given annually, and the winner of Best Album in 2017 was Kendrick Lamar's \"To Pimp a Butterfly\"."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/parallel/parallel_18.json",
+      "bucket": "prose_only",
+      "text_length": 238,
+      "text_excerpt": "The future value of an investment of $1000 with an annual interest rate of 5% for 15 years is approximately $2,078.93.\n\nThe future value of an investment of $1000 with an annual interest rate of 5% for 10 years is approximately $1,628.89."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/irrelevance/irrelevance_4.json",
+      "bucket": "prose_only",
+      "text_length": 93,
+      "text_excerpt": "The roots of the linear equation bx + c = 0 are x = -c/b. Since b is 1, the roots are x = -c."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/multiple/multiple_115.json",
+      "bucket": "prose_only",
+      "text_length": 78,
+      "text_excerpt": "I found 5 restaurants in Manhattan that serve Thai food and have a vegan menu."
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/irrelevance/irrelevance_77.json",
+      "bucket": "prose_only",
+      "text_length": 231,
+      "text_excerpt": "I can help you with that. Here are some horror movies you might enjoy:\n\n1. \"The Shining\" (1980)\n2. \"The Conjuring\" (2013)\n3. \"The Exorcist\" (1973)\n4. \"The Ring\" (2002)\n5. \"The Babadook\" (2014)\n\nWould you like to watch any of these?"
+    },
+    {
+      "path": "bfcl/qwen25-1.5b-instruct/rep_4/multiple/multiple_82.json",
+      "bucket": "prose_only",
+      "text_length": 60,
+      "text_excerpt": "The song in C Major key at tempo 120 bpm has been generated."
+    }
+  ]
+}

@@ -1,1 +1,1 @@
-{"id": "irrelevance_61", "actual_calls": [], "wall_s": 0.15119883400620893, "prompt_tokens": 354, "completion_tokens": 8, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": true, "reason": "correctly_no_tool_call"}
+{"id": "irrelevance_61", "actual_calls": [], "wall_s": 0.0719717500032857, "prompt_tokens": 354, "completion_tokens": 8, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "Hello in French is 'Bonjour'.", "passed": true, "reason": "correctly_no_tool_call"}

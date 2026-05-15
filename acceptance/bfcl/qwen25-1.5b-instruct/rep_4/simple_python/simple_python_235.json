@@ -1,0 +1,1 @@
+{"id": "simple_python_235", "actual_calls": [["get_event_date", {"event": "Treaty of Lisbon"}]], "wall_s": 0.287652375001926, "prompt_tokens": 641, "completion_tokens": 46, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "raw_text": "The signing of the Treaty of Lisbon took place on February 1, 2007.", "passed": true, "reason": "matched_gt_entry"}

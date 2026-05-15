@@ -1,0 +1,1 @@
+{"id": "simple_python_377", "actual_calls": [["get_current_time", {"city": "Sydney", "country": "Australia"}]], "wall_s": 0.29540737500065006, "prompt_tokens": 731, "completion_tokens": 47, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "raw_text": "The current time in Sydney, Australia is 14:30:45.", "passed": true, "reason": "matched_gt_entry"}

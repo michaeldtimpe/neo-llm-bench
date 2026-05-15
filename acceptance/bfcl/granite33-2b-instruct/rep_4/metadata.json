@@ -1,11 +1,12 @@
 {
-  "ts_started": "2026-05-13T18:26:55.791823+00:00",
+  "ts_started": "2026-05-14T23:48:45.216681+00:00",
   "model_id": "granite33-2b-instruct",
   "benchmark": "bfcl",
   "rep": 4,
   "mode": {
     "bfcl_mode": "auto",
-    "bfcl_run_mode": "agent"
+    "bfcl_run_mode": "agent",
+    "bfcl_system_prompt": "v2"
   },
   "model_config": {
     "gguf_path": "/Users/mtimpe/models/granite-3.3-2b-instruct-Q8_0.gguf",
@@ -34,10 +35,11 @@
     "arch": "arm64",
     "os": "Darwin 25.4.0",
     "cpu": "Apple M5 Max",
-    "mem_gb": 128.0
+    "mem_gb": 128.0,
+    "profile": "configs/profile_m5max.yaml"
   },
   "tooling": {
     "python": "3.11.15",
-    "neo_llm_bench_commit": "8c83107725f8df2bc349c5ac5c3437aa01957733"
+    "neo_llm_bench_commit": "572516cd1164d2a0dccc55d7c967ff3749c9bf85"
   }
 }

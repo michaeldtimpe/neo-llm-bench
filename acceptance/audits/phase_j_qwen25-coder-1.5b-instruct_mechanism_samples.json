@@ -1,0 +1,146 @@
+{
+  "model": "qwen25-coder-1.5b-instruct",
+  "rep": 4,
+  "seed": 1337,
+  "n_total_rows": 1596,
+  "n_with_raw_text": 1240,
+  "n_sampled": 20,
+  "bucket_counts_sample": {
+    "empty": 0,
+    "code_block": 19,
+    "pseudo_tool": 0,
+    "malformed_json": 0,
+    "partial_tool": 0,
+    "prose_only": 1
+  },
+  "bucket_counts_full_population": {
+    "empty": 0,
+    "code_block": 1162,
+    "pseudo_tool": 4,
+    "malformed_json": 12,
+    "partial_tool": 2,
+    "prose_only": 60
+  },
+  "samples": [
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/parallel_multiple/parallel_multiple_164.json",
+      "bucket": "code_block",
+      "text_length": 708,
+      "text_excerpt": "```json\n{\n  \"name\": \"calculate_triangle_area\",\n  \"arguments\": {\n    \"base\": 10,\n    \"height\": 5,\n    \"unit\": \"square meters\"\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"calculate_triangle_area\",\n  \"arguments\": {\n    \"base\": 10,\n    \"height\": 5,\n    \"unit\": \"square meters\"\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"get_case_info\",\n  \"arguments\": {\n    \"docket\": \"12345\",\n    \"court\": \"Supreme Court\",\n    \"info_type\""
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/multiple/multiple_81.json",
+      "bucket": "code_block",
+      "text_length": 490,
+      "text_excerpt": "```json\n{\n  \"name\": \"concert.book_ticket\",\n  \"arguments\": {\n    \"artist\": \"Eminem\",\n    \"location\": \"New York City\",\n    \"add_ons\": [\"Backstage Pass\"]\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"concert.book_ticket\",\n  \"arguments\": {\n    \"artist\": \"Eminem\",\n    \"location\": \"New York City\",\n    \"add_ons\": [\"Backstage Pass\"]\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"concert.book_ticket\",\n  \"arguments\": {\n    \"artis"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/parallel_multiple/parallel_multiple_136.json",
+      "bucket": "code_block",
+      "text_length": 1242,
+      "text_excerpt": "```json\n{\n  \"name\": \"court_case.search\",\n  \"arguments\": {\n    \"docket_number\": \"12345\",\n    \"location\": \"Dallas, TX\",\n    \"full_text\": false\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"court_case.search\",\n  \"arguments\": {\n    \"docket_number\": \"12345\",\n    \"location\": \"Dallas, TX\",\n    \"full_text\": false\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"chess.rating\",\n  \"arguments\": {\n    \"player_name\": \"Magnus Carlsen\",\n"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/parallel_multiple/parallel_multiple_126.json",
+      "bucket": "code_block",
+      "text_length": 367,
+      "text_excerpt": "```json\n{\n  \"name\": \"recipe.find\",\n  \"arguments\": {\n    \"mainIngredient\": \"chicken\",\n    \"ingredientLimit\": 5\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"recipe.find\",\n  \"arguments\": {\n    \"mainIngredient\": \"chicken\",\n    \"ingredientLimit\": 5\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"recipe.find\",\n  \"arguments\": {\n    \"mainIngredient\": \"chicken\",\n    \"ingredientLimit\": 5\n  }\n}\n```"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/simple_python/simple_python_84.json",
+      "bucket": "code_block",
+      "text_length": 373,
+      "text_excerpt": "```json\n{\n  \"name\": \"calculate_bmi\",\n  \"arguments\": {\n    \"weight\": 85,\n    \"height\": 180,\n    \"unit\": \"metric\"\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"calculate_bmi\",\n  \"arguments\": {\n    \"weight\": 85,\n    \"height\": 180,\n    \"unit\": \"metric\"\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"calculate_bmi\",\n  \"arguments\": {\n    \"weight\": 85,\n    \"height\": 180,\n    \"unit\": \"metric\"\n  }\n}\n```"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/multiple/multiple_161.json",
+      "bucket": "code_block",
+      "text_length": 544,
+      "text_excerpt": "```json\n{\n  \"name\": \"find_exhibition\",\n  \"arguments\": {\n    \"location\": \"New York, NY\",\n    \"art_form\": \"sculpture\",\n    \"month\": \"upcoming\",\n    \"user_ratings\": \"high\"\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"find_exhibition\",\n  \"arguments\": {\n    \"location\": \"New York, NY\",\n    \"art_form\": \"sculpture\",\n    \"month\": \"upcoming\",\n    \"user_ratings\": \"high\"\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"find_exhibiti"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/multiple/multiple_112.json",
+      "bucket": "code_block",
+      "text_length": 508,
+      "text_excerpt": "```json\n{\n  \"name\": \"forest_growth_forecast\",\n  \"arguments\": {\n    \"location\": \"Yellowstone National Park\",\n    \"years\": 5,\n    \"include_human_impact\": true\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"forest_growth_forecast\",\n  \"arguments\": {\n    \"location\": \"Yellowstone National Park\",\n    \"years\": 5,\n    \"include_human_impact\": true\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"forest_growth_forecast\",\n  \"arguments"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/multiple/multiple_175.json",
+      "bucket": "code_block",
+      "text_length": 382,
+      "text_excerpt": "```json\n{\n  \"name\": \"sports_ranking.get_top_player\",\n  \"arguments\": {\n    \"sport\": \"tennis\",\n    \"gender\": \"women\"\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"sports_ranking.get_top_player\",\n  \"arguments\": {\n    \"sport\": \"tennis\",\n    \"gender\": \"women\"\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"sports_ranking.get_top_player\",\n  \"arguments\": {\n    \"sport\": \"tennis\",\n    \"gender\": \"women\"\n  }\n}\n```"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/multiple/multiple_61.json",
+      "bucket": "code_block",
+      "text_length": 589,
+      "text_excerpt": "```json\n{\n  \"name\": \"landscape_architect.find_specialty\",\n  \"arguments\": {\n    \"location\": \"Portland, OR\",\n    \"specialization\": \"small space garden design\",\n    \"years_experience\": 5\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"landscape_architect.find_specialty\",\n  \"arguments\": {\n    \"location\": \"Portland, OR\",\n    \"specialization\": \"small space garden design\",\n    \"years_experience\": 5\n  }\n}\n```\n---\n```j"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/irrelevance/irrelevance_205.json",
+      "bucket": "code_block",
+      "text_length": 371,
+      "text_excerpt": "To determine the author of the book 'Pride and Prejudice', I would need to call a function that retrieves information about books. Here's how you might do it:\n\n```json\n{\n  \"name\": \"get_book_info\",\n  \"arguments\": {\n    \"book_title\": \"Pride and Prejudice\"\n  }\n}\n```\n\nThis function call would return a JSON object containing information about the book, including its author."
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/simple_python/simple_python_113.json",
+      "bucket": "code_block",
+      "text_length": 433,
+      "text_excerpt": "```json\n{\n  \"name\": \"probability.dice_roll\",\n  \"arguments\": {\n    \"desired_number\": 6,\n    \"number_of_rolls\": 2,\n    \"die_sides\": 6\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"probability.dice_roll\",\n  \"arguments\": {\n    \"desired_number\": 6,\n    \"number_of_rolls\": 2,\n    \"die_sides\": 6\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"probability.dice_roll\",\n  \"arguments\": {\n    \"desired_number\": 6,\n    \"number_of_rolls\""
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/multiple/multiple_191.json",
+      "bucket": "code_block",
+      "text_length": 706,
+      "text_excerpt": "```json\n{\n  \"name\": \"book_hotel\",\n  \"arguments\": {\n    \"hotel_name\": \"Hotel Paradise\",\n    \"location\": \"Las Vegas\",\n    \"room_type\": \"luxury\",\n    \"start_date\": \"05-12-2022\",\n    \"stay_duration\": 3,\n    \"view\": \"city view\"\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"book_hotel\",\n  \"arguments\": {\n    \"hotel_name\": \"Hotel Paradise\",\n    \"location\": \"Las Vegas\",\n    \"room_type\": \"luxury\",\n    \"start_date\": \"0"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/simple_python/simple_python_82.json",
+      "bucket": "code_block",
+      "text_length": 343,
+      "text_excerpt": "```json\n{\n  \"name\": \"calculate_average\",\n  \"arguments\": {\n    \"numbers\": [12, 15, 18, 20, 21, 26, 30]\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"calculate_average\",\n  \"arguments\": {\n    \"numbers\": [12, 15, 18, 20, 21, 26, 30]\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"calculate_average\",\n  \"arguments\": {\n    \"numbers\": [12, 15, 18, 20, 21, 26, 30]\n  }\n}\n```"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/irrelevance/irrelevance_51.json",
+      "bucket": "code_block",
+      "text_length": 76,
+      "text_excerpt": "```json\n{\n  \"name\": \"fibonacci\",\n  \"arguments\": {\n    \"number\": 20\n  }\n}\n```"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/irrelevance/irrelevance_177.json",
+      "bucket": "code_block",
+      "text_length": 728,
+      "text_excerpt": "To determine who won the Grammy Award for Best Album in 2017, I would need to call the `get_song_chord_progression` function with the song name \"The Weeknd - Blinding Lights\" and the artist name \"The Weeknd\". Here's how the tool call would look:\n\n```json\n{\n  \"name\": \"get_song_chord_progression\",\n  \"arguments\": {\n    \"song_name\": \"The Weeknd - Blinding Lights\",\n    \"artist_name\": \"The Weeknd\"\n  }\n}"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/parallel/parallel_18.json",
+      "bucket": "code_block",
+      "text_length": 954,
+      "text_excerpt": "```json\n{\n  \"name\": \"financials.calculate_future_value\",\n  \"arguments\": {\n    \"present_value\": 1000,\n    \"annual_interest_rate\": 0.05,\n    \"number_of_years\": 15\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"financials.calculate_future_value\",\n  \"arguments\": {\n    \"present_value\": 1000,\n    \"annual_interest_rate\": 0.05,\n    \"number_of_years\": 15\n  },\n  \"result\": 1818.75\n}\n```\n---\n```json\n{\n  \"name\": \"financia"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/irrelevance/irrelevance_4.json",
+      "bucket": "code_block",
+      "text_length": 1051,
+      "text_excerpt": "```json\n{\n  \"name\": \"find_roots\",\n  \"arguments\": {\n    \"b\": 3,\n    \"c\": 2\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"find_roots\",\n  \"arguments\": {\n    \"b\": 3,\n    \"c\": 2\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"find_roots\",\n  \"arguments\": {\n    \"b\": 3,\n    \"c\": 2\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"find_roots\",\n  \"arguments\": {\n    \"b\": 3,\n    \"c\": 2\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"find_roots\",\n  \"arguments\":"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/multiple/multiple_115.json",
+      "bucket": "code_block",
+      "text_length": 535,
+      "text_excerpt": "```json\n{\n  \"name\": \"find_restaurants\",\n  \"arguments\": {\n    \"location\": \"Manhattan\",\n    \"food_type\": \"Thai\",\n    \"dietary_requirements\": [\"vegan\"],\n    \"number\": 5\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"find_restaurants\",\n  \"arguments\": {\n    \"location\": \"Manhattan\",\n    \"food_type\": \"Thai\",\n    \"dietary_requirements\": [\"vegan\"],\n    \"number\": 5\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"find_restaurants\",\n"
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/irrelevance/irrelevance_77.json",
+      "bucket": "prose_only",
+      "text_length": 40,
+      "text_excerpt": "I'm sorry, but I can't assist with that."
+    },
+    {
+      "path": "bfcl/qwen25-coder-1.5b-instruct/rep_4/multiple/multiple_82.json",
+      "bucket": "code_block",
+      "text_length": 668,
+      "text_excerpt": "```json\n{\n  \"name\": \"music.generate\",\n  \"arguments\": {\n    \"key\": \"C Major\",\n    \"tempo\": 120,\n    \"time_signature\": \"4/4\"\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"music.generate\",\n  \"arguments\": {\n    \"key\": \"C Major\",\n    \"tempo\": 120,\n    \"time_signature\": \"4/4\"\n  }\n}\n```\n---\n```json\n{\n  \"name\": \"audio.generate\",\n  \"arguments\": {\n    \"frequency\": 440,\n    \"amplitude\": 0.5,\n    \"duration\": 1\n  }\n}\n```"
+    }
+  ]
+}

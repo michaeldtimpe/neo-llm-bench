@@ -1,0 +1,1 @@
+{"id": "simple_python_228", "actual_calls": [], "wall_s": 0.21152304200222716, "prompt_tokens": 277, "completion_tokens": 22, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "[{\"arguments\": {\"hobby\": \"jogging\", \"trait_count\": 3}]", "passed": false, "reason": "no_tool_call_emitted"}

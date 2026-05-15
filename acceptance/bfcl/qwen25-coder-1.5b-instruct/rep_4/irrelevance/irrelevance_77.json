@@ -1,1 +1,1 @@
-{"id": "irrelevance_77", "actual_calls": [], "wall_s": 0.14030416699824855, "prompt_tokens": 373, "completion_tokens": 13, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": true, "reason": "correctly_no_tool_call"}
+{"id": "irrelevance_77", "actual_calls": [], "wall_s": 0.09807279201049823, "prompt_tokens": 373, "completion_tokens": 13, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "I'm sorry, but I can't assist with that.", "passed": true, "reason": "correctly_no_tool_call"}

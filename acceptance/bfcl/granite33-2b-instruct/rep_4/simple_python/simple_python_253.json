@@ -1,0 +1,1 @@
+{"id": "simple_python_253", "actual_calls": [], "wall_s": 0.24654841699521057, "prompt_tokens": 289, "completion_tokens": 26, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "[{\"arguments\": {\"religion_name\": \"Buddhism\", \"detail_level\": \"full\"}}]", "passed": false, "reason": "no_tool_call_emitted"}

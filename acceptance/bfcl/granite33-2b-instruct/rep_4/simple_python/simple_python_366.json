@@ -1,0 +1,1 @@
+{"id": "simple_python_366", "actual_calls": [], "wall_s": 0.17127433299901895, "prompt_tokens": 385, "completion_tokens": 15, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "2 tablespoons are equal to 4 teaspoons.", "passed": false, "reason": "no_tool_call_emitted"}

@@ -1,0 +1,1 @@
+{"id": "multiple_169", "actual_calls": [], "wall_s": 0.19707179100078065, "prompt_tokens": 491, "completion_tokens": 19, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "The musical scale associated with C sharp major is the C sharp major scale.", "passed": false, "reason": "no_tool_call_emitted"}
