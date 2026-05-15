@@ -1,1 +1,1 @@
-{"id": "irrelevance_98", "actual_calls": [], "wall_s": 0.18244370800675824, "prompt_tokens": 328, "completion_tokens": 18, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": true, "reason": "correctly_no_tool_call"}
+{"id": "irrelevance_98", "actual_calls": [], "wall_s": 0.12271683299331926, "prompt_tokens": 328, "completion_tokens": 18, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "To paint the Eiffel Tower, it would take approximately 18 months.", "passed": true, "reason": "correctly_no_tool_call"}

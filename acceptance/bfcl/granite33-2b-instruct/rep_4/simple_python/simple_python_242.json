@@ -1,0 +1,1 @@
+{"id": "simple_python_242", "actual_calls": [], "wall_s": 0.18797354199341498, "prompt_tokens": 245, "completion_tokens": 20, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "The scientist credited with proposing the theory of evolution is Charles Darwin.", "passed": false, "reason": "no_tool_call_emitted"}

@@ -1,0 +1,1 @@
+{"id": "simple_python_240", "actual_calls": [], "wall_s": 0.2246351250068983, "prompt_tokens": 304, "completion_tokens": 23, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "The President of the United States in 1940 was Franklin D. Roosevelt.", "passed": false, "reason": "no_tool_call_emitted"}

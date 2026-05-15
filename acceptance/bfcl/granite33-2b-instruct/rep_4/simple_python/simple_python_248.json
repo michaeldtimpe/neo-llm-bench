@@ -1,0 +1,1 @@
+{"id": "simple_python_248", "actual_calls": [], "wall_s": 0.22883841600560118, "prompt_tokens": 288, "completion_tokens": 24, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "The theory of relativity was invented by Albert Einstein in the year 1905.", "passed": false, "reason": "no_tool_call_emitted"}

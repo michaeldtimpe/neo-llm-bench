@@ -1,0 +1,1 @@
+{"id": "irrelevance_175", "actual_calls": [], "wall_s": 0.20529908299795352, "prompt_tokens": 274, "completion_tokens": 21, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "The composer of Moonlight Sonata is Ludwig van Beethoven.", "passed": true, "reason": "correctly_no_tool_call"}

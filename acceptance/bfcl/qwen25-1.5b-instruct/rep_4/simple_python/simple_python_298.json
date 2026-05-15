@@ -1,0 +1,1 @@
+{"id": "simple_python_298", "actual_calls": [["music_theory.key_signature", {"key": "C#", "scale_type": "major"}]], "wall_s": 0.3057809999882011, "prompt_tokens": 717, "completion_tokens": 49, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "raw_text": "The key signature of C# major is D#-E-G#-Bb.", "passed": true, "reason": "matched_gt_entry"}

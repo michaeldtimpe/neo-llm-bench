@@ -1,0 +1,1 @@
+{"id": "multiple_175", "actual_calls": [], "wall_s": 0.2779218329960713, "prompt_tokens": 892, "completion_tokens": 19, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "The top player in women's tennis is Ashleigh Barty.", "passed": false, "reason": "no_tool_call_emitted"}

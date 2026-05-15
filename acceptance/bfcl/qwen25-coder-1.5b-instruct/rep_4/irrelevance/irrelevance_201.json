@@ -1,0 +1,1 @@
+{"id": "irrelevance_201", "actual_calls": [], "wall_s": 0.13818979200732429, "prompt_tokens": 337, "completion_tokens": 21, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "{{\"name\": \"Ice Cream Palace\", \"arguments\": {\"location\": \"New York\"}}}", "passed": true, "reason": "correctly_no_tool_call"}

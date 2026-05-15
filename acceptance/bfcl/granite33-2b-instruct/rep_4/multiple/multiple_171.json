@@ -1,0 +1,1 @@
+{"id": "multiple_171", "actual_calls": [], "wall_s": 0.29962949999026023, "prompt_tokens": 492, "completion_tokens": 32, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "The winner of the basketball game between Lakers and Clippers on Jan 28, 2021 was the Lakers.", "passed": false, "reason": "no_tool_call_emitted"}

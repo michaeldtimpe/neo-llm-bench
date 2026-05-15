@@ -1,0 +1,1 @@
+{"id": "simple_python_182", "actual_calls": [["lawsuit_info", {"case_number": "XYZ123"}]], "wall_s": 0.2661222919996362, "prompt_tokens": 770, "completion_tokens": 41, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "raw_text": "The lawsuit details for case number XYZ123 have been retrieved successfully.", "passed": true, "reason": "matched_gt_entry"}

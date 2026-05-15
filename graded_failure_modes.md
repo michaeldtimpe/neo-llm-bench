@@ -193,6 +193,80 @@ whose raw mode underperforms most relative to its sibling. The loop
 extracts more value when the model has more first-pass mistakes to
 recover — but pays more tokens to do it.
 
+### Cross-model agent-mode `raw_text` mechanism taxonomy (2026-05-14)
+
+Phase J added `raw_text` persistence to BFCL and re-ran agent-mode
+rep_4 for all four models. The taxonomy is over the assistant text
+captured each turn (joined by `\n---\n` across turns). Source artifacts:
+`acceptance/audits/phase_j_<model>_mechanism_samples.json`.
+
+Each model has a **distinctive mechanism signature** for what it
+emits in agent mode — even when the loop ends up dispatching the
+right structured tool calls, the text the model produces alongside
+those calls is highly model-shape-specific.
+
+| model | dominant bucket | distribution (n with raw_text) |
+|---|---|---|
+| qwen25-1.5b | **prose_only 99.5%** | 1233/1239 prose, 3 code_block, 3 pseudo_tool |
+| qwen25-coder | **code_block 93.7%** | 1162/1240 code_block, 60 prose, 12 malformed_json, 4 pseudo_tool, 2 partial |
+| granite33-2b | **pseudo_tool 69.8%** | 866/1240 pseudo_tool, 232 prose, 97 code_block, 39 malformed_json, 6 partial |
+| smollm3-3b | mixed: **prose_only 60.8% + code_block 37.8%** | 747/1229 prose, 464 code_block, 15 pseudo_tool, 3 partial |
+
+Plain-text descriptions of each model's mechanism:
+
+- **qwen25-1.5b** — talks while it tools. Emits structured tool calls
+  through its native template and adds a natural-language sidebar
+  (e.g. "I'll look that up for you" or a summary of what it intends
+  to do). Almost never emits anything that looks like code or
+  function-call syntax in text. The structured tool channel and the
+  prose channel are decoupled; tool calls go through the right path,
+  the text is human-readable narration.
+- **qwen25-coder** — writes the code. Its dominant text-channel
+  output is fenced ```python blocks containing the function body or
+  example usage. The structured tool channel is also active (78%
+  agent-mode pass rate), but the text channel betrays the model's
+  "complete the code I'm writing" bias documented in the curated
+  parallel collapse — even in agent mode where the harness is dispatching
+  real calls, the model is *also* writing Python code in the message.
+- **granite33-2b** — emits tool calls as text. 70% of granite's
+  agent-mode text matches the pseudo-tool-call shape — function-call
+  syntax outside JSON (e.g. `funcname(arg=val)`) that the agent loop's
+  text-channel parser picks up. This is granite's tool-call emission
+  format: the model writes the call as text and lets the parser
+  extract it, rather than using the OpenAI-style structured `tool_calls`
+  field. 3.1% are `malformed_json` (attempted-but-invalid structured
+  calls) — granite occasionally tries structured emission and trips
+  on the syntax.
+- **smollm3-3b** — split between prose explanation (61%) and Python
+  code blocks (38%). Emits **zero** structured tool calls anywhere in
+  the rep_4 run — the structured channel is non-functional for
+  smollm3 at this size/quant. Both prose and code-block emissions are
+  unparsable as tool calls; the agent loop terminates on every
+  problem with `actual_calls=[]`. The 240/1240 (19%) agent-mode pass
+  rate is entirely irrelevance pass-by-silence (240/240 on irrelevance
+  + 0 elsewhere). See "Subsection 3 — Smollm3-unique failure shape"
+  in the full-distribution section for the placeholder-hallucination
+  pattern.
+
+The taxonomy explains **why** the smollm3 agent-mode 19% number is
+incomparable to the finalists' 66–78% — smollm3 isn't producing
+parseable tool intent in any channel. The finalists all have a
+working tool channel (either structured for the qwens, or
+text-channel-with-parser for granite); their text-channel output
+varies in shape but is **secondary signal**, not the primary
+dispatch mechanism. For smollm3 there *is no* primary dispatch
+mechanism, only the secondary text — and the text doesn't parse.
+
+Deployment implication: agent-mode performance at this size is
+gated on the model having a working tool-call channel that survives
+the chat-template parser. qwen25-1.5b, qwen25-coder, and granite33
+all do (via different mechanisms — qwen's structured channel,
+granite's text-channel emission). Smollm3 does not. Picking smollm3
+for a deployment that uses agent loops requires either an adapter
+rewrite to surface the text channel as tool intent or accepting
+that smollm3 will function as a coding-assistant prose generator
+rather than a tool-using agent.
+
 ## Multi-turn BFCL (rep_5) — state-based failure-mode breakdown
 
 n=100 per category × 4 categories per model. All cells <3% pass rate

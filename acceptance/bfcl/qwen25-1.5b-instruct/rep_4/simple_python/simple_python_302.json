@@ -1,0 +1,1 @@
+{"id": "simple_python_302", "actual_calls": [["calculate_batting_average", {"hits": 180, "at_bats": 600}]], "wall_s": 0.3188544590084348, "prompt_tokens": 788, "completion_tokens": 51, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "raw_text": "The batting average for the baseball player is 0.300.", "passed": true, "reason": "matched_gt_entry"}

@@ -1,1 +1,1 @@
-{"id": "irrelevance_54", "actual_calls": [], "wall_s": 0.07990104198688641, "prompt_tokens": 290, "completion_tokens": 3, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": true, "reason": "correctly_no_tool_call"}
+{"id": "irrelevance_54", "actual_calls": [], "wall_s": 0.0640010000061011, "prompt_tokens": 290, "completion_tokens": 3, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "[]", "passed": true, "reason": "correctly_no_tool_call"}

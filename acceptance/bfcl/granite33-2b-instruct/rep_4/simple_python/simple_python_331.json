@@ -1,0 +1,1 @@
+{"id": "simple_python_331", "actual_calls": [], "wall_s": 0.30737858299107756, "prompt_tokens": 329, "completion_tokens": 34, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "[{\"arguments\": {\"location\": \"New York\", \"minimum_rating\": 2300, \"number_of_players\": 10}]", "passed": false, "reason": "no_tool_call_emitted"}

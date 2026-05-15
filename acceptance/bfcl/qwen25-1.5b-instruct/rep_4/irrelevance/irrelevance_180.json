@@ -1,0 +1,1 @@
+{"id": "irrelevance_180", "actual_calls": [], "wall_s": 0.13386266698944382, "prompt_tokens": 336, "completion_tokens": 20, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "I need the date to retrieve the schedule of cricket matches. Could you please provide the date?", "passed": true, "reason": "correctly_no_tool_call"}

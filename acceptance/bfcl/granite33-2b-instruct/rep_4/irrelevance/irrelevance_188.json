@@ -1,0 +1,1 @@
+{"id": "irrelevance_188", "actual_calls": [], "wall_s": 0.21994487500342075, "prompt_tokens": 274, "completion_tokens": 23, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "The champion of the World Series in 2020 was the Los Angeles Dodgers.", "passed": true, "reason": "correctly_no_tool_call"}

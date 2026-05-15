@@ -1,0 +1,1 @@
+{"id": "simple_python_241", "actual_calls": [], "wall_s": 0.21595337499456946, "prompt_tokens": 276, "completion_tokens": 22, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "The U.S. president during the Civil War was Abraham Lincoln.", "passed": false, "reason": "no_tool_call_emitted"}

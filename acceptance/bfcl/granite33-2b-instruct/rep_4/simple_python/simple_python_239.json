@@ -1,0 +1,1 @@
+{"id": "simple_python_239", "actual_calls": [], "wall_s": 0.24987008300377056, "prompt_tokens": 285, "completion_tokens": 27, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "The full name of the president of the United States in 1861 was Abraham Lincoln.", "passed": false, "reason": "no_tool_call_emitted"}

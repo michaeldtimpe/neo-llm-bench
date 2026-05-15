@@ -1,1 +1,1 @@
-{"id": "multiple_100", "actual_calls": [], "wall_s": 0.42940837499918416, "prompt_tokens": 484, "completion_tokens": 22, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "passed": false, "reason": "no_tool_call_emitted"}
+{"id": "multiple_100", "actual_calls": [], "wall_s": 0.2312754160084296, "prompt_tokens": 484, "completion_tokens": 22, "error": "", "n_turns": 1, "n_tool_calls_total": 0, "n_schema_rejects": 0, "raw_text": "The highest common factor (HCF) of 36 and 24 is 12.", "passed": false, "reason": "no_tool_call_emitted"}

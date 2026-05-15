@@ -1,0 +1,1 @@
+{"id": "multiple_173", "actual_calls": [["get_defense_ranking", {"season": 2021, "top": 1}]], "wall_s": 0.34763324999948964, "prompt_tokens": 1221, "completion_tokens": 54, "error": "", "n_turns": 2, "n_tool_calls_total": 1, "n_schema_rejects": 0, "raw_text": "The NBA team with the best defence in the 2021 season is the [team name].", "passed": true, "reason": "matched_gt_entry"}
