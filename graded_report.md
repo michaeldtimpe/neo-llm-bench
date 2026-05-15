@@ -883,6 +883,47 @@ Non-dominated quadrilateral — no single model wins every axis. Updated
 2026-05-14 with rep_7 full-live data; numeric framing distinguishes
 matched-quality from full-distribution evidence.
 
+### Champion: qwen25-1.5b-instruct (decided 2026-05-14)
+
+The benchmark architecture ultimately weights **operational utility**
+over purity. Against that weighting:
+
+- Leads the primary tool-use task family (rep_7 active live n=1351,
+  67.6% vs smollm3 63.6%, +4pp; cheapest of the four)
+- The lead survives matched-ID correction (qwen 77.1% vs smollm3 77.8%
+  on matched n=1106 is a statistical tie, but qwen pulls ahead once
+  the full active distribution is evaluated)
+- Distribution-robustness on `live_irrelevance` is second-best (−28pp
+  drop from first-100 to remaining-784, vs granite −17pp / smollm3
+  −45pp / qwen-coder −50pp). Coding specialization strongly harms
+  irrelevant-context stability; qwen25-1.5b avoids that.
+- The decline weakness (52.8% on n=884 full `live_irrelevance`) is
+  large but **isolatable and steerable at the system layer** — not
+  intrinsic to model capability.
+
+**Why not the others:**
+
+- **granite33-2b** — strengths are too refusal-centric to serve as a
+  primary assistant (53.7% on active live, bottom-of-field).
+- **qwen25-coder-1.5b** — too narrow; parallel-call collapse on both
+  curated and live (8–19% on parallel cats), worst distribution
+  robustness (−50pp).
+- **smollm3-3b** — strongest "if you only get one local model and
+  never tune orchestration" candidate, but not the strongest agent
+  substrate. Tied-within-CI on most axes but never the uncontested
+  leader.
+
+### Role labels for the rest of the quadrilateral
+
+| role | model | rationale |
+|---|---|---|
+| Champion / highest-capability agent | **qwen25-1.5b-instruct** | leads active tool-use; decline gap is system-layer addressable |
+| Best balanced single-model default | smollm3-3b-instruct | within CI of qwen25-1.5b on matched BFCL and qwen25-coder on every coding metric; only model competitive on both parallel emission AND broad coding |
+| Best coding specialist | qwen25-coder-1.5b-instruct | 69.5% pass@1 / 78.0% pass-any on HumanEval; +5.5pp on smollm3 (CI-overlap, consistent mean lead) |
+| Best safety/refusal specialist | granite33-2b-instruct | 81.4% [78.8, 83.9] on full live_irrelevance, **+28.6pp CI-distinct** on next-best; also most distribution-robust (−17pp drop) |
+
+### Original "if you value X, pick Y" table (preserved for reference)
+
 | if you value… | pick | evidence |
 |---|---|---|
 | **Synthesis coding** (HumanEval) | qwen25-coder-1.5b | 69.5% pass@1, 78.0% pass-any (rep_0∪2∪3); +5.5pp on smollm3, +11pp on qwen25-1.5b, all within CI but consistent mean lead |

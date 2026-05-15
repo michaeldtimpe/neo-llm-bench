@@ -43,8 +43,22 @@ See `graded_report.md` for the full leaderboard + the
 audit trail. `graded_failure_modes.md` for the per-model failure shape
 (curated cats, pre-audit but unaffected by the bug).
 
-**The user picks the champion from the data.** Do not recommend a
-winner unprompted.
+**Champion decision (2026-05-14): qwen25-1.5b-instruct.** Picked by
+the user against the non-dominated quadrilateral for operational
+utility — leads active tool-use (rep_7 n=1351), lead survives
+matched-ID correction, second-best on distribution robustness
+(−28pp vs granite −17pp), and the decline weakness is steerable at
+the system layer. Role labels for the rest of the quadrilateral:
+
+- **qwen25-1.5b-instruct** — champion / highest-capability agent
+- **smollm3-3b-instruct** — best balanced single-model default
+- **qwen25-coder-1.5b-instruct** — best coding specialist
+- **granite33-2b-instruct** — best safety/refusal specialist
+
+Decision rationale is recorded in `graded_report.md` "Champion-decision
+framework". Do not re-litigate this unprompted; the roster is locked
+(no new candidates) and prompt-engineering branches require a
+falsifiable gate.
 
 ## Hardware envelope (changed during round 2)
 

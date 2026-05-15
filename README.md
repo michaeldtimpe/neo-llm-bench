@@ -31,6 +31,23 @@ Multi-turn (rep_5) at this size class is floor-level for all four (0–1.5%) —
 - **Coding** (HumanEval pass-any): qwen25-coder 78.0% (within CI of smollm3 75.0%)
 - **Balanced generalist**: smollm3 tied within CI of qwen25-1.5b on BFCL AND qwen25-coder on every coding metric — axis-loser on decline
 
+**Champion (2026-05-14): qwen25-1.5b-instruct.** Picked against the
+non-dominated quadrilateral as the overall agent substrate — strongest
+operational tool-use, lead survives matched-ID correction, second-best
+distribution robustness on irrelevance (−28pp drop vs granite −17pp),
+and the decline weakness is steerable at the system layer rather than
+intrinsic. Role labels for the rest of the quadrilateral:
+
+| role | model |
+|---|---|
+| Champion / highest-capability agent | **qwen25-1.5b-instruct** |
+| Best balanced single-model default | smollm3-3b-instruct |
+| Best coding specialist | qwen25-coder-1.5b-instruct |
+| Best safety/refusal specialist | granite33-2b-instruct |
+
+Full rationale (including counter-arguments to each alternative) is
+recorded in the **Champion-decision framework** section of `graded_report.md`.
+
 Cross-model BFCL claims route through [`scripts/compare_matched_slice.py`](scripts/compare_matched_slice.py) with matched-ID artifacts in [`acceptance/audits/`](acceptance/audits/). See the **Errata and methodology corrections** section in `graded_report.md` for the bug history and per-claim trail.
 
 ## Quick links
