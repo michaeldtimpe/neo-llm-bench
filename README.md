@@ -12,6 +12,19 @@ Five orthogonal benchmark signals (see [`BENCHMARKS.md`](BENCHMARKS.md) for the 
 - **HumanEval** pass@1 across t={0.0, 0.3, 0.7} + pass-any cross-product
 - **MBPP** sanitized split (n=427): short-form coding priors
 
+## Status (2026-08-03): superseded for deployment — historical record for sub-2B
+
+This repo's premise was **sub-2B**, and its 2026-05-14 champion
+(`qwen25-1.5b-instruct`) served as the neo deployment for the 1.5B era. The
+2026-08-03 neo bake-offs (ladder 1.5B→14B + a 4B-class bracket, recorded in
+[`micro-mind/lessons.md`](https://github.com/michaeldtimpe/micro-mind/blob/main/lessons.md))
+promoted **`qwen3-4b-instruct-2507`** as the box-wide champion: the multi-turn
+floor this repo measured at 0% for 1.5B lifts at 3B and closes cleanly at 4B,
+and the 4B is the smallest model that passes a real fix-the-failing-test drill
+on an 8 GB box. The results below remain the canonical sub-2B record — the
+methodology (BFCL + HumanEval + MBPP cross-product, decline axis, matched-ID
+correction) is unchanged and reusable for any future size class.
+
 ## Current results — rounds 1-4 complete, audit-corrected 2026-05-14
 
 Finalists narrowed from 8 candidates after round 1. Round 2 established the non-dominated triangle. Round 3 (prompt-engineering branches A+B+C) all falsified. Round 4 Branch D added smollm3-3b as a fourth model — competitive on tool-use + coding, axis-loser on decline. The 2026-05-14 audit (commits `e50fdce2`→`af56bb3c`) corrected a lex-sort slicing bug, added BFCL `raw_text` persistence, and re-ran finalists on full live cats (rep_7) for cross-model parity on the full distribution.
