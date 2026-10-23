@@ -396,7 +396,7 @@ def _resolve_repo(fixture: Fixture, work_dir: Path) -> tuple[Path | None, str]:
                 if r.returncode != 0:
                     return None, f"git checkout {fixture.base_sha} failed: {r.stderr.strip()}"
             return target, ""
-        r = subprocess.run(["git", "clone", "--quiet", fixture.repo_url, str(target)],
+        r = subprocess.run(["git", "clone", "--quiet", os.path.expanduser(fixture.repo_url), str(target)],
                            capture_output=True, text=True, check=False)
         if r.returncode != 0:
             return None, f"git clone failed: {r.stderr.strip()[:200]}"
